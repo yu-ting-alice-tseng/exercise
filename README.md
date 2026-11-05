@@ -30,7 +30,7 @@ npm run dev
 ```jsonc
 {
   "id": "a2-pc-005",            // 唯一編號
-  "level": "A2",                // A1、A2、B1
+  "level": "A2",                // A1、A2、B1、B2、C1、C2
   "grammar": "passe-compose",   // 文法點代號
   "themes": ["voyage"],         // 主題代號，可多個
   "type": "fill",               // choice（選擇）、fill（填充）、short（簡答）
