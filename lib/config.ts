@@ -18,7 +18,7 @@ export function configToQuery(c: PaperConfig): string {
 
 const clampCount = (v: string | null) => {
   const n = Number.parseInt(v ?? "0", 10);
-  return Number.isFinite(n) ? Math.min(Math.max(n, 0), 30) : 0;
+  return Number.isFinite(n) ? Math.min(Math.max(n, 0), 50) : 0;
 };
 
 export function queryToConfig(p: URLSearchParams): PaperConfig | null {

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
+import Nav from "@/components/Nav";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -31,16 +32,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="no-print">
           <div className="tricolore" />
           <div className="border-b border-line bg-surface/80 backdrop-blur">
-            <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+            <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-2 sm:px-6 sm:py-3 lg:px-8">
               <Link href="/" className="group flex items-baseline gap-2.5">
-                <span className="display text-xl font-bold text-ink">法文練習題</span>
-                <span className="display hidden text-base text-muted italic sm:inline">
+                <span className="display text-lg font-bold whitespace-nowrap text-ink sm:text-xl">法文練習題</span>
+                <span className="display hidden text-base text-muted italic md:inline">
                   Exercices de français
                 </span>
               </Link>
-              <span className="display rounded-full border border-line px-3 py-0.5 text-sm text-muted">
-                A1 → C2
-              </span>
+              <Nav />
             </div>
           </div>
         </header>

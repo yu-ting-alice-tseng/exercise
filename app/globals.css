@@ -19,6 +19,12 @@
   --bad-soft: #f8e2e4;
   --warn: #9b630c;
   --warn-soft: #f7ebd2;
+  /* 學習日曆：藍色單色漸層，越深代表練習越久 */
+  --heat-0: #ece5d6;
+  --heat-1: #b7d3f6;
+  --heat-2: #6da7ec;
+  --heat-3: #2a78d6;
+  --heat-4: #184f95;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,6 +46,11 @@
     --bad-soft: #3a1b25;
     --warn: #f0be5e;
     --warn-soft: #372c14;
+    --heat-0: #222846;
+    --heat-1: #1c5cab;
+    --heat-2: #2a78d6;
+    --heat-3: #5598e7;
+    --heat-4: #9ec5f4;
   }
 }
 
@@ -61,6 +72,11 @@
   --bad-soft: #3a1b25;
   --warn: #f0be5e;
   --warn-soft: #372c14;
+  --heat-0: #222846;
+  --heat-1: #1c5cab;
+  --heat-2: #2a78d6;
+  --heat-3: #5598e7;
+  --heat-4: #9ec5f4;
 }
 
 @theme inline {

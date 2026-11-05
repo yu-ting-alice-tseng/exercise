@@ -10,10 +10,12 @@ import { checkFill, checkShort, joinTokens, type ShortCheck, type Token } from "
 import { configToQuery, queryToConfig } from "@/lib/config";
 import { drawPaper, OPTION_LETTERS, type Version } from "@/lib/draw";
 import { saveHistory } from "@/lib/history";
+import { getStat, recordSession, updateAnswer, type QStat, type Result as RecResult } from "@/lib/progress";
 import { newSeed } from "@/lib/random";
 import { TYPE_LABELS } from "@/lib/taxonomy";
 import { paperTitle } from "@/lib/title";
-import type { DrawnQuestion } from "@/lib/types";
+import type { DrawnQuestion, Level, PaperConfig } from "@/lib/types";
+import { useActiveTimer } from "@/lib/useActiveTimer";
 
 type Answer = string | number | undefined;
 type Verdict = "correct" | "wrong" | "accent" | "pending";
@@ -30,13 +32,6 @@ export default function PracticeClient() {
   return <PracticeSession key={params.toString()} query={params.toString()} />;
 }
 
-function praise(ratio: number): { fr: string; zh: string } {
-  if (ratio >= 0.9) return { fr: "Excellent !", zh: "太厲害了，幾乎全對！" };
-  if (ratio >= 0.7) return { fr: "Très bien !", zh: "很好，再看看答錯的地方。" };
-  if (ratio >= 0.5) return { fr: "Pas mal !", zh: "不錯，重做答錯的題目會更熟。" };
-  return { fr: "Courage !", zh: "別灰心，看完解析再挑戰一次。" };
-}
-
 function PracticeSession({ query }: { query: string }) {
   const router = useRouter();
   const params = useMemo(() => new URLSearchParams(query), [query]);
@@ -44,36 +39,82 @@ function PracticeSession({ query }: { query: string }) {
   const version: Version = params.get("v") === "B" ? "B" : "A";
   const questions = useMemo(() => (config ? drawPaper(config)[version] : []), [config, version]);
 
+  if (!config) return <Invalid />;
+  if (questions.length === 0) return <Invalid message="沒有符合條件的題目，請回到設定頁調整。" />;
+
+  return (
+    <QuizRunner
+      questions={questions}
+      kind="practice"
+      level={config.level}
+      title={paperTitle(config)}
+      historyConfig={config}
+      header={{ back: { href: "/", label: "回到設定" }, fr: "Exercice en ligne", zh: paperTitle(config), sub: "線上練習" }}
+      onNewBatch={() => {
+        router.replace(`/practice/?${configToQuery({ ...config, seed: newSeed() })}`);
+        window.scrollTo({ top: 0 });
+      }}
+    />
+  );
+}
+
+function praise(ratio: number): { fr: string; zh: string } {
+  if (ratio >= 0.9) return { fr: "Excellent !", zh: "太厲害了，幾乎全對！" };
+  if (ratio >= 0.7) return { fr: "Très bien !", zh: "很好，再看看答錯的地方。" };
+  if (ratio >= 0.5) return { fr: "Pas mal !", zh: "不錯，重做答錯的題目會更熟。" };
+  return { fr: "Courage !", zh: "別灰心，看完解析再挑戰一次。" };
+}
+
+function judge(q: DrawnQuestion, answer: Answer, mark: boolean | undefined): Result {
+  const text = typeof answer === "string" ? answer : "";
+  if (q.type === "choice") return { verdict: answer === q.displayAnswer ? "correct" : "wrong" };
+  if (q.type === "fill") {
+    const c = checkFill(text, q.answers);
+    return { verdict: c === "correct" ? "correct" : c === "accent" ? "accent" : "wrong" };
+  }
+  if (q.open) return { verdict: mark === undefined ? "pending" : mark ? "correct" : "wrong" };
+  const short = checkShort(text, q.answers);
+  const base: Verdict = short.result === "correct" ? "correct" : short.result === "accent" ? "accent" : "wrong";
+  return mark ? { verdict: "correct", short, overridden: true } : { verdict: base, short };
+}
+
+const toRec = (v: Verdict): RecResult => (v === "correct" ? "c" : v === "accent" ? "a" : "w");
+
+/** 作答介面：一般練習和複習共用，檢查答案時自動寫入學習紀錄 */
+export function QuizRunner({
+  questions,
+  kind,
+  level,
+  title,
+  header,
+  historyConfig,
+  onNewBatch,
+  newBatchLabel = "換一批題目",
+}: {
+  questions: DrawnQuestion[];
+  kind: "practice" | "review";
+  level?: Level;
+  title: string;
+  header: { back?: { href: string; label: string }; fr: string; zh: string; sub: string };
+  historyConfig?: PaperConfig;
+  onNewBatch?: () => void;
+  newBatchLabel?: string;
+}) {
   const [answers, setAnswers] = useState<Record<string, Answer>>({});
   const [checked, setChecked] = useState(false);
   const [marks, setMarks] = useState<Record<string, boolean>>({});
   const [onlyIds, setOnlyIds] = useState<string[] | null>(null);
   const [focusId, setFocusId] = useState<string | null>(null);
   const inputs = useRef<Record<string, HTMLInputElement | HTMLTextAreaElement | null>>({});
+  const session = useRef<{ id: string; prev: Record<string, QStat | undefined> } | null>(null);
+  const takeTime = useActiveTimer();
 
   const shown = onlyIds ? questions.filter((q) => onlyIds.includes(q.id)) : questions;
 
   const results = useMemo(() => {
     const map = new Map<string, Result>();
     if (!checked) return map;
-    for (const q of shown) {
-      const a = answers[q.id];
-      const text = typeof a === "string" ? a : "";
-      let r: Result;
-      if (q.type === "choice") {
-        r = { verdict: a === q.displayAnswer ? "correct" : "wrong" };
-      } else if (q.type === "fill") {
-        const c = checkFill(text, q.answers);
-        r = { verdict: c === "correct" ? "correct" : c === "accent" ? "accent" : "wrong" };
-      } else if (q.open) {
-        r = { verdict: q.id in marks ? (marks[q.id] ? "correct" : "wrong") : "pending" };
-      } else {
-        const short = checkShort(text, q.answers);
-        const base: Verdict = short.result === "correct" ? "correct" : short.result === "accent" ? "accent" : "wrong";
-        r = marks[q.id] ? { verdict: "correct", short, overridden: true } : { verdict: base, short };
-      }
-      map.set(q.id, r);
-    }
+    for (const q of shown) map.set(q.id, judge(q, answers[q.id], marks[q.id]));
     return map;
   }, [checked, shown, answers, marks]);
 
@@ -88,18 +129,28 @@ function PracticeSession({ query }: { query: string }) {
   const scoreText = `${correctCount}／${shown.length}`;
   const allCorrect = checked && correctCount === shown.length;
 
-  // 全部批改完才記錄分數（重做答錯題目時不記）
+  // 一般練習全部批改完後，記錄到「最近的紀錄」
   useEffect(() => {
-    if (!config || !checked || pendingCount > 0 || onlyIds) return;
-    saveHistory({ config, kind: "practice", title: paperTitle(config), score: scoreText });
-  }, [checked, pendingCount, scoreText, config, onlyIds]);
-
-  if (!config) return <Invalid />;
-  if (questions.length === 0) return <Invalid message="沒有符合條件的題目，請回到設定頁調整。" />;
+    if (!historyConfig || !checked || pendingCount > 0 || onlyIds) return;
+    saveHistory({ config: historyConfig, kind: "practice", title: paperTitle(historyConfig), score: scoreText });
+  }, [checked, pendingCount, scoreText, historyConfig, onlyIds]);
 
   function check() {
+    const sec = takeTime();
+    const graded = shown.filter((q) => !(q.type === "short" && q.open));
+    const { sessionId, prev } = recordSession(
+      { kind, level, title: onlyIds ? `${title}（重做答錯）` : title, sec },
+      graded.map((q) => ({ id: q.id, grammar: q.grammar, result: toRec(judge(q, answers[q.id], marks[q.id]).verdict) })),
+    );
+    for (const q of shown) if (q.type === "short" && q.open) prev[q.id] = getStat(q.id);
+    session.current = { id: sessionId, prev };
     setChecked(true);
     window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function mark(q: DrawnQuestion, ok: boolean) {
+    setMarks((cur) => ({ ...cur, [q.id]: ok }));
+    if (session.current) updateAnswer(session.current.id, q.id, q.grammar, ok ? "c" : "w", session.current.prev[q.id]);
   }
 
   function redoWrong() {
@@ -113,12 +164,8 @@ function PracticeSession({ query }: { query: string }) {
     setAnswers(drop);
     setMarks(drop);
     setChecked(false);
+    session.current = null;
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-
-  function newBatch() {
-    router.replace(`/practice/?${configToQuery({ ...config!, seed: newSeed() })}`);
-    window.scrollTo({ top: 0 });
   }
 
   function jump(id: string) {
@@ -140,34 +187,38 @@ function PracticeSession({ query }: { query: string }) {
       <p className="mt-2 text-sm text-muted">
         {pendingCount > 0 ? `還有 ${pendingCount} 題請對照參考答案自己批改。` : p.zh}
       </p>
+      <p className="mt-1 text-xs text-muted">
+        已記錄到<Link href="/stats/" className="text-accent underline-offset-2 hover:underline">學習紀錄</Link>
+        ，答錯的題目會排進<Link href="/review/" className="text-accent underline-offset-2 hover:underline">複習</Link>。
+      </p>
     </div>
   );
 
   const afterActions = (
-    <div className="grid grid-cols-2 gap-2 lg:grid-cols-1">
+    <div className={`grid gap-2 lg:grid-cols-1 ${onNewBatch ? "grid-cols-2" : "grid-cols-1"}`}>
       <button type="button" onClick={redoWrong} disabled={allCorrect || pendingCount > 0} className={btnPrimary}>
         重做答錯的題目
       </button>
-      <button type="button" onClick={newBatch} className={btnSecondary}>
-        換一批題目
-      </button>
+      {onNewBatch && (
+        <button type="button" onClick={onNewBatch} className={btnSecondary}>
+          {newBatchLabel}
+        </button>
+      )}
     </div>
   );
 
   return (
     <main className={`${container} pt-5 sm:pt-8`}>
       <PageTitle
-        back={{ href: "/", label: "回到設定" }}
-        fr={onlyIds ? "On recommence !" : "Exercice en ligne"}
-        zh={paperTitle(config)}
-        sub={`線上練習${onlyIds ? "・重做答錯的題目" : ""}・共 ${shown.length} 題`}
+        back={header.back}
+        fr={onlyIds ? "On recommence !" : header.fr}
+        zh={header.zh}
+        sub={`${header.sub}${onlyIds ? "・重做答錯的題目" : ""}・共 ${shown.length} 題`}
       />
 
       <div className={twoCol}>
         <div>
-          {checked && (
-            <Card className={`mb-4 p-4 lg:hidden ${allCorrect ? "bg-ok-soft" : ""}`}>{scoreCard}</Card>
-          )}
+          {checked && <Card className={`mb-4 p-4 lg:hidden ${allCorrect ? "bg-ok-soft" : ""}`}>{scoreCard}</Card>}
           <ol className="space-y-3 sm:space-y-4">
             {shown.map((q, i) => (
               <QuestionCard
@@ -186,7 +237,7 @@ function PracticeSession({ query }: { query: string }) {
                 }}
                 getInput={() => inputs.current[q.id] ?? null}
                 onAnswer={(v) => setAnswers((cur) => ({ ...cur, [q.id]: v }))}
-                onMark={(ok) => setMarks((cur) => ({ ...cur, [q.id]: ok }))}
+                onMark={(ok) => mark(q, ok)}
               />
             ))}
           </ol>

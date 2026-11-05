@@ -1,6 +1,7 @@
 import SetupForm from "@/components/SetupForm";
 import RecentList from "@/components/RecentList";
 import { container } from "@/components/ui";
+import ProgressStrip from "@/components/ProgressStrip";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
           選擇等級和範圍，可以直接線上作答、一鍵檢查答案，也可以印出 A／B 兩份考卷。
         </p>
       </div>
+      <ProgressStrip />
       <SetupForm recent={<RecentList />} />
     </main>
   );

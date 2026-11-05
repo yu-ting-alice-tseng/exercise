@@ -62,7 +62,7 @@ export function drawPaper(config: PaperConfig): DrawResult {
   return { A, B, overlap };
 }
 
-function prepare(q: Question, rand: () => number): DrawnQuestion {
+export function prepare(q: Question, rand: () => number): DrawnQuestion {
   if (q.type !== "choice") return q;
   const order = shuffle(
     q.options.map((_, i) => i),

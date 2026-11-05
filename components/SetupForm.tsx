@@ -20,6 +20,8 @@ import {
 } from "@/lib/taxonomy";
 import type { DifficultyFilter, FilterBy, Level, PaperConfig, QuestionType } from "@/lib/types";
 
+const MAX_COUNT = 50;
+
 export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
   const router = useRouter();
   const [level, setLevel] = useState<Level>("A1");
@@ -318,6 +320,8 @@ function Row({ label, value }: { label: string; value: string }) {
 }
 
 function Stepper({ value, label, onChange }: { value: number; label: string; onChange: (v: number) => void }) {
+  const [draft, setDraft] = useState<string | null>(null);
+  const clamp = (n: number) => Math.min(Math.max(Number.isFinite(n) ? Math.round(n) : 0, 0), MAX_COUNT);
   const btn =
     "grid size-11 place-items-center rounded-lg border border-line bg-surface text-xl leading-none transition hover:border-accent/60 active:scale-95 disabled:opacity-35";
   return (
@@ -325,10 +329,22 @@ function Stepper({ value, label, onChange }: { value: number; label: string; onC
       <button type="button" className={btn} aria-label={`${label}減少`} disabled={value <= 0} onClick={() => onChange(value - 1)}>
         −
       </button>
-      <span className="display w-9 text-center text-xl font-bold tabular-nums" aria-live="polite">
-        {value}
-      </span>
-      <button type="button" className={btn} aria-label={`${label}增加`} disabled={value >= 30} onClick={() => onChange(value + 1)}>
+      <input
+        type="number"
+        inputMode="numeric"
+        min={0}
+        max={MAX_COUNT}
+        value={draft ?? String(value)}
+        onFocus={(e) => e.target.select()}
+        onChange={(e) => {
+          setDraft(e.target.value);
+          if (e.target.value !== "") onChange(clamp(Number(e.target.value)));
+        }}
+        onBlur={() => setDraft(null)}
+        aria-label={`${label}題數（0～${MAX_COUNT}）`}
+        className="display h-11 w-14 rounded-lg border border-line bg-sunken text-center text-xl font-bold tabular-nums outline-none [appearance:textfield] focus:border-accent focus:bg-surface [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+      />
+      <button type="button" className={btn} aria-label={`${label}增加`} disabled={value >= MAX_COUNT} onClick={() => onChange(value + 1)}>
         +
       </button>
     </div>
