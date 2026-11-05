@@ -1,0 +1,212 @@
+[
+  {
+    "id": "c2-inv-001",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "voyage",
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的倒裝形式",
+    "stem": "À peine ___ arrivé qu'il fallut repartir.",
+    "options": [
+      "était-il",
+      "il était",
+      "est-il",
+      "il est"
+    ],
+    "answer": 0,
+    "explanation": "句首用 à peine 時，主詞和動詞要倒裝：à peine était-il arrivé que…"
+  },
+  {
+    "id": "c2-inv-002",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的倒裝形式",
+    "stem": "Peut-être ___ raison.",
+    "options": [
+      "a-t-il",
+      "il a",
+      "a-il",
+      "il a-t-il"
+    ],
+    "answer": 0,
+    "explanation": "peut-être 放句首時要倒裝；動詞以母音結尾時要加 -t-：a-t-il。"
+  },
+  {
+    "id": "c2-inv-003",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的倒裝形式",
+    "stem": "Sans doute ___ en retard.",
+    "options": [
+      "sera-t-il",
+      "il sera-t-il",
+      "sera-il",
+      "il-sera"
+    ],
+    "answer": 0,
+    "explanation": "sans doute 放句首時要倒裝：sans doute sera-t-il en retard。"
+  },
+  {
+    "id": "c2-inv-004",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的引述形式",
+    "stem": "« Je viendrai », ___.",
+    "options": [
+      "dit-il",
+      "il dit",
+      "dit-t-il",
+      "il-dit"
+    ],
+    "answer": 0,
+    "explanation": "引號後面的引述動詞要倒裝：dit-il。dit 以 t 結尾，不需要再加 -t-。"
+  },
+  {
+    "id": "c2-inv-005",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入倒裝時需要的字母",
+    "stem": "Peut-être viendra-___-il demain.",
+    "answers": [
+      "t"
+    ],
+    "explanation": "動詞以母音結尾、主詞是 il／elle／on 時，中間加 -t-。"
+  },
+  {
+    "id": "c2-inv-006",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 avoir 的正確形式（注意倒裝）",
+    "stem": "Le projet était trop cher ; aussi ___-nous décidé de l'abandonner.",
+    "answers": [
+      "avons"
+    ],
+    "explanation": "aussi 放句首表示「因此」時，主詞和動詞要倒裝：aussi avons-nous décidé…"
+  },
+  {
+    "id": "c2-inv-007",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的簡單過去式（引述倒裝）",
+    "stem": "« C'est fini », ___-t-elle. (murmurer)",
+    "answers": [
+      "murmura"
+    ],
+    "explanation": "文學敘事用簡單過去式 murmura，倒裝時加 -t-：murmura-t-elle。"
+  },
+  {
+    "id": "c2-inv-008",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入 falloir 的現在式（注意倒裝）",
+    "stem": "C'est possible ; encore ___-il qu'il le veuille.",
+    "answers": [
+      "faut"
+    ],
+    "explanation": "encore 放句首表示「還得、但前提是」時要倒裝：encore faut-il que…"
+  },
+  {
+    "id": "c2-inv-009",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請用 Peut-être 開頭改寫（主詞動詞倒裝）。",
+    "stem": "Il est malade.",
+    "answers": [
+      "Peut-être est-il malade."
+    ],
+    "explanation": "Peut-être 放句首，後面倒裝：est-il。"
+  },
+  {
+    "id": "c2-inv-010",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "meteo"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用 À peine 開頭改寫（主詞動詞倒裝）。",
+    "stem": "Il était à peine sorti qu'il se mit à pleuvoir.",
+    "answers": [
+      "À peine était-il sorti qu'il se mit à pleuvoir."
+    ],
+    "explanation": "À peine 放句首，助動詞和主詞倒裝：était-il sorti。"
+  },
+  {
+    "id": "c2-inv-011",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 Sans doute 開頭改寫（主詞動詞倒裝）。",
+    "stem": "Il a sans doute oublié.",
+    "answers": [
+      "Sans doute a-t-il oublié."
+    ],
+    "explanation": "Sans doute 放句首，助動詞倒裝並加 -t-：a-t-il。"
+  },
+  {
+    "id": "c2-inv-012",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請改寫成引號在前、引述動詞倒裝的形式。",
+    "stem": "Il a dit : « Je reviens. »",
+    "answers": [
+      "« Je reviens », a-t-il dit.",
+      "« Je reviens », dit-il."
+    ],
+    "explanation": "引號在前時，引述動詞要倒裝：a-t-il dit。"
+  }
+]

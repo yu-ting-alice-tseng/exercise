@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "法文練習題｜Exercices de français",
-  description: "依等級（A1～B1）、文法或主題，產生法文線上練習與可列印的 A／B 卷。",
+  description: "依等級（A1～C2）、文法或主題，產生法文線上練習與可列印的 A／B 卷。",
 };
 
 export const viewport: Viewport = {
@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </span>
               </Link>
               <span className="display rounded-full border border-line px-3 py-0.5 text-sm text-muted">
-                A1 · A2 · B1
+                A1 → C2
               </span>
             </div>
           </div>

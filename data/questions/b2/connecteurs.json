@@ -1,0 +1,245 @@
+[
+  {
+    "id": "b2-con-001",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "meteo"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Il pleuvait ; ___, nous sommes sortis.",
+    "options": [
+      "pourtant",
+      "donc",
+      "car",
+      "parce que"
+    ],
+    "answer": 0,
+    "explanation": "pourtant 表示讓步（然而、卻）。"
+  },
+  {
+    "id": "b2-con-002",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Il est malade, ___ il ne viendra pas.",
+    "options": [
+      "donc",
+      "pourtant",
+      "bien que",
+      "malgré"
+    ],
+    "answer": 0,
+    "explanation": "donc 表示結果（所以）。"
+  },
+  {
+    "id": "b2-con-003",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "loisirs",
+      "meteo"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的連接詞",
+    "stem": "___ la pluie, le match a eu lieu.",
+    "options": [
+      "Malgré",
+      "Bien que",
+      "Pourtant",
+      "Même si"
+    ],
+    "answer": 0,
+    "explanation": "後面接名詞時用 malgré；bien que 和 même si 後面要接子句。"
+  },
+  {
+    "id": "b2-con-004",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Je te prête mon livre ___ tu me le rendes demain.",
+    "options": [
+      "à condition que",
+      "même si",
+      "puisque",
+      "alors que"
+    ],
+    "answer": 0,
+    "explanation": "à condition que 表示條件（只要…），後面用虛擬式 rendes。"
+  },
+  {
+    "id": "b2-con-005",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入表示原因的連接詞（對方也知道的理由）",
+    "stem": "___ tu es là, aide-moi !",
+    "answers": [
+      "puisque"
+    ],
+    "explanation": "puisque 表示對方也知道的理由（既然）。"
+  },
+  {
+    "id": "b2-con-006",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "famille",
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入表示對比的連接詞（而…卻）",
+    "stem": "Il aime le sport, ___ sa sœur préfère lire.",
+    "answers": [
+      "alors que",
+      "tandis que"
+    ],
+    "explanation": "alors que／tandis que 表示兩件事對比。"
+  },
+  {
+    "id": "b2-con-007",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入表示讓步的連接詞（即使，後面接直陳式）",
+    "stem": "___ tu insistes, je ne changerai pas d'avis.",
+    "answers": [
+      "même si"
+    ],
+    "explanation": "même si 後面接直陳式；bien que 才接虛擬式。"
+  },
+  {
+    "id": "b2-con-008",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入表示程度的字（如此…以至於）",
+    "stem": "Il était ___ fatigué qu'il s'est endormi.",
+    "answers": [
+      "si",
+      "tellement"
+    ],
+    "explanation": "si／tellement + 形容詞 + que，表示結果。"
+  },
+  {
+    "id": "b2-con-009",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "meteo",
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：雖然下雨，我們還是出門了。",
+    "stem": "",
+    "answers": [
+      "Malgré la pluie, nous sommes sortis.",
+      "Malgré la pluie, on est sortis.",
+      "Bien qu'il pleuve, nous sommes sortis.",
+      "Bien qu'il ait plu, nous sommes sortis.",
+      "Il pleuvait, pourtant nous sommes sortis.",
+      "Il pleuvait, mais nous sommes sortis quand même.",
+      "Même s'il pleuvait, nous sommes sortis.",
+      "Bien qu'il pleuve, on est sortis.",
+      "Il pleuvait, mais on est sortis quand même."
+    ],
+    "explanation": "讓步可以用 malgré + 名詞、bien que + 虛擬式、même si + 直陳式，或 pourtant、quand même。"
+  },
+  {
+    "id": "b2-con-010",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "voyage",
+      "meteo"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：因為下雪，火車誤點了。",
+    "stem": "",
+    "answers": [
+      "À cause de la neige, le train est en retard.",
+      "À cause de la neige, le train a eu du retard.",
+      "Le train est en retard à cause de la neige.",
+      "Le train a eu du retard à cause de la neige.",
+      "À cause de la neige, le train était en retard.",
+      "Le train était en retard à cause de la neige.",
+      "Comme il neigeait, le train a eu du retard.",
+      "Comme il neigeait, le train était en retard."
+    ],
+    "explanation": "à cause de + 名詞表示負面原因；正面原因用 grâce à。"
+  },
+  {
+    "id": "b2-con-011",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：多虧你的幫忙，我通過了考試。",
+    "stem": "",
+    "answers": [
+      "Grâce à ton aide, j'ai réussi mon examen.",
+      "Grâce à ton aide, j'ai réussi l'examen.",
+      "Grâce à toi, j'ai réussi mon examen.",
+      "Grâce à toi, j'ai réussi l'examen.",
+      "Grâce à votre aide, j'ai réussi mon examen.",
+      "J'ai réussi mon examen grâce à ton aide."
+    ],
+    "explanation": "grâce à 表示正面的原因（多虧）。"
+  },
+  {
+    "id": "b2-con-012",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：我很早出門，以免錯過火車。",
+    "stem": "",
+    "answers": [
+      "Je suis parti tôt pour ne pas rater le train.",
+      "Je suis partie tôt pour ne pas rater le train.",
+      "Je suis parti tôt afin de ne pas rater le train.",
+      "Je suis partie tôt afin de ne pas rater le train.",
+      "Je suis parti tôt pour ne pas manquer le train.",
+      "Je suis partie tôt pour ne pas manquer le train.",
+      "Je suis parti tôt de peur de rater le train.",
+      "Je suis partie tôt de peur de rater le train.",
+      "Je suis sorti tôt pour ne pas rater le train.",
+      "Je suis sortie tôt pour ne pas rater le train."
+    ],
+    "explanation": "表示目的的否定：pour ne pas / afin de ne pas + 原形動詞（兩個否定詞都放在原形動詞前面）。"
+  }
+]

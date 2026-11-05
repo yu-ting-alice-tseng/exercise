@@ -1,0 +1,228 @@
+[
+  {
+    "id": "b2-si-001",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Je ne pense pas qu'il ___ raison.",
+    "options": [
+      "ait",
+      "a",
+      "aura",
+      "avait"
+    ],
+    "answer": 0,
+    "explanation": "penser 用在否定句時表示懷疑，後面用虛擬式：qu'il ait。"
+  },
+  {
+    "id": "b2-si-002",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "famille",
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "J'espère que tu ___ bien.",
+    "options": [
+      "vas",
+      "ailles",
+      "aille",
+      "allasses"
+    ],
+    "answer": 0,
+    "explanation": "espérer que 是例外，後面用直陳式，不用虛擬式。"
+  },
+  {
+    "id": "b2-si-003",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "meteo"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Il est probable qu'il ___ demain.",
+    "options": [
+      "pleuvra",
+      "pleuve",
+      "pleuvait",
+      "pleuvrait"
+    ],
+    "answer": 0,
+    "explanation": "il est probable que 表示可能性很高，用直陳式；il est possible que 才用虛擬式。"
+  },
+  {
+    "id": "b2-si-004",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Il est possible qu'elle ___ en retard.",
+    "options": [
+      "soit",
+      "est",
+      "sera",
+      "était"
+    ],
+    "answer": 0,
+    "explanation": "il est possible que 表示不確定，用虛擬式：qu'elle soit。"
+  },
+  {
+    "id": "b2-si-005",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的正確形式（虛擬式或直陳式）",
+    "stem": "Je doute qu'elle ___ (pouvoir) venir.",
+    "answers": [
+      "puisse"
+    ],
+    "explanation": "douter que 表示懷疑，用虛擬式：qu'elle puisse。"
+  },
+  {
+    "id": "b2-si-006",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的正確形式（虛擬式或直陳式）",
+    "stem": "Je suis sûr qu'il ___ (savoir) la vérité.",
+    "answers": [
+      "sait"
+    ],
+    "explanation": "être sûr que 表示確定，用直陳式：il sait。"
+  },
+  {
+    "id": "b2-si-007",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的正確形式（虛擬式或直陳式）",
+    "stem": "Il semble que la situation ___ (être) grave.",
+    "answers": [
+      "soit"
+    ],
+    "explanation": "il semble que 表示不確定，後面用虛擬式；il me semble que（我覺得）則用直陳式。"
+  },
+  {
+    "id": "b2-si-008",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的正確形式（虛擬式或直陳式）",
+    "stem": "Avant que tu ___ (partir), donne-moi ton adresse.",
+    "answers": [
+      "partes"
+    ],
+    "explanation": "avant que 後面用虛擬式：que tu partes。"
+  },
+  {
+    "id": "b2-si-009",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我不確定他會來。",
+    "stem": "",
+    "answers": [
+      "Je ne suis pas sûr qu'il vienne.",
+      "Je ne suis pas sûre qu'il vienne.",
+      "Je ne suis pas certain qu'il vienne.",
+      "Je ne suis pas certaine qu'il vienne."
+    ],
+    "explanation": "être sûr 用在否定句時表示不確定，後面用虛擬式 qu'il vienne。"
+  },
+  {
+    "id": "b2-si-010",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我希望你會玩得開心。",
+    "stem": "",
+    "answers": [
+      "J'espère que tu vas bien t'amuser.",
+      "J'espère que tu t'amuseras bien.",
+      "J'espère que tu t'amuseras.",
+      "J'espère que tu vas t'amuser.",
+      "J'espère que tu t'amuses bien.",
+      "J'espère que vous allez bien vous amuser.",
+      "J'espère que vous vous amuserez bien."
+    ],
+    "explanation": "espérer que 後面用直陳式（常用未來式），不用虛擬式。"
+  },
+  {
+    "id": "b2-si-011",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "loisirs",
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：很遺憾你不能來。",
+    "stem": "",
+    "answers": [
+      "Je regrette que tu ne puisses pas venir.",
+      "Je suis désolé que tu ne puisses pas venir.",
+      "Je suis désolée que tu ne puisses pas venir.",
+      "Dommage que tu ne puisses pas venir.",
+      "C'est dommage que tu ne puisses pas venir.",
+      "Je regrette que vous ne puissiez pas venir."
+    ],
+    "explanation": "表達遺憾、情緒後面用虛擬式：que tu ne puisses pas。"
+  },
+  {
+    "id": "b2-si-012",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我認為這是個好主意。",
+    "stem": "",
+    "answers": [
+      "Je pense que c'est une bonne idée.",
+      "Je crois que c'est une bonne idée.",
+      "Je trouve que c'est une bonne idée."
+    ],
+    "explanation": "肯定的 penser、croire、trouver que 表示說話者的看法，用直陳式。"
+  }
+]

@@ -10,6 +10,9 @@ export const LEVELS: { id: Level; zh: string; fr: string; desc: string }[] = [
   { id: "A1", zh: "入門", fr: "Découverte", desc: "能用簡單句子介紹自己、談日常生活" },
   { id: "A2", zh: "基礎", fr: "Survie", desc: "能描述過去的經驗、熟悉的人事物" },
   { id: "B1", zh: "進階", fr: "Seuil", desc: "能談論計畫、假設與自己的看法" },
+  { id: "B2", zh: "流利", fr: "Avancé", desc: "能清楚表達與論證觀點、轉述他人說的話" },
+  { id: "C1", zh: "高階", fr: "Autonome", desc: "能精確、有層次地表達複雜的想法" },
+  { id: "C2", zh: "精通", fr: "Maîtrise", desc: "能掌握文學語體、慣用語與細微的語感差異" },
 ];
 
 export const GRAMMAR: Record<Level, Topic[]> = {
@@ -43,6 +46,31 @@ export const GRAMMAR: Record<Level, Topic[]> = {
     { id: "si-hypothese", zh: "si 條件句", fr: "L'hypothèse avec si" },
     { id: "subjonctif", zh: "虛擬式現在式", fr: "Le subjonctif présent" },
     { id: "passif", zh: "被動語態", fr: "La voix passive" },
+  ],
+  B2: [
+    { id: "conditionnel-passe", zh: "條件式過去式", fr: "Le conditionnel passé" },
+    { id: "subjonctif-indicatif", zh: "虛擬式還是直陳式", fr: "Subjonctif ou indicatif" },
+    { id: "gerondif", zh: "副動詞與現在分詞", fr: "Le gérondif et le participe présent" },
+    { id: "relatifs-composes", zh: "複合關係代名詞", fr: "Les relatifs composés" },
+    { id: "discours-indirect", zh: "間接引語", fr: "Le discours indirect" },
+    { id: "connecteurs", zh: "邏輯連接詞", fr: "Les connecteurs logiques" },
+    { id: "pronoms-doubles", zh: "雙重受詞代名詞", fr: "Les doubles pronoms" },
+  ],
+  C1: [
+    { id: "futur-anterieur", zh: "先未來式", fr: "Le futur antérieur" },
+    { id: "conjonctions-subjonctif", zh: "接虛擬式的連接詞", fr: "Les conjonctions + subjonctif" },
+    { id: "accord-participe", zh: "過去分詞的配合", fr: "L'accord du participe passé" },
+    { id: "mise-en-relief", zh: "強調句", fr: "La mise en relief" },
+    { id: "nominalisation", zh: "名詞化", fr: "La nominalisation" },
+    { id: "negation-avancee", zh: "進階否定與贅詞 ne", fr: "La négation complexe et le ne explétif" },
+  ],
+  C2: [
+    { id: "passe-simple", zh: "簡單過去式", fr: "Le passé simple" },
+    { id: "subjonctif-imparfait", zh: "虛擬式未完成過去式", fr: "Le subjonctif imparfait" },
+    { id: "inversion", zh: "文體倒裝", fr: "L'inversion stylistique" },
+    { id: "expressions", zh: "慣用語", fr: "Les expressions idiomatiques" },
+    { id: "registres", zh: "語域轉換", fr: "Les registres de langue" },
+    { id: "collocations", zh: "搭配詞與近義詞", fr: "Collocations et nuances lexicales" },
   ],
 };
 

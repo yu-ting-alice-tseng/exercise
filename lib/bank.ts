@@ -27,6 +27,25 @@ import b1PlusQueParfait from "@/data/questions/b1/plus-que-parfait.json";
 import b1SiHypothese from "@/data/questions/b1/si-hypothese.json";
 import b1Subjonctif from "@/data/questions/b1/subjonctif.json";
 import b1Passif from "@/data/questions/b1/passif.json";
+import b2ConditionnelPasse from "@/data/questions/b2/conditionnel-passe.json";
+import b2SubjonctifIndicatif from "@/data/questions/b2/subjonctif-indicatif.json";
+import b2Gerondif from "@/data/questions/b2/gerondif.json";
+import b2RelatifsComposes from "@/data/questions/b2/relatifs-composes.json";
+import b2DiscoursIndirect from "@/data/questions/b2/discours-indirect.json";
+import b2Connecteurs from "@/data/questions/b2/connecteurs.json";
+import b2PronomsDoubles from "@/data/questions/b2/pronoms-doubles.json";
+import c1FuturAnterieur from "@/data/questions/c1/futur-anterieur.json";
+import c1ConjonctionsSubjonctif from "@/data/questions/c1/conjonctions-subjonctif.json";
+import c1AccordParticipe from "@/data/questions/c1/accord-participe.json";
+import c1MiseEnRelief from "@/data/questions/c1/mise-en-relief.json";
+import c1Nominalisation from "@/data/questions/c1/nominalisation.json";
+import c1NegationAvancee from "@/data/questions/c1/negation-avancee.json";
+import c2PasseSimple from "@/data/questions/c2/passe-simple.json";
+import c2SubjonctifImparfait from "@/data/questions/c2/subjonctif-imparfait.json";
+import c2Inversion from "@/data/questions/c2/inversion.json";
+import c2Expressions from "@/data/questions/c2/expressions.json";
+import c2Registres from "@/data/questions/c2/registres.json";
+import c2Collocations from "@/data/questions/c2/collocations.json";
 
 const FILES = [
   a1Articles,
@@ -54,6 +73,25 @@ const FILES = [
   b1SiHypothese,
   b1Subjonctif,
   b1Passif,
+  b2ConditionnelPasse,
+  b2SubjonctifIndicatif,
+  b2Gerondif,
+  b2RelatifsComposes,
+  b2DiscoursIndirect,
+  b2Connecteurs,
+  b2PronomsDoubles,
+  c1FuturAnterieur,
+  c1ConjonctionsSubjonctif,
+  c1AccordParticipe,
+  c1MiseEnRelief,
+  c1Nominalisation,
+  c1NegationAvancee,
+  c2PasseSimple,
+  c2SubjonctifImparfait,
+  c2Inversion,
+  c2Expressions,
+  c2Registres,
+  c2Collocations,
 ];
 
 export const BANK: Question[] = FILES.flat() as Question[];

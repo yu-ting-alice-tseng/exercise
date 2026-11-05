@@ -1,0 +1,219 @@
+[
+  {
+    "id": "b2-pd-001",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的代名詞組合",
+    "stem": "Tu prêtes ton vélo à Paul ? Oui, je ___ prête.",
+    "options": [
+      "le lui",
+      "lui le",
+      "le leur",
+      "l'y"
+    ],
+    "answer": 0,
+    "explanation": "直接受詞 le 放在間接受詞 lui 前面：je le lui prête。"
+  },
+  {
+    "id": "b2-pd-002",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "loisirs",
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的代名詞組合",
+    "stem": "Tu m'envoies les photos ? Oui, je ___ envoie.",
+    "options": [
+      "te les",
+      "les te",
+      "t'en",
+      "te leur"
+    ],
+    "answer": 0,
+    "explanation": "me、te、nous、vous 放在 le、la、les 前面：je te les envoie。"
+  },
+  {
+    "id": "b2-pd-003",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的命令式",
+    "stem": "Il y a du pain ? ___ !",
+    "options": [
+      "Donne-m'en",
+      "Donne-moi-en",
+      "Donne-en-moi",
+      "Donne-le-moi"
+    ],
+    "answer": 0,
+    "explanation": "肯定命令式中，moi 遇到 en 要變成 m'：Donne-m'en !"
+  },
+  {
+    "id": "b2-pd-004",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "famille",
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的代名詞組合",
+    "stem": "Vous avez parlé de vos vacances à vos parents ? Oui, nous ___ avons parlé.",
+    "options": [
+      "leur en",
+      "en leur",
+      "les en",
+      "leur y"
+    ],
+    "answer": 0,
+    "explanation": "間接受詞 leur 放在 en 前面：nous leur en avons parlé。"
+  },
+  {
+    "id": "b2-pd-005",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "famille",
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請用兩個代名詞取代受詞",
+    "stem": "Tu donnes les clés à ta sœur ? Oui, je ___ donne.",
+    "answers": [
+      "les lui"
+    ],
+    "explanation": "les（les clés）放在 lui（à ta sœur）前面。"
+  },
+  {
+    "id": "b2-pd-006",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請用兩個代名詞取代受詞",
+    "stem": "Tu me prêtes ta voiture ? Oui, je ___ prête.",
+    "answers": [
+      "te la"
+    ],
+    "explanation": "te 放在 la 前面：je te la prête。"
+  },
+  {
+    "id": "b2-pd-007",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "famille",
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請用兩個代名詞取代受詞",
+    "stem": "Elle a offert des fleurs à sa mère ? Oui, elle ___ a offert.",
+    "answers": [
+      "lui en"
+    ],
+    "explanation": "des fleurs 用 en，à sa mère 用 lui，順序是 lui en。用 en 時過去分詞不配合。"
+  },
+  {
+    "id": "b2-pd-008",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "loisirs",
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請用兩個代名詞改寫命令句",
+    "stem": "Montre la photo à tes amis ! → Montre-___ !",
+    "answers": [
+      "la-leur"
+    ],
+    "explanation": "肯定命令式中，直接受詞在前、間接受詞在後，用連字號連接：montre-la-leur。"
+  },
+  {
+    "id": "b2-pd-009",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用兩個代名詞肯定回答。",
+    "stem": "Tu as rendu le livre à la bibliothécaire ?",
+    "answers": [
+      "Oui, je le lui ai rendu."
+    ],
+    "explanation": "le livre → le，à la bibliothécaire → lui，放在助動詞前面。"
+  },
+  {
+    "id": "b2-pd-010",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用兩個代名詞肯定回答。",
+    "stem": "Tu me racontes cette histoire ?",
+    "answers": [
+      "Oui, je te la raconte.",
+      "Oui, je vais te la raconter."
+    ],
+    "explanation": "me → te（回答時人稱改變），cette histoire → la。"
+  },
+  {
+    "id": "b2-pd-011",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "ecole-travail",
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用兩個代名詞肯定回答。",
+    "stem": "Vous avez parlé de vos vacances à vos collègues ?",
+    "answers": [
+      "Oui, nous leur en avons parlé.",
+      "Oui, on leur en a parlé.",
+      "Oui, je leur en ai parlé."
+    ],
+    "explanation": "de vos vacances → en，à vos collègues → leur，順序 leur en。"
+  },
+  {
+    "id": "b2-pd-012",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用代名詞取代 le sel，改寫這個命令句。",
+    "stem": "Donne-moi le sel.",
+    "answers": [
+      "Donne-le-moi."
+    ],
+    "explanation": "肯定命令式：直接受詞在前，moi 在後：donne-le-moi。"
+  }
+]

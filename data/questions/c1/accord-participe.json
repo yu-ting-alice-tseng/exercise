@@ -1,0 +1,222 @@
+[
+  {
+    "id": "c1-ap-001",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "nourriture",
+      "achats"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的過去分詞",
+    "stem": "Les fleurs que j'ai ___ sont déjà fanées.",
+    "options": [
+      "achetées",
+      "acheté",
+      "achetés",
+      "achetée"
+    ],
+    "answer": 0,
+    "explanation": "用 avoir 時，直接受詞（que = les fleurs）放在前面，過去分詞要配合：achetées。"
+  },
+  {
+    "id": "c1-ap-002",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "quotidien",
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的過去分詞",
+    "stem": "Elles se sont ___ les mains.",
+    "options": [
+      "lavé",
+      "lavées",
+      "lavés",
+      "lavée"
+    ],
+    "answer": 0,
+    "explanation": "直接受詞 les mains 在動詞後面，se 是間接受詞，所以過去分詞不配合：lavé。"
+  },
+  {
+    "id": "c1-ap-003",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的過去分詞",
+    "stem": "Elle s'est ___ en faisant du sport.",
+    "options": [
+      "blessée",
+      "blessé",
+      "blessés",
+      "blesser"
+    ],
+    "answer": 0,
+    "explanation": "se 是直接受詞（她傷了自己），過去分詞和主詞配合：blessée。"
+  },
+  {
+    "id": "c1-ap-004",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的過去分詞",
+    "stem": "Ils se sont ___ toute la soirée.",
+    "options": [
+      "parlé",
+      "parlés",
+      "parlées",
+      "parler"
+    ],
+    "answer": 0,
+    "explanation": "parler à quelqu'un，se 是間接受詞，過去分詞不配合：parlé。"
+  },
+  {
+    "id": "c1-ap-005",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的過去分詞（注意配合）",
+    "stem": "Quelle robe as-tu ___ (choisir) ?",
+    "answers": [
+      "choisie"
+    ],
+    "explanation": "直接受詞 quelle robe 在前面，過去分詞配合陰性單數：choisie。"
+  },
+  {
+    "id": "c1-ap-006",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "famille",
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的過去分詞（注意配合）",
+    "stem": "Les lettres qu'elle a ___ (écrire) sont touchantes.",
+    "answers": [
+      "écrites"
+    ],
+    "explanation": "que = les lettres（陰性複數）在前面，過去分詞要配合：écrites。"
+  },
+  {
+    "id": "c1-ap-007",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "presentation"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的過去分詞（注意配合）",
+    "stem": "Nous nous sommes ___ (rencontrer) en 2015.",
+    "answers": [
+      "rencontrés",
+      "rencontrées"
+    ],
+    "explanation": "se rencontrer：se 是直接受詞，過去分詞和主詞配合。"
+  },
+  {
+    "id": "c1-ap-008",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "ecole-travail",
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的過去分詞（注意配合）",
+    "stem": "Combien de livres as-tu ___ (lire) cet été ?",
+    "answers": [
+      "lus"
+    ],
+    "explanation": "直接受詞 combien de livres 在前面，過去分詞配合陽性複數：lus。"
+  },
+  {
+    "id": "c1-ap-009",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用代名詞取代 tes sœurs 改寫（注意過去分詞的配合）。",
+    "stem": "J'ai vu tes sœurs hier.",
+    "answers": [
+      "Je les ai vues hier.",
+      "Hier, je les ai vues."
+    ],
+    "explanation": "les（= tes sœurs）放在 avoir 前面，過去分詞要配合：vues。"
+  },
+  {
+    "id": "c1-ap-010",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用代名詞取代 la voiture 改寫（注意過去分詞的配合）。",
+    "stem": "Elle a pris la voiture.",
+    "answers": [
+      "Elle l'a prise."
+    ],
+    "explanation": "l'（= la voiture）放在前面，過去分詞配合陰性：prise。"
+  },
+  {
+    "id": "c1-ap-011",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：她們昨天晚上很早就睡了。",
+    "stem": "",
+    "answers": [
+      "Elles se sont couchées tôt hier soir.",
+      "Hier soir, elles se sont couchées tôt.",
+      "Elles se sont couchées très tôt hier soir.",
+      "Hier soir, elles se sont couchées très tôt."
+    ],
+    "explanation": "se coucher：se 是直接受詞，過去分詞配合主詞 elles：couchées。"
+  },
+  {
+    "id": "c1-ap-012",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "famille",
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：他們互相寫了很多信。",
+    "stem": "",
+    "answers": [
+      "Ils se sont écrit beaucoup de lettres.",
+      "Ils se sont écrit de nombreuses lettres.",
+      "Ils se sont écrit énormément de lettres."
+    ],
+    "explanation": "écrire à quelqu'un：se 是間接受詞，直接受詞 lettres 在後面，所以過去分詞 écrit 不配合。"
+  }
+]

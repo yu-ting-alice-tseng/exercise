@@ -1,0 +1,220 @@
+[
+  {
+    "id": "c2-ps-001",
+    "level": "C2",
+    "grammar": "passe-simple",
+    "themes": [
+      "culture",
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的簡單過去式",
+    "stem": "Il ___ la porte et sortit.",
+    "options": [
+      "ouvrit",
+      "ouvra",
+      "ouvrut",
+      "ouvrait"
+    ],
+    "answer": 0,
+    "explanation": "ouvrir 雖然是 -ir 結尾，簡單過去式是 il ouvrit。簡單過去式用於文學敘事。"
+  },
+  {
+    "id": "c2-ps-002",
+    "level": "C2",
+    "grammar": "passe-simple",
+    "themes": [
+      "culture",
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的簡單過去式（童話結尾）",
+    "stem": "Ils ___ heureux et eurent beaucoup d'enfants.",
+    "options": [
+      "furent",
+      "fûrent",
+      "furirent",
+      "étèrent"
+    ],
+    "answer": 0,
+    "explanation": "être 的簡單過去式：je fus、il fut、ils furent。"
+  },
+  {
+    "id": "c2-ps-003",
+    "level": "C2",
+    "grammar": "passe-simple",
+    "themes": [
+      "culture",
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的簡單過去式",
+    "stem": "Elle ___ une longue lettre à son frère.",
+    "options": [
+      "écrivit",
+      "écrit",
+      "écriva",
+      "écrivut"
+    ],
+    "answer": 0,
+    "explanation": "écrire 的簡單過去式是 il écrivit；écrit 是現在式或過去分詞。"
+  },
+  {
+    "id": "c2-ps-004",
+    "level": "C2",
+    "grammar": "passe-simple",
+    "themes": [
+      "voyage",
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的簡單過去式",
+    "stem": "Nous ___ le lendemain à l'aube.",
+    "options": [
+      "partîmes",
+      "partimes",
+      "partâmes",
+      "partons"
+    ],
+    "answer": 0,
+    "explanation": "-ir 動詞 nous 的簡單過去式是 -îmes，要加長音符號：partîmes。"
+  },
+  {
+    "id": "c2-ps-005",
+    "level": "C2",
+    "grammar": "passe-simple",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的簡單過去式",
+    "stem": "Louis XIV ___ (mourir) en 1715.",
+    "answers": [
+      "mourut"
+    ],
+    "explanation": "mourir 的簡單過去式是不規則的 il mourut。"
+  },
+  {
+    "id": "c2-ps-006",
+    "level": "C2",
+    "grammar": "passe-simple",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的簡單過去式",
+    "stem": "Soudain, elle ___ (voir) une ombre derrière la fenêtre.",
+    "answers": [
+      "vit"
+    ],
+    "explanation": "voir 的簡單過去式：il vit（和 vivre 的現在式同形，要靠上下文分辨）。"
+  },
+  {
+    "id": "c2-ps-007",
+    "level": "C2",
+    "grammar": "passe-simple",
+    "themes": [
+      "famille",
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的簡單過去式",
+    "stem": "Ses amis ___ (venir) le voir à l'hôpital.",
+    "answers": [
+      "vinrent"
+    ],
+    "explanation": "venir 的簡單過去式：il vint、ils vinrent。"
+  },
+  {
+    "id": "c2-ps-008",
+    "level": "C2",
+    "grammar": "passe-simple",
+    "themes": [
+      "achats",
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的簡單過去式",
+    "stem": "Ce matin-là, j'___ (aller) au marché.",
+    "answers": [
+      "allai"
+    ],
+    "explanation": "-er 動詞 je 的簡單過去式是 -ai：j'allai（注意和未完成過去式 j'allais 只差一個 s）。"
+  },
+  {
+    "id": "c2-ps-009",
+    "level": "C2",
+    "grammar": "passe-simple",
+    "themes": [
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請把動詞改成簡單過去式。",
+    "stem": "Il a pris son chapeau et il est parti.",
+    "answers": [
+      "Il prit son chapeau et partit.",
+      "Il prit son chapeau et il partit."
+    ],
+    "explanation": "prendre → il prit；partir → il partit。簡單過去式沒有助動詞。"
+  },
+  {
+    "id": "c2-ps-010",
+    "level": "C2",
+    "grammar": "passe-simple",
+    "themes": [
+      "culture",
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請把動詞改成簡單過去式。",
+    "stem": "Elle a regardé par la fenêtre.",
+    "answers": [
+      "Elle regarda par la fenêtre."
+    ],
+    "explanation": "-er 動詞第三人稱單數的簡單過去式是 -a：regarda。"
+  },
+  {
+    "id": "c2-ps-011",
+    "level": "C2",
+    "grammar": "passe-simple",
+    "themes": [
+      "voyage",
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請把動詞改成簡單過去式。",
+    "stem": "Ils ont fait un long voyage.",
+    "answers": [
+      "Ils firent un long voyage."
+    ],
+    "explanation": "faire 的簡單過去式：il fit、ils firent。"
+  },
+  {
+    "id": "c2-ps-012",
+    "level": "C2",
+    "grammar": "passe-simple",
+    "themes": [
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請把動詞改成簡單過去式（被動語態）。",
+    "stem": "Nous avons été surpris.",
+    "answers": [
+      "Nous fûmes surpris.",
+      "Nous fûmes surprises."
+    ],
+    "explanation": "être 的簡單過去式 nous fûmes，過去分詞照常配合主詞。"
+  }
+]

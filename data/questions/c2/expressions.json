@@ -1,0 +1,214 @@
+[
+  {
+    "id": "c2-exp-001",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出這個慣用語的意思",
+    "stem": "« Avoir le cafard »",
+    "options": [
+      "心情低落",
+      "怕蟑螂",
+      "很生氣",
+      "肚子很餓"
+    ],
+    "answer": 0,
+    "explanation": "cafard 本意是蟑螂，avoir le cafard 表示心情低落、憂鬱。"
+  },
+  {
+    "id": "c2-exp-002",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出這個慣用語的意思",
+    "stem": "« Poser un lapin à quelqu'un »",
+    "options": [
+      "放某人鴿子",
+      "送某人禮物",
+      "請某人吃飯",
+      "嘲笑某人"
+    ],
+    "answer": 0,
+    "explanation": "poser un lapin：約好了卻沒出現。"
+  },
+  {
+    "id": "c2-exp-003",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "achats"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出這個慣用語的意思",
+    "stem": "« Coûter les yeux de la tête »",
+    "options": [
+      "非常昂貴",
+      "很傷眼睛",
+      "非常便宜",
+      "讓人頭痛"
+    ],
+    "answer": 0,
+    "explanation": "字面是「花掉頭上的眼睛」，表示貴得不得了。"
+  },
+  {
+    "id": "c2-exp-004",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出這個慣用語的意思",
+    "stem": "« Avoir un poil dans la main »",
+    "options": [
+      "很懶惰",
+      "很有天分",
+      "手很巧",
+      "很緊張"
+    ],
+    "answer": 0,
+    "explanation": "字面是「手心長毛」（因為從來不用手做事），表示很懶。"
+  },
+  {
+    "id": "c2-exp-005",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "meteo"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入缺少的字（意思：下傾盆大雨）",
+    "stem": "Il pleut des ___.",
+    "answers": [
+      "cordes"
+    ],
+    "explanation": "il pleut des cordes：雨大得像一條條繩子。"
+  },
+  {
+    "id": "c2-exp-006",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入缺少的字（意思：一石二鳥）",
+    "stem": "Faire d'une pierre deux ___.",
+    "answers": [
+      "coups"
+    ],
+    "explanation": "faire d'une pierre deux coups：一次達成兩個目的。"
+  },
+  {
+    "id": "c2-exp-007",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入缺少的字（意思：心情很差）",
+    "stem": "Il est de mauvais ___ ce matin.",
+    "answers": [
+      "poil"
+    ],
+    "explanation": "être de mauvais poil 是口語，表示心情不好、脾氣差。"
+  },
+  {
+    "id": "c2-exp-008",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入缺少的字（意思：親自動手幫忙）",
+    "stem": "Il faut mettre la main à la ___.",
+    "answers": [
+      "pâte"
+    ],
+    "explanation": "mettre la main à la pâte：字面是「把手放進麵團」，表示親自參與、幫忙做事。"
+  },
+  {
+    "id": "c2-exp-009",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 poser un lapin 翻譯成法文：他放了我鴿子。",
+    "stem": "",
+    "answers": [
+      "Il m'a posé un lapin."
+    ],
+    "explanation": "poser un lapin à quelqu'un；à moi 變成代名詞 m'。"
+  },
+  {
+    "id": "c2-exp-010",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "achats"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請用 coûter les yeux de la tête 翻譯成法文：這貴得要命！",
+    "stem": "",
+    "answers": [
+      "Ça coûte les yeux de la tête !",
+      "Cela coûte les yeux de la tête !",
+      "Ça coûte les yeux de la tête."
+    ],
+    "explanation": "口語常用 ça 當主詞。"
+  },
+  {
+    "id": "c2-exp-011",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請用 avoir le cafard 翻譯成法文：我今天心情很低落。",
+    "stem": "",
+    "answers": [
+      "J'ai le cafard aujourd'hui.",
+      "Aujourd'hui, j'ai le cafard."
+    ],
+    "explanation": "avoir le cafard 不加形容詞就已經有「很低落」的意思。"
+  },
+  {
+    "id": "c2-exp-012",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 tourner autour du pot 翻譯成法文：別再拐彎抹角了！（對 tu）",
+    "stem": "",
+    "answers": [
+      "Arrête de tourner autour du pot !",
+      "Ne tourne pas autour du pot !"
+    ],
+    "explanation": "tourner autour du pot：繞著鍋子轉，表示說話不直接。"
+  }
+]

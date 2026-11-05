@@ -1,0 +1,224 @@
+[
+  {
+    "id": "c1-nom-001",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出動詞的名詞形式",
+    "stem": "décider → une ___",
+    "options": [
+      "décision",
+      "décidement",
+      "décidation",
+      "décidance"
+    ],
+    "answer": 0,
+    "explanation": "décider 的名詞是 la décision。"
+  },
+  {
+    "id": "c1-nom-002",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "achats",
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出動詞的名詞形式",
+    "stem": "augmenter → une ___",
+    "options": [
+      "augmentation",
+      "augmentement",
+      "augmentance",
+      "augmentage"
+    ],
+    "answer": 0,
+    "explanation": "-er 動詞常用 -ation 構成名詞：augmentation。"
+  },
+  {
+    "id": "c1-nom-003",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "achats"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的名詞化說法",
+    "stem": "Les prix ont baissé. → La ___ des prix",
+    "options": [
+      "baisse",
+      "baissement",
+      "baissage",
+      "baissation"
+    ],
+    "answer": 0,
+    "explanation": "baisser 的名詞是 la baisse（去掉詞尾）。"
+  },
+  {
+    "id": "c1-nom-004",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的名詞化說法",
+    "stem": "Le ministre a démissionné. → La ___ du ministre",
+    "options": [
+      "démission",
+      "démissionnement",
+      "démissionnage",
+      "démise"
+    ],
+    "answer": 0,
+    "explanation": "démissionner 是從名詞 démission 來的。"
+  },
+  {
+    "id": "c1-nom-005",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "logement",
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請寫出動詞的名詞形式",
+    "stem": "construire → la ___",
+    "answers": [
+      "construction"
+    ],
+    "explanation": "construire → construction。"
+  },
+  {
+    "id": "c1-nom-006",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請寫出動詞的名詞形式",
+    "stem": "arriver → l'___",
+    "answers": [
+      "arrivée"
+    ],
+    "explanation": "很多動詞的名詞來自過去分詞的陰性：arrivée、entrée、sortie。"
+  },
+  {
+    "id": "c1-nom-007",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請寫出動詞的名詞形式",
+    "stem": "choisir → le ___",
+    "answers": [
+      "choix"
+    ],
+    "explanation": "choisir 的名詞是不規則的 le choix。"
+  },
+  {
+    "id": "c1-nom-008",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請寫出動詞的名詞形式",
+    "stem": "réussir → la ___",
+    "answers": [
+      "réussite"
+    ],
+    "explanation": "réussir 的名詞是 la réussite。"
+  },
+  {
+    "id": "c1-nom-009",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請改寫成名詞化的新聞標題（不用動詞變化）。",
+    "stem": "Le musée ouvrira en mai.",
+    "answers": [
+      "Ouverture du musée en mai.",
+      "L'ouverture du musée en mai.",
+      "Ouverture du musée en mai"
+    ],
+    "explanation": "新聞標題常把動詞名詞化：ouvrir → l'ouverture。"
+  },
+  {
+    "id": "c1-nom-010",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "ecole-travail",
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請改寫成名詞化的新聞標題（不用動詞變化）。",
+    "stem": "Les étudiants manifestent à Paris.",
+    "answers": [
+      "Manifestation des étudiants à Paris.",
+      "Manifestation étudiante à Paris.",
+      "La manifestation des étudiants à Paris."
+    ],
+    "explanation": "manifester → la manifestation。"
+  },
+  {
+    "id": "c1-nom-011",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請改寫成名詞化的新聞標題（不用動詞變化）。",
+    "stem": "Le train est arrivé en retard.",
+    "answers": [
+      "Arrivée tardive du train.",
+      "L'arrivée tardive du train.",
+      "Arrivée en retard du train.",
+      "Retard du train."
+    ],
+    "explanation": "arriver → l'arrivée；en retard 名詞化後常變成形容詞 tardive。"
+  },
+  {
+    "id": "c1-nom-012",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "culture",
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請改寫成名詞化的新聞標題（不用動詞變化）。",
+    "stem": "Le gouvernement a réformé le système des retraites.",
+    "answers": [
+      "Réforme du système des retraites.",
+      "La réforme du système des retraites.",
+      "Réforme du système des retraites par le gouvernement.",
+      "Réforme des retraites."
+    ],
+    "explanation": "réformer → la réforme。名詞化後，原本的受詞用 de 連接。"
+  }
+]

@@ -1,0 +1,215 @@
+[
+  {
+    "id": "c2-sim-001",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出文學語體中正確的形式",
+    "stem": "Il fallait qu'il ___ avant la nuit.",
+    "options": [
+      "vînt",
+      "vint",
+      "vienne",
+      "viendrait"
+    ],
+    "answer": 0,
+    "explanation": "主要子句是過去式時，文學語體用虛擬式未完成過去式：qu'il vînt（有長音符號）。vint 是簡單過去式。"
+  },
+  {
+    "id": "c2-sim-002",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "culture",
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出文學語體中正確的形式",
+    "stem": "Je voulais qu'elle ___ heureuse.",
+    "options": [
+      "fût",
+      "fut",
+      "était",
+      "serait"
+    ],
+    "answer": 0,
+    "explanation": "être 的虛擬式未完成過去式：qu'il fût。fut 是簡單過去式。"
+  },
+  {
+    "id": "c2-sim-003",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出文學語體中正確的形式",
+    "stem": "Bien qu'il ___ raison, personne ne l'écouta.",
+    "options": [
+      "eût",
+      "eut",
+      "aurait",
+      "avait"
+    ],
+    "answer": 0,
+    "explanation": "avoir 的虛擬式未完成過去式：qu'il eût。bien que 後面一定用虛擬式。"
+  },
+  {
+    "id": "c2-sim-004",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "culture",
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出文學語體中正確的形式",
+    "stem": "Je craignais qu'ils ne ___.",
+    "options": [
+      "partissent",
+      "partirent",
+      "partent",
+      "partiraient"
+    ],
+    "answer": 0,
+    "explanation": "虛擬式未完成過去式＝簡單過去式詞幹＋-sse 系列詞尾：qu'ils partissent。"
+  },
+  {
+    "id": "c2-sim-005",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的虛擬式未完成過去式",
+    "stem": "Il fallait que nous ___ (faire) vite.",
+    "answers": [
+      "fissions"
+    ],
+    "explanation": "faire 的簡單過去式詞幹 fi-，加上 -ssions：que nous fissions。"
+  },
+  {
+    "id": "c2-sim-006",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "culture",
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的虛擬式未完成過去式",
+    "stem": "Elle souhaitait qu'il ___ (pouvoir) venir.",
+    "answers": [
+      "pût"
+    ],
+    "explanation": "pouvoir 的虛擬式未完成過去式：qu'il pût。"
+  },
+  {
+    "id": "c2-sim-007",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的虛擬式未完成過去式",
+    "stem": "Qu'il ___ (avoir) tort ou raison, peu importait.",
+    "answers": [
+      "eût"
+    ],
+    "explanation": "avoir 的虛擬式未完成過去式：qu'il eût。"
+  },
+  {
+    "id": "c2-sim-008",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的虛擬式未完成過去式",
+    "stem": "On attendait qu'elle ___ (parler).",
+    "answers": [
+      "parlât"
+    ],
+    "explanation": "-er 動詞第三人稱單數：-ât（加長音符號），例如 qu'elle parlât。"
+  },
+  {
+    "id": "c2-sim-009",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請改成現代法語（用虛擬式現在式）。",
+    "stem": "Il fallait qu'il partît.",
+    "answers": [
+      "Il fallait qu'il parte."
+    ],
+    "explanation": "現代法語幾乎不用虛擬式未完成過去式，改用虛擬式現在式：qu'il parte。"
+  },
+  {
+    "id": "c2-sim-010",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請改成現代法語（用虛擬式現在式）。",
+    "stem": "Je voulais qu'elle vînt.",
+    "answers": [
+      "Je voulais qu'elle vienne."
+    ],
+    "explanation": "vînt → vienne。"
+  },
+  {
+    "id": "c2-sim-011",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "culture",
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請改成現代法語（虛擬式現在式＋複合過去式）。",
+    "stem": "Bien qu'il fût malade, il travailla.",
+    "answers": [
+      "Bien qu'il soit malade, il a travaillé.",
+      "Bien qu'il ait été malade, il a travaillé."
+    ],
+    "explanation": "fût → soit；簡單過去式 travailla 改成複合過去式 a travaillé。"
+  },
+  {
+    "id": "c2-sim-012",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請改成現代法語（用虛擬式過去式）。",
+    "stem": "Je doutais qu'ils eussent compris.",
+    "answers": [
+      "Je doutais qu'ils aient compris."
+    ],
+    "explanation": "eussent compris 是虛擬式愈過去式，現代法語改成虛擬式過去式：qu'ils aient compris。"
+  }
+]

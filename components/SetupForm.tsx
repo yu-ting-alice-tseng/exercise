@@ -86,7 +86,7 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
       <div className="space-y-4">
         <Card className="p-4 sm:p-5">
           <Heading fr="Étape 1 · Niveau" zh="選擇等級" />
-          <div className="mt-3 grid grid-cols-3 gap-2 sm:gap-3">
+          <div className="mt-3 grid grid-cols-3 gap-2 sm:gap-3 md:grid-cols-6">
             {LEVELS.map((l) => {
               const on = level === l.id;
               return (

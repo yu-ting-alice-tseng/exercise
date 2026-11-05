@@ -1,0 +1,227 @@
+[
+  {
+    "id": "b2-rc-001",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的關係代名詞",
+    "stem": "C'est le stylo avec ___ j'écris.",
+    "options": [
+      "lequel",
+      "laquelle",
+      "que",
+      "qui"
+    ],
+    "answer": 0,
+    "explanation": "介系詞 + 事物，用 lequel 系列；stylo 是陽性單數：avec lequel。"
+  },
+  {
+    "id": "b2-rc-002",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的關係代名詞",
+    "stem": "Voilà la raison pour ___ je suis venu.",
+    "options": [
+      "laquelle",
+      "lequel",
+      "quoi",
+      "que"
+    ],
+    "answer": 0,
+    "explanation": "raison 是陰性單數：pour laquelle。"
+  },
+  {
+    "id": "b2-rc-003",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的關係代名詞",
+    "stem": "Ce sont des problèmes ___ je pense souvent.",
+    "options": [
+      "auxquels",
+      "desquels",
+      "lesquels",
+      "dont"
+    ],
+    "answer": 0,
+    "explanation": "penser à quelque chose：à + lesquels 縮合成 auxquels。"
+  },
+  {
+    "id": "b2-rc-004",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "voyage",
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的關係代名詞",
+    "stem": "C'est le parc au milieu ___ se trouve la fontaine.",
+    "options": [
+      "duquel",
+      "dont",
+      "auquel",
+      "lequel"
+    ],
+    "answer": 0,
+    "explanation": "複合介系詞（au milieu de、à côté de、près de）後面不能用 dont，要用 duquel／de laquelle。"
+  },
+  {
+    "id": "b2-rc-005",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 lequel、laquelle、lesquels 或 lesquelles",
+    "stem": "La table sur ___ tu as mis tes clés est en bois.",
+    "answers": [
+      "laquelle"
+    ],
+    "explanation": "table 是陰性單數：sur laquelle。"
+  },
+  {
+    "id": "b2-rc-006",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入適當的關係代名詞",
+    "stem": "Les collègues avec ___ je travaille sont sympathiques.",
+    "answers": [
+      "lesquels",
+      "qui"
+    ],
+    "explanation": "介系詞後面指人時，可以用 qui，也可以用 lequel 系列：avec qui／avec lesquels。"
+  },
+  {
+    "id": "b2-rc-007",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 lequel、laquelle、lesquels 或 lesquelles",
+    "stem": "C'est une question à ___ je ne peux pas répondre.",
+    "answers": [
+      "laquelle"
+    ],
+    "explanation": "répondre à quelque chose，question 是陰性：à laquelle（à laquelle 不縮合）。"
+  },
+  {
+    "id": "b2-rc-008",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "voyage",
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入 à 和 lequel 系列的縮合形式",
+    "stem": "Les villes ___ nous avons pensé sont trop chères.",
+    "answers": [
+      "auxquelles"
+    ],
+    "explanation": "penser à，villes 是陰性複數：à + lesquelles → auxquelles。"
+  },
+  {
+    "id": "b2-rc-009",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 avec lequel 翻譯成法文：這是我用來切麵包的刀。",
+    "stem": "",
+    "answers": [
+      "C'est le couteau avec lequel je coupe le pain.",
+      "Voici le couteau avec lequel je coupe le pain.",
+      "Voilà le couteau avec lequel je coupe le pain."
+    ],
+    "explanation": "couteau 是陽性單數：avec lequel。"
+  },
+  {
+    "id": "b2-rc-010",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 pour laquelle 翻譯成法文：這就是我辭職的原因。",
+    "stem": "",
+    "answers": [
+      "C'est la raison pour laquelle j'ai démissionné.",
+      "Voilà la raison pour laquelle j'ai démissionné.",
+      "Voici la raison pour laquelle j'ai démissionné."
+    ],
+    "explanation": "la raison pour laquelle 是固定用法，表示「…的原因」。"
+  },
+  {
+    "id": "b2-rc-011",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：我要參加的比賽在星期六。",
+    "stem": "",
+    "answers": [
+      "La compétition à laquelle je vais participer a lieu samedi.",
+      "Le concours auquel je vais participer a lieu samedi.",
+      "La compétition à laquelle je participe a lieu samedi.",
+      "Le concours auquel je participe a lieu samedi.",
+      "La compétition à laquelle je vais participer est samedi.",
+      "Le concours auquel je vais participer est samedi.",
+      "Le match auquel je vais participer a lieu samedi.",
+      "Le match auquel je vais participer est samedi."
+    ],
+    "explanation": "participer à：陽性用 auquel，陰性用 à laquelle。"
+  },
+  {
+    "id": "b2-rc-012",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用 à côté de laquelle 翻譯成法文：坐在我旁邊的那個人是我的同事。",
+    "stem": "",
+    "answers": [
+      "La personne à côté de laquelle je suis assis est ma collègue.",
+      "La personne à côté de laquelle je suis assise est ma collègue.",
+      "La personne à côté de laquelle je suis assis est mon collègue.",
+      "La personne à côté de laquelle je suis assise est mon collègue."
+    ],
+    "explanation": "à côté de 是複合介系詞，不能用 dont；personne 是陰性：à côté de laquelle。"
+  }
+]

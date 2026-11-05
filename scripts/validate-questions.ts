@@ -1,7 +1,7 @@
 // 檢查題庫格式：npm run validate
 import { readdirSync, readFileSync } from "node:fs";
 import { join, relative } from "node:path";
-import { GRAMMAR, THEMES } from "../lib/taxonomy.ts";
+import { GRAMMAR, LEVELS, THEMES } from "../lib/taxonomy.ts";
 
 const root = join(import.meta.dirname, "..");
 const dir = join(root, "data/questions");
@@ -39,7 +39,7 @@ for (const file of walk(dir)) {
     else if (ids.has(q.id)) errors.push(`${at}：id 重複（也出現在 ${ids.get(q.id)}）`);
     else ids.set(q.id, rel);
 
-    if (!["A1", "A2", "B1"].includes(q.level)) errors.push(`${at}：level 不正確`);
+    if (!LEVELS.some((l) => l.id === q.level)) errors.push(`${at}：level 不正確`);
     else if (!GRAMMAR[q.level as "A1"].some((g) => g.id === q.grammar))
       errors.push(`${at}：grammar「${q.grammar}」不在 ${q.level} 的文法清單裡`);
     if (!Array.isArray(q.themes) || q.themes.length === 0) errors.push(`${at}：至少要有一個主題`);

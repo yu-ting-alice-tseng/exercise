@@ -1,0 +1,235 @@
+[
+  {
+    "id": "b2-cp-001",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Si j'avais su, je ___ plus tôt.",
+    "options": [
+      "serais venu",
+      "viendrais",
+      "suis venu",
+      "étais venu"
+    ],
+    "answer": 0,
+    "explanation": "與過去事實相反的假設：si + 愈過去式，主要子句用條件式過去式。venir 用 être：je serais venu。"
+  },
+  {
+    "id": "b2-cp-002",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出表達「責備」的正確說法",
+    "stem": "Tu ___ me prévenir !",
+    "options": [
+      "aurais dû",
+      "devrais avoir",
+      "avais dû",
+      "aurais devoir"
+    ],
+    "answer": 0,
+    "explanation": "devoir 的條件式過去式 aurais dû + 原形，表示「你早該…（卻沒有）」。"
+  },
+  {
+    "id": "b2-cp-003",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "logement",
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出新聞報導中表示「未經證實」的說法",
+    "stem": "Selon la presse, l'incendie ___ par un court-circuit.",
+    "options": [
+      "aurait été causé",
+      "serait été causé",
+      "aurait causé",
+      "sera causé"
+    ],
+    "answer": 0,
+    "explanation": "新聞用條件式過去式表示消息尚未證實。這裡是被動：aurait été causé。"
+  },
+  {
+    "id": "b2-cp-004",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "meteo",
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Nous ___ partir, mais il pleuvait.",
+    "options": [
+      "aurions voulu",
+      "voudrions",
+      "avons voulu avoir",
+      "aurions voulons"
+    ],
+    "answer": 0,
+    "explanation": "表達過去未實現的願望用條件式過去式：nous aurions voulu。"
+  },
+  {
+    "id": "b2-cp-005",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "presentation"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的條件式過去式",
+    "stem": "Elle ___ (aimer) te rencontrer.",
+    "answers": [
+      "aurait aimé"
+    ],
+    "explanation": "avoir 的條件式 aurait + 過去分詞 aimé。"
+  },
+  {
+    "id": "b2-cp-006",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的條件式過去式",
+    "stem": "Sans ton aide, j'___ (échouer).",
+    "answers": [
+      "aurais échoué"
+    ],
+    "explanation": "sans + 名詞 也可以表示假設（要不是你幫忙）。avoir 的條件式 aurais + échoué，j' 已經寫在空格前。"
+  },
+  {
+    "id": "b2-cp-007",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的條件式過去式",
+    "stem": "À ta place, je ___ (partir) plus tôt.",
+    "answers": [
+      "serais parti",
+      "serais partie"
+    ],
+    "explanation": "partir 用 être 當助動詞：je serais parti(e)。"
+  },
+  {
+    "id": "b2-cp-008",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的條件式過去式",
+    "stem": "Ils ___ (devoir) réserver une table.",
+    "answers": [
+      "auraient dû"
+    ],
+    "explanation": "auraient dû + 原形動詞，表示「他們早該…」。"
+  },
+  {
+    "id": "b2-cp-009",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：如果你早點告訴我，我就會幫你了。",
+    "stem": "",
+    "answers": [
+      "Si tu me l'avais dit plus tôt, je t'aurais aidé.",
+      "Si tu me l'avais dit plus tôt, je t'aurais aidée.",
+      "Si tu m'avais prévenu plus tôt, je t'aurais aidé.",
+      "Si tu m'avais prévenue plus tôt, je t'aurais aidée.",
+      "Si tu me l'avais dit avant, je t'aurais aidé.",
+      "Si tu me l'avais dit avant, je t'aurais aidée.",
+      "Je t'aurais aidé si tu me l'avais dit plus tôt.",
+      "Je t'aurais aidée si tu me l'avais dit plus tôt."
+    ],
+    "explanation": "si + 愈過去式（tu me l'avais dit），主要子句用條件式過去式（je t'aurais aidé）。"
+  },
+  {
+    "id": "b2-cp-010",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "quotidien",
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我應該早點睡的。",
+    "stem": "",
+    "answers": [
+      "J'aurais dû me coucher plus tôt.",
+      "J'aurais dû dormir plus tôt.",
+      "J'aurais dû aller me coucher plus tôt.",
+      "J'aurais dû me coucher plus tôt hier."
+    ],
+    "explanation": "「早該…卻沒有」用 j'aurais dû + 原形動詞。"
+  },
+  {
+    "id": "b2-cp-011",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "culture",
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我們本來很想去看那個展覽。",
+    "stem": "",
+    "answers": [
+      "Nous aurions voulu voir cette exposition.",
+      "On aurait voulu voir cette exposition.",
+      "Nous aurions aimé voir cette exposition.",
+      "On aurait aimé voir cette exposition.",
+      "Nous aurions voulu aller voir cette exposition.",
+      "On aurait voulu aller voir cette exposition.",
+      "Nous aurions aimé aller voir cette exposition.",
+      "On aurait aimé aller voir cette exposition."
+    ],
+    "explanation": "過去沒有實現的願望：aurions voulu / aurions aimé + 原形動詞。"
+  },
+  {
+    "id": "b2-cp-012",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用新聞語氣（未經證實）翻譯成法文：據報導，部長已經辭職了。",
+    "stem": "",
+    "answers": [
+      "Le ministre aurait démissionné.",
+      "Selon la presse, le ministre aurait démissionné.",
+      "D'après la presse, le ministre aurait démissionné.",
+      "Selon les médias, le ministre aurait démissionné."
+    ],
+    "explanation": "條件式過去式在新聞中表示「據說、尚未證實」：le ministre aurait démissionné。"
+  }
+]

@@ -1,0 +1,231 @@
+[
+  {
+    "id": "c1-cs-001",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Je t'explique encore une fois ___ tu comprennes.",
+    "options": [
+      "pour que",
+      "parce que",
+      "puisque",
+      "alors que"
+    ],
+    "answer": 0,
+    "explanation": "pour que（為了讓…）表示目的，後面用虛擬式。"
+  },
+  {
+    "id": "c1-cs-002",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "meteo",
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Partons ___ il ne pleuve.",
+    "options": [
+      "avant qu'",
+      "après qu'",
+      "dès qu'",
+      "pendant qu'"
+    ],
+    "answer": 0,
+    "explanation": "avant que 後面用虛擬式，書面上常加贅詞 ne（不表示否定）。"
+  },
+  {
+    "id": "c1-cs-003",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Je passerai te voir, ___ tu ne sois trop occupé.",
+    "options": [
+      "à moins que",
+      "pourvu que",
+      "afin que",
+      "parce que"
+    ],
+    "answer": 0,
+    "explanation": "à moins que（除非）後面用虛擬式，常加贅詞 ne。"
+  },
+  {
+    "id": "c1-cs-004",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "meteo",
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出合適的說法",
+    "stem": "___ il fasse beau demain !",
+    "options": [
+      "Pourvu qu'",
+      "Pour qu'",
+      "Parce qu'",
+      "Puisqu'"
+    ],
+    "answer": 0,
+    "explanation": "Pourvu que + 虛擬式，用來表達強烈的希望（但願…）。"
+  },
+  {
+    "id": "c1-cs-005",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的虛擬式現在式",
+    "stem": "Il est parti sans que je le ___ (voir).",
+    "answers": [
+      "voie"
+    ],
+    "explanation": "sans que 後面用虛擬式：que je voie。"
+  },
+  {
+    "id": "c1-cs-006",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "famille",
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的虛擬式現在式",
+    "stem": "Je travaille pour que mes enfants ___ (pouvoir) étudier.",
+    "answers": [
+      "puissent"
+    ],
+    "explanation": "pour que + 虛擬式：qu'ils puissent。"
+  },
+  {
+    "id": "c1-cs-007",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的虛擬式現在式",
+    "stem": "Quoi qu'il ___ (faire), elle n'est jamais contente.",
+    "answers": [
+      "fasse"
+    ],
+    "explanation": "quoi que（分開寫，表示「無論…什麼」）後面用虛擬式。注意和 quoique（雖然）不同。"
+  },
+  {
+    "id": "c1-cs-008",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的虛擬式現在式",
+    "stem": "Attends-moi jusqu'à ce que je ___ (revenir).",
+    "answers": [
+      "revienne"
+    ],
+    "explanation": "jusqu'à ce que（直到）後面用虛擬式。"
+  },
+  {
+    "id": "c1-cs-009",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我說慢一點，好讓你聽得懂。",
+    "stem": "",
+    "answers": [
+      "Je parle lentement pour que tu comprennes.",
+      "Je parle plus lentement pour que tu comprennes.",
+      "Je vais parler lentement pour que tu comprennes.",
+      "Je vais parler plus lentement pour que tu comprennes.",
+      "Je parle lentement afin que tu comprennes.",
+      "Je parle plus lentement afin que tu comprennes."
+    ],
+    "explanation": "兩個子句主詞不同，用 pour que / afin que + 虛擬式。"
+  },
+  {
+    "id": "c1-cs-010",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：他一句話也沒說就走了。",
+    "stem": "",
+    "answers": [
+      "Il est parti sans dire un mot.",
+      "Il est parti sans rien dire.",
+      "Il est parti sans dire un seul mot.",
+      "Il s'en est allé sans dire un mot."
+    ],
+    "explanation": "主詞相同時，用 sans + 原形動詞，不用 sans que。"
+  },
+  {
+    "id": "c1-cs-011",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "logement",
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：在他們到之前，把房間整理好。",
+    "stem": "",
+    "answers": [
+      "Range la chambre avant qu'ils arrivent.",
+      "Range la chambre avant qu'ils n'arrivent.",
+      "Range ta chambre avant qu'ils arrivent.",
+      "Range ta chambre avant qu'ils n'arrivent.",
+      "Rangez la chambre avant qu'ils arrivent.",
+      "Rangez la chambre avant qu'ils n'arrivent.",
+      "Rangez votre chambre avant qu'ils arrivent.",
+      "Rangez votre chambre avant qu'ils n'arrivent."
+    ],
+    "explanation": "avant que + 虛擬式；贅詞 ne 可加可不加。"
+  },
+  {
+    "id": "c1-cs-012",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：但願他們能及時到達！",
+    "stem": "",
+    "answers": [
+      "Pourvu qu'ils arrivent à temps !",
+      "Pourvu qu'ils arrivent à l'heure !",
+      "Pourvu qu'elles arrivent à temps !"
+    ],
+    "explanation": "Pourvu que + 虛擬式，表示「但願」。"
+  }
+]

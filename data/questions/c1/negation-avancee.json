@@ -1,0 +1,223 @@
+[
+  {
+    "id": "c1-na-001",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的否定形式",
+    "stem": "Je n'ai ___ frère ___ sœur.",
+    "options": [
+      "ni / ni",
+      "pas / pas",
+      "ne / ni",
+      "ni / pas"
+    ],
+    "answer": 0,
+    "explanation": "ne…ni…ni 表示「既沒有…也沒有」，名詞前面不加冠詞。"
+  },
+  {
+    "id": "c1-na-002",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出意思是「只」的說法",
+    "stem": "Il ne mange ___ des légumes.",
+    "options": [
+      "que",
+      "pas",
+      "plus",
+      "rien"
+    ],
+    "answer": 0,
+    "explanation": "ne…que 表示「只」，不是真正的否定，所以後面保留 des。"
+  },
+  {
+    "id": "c1-na-003",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "meteo",
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的說法",
+    "stem": "Je crains qu'il ___ soit trop tard.",
+    "options": [
+      "ne",
+      "ne pas",
+      "pas",
+      "n'"
+    ],
+    "answer": 0,
+    "explanation": "craindre que 後面常加贅詞 ne，沒有否定意思：je crains qu'il ne soit trop tard。"
+  },
+  {
+    "id": "c1-na-004",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出意思是「哪裡都（沒有）」的說法",
+    "stem": "Je ne l'ai vu ___.",
+    "options": [
+      "nulle part",
+      "aucun",
+      "jamais rien",
+      "personne"
+    ],
+    "answer": 0,
+    "explanation": "ne…nulle part 表示「哪裡都沒有」。"
+  },
+  {
+    "id": "c1-na-005",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入表示「沒有任何」的否定詞",
+    "stem": "Il n'a ___ idée de la réponse.",
+    "answers": [
+      "aucune"
+    ],
+    "explanation": "ne…aucun(e) + 名詞，要配合名詞的陰陽性：aucune idée。"
+  },
+  {
+    "id": "c1-na-006",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入表示「從不」的否定詞",
+    "stem": "Elle n'a ___ parlé à personne de ce problème.",
+    "answers": [
+      "jamais"
+    ],
+    "explanation": "jamais 和 personne 可以在同一句裡一起用。"
+  },
+  {
+    "id": "c1-na-007",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入比較句中的贅詞",
+    "stem": "Il est plus intelligent qu'on ___ le croit.",
+    "answers": [
+      "ne"
+    ],
+    "explanation": "比較句（plus…que）的第二部分，書面上可以加贅詞 ne，沒有否定意思。"
+  },
+  {
+    "id": "c1-na-008",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入缺少的字",
+    "stem": "Personne ___ est venu à la fête.",
+    "answers": [
+      "n'"
+    ],
+    "explanation": "personne 當主詞時，動詞前面仍然要有 ne：personne n'est venu。"
+  },
+  {
+    "id": "c1-na-009",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "achats"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請用 ne…que 翻譯成法文：我只有十歐元。",
+    "stem": "",
+    "answers": [
+      "Je n'ai que dix euros.",
+      "Je n'ai que 10 euros."
+    ],
+    "explanation": "ne…que 表示「只」。"
+  },
+  {
+    "id": "c1-na-010",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：他既不喝酒也不抽菸。",
+    "stem": "",
+    "answers": [
+      "Il ne boit ni ne fume.",
+      "Il ne boit pas et ne fume pas.",
+      "Il ne boit pas d'alcool et ne fume pas.",
+      "Il ne boit pas et il ne fume pas."
+    ],
+    "explanation": "兩個動詞的否定可以用 ne…ni ne…，比較書面。"
+  },
+  {
+    "id": "c1-na-011",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：我再也不會相信他了。",
+    "stem": "",
+    "answers": [
+      "Je ne le croirai plus jamais.",
+      "Je ne lui ferai plus jamais confiance.",
+      "Je ne le croirai jamais plus.",
+      "Je ne le croirai plus."
+    ],
+    "explanation": "plus 和 jamais 可以連用：ne…plus jamais（再也不）。"
+  },
+  {
+    "id": "c1-na-012",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "logement",
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我到處都找不到我的鑰匙。",
+    "stem": "",
+    "answers": [
+      "Je ne trouve mes clés nulle part.",
+      "Je ne trouve nulle part mes clés.",
+      "Je n'ai trouvé mes clés nulle part.",
+      "Je ne retrouve mes clés nulle part.",
+      "Je ne retrouve nulle part mes clés."
+    ],
+    "explanation": "ne…nulle part 表示「哪裡都不」。"
+  }
+]

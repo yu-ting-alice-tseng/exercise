@@ -1,0 +1,213 @@
+[
+  {
+    "id": "c2-reg-001",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "下列哪一個是「工作」的正式說法？",
+    "stem": "",
+    "options": [
+      "un emploi",
+      "un boulot",
+      "un taf",
+      "un job"
+    ],
+    "answer": 0,
+    "explanation": "boulot、taf 是口語，job 是外來的口語說法；正式場合用 un emploi 或 un travail。"
+  },
+  {
+    "id": "c2-reg-002",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "achats"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "下列哪一個是「錢」的標準說法？",
+    "stem": "",
+    "options": [
+      "l'argent",
+      "le fric",
+      "le pognon",
+      "la thune"
+    ],
+    "answer": 0,
+    "explanation": "fric、pognon、thune 都是很口語的說法。"
+  },
+  {
+    "id": "c2-reg-003",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "下列哪一個是「汽車」的口語說法？",
+    "stem": "",
+    "options": [
+      "une bagnole",
+      "une automobile",
+      "un véhicule",
+      "une berline"
+    ],
+    "answer": 0,
+    "explanation": "bagnole 是口語；automobile、véhicule 比較正式；berline 是車款類型（轎車）。"
+  },
+  {
+    "id": "c2-reg-004",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "下列哪一句適合用在正式書信的結尾？",
+    "stem": "",
+    "options": [
+      "Veuillez agréer mes salutations distinguées.",
+      "Bisous !",
+      "À plus !",
+      "Salut et bonne journée !"
+    ],
+    "answer": 0,
+    "explanation": "正式書信常用 Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées 這類固定說法。"
+  },
+  {
+    "id": "c2-reg-005",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入口語 boulot 的標準說法（一個字）",
+    "stem": "Il cherche un ___ depuis six mois.",
+    "answers": [
+      "emploi",
+      "travail"
+    ],
+    "explanation": "boulot → emploi／travail。"
+  },
+  {
+    "id": "c2-reg-006",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入口語 bouquin 的標準說法（一個字）",
+    "stem": "J'ai lu un très bon ___.",
+    "answers": [
+      "livre"
+    ],
+    "explanation": "bouquin → livre。"
+  },
+  {
+    "id": "c2-reg-007",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入口語 bosser 的標準說法（原形動詞）",
+    "stem": "Je dois ___ ce soir.",
+    "answers": [
+      "travailler"
+    ],
+    "explanation": "bosser → travailler。"
+  },
+  {
+    "id": "c2-reg-008",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入書面語需要的否定詞（口語常省略）",
+    "stem": "Je ___ sais pas.",
+    "answers": [
+      "ne"
+    ],
+    "explanation": "口語常說 j'sais pas，書面語一定要寫出 ne：je ne sais pas。"
+  },
+  {
+    "id": "c2-reg-009",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請改寫成標準書面語。",
+    "stem": "J'sais pas c'qu'il veut.",
+    "answers": [
+      "Je ne sais pas ce qu'il veut."
+    ],
+    "explanation": "補上 ne，j'sais → je sais，c'qu'il → ce qu'il。"
+  },
+  {
+    "id": "c2-reg-010",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請改寫成標準法語（「車」用 voiture）。",
+    "stem": "T'as vu ma bagnole ?",
+    "answers": [
+      "Tu as vu ma voiture ?",
+      "As-tu vu ma voiture ?",
+      "Est-ce que tu as vu ma voiture ?"
+    ],
+    "explanation": "t'as → tu as；bagnole → voiture。"
+  },
+  {
+    "id": "c2-reg-011",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請改寫成標準書面語（主詞用 nous）。",
+    "stem": "On a bossé toute la journée.",
+    "answers": [
+      "Nous avons travaillé toute la journée."
+    ],
+    "explanation": "口語的 on 在書面語常改成 nous；bosser → travailler。"
+  },
+  {
+    "id": "c2-reg-012",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "achats"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請改寫成標準書面語。",
+    "stem": "Y a pas de fric.",
+    "answers": [
+      "Il n'y a pas d'argent."
+    ],
+    "explanation": "y a → il y a，補上 ne；fric → argent；否定句中 de 遇到母音省略成 d'。"
+  }
+]

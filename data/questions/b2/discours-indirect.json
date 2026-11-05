@@ -1,0 +1,212 @@
+[
+  {
+    "id": "b2-di-001",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請把直接引語改成間接引語",
+    "stem": "Il dit : « Je suis fatigué. » → Il dit qu'il ___ fatigué.",
+    "options": [
+      "est",
+      "était",
+      "sera",
+      "soit"
+    ],
+    "answer": 0,
+    "explanation": "引述動詞是現在式（il dit）時，時態不變。"
+  },
+  {
+    "id": "b2-di-002",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請把直接引語改成間接引語",
+    "stem": "Il a dit : « Je suis fatigué. » → Il a dit qu'il ___ fatigué.",
+    "options": [
+      "était",
+      "est",
+      "sera",
+      "a été"
+    ],
+    "answer": 0,
+    "explanation": "引述動詞是過去式時，現在式要改成未完成過去式。"
+  },
+  {
+    "id": "b2-di-003",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的時間詞",
+    "stem": "Elle a dit : « Je partirai demain. » → Elle a dit qu'elle partirait ___.",
+    "options": [
+      "le lendemain",
+      "demain",
+      "hier",
+      "la veille"
+    ],
+    "answer": 0,
+    "explanation": "過去的轉述中，demain 要改成 le lendemain（隔天）。"
+  },
+  {
+    "id": "b2-di-004",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請把問句改成間接問句",
+    "stem": "Il m'a demandé : « Tu viens ? » → Il m'a demandé ___ je venais.",
+    "options": [
+      "si",
+      "que",
+      "ce que",
+      "qu'est-ce que"
+    ],
+    "answer": 0,
+    "explanation": "是非問句改成間接問句時用 si。"
+  },
+  {
+    "id": "b2-di-005",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請把問句改成間接問句",
+    "stem": "« Qu'est-ce que tu fais ? » → Il me demande ___ je fais.",
+    "answers": [
+      "ce que"
+    ],
+    "explanation": "qu'est-ce que 在間接問句中變成 ce que。"
+  },
+  {
+    "id": "b2-di-006",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請把直接引語改成間接引語",
+    "stem": "Elle a dit : « J'ai perdu mes clés. » → Elle a dit qu'elle ___ ses clés.",
+    "answers": [
+      "avait perdu"
+    ],
+    "explanation": "過去的轉述中，複合過去式要改成愈過去式。"
+  },
+  {
+    "id": "b2-di-007",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請把直接引語改成間接引語",
+    "stem": "Il a dit : « Je viendrai. » → Il a dit qu'il ___.",
+    "answers": [
+      "viendrait"
+    ],
+    "explanation": "過去的轉述中，簡單未來式要改成條件式現在式（過去中的未來）。"
+  },
+  {
+    "id": "b2-di-008",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "ecole-travail",
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請把命令句改成間接引語",
+    "stem": "« Fermez la porte ! » → Il nous a demandé ___ la porte.",
+    "answers": [
+      "de fermer"
+    ],
+    "explanation": "命令句改成間接引語：demander de + 原形動詞。"
+  },
+  {
+    "id": "b2-di-009",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請改成間接引語，用 Il a dit que… 開頭。",
+    "stem": "« Je suis malade. »",
+    "answers": [
+      "Il a dit qu'il était malade."
+    ],
+    "explanation": "現在式改成未完成過去式，je 改成 il。"
+  },
+  {
+    "id": "b2-di-010",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "logement",
+      "presentation"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請改成間接問句，用 Elle m'a demandé… 開頭。",
+    "stem": "« Où habites-tu ? »",
+    "answers": [
+      "Elle m'a demandé où j'habitais."
+    ],
+    "explanation": "疑問詞 où 保留；間接問句不用倒裝；habites 改成未完成過去式 habitais。"
+  },
+  {
+    "id": "b2-di-011",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請改成間接引語，用 Ils ont dit que… 開頭。",
+    "stem": "« Nous partirons demain. »",
+    "answers": [
+      "Ils ont dit qu'ils partiraient le lendemain."
+    ],
+    "explanation": "未來式改成條件式，demain 改成 le lendemain。"
+  },
+  {
+    "id": "b2-di-012",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請改成間接問句，用 Le professeur m'a demandé… 開頭。",
+    "stem": "« Est-ce que tu as fini ? »",
+    "answers": [
+      "Le professeur m'a demandé si j'avais fini."
+    ],
+    "explanation": "是非問句用 si；複合過去式改成愈過去式。"
+  }
+]

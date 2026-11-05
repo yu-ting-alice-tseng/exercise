@@ -1,0 +1,234 @@
+[
+  {
+    "id": "b2-ger-001",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "ecole-travail",
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的副動詞",
+    "stem": "Il écoute de la musique ___.",
+    "options": [
+      "en travaillant",
+      "en travaillé",
+      "travaillant en",
+      "en travailler"
+    ],
+    "answer": 0,
+    "explanation": "副動詞＝en + 現在分詞，表示同時進行的動作。"
+  },
+  {
+    "id": "b2-ger-002",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的現在分詞",
+    "stem": "Les personnes ___ plus de 65 ans ont droit à une réduction.",
+    "options": [
+      "ayant",
+      "en ayant",
+      "avant",
+      "ayants"
+    ],
+    "answer": 0,
+    "explanation": "現在分詞可以代替 qui 子句（qui ont → ayant），本身沒有陰陽性和單複數的變化。"
+  },
+  {
+    "id": "b2-ger-003",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的形式（法國諺語：熟能生巧）",
+    "stem": "C'est en ___ qu'on devient forgeron.",
+    "options": [
+      "forgeant",
+      "forgant",
+      "forgé",
+      "forger"
+    ],
+    "answer": 0,
+    "explanation": "-ger 動詞的現在分詞要保留 e：forgeant。"
+  },
+  {
+    "id": "b2-ger-004",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的動詞性形容詞",
+    "stem": "C'est une journée très ___.",
+    "options": [
+      "fatigante",
+      "fatiguante",
+      "fatigant",
+      "en fatiguant"
+    ],
+    "answer": 0,
+    "explanation": "當形容詞用時拼法不同：現在分詞 fatiguant，形容詞 fatigant，陰性 fatigante。"
+  },
+  {
+    "id": "b2-ger-005",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "sante",
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請用副動詞（en + 現在分詞）填空",
+    "stem": "Il s'est blessé ___ (faire) du ski.",
+    "answers": [
+      "en faisant"
+    ],
+    "explanation": "faire 的現在分詞是 faisant。"
+  },
+  {
+    "id": "b2-ger-006",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "sante",
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請用現在分詞填空",
+    "stem": "___ (savoir) que tu étais malade, je t'ai appelé.",
+    "answers": [
+      "sachant"
+    ],
+    "explanation": "savoir 的現在分詞是不規則的 sachant，這裡表示原因（因為知道）。"
+  },
+  {
+    "id": "b2-ger-007",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "nourriture",
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請用副動詞（en + 現在分詞）填空",
+    "stem": "Elle lit le journal ___ (prendre) son petit-déjeuner.",
+    "answers": [
+      "en prenant"
+    ],
+    "explanation": "prendre 的現在分詞來自 nous prenons：prenant。"
+  },
+  {
+    "id": "b2-ger-008",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請用副動詞（en + 現在分詞）填空",
+    "stem": "Nous avons appris la nouvelle ___ (lire) le journal.",
+    "answers": [
+      "en lisant"
+    ],
+    "explanation": "lire 的現在分詞來自 nous lisons：lisant。副動詞在這裡表示方式。"
+  },
+  {
+    "id": "b2-ger-009",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請用副動詞翻譯成法文：他邊走路邊講電話。",
+    "stem": "",
+    "answers": [
+      "Il parle au téléphone en marchant.",
+      "Il téléphone en marchant.",
+      "Il marche en parlant au téléphone.",
+      "Il marche en téléphonant."
+    ],
+    "explanation": "兩個同時進行的動作，其中一個用副動詞 en + 現在分詞。"
+  },
+  {
+    "id": "b2-ger-010",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用副動詞翻譯成法文：多練習，你就會進步。",
+    "stem": "",
+    "answers": [
+      "En pratiquant davantage, tu progresseras.",
+      "En pratiquant plus, tu progresseras.",
+      "En t'entraînant plus, tu progresseras.",
+      "En t'entraînant davantage, tu progresseras.",
+      "En pratiquant davantage, tu feras des progrès.",
+      "En pratiquant plus, tu feras des progrès.",
+      "Tu progresseras en pratiquant davantage.",
+      "Tu progresseras en pratiquant plus."
+    ],
+    "explanation": "副動詞可以表示條件或方式：en pratiquant（藉由練習）。"
+  },
+  {
+    "id": "b2-ger-011",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "logement",
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用副動詞翻譯成法文：我出門的時候碰到了鄰居。",
+    "stem": "",
+    "answers": [
+      "En sortant, j'ai croisé mon voisin.",
+      "En sortant, j'ai rencontré mon voisin.",
+      "J'ai croisé mon voisin en sortant.",
+      "J'ai rencontré mon voisin en sortant.",
+      "En sortant, j'ai croisé ma voisine.",
+      "En sortant, j'ai rencontré ma voisine.",
+      "J'ai croisé ma voisine en sortant.",
+      "J'ai rencontré ma voisine en sortant."
+    ],
+    "explanation": "副動詞表示時間（在…的時候），主詞必須和主要子句相同。"
+  },
+  {
+    "id": "b2-ger-012",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請用副動詞翻譯成法文：她笑著回答。",
+    "stem": "",
+    "answers": [
+      "Elle a répondu en souriant.",
+      "Elle répond en souriant.",
+      "Elle a répondu en riant."
+    ],
+    "explanation": "sourire 的現在分詞是 souriant。"
+  }
+]

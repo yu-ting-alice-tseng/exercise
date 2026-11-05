@@ -1,0 +1,233 @@
+[
+  {
+    "id": "c1-fa-001",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "ecole-travail",
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Quand tu ___ tes devoirs, tu pourras sortir.",
+    "options": [
+      "auras fini",
+      "as fini",
+      "aurais fini",
+      "avais fini"
+    ],
+    "answer": 0,
+    "explanation": "先未來式表示「在另一個未來動作之前就已完成」：quand tu auras fini, tu pourras…"
+  },
+  {
+    "id": "c1-fa-002",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Dans un an, nous ___ notre diplôme.",
+    "options": [
+      "aurons obtenu",
+      "avons obtenu",
+      "aurions obtenu",
+      "avions obtenu"
+    ],
+    "answer": 0,
+    "explanation": "在未來某個時間點以前會完成的事，用先未來式。"
+  },
+  {
+    "id": "c1-fa-003",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出表示「推測」的說法",
+    "stem": "Il n'est pas encore là ; il ___ son train.",
+    "options": [
+      "aura manqué",
+      "manquera",
+      "avait manqué",
+      "manquait"
+    ],
+    "answer": 0,
+    "explanation": "先未來式也能表示對過去事情的推測（他大概是錯過了火車）。"
+  },
+  {
+    "id": "c1-fa-004",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Elles ___ avant midi.",
+    "options": [
+      "seront parties",
+      "auront parties",
+      "seront partis",
+      "auront parti"
+    ],
+    "answer": 0,
+    "explanation": "partir 用 être，過去分詞配合陰性複數主詞：seront parties。"
+  },
+  {
+    "id": "c1-fa-005",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的先未來式",
+    "stem": "Dès que j'___ (terminer), je t'appellerai.",
+    "answers": [
+      "aurai terminé"
+    ],
+    "explanation": "dès que + 先未來式，主要子句用簡單未來式。"
+  },
+  {
+    "id": "c1-fa-006",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的先未來式",
+    "stem": "Lorsque vous ___ (arriver), envoyez-moi un message.",
+    "answers": [
+      "serez arrivés",
+      "serez arrivé",
+      "serez arrivée",
+      "serez arrivées"
+    ],
+    "explanation": "arriver 用 être，過去分詞依 vous 指的對象配合。"
+  },
+  {
+    "id": "c1-fa-007",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的先未來式",
+    "stem": "D'ici ce soir, ils ___ (lire) le rapport.",
+    "answers": [
+      "auront lu"
+    ],
+    "explanation": "d'ici + 時間點，表示到那時之前已經完成。lire 的過去分詞是 lu。"
+  },
+  {
+    "id": "c1-fa-008",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請用先未來式表示推測",
+    "stem": "Elle n'est pas venue ; elle ___ (oublier) notre rendez-vous.",
+    "answers": [
+      "aura oublié"
+    ],
+    "explanation": "先未來式表示推測：elle aura oublié（她大概忘了）。"
+  },
+  {
+    "id": "c1-fa-009",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "nourriture",
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：等你回來的時候，我已經吃完晚餐了。",
+    "stem": "",
+    "answers": [
+      "Quand tu rentreras, j'aurai déjà dîné.",
+      "Quand tu reviendras, j'aurai déjà dîné.",
+      "Quand tu rentreras, j'aurai déjà fini de dîner.",
+      "Quand tu reviendras, j'aurai déjà fini de dîner.",
+      "Quand tu rentreras, j'aurai déjà mangé.",
+      "Quand tu reviendras, j'aurai déjà mangé.",
+      "Lorsque tu rentreras, j'aurai déjà dîné."
+    ],
+    "explanation": "quand 後面用簡單未來式（tu rentreras），已完成的動作用先未來式（j'aurai dîné）。"
+  },
+  {
+    "id": "c1-fa-010",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：他們一做出決定，就會通知我們。",
+    "stem": "",
+    "answers": [
+      "Dès qu'ils auront pris une décision, ils nous préviendront.",
+      "Dès qu'ils auront pris leur décision, ils nous préviendront.",
+      "Dès qu'ils auront pris une décision, ils nous informeront.",
+      "Dès qu'ils auront pris leur décision, ils nous informeront.",
+      "Dès qu'ils auront décidé, ils nous préviendront.",
+      "Dès qu'ils auront décidé, ils nous informeront.",
+      "Une fois qu'ils auront pris une décision, ils nous préviendront.",
+      "Une fois qu'ils auront pris une décision, ils nous informeront."
+    ],
+    "explanation": "dès que + 先未來式；prendre une décision 是固定搭配。"
+  },
+  {
+    "id": "c1-fa-011",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：到年底時，我們就已經搬家了。",
+    "stem": "",
+    "answers": [
+      "D'ici la fin de l'année, nous aurons déménagé.",
+      "À la fin de l'année, nous aurons déménagé.",
+      "D'ici la fin de l'année, on aura déménagé.",
+      "À la fin de l'année, on aura déménagé."
+    ],
+    "explanation": "d'ici + 時間點，搭配先未來式。"
+  },
+  {
+    "id": "c1-fa-012",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用先未來式翻譯成法文：他大概是忘了。",
+    "stem": "",
+    "answers": [
+      "Il aura oublié.",
+      "Il aura sans doute oublié.",
+      "Il l'aura oublié."
+    ],
+    "explanation": "先未來式可以表示推測，比 il a dû oublier 更書面。"
+  }
+]

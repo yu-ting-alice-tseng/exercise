@@ -1,0 +1,226 @@
+[
+  {
+    "id": "c2-col-001",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出最恰當的動詞",
+    "stem": "Il a ___ un crime.",
+    "options": [
+      "commis",
+      "fait",
+      "réalisé",
+      "effectué"
+    ],
+    "answer": 0,
+    "explanation": "「犯罪」的固定搭配是 commettre un crime。"
+  },
+  {
+    "id": "c2-col-002",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出最恰當的動詞",
+    "stem": "Elle a ___ une décision difficile.",
+    "options": [
+      "pris",
+      "fait",
+      "mis",
+      "donné"
+    ],
+    "answer": 0,
+    "explanation": "「做決定」是 prendre une décision，不說 faire une décision。"
+  },
+  {
+    "id": "c2-col-003",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "culture",
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出最恰當的動詞",
+    "stem": "Le gouvernement doit ___ des mesures.",
+    "options": [
+      "prendre",
+      "faire",
+      "donner",
+      "mettre"
+    ],
+    "answer": 0,
+    "explanation": "「採取措施」是 prendre des mesures。"
+  },
+  {
+    "id": "c2-col-004",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出最恰當的動詞",
+    "stem": "Le médecin lui a ___ un traitement.",
+    "options": [
+      "prescrit",
+      "écrit",
+      "décrit",
+      "inscrit"
+    ],
+    "answer": 0,
+    "explanation": "「開藥、開處方」是 prescrire。"
+  },
+  {
+    "id": "c2-col-005",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入最恰當的動詞（原形）",
+    "stem": "Est-ce que je peux vous ___ une question ?",
+    "answers": [
+      "poser"
+    ],
+    "explanation": "「提問」是 poser une question。"
+  },
+  {
+    "id": "c2-col-006",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "culture",
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入最恰當的動詞（原形）",
+    "stem": "Cet acteur va ___ le rôle principal.",
+    "answers": [
+      "jouer",
+      "tenir"
+    ],
+    "explanation": "「扮演角色」是 jouer un rôle（也可以說 tenir un rôle）。"
+  },
+  {
+    "id": "c2-col-007",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入最恰當的動詞（原形）",
+    "stem": "Il faut ___ attention aux détails.",
+    "answers": [
+      "faire",
+      "prêter"
+    ],
+    "explanation": "「注意」是 faire attention，比較書面的說法是 prêter attention。"
+  },
+  {
+    "id": "c2-col-008",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入最恰當的動詞（過去分詞）",
+    "stem": "Il m'a ___ un compliment sur ma robe.",
+    "answers": [
+      "fait"
+    ],
+    "explanation": "「稱讚某人」是 faire un compliment à quelqu'un。"
+  },
+  {
+    "id": "c2-col-009",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：她提出了一個好問題。",
+    "stem": "",
+    "answers": [
+      "Elle a posé une bonne question."
+    ],
+    "explanation": "poser une question。"
+  },
+  {
+    "id": "c2-col-010",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "culture",
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我們必須採取措施。",
+    "stem": "",
+    "answers": [
+      "Nous devons prendre des mesures.",
+      "Il faut prendre des mesures.",
+      "On doit prendre des mesures."
+    ],
+    "explanation": "prendre des mesures 是固定搭配。"
+  },
+  {
+    "id": "c2-col-011",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：他犯了一個錯誤。",
+    "stem": "",
+    "answers": [
+      "Il a commis une erreur.",
+      "Il a fait une erreur."
+    ],
+    "explanation": "commettre une erreur 比 faire une erreur 更正式。"
+  },
+  {
+    "id": "c2-col-012",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "culture",
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：這部電影獲得了巨大的成功。",
+    "stem": "",
+    "answers": [
+      "Ce film a remporté un grand succès.",
+      "Ce film a connu un grand succès.",
+      "Ce film a eu un grand succès.",
+      "Ce film a rencontré un grand succès.",
+      "Le film a remporté un grand succès.",
+      "Le film a connu un grand succès.",
+      "Ce film a connu un énorme succès.",
+      "Ce film a remporté un énorme succès."
+    ],
+    "explanation": "「獲得成功」常用 remporter／connaître un succès。"
+  }
+]
