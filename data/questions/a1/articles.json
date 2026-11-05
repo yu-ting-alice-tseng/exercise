@@ -1,0 +1,102 @@
+[
+  {
+    "id": "a1-art-001", "level": "A1", "grammar": "articles", "themes": ["famille", "logement"],
+    "type": "choice", "difficulty": 1,
+    "instruction": "請選出正確的冠詞",
+    "stem": "J'ai ___ chat et ___ chien.",
+    "options": ["un / un", "une / un", "un / une", "le / la"],
+    "answer": 0,
+    "explanation": "chat 和 chien 都是陽性名詞，第一次提到、數量是「一隻」，用不定冠詞 un。"
+  },
+  {
+    "id": "a1-art-002", "level": "A1", "grammar": "articles", "themes": ["meteo"],
+    "type": "choice", "difficulty": 1,
+    "instruction": "請選出正確的冠詞",
+    "stem": "___ soleil brille aujourd'hui.",
+    "options": ["Le", "La", "Un", "L'"],
+    "answer": 0,
+    "explanation": "soleil 是陽性名詞，而且是獨一無二的事物，用定冠詞 le。它以子音開頭，所以不省略成 l'。"
+  },
+  {
+    "id": "a1-art-003", "level": "A1", "grammar": "articles", "themes": ["loisirs"],
+    "type": "choice", "difficulty": 2,
+    "instruction": "請選出正確的冠詞",
+    "stem": "Elle aime ___ musique classique.",
+    "options": ["la", "le", "une", "des"],
+    "answer": 0,
+    "explanation": "aimer、adorer、détester 這類表示喜好的動詞後面，名詞要用定冠詞（表示「這一類東西」）。musique 是陰性，所以用 la。"
+  },
+  {
+    "id": "a1-art-004", "level": "A1", "grammar": "articles", "themes": ["nourriture"],
+    "type": "choice", "difficulty": 1,
+    "instruction": "請選出正確的冠詞",
+    "stem": "Il y a ___ pommes sur la table.",
+    "options": ["des", "les", "une", "le"],
+    "answer": 0,
+    "explanation": "il y a 後面接「有一些」不特定的東西，複數用不定冠詞 des。"
+  },
+  {
+    "id": "a1-art-005", "level": "A1", "grammar": "articles", "themes": ["ecole-travail", "logement"],
+    "type": "fill", "difficulty": 2,
+    "instruction": "請填入定冠詞（le、la、l'、les）",
+    "stem": "J'habite près de ___ école.",
+    "answers": ["l'"],
+    "explanation": "école 是陰性名詞，但以母音開頭，la 要省略成 l'。"
+  },
+  {
+    "id": "a1-art-006", "level": "A1", "grammar": "articles", "themes": ["famille", "loisirs"],
+    "type": "fill", "difficulty": 1,
+    "instruction": "請填入定冠詞（le、la、l'、les）",
+    "stem": "___ enfants jouent dans le jardin.",
+    "answers": ["les"],
+    "explanation": "enfants 是複數，定冠詞複數一律用 les。"
+  },
+  {
+    "id": "a1-art-007", "level": "A1", "grammar": "articles", "themes": ["famille", "voyage"],
+    "type": "fill", "difficulty": 1,
+    "instruction": "請填入不定冠詞（un、une、des）",
+    "stem": "Mon frère a ___ voiture rouge.",
+    "answers": ["une"],
+    "explanation": "voiture 是陰性名詞，「一輛」用不定冠詞 une。"
+  },
+  {
+    "id": "a1-art-008", "level": "A1", "grammar": "articles", "themes": ["famille", "presentation"],
+    "type": "fill", "difficulty": 1,
+    "instruction": "請填入不定冠詞（un、une、des）",
+    "stem": "Nous avons ___ amis à Lyon.",
+    "answers": ["des"],
+    "explanation": "amis 是複數，「一些朋友」用不定冠詞 des。"
+  },
+  {
+    "id": "a1-art-009", "level": "A1", "grammar": "articles", "themes": ["famille", "presentation"],
+    "type": "short", "difficulty": 2,
+    "instruction": "請翻譯成法文：我有一個哥哥和兩個妹妹。",
+    "stem": "",
+    "answers": ["J'ai un grand frère et deux petites sœurs.", "J'ai un frère et deux sœurs."],
+    "explanation": "frère 陽性用 un；數字 deux 後面不需要冠詞。「哥哥」、「妹妹」可以用 grand frère、petite sœur 表達。"
+  },
+  {
+    "id": "a1-art-010", "level": "A1", "grammar": "articles", "themes": ["logement", "ecole-travail"],
+    "type": "short", "difficulty": 1,
+    "instruction": "請翻譯成法文：桌上有一本書。",
+    "stem": "",
+    "answers": ["Il y a un livre sur la table."],
+    "explanation": "「有」用 il y a；livre 陽性用 un；table 是特定的那張桌子，陰性用 la。"
+  },
+  {
+    "id": "a1-art-011", "level": "A1", "grammar": "articles", "themes": ["loisirs", "nourriture", "presentation"],
+    "type": "short", "difficulty": 2,
+    "instruction": "請用 aimer 加定冠詞回答，說出兩樣你喜歡的東西。",
+    "stem": "Qu'est-ce que tu aimes ?",
+    "answers": ["J'aime le chocolat et la musique."],
+    "explanation": "aimer 後面的名詞用定冠詞：陽性 le、陰性 la、母音開頭 l'、複數 les。"
+  },
+  {
+    "id": "a1-art-012", "level": "A1", "grammar": "articles", "themes": ["nourriture"],
+    "type": "short", "difficulty": 3,
+    "instruction": "請翻譯成法文：我喜歡咖啡，但是我不喜歡茶。",
+    "stem": "",
+    "answers": ["J'aime le café, mais je n'aime pas le thé."],
+    "explanation": "aimer 後面用定冠詞，否定句 ne…pas 之後定冠詞不變（le thé），這點和不定冠詞變成 de 不同。"
+  }
+]

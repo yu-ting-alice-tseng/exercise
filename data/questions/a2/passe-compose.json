@@ -1,0 +1,102 @@
+[
+  {
+    "id": "a2-pc-001", "level": "A2", "grammar": "passe-compose", "themes": ["loisirs"],
+    "type": "choice", "difficulty": 1,
+    "instruction": "請選出正確的複合過去式（說話者是男生）",
+    "stem": "Hier, je ___ au cinéma.",
+    "options": ["suis allé", "ai allé", "suis aller", "vais"],
+    "answer": 0,
+    "explanation": "aller 是移動類動詞，助動詞用 être，過去分詞 allé。說話者是女生時要寫 allée。"
+  },
+  {
+    "id": "a2-pc-002", "level": "A2", "grammar": "passe-compose", "themes": ["nourriture"],
+    "type": "choice", "difficulty": 1,
+    "instruction": "請選出正確的複合過去式",
+    "stem": "Nous ___ une pizza hier soir.",
+    "options": ["avons mangé", "sommes mangés", "avons manger", "mangeons"],
+    "answer": 0,
+    "explanation": "大部分動詞的助動詞用 avoir。-er 動詞的過去分詞是 -é：manger 變成 mangé。"
+  },
+  {
+    "id": "a2-pc-003", "level": "A2", "grammar": "passe-compose", "themes": ["quotidien"],
+    "type": "choice", "difficulty": 3,
+    "instruction": "請選出正確的複合過去式",
+    "stem": "Elle ___ à 7 heures ce matin.",
+    "options": ["s'est levée", "a levé", "s'est levé", "se lève"],
+    "answer": 0,
+    "explanation": "反身動詞 se lever 的助動詞用 être，過去分詞要和主詞 elle 配合，加 e 變成 levée。"
+  },
+  {
+    "id": "a2-pc-004", "level": "A2", "grammar": "passe-compose", "themes": ["voyage"],
+    "type": "choice", "difficulty": 2,
+    "instruction": "請選出正確的複合過去式",
+    "stem": "Ils ___ le train de 8 heures.",
+    "options": ["ont pris", "sont pris", "ont prendu", "ont pri"],
+    "answer": 0,
+    "explanation": "prendre 的助動詞用 avoir，過去分詞是不規則的 pris。"
+  },
+  {
+    "id": "a2-pc-005", "level": "A2", "grammar": "passe-compose", "themes": ["voyage"],
+    "type": "fill", "difficulty": 2,
+    "instruction": "請填入括號內動詞的複合過去式（助動詞和過去分詞都要寫）",
+    "stem": "L'été dernier, nous ___ (aller) en Bretagne.",
+    "answers": ["sommes allés", "sommes allées"],
+    "explanation": "aller 用 être 當助動詞，過去分詞要配合主詞：nous 是複數，所以 allés（全是女生則為 allées）。"
+  },
+  {
+    "id": "a2-pc-006", "level": "A2", "grammar": "passe-compose", "themes": ["ecole-travail"],
+    "type": "fill", "difficulty": 1,
+    "instruction": "請填入括號內動詞的複合過去式（助動詞和過去分詞都要寫）",
+    "stem": "J'___ (finir) mes devoirs.",
+    "answers": ["ai fini"],
+    "explanation": "finir 用 avoir 當助動詞。-ir 動詞的過去分詞通常是 -i：fini。"
+  },
+  {
+    "id": "a2-pc-007", "level": "A2", "grammar": "passe-compose", "themes": ["famille", "presentation"],
+    "type": "fill", "difficulty": 2,
+    "instruction": "請填入括號內動詞的複合過去式（助動詞和過去分詞都要寫）",
+    "stem": "Marie ___ (naître) en 1998.",
+    "answers": ["est née"],
+    "explanation": "naître 用 être 當助動詞，過去分詞 né，主詞是女生要加 e：née。"
+  },
+  {
+    "id": "a2-pc-008", "level": "A2", "grammar": "passe-compose", "themes": ["loisirs"],
+    "type": "fill", "difficulty": 1,
+    "instruction": "請填入括號內動詞的複合過去式（助動詞和過去分詞都要寫）",
+    "stem": "Tu ___ (voir) ce film ?",
+    "answers": ["as vu"],
+    "explanation": "voir 用 avoir 當助動詞，過去分詞是不規則的 vu。"
+  },
+  {
+    "id": "a2-pc-009", "level": "A2", "grammar": "passe-compose", "themes": ["voyage"],
+    "type": "short", "difficulty": 1,
+    "instruction": "請翻譯成法文：上個週末我去了巴黎。",
+    "stem": "",
+    "answers": ["Le week-end dernier, je suis allé à Paris.", "Le week-end dernier, je suis allée à Paris."],
+    "explanation": "aller 用 être 當助動詞；女生寫 allée。城市前面用介系詞 à。"
+  },
+  {
+    "id": "a2-pc-010", "level": "A2", "grammar": "passe-compose", "themes": ["ecole-travail"],
+    "type": "short", "difficulty": 2,
+    "instruction": "請翻譯成法文：他們昨天沒有工作。",
+    "stem": "",
+    "answers": ["Ils n'ont pas travaillé hier.", "Hier, ils n'ont pas travaillé."],
+    "explanation": "複合過去式的否定，ne…pas 夾住助動詞：n'ont pas travaillé。"
+  },
+  {
+    "id": "a2-pc-011", "level": "A2", "grammar": "passe-compose", "themes": ["quotidien", "loisirs"],
+    "type": "short", "difficulty": 2,
+    "instruction": "請用複合過去式回答，寫出兩件你昨天晚上做的事。",
+    "stem": "Qu'est-ce que tu as fait hier soir ?",
+    "answers": ["Hier soir, j'ai dîné avec ma famille et j'ai regardé un film."],
+    "explanation": "注意每個動詞的助動詞（avoir 或 être）和過去分詞。例如 sortir 要用 être：je suis sorti(e)。"
+  },
+  {
+    "id": "a2-pc-012", "level": "A2", "grammar": "passe-compose", "themes": ["achats"],
+    "type": "short", "difficulty": 1,
+    "instruction": "請翻譯成法文：她買了一件洋裝。",
+    "stem": "",
+    "answers": ["Elle a acheté une robe."],
+    "explanation": "acheter 用 avoir 當助動詞，過去分詞 acheté。用 avoir 時，過去分詞不跟主詞配合。"
+  }
+]

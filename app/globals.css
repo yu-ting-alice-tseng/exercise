@@ -1,26 +1,115 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --bg: #f6f4ef;
+  --surface: #ffffff;
+  --ink: #1e2330;
+  --muted: #5d6372;
+  --line: #e3dfd6;
+  --accent: #2b48b0;
+  --accent-ink: #ffffff;
+  --accent-soft: #e7ebfa;
+  --ok: #1d7748;
+  --ok-soft: #e2f2e9;
+  --bad: #b3322b;
+  --bad-soft: #fbe6e4;
+  --warn: #9a6200;
+  --warn-soft: #fbefd6;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme="light"]) {
+    --bg: #14161b;
+    --surface: #1d2028;
+    --ink: #e9e7e2;
+    --muted: #a2a7b2;
+    --line: #2f333d;
+    --accent: #93a6ff;
+    --accent-ink: #12172b;
+    --accent-soft: #232a48;
+    --ok: #63d49c;
+    --ok-soft: #163327;
+    --bad: #ff8d84;
+    --bad-soft: #3b1f1d;
+    --warn: #f1bb52;
+    --warn-soft: #382c13;
   }
 }
 
+:root[data-theme="dark"] {
+  --bg: #14161b;
+  --surface: #1d2028;
+  --ink: #e9e7e2;
+  --muted: #a2a7b2;
+  --line: #2f333d;
+  --accent: #93a6ff;
+  --accent-ink: #12172b;
+  --accent-soft: #232a48;
+  --ok: #63d49c;
+  --ok-soft: #163327;
+  --bad: #ff8d84;
+  --bad-soft: #3b1f1d;
+  --warn: #f1bb52;
+  --warn-soft: #382c13;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --font-sans: "Noto Sans TC", "PingFang TC", "Heiti TC", "Microsoft JhengHei", system-ui,
+    -apple-system, "Segoe UI", sans-serif;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+/* 法文題幹稍微放大、行距寬一點，比較好讀 */
+.fr {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+/* ===== 列印 ===== */
+@page {
+  size: A4;
+  margin: 16mm 15mm;
+}
+
+@media print {
+  :root,
+  :root[data-theme="dark"] {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --ink: #000000;
+    --muted: #333333;
+    --line: #999999;
+  }
+  body {
+    background: #fff;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .avoid-break {
+    break-inside: avoid;
+  }
 }

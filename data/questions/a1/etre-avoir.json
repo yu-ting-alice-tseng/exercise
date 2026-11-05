@@ -1,0 +1,102 @@
+[
+  {
+    "id": "a1-ea-001", "level": "A1", "grammar": "etre-avoir", "themes": ["ecole-travail", "presentation"],
+    "type": "choice", "difficulty": 1,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Nous ___ étudiants.",
+    "options": ["sommes", "êtes", "sont", "avons"],
+    "answer": 0,
+    "explanation": "表示身分用 être。主詞 nous 對應 sommes。"
+  },
+  {
+    "id": "a1-ea-002", "level": "A1", "grammar": "etre-avoir", "themes": ["presentation"],
+    "type": "choice", "difficulty": 2,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Tu ___ quel âge ?",
+    "options": ["as", "es", "a", "est"],
+    "answer": 0,
+    "explanation": "法文表達年齡用 avoir（「擁有幾歲」），不是 être。主詞 tu 對應 as。"
+  },
+  {
+    "id": "a1-ea-003", "level": "A1", "grammar": "etre-avoir", "themes": ["nourriture"],
+    "type": "choice", "difficulty": 2,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Ils ___ faim.",
+    "options": ["ont", "sont", "avez", "a"],
+    "answer": 0,
+    "explanation": "「餓了」是 avoir faim，固定用 avoir。主詞 ils 對應 ont。類似的還有 avoir soif（渴）、avoir froid（冷）。"
+  },
+  {
+    "id": "a1-ea-004", "level": "A1", "grammar": "etre-avoir", "themes": ["presentation"],
+    "type": "choice", "difficulty": 1,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Vous ___ français ?",
+    "options": ["êtes", "avez", "sont", "es"],
+    "answer": 0,
+    "explanation": "表示國籍用 être。主詞 vous 對應 êtes。"
+  },
+  {
+    "id": "a1-ea-005", "level": "A1", "grammar": "etre-avoir", "themes": ["presentation"],
+    "type": "fill", "difficulty": 1,
+    "instruction": "請填入括號內動詞的現在式",
+    "stem": "J'___ (avoir) vingt ans.",
+    "answers": ["ai"],
+    "explanation": "avoir 的 je 變化是 ai，je 遇到母音要省略成 j'。"
+  },
+  {
+    "id": "a1-ea-006", "level": "A1", "grammar": "etre-avoir", "themes": ["ecole-travail"],
+    "type": "fill", "difficulty": 1,
+    "instruction": "請填入括號內動詞的現在式",
+    "stem": "Elle ___ (être) professeure.",
+    "answers": ["est"],
+    "explanation": "être 的第三人稱單數是 est。注意說職業時通常不加冠詞。"
+  },
+  {
+    "id": "a1-ea-007", "level": "A1", "grammar": "etre-avoir", "themes": ["famille", "voyage"],
+    "type": "fill", "difficulty": 1,
+    "instruction": "請填入括號內動詞的現在式",
+    "stem": "Mes parents ___ (être) en vacances.",
+    "answers": ["sont"],
+    "explanation": "mes parents 是第三人稱複數（= ils），être 變成 sont。"
+  },
+  {
+    "id": "a1-ea-008", "level": "A1", "grammar": "etre-avoir", "themes": ["famille"],
+    "type": "fill", "difficulty": 1,
+    "instruction": "請填入括號內動詞的現在式",
+    "stem": "Vous ___ (avoir) des enfants ?",
+    "answers": ["avez"],
+    "explanation": "avoir 的 vous 變化是 avez。"
+  },
+  {
+    "id": "a1-ea-009", "level": "A1", "grammar": "etre-avoir", "themes": ["presentation"],
+    "type": "short", "difficulty": 2,
+    "instruction": "請翻譯成法文：我是台灣人，我二十五歲。",
+    "stem": "",
+    "answers": ["Je suis taïwanais, j'ai vingt-cinq ans.", "Je suis taïwanaise, j'ai vingt-cinq ans."],
+    "explanation": "國籍用 être，年齡用 avoir。女生要寫 taïwanaise。國籍形容詞小寫。"
+  },
+  {
+    "id": "a1-ea-010", "level": "A1", "grammar": "etre-avoir", "themes": ["sante", "quotidien"],
+    "type": "short", "difficulty": 2,
+    "instruction": "請翻譯成法文：你們累了嗎？",
+    "stem": "",
+    "answers": ["Vous êtes fatigués ?", "Êtes-vous fatigués ?", "Est-ce que vous êtes fatigués ?"],
+    "explanation": "「累的」fatigué 是形容詞，用 être。vous 指多人時形容詞要加 s；如果全是女生則寫 fatiguées。"
+  },
+  {
+    "id": "a1-ea-011", "level": "A1", "grammar": "etre-avoir", "themes": ["logement"],
+    "type": "short", "difficulty": 2,
+    "instruction": "請翻譯成法文：我們有一間小公寓。",
+    "stem": "",
+    "answers": ["Nous avons un petit appartement.", "On a un petit appartement."],
+    "explanation": "「擁有」用 avoir。petit 這類短而常用的形容詞放在名詞前面。"
+  },
+  {
+    "id": "a1-ea-012", "level": "A1", "grammar": "etre-avoir", "themes": ["famille"],
+    "type": "short", "difficulty": 3,
+    "instruction": "請用完整的句子回答。",
+    "stem": "Tu as des frères et sœurs ?",
+    "answers": ["Oui, j'ai un frère et une sœur.", "Non, je n'ai pas de frères et sœurs."],
+    "explanation": "肯定句：j'ai…。否定句要注意：ne…pas 之後，不定冠詞 des 要改成 de。"
+  }
+]

@@ -1,0 +1,60 @@
+export type Level = "A1" | "A2" | "B1";
+export type QuestionType = "choice" | "fill" | "short";
+export type Difficulty = 1 | 2 | 3;
+
+interface BaseQuestion {
+  /** 唯一編號，例如 a1-art-001 */
+  id: string;
+  level: Level;
+  /** 文法點代號，對應 taxonomy.ts */
+  grammar: string;
+  /** 主題代號，可多個 */
+  themes: string[];
+  difficulty: Difficulty;
+  /** 題目說明（繁體中文） */
+  instruction: string;
+  /** 題幹（法文）；填充題用 ___ 表示空格 */
+  stem: string;
+  /** 解析（繁體中文） */
+  explanation: string;
+}
+
+export interface ChoiceQuestion extends BaseQuestion {
+  type: "choice";
+  options: string[];
+  /** 正確選項在 options 裡的索引 */
+  answer: number;
+}
+
+export interface FillQuestion extends BaseQuestion {
+  type: "fill";
+  /** 所有可接受的答案 */
+  answers: string[];
+}
+
+export interface ShortQuestion extends BaseQuestion {
+  type: "short";
+  /** 參考答案，第一個是主要答案 */
+  answers: string[];
+}
+
+export type Question = ChoiceQuestion | FillQuestion | ShortQuestion;
+
+export type FilterBy = "grammar" | "theme";
+export type DifficultyFilter = "all" | Difficulty;
+
+export interface PaperConfig {
+  level: Level;
+  by: FilterBy;
+  /** 選取的文法點或主題代號 */
+  topics: string[];
+  counts: Record<QuestionType, number>;
+  difficulty: DifficultyFilter;
+  seed: number;
+}
+
+/** 抽出來、選項已打亂的題目 */
+export type DrawnQuestion =
+  | (ChoiceQuestion & { displayOptions: string[]; displayAnswer: number })
+  | FillQuestion
+  | ShortQuestion;

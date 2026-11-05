@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 法文練習題產生器
 
-## Getting Started
+依等級（A1～B1）、文法點或主題，從題庫抽題：
 
-First, run the development server:
+- **線上練習**：直接作答，一鍵檢查答案，看解析，重做答錯的題目
+- **A／B 考卷**：同範圍、不同題目的兩份考卷，可列印或存成 PDF
+- 每份卷子都有固定網址，可以直接把線上作答連結傳給學生
+
+純靜態網站，放在 GitHub Pages，不需要伺服器或 API 費用。
+
+## 本機開發
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+打開 http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 新增題目
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. 題庫在 `data/questions/<等級>/<文法點>.json`，一個文法點一個檔案
+2. 新檔案要在 `lib/bank.ts` 加一行 import
+3. 執行 `npm run validate` 檢查格式（id 重複、文法點或主題代號打錯、答案索引錯誤等）
 
-## Learn More
+文法點和主題清單在 `lib/taxonomy.ts`。
 
-To learn more about Next.js, take a look at the following resources:
+### 題目格式
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```jsonc
+{
+  "id": "a2-pc-005",            // 唯一編號
+  "level": "A2",                // A1、A2、B1
+  "grammar": "passe-compose",   // 文法點代號
+  "themes": ["voyage"],         // 主題代號，可多個
+  "type": "fill",               // choice（選擇）、fill（填充）、short（簡答）
+  "difficulty": 2,              // 1 基礎、2 標準、3 進階
+  "instruction": "請填入括號內動詞的複合過去式",
+  "stem": "L'été dernier, nous ___ (aller) en Bretagne.",  // ___ 是空格
+  "answers": ["sommes allés", "sommes allées"],             // 所有可接受的答案
+  "explanation": "aller 用 être 當助動詞……"
+}
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 選擇題用 `options`（選項陣列）和 `answer`（正確選項的索引，從 0 開始），選項順序會自動打亂
+- 填充題自動批改：不分大小寫、忽略句尾標點；只差重音符號時顯示「差一點」
+- 簡答題的 `answers` 是參考答案，學生對照後自己勾選對錯
 
-## Deploy on Vercel
+## 部署
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+push 到 `main` 分支後，GitHub Actions 會自動檢查題庫、建置並部署到
+`https://<帳號>.github.io/<repo 名稱>/`。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+第一次使用前，到 repo 的 **Settings → Pages → Source** 選擇 **GitHub Actions**。
