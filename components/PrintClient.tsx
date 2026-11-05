@@ -48,7 +48,7 @@ export default function PrintClient() {
           <button
             type="button"
             onClick={() => window.print()}
-            className="min-h-11 rounded-xl bg-accent px-5 font-medium text-accent-ink hover:opacity-90"
+            className="min-h-11 rounded-lg bg-accent px-5 font-medium text-accent-ink hover:brightness-110"
           >
             列印／存成 PDF
           </button>
@@ -61,7 +61,7 @@ export default function PrintClient() {
       <main className="mx-auto max-w-[210mm] bg-white px-6 py-8 text-black print:max-w-none print:p-0">
         <header className="mb-5 border-b-2 border-black pb-3">
           <div className="flex items-baseline justify-between gap-4">
-            <h1 className="text-xl font-bold">{title}</h1>
+            <h1 className="display text-xl font-bold">{title}</h1>
             <span className="text-sm">難度：{DIFFICULTY_LABELS[String(config.difficulty)]}</span>
           </div>
           {!isAnswer && (
@@ -78,7 +78,7 @@ export default function PrintClient() {
 
         {sections.map((s, si) => (
           <section key={s.type} className="mb-6">
-            <h2 className="mb-3 font-bold">
+            <h2 className="display mb-3 font-bold">
               {SECTION_NUMS[si]}、{TYPE_LABELS[s.type].zh}（{TYPE_LABELS[s.type].fr}）
             </h2>
             <ol className="space-y-4">

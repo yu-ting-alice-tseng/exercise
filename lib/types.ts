@@ -34,8 +34,10 @@ export interface FillQuestion extends BaseQuestion {
 
 export interface ShortQuestion extends BaseQuestion {
   type: "short";
-  /** 參考答案，第一個是主要答案 */
+  /** 所有可接受的寫法，第一個是主要答案；系統會自動比對 */
   answers: string[];
+  /** 開放式作答（無法自動批改），學生對照參考答案後自己勾選 */
+  open?: boolean;
 }
 
 export type Question = ChoiceQuestion | FillQuestion | ShortQuestion;

@@ -1,102 +1,231 @@
 [
   {
-    "id": "b1-fs-001", "level": "B1", "grammar": "futur-simple", "themes": ["meteo"],
-    "type": "choice", "difficulty": 1,
+    "id": "b1-fs-001",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "meteo"
+    ],
+    "type": "choice",
+    "difficulty": 1,
     "instruction": "請選出正確的簡單未來式",
     "stem": "Demain, il ___ beau.",
-    "options": ["fera", "faira", "fairai", "ferai"],
+    "options": [
+      "fera",
+      "faira",
+      "fairai",
+      "ferai"
+    ],
     "answer": 0,
     "explanation": "faire 的未來式詞幹是不規則的 fer-，第三人稱單數加 -a：fera。ferai 是 je 的變化。"
   },
   {
-    "id": "b1-fs-002", "level": "B1", "grammar": "futur-simple", "themes": ["voyage"],
-    "type": "choice", "difficulty": 1,
+    "id": "b1-fs-002",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 1,
     "instruction": "請選出正確的簡單未來式",
     "stem": "Nous ___ en France l'année prochaine.",
-    "options": ["irons", "allerons", "irez", "irai"],
+    "options": [
+      "irons",
+      "allerons",
+      "irez",
+      "irai"
+    ],
     "answer": 0,
     "explanation": "aller 的未來式詞幹是不規則的 ir-，nous 加 -ons：irons。"
   },
   {
-    "id": "b1-fs-003", "level": "B1", "grammar": "futur-simple", "themes": ["famille"],
-    "type": "choice", "difficulty": 2,
+    "id": "b1-fs-003",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
     "instruction": "請選出正確的動詞形式",
     "stem": "Quand tu ___ grand, tu comprendras.",
-    "options": ["seras", "sera", "es", "étais"],
+    "options": [
+      "seras",
+      "sera",
+      "es",
+      "étais"
+    ],
     "answer": 0,
     "explanation": "和中文不同，法文 quand 後面如果講的是未來的事，也要用未來式。être 的未來式詞幹是 ser-，tu 加 -as：seras。"
   },
   {
-    "id": "b1-fs-004", "level": "B1", "grammar": "futur-simple", "themes": ["logement"],
-    "type": "choice", "difficulty": 2,
+    "id": "b1-fs-004",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 2,
     "instruction": "請選出正確的簡單未來式",
     "stem": "Dans dix ans, nous ___ une maison à la campagne.",
-    "options": ["aurons", "avrons", "aurions", "aurez"],
+    "options": [
+      "aurons",
+      "avrons",
+      "aurions",
+      "aurez"
+    ],
     "answer": 0,
     "explanation": "avoir 的未來式詞幹是 aur-，nous 加 -ons：aurons。aurions 是條件式。"
   },
   {
-    "id": "b1-fs-005", "level": "B1", "grammar": "futur-simple", "themes": ["ecole-travail"],
-    "type": "fill", "difficulty": 1,
+    "id": "b1-fs-005",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
     "instruction": "請填入括號內動詞的簡單未來式",
     "stem": "Je vous ___ (téléphoner) demain matin.",
-    "answers": ["téléphonerai"],
+    "answers": [
+      "téléphonerai"
+    ],
     "explanation": "規則的 -er 動詞，直接用原形當詞幹，je 加 -ai：téléphonerai。"
   },
   {
-    "id": "b1-fs-006", "level": "B1", "grammar": "futur-simple", "themes": ["nourriture", "famille"],
-    "type": "fill", "difficulty": 2,
+    "id": "b1-fs-006",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "nourriture",
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
     "instruction": "請填入括號內動詞的簡單未來式",
     "stem": "Quand elle ___ (arriver), nous dînerons.",
-    "answers": ["arrivera"],
+    "answers": [
+      "arrivera"
+    ],
     "explanation": "quand 後面講未來的事要用未來式。arriver 加 -a：arrivera。"
   },
   {
-    "id": "b1-fs-007", "level": "B1", "grammar": "futur-simple", "themes": ["voyage", "culture"],
-    "type": "fill", "difficulty": 2,
+    "id": "b1-fs-007",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "voyage",
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
     "instruction": "請填入括號內動詞的簡單未來式",
     "stem": "Vous ___ (voir) la tour Eiffel depuis l'hôtel.",
-    "answers": ["verrez"],
+    "answers": [
+      "verrez"
+    ],
     "explanation": "voir 的未來式詞幹是不規則的 verr-，vous 加 -ez：verrez。"
   },
   {
-    "id": "b1-fs-008", "level": "B1", "grammar": "futur-simple", "themes": ["voyage", "quotidien"],
-    "type": "fill", "difficulty": 3,
+    "id": "b1-fs-008",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "voyage",
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 3,
     "instruction": "請填入括號內動詞的簡單未來式",
     "stem": "Il ___ (falloir) partir tôt.",
-    "answers": ["faudra"],
+    "answers": [
+      "faudra"
+    ],
     "explanation": "falloir 只有 il 的形式，未來式是 il faudra。"
   },
   {
-    "id": "b1-fs-009", "level": "B1", "grammar": "futur-simple", "themes": ["voyage", "ecole-travail"],
-    "type": "short", "difficulty": 1,
+    "id": "b1-fs-009",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "voyage",
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 1,
     "instruction": "請翻譯成法文：明年我會學開車。",
     "stem": "",
-    "answers": ["L'année prochaine, j'apprendrai à conduire."],
+    "answers": [
+      "L'année prochaine, j'apprendrai à conduire.",
+      "J'apprendrai à conduire l'année prochaine."
+    ],
     "explanation": "-re 結尾的動詞去掉 e 再加詞尾：apprendre 變成 apprendrai。apprendre à + 原形動詞表示「學做某事」。"
   },
   {
-    "id": "b1-fs-010", "level": "B1", "grammar": "futur-simple", "themes": ["voyage"],
-    "type": "short", "difficulty": 3,
+    "id": "b1-fs-010",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 3,
     "instruction": "請翻譯成法文：等你到了，打電話給我。",
     "stem": "",
-    "answers": ["Quand tu arriveras, appelle-moi.", "Téléphone-moi quand tu arriveras."],
+    "answers": [
+      "Quand tu arriveras, appelle-moi.",
+      "Quand tu arriveras, téléphone-moi.",
+      "Appelle-moi quand tu arriveras.",
+      "Téléphone-moi quand tu arriveras.",
+      "Quand tu seras arrivé, appelle-moi.",
+      "Appelle-moi quand tu seras arrivé."
+    ],
     "explanation": "quand 後面要用未來式 arriveras（中文沒有這個區別，很容易寫成現在式）。後半句用命令式。"
   },
   {
-    "id": "b1-fs-011", "level": "B1", "grammar": "futur-simple", "themes": ["voyage", "loisirs"],
-    "type": "short", "difficulty": 2,
-    "instruction": "請用簡單未來式回答，至少寫兩句。",
+    "id": "b1-fs-011",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "voyage",
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用簡單未來式，把這句話翻譯成法文回答：下次放假，我會去義大利參觀羅馬。",
     "stem": "Que feras-tu pendant les prochaines vacances ?",
-    "answers": ["Je partirai en Italie et je visiterai Rome."],
-    "explanation": "規則動詞直接用原形加詞尾（-ai, -as, -a, -ons, -ez, -ont）；注意 faire（fer-）、aller（ir-）、être（ser-）等不規則詞幹。"
+    "answers": [
+      "Pendant les prochaines vacances, j'irai en Italie et je visiterai Rome.",
+      "Pendant les prochaines vacances, je partirai en Italie et je visiterai Rome.",
+      "J'irai en Italie et je visiterai Rome.",
+      "Je partirai en Italie et je visiterai Rome.",
+      "Aux prochaines vacances, j'irai en Italie et je visiterai Rome."
+    ],
+    "explanation": "aller 的未來式詞幹是 ir-（j'irai），visiter 規則變化（je visiterai）。國家 Italie 是陰性，前面用 en。"
   },
   {
-    "id": "b1-fs-012", "level": "B1", "grammar": "futur-simple", "themes": ["voyage", "quotidien"],
-    "type": "short", "difficulty": 1,
+    "id": "b1-fs-012",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "voyage",
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 1,
     "instruction": "請翻譯成法文：他們會在下午五點到。",
     "stem": "",
-    "answers": ["Ils arriveront à cinq heures de l'après-midi.", "Ils arriveront à dix-sept heures."],
+    "answers": [
+      "Ils arriveront à cinq heures de l'après-midi.",
+      "Ils arriveront à dix-sept heures.",
+      "Ils arriveront à 17 heures.",
+      "Ils arriveront à 17h.",
+      "Ils arriveront à 5 heures de l'après-midi.",
+      "Elles arriveront à dix-sept heures."
+    ],
     "explanation": "arriver 加 -ont：arriveront。法文正式時間常用 24 小時制，所以也可以說 dix-sept heures。"
   }
 ]

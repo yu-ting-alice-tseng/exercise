@@ -1,79 +1,93 @@
 @import "tailwindcss";
 
+/* 靈感：巴黎書店的米白紙張、深藍墨水、三色旗與路牌的法國藍 */
 :root {
-  --bg: #f6f4ef;
-  --surface: #ffffff;
-  --ink: #1e2330;
-  --muted: #5d6372;
-  --line: #e3dfd6;
-  --accent: #2b48b0;
+  --bg: #f7f2e8;
+  --surface: #fffcf6;
+  --sunken: #f1ebdf;
+  --ink: #18203d;
+  --muted: #676577;
+  --line: #e4dccb;
+  --accent: #1f3a93;
   --accent-ink: #ffffff;
-  --accent-soft: #e7ebfa;
-  --ok: #1d7748;
-  --ok-soft: #e2f2e9;
-  --bad: #b3322b;
-  --bad-soft: #fbe6e4;
-  --warn: #9a6200;
-  --warn-soft: #fbefd6;
+  --accent-soft: #e6eaf6;
+  --rouge: #c8283c;
+  --rouge-soft: #f8e3e5;
+  --ok: #2c6a4c;
+  --ok-soft: #e1efe6;
+  --bad: #b3263a;
+  --bad-soft: #f8e2e4;
+  --warn: #9b630c;
+  --warn-soft: #f7ebd2;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #14161b;
-    --surface: #1d2028;
-    --ink: #e9e7e2;
-    --muted: #a2a7b2;
-    --line: #2f333d;
-    --accent: #93a6ff;
-    --accent-ink: #12172b;
-    --accent-soft: #232a48;
-    --ok: #63d49c;
-    --ok-soft: #163327;
-    --bad: #ff8d84;
-    --bad-soft: #3b1f1d;
-    --warn: #f1bb52;
-    --warn-soft: #382c13;
+    --bg: #0f1326;
+    --surface: #171c34;
+    --sunken: #12162b;
+    --ink: #f2ece0;
+    --muted: #a5a6b8;
+    --line: #2a3050;
+    --accent: #9fb2ff;
+    --accent-ink: #0f1326;
+    --accent-soft: #222b52;
+    --rouge: #ff7a89;
+    --rouge-soft: #3a1b25;
+    --ok: #6fd3a2;
+    --ok-soft: #163128;
+    --bad: #ff8593;
+    --bad-soft: #3a1b25;
+    --warn: #f0be5e;
+    --warn-soft: #372c14;
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #14161b;
-  --surface: #1d2028;
-  --ink: #e9e7e2;
-  --muted: #a2a7b2;
-  --line: #2f333d;
-  --accent: #93a6ff;
-  --accent-ink: #12172b;
-  --accent-soft: #232a48;
-  --ok: #63d49c;
-  --ok-soft: #163327;
-  --bad: #ff8d84;
-  --bad-soft: #3b1f1d;
-  --warn: #f1bb52;
-  --warn-soft: #382c13;
+  --bg: #0f1326;
+  --surface: #171c34;
+  --sunken: #12162b;
+  --ink: #f2ece0;
+  --muted: #a5a6b8;
+  --line: #2a3050;
+  --accent: #9fb2ff;
+  --accent-ink: #0f1326;
+  --accent-soft: #222b52;
+  --rouge: #ff7a89;
+  --rouge-soft: #3a1b25;
+  --ok: #6fd3a2;
+  --ok-soft: #163128;
+  --bad: #ff8593;
+  --bad-soft: #3a1b25;
+  --warn: #f0be5e;
+  --warn-soft: #372c14;
 }
 
 @theme inline {
   --color-bg: var(--bg);
   --color-surface: var(--surface);
+  --color-sunken: var(--sunken);
   --color-ink: var(--ink);
   --color-muted: var(--muted);
   --color-line: var(--line);
   --color-accent: var(--accent);
   --color-accent-ink: var(--accent-ink);
   --color-accent-soft: var(--accent-soft);
+  --color-rouge: var(--rouge);
+  --color-rouge-soft: var(--rouge-soft);
   --color-ok: var(--ok);
   --color-ok-soft: var(--ok-soft);
   --color-bad: var(--bad);
   --color-bad-soft: var(--bad-soft);
   --color-warn: var(--warn);
   --color-warn-soft: var(--warn-soft);
-  --font-sans: "Noto Sans TC", "PingFang TC", "Heiti TC", "Microsoft JhengHei", system-ui,
-    -apple-system, "Segoe UI", sans-serif;
+  --font-sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --font-display: "Playfair Display", "Noto Serif TC", "Songti TC", Georgia, serif;
 }
 
 html {
   -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -82,10 +96,65 @@ body {
   font-family: var(--font-sans);
 }
 
-/* 法文題幹稍微放大、行距寬一點，比較好讀 */
+/* 法文題幹：稍大、行距寬，手機輸入框 16px 以上才不會自動放大 */
 .fr {
   font-size: 1.0625rem;
-  line-height: 1.75;
+  line-height: 1.8;
+}
+
+/* 標題用襯線體 */
+.display {
+  font-family: var(--font-display);
+  letter-spacing: 0.01em;
+  font-variant-numeric: lining-nums;
+}
+
+/* 小型大寫標籤，例如 ÉTAPE 1 */
+.eyebrow {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.875rem;
+  color: var(--rouge);
+  font-variant-numeric: lining-nums;
+}
+
+/* 三色旗細線 */
+.tricolore {
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    #1f3a93 0 33.33%,
+    #ffffff 33.33% 66.66%,
+    #c8283c 66.66% 100%
+  );
+}
+
+/* 隱藏捲軸但可橫向滑動 */
+.scroll-x {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.scroll-x::-webkit-scrollbar {
+  display: none;
+}
+
+/* 錯字底線 */
+.mark-wrong {
+  color: var(--bad);
+  text-decoration: underline wavy var(--bad);
+  text-underline-offset: 4px;
+}
+.mark-accent {
+  color: var(--warn);
+  text-decoration: underline wavy var(--warn);
+  text-underline-offset: 4px;
+}
+.mark-missing {
+  background: var(--ok-soft);
+  color: var(--ok);
+  border-radius: 4px;
+  padding: 0 3px;
+  font-weight: 600;
 }
 
 /* ===== 列印 ===== */

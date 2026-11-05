@@ -6,10 +6,10 @@ export interface Topic {
   fr: string;
 }
 
-export const LEVELS: { id: Level; zh: string; desc: string }[] = [
-  { id: "A1", zh: "A1 入門", desc: "能用簡單句子介紹自己、日常生活" },
-  { id: "A2", zh: "A2 基礎", desc: "能描述過去的經驗、熟悉的事物" },
-  { id: "B1", zh: "B1 進階", desc: "能談論計畫、假設與看法" },
+export const LEVELS: { id: Level; zh: string; fr: string; desc: string }[] = [
+  { id: "A1", zh: "入門", fr: "Découverte", desc: "能用簡單句子介紹自己、談日常生活" },
+  { id: "A2", zh: "基礎", fr: "Survie", desc: "能描述過去的經驗、熟悉的人事物" },
+  { id: "B1", zh: "進階", fr: "Seuil", desc: "能談論計畫、假設與自己的看法" },
 ];
 
 export const GRAMMAR: Record<Level, Topic[]> = {
@@ -68,6 +68,13 @@ export const TYPE_LABELS: Record<QuestionType, { zh: string; fr: string }> = {
 };
 
 export const TYPE_ORDER: QuestionType[] = ["choice", "fill", "short"];
+
+export const DIFFICULTY_FR: Record<string, string> = {
+  all: "Tous",
+  "1": "Facile",
+  "2": "Moyen",
+  "3": "Difficile",
+};
 
 export const DIFFICULTY_LABELS: Record<string, string> = {
   all: "全部",
