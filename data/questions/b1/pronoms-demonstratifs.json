@@ -1,0 +1,221 @@
+[
+  {
+    "id": "b1-pd-001",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "achats"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的指示代名詞",
+    "stem": "Quelle robe préfères-tu ? ___-ci.",
+    "options": [
+      "Celle",
+      "Celui",
+      "Ceux",
+      "Celles"
+    ],
+    "answer": 0,
+    "explanation": "代替陰性單數名詞（robe）用 celle；-ci 表示「這個」，-là 表示「那個」。"
+  },
+  {
+    "id": "b1-pd-002",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的指示代名詞",
+    "stem": "Ces livres sont à toi ? Non, ce sont ___ de Paul.",
+    "options": [
+      "ceux",
+      "celles",
+      "celui",
+      "ce"
+    ],
+    "answer": 0,
+    "explanation": "代替陽性複數（livres）用 ceux。"
+  },
+  {
+    "id": "b1-pd-003",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的指示代名詞",
+    "stem": "___ qui veulent partir peuvent sortir.",
+    "options": [
+      "Ceux",
+      "Ce",
+      "Celui-ci",
+      "Ces"
+    ],
+    "answer": 0,
+    "explanation": "ceux qui…＝「…的人們」。ces 是指示形容詞，後面一定要接名詞。"
+  },
+  {
+    "id": "b1-pd-004",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "voyage",
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的指示代名詞",
+    "stem": "Ma voiture est plus rapide que ___ de mon frère.",
+    "options": [
+      "celle",
+      "celui",
+      "ceux",
+      "cette"
+    ],
+    "answer": 0,
+    "explanation": "代替陰性單數（voiture）用 celle。"
+  },
+  {
+    "id": "b1-pd-005",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入正確的指示代名詞",
+    "stem": "Ce gâteau-ci est bon, mais ___-là est meilleur.",
+    "answers": [
+      "celui"
+    ],
+    "explanation": "代替陽性單數（gâteau）用 celui。"
+  },
+  {
+    "id": "b1-pd-006",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入正確的指示代名詞",
+    "stem": "Les photos de Marie sont belles, ___ de Léa aussi.",
+    "answers": [
+      "celles"
+    ],
+    "explanation": "代替陰性複數（photos）用 celles。"
+  },
+  {
+    "id": "b1-pd-007",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入正確的指示代名詞",
+    "stem": "Je n'aime pas ce film. Je préfère ___ que nous avons vu hier.",
+    "answers": [
+      "celui"
+    ],
+    "explanation": "代替陽性單數（film），後面接關係子句：celui que…"
+  },
+  {
+    "id": "b1-pd-008",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入正確的指示代名詞",
+    "stem": "Quel est ton appartement ? C'est ___ du troisième étage.",
+    "answers": [
+      "celui"
+    ],
+    "explanation": "appartement 是陽性單數，用 celui。"
+  },
+  {
+    "id": "b1-pd-009",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "achats"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我喜歡這雙鞋，不喜歡那雙。",
+    "stem": "",
+    "answers": [
+      "J'aime ces chaussures-ci, pas celles-là.",
+      "J'aime ces chaussures, pas celles-là.",
+      "J'aime celles-ci, pas celles-là."
+    ],
+    "explanation": "chaussures 是陰性複數，用 celles-là。"
+  },
+  {
+    "id": "b1-pd-010",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我的電腦比我哥哥的舊。",
+    "stem": "",
+    "answers": [
+      "Mon ordinateur est plus vieux que celui de mon frère.",
+      "Mon ordinateur est plus ancien que celui de mon frère.",
+      "Mon ordinateur est plus vieux que celui de mon grand frère."
+    ],
+    "explanation": "celui de + 人，代替「某人的…」。"
+  },
+  {
+    "id": "b1-pd-011",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：想參加的人請舉手。",
+    "stem": "",
+    "answers": [
+      "Ceux qui veulent participer lèvent la main.",
+      "Que ceux qui veulent participer lèvent la main.",
+      "Ceux qui veulent participer, levez la main.",
+      "Ceux qui veulent participer, levez la main, s'il vous plaît."
+    ],
+    "explanation": "ceux qui…＝「…的人」。"
+  },
+  {
+    "id": "b1-pd-012",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "achats"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：你要哪一個（陽性）？這個還是那個？",
+    "stem": "",
+    "answers": [
+      "Lequel veux-tu ? Celui-ci ou celui-là ?",
+      "Tu veux lequel ? Celui-ci ou celui-là ?",
+      "Lequel tu veux ? Celui-ci ou celui-là ?",
+      "Lequel voulez-vous ? Celui-ci ou celui-là ?"
+    ],
+    "explanation": "lequel 問「哪一個」，celui-ci／celui-là 回答「這個／那個」。"
+  }
+]

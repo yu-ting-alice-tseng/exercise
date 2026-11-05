@@ -1,0 +1,228 @@
+[
+  {
+    "id": "c2-cs-001",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出表示「不但…而且…」的說法",
+    "stem": "Il est ___ intelligent, ___ travailleur.",
+    "options": [
+      "non seulement / mais aussi",
+      "soit / soit",
+      "ni / ni",
+      "ou bien / ou bien"
+    ],
+    "answer": 0,
+    "explanation": "non seulement…mais aussi／mais encore…＝不但…而且…"
+  },
+  {
+    "id": "c2-cs-002",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的說法（哪怕只是…）",
+    "stem": "Accorde-moi ne ___ cinq minutes.",
+    "options": [
+      "fût-ce que",
+      "serait-ce",
+      "soit-ce",
+      "était-ce que"
+    ],
+    "answer": 0,
+    "explanation": "ne fût-ce que（書面）／ne serait-ce que（較常用）＝哪怕只是。"
+  },
+  {
+    "id": "c2-cs-003",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的字",
+    "stem": "Il ne m'a pas aidé, ___ qu'il l'avait promis.",
+    "options": [
+      "alors",
+      "ainsi",
+      "aussi",
+      "tant"
+    ],
+    "answer": 0,
+    "explanation": "alors que 表示對比或讓步（儘管、而）。"
+  },
+  {
+    "id": "c2-cs-004",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "achats"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出表示「或…或…」的說法",
+    "stem": "Vous pouvez payer ___ en espèces, ___ par carte.",
+    "options": [
+      "soit / soit",
+      "ni / ni",
+      "non / mais",
+      "tant / tant"
+    ],
+    "answer": 0,
+    "explanation": "soit…soit…＝或者…或者…"
+  },
+  {
+    "id": "c2-cs-005",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入缺少的字（意思：換句話說）",
+    "stem": "Il est parti sans payer ; ___ d'autres termes, il a volé.",
+    "answers": [
+      "en"
+    ],
+    "explanation": "en d'autres termes＝autrement dit（換句話說）。"
+  },
+  {
+    "id": "c2-cs-006",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入缺少的字（意思：更別說）",
+    "stem": "Je n'ai pas le temps, et ___ moins l'argent.",
+    "answers": [
+      "encore"
+    ],
+    "explanation": "et encore moins＝更不用說。"
+  },
+  {
+    "id": "c2-cs-007",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "sante",
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入 avoir 的正確形式（意思：儘管如此，他仍然…）",
+    "stem": "Il était épuisé ; il n'en ___ pas moins continué.",
+    "answers": [
+      "a"
+    ],
+    "explanation": "ne…pas moins＝儘管如此仍然（書面）：il n'en a pas moins continué。"
+  },
+  {
+    "id": "c2-cs-008",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "meteo",
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入缺少的字（意思：以至於）",
+    "stem": "Il a beaucoup plu, ___ bien que la route est inondée.",
+    "answers": [
+      "si"
+    ],
+    "explanation": "si bien que + 直陳式表示結果。"
+  },
+  {
+    "id": "c2-cs-009",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "presentation"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請用 non seulement…mais aussi 改寫這個句子。",
+    "stem": "Il parle anglais et aussi chinois.",
+    "answers": [
+      "Il parle non seulement anglais, mais aussi chinois.",
+      "Non seulement il parle anglais, mais il parle aussi chinois.",
+      "Il parle non seulement l'anglais, mais aussi le chinois.",
+      "Il parle non seulement anglais mais aussi chinois.",
+      "Il parle non seulement anglais, mais encore chinois."
+    ],
+    "explanation": "non seulement 和 mais aussi 後面接同樣詞性的成分。"
+  },
+  {
+    "id": "c2-cs-010",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "voyage",
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用 ne serait-ce que 翻譯成法文：哪怕只是一天，我也想去巴黎。",
+    "stem": "",
+    "answers": [
+      "Ne serait-ce qu'un jour, je voudrais aller à Paris.",
+      "Je voudrais aller à Paris, ne serait-ce qu'un jour.",
+      "J'aimerais aller à Paris, ne serait-ce qu'un jour.",
+      "Ne serait-ce qu'un jour, j'aimerais aller à Paris.",
+      "Je voudrais aller à Paris, ne serait-ce que pour un jour.",
+      "J'aimerais aller à Paris, ne serait-ce que pour un jour."
+    ],
+    "explanation": "ne serait-ce que＝哪怕只是、就算只有。"
+  },
+  {
+    "id": "c2-cs-011",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：換句話說，我們失敗了。",
+    "stem": "",
+    "answers": [
+      "En d'autres termes, nous avons échoué.",
+      "Autrement dit, nous avons échoué.",
+      "En d'autres mots, nous avons échoué.",
+      "Autrement dit, on a échoué.",
+      "En d'autres termes, on a échoué."
+    ],
+    "explanation": "en d'autres termes、autrement dit＝換句話說。"
+  },
+  {
+    "id": "c2-cs-012",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "sante",
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用 il n'en…pas moins 改寫這個句子。",
+    "stem": "Il était fatigué ; pourtant, il a continué.",
+    "answers": [
+      "Il était fatigué ; il n'en a pas moins continué.",
+      "Il était fatigué, il n'en a pas moins continué."
+    ],
+    "explanation": "il n'en a pas moins + 過去分詞＝儘管如此，他仍然…"
+  }
+]

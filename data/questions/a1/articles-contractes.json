@@ -1,0 +1,216 @@
+[
+  {
+    "id": "a1-ac-001",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的形式",
+    "stem": "Je vais ___ cinéma.",
+    "options": [
+      "au",
+      "à le",
+      "à la",
+      "aux"
+    ],
+    "answer": 0,
+    "explanation": "à + le 一定要縮合成 au。"
+  },
+  {
+    "id": "a1-ac-002",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "achats"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的形式",
+    "stem": "Il revient ___ marché.",
+    "options": [
+      "du",
+      "de le",
+      "de la",
+      "des"
+    ],
+    "answer": 0,
+    "explanation": "de + le 一定要縮合成 du。"
+  },
+  {
+    "id": "a1-ac-003",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "famille",
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的形式",
+    "stem": "Le professeur parle ___ enfants.",
+    "options": [
+      "aux",
+      "à les",
+      "au",
+      "des"
+    ],
+    "answer": 0,
+    "explanation": "à + les 一定要縮合成 aux。"
+  },
+  {
+    "id": "a1-ac-004",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的形式",
+    "stem": "C'est le livre ___ professeur.",
+    "options": [
+      "du",
+      "de le",
+      "au",
+      "des"
+    ],
+    "answer": 0,
+    "explanation": "表示所屬的 de + le 縮合成 du。"
+  },
+  {
+    "id": "a1-ac-005",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 à 加冠詞（au、à la、à l'、aux）",
+    "stem": "Elle va ___ école.",
+    "answers": [
+      "à l'"
+    ],
+    "explanation": "母音開頭的名詞前面，à + le／la 寫成 à l'，不縮合。"
+  },
+  {
+    "id": "a1-ac-006",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 à 加冠詞（au、à la、à l'、aux）",
+    "stem": "Tu vas ___ toilettes ?",
+    "answers": [
+      "aux"
+    ],
+    "explanation": "toilettes 用複數，à + les → aux。"
+  },
+  {
+    "id": "a1-ac-007",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 de 加冠詞（du、de la、de l'、des）",
+    "stem": "Il sort ___ bureau à dix-huit heures.",
+    "answers": [
+      "du"
+    ],
+    "explanation": "de + le → du。"
+  },
+  {
+    "id": "a1-ac-008",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 de 加冠詞（du、de la、de l'、des）",
+    "stem": "Voici la maison ___ voisins.",
+    "answers": [
+      "des"
+    ],
+    "explanation": "de + les → des。"
+  },
+  {
+    "id": "a1-ac-009",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "loisirs",
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我們去海灘。",
+    "stem": "",
+    "answers": [
+      "Nous allons à la plage.",
+      "On va à la plage."
+    ],
+    "explanation": "à + la 不縮合：à la plage。"
+  },
+  {
+    "id": "a1-ac-010",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：他從郵局回來。",
+    "stem": "",
+    "answers": [
+      "Il revient de la poste.",
+      "Il rentre de la poste."
+    ],
+    "explanation": "de + la 不縮合：de la poste。"
+  },
+  {
+    "id": "a1-ac-011",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我喜歡打網球。",
+    "stem": "",
+    "answers": [
+      "J'aime jouer au tennis."
+    ],
+    "explanation": "運動用 jouer à：jouer au tennis（à + le → au）。"
+  },
+  {
+    "id": "a1-ac-012",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "loisirs",
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：她會彈鋼琴。",
+    "stem": "",
+    "answers": [
+      "Elle joue du piano.",
+      "Elle sait jouer du piano."
+    ],
+    "explanation": "樂器用 jouer de：jouer du piano（de + le → du）。注意和運動用的 jouer à 不同。"
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "c2-cl-001",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "presentation"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的字",
+    "stem": "___ riche qu'il soit, il n'est pas heureux.",
+    "options": [
+      "Si",
+      "Tant",
+      "Bien",
+      "Très"
+    ],
+    "answer": 0,
+    "explanation": "si + 形容詞 + que + 虛擬式＝「無論多麼…」（也可以說 aussi…que）。"
+  },
+  {
+    "id": "c2-cl-002",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的字",
+    "stem": "___ efforts qu'il fasse, il échoue toujours.",
+    "options": [
+      "Quelques",
+      "Quels",
+      "Quoique",
+      "Quelque"
+    ],
+    "answer": 0,
+    "explanation": "quelque(s) + 名詞 + que + 虛擬式＝「無論多少…」，quelque 配合名詞的單複數。"
+  },
+  {
+    "id": "c2-cl-003",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的連接詞（雖然，書面）",
+    "stem": "Il viendra, ___ il ait promis le contraire.",
+    "options": [
+      "encore qu'",
+      "quoi qu'",
+      "pour qu'",
+      "tant qu'"
+    ],
+    "answer": 0,
+    "explanation": "encore que + 虛擬式＝bien que，屬於書面語。"
+  },
+  {
+    "id": "c2-cl-004",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的字",
+    "stem": "Je t'aiderai, ___ tant est que tu le veuilles.",
+    "options": [
+      "si",
+      "pour",
+      "bien",
+      "quand"
+    ],
+    "answer": 0,
+    "explanation": "si tant est que + 虛擬式＝「假如真的…的話」，帶有懷疑的語氣。"
+  },
+  {
+    "id": "c2-cl-005",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的虛擬式",
+    "stem": "Pour intelligent qu'il ___ (être), il se trompe parfois.",
+    "answers": [
+      "soit"
+    ],
+    "explanation": "pour + 形容詞 + que + 虛擬式＝「無論多麼…」。"
+  },
+  {
+    "id": "c2-cl-006",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "achats",
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入 être 的正確形式（注意：tout…que 後面接直陳式）",
+    "stem": "Tout riche qu'il ___, il vit simplement.",
+    "answers": [
+      "est"
+    ],
+    "explanation": "tout + 形容詞 + que 傳統上接直陳式，因為讓步的內容是事實（現代也有人用虛擬式）。"
+  },
+  {
+    "id": "c2-cl-007",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的虛擬式",
+    "stem": "Quelle que ___ (être) ta décision, je la respecterai.",
+    "answers": [
+      "soit"
+    ],
+    "explanation": "quel que soit + 名詞，quel 要配合名詞：quelle que soit ta décision。"
+  },
+  {
+    "id": "c2-cl-008",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "loisirs",
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的虛擬式",
+    "stem": "Quoi qu'on en ___ (dire), c'est un bon film.",
+    "answers": [
+      "dise"
+    ],
+    "explanation": "quoi que + 虛擬式＝「無論…什麼」。"
+  },
+  {
+    "id": "c2-cl-009",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 Si…que 改寫這個句子。",
+    "stem": "Bien qu'il soit intelligent, il échoue.",
+    "answers": [
+      "Si intelligent qu'il soit, il échoue.",
+      "Si intelligent soit-il, il échoue."
+    ],
+    "explanation": "si + 形容詞 + que + 虛擬式；書面上也可以用倒裝：si intelligent soit-il。"
+  },
+  {
+    "id": "c2-cl-010",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：無論你的決定是什麼，我都支持你。",
+    "stem": "",
+    "answers": [
+      "Quelle que soit ta décision, je te soutiens.",
+      "Quelle que soit ta décision, je te soutiendrai.",
+      "Quel que soit ton choix, je te soutiens.",
+      "Quel que soit ton choix, je te soutiendrai.",
+      "Quelle que soit votre décision, je vous soutiendrai."
+    ],
+    "explanation": "quel que soit + 名詞，quel 要配合名詞的陰陽性。"
+  },
+  {
+    "id": "c2-cl-011",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：不管別人怎麼說，我都會去。",
+    "stem": "",
+    "answers": [
+      "Quoi qu'on dise, j'irai.",
+      "Quoi qu'en disent les autres, j'irai.",
+      "Quoi que disent les autres, j'irai.",
+      "Quoi qu'on en dise, j'irai."
+    ],
+    "explanation": "quoi que + 虛擬式；en 代替「這件事」。"
+  },
+  {
+    "id": "c2-cl-012",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "ecole-travail",
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用 Tout…que 改寫這個句子。",
+    "stem": "Il est fatigué, mais il continue.",
+    "answers": [
+      "Tout fatigué qu'il est, il continue.",
+      "Tout fatigué qu'il soit, il continue."
+    ],
+    "explanation": "tout + 形容詞 + que，傳統上接直陳式（現代也接受虛擬式）。"
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "id": "b1-plp-001",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出代名詞位置正確的說法",
+    "stem": "Ce film ? Je ___.",
+    "options": [
+      "l'ai vu",
+      "ai le vu",
+      "ai vu le",
+      "le ai vu"
+    ],
+    "answer": 0,
+    "explanation": "複合過去式中，受詞代名詞放在助動詞前面；le 遇到母音省略成 l'。"
+  },
+  {
+    "id": "b1-plp-002",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Tes parents ? Je vais ___ téléphoner.",
+    "options": [
+      "leur",
+      "les",
+      "lui",
+      "leurs"
+    ],
+    "answer": 0,
+    "explanation": "téléphoner à 接間接受詞（COI），複數用 leur；近未來式中代名詞放在原形動詞前面。"
+  },
+  {
+    "id": "b1-plp-003",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出否定命令句的正確說法",
+    "stem": "Ce gâteau ? Ne ___ !",
+    "options": [
+      "le mange pas",
+      "mange-le pas",
+      "mange pas le",
+      "le pas mange"
+    ],
+    "answer": 0,
+    "explanation": "否定命令式中，代名詞放在動詞前面：ne le mange pas。"
+  },
+  {
+    "id": "b1-plp-004",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "famille",
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的代名詞",
+    "stem": "La lettre ? Je ne ___ ai pas encore écrite.",
+    "options": [
+      "l'",
+      "la",
+      "lui",
+      "le"
+    ],
+    "answer": 0,
+    "explanation": "直接受詞（COD）la 遇到母音省略成 l'，否定時 ne 放在代名詞前面。"
+  },
+  {
+    "id": "b1-plp-005",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "logement",
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入受詞代名詞",
+    "stem": "Tes clés ? Je ___ ai oubliées à la maison.",
+    "answers": [
+      "les"
+    ],
+    "explanation": "clés 是 oublier 的直接受詞（COD），複數用 les；過去分詞要配合：oubliées。"
+  },
+  {
+    "id": "b1-plp-006",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入受詞代名詞",
+    "stem": "Ta sœur ? Je ne ___ ai pas parlé depuis un mois.",
+    "answers": [
+      "lui"
+    ],
+    "explanation": "parler à 接間接受詞（COI），單數用 lui；用 COI 時過去分詞不配合。"
+  },
+  {
+    "id": "b1-plp-007",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入受詞代名詞",
+    "stem": "Le livre ? Prends-___ !",
+    "answers": [
+      "le"
+    ],
+    "explanation": "肯定命令式中，代名詞放在動詞後面，用連字號連接：prends-le。"
+  },
+  {
+    "id": "b1-plp-008",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入受詞代名詞",
+    "stem": "Ces exercices ? Nous allons ___ faire demain.",
+    "answers": [
+      "les"
+    ],
+    "explanation": "近未來式中，代名詞放在原形動詞前面：nous allons les faire。"
+  },
+  {
+    "id": "b1-plp-009",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用代名詞否定回答（注意過去分詞的配合）。",
+    "stem": "Tu as appelé ta mère ?",
+    "answers": [
+      "Non, je ne l'ai pas appelée."
+    ],
+    "explanation": "appeler 接直接受詞，l'（= ta mère）放在助動詞前，過去分詞配合陰性：appelée。"
+  },
+  {
+    "id": "b1-plp-010",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用代名詞肯定回答（用近未來式）。",
+    "stem": "Tu vas inviter tes collègues ?",
+    "answers": [
+      "Oui, je vais les inviter."
+    ],
+    "explanation": "代名詞放在原形動詞前面：je vais les inviter。"
+  },
+  {
+    "id": "b1-plp-011",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用代名詞改寫這個命令句。",
+    "stem": "Écris à tes grands-parents !",
+    "answers": [
+      "Écris-leur !"
+    ],
+    "explanation": "écrire à 接間接受詞，複數用 leur，肯定命令式放在動詞後面。"
+  },
+  {
+    "id": "b1-plp-012",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用代名詞改寫這個命令句。",
+    "stem": "Ne regarde pas ce film !",
+    "answers": [
+      "Ne le regarde pas !"
+    ],
+    "explanation": "否定命令式中，代名詞放在動詞前面。"
+  }
+]

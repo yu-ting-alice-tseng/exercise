@@ -1,0 +1,223 @@
+[
+  {
+    "id": "a1-pl-001",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "logement",
+      "presentation"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的介系詞",
+    "stem": "J'habite ___ Paris.",
+    "options": [
+      "à",
+      "en",
+      "au",
+      "dans"
+    ],
+    "answer": 0,
+    "explanation": "城市前面用 à。"
+  },
+  {
+    "id": "a1-pl-002",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Elle va ___ France.",
+    "options": [
+      "en",
+      "à",
+      "au",
+      "aux"
+    ],
+    "answer": 0,
+    "explanation": "陰性國家（大多以 e 結尾）前面用 en。"
+  },
+  {
+    "id": "a1-pl-003",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Nous partons ___ Japon.",
+    "options": [
+      "au",
+      "en",
+      "à",
+      "aux"
+    ],
+    "answer": 0,
+    "explanation": "陽性國家前面用 au（à + le）。"
+  },
+  {
+    "id": "a1-pl-004",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "voyage",
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Ils vivent ___ États-Unis.",
+    "options": [
+      "aux",
+      "au",
+      "en",
+      "à"
+    ],
+    "answer": 0,
+    "explanation": "複數國家前面用 aux（à + les）。"
+  },
+  {
+    "id": "a1-pl-005",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 à、en、au 或 aux",
+    "stem": "Je travaille ___ Canada.",
+    "answers": [
+      "au"
+    ],
+    "explanation": "le Canada 是陽性國家，用 au。"
+  },
+  {
+    "id": "a1-pl-006",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 à、en、au 或 aux",
+    "stem": "Mon amie habite ___ Italie.",
+    "answers": [
+      "en"
+    ],
+    "explanation": "l'Italie 是陰性國家，用 en。"
+  },
+  {
+    "id": "a1-pl-007",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "presentation"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 à、en、au 或 aux",
+    "stem": "Il est né ___ Taipei.",
+    "answers": [
+      "à"
+    ],
+    "explanation": "城市前面用 à。"
+  },
+  {
+    "id": "a1-pl-008",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入 à、en、au 或 aux",
+    "stem": "Il voyage ___ Iran.",
+    "answers": [
+      "en"
+    ],
+    "explanation": "以母音開頭的陽性國家，也用 en：en Iran、en Irak。"
+  },
+  {
+    "id": "a1-pl-009",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "presentation",
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我住在台灣。",
+    "stem": "",
+    "answers": [
+      "J'habite à Taïwan.",
+      "J'habite à Taiwan.",
+      "Je vis à Taïwan.",
+      "Je vis à Taiwan."
+    ],
+    "explanation": "Taïwan 是島嶼，和多數島嶼一樣不加冠詞，前面用 à。"
+  },
+  {
+    "id": "a1-pl-010",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：他們明天去西班牙。",
+    "stem": "",
+    "answers": [
+      "Ils vont en Espagne demain.",
+      "Demain, ils vont en Espagne.",
+      "Ils partent en Espagne demain.",
+      "Demain, ils partent en Espagne.",
+      "Ils iront en Espagne demain."
+    ],
+    "explanation": "l'Espagne 是陰性國家，用 en。"
+  },
+  {
+    "id": "a1-pl-011",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "famille",
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我的父母住在東京。",
+    "stem": "",
+    "answers": [
+      "Mes parents habitent à Tokyo.",
+      "Mes parents vivent à Tokyo."
+    ],
+    "explanation": "城市前面用 à。"
+  },
+  {
+    "id": "a1-pl-012",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：她在美國工作。",
+    "stem": "",
+    "answers": [
+      "Elle travaille aux États-Unis.",
+      "Elle travaille aux Etats-Unis."
+    ],
+    "explanation": "les États-Unis 是複數，用 aux。"
+  }
+]

@@ -1,0 +1,231 @@
+[
+  {
+    "id": "c1-pa-001",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的介系詞片語（儘管）",
+    "stem": "___ de ses efforts, il n'a pas réussi.",
+    "options": [
+      "En dépit",
+      "Grâce",
+      "À force",
+      "Faute"
+    ],
+    "answer": 0,
+    "explanation": "en dépit de＝malgré（儘管），比較正式。"
+  },
+  {
+    "id": "c1-pa-002",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的介系詞片語（靠著不斷…）",
+    "stem": "___ de travailler, il a fini par réussir.",
+    "options": [
+      "À force",
+      "Faute",
+      "En dépit",
+      "Au lieu"
+    ],
+    "answer": 0,
+    "explanation": "à force de + 原形動詞或名詞＝「靠著不斷地…」。"
+  },
+  {
+    "id": "c1-pa-003",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出合適的介系詞片語（對於）",
+    "stem": "Il est très aimable ___ ses voisins.",
+    "options": [
+      "à l'égard de",
+      "à force de",
+      "faute de",
+      "au lieu de"
+    ],
+    "answer": 0,
+    "explanation": "à l'égard de＝envers（對於、對待）。"
+  },
+  {
+    "id": "c1-pa-004",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "ecole-travail",
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的介系詞片語（由於）",
+    "stem": "___ de la crise, l'entreprise a dû licencier.",
+    "options": [
+      "En raison",
+      "À force",
+      "Faute",
+      "Au lieu"
+    ],
+    "answer": 0,
+    "explanation": "en raison de＝à cause de，用在正式文件或新聞中。"
+  },
+  {
+    "id": "c1-pa-005",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入缺少的字（意思：除了…以外）",
+    "stem": "Tout le monde est venu, ___ de Paul.",
+    "answers": [
+      "à l'exception"
+    ],
+    "explanation": "à l'exception de＝sauf（除了）。"
+  },
+  {
+    "id": "c1-pa-006",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入缺少的字（意思：靠著）",
+    "stem": "Il a réussi ___ de patience.",
+    "answers": [
+      "à force"
+    ],
+    "explanation": "à force de + 名詞（不加冠詞）。"
+  },
+  {
+    "id": "c1-pa-007",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "voyage",
+      "meteo"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入缺少的字（意思：由於）",
+    "stem": "Le vol est annulé en ___ du mauvais temps.",
+    "answers": [
+      "raison"
+    ],
+    "explanation": "en raison de；de + le → du。"
+  },
+  {
+    "id": "c1-pa-008",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "achats",
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入缺少的字（意思：關於）",
+    "stem": "J'ai quelques questions ___ sujet de votre offre.",
+    "answers": [
+      "au"
+    ],
+    "explanation": "au sujet de＝關於。"
+  },
+  {
+    "id": "c1-pa-009",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "meteo",
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 en dépit de 翻譯成法文：儘管天氣不好，比賽照常舉行。",
+    "stem": "",
+    "answers": [
+      "En dépit du mauvais temps, le match a eu lieu.",
+      "En dépit du mauvais temps, le match a lieu.",
+      "En dépit du mauvais temps, le match a été maintenu.",
+      "En dépit du mauvais temps, le match est maintenu."
+    ],
+    "explanation": "en dépit de + 名詞；de + le → du。"
+  },
+  {
+    "id": "c1-pa-010",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 en raison de 翻譯成法文：由於罷工，地鐵停駛。",
+    "stem": "",
+    "answers": [
+      "En raison de la grève, le métro ne circule pas.",
+      "En raison de la grève, le métro est arrêté.",
+      "En raison d'une grève, le métro ne circule pas.",
+      "En raison de la grève, le métro ne fonctionne pas.",
+      "En raison de la grève, le métro est fermé."
+    ],
+    "explanation": "en raison de 常見於公告。"
+  },
+  {
+    "id": "c1-pa-011",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "ecole-travail",
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 à force de 翻譯成法文：靠著不斷練習，她進步了很多。",
+    "stem": "",
+    "answers": [
+      "À force de pratiquer, elle a fait beaucoup de progrès.",
+      "À force de s'entraîner, elle a fait beaucoup de progrès.",
+      "À force de pratiquer, elle a beaucoup progressé.",
+      "À force de s'entraîner, elle a beaucoup progressé."
+    ],
+    "explanation": "à force de + 原形動詞；反身動詞的代名詞要配合主詞：s'entraîner。"
+  },
+  {
+    "id": "c1-pa-012",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：關於你的問題，我明天回覆你。",
+    "stem": "",
+    "answers": [
+      "Au sujet de ta question, je te réponds demain.",
+      "Concernant ta question, je te réponds demain.",
+      "Au sujet de ta question, je te répondrai demain.",
+      "Concernant ta question, je te répondrai demain.",
+      "En ce qui concerne ta question, je te répondrai demain.",
+      "En ce qui concerne ta question, je te réponds demain.",
+      "Quant à ta question, je te répondrai demain."
+    ],
+    "explanation": "au sujet de、concernant、en ce qui concerne 都表示「關於」。"
+  }
+]

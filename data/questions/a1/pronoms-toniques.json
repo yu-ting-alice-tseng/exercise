@@ -1,0 +1,221 @@
+[
+  {
+    "id": "a1-pt-001",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "presentation"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的代名詞",
+    "stem": "___, je m'appelle Léa.",
+    "options": [
+      "Moi",
+      "Je",
+      "Me",
+      "Mon"
+    ],
+    "answer": 0,
+    "explanation": "放在句首強調自己，用重讀代名詞 moi。"
+  },
+  {
+    "id": "a1-pt-002",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出「我們」的正確形式",
+    "stem": "Il vient au cinéma avec ___ ?",
+    "options": [
+      "nous",
+      "on",
+      "notre",
+      "nos"
+    ],
+    "answer": 0,
+    "explanation": "介系詞（avec、pour、chez）後面用重讀代名詞：avec nous。"
+  },
+  {
+    "id": "a1-pt-003",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的代名詞",
+    "stem": "C'est pour ___, Marie.",
+    "options": [
+      "toi",
+      "tu",
+      "te",
+      "ton"
+    ],
+    "answer": 0,
+    "explanation": "介系詞後面用重讀代名詞：pour toi。"
+  },
+  {
+    "id": "a1-pt-004",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出「他」的正確形式",
+    "stem": "Ce stylo est à ___.",
+    "options": [
+      "lui",
+      "il",
+      "le",
+      "son"
+    ],
+    "answer": 0,
+    "explanation": "être à + 重讀代名詞表示「屬於某人」：c'est à lui。"
+  },
+  {
+    "id": "a1-pt-005",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入重讀人稱代名詞",
+    "stem": "Moi, j'adore le jazz. Et ___ ? Tu aimes le jazz ?",
+    "answers": [
+      "toi"
+    ],
+    "explanation": "Et toi ? 是「那你呢？」"
+  },
+  {
+    "id": "a1-pt-006",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入重讀人稱代名詞（提示：她）",
+    "stem": "Je pense souvent à ___.",
+    "answers": [
+      "elle"
+    ],
+    "explanation": "penser à + 人時，用重讀代名詞：à elle。"
+  },
+  {
+    "id": "a1-pt-007",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "famille",
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入重讀人稱代名詞",
+    "stem": "Paul et Marc ? Je dîne chez ___ ce soir.",
+    "answers": [
+      "eux"
+    ],
+    "explanation": "陽性複數的重讀代名詞是 eux。"
+  },
+  {
+    "id": "a1-pt-008",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "voyage",
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入重讀人稱代名詞",
+    "stem": "Mes sœurs ? Je pars en vacances avec ___.",
+    "answers": [
+      "elles"
+    ],
+    "explanation": "陰性複數的重讀代名詞是 elles。"
+  },
+  {
+    "id": "a1-pt-009",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "presentation",
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我呢，我是學生。",
+    "stem": "",
+    "answers": [
+      "Moi, je suis étudiant.",
+      "Moi, je suis étudiante.",
+      "Moi, je suis élève."
+    ],
+    "explanation": "moi 放句首表示強調。"
+  },
+  {
+    "id": "a1-pt-010",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 être à 翻譯成法文：這本書是我的。",
+    "stem": "",
+    "answers": [
+      "Ce livre est à moi.",
+      "Le livre est à moi."
+    ],
+    "explanation": "être à + 重讀代名詞表示所屬。"
+  },
+  {
+    "id": "a1-pt-011",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：你要和他們一起去嗎？",
+    "stem": "",
+    "answers": [
+      "Tu viens avec eux ?",
+      "Tu vas avec eux ?",
+      "Est-ce que tu viens avec eux ?",
+      "Tu pars avec eux ?",
+      "Est-ce que tu vas avec eux ?",
+      "Vous venez avec eux ?"
+    ],
+    "explanation": "avec 後面用重讀代名詞 eux。"
+  },
+  {
+    "id": "a1-pt-012",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：她比我高。",
+    "stem": "",
+    "answers": [
+      "Elle est plus grande que moi."
+    ],
+    "explanation": "比較句 que 後面用重讀代名詞：que moi。"
+  }
+]

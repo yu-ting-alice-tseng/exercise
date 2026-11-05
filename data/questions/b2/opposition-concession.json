@@ -1,0 +1,235 @@
+[
+  {
+    "id": "b2-oc-001",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "presentation"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的連接詞",
+    "stem": "___ il soit riche, il n'est pas heureux.",
+    "options": [
+      "Bien qu'",
+      "Même s'",
+      "Malgré",
+      "Pourtant"
+    ],
+    "answer": 0,
+    "explanation": "bien que + 虛擬式（soit）；même si 後面要接直陳式，所以這裡不能用。"
+  },
+  {
+    "id": "b2-oc-002",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "famille",
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Il travaille beaucoup, ___ son frère ne fait rien.",
+    "options": [
+      "tandis que",
+      "bien que",
+      "malgré",
+      "même si"
+    ],
+    "answer": 0,
+    "explanation": "tandis que 表示兩件事的對比（而）。"
+  },
+  {
+    "id": "b2-oc-003",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的說法",
+    "stem": "___ ses efforts, il a échoué.",
+    "options": [
+      "Malgré",
+      "Bien que",
+      "Quoique",
+      "Même si"
+    ],
+    "answer": 0,
+    "explanation": "後面接名詞時用 malgré。"
+  },
+  {
+    "id": "b2-oc-004",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Il a raison sur le fond ; ___, sa façon de le dire est maladroite.",
+    "options": [
+      "en revanche",
+      "par conséquent",
+      "donc",
+      "ainsi"
+    ],
+    "answer": 0,
+    "explanation": "en revanche 表示對比（相反地、然而）。"
+  },
+  {
+    "id": "b2-oc-005",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "meteo"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的虛擬式",
+    "stem": "Quoiqu'il ___ (faire) froid, elle est sortie sans manteau.",
+    "answers": [
+      "fasse"
+    ],
+    "explanation": "quoique（雖然，連寫）和 bien que 一樣，後面用虛擬式。"
+  },
+  {
+    "id": "b2-oc-006",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "achats",
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入表示讓步的副詞（然而）",
+    "stem": "Le projet est intéressant ; ___, il coûte trop cher.",
+    "answers": [
+      "cependant",
+      "toutefois",
+      "néanmoins",
+      "pourtant"
+    ],
+    "explanation": "cependant、toutefois、néanmoins 都表示「然而」，比 mais 正式。"
+  },
+  {
+    "id": "b2-oc-007",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "voyage",
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入缺少的字（意思：而不是）",
+    "stem": "Au ___ de prendre la voiture, prends le vélo.",
+    "answers": [
+      "lieu"
+    ],
+    "explanation": "au lieu de + 原形動詞或名詞＝「而不是…」。"
+  },
+  {
+    "id": "b2-oc-008",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的正確形式",
+    "stem": "Il a beau ___ (essayer), il n'y arrive pas.",
+    "answers": [
+      "essayer"
+    ],
+    "explanation": "avoir beau + 原形動詞＝「再怎麼…也沒用」。"
+  },
+  {
+    "id": "b2-oc-009",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "ecole-travail",
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：雖然很累，他還是繼續工作。",
+    "stem": "",
+    "answers": [
+      "Bien qu'il soit fatigué, il continue à travailler.",
+      "Bien qu'il soit fatigué, il continue de travailler.",
+      "Malgré la fatigue, il continue à travailler.",
+      "Malgré sa fatigue, il continue à travailler.",
+      "Même s'il est fatigué, il continue à travailler.",
+      "Il est fatigué, pourtant il continue à travailler.",
+      "Malgré sa fatigue, il continue de travailler.",
+      "Même s'il est fatigué, il continue de travailler."
+    ],
+    "explanation": "bien que + 虛擬式；même si + 直陳式；malgré + 名詞。"
+  },
+  {
+    "id": "b2-oc-010",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用 avoir beau 翻譯成法文：他再怎麼努力也沒用。",
+    "stem": "",
+    "answers": [
+      "Il a beau essayer, ça ne sert à rien.",
+      "Il a beau faire des efforts, ça ne sert à rien.",
+      "Il a beau essayer, c'est inutile.",
+      "Il a beau faire des efforts, c'est inutile.",
+      "Il a beau essayer, ça ne change rien.",
+      "Il a beau faire des efforts, ça ne change rien."
+    ],
+    "explanation": "avoir beau + 原形動詞，後面接表示「沒用」的結果。"
+  },
+  {
+    "id": "b2-oc-011",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我喜歡貓，而我先生比較喜歡狗。",
+    "stem": "",
+    "answers": [
+      "J'aime les chats, alors que mon mari préfère les chiens.",
+      "J'aime les chats, tandis que mon mari préfère les chiens.",
+      "Moi, j'aime les chats, alors que mon mari préfère les chiens.",
+      "Moi, j'aime les chats, tandis que mon mari préfère les chiens."
+    ],
+    "explanation": "alors que／tandis que 表示對比。"
+  },
+  {
+    "id": "b2-oc-012",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：與其抱怨，不如做點什麼。（對 tu）",
+    "stem": "",
+    "answers": [
+      "Au lieu de te plaindre, fais quelque chose.",
+      "Plutôt que de te plaindre, fais quelque chose.",
+      "Plutôt que te plaindre, fais quelque chose.",
+      "Fais quelque chose au lieu de te plaindre."
+    ],
+    "explanation": "au lieu de／plutôt que de + 原形動詞；反身動詞的代名詞要配合 tu：te plaindre。"
+  }
+]

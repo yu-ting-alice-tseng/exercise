@@ -1,0 +1,234 @@
+[
+  {
+    "id": "c1-arg-001",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的連接詞",
+    "stem": "___, ce projet est coûteux, mais il est nécessaire.",
+    "options": [
+      "Certes",
+      "Donc",
+      "Ainsi",
+      "Or"
+    ],
+    "answer": 0,
+    "explanation": "certes…mais… 先承認對方的論點，再提出反駁。"
+  },
+  {
+    "id": "c1-arg-002",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出合適的連接詞（三段論）",
+    "stem": "Tous les hommes sont mortels ; ___ Socrate est un homme.",
+    "options": [
+      "or",
+      "donc",
+      "car",
+      "certes"
+    ],
+    "answer": 0,
+    "explanation": "or 用來引入推論中的新前提（而…），接著才用 donc 得出結論。"
+  },
+  {
+    "id": "c1-arg-003",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的連接詞（更何況、況且）",
+    "stem": "Je n'irai pas à cette fête ; ___, je n'ai pas été invité.",
+    "options": [
+      "d'ailleurs",
+      "cependant",
+      "pourtant",
+      "néanmoins"
+    ],
+    "answer": 0,
+    "explanation": "d'ailleurs 補充一個額外的理由（況且、再說）。"
+  },
+  {
+    "id": "c1-arg-004",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的說法",
+    "stem": "___ à moi, je préfère attendre.",
+    "options": [
+      "Quant",
+      "Tant",
+      "Comme",
+      "Selon"
+    ],
+    "answer": 0,
+    "explanation": "quant à＝「至於」。"
+  },
+  {
+    "id": "c1-arg-005",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入表示讓步的副詞（固然、的確，常和 mais 搭配）",
+    "stem": "___, il a fait des erreurs, mais il a beaucoup appris.",
+    "answers": [
+      "certes"
+    ],
+    "explanation": "certes…mais…＝固然…但是…"
+  },
+  {
+    "id": "c1-arg-006",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入表示「根據」的介系詞",
+    "stem": "___ les experts, la situation va s'améliorer.",
+    "answers": [
+      "selon",
+      "d'après"
+    ],
+    "explanation": "selon／d'après + 消息來源。"
+  },
+  {
+    "id": "c1-arg-007",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入表示「總而言之」的連接詞",
+    "stem": "___, cette réforme est un échec.",
+    "answers": [
+      "en définitive",
+      "en somme",
+      "en conclusion",
+      "bref",
+      "en bref",
+      "finalement",
+      "en résumé"
+    ],
+    "explanation": "en définitive、en somme、en conclusion 都用來下結論。"
+  },
+  {
+    "id": "c1-arg-008",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入缺少的字（意思：至於）",
+    "stem": "___ aux résultats, ils seront publiés demain.",
+    "answers": [
+      "quant"
+    ],
+    "explanation": "quant à + 名詞；à + les → aux。"
+  },
+  {
+    "id": "c1-arg-009",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "achats"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 certes…mais 翻譯成法文：的確，這很貴，但是品質很好。",
+    "stem": "",
+    "answers": [
+      "Certes, c'est cher, mais la qualité est excellente.",
+      "Certes, c'est cher, mais la qualité est très bonne.",
+      "Certes, c'est cher, mais c'est de bonne qualité.",
+      "C'est cher, certes, mais la qualité est excellente.",
+      "Certes, c'est cher, mais la qualité est bonne.",
+      "Certes, c'est cher, mais c'est de très bonne qualité."
+    ],
+    "explanation": "certes 放句首或插入句中都可以。"
+  },
+  {
+    "id": "c1-arg-010",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：至於我，我同意。",
+    "stem": "",
+    "answers": [
+      "Quant à moi, je suis d'accord.",
+      "En ce qui me concerne, je suis d'accord.",
+      "Pour ma part, je suis d'accord.",
+      "Moi, je suis d'accord."
+    ],
+    "explanation": "quant à moi、en ce qui me concerne、pour ma part 都表示「至於我」。"
+  },
+  {
+    "id": "c1-arg-011",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：根據這份研究，年輕人睡得不夠。",
+    "stem": "",
+    "answers": [
+      "Selon cette étude, les jeunes ne dorment pas assez.",
+      "D'après cette étude, les jeunes ne dorment pas assez.",
+      "Selon cette étude, les jeunes manquent de sommeil.",
+      "D'après cette étude, les jeunes manquent de sommeil."
+    ],
+    "explanation": "selon／d'après 引用消息來源。"
+  },
+  {
+    "id": "c1-arg-012",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：此外，這個計畫並不實際。",
+    "stem": "",
+    "answers": [
+      "Par ailleurs, ce projet n'est pas réaliste.",
+      "De plus, ce projet n'est pas réaliste.",
+      "En outre, ce projet n'est pas réaliste.",
+      "Par ailleurs, ce projet n'est pas réalisable.",
+      "De plus, ce projet n'est pas réalisable.",
+      "En outre, ce projet n'est pas réalisable.",
+      "D'ailleurs, ce projet n'est pas réaliste."
+    ],
+    "explanation": "par ailleurs、en outre、de plus 用來補充論點。"
+  }
+]

@@ -1,0 +1,214 @@
+[
+  {
+    "id": "b1-pp-001",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的所有格代名詞",
+    "stem": "C'est ton stylo ? Oui, c'est ___.",
+    "options": [
+      "le mien",
+      "la mienne",
+      "mon",
+      "les miens"
+    ],
+    "answer": 0,
+    "explanation": "stylo 是陽性單數：le mien。"
+  },
+  {
+    "id": "b1-pp-002",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出「你的」",
+    "stem": "Ma maison est grande, et ___ ?",
+    "options": [
+      "la tienne",
+      "le tien",
+      "ta",
+      "les tiennes"
+    ],
+    "answer": 0,
+    "explanation": "maison 是陰性單數：la tienne。"
+  },
+  {
+    "id": "b1-pp-003",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出「他們的」",
+    "stem": "Nos enfants jouent avec ___.",
+    "options": [
+      "les leurs",
+      "leurs",
+      "les leur",
+      "la leur"
+    ],
+    "answer": 0,
+    "explanation": "代替複數名詞（enfants）：les leurs（要加 s）。"
+  },
+  {
+    "id": "b1-pp-004",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出「他的」",
+    "stem": "Ce n'est pas mon problème, c'est ___.",
+    "options": [
+      "le sien",
+      "la sienne",
+      "son",
+      "le leur"
+    ],
+    "answer": 0,
+    "explanation": "problème 是陽性單數，擁有者是一個人：le sien。"
+  },
+  {
+    "id": "b1-pp-005",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "meteo"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入所有格代名詞（提示：你的）",
+    "stem": "J'ai oublié mon parapluie. Tu peux me prêter ___ ?",
+    "answers": [
+      "le tien"
+    ],
+    "explanation": "parapluie 是陽性單數：le tien。"
+  },
+  {
+    "id": "b1-pp-006",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入所有格代名詞（提示：我們的）",
+    "stem": "Vos idées sont bonnes, mais ___ sont meilleures.",
+    "answers": [
+      "les nôtres"
+    ],
+    "explanation": "idées 是複數：les nôtres（注意 ô 的長音符號）。"
+  },
+  {
+    "id": "b1-pp-007",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入所有格代名詞（提示：我的）",
+    "stem": "Ta voiture est rouge ; ___ est bleue.",
+    "answers": [
+      "la mienne"
+    ],
+    "explanation": "voiture 是陰性單數：la mienne。"
+  },
+  {
+    "id": "b1-pp-008",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入所有格代名詞（提示：我們的）",
+    "stem": "Ce sont vos valises ? Oui, ce sont ___.",
+    "answers": [
+      "les nôtres"
+    ],
+    "explanation": "valises 是複數：les nôtres。"
+  },
+  {
+    "id": "b1-pp-009",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：這不是我的書，是她的。",
+    "stem": "",
+    "answers": [
+      "Ce n'est pas mon livre, c'est le sien.",
+      "Ce livre n'est pas le mien, c'est le sien."
+    ],
+    "explanation": "所有格代名詞配合被擁有的名詞（livre 陽性），不是擁有者：le sien。"
+  },
+  {
+    "id": "b1-pp-010",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我的房間比你的大。",
+    "stem": "",
+    "answers": [
+      "Ma chambre est plus grande que la tienne."
+    ],
+    "explanation": "chambre 是陰性：la tienne。"
+  },
+  {
+    "id": "b1-pp-011",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請用所有格代名詞肯定回答。",
+    "stem": "Ce sont tes clés ?",
+    "answers": [
+      "Oui, ce sont les miennes."
+    ],
+    "explanation": "clés 是陰性複數：les miennes。"
+  },
+  {
+    "id": "b1-pp-012",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：我們的老師很嚴格，你們的呢？",
+    "stem": "",
+    "answers": [
+      "Notre professeur est sévère, et le vôtre ?",
+      "Notre prof est sévère, et le vôtre ?",
+      "Notre professeure est sévère, et la vôtre ?",
+      "Notre professeur est strict, et le vôtre ?"
+    ],
+    "explanation": "所有格代名詞 le vôtre、le nôtre 有長音符號；形容詞 votre、notre 沒有。"
+  }
+]

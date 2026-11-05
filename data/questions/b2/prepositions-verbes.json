@@ -1,0 +1,228 @@
+[
+  {
+    "id": "b2-pv-001",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "famille",
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Je me souviens ___ cette journée.",
+    "options": [
+      "de",
+      "à",
+      "en",
+      "pour"
+    ],
+    "answer": 0,
+    "explanation": "se souvenir de（記得）。"
+  },
+  {
+    "id": "b2-pv-002",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Ça dépend ___ toi.",
+    "options": [
+      "de",
+      "à",
+      "sur",
+      "pour"
+    ],
+    "answer": 0,
+    "explanation": "dépendre de（取決於）；不要受英文 depend on 影響寫成 sur。"
+  },
+  {
+    "id": "b2-pv-003",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "culture",
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Il s'est habitué ___ la vie en France.",
+    "options": [
+      "à",
+      "de",
+      "en",
+      "avec"
+    ],
+    "answer": 0,
+    "explanation": "s'habituer à（習慣於）。"
+  },
+  {
+    "id": "b2-pv-004",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Je tiens ___ vous remercier.",
+    "options": [
+      "à",
+      "de",
+      "pour",
+      "en"
+    ],
+    "answer": 0,
+    "explanation": "tenir à + 原形動詞＝「堅持要、很想要」（常用於正式致謝）。"
+  },
+  {
+    "id": "b2-pv-005",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 à 或 de",
+    "stem": "Elle se méfie ___ cet homme.",
+    "answers": [
+      "de"
+    ],
+    "explanation": "se méfier de（提防、不信任）。"
+  },
+  {
+    "id": "b2-pv-006",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 à 或 de",
+    "stem": "Je n'arrive pas ___ dormir.",
+    "answers": [
+      "à"
+    ],
+    "explanation": "arriver à + 原形動詞＝「做得到」。"
+  },
+  {
+    "id": "b2-pv-007",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 à 或 de",
+    "stem": "Il a renoncé ___ son projet.",
+    "answers": [
+      "à"
+    ],
+    "explanation": "renoncer à（放棄）。"
+  },
+  {
+    "id": "b2-pv-008",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 à 或 de",
+    "stem": "Nous manquons ___ temps.",
+    "answers": [
+      "de"
+    ],
+    "explanation": "manquer de + 名詞＝「缺少…」。"
+  },
+  {
+    "id": "b2-pv-009",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：你還記得我嗎？",
+    "stem": "",
+    "answers": [
+      "Tu te souviens de moi ?",
+      "Est-ce que tu te souviens de moi ?",
+      "Te souviens-tu de moi ?",
+      "Vous vous souvenez de moi ?",
+      "Tu te souviens encore de moi ?",
+      "Vous souvenez-vous de moi ?"
+    ],
+    "explanation": "se souvenir de + 重讀代名詞 moi。"
+  },
+  {
+    "id": "b2-pv-010",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "meteo",
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：我還不習慣這裡的天氣。",
+    "stem": "",
+    "answers": [
+      "Je ne suis pas encore habitué au climat d'ici.",
+      "Je ne suis pas encore habituée au climat d'ici.",
+      "Je ne me suis pas encore habitué au climat d'ici.",
+      "Je ne me suis pas encore habituée au climat d'ici.",
+      "Je ne suis pas encore habitué au temps d'ici.",
+      "Je ne suis pas encore habituée au temps d'ici."
+    ],
+    "explanation": "être habitué(e) à／s'habituer à；à + le climat → au climat。"
+  },
+  {
+    "id": "b2-pv-011",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "meteo"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：這要看天氣。",
+    "stem": "",
+    "answers": [
+      "Ça dépend du temps.",
+      "Cela dépend du temps.",
+      "Ça dépend de la météo.",
+      "Cela dépend de la météo."
+    ],
+    "explanation": "dépendre de；de + le temps → du temps。"
+  },
+  {
+    "id": "b2-pv-012",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：他戒菸了。",
+    "stem": "",
+    "answers": [
+      "Il a arrêté de fumer.",
+      "Il a renoncé à fumer.",
+      "Il a cessé de fumer."
+    ],
+    "explanation": "arrêter de／cesser de + 原形動詞；renoncer à + 原形動詞。"
+  }
+]

@@ -1,0 +1,220 @@
+[
+  {
+    "id": "a1-qt-001",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "achats",
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的答案",
+    "stem": "Je voudrais un kilo ___ pommes.",
+    "options": [
+      "de",
+      "des",
+      "du",
+      "les"
+    ],
+    "answer": 0,
+    "explanation": "數量詞（un kilo、une bouteille）後面接 de，不加冠詞。"
+  },
+  {
+    "id": "a1-qt-002",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的答案",
+    "stem": "Il y a beaucoup ___ monde ici.",
+    "options": [
+      "de",
+      "du",
+      "des",
+      "le"
+    ],
+    "answer": 0,
+    "explanation": "beaucoup 後面接 de：beaucoup de monde（很多人）。"
+  },
+  {
+    "id": "a1-qt-003",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的答案",
+    "stem": "Elle boit un peu ___ lait.",
+    "options": [
+      "de",
+      "du",
+      "des",
+      "le"
+    ],
+    "answer": 0,
+    "explanation": "un peu 後面接 de。"
+  },
+  {
+    "id": "a1-qt-004",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的答案",
+    "stem": "Combien ___ frères as-tu ?",
+    "options": [
+      "de",
+      "des",
+      "du",
+      "les"
+    ],
+    "answer": 0,
+    "explanation": "combien 問數量時，後面接 de + 名詞。"
+  },
+  {
+    "id": "a1-qt-005",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "nourriture",
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 de 或 d'",
+    "stem": "Une bouteille ___ eau, s'il vous plaît.",
+    "answers": [
+      "d'"
+    ],
+    "explanation": "de 遇到母音開頭的字要省略成 d'。"
+  },
+  {
+    "id": "a1-qt-006",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 de 或 d'",
+    "stem": "Nous avons assez ___ temps.",
+    "answers": [
+      "de"
+    ],
+    "explanation": "assez de + 名詞：足夠的…"
+  },
+  {
+    "id": "a1-qt-007",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "achats",
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 de 或 d'",
+    "stem": "Je prends un paquet ___ biscuits.",
+    "answers": [
+      "de"
+    ],
+    "explanation": "un paquet de（一包）。"
+  },
+  {
+    "id": "a1-qt-008",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "famille",
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 de 或 d'",
+    "stem": "Il a beaucoup ___ amis.",
+    "answers": [
+      "d'"
+    ],
+    "explanation": "amis 以母音開頭，de 省略成 d'。"
+  },
+  {
+    "id": "a1-qt-009",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "achats"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我想要一公斤番茄。",
+    "stem": "",
+    "answers": [
+      "Je voudrais un kilo de tomates.",
+      "Un kilo de tomates, s'il vous plaît.",
+      "Je voudrais un kilo de tomates, s'il vous plaît."
+    ],
+    "explanation": "un kilo de + 名詞（不加冠詞）。"
+  },
+  {
+    "id": "a1-qt-010",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "ecole-travail",
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：他有很多書。",
+    "stem": "",
+    "answers": [
+      "Il a beaucoup de livres."
+    ],
+    "explanation": "beaucoup de + 名詞。"
+  },
+  {
+    "id": "a1-qt-011",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：請給我一杯咖啡。",
+    "stem": "",
+    "answers": [
+      "Une tasse de café, s'il vous plaît.",
+      "Un café, s'il vous plaît.",
+      "Je voudrais une tasse de café, s'il vous plaît.",
+      "Je voudrais un café, s'il vous plaît."
+    ],
+    "explanation": "une tasse de café；在咖啡館點餐直接說 un café 就可以。"
+  },
+  {
+    "id": "a1-qt-012",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "achats"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我沒有足夠的錢。",
+    "stem": "",
+    "answers": [
+      "Je n'ai pas assez d'argent."
+    ],
+    "explanation": "assez de + 名詞；argent 以母音開頭，寫成 d'argent。"
+  }
+]

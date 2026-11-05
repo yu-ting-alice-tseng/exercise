@@ -1,0 +1,225 @@
+[
+  {
+    "id": "a2-pt-001",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的時間表達（到現在還住在這裡）",
+    "stem": "J'habite ici ___ trois ans.",
+    "options": [
+      "depuis",
+      "il y a",
+      "pendant",
+      "dans"
+    ],
+    "answer": 0,
+    "explanation": "depuis + 時間長度：從過去持續到現在的動作，動詞用現在式。"
+  },
+  {
+    "id": "a2-pt-002",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的時間表達（兩天前）",
+    "stem": "Je suis arrivé ___ deux jours.",
+    "options": [
+      "il y a",
+      "depuis",
+      "dans",
+      "pendant"
+    ],
+    "answer": 0,
+    "explanation": "il y a + 時間長度＝「…以前」，搭配過去式。"
+  },
+  {
+    "id": "a2-pt-003",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的時間表達（十分鐘後）",
+    "stem": "Le train part ___ dix minutes.",
+    "options": [
+      "dans",
+      "il y a",
+      "depuis",
+      "en"
+    ],
+    "answer": 0,
+    "explanation": "dans + 時間長度＝「…以後」，指未來。"
+  },
+  {
+    "id": "a2-pt-004",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出表示「只花了兩小時就讀完」的介系詞",
+    "stem": "J'ai lu ce livre ___ deux heures.",
+    "options": [
+      "en",
+      "dans",
+      "depuis",
+      "il y a"
+    ],
+    "answer": 0,
+    "explanation": "en + 時間長度：完成一件事所花的時間。"
+  },
+  {
+    "id": "a2-pt-005",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "quotidien",
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入時間介系詞（提示：持續了八小時）",
+    "stem": "Il a dormi ___ huit heures.",
+    "answers": [
+      "pendant"
+    ],
+    "explanation": "pendant + 時間長度：動作持續多久（已經結束）。"
+  },
+  {
+    "id": "a2-pt-006",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入時間介系詞（提示：從 2020 年到現在）",
+    "stem": "Je travaille ici ___ 2020.",
+    "answers": [
+      "depuis"
+    ],
+    "explanation": "depuis + 時間點，表示從那時一直到現在。"
+  },
+  {
+    "id": "a2-pt-007",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入時間介系詞（提示：一週後）",
+    "stem": "Je reviens ___ une semaine.",
+    "answers": [
+      "dans"
+    ],
+    "explanation": "dans une semaine＝一週以後。"
+  },
+  {
+    "id": "a2-pt-008",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "ecole-travail",
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入時間介系詞（提示：花了六個月學會）",
+    "stem": "Elle a appris le français ___ six mois.",
+    "answers": [
+      "en"
+    ],
+    "explanation": "en + 時間長度：完成所花的時間。"
+  },
+  {
+    "id": "a2-pt-009",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我學法文學了兩年了（現在還在學）。",
+    "stem": "",
+    "answers": [
+      "J'apprends le français depuis deux ans.",
+      "J'étudie le français depuis deux ans.",
+      "Ça fait deux ans que j'apprends le français.",
+      "Il y a deux ans que j'apprends le français.",
+      "Ça fait deux ans que j'étudie le français."
+    ],
+    "explanation": "持續到現在的動作：depuis + 時間長度，動詞用現在式（中文常說「學了兩年」，但法文不用過去式）。"
+  },
+  {
+    "id": "a2-pt-010",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "famille",
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我三天前看到他。",
+    "stem": "",
+    "answers": [
+      "Je l'ai vu il y a trois jours.",
+      "Il y a trois jours, je l'ai vu."
+    ],
+    "explanation": "il y a + 時間長度＝「…以前」。"
+  },
+  {
+    "id": "a2-pt-011",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：電影十分鐘後開始。",
+    "stem": "",
+    "answers": [
+      "Le film commence dans dix minutes."
+    ],
+    "explanation": "dans + 時間長度＝「…以後」。"
+  },
+  {
+    "id": "a2-pt-012",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我們在巴黎待了一個星期。",
+    "stem": "",
+    "answers": [
+      "Nous sommes restés à Paris pendant une semaine.",
+      "Nous sommes restés une semaine à Paris.",
+      "On est restés une semaine à Paris.",
+      "On est restés à Paris pendant une semaine.",
+      "Nous avons passé une semaine à Paris.",
+      "On a passé une semaine à Paris.",
+      "Nous sommes restées une semaine à Paris.",
+      "Nous sommes restées à Paris pendant une semaine."
+    ],
+    "explanation": "pendant 表示持續的時間，也可以省略；passer une semaine 也很常用。"
+  }
+]

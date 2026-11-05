@@ -89,12 +89,14 @@ export function checkShort(input: string, answers: string[]): ShortCheck {
   }
 
   // 找出最接近的參考答案
-  let best = { score: -1, index: 0, pairs: [] as [number, number][], ref: [] as string[] };
+  // 分數相同時，優先選重音也完全吻合的寫法
+  let best = { score: -1, exact: -1, index: 0, pairs: [] as [number, number][], ref: [] as string[] };
   answers.forEach((ans, index) => {
     const ref = tokenize(ans);
     const pairs = lcs(mineTokens, ref);
     const score = (2 * pairs.length) / (mineTokens.length + ref.length);
-    if (score > best.score) best = { score, index, pairs, ref };
+    const exact = pairs.filter(([i, j]) => key(mineTokens[i]) === key(ref[j])).length;
+    if (score > best.score || (score === best.score && exact > best.exact)) best = { score, exact, index, pairs, ref };
   });
 
   const mine: Token[] = mineTokens.map((text) => ({ text, status: "wrong" }));

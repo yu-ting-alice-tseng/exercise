@@ -1,0 +1,223 @@
+[
+  {
+    "id": "a1-con-001",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的連接詞",
+    "stem": "J'aime le thé ___ je n'aime pas le café.",
+    "options": [
+      "mais",
+      "et",
+      "ou",
+      "parce que"
+    ],
+    "answer": 0,
+    "explanation": "mais 表示轉折（但是）。"
+  },
+  {
+    "id": "a1-con-002",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Tu veux du thé ___ du café ?",
+    "options": [
+      "ou",
+      "et",
+      "mais",
+      "alors"
+    ],
+    "answer": 0,
+    "explanation": "ou 表示選擇（或是）。"
+  },
+  {
+    "id": "a1-con-003",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Je reste à la maison ___ je suis malade.",
+    "options": [
+      "parce que",
+      "mais",
+      "ou",
+      "alors"
+    ],
+    "answer": 0,
+    "explanation": "parce que 表示原因（因為）。"
+  },
+  {
+    "id": "a1-con-004",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "meteo",
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Il fait beau, ___ on va au parc.",
+    "options": [
+      "alors",
+      "parce que",
+      "mais",
+      "ou"
+    ],
+    "answer": 0,
+    "explanation": "alors 表示結果（所以），口語很常用。"
+  },
+  {
+    "id": "a1-con-005",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 et、mais、ou、parce que 或 alors",
+    "stem": "J'ai un chat ___ un chien.",
+    "answers": [
+      "et"
+    ],
+    "explanation": "et 表示「和、而且」。"
+  },
+  {
+    "id": "a1-con-006",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 et、mais、ou、parce que 或 alors",
+    "stem": "Elle apprend le français ___ elle aime la France.",
+    "answers": [
+      "parce qu'"
+    ],
+    "explanation": "parce que 遇到母音開頭的字要省略成 parce qu'。"
+  },
+  {
+    "id": "a1-con-007",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 et、mais、ou、parce que 或 alors",
+    "stem": "Je suis fatigué, ___ je vais dormir.",
+    "answers": [
+      "alors",
+      "donc"
+    ],
+    "explanation": "alors（或 donc）表示結果。"
+  },
+  {
+    "id": "a1-con-008",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "presentation"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 et、mais、ou、parce que 或 alors",
+    "stem": "Il est riche ___ il n'est pas heureux.",
+    "answers": [
+      "mais"
+    ],
+    "explanation": "mais 表示轉折。"
+  },
+  {
+    "id": "a1-con-009",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "presentation"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我會說英文和法文。",
+    "stem": "",
+    "answers": [
+      "Je parle anglais et français.",
+      "Je parle l'anglais et le français."
+    ],
+    "explanation": "et 連接兩個名詞。"
+  },
+  {
+    "id": "a1-con-010",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "meteo"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我想出門，可是下雨了。",
+    "stem": "",
+    "answers": [
+      "Je veux sortir, mais il pleut.",
+      "Je voudrais sortir, mais il pleut.",
+      "J'ai envie de sortir, mais il pleut."
+    ],
+    "explanation": "mais 前面通常加逗號。"
+  },
+  {
+    "id": "a1-con-011",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "culture",
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我學法文，因為我想去巴黎。",
+    "stem": "",
+    "answers": [
+      "J'apprends le français parce que je veux aller à Paris.",
+      "J'étudie le français parce que je veux aller à Paris.",
+      "J'apprends le français parce que je voudrais aller à Paris.",
+      "J'étudie le français parce que je voudrais aller à Paris."
+    ],
+    "explanation": "parce que + 完整的句子。"
+  },
+  {
+    "id": "a1-con-012",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：你要咖啡還是茶？",
+    "stem": "",
+    "answers": [
+      "Tu veux du café ou du thé ?",
+      "Vous voulez du café ou du thé ?",
+      "Tu préfères du café ou du thé ?",
+      "Tu veux un café ou un thé ?",
+      "Vous voulez un café ou un thé ?"
+    ],
+    "explanation": "ou 表示選擇；飲料前面用部分冠詞或 un。"
+  }
+]

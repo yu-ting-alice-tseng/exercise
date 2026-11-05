@@ -1,0 +1,231 @@
+[
+  {
+    "id": "c1-ha-001",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "meteo"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Prends un parapluie au cas où il ___.",
+    "options": [
+      "pleuvrait",
+      "pleuve",
+      "pleuvra",
+      "pleut"
+    ],
+    "answer": 0,
+    "explanation": "au cas où（萬一）後面用條件式。"
+  },
+  {
+    "id": "c1-ha-002",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "À supposer qu'il ___ d'accord, comment allons-nous financer le projet ?",
+    "options": [
+      "soit",
+      "est",
+      "serait",
+      "sera"
+    ],
+    "answer": 0,
+    "explanation": "à supposer que（假設）後面用虛擬式。"
+  },
+  {
+    "id": "c1-ha-003",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Quand bien même il s'excuserait, je ne lui ___ pas.",
+    "options": [
+      "pardonnerais",
+      "pardonnerai",
+      "pardonne",
+      "pardonnasse"
+    ],
+    "answer": 0,
+    "explanation": "quand bien même（即使）後面用條件式，主要子句也用條件式。"
+  },
+  {
+    "id": "c1-ha-004",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "voyage",
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的說法（如果沒有…）",
+    "stem": "___ de réserver, vous n'aurez pas de place.",
+    "options": [
+      "Faute",
+      "Grâce",
+      "À force",
+      "Au lieu"
+    ],
+    "answer": 0,
+    "explanation": "faute de + 原形動詞或名詞＝「因為沒有…、如果不…」。"
+  },
+  {
+    "id": "c1-ha-005",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入缺少的字",
+    "stem": "En cas ___ problème, appelez-moi.",
+    "answers": [
+      "de"
+    ],
+    "explanation": "en cas de + 名詞（不加冠詞）＝「萬一有…」。"
+  },
+  {
+    "id": "c1-ha-006",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入缺少的字",
+    "stem": "Je viendrai à condition ___ finir à temps.",
+    "answers": [
+      "de"
+    ],
+    "explanation": "à condition de + 原形動詞（主詞相同）；主詞不同時用 à condition que + 虛擬式。"
+  },
+  {
+    "id": "c1-ha-007",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "meteo",
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的虛擬式",
+    "stem": "Pour peu qu'il ___ (faire) beau, nous irons à la plage.",
+    "answers": [
+      "fasse"
+    ],
+    "explanation": "pour peu que（只要稍微…）後面用虛擬式。"
+  },
+  {
+    "id": "c1-ha-008",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的條件式",
+    "stem": "Au cas où vous ___ (avoir) besoin d'aide, je suis là.",
+    "answers": [
+      "auriez"
+    ],
+    "explanation": "au cas où + 條件式：vous auriez。"
+  },
+  {
+    "id": "c1-ha-009",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "meteo",
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：萬一下雨，我們就取消野餐。",
+    "stem": "",
+    "answers": [
+      "Au cas où il pleuvrait, nous annulerions le pique-nique.",
+      "Au cas où il pleuvrait, on annulerait le pique-nique.",
+      "En cas de pluie, nous annulerons le pique-nique.",
+      "En cas de pluie, on annulera le pique-nique.",
+      "En cas de pluie, on annule le pique-nique.",
+      "S'il pleut, nous annulerons le pique-nique."
+    ],
+    "explanation": "au cas où + 條件式；en cas de + 名詞。"
+  },
+  {
+    "id": "c1-ha-010",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 à condition que 翻譯成法文：只要你準時，就沒問題。",
+    "stem": "",
+    "answers": [
+      "À condition que tu sois à l'heure, il n'y aura pas de problème.",
+      "À condition que tu sois à l'heure, il n'y a pas de problème.",
+      "Il n'y aura pas de problème à condition que tu sois à l'heure.",
+      "Il n'y a pas de problème à condition que tu sois à l'heure."
+    ],
+    "explanation": "à condition que + 虛擬式：que tu sois。"
+  },
+  {
+    "id": "c1-ha-011",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：即使他道歉，我也不會原諒他。",
+    "stem": "",
+    "answers": [
+      "Même s'il s'excusait, je ne lui pardonnerais pas.",
+      "Quand bien même il s'excuserait, je ne lui pardonnerais pas.",
+      "Même s'il s'excuse, je ne lui pardonnerai pas.",
+      "Même s'il s'excusait, je ne lui pardonnerais jamais.",
+      "Quand bien même il s'excuserait, je ne lui pardonnerais jamais."
+    ],
+    "explanation": "même si + 未完成過去式，或 quand bien même + 條件式；pardonner à quelqu'un，所以用 lui。"
+  },
+  {
+    "id": "c1-ha-012",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "voyage",
+      "achats"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 faute de 翻譯成法文：因為沒有錢，他放棄了那趟旅行。",
+    "stem": "",
+    "answers": [
+      "Faute d'argent, il a renoncé à ce voyage.",
+      "Faute d'argent, il a renoncé au voyage.",
+      "Faute d'argent, il a abandonné ce voyage.",
+      "Faute d'argent, il a annulé ce voyage.",
+      "Faute d'argent, il a annulé le voyage.",
+      "Faute d'argent, il a abandonné le voyage."
+    ],
+    "explanation": "faute de + 名詞（不加冠詞）：faute d'argent。"
+  }
+]

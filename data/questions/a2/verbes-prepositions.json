@@ -1,0 +1,219 @@
+[
+  {
+    "id": "a2-vp-001",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的介系詞",
+    "stem": "J'ai besoin ___ ton aide.",
+    "options": [
+      "de",
+      "à",
+      "pour",
+      "avec"
+    ],
+    "answer": 0,
+    "explanation": "avoir besoin de（需要）。"
+  },
+  {
+    "id": "a2-vp-002",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "meteo"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Il commence ___ pleuvoir.",
+    "options": [
+      "à",
+      "de",
+      "pour",
+      "en"
+    ],
+    "answer": 0,
+    "explanation": "commencer à + 原形動詞（開始做某事）。"
+  },
+  {
+    "id": "a2-vp-003",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的介系詞",
+    "stem": "J'ai décidé ___ partir.",
+    "options": [
+      "de",
+      "à",
+      "pour",
+      "en"
+    ],
+    "answer": 0,
+    "explanation": "décider de + 原形動詞。"
+  },
+  {
+    "id": "a2-vp-004",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Elle s'intéresse ___ l'art.",
+    "options": [
+      "à",
+      "de",
+      "pour",
+      "en"
+    ],
+    "answer": 0,
+    "explanation": "s'intéresser à（對…有興趣）。"
+  },
+  {
+    "id": "a2-vp-005",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 à 或 de",
+    "stem": "J'ai oublié ___ fermer la porte.",
+    "answers": [
+      "de"
+    ],
+    "explanation": "oublier de + 原形動詞。"
+  },
+  {
+    "id": "a2-vp-006",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "loisirs",
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 à 或 de",
+    "stem": "Il apprend ___ nager.",
+    "answers": [
+      "à"
+    ],
+    "explanation": "apprendre à + 原形動詞。"
+  },
+  {
+    "id": "a2-vp-007",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 à 或 de",
+    "stem": "Nous avons fini ___ manger.",
+    "answers": [
+      "de"
+    ],
+    "explanation": "finir de + 原形動詞。"
+  },
+  {
+    "id": "a2-vp-008",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 à 或 de",
+    "stem": "Elle a réussi ___ trouver un emploi.",
+    "answers": [
+      "à"
+    ],
+    "explanation": "réussir à + 原形動詞。"
+  },
+  {
+    "id": "a2-vp-009",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "achats",
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我忘了買麵包。",
+    "stem": "",
+    "answers": [
+      "J'ai oublié d'acheter du pain.",
+      "J'ai oublié d'acheter le pain."
+    ],
+    "explanation": "oublier de + 原形；acheter 以母音開頭，de 省略成 d'。"
+  },
+  {
+    "id": "a2-vp-010",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：她正在學開車。",
+    "stem": "",
+    "answers": [
+      "Elle apprend à conduire.",
+      "Elle est en train d'apprendre à conduire."
+    ],
+    "explanation": "apprendre à + 原形動詞。"
+  },
+  {
+    "id": "a2-vp-011",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我們決定留下來。",
+    "stem": "",
+    "answers": [
+      "Nous avons décidé de rester.",
+      "On a décidé de rester."
+    ],
+    "explanation": "décider de + 原形動詞。"
+  },
+  {
+    "id": "a2-vp-012",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：他試著打電話給你。",
+    "stem": "",
+    "answers": [
+      "Il a essayé de t'appeler.",
+      "Il a essayé de te téléphoner.",
+      "Il essaie de t'appeler.",
+      "Il essaie de te téléphoner.",
+      "Il a essayé de vous appeler."
+    ],
+    "explanation": "essayer de + 原形動詞。"
+  }
+]

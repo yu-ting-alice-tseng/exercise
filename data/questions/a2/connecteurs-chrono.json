@@ -1,0 +1,237 @@
+[
+  {
+    "id": "a2-chr-001",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的連接詞",
+    "stem": "___, je me lève ; ensuite, je prends une douche.",
+    "options": [
+      "D'abord",
+      "Enfin",
+      "Ensuite",
+      "Après que"
+    ],
+    "answer": 0,
+    "explanation": "敘述步驟：d'abord（首先）→ ensuite／puis（然後）→ enfin（最後）。"
+  },
+  {
+    "id": "a2-chr-002",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "quotidien",
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Je prends mon petit-déjeuner, ___ je pars au travail.",
+    "options": [
+      "puis",
+      "d'abord",
+      "avant",
+      "pendant"
+    ],
+    "answer": 0,
+    "explanation": "puis 表示「然後」。"
+  },
+  {
+    "id": "a2-chr-003",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "nourriture",
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的說法",
+    "stem": "Je me lave les mains ___ manger.",
+    "options": [
+      "avant de",
+      "avant",
+      "après",
+      "pendant"
+    ],
+    "answer": 0,
+    "explanation": "avant de + 原形動詞＝「在…之前」。"
+  },
+  {
+    "id": "a2-chr-004",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "nourriture",
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的連接詞",
+    "stem": "___ tu cuisines, je mets la table.",
+    "options": [
+      "Pendant que",
+      "Pendant",
+      "Avant de",
+      "D'abord"
+    ],
+    "answer": 0,
+    "explanation": "pendant que + 句子＝「在…的同時」；pendant 後面接名詞。"
+  },
+  {
+    "id": "a2-chr-005",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "culture",
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入表示「然後」的連接詞",
+    "stem": "D'abord on visite le musée, ___ on déjeune, enfin on se promène.",
+    "answers": [
+      "ensuite",
+      "puis"
+    ],
+    "explanation": "ensuite 和 puis 都表示「然後」。"
+  },
+  {
+    "id": "a2-chr-006",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入表示「最後」的連接詞",
+    "stem": "Et ___, on rentre à la maison.",
+    "answers": [
+      "enfin",
+      "finalement"
+    ],
+    "explanation": "enfin／finalement 表示「最後」。"
+  },
+  {
+    "id": "a2-chr-007",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "nourriture",
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的過去不定式（avoir／être＋過去分詞）",
+    "stem": "Après ___ (manger), on a fait une promenade.",
+    "answers": [
+      "avoir mangé"
+    ],
+    "explanation": "après + 過去不定式＝「在…之後」：après avoir mangé。"
+  },
+  {
+    "id": "a2-chr-008",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入表示「當…的時候」的連接詞",
+    "stem": "___ j'étais petit, j'avais peur du noir.",
+    "answers": [
+      "quand",
+      "lorsque"
+    ],
+    "explanation": "quand／lorsque 表示「當…的時候」。"
+  },
+  {
+    "id": "a2-chr-009",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "loisirs",
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：先吃飯，然後去看電影。",
+    "stem": "",
+    "answers": [
+      "D'abord on mange, ensuite on va au cinéma.",
+      "D'abord, on mange, puis on va au cinéma.",
+      "D'abord on mange, puis on va au cinéma.",
+      "D'abord nous mangeons, ensuite nous allons au cinéma.",
+      "On mange d'abord, puis on va au cinéma.",
+      "On mange d'abord, ensuite on va au cinéma."
+    ],
+    "explanation": "d'abord…ensuite／puis… 表示先後順序。"
+  },
+  {
+    "id": "a2-chr-010",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：出門前請關燈。",
+    "stem": "",
+    "answers": [
+      "Éteins la lumière avant de sortir.",
+      "Éteignez la lumière avant de sortir.",
+      "Avant de sortir, éteins la lumière.",
+      "Avant de sortir, éteignez la lumière."
+    ],
+    "explanation": "avant de + 原形動詞。éteindre 的命令式：éteins、éteignez。"
+  },
+  {
+    "id": "a2-chr-011",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "nourriture",
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我在煮飯的時候，他在看書。",
+    "stem": "",
+    "answers": [
+      "Pendant que je cuisine, il lit.",
+      "Pendant que je fais la cuisine, il lit.",
+      "Pendant que je cuisinais, il lisait.",
+      "Pendant que je faisais la cuisine, il lisait."
+    ],
+    "explanation": "pendant que + 句子，表示兩件事同時進行。"
+  },
+  {
+    "id": "a2-chr-012",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "voyage",
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：最後，我們回家了。",
+    "stem": "",
+    "answers": [
+      "Enfin, nous sommes rentrés à la maison.",
+      "Enfin, on est rentrés à la maison.",
+      "Finalement, nous sommes rentrés à la maison.",
+      "Finalement, on est rentrés à la maison.",
+      "Enfin, nous sommes rentrés chez nous.",
+      "Enfin, nous sommes rentrées à la maison."
+    ],
+    "explanation": "enfin／finalement 放句首表示「最後」。"
+  }
+]

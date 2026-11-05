@@ -1,0 +1,218 @@
+[
+  {
+    "id": "a2-adv-001",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出 lent 的副詞形式",
+    "stem": "Il parle ___.",
+    "options": [
+      "lentement",
+      "lenttement",
+      "lentment",
+      "lent"
+    ],
+    "answer": 0,
+    "explanation": "大部分副詞＝形容詞陰性形＋-ment：lente → lentement。"
+  },
+  {
+    "id": "a2-adv-002",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出 prudent 的副詞形式",
+    "stem": "Elle conduit ___.",
+    "options": [
+      "prudemment",
+      "prudentement",
+      "prudament",
+      "prudantment"
+    ],
+    "answer": 0,
+    "explanation": "-ent 結尾的形容詞，副詞變成 -emment：prudent → prudemment。"
+  },
+  {
+    "id": "a2-adv-003",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "presentation"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的字",
+    "stem": "Tu parles très ___ français !",
+    "options": [
+      "bien",
+      "bon",
+      "meilleur",
+      "bonne"
+    ],
+    "answer": 0,
+    "explanation": "修飾動詞要用副詞 bien；bon 是形容詞，修飾名詞。"
+  },
+  {
+    "id": "a2-adv-004",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出副詞位置正確的句子",
+    "stem": "",
+    "options": [
+      "Il a bien compris.",
+      "Il a compris bien.",
+      "Il bien a compris.",
+      "Bien il a compris."
+    ],
+    "answer": 0,
+    "explanation": "複合過去式中，bien、mal、déjà、beaucoup 等短副詞放在助動詞和過去分詞中間。"
+  },
+  {
+    "id": "a2-adv-005",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請寫出形容詞的副詞形式",
+    "stem": "rapide → ___",
+    "answers": [
+      "rapidement"
+    ],
+    "explanation": "以 e 結尾的形容詞，直接加 -ment。"
+  },
+  {
+    "id": "a2-adv-006",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請寫出形容詞的副詞形式",
+    "stem": "facile → ___",
+    "answers": [
+      "facilement"
+    ],
+    "explanation": "facile → facilement。"
+  },
+  {
+    "id": "a2-adv-007",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請寫出形容詞的副詞形式",
+    "stem": "vrai → ___",
+    "answers": [
+      "vraiment"
+    ],
+    "explanation": "以母音結尾的形容詞，直接在陽性形加 -ment：vrai → vraiment。"
+  },
+  {
+    "id": "a2-adv-008",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請寫出形容詞的副詞形式",
+    "stem": "évident → ___",
+    "answers": [
+      "évidemment"
+    ],
+    "explanation": "-ent → -emment：évident → évidemment（發音是 [amɑ̃]）。"
+  },
+  {
+    "id": "a2-adv-009",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：她說話很輕聲。",
+    "stem": "",
+    "answers": [
+      "Elle parle doucement.",
+      "Elle parle très doucement."
+    ],
+    "explanation": "doux → douce → doucement。"
+  },
+  {
+    "id": "a2-adv-010",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我常常去電影院。",
+    "stem": "",
+    "answers": [
+      "Je vais souvent au cinéma."
+    ],
+    "explanation": "頻率副詞 souvent 放在動詞後面。"
+  },
+  {
+    "id": "a2-adv-011",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "loisirs",
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：他跑得很快。",
+    "stem": "",
+    "answers": [
+      "Il court vite.",
+      "Il court rapidement.",
+      "Il court très vite."
+    ],
+    "explanation": "vite 本身就是副詞，不加 -ment。"
+  },
+  {
+    "id": "a2-adv-012",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：你真的會來嗎？",
+    "stem": "",
+    "answers": [
+      "Tu vas vraiment venir ?",
+      "Tu viens vraiment ?",
+      "Est-ce que tu vas vraiment venir ?",
+      "Vous allez vraiment venir ?",
+      "Tu viendras vraiment ?"
+    ],
+    "explanation": "vraiment 放在變化的動詞後面。"
+  }
+]

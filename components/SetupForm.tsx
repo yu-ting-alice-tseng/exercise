@@ -8,6 +8,7 @@ import { configToQuery } from "@/lib/config";
 import { countByType, filterPool } from "@/lib/draw";
 import { newSeed } from "@/lib/random";
 import {
+  CATEGORIES,
   DIFFICULTY_FR,
   DIFFICULTY_LABELS,
   GRAMMAR,
@@ -28,6 +29,12 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
   const [counts, setCounts] = useState<Record<QuestionType, number>>({ choice: 4, fill: 4, short: 2 });
 
   const options = by === "grammar" ? GRAMMAR[level] : THEMES;
+  const groups =
+    by === "grammar"
+      ? CATEGORIES.map((c) => ({ key: c.id, zh: c.zh, fr: c.fr, items: options.filter((t) => t.cat === c.id) })).filter(
+          (g) => g.items.length > 0,
+        )
+      : [{ key: "themes", zh: "", fr: "", items: options }];
 
   // 每個文法點／主題目前有幾題，0 題顯示「準備中」
   const topicCounts = useMemo(() => {
@@ -141,35 +148,65 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
               ))}
             </div>
           </div>
-          <div className="mt-4 grid gap-2 sm:grid-cols-2">
-            {options.map((t) => {
-              const n = topicCounts.get(t.id) ?? 0;
-              const on = topics.includes(t.id);
+          {/* 文法點依分類分組，主題則不分組 */}
+          <div className="mt-4 space-y-5">
+            {groups.map((g) => {
+              const selectable = g.items.filter((t) => (topicCounts.get(t.id) ?? 0) > 0).map((t) => t.id);
+              const allOn = selectable.length > 0 && selectable.every((id) => topics.includes(id));
               return (
-                <button
-                  key={t.id}
-                  type="button"
-                  disabled={n === 0}
-                  onClick={() => setTopics((cur) => (on ? cur.filter((x) => x !== t.id) : [...cur, t.id]))}
-                  aria-pressed={on}
-                  className={`flex min-h-14 items-center gap-3 rounded-lg border px-3 py-2 text-left transition disabled:cursor-not-allowed disabled:opacity-45 ${
-                    on ? "border-accent bg-accent-soft" : "border-line bg-surface hover:border-accent/50"
-                  }`}
-                >
-                  <span
-                    className={`grid size-5 shrink-0 place-items-center rounded border text-xs ${
-                      on ? "border-accent bg-accent text-accent-ink" : "border-line"
-                    }`}
-                    aria-hidden
-                  >
-                    {on ? "✓" : ""}
-                  </span>
-                  <span className="min-w-0 flex-1">
-                    <span className="block font-medium">{t.zh}</span>
-                    <span className="display block truncate text-sm text-muted italic">{t.fr}</span>
-                  </span>
-                  <span className="shrink-0 text-xs text-muted">{n === 0 ? "準備中" : `${n} 題`}</span>
-                </button>
+                <div key={g.key}>
+                  {g.zh && (
+                    <div className="mb-2 flex items-end justify-between gap-2 border-b border-line pb-1.5">
+                      <div>
+                        <span className="font-bold">{g.zh}</span>
+                        <span className="display ml-2 text-sm text-muted italic">{g.fr}</span>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setTopics((cur) =>
+                            allOn ? cur.filter((id) => !selectable.includes(id)) : [...new Set([...cur, ...selectable])],
+                          )
+                        }
+                        className="min-h-9 shrink-0 text-sm text-accent hover:underline"
+                      >
+                        {allOn ? "取消全選" : "全選"}
+                      </button>
+                    </div>
+                  )}
+                  <div className="grid gap-2 sm:grid-cols-2">
+                    {g.items.map((t) => {
+                      const n = topicCounts.get(t.id) ?? 0;
+                      const on = topics.includes(t.id);
+                      return (
+                        <button
+                          key={t.id}
+                          type="button"
+                          disabled={n === 0}
+                          onClick={() => setTopics((cur) => (on ? cur.filter((x) => x !== t.id) : [...cur, t.id]))}
+                          aria-pressed={on}
+                          className={`flex min-h-14 items-center gap-3 rounded-lg border px-3 py-2 text-left transition disabled:cursor-not-allowed disabled:opacity-45 ${
+                            on ? "border-accent bg-accent-soft" : "border-line bg-surface hover:border-accent/50"
+                          }`}
+                        >
+                          <span
+                            className={`grid size-5 shrink-0 place-items-center rounded border text-xs ${
+                              on ? "border-accent bg-accent text-accent-ink" : "border-line"
+                            }`}
+                            aria-hidden
+                          >
+                            {on ? "✓" : ""}
+                          </span>
+                          <span className="min-w-0 flex-1">
+                            <span className="block font-medium">{t.zh}</span>
+                            <span className="display block truncate text-sm text-muted italic">{t.fr}</span>
+                          </span>
+                          <span className="shrink-0 text-xs text-muted">{n === 0 ? "準備中" : `${n} 題`}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
               );
             })}
           </div>

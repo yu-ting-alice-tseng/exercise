@@ -1,0 +1,224 @@
+[
+  {
+    "id": "b1-pi-001",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "achats"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的疑問代名詞",
+    "stem": "Voici deux sacs. ___ préfères-tu ?",
+    "options": [
+      "Lequel",
+      "Laquelle",
+      "Quel",
+      "Qui"
+    ],
+    "answer": 0,
+    "explanation": "在幾個選項中問「哪一個」用 lequel 系列；sac 是陽性：lequel。"
+  },
+  {
+    "id": "b1-pi-002",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的疑問代名詞",
+    "stem": "___ s'est passé ?",
+    "options": [
+      "Qu'est-ce qui",
+      "Qu'est-ce que",
+      "Qui est-ce que",
+      "Quoi"
+    ],
+    "answer": 0,
+    "explanation": "問「什麼事物」當主詞用 qu'est-ce qui。"
+  },
+  {
+    "id": "b1-pi-003",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的疑問代名詞（問人，當受詞）",
+    "stem": "___ tu as vu hier soir ?",
+    "options": [
+      "Qui est-ce que",
+      "Qu'est-ce que",
+      "Qu'est-ce qui",
+      "Lequel"
+    ],
+    "answer": 0,
+    "explanation": "問「誰」當受詞：qui est-ce que。"
+  },
+  {
+    "id": "b1-pi-004",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的疑問代名詞",
+    "stem": "De ___ parles-tu ?",
+    "options": [
+      "quoi",
+      "que",
+      "qu'est-ce que",
+      "quel"
+    ],
+    "answer": 0,
+    "explanation": "介系詞後面問「什麼」用 quoi：de quoi、à quoi。"
+  },
+  {
+    "id": "b1-pi-005",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入疑問代名詞（提示：什麼）",
+    "stem": "___ fais-tu ce week-end ?",
+    "answers": [
+      "que"
+    ],
+    "explanation": "倒裝問句中，問「什麼」當受詞用 que。"
+  },
+  {
+    "id": "b1-pi-006",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "loisirs",
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入疑問代名詞（提示：哪一首）",
+    "stem": "Parmi ces chansons, ___ est ta préférée ?",
+    "answers": [
+      "laquelle"
+    ],
+    "explanation": "chanson 是陰性：laquelle。"
+  },
+  {
+    "id": "b1-pi-007",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入疑問代名詞（提示：什麼東西，當主詞）",
+    "stem": "___ te fait peur ?",
+    "answers": [
+      "qu'est-ce qui"
+    ],
+    "explanation": "事物當主詞只能用 qu'est-ce qui。"
+  },
+  {
+    "id": "b1-pi-008",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入疑問代名詞（提示：人）",
+    "stem": "À ___ penses-tu ?",
+    "answers": [
+      "qui"
+    ],
+    "explanation": "介系詞後面問人用 qui。"
+  },
+  {
+    "id": "b1-pi-009",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：這些蛋糕，你要哪一個？",
+    "stem": "",
+    "answers": [
+      "Lequel de ces gâteaux veux-tu ?",
+      "Lequel de ces gâteaux tu veux ?",
+      "Tu veux lequel de ces gâteaux ?",
+      "Lequel de ces gâteaux voulez-vous ?",
+      "Lequel veux-tu ?"
+    ],
+    "explanation": "lequel de + 名詞＝「…之中的哪一個」。"
+  },
+  {
+    "id": "b1-pi-010",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：發生了什麼事？",
+    "stem": "",
+    "answers": [
+      "Qu'est-ce qui s'est passé ?",
+      "Que s'est-il passé ?",
+      "Qu'est-ce qui se passe ?"
+    ],
+    "explanation": "事物當主詞用 qu'est-ce qui，或倒裝的 que s'est-il passé。"
+  },
+  {
+    "id": "b1-pi-011",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：你在想什麼？",
+    "stem": "",
+    "answers": [
+      "À quoi tu penses ?",
+      "À quoi penses-tu ?",
+      "Tu penses à quoi ?",
+      "À quoi est-ce que tu penses ?",
+      "À quoi pensez-vous ?"
+    ],
+    "explanation": "penser à + 事物，問句用 à quoi。"
+  },
+  {
+    "id": "b1-pi-012",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：你在等誰？",
+    "stem": "",
+    "answers": [
+      "Qui attends-tu ?",
+      "Qui est-ce que tu attends ?",
+      "Tu attends qui ?",
+      "Qui attendez-vous ?"
+    ],
+    "explanation": "attendre 直接接受詞，問人用 qui。"
+  }
+]

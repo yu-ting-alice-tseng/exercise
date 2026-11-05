@@ -1,0 +1,234 @@
+[
+  {
+    "id": "b2-but-001",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Je parle fort ___ tout le monde m'entende.",
+    "options": [
+      "pour que",
+      "pour",
+      "afin de",
+      "parce que"
+    ],
+    "answer": 0,
+    "explanation": "兩個子句主詞不同時用 pour que + 虛擬式。"
+  },
+  {
+    "id": "b2-but-002",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的說法",
+    "stem": "Il travaille ___ gagner de l'argent.",
+    "options": [
+      "pour",
+      "pour que",
+      "de peur que",
+      "de sorte que"
+    ],
+    "answer": 0,
+    "explanation": "主詞相同時用 pour + 原形動詞。"
+  },
+  {
+    "id": "b2-but-003",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "sante",
+      "meteo"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出合適的說法（以免著涼）",
+    "stem": "Ferme la fenêtre ___ attraper froid.",
+    "options": [
+      "de peur d'",
+      "pour que",
+      "afin qu'",
+      "de sorte que"
+    ],
+    "answer": 0,
+    "explanation": "de peur de + 原形動詞，表示要避免的事（以免）。"
+  },
+  {
+    "id": "b2-but-004",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出表示「目的」的連接詞",
+    "stem": "Parle lentement ___ on te comprenne.",
+    "options": [
+      "de sorte qu'",
+      "si bien qu'",
+      "parce qu'",
+      "alors qu'"
+    ],
+    "answer": 0,
+    "explanation": "de sorte que + 虛擬式表示目的；si bien que + 直陳式表示結果。"
+  },
+  {
+    "id": "b2-but-005",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 pour 或 pour que",
+    "stem": "Je t'écris ___ te dire merci.",
+    "answers": [
+      "pour"
+    ],
+    "explanation": "主詞相同（je 寫信、je 道謝），用 pour + 原形動詞。"
+  },
+  {
+    "id": "b2-but-006",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "famille",
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入表示目的的連接詞（後面接虛擬式）",
+    "stem": "Elle économise ___ ses enfants puissent étudier.",
+    "answers": [
+      "pour que",
+      "afin que"
+    ],
+    "explanation": "主詞不同，用 pour que／afin que + 虛擬式。"
+  },
+  {
+    "id": "b2-but-007",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入表示目的的說法（後面接原形動詞）",
+    "stem": "Nous partons tôt ___ ne pas être en retard.",
+    "answers": [
+      "pour",
+      "afin de"
+    ],
+    "explanation": "pour／afin de + ne pas + 原形動詞。"
+  },
+  {
+    "id": "b2-but-008",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的虛擬式",
+    "stem": "Il parle bas de peur que le bébé ne se ___ (réveiller).",
+    "answers": [
+      "réveille"
+    ],
+    "explanation": "de peur que + 虛擬式，常加贅詞 ne。"
+  },
+  {
+    "id": "b2-but-009",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "voyage",
+      "achats"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我存錢是為了去旅行。",
+    "stem": "",
+    "answers": [
+      "J'économise de l'argent pour voyager.",
+      "J'économise pour voyager.",
+      "Je mets de l'argent de côté pour voyager.",
+      "J'économise afin de voyager.",
+      "J'économise de l'argent pour partir en voyage.",
+      "J'économise pour partir en voyage."
+    ],
+    "explanation": "主詞相同，用 pour + 原形動詞。"
+  },
+  {
+    "id": "b2-but-010",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我把地址寫下來，免得忘記。",
+    "stem": "",
+    "answers": [
+      "J'écris l'adresse pour ne pas l'oublier.",
+      "Je note l'adresse pour ne pas l'oublier.",
+      "Je note l'adresse de peur de l'oublier.",
+      "J'écris l'adresse de peur de l'oublier.",
+      "Je note l'adresse afin de ne pas l'oublier.",
+      "J'écris l'adresse afin de ne pas l'oublier."
+    ],
+    "explanation": "pour ne pas／de peur de + 原形動詞。"
+  },
+  {
+    "id": "b2-but-011",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：老師說得很清楚，好讓大家都聽懂。",
+    "stem": "",
+    "answers": [
+      "Le professeur parle clairement pour que tout le monde comprenne.",
+      "Le professeur parle clairement afin que tout le monde comprenne.",
+      "Le professeur explique clairement pour que tout le monde comprenne.",
+      "La professeure parle clairement pour que tout le monde comprenne.",
+      "Le professeur parle clairement pour que tout le monde puisse comprendre."
+    ],
+    "explanation": "主詞不同，用 pour que + 虛擬式；tout le monde 當主詞用單數動詞。"
+  },
+  {
+    "id": "b2-but-012",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：小聲一點，免得吵醒孩子。",
+    "stem": "",
+    "answers": [
+      "Parle doucement pour ne pas réveiller les enfants.",
+      "Parlez doucement pour ne pas réveiller les enfants.",
+      "Parle moins fort pour ne pas réveiller les enfants.",
+      "Parlez moins fort pour ne pas réveiller les enfants.",
+      "Parle doucement de peur de réveiller les enfants.",
+      "Parle doucement afin de ne pas réveiller les enfants."
+    ],
+    "explanation": "pour ne pas + 原形動詞表示「以免」。"
+  }
+]

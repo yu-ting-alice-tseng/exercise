@@ -1,0 +1,236 @@
+[
+  {
+    "id": "b2-art-001",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的連接詞（首先）",
+    "stem": "___, je voudrais vous remercier de votre présence.",
+    "options": [
+      "Tout d'abord",
+      "Enfin",
+      "En somme",
+      "Par conséquent"
+    ],
+    "answer": 0,
+    "explanation": "tout d'abord 用來開始一段論述。"
+  },
+  {
+    "id": "b2-art-002",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的連接詞（補充論點）",
+    "stem": "Ce logement est trop petit ; ___, il est trop cher.",
+    "options": [
+      "de plus",
+      "cependant",
+      "pourtant",
+      "donc"
+    ],
+    "answer": 0,
+    "explanation": "de plus 表示補充（而且、此外）。"
+  },
+  {
+    "id": "b2-art-003",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的連接詞（總結）",
+    "stem": "___, il faut changer de stratégie.",
+    "options": [
+      "En somme",
+      "D'une part",
+      "De plus",
+      "En revanche"
+    ],
+    "answer": 0,
+    "explanation": "en somme 用來總結（總之）。"
+  },
+  {
+    "id": "b2-art-004",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的連接詞",
+    "stem": "D'une part, c'est cher ; ___, c'est loin.",
+    "options": [
+      "d'autre part",
+      "d'ailleurs",
+      "en effet",
+      "par exemple"
+    ],
+    "answer": 0,
+    "explanation": "d'une part…d'autre part…＝一方面…另一方面…"
+  },
+  {
+    "id": "b2-art-005",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "loisirs",
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入表示舉例的說法",
+    "stem": "On peut pratiquer beaucoup de sports, ___ le tennis ou la natation.",
+    "answers": [
+      "par exemple",
+      "comme",
+      "notamment"
+    ],
+    "explanation": "par exemple、comme、notamment 用來舉例。"
+  },
+  {
+    "id": "b2-art-006",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入表示補充的連接詞（此外）",
+    "stem": "Il est intelligent ; ___, il est très travailleur.",
+    "answers": [
+      "de plus",
+      "en outre",
+      "par ailleurs"
+    ],
+    "explanation": "de plus、en outre、par ailleurs 都表示補充。"
+  },
+  {
+    "id": "b2-art-007",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入表示結果的連接詞（因此）",
+    "stem": "Les prix ont augmenté ; ___, les ventes ont baissé.",
+    "answers": [
+      "par conséquent",
+      "en conséquence",
+      "c'est pourquoi",
+      "donc"
+    ],
+    "explanation": "par conséquent 是比較正式的「因此」。"
+  },
+  {
+    "id": "b2-art-008",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "ecole-travail",
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入表示解釋原因的連接詞（因為、確實）",
+    "stem": "Il n'est pas venu ; ___, il était malade.",
+    "answers": [
+      "en effet"
+    ],
+    "explanation": "en effet 用來補充說明前一句的原因，不是「實際上」的意思。"
+  },
+  {
+    "id": "b2-art-009",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：首先，我想感謝大家。",
+    "stem": "",
+    "answers": [
+      "Tout d'abord, je voudrais remercier tout le monde.",
+      "Tout d'abord, je tiens à remercier tout le monde.",
+      "D'abord, je voudrais remercier tout le monde.",
+      "Tout d'abord, je voudrais vous remercier.",
+      "Tout d'abord, je tiens à vous remercier.",
+      "Tout d'abord, je veux remercier tout le monde."
+    ],
+    "explanation": "tout d'abord 用來開始致詞或論述。"
+  },
+  {
+    "id": "b2-art-010",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：一方面，這很有趣；另一方面，這很累。",
+    "stem": "",
+    "answers": [
+      "D'une part, c'est intéressant ; d'autre part, c'est fatigant.",
+      "D'une part, c'est intéressant, d'autre part, c'est fatigant.",
+      "D'un côté, c'est intéressant ; de l'autre, c'est fatigant.",
+      "D'un côté, c'est intéressant, de l'autre, c'est fatigant."
+    ],
+    "explanation": "d'une part…d'autre part…；口語也常說 d'un côté…de l'autre…。注意 fatigant 的拼法。"
+  },
+  {
+    "id": "b2-art-011",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：總之，這是個好主意。",
+    "stem": "",
+    "answers": [
+      "En somme, c'est une bonne idée.",
+      "En bref, c'est une bonne idée.",
+      "Bref, c'est une bonne idée.",
+      "En résumé, c'est une bonne idée.",
+      "Finalement, c'est une bonne idée."
+    ],
+    "explanation": "en somme、bref、en résumé 都可以用來總結。"
+  },
+  {
+    "id": "b2-art-012",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：因此，我們必須做出決定。",
+    "stem": "",
+    "answers": [
+      "Par conséquent, nous devons prendre une décision.",
+      "C'est pourquoi nous devons prendre une décision.",
+      "Donc, nous devons prendre une décision.",
+      "Par conséquent, il faut prendre une décision.",
+      "C'est pourquoi il faut prendre une décision.",
+      "Par conséquent, on doit prendre une décision."
+    ],
+    "explanation": "par conséquent 表示結果；「做決定」是 prendre une décision。"
+  }
+]

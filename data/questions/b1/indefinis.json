@@ -1,0 +1,220 @@
+[
+  {
+    "id": "b1-ind-001",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的不定代名詞",
+    "stem": "___ a sonné à la porte.",
+    "options": [
+      "Quelqu'un",
+      "Quelque chose",
+      "Personne",
+      "Chaque"
+    ],
+    "answer": 0,
+    "explanation": "quelqu'un＝某人。"
+  },
+  {
+    "id": "b1-ind-002",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的不定代名詞",
+    "stem": "Je voudrais boire ___.",
+    "options": [
+      "quelque chose",
+      "quelqu'un",
+      "chacun",
+      "rien de"
+    ],
+    "answer": 0,
+    "explanation": "quelque chose＝某樣東西。"
+  },
+  {
+    "id": "b1-ind-003",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的字",
+    "stem": "___ étudiant doit rendre son devoir.",
+    "options": [
+      "Chaque",
+      "Chacun",
+      "Tous",
+      "Quelques"
+    ],
+    "answer": 0,
+    "explanation": "chaque 是形容詞，後面接單數名詞；chacun 是代名詞，單獨使用。"
+  },
+  {
+    "id": "b1-ind-004",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的字",
+    "stem": "Ils sont ___ venus à la fête.",
+    "options": [
+      "tous",
+      "tout",
+      "toutes",
+      "toute"
+    ],
+    "answer": 0,
+    "explanation": "代替陽性複數的主詞 ils 用 tous（這時 s 要發音）。"
+  },
+  {
+    "id": "b1-ind-005",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 tout、toute、tous 或 toutes",
+    "stem": "J'ai mangé ___ le gâteau.",
+    "answers": [
+      "tout"
+    ],
+    "explanation": "le gâteau 是陽性單數：tout le gâteau（整個蛋糕）。"
+  },
+  {
+    "id": "b1-ind-006",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 tout、toute、tous 或 toutes",
+    "stem": "Elle travaille ___ la journée.",
+    "answers": [
+      "toute"
+    ],
+    "explanation": "journée 是陰性單數：toute la journée（一整天）。"
+  },
+  {
+    "id": "b1-ind-007",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 tout、toute、tous 或 toutes",
+    "stem": "___ les filles sont parties.",
+    "answers": [
+      "toutes"
+    ],
+    "explanation": "les filles 是陰性複數：toutes les filles。"
+  },
+  {
+    "id": "b1-ind-008",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入表示「每一個」的不定代名詞",
+    "stem": "Ces livres coûtent dix euros ___.",
+    "answers": [
+      "chacun"
+    ],
+    "explanation": "chacun 放在句尾，表示「每一個都…」。"
+  },
+  {
+    "id": "b1-ind-009",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：有人在嗎？",
+    "stem": "",
+    "answers": [
+      "Il y a quelqu'un ?",
+      "Est-ce qu'il y a quelqu'un ?",
+      "Y a-t-il quelqu'un ?"
+    ],
+    "explanation": "quelqu'un＝某人、有人。"
+  },
+  {
+    "id": "b1-ind-010",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我什麼都沒聽到。",
+    "stem": "",
+    "answers": [
+      "Je n'ai rien entendu."
+    ],
+    "explanation": "ne…rien 在複合過去式中，rien 放在助動詞和過去分詞中間。"
+  },
+  {
+    "id": "b1-ind-011",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：每個人都有自己的意見。",
+    "stem": "",
+    "answers": [
+      "Chacun a son opinion.",
+      "Chacun a son avis.",
+      "Chacun a sa propre opinion.",
+      "Chacun a son propre avis.",
+      "Tout le monde a son opinion.",
+      "Tout le monde a son avis."
+    ],
+    "explanation": "chacun 當主詞時動詞用單數。"
+  },
+  {
+    "id": "b1-ind-012",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：我想吃點甜的東西。",
+    "stem": "",
+    "answers": [
+      "J'ai envie de manger quelque chose de sucré.",
+      "Je voudrais manger quelque chose de sucré.",
+      "J'ai envie de quelque chose de sucré.",
+      "Je veux manger quelque chose de sucré."
+    ],
+    "explanation": "quelque chose 後面接形容詞時要加 de：quelque chose de sucré。"
+  }
+]
