@@ -1,0 +1,215 @@
+[
+  {
+    "id": "b1-rel-001",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "ecole-travail",
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的關係代名詞",
+    "stem": "C'est le livre ___ je lis.",
+    "options": [
+      "que",
+      "qui",
+      "où",
+      "dont"
+    ],
+    "answer": 0,
+    "explanation": "le livre 是 lire 的直接受詞，用 que。"
+  },
+  {
+    "id": "b1-rel-002",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的關係代名詞",
+    "stem": "La femme ___ parle est ma tante.",
+    "options": [
+      "qui",
+      "que",
+      "dont",
+      "où"
+    ],
+    "answer": 0,
+    "explanation": "la femme 是 parle 的主詞，用 qui。"
+  },
+  {
+    "id": "b1-rel-003",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "presentation"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的關係代名詞",
+    "stem": "C'est la ville ___ je suis né.",
+    "options": [
+      "où",
+      "que",
+      "qui",
+      "dont"
+    ],
+    "answer": 0,
+    "explanation": "代替地點用 où。"
+  },
+  {
+    "id": "b1-rel-004",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的關係代名詞",
+    "stem": "Voici le film ___ je t'ai parlé.",
+    "options": [
+      "dont",
+      "que",
+      "où",
+      "qui"
+    ],
+    "answer": 0,
+    "explanation": "parler de quelque chose，代替 de + 名詞用 dont。"
+  },
+  {
+    "id": "b1-rel-005",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 qui、que、où 或 dont",
+    "stem": "J'ai un ami ___ habite à Nice.",
+    "answers": [
+      "qui"
+    ],
+    "explanation": "un ami 是 habite 的主詞，用 qui。"
+  },
+  {
+    "id": "b1-rel-006",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 qui、que、où 或 dont",
+    "stem": "Le restaurant ___ nous avons dîné était excellent.",
+    "answers": [
+      "où"
+    ],
+    "explanation": "le restaurant 是地點，用 où。"
+  },
+  {
+    "id": "b1-rel-007",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 qui、que、où 或 dont",
+    "stem": "La robe ___ tu portes est jolie.",
+    "answers": [
+      "que"
+    ],
+    "explanation": "la robe 是 portes 的直接受詞，用 que。"
+  },
+  {
+    "id": "b1-rel-008",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "famille",
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入 qui、que、où 或 dont",
+    "stem": "C'est l'homme ___ la fille est médecin.",
+    "answers": [
+      "dont"
+    ],
+    "explanation": "表示所屬關係（他的女兒）用 dont：l'homme dont la fille…"
+  },
+  {
+    "id": "b1-rel-009",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "achats"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：這是我昨天買的包包。",
+    "stem": "",
+    "answers": [
+      "C'est le sac que j'ai acheté hier.",
+      "Voici le sac que j'ai acheté hier."
+    ],
+    "explanation": "le sac 是 acheter 的直接受詞，用 que。"
+  },
+  {
+    "id": "b1-rel-010",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "presentation"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我認識一個會說三種語言的女生。",
+    "stem": "",
+    "answers": [
+      "Je connais une fille qui parle trois langues."
+    ],
+    "explanation": "une fille 是 parle 的主詞，用 qui。"
+  },
+  {
+    "id": "b1-rel-011",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：這是我工作的辦公室。",
+    "stem": "",
+    "answers": [
+      "C'est le bureau où je travaille.",
+      "Voici le bureau où je travaille."
+    ],
+    "explanation": "代替地點用 où。"
+  },
+  {
+    "id": "b1-rel-012",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：這是我需要的書。",
+    "stem": "",
+    "answers": [
+      "C'est le livre dont j'ai besoin.",
+      "Voici le livre dont j'ai besoin."
+    ],
+    "explanation": "avoir besoin de quelque chose，代替 de + 名詞用 dont。"
+  }
+]

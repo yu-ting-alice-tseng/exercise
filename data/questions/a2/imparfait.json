@@ -1,0 +1,234 @@
+[
+  {
+    "id": "a2-imp-001",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "loisirs",
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Quand j'étais petit, je ___ au foot.",
+    "options": [
+      "jouais",
+      "jouait",
+      "jouai",
+      "joue"
+    ],
+    "answer": 0,
+    "explanation": "描述過去的習慣用未完成過去式。je 的詞尾是 -ais。"
+  },
+  {
+    "id": "a2-imp-002",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Avant, nous ___ à Taichung.",
+    "options": [
+      "habitions",
+      "habitons",
+      "habitaient",
+      "habitiez"
+    ],
+    "answer": 0,
+    "explanation": "nous 的未完成過去式詞尾是 -ions：habitions。"
+  },
+  {
+    "id": "a2-imp-003",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "meteo"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Il ___ beau hier matin.",
+    "options": [
+      "faisait",
+      "fait",
+      "faisais",
+      "faisaient"
+    ],
+    "answer": 0,
+    "explanation": "描述過去的天氣、背景用未完成過去式：il faisait beau。"
+  },
+  {
+    "id": "a2-imp-004",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "quotidien",
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Je lisais quand le téléphone ___.",
+    "options": [
+      "a sonné",
+      "sonnait",
+      "sonne",
+      "sonnais"
+    ],
+    "answer": 0,
+    "explanation": "背景（我正在看書）用未完成過去式；突然發生的一次性事件（電話響了）用複合過去式。"
+  },
+  {
+    "id": "a2-imp-005",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "sante",
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的未完成過去式",
+    "stem": "Tu ___ (être) fatigué.",
+    "answers": [
+      "étais"
+    ],
+    "explanation": "être 的未完成過去式詞幹是不規則的 ét-：tu étais。"
+  },
+  {
+    "id": "a2-imp-006",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的未完成過去式",
+    "stem": "Ils ___ (avoir) un chien.",
+    "answers": [
+      "avaient"
+    ],
+    "explanation": "詞幹來自現在式 nous avons 的 av-，ils 加 -aient：avaient。"
+  },
+  {
+    "id": "a2-imp-007",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的未完成過去式",
+    "stem": "Nous ___ (manger) souvent au restaurant.",
+    "answers": [
+      "mangions"
+    ],
+    "explanation": "nous 的詞尾 -ions 以 i 開頭，所以不需要加 e：mangions。"
+  },
+  {
+    "id": "a2-imp-008",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的未完成過去式",
+    "stem": "Vous ___ (finir) tard le vendredi.",
+    "answers": [
+      "finissiez"
+    ],
+    "explanation": "詞幹來自 nous finissons 的 finiss-，vous 加 -iez：finissiez。"
+  },
+  {
+    "id": "a2-imp-009",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "logement",
+      "presentation"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我小時候住在台南。",
+    "stem": "",
+    "answers": [
+      "Quand j'étais petit, j'habitais à Tainan.",
+      "Quand j'étais petite, j'habitais à Tainan.",
+      "Quand j'étais enfant, j'habitais à Tainan.",
+      "J'habitais à Tainan quand j'étais petit.",
+      "J'habitais à Tainan quand j'étais petite.",
+      "Enfant, j'habitais à Tainan."
+    ],
+    "explanation": "「小時候」常說 quand j'étais petit(e)，描述過去的狀態用未完成過去式。"
+  },
+  {
+    "id": "a2-imp-010",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "meteo"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：昨天天氣很冷。",
+    "stem": "",
+    "answers": [
+      "Hier, il faisait froid.",
+      "Il faisait froid hier.",
+      "Hier, il faisait très froid.",
+      "Il faisait très froid hier."
+    ],
+    "explanation": "描述過去的天氣用 il faisait。"
+  },
+  {
+    "id": "a2-imp-011",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "nourriture",
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：以前我每天早上都喝咖啡。",
+    "stem": "",
+    "answers": [
+      "Avant, je buvais du café tous les matins.",
+      "Avant, je buvais un café tous les matins.",
+      "Avant, je prenais un café tous les matins.",
+      "Avant, je prenais du café tous les matins.",
+      "Avant, je buvais du café chaque matin.",
+      "Avant, je prenais un café chaque matin."
+    ],
+    "explanation": "過去的習慣用未完成過去式。boire 的詞幹是 buv-：je buvais。"
+  },
+  {
+    "id": "a2-imp-012",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "loisirs",
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：我在看電視的時候，他回家了。",
+    "stem": "",
+    "answers": [
+      "Je regardais la télé quand il est rentré.",
+      "Je regardais la télévision quand il est rentré.",
+      "Quand il est rentré, je regardais la télé.",
+      "Quand il est rentré, je regardais la télévision.",
+      "Je regardais la télé quand il est rentré à la maison.",
+      "Je regardais la télévision quand il est rentré à la maison."
+    ],
+    "explanation": "正在進行的背景用未完成過去式（je regardais），打斷它的事件用複合過去式（il est rentré）。"
+  }
+]

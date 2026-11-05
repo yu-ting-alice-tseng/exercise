@@ -1,0 +1,222 @@
+[
+  {
+    "id": "b1-pas-001",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的被動形式",
+    "stem": "Ce livre ___ écrit par Victor Hugo.",
+    "options": [
+      "a été",
+      "est été",
+      "était été",
+      "a"
+    ],
+    "answer": 0,
+    "explanation": "被動語態的複合過去式：avoir été + 過去分詞。"
+  },
+  {
+    "id": "b1-pas-002",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的介系詞",
+    "stem": "La maison est construite ___ des ouvriers.",
+    "options": [
+      "par",
+      "de",
+      "à",
+      "pour"
+    ],
+    "answer": 0,
+    "explanation": "被動語態中，動作的執行者通常用 par 引出。"
+  },
+  {
+    "id": "b1-pas-003",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Ce professeur est aimé ___ tous ses élèves.",
+    "options": [
+      "de",
+      "à",
+      "pour",
+      "avec"
+    ],
+    "answer": 0,
+    "explanation": "表示感情、狀態的動詞（aimer、respecter、connaître），執行者常用 de 引出。"
+  },
+  {
+    "id": "b1-pas-004",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的被動形式",
+    "stem": "Les résultats ___ demain.",
+    "options": [
+      "seront publiés",
+      "serons publiés",
+      "vont publier",
+      "seront publié"
+    ],
+    "answer": 0,
+    "explanation": "被動語態的未來式：être 的未來式＋過去分詞，過去分詞配合主詞（陽性複數）。"
+  },
+  {
+    "id": "b1-pas-005",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請把括號內的動詞改成被動語態（現在式）",
+    "stem": "La lettre ___ (envoyer) par Marie.",
+    "answers": [
+      "est envoyée"
+    ],
+    "explanation": "être 的現在式＋過去分詞，配合陰性主詞 la lettre：envoyée。"
+  },
+  {
+    "id": "b1-pas-006",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "nourriture",
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請把括號內的動詞改成被動語態（複合過去式）",
+    "stem": "Les gâteaux ___ (faire) par mon père.",
+    "answers": [
+      "ont été faits"
+    ],
+    "explanation": "被動複合過去式：ont été + 過去分詞，配合陽性複數主詞：faits。"
+  },
+  {
+    "id": "b1-pas-007",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "culture",
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請把括號內的動詞改成被動語態（現在式）",
+    "stem": "Ce musée ___ (visiter) par beaucoup de touristes.",
+    "answers": [
+      "est visité"
+    ],
+    "explanation": "être 的現在式＋過去分詞 visité。"
+  },
+  {
+    "id": "b1-pas-008",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請把括號內的動詞改成被動語態（簡單未來式）",
+    "stem": "Les invités ___ (accueillir) par le directeur.",
+    "answers": [
+      "seront accueillis"
+    ],
+    "explanation": "être 的未來式 seront＋過去分詞 accueillis（陽性複數）。"
+  },
+  {
+    "id": "b1-pas-009",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "culture",
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：這座橋是在 1900 年建造的。",
+    "stem": "",
+    "answers": [
+      "Ce pont a été construit en 1900.",
+      "Le pont a été construit en 1900."
+    ],
+    "explanation": "被動複合過去式：a été construit。年份前面用 en。"
+  },
+  {
+    "id": "b1-pas-010",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：這幅畫是莫內畫的。",
+    "stem": "",
+    "answers": [
+      "Ce tableau a été peint par Monet.",
+      "Cette peinture a été peinte par Monet.",
+      "Le tableau a été peint par Monet."
+    ],
+    "explanation": "peindre 的過去分詞是 peint，主詞是陰性 peinture 時要寫 peinte。"
+  },
+  {
+    "id": "b1-pas-011",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：學生們被老師稱讚了。",
+    "stem": "",
+    "answers": [
+      "Les élèves ont été félicités par le professeur.",
+      "Les étudiants ont été félicités par le professeur.",
+      "Les élèves ont été félicités par la professeure.",
+      "Les élèves ont été félicités par leur professeur.",
+      "Les étudiants ont été félicités par leur professeur."
+    ],
+    "explanation": "被動複合過去式：ont été + 過去分詞，配合複數主詞：félicités。"
+  },
+  {
+    "id": "b1-pas-012",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：很多國家都說法文。（用被動語態）",
+    "stem": "",
+    "answers": [
+      "Le français est parlé dans beaucoup de pays.",
+      "Le français est parlé dans de nombreux pays.",
+      "Le français est parlé dans plusieurs pays."
+    ],
+    "explanation": "被動現在式：est parlé。"
+  }
+]

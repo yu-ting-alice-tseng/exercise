@@ -1,0 +1,223 @@
+[
+  {
+    "id": "a1-gn-001",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "ecole-travail",
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的陰性形",
+    "stem": "un acteur → une ___",
+    "options": [
+      "actrice",
+      "acteuse",
+      "acteure",
+      "acteresse"
+    ],
+    "answer": 0,
+    "explanation": "-teur 結尾的名詞，陰性常變成 -trice：acteur → actrice。"
+  },
+  {
+    "id": "a1-gn-002",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "loisirs",
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的複數形",
+    "stem": "un cheval → des ___",
+    "options": [
+      "chevaux",
+      "chevals",
+      "chevauxs",
+      "chevales"
+    ],
+    "answer": 0,
+    "explanation": "-al 結尾的名詞，複數通常變成 -aux：cheval → chevaux。"
+  },
+  {
+    "id": "a1-gn-003",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "下面哪一個名詞是陰性？",
+    "stem": "",
+    "options": [
+      "maison",
+      "livre",
+      "stylo",
+      "téléphone"
+    ],
+    "answer": 0,
+    "explanation": "maison（房子）是陰性：la maison。其他三個都是陽性。"
+  },
+  {
+    "id": "a1-gn-004",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的複數形",
+    "stem": "un journal → des ___",
+    "options": [
+      "journaux",
+      "journals",
+      "journales",
+      "journeaux"
+    ],
+    "answer": 0,
+    "explanation": "journal 也是 -al 結尾，複數是 journaux。"
+  },
+  {
+    "id": "a1-gn-005",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請寫出括號內名詞的複數形",
+    "stem": "J'ai deux ___ (frère).",
+    "answers": [
+      "frères"
+    ],
+    "explanation": "一般名詞的複數直接加 s：frère → frères。"
+  },
+  {
+    "id": "a1-gn-006",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請寫出括號內名詞的複數形",
+    "stem": "Il y a trois ___ (gâteau) sur la table.",
+    "answers": [
+      "gâteaux"
+    ],
+    "explanation": "-eau 結尾的名詞，複數加 x：gâteau → gâteaux。"
+  },
+  {
+    "id": "a1-gn-007",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請寫出括號內名詞的複數形",
+    "stem": "Les ___ (bus) arrivent.",
+    "answers": [
+      "bus"
+    ],
+    "explanation": "單數已經以 s 結尾的名詞，複數不變：un bus → des bus。"
+  },
+  {
+    "id": "a1-gn-008",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "ecole-travail",
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請寫出括號內名詞的陰性形",
+    "stem": "Mon frère est boulanger et ma sœur est ___ (boulanger) aussi.",
+    "answers": [
+      "boulangère"
+    ],
+    "explanation": "-er 結尾的職業名詞，陰性變成 -ère：boulanger → boulangère。"
+  },
+  {
+    "id": "a1-gn-009",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "famille",
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我有兩隻貓和一隻狗。",
+    "stem": "",
+    "answers": [
+      "J'ai deux chats et un chien."
+    ],
+    "explanation": "chat 複數加 s：deux chats。"
+  },
+  {
+    "id": "a1-gn-010",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "ecole-travail",
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：她是老師，她先生是演員。",
+    "stem": "",
+    "answers": [
+      "Elle est professeure et son mari est acteur.",
+      "Elle est professeur et son mari est acteur.",
+      "Elle est enseignante et son mari est acteur.",
+      "Elle est prof et son mari est acteur.",
+      "Elle est professeure, son mari est acteur.",
+      "Elle est enseignante, son mari est acteur."
+    ],
+    "explanation": "說職業時通常不加冠詞。「女老師」可以說 professeure、professeur 或 enseignante。"
+  },
+  {
+    "id": "a1-gn-011",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "logement",
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：桌上有三本書。",
+    "stem": "",
+    "answers": [
+      "Il y a trois livres sur la table.",
+      "Sur la table, il y a trois livres."
+    ],
+    "explanation": "livre 複數加 s：trois livres。"
+  },
+  {
+    "id": "a1-gn-012",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：那些馬很漂亮。",
+    "stem": "",
+    "answers": [
+      "Ces chevaux sont beaux.",
+      "Les chevaux sont beaux."
+    ],
+    "explanation": "cheval 的複數是 chevaux；形容詞 beau 的陽性複數是 beaux，也是加 x。"
+  }
+]

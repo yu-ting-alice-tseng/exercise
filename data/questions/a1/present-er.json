@@ -1,0 +1,230 @@
+[
+  {
+    "id": "a1-er-001",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "presentation",
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Nous ___ le français.",
+    "options": [
+      "parlons",
+      "parlez",
+      "parlent",
+      "parle"
+    ],
+    "answer": 0,
+    "explanation": "-er 動詞的 nous 變化是 -ons：parlons。"
+  },
+  {
+    "id": "a1-er-002",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Ils ___ dans un restaurant.",
+    "options": [
+      "travaillent",
+      "travaillons",
+      "travailles",
+      "travaille"
+    ],
+    "answer": 0,
+    "explanation": "ils 的詞尾是 -ent（不發音）：travaillent。"
+  },
+  {
+    "id": "a1-er-003",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "nourriture",
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Nous ___ à huit heures.",
+    "options": [
+      "mangeons",
+      "mangons",
+      "mangez",
+      "mangent"
+    ],
+    "answer": 0,
+    "explanation": "-ger 動詞在 nous 時要保留 e，讓 g 發軟音：mangeons。"
+  },
+  {
+    "id": "a1-er-004",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "loisirs",
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Tu ___ la télé le soir ?",
+    "options": [
+      "regardes",
+      "regarde",
+      "regardez",
+      "regardent"
+    ],
+    "answer": 0,
+    "explanation": "tu 的詞尾是 -es：regardes。"
+  },
+  {
+    "id": "a1-er-005",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "presentation",
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的現在式",
+    "stem": "J'___ (habiter) à Taipei.",
+    "answers": [
+      "habite"
+    ],
+    "explanation": "je 的詞尾是 -e。habiter 以不發音的 h 開頭，je 要省略成 j'。"
+  },
+  {
+    "id": "a1-er-006",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的現在式",
+    "stem": "Vous ___ (aimer) le cinéma ?",
+    "answers": [
+      "aimez"
+    ],
+    "explanation": "vous 的詞尾是 -ez：aimez。"
+  },
+  {
+    "id": "a1-er-007",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的現在式",
+    "stem": "Nous ___ (commencer) le cours à neuf heures.",
+    "answers": [
+      "commençons"
+    ],
+    "explanation": "-cer 動詞在 nous 時，c 要改成 ç，才會保留 s 的發音：commençons。"
+  },
+  {
+    "id": "a1-er-008",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的現在式",
+    "stem": "Elles ___ (écouter) de la musique.",
+    "answers": [
+      "écoutent"
+    ],
+    "explanation": "elles 的詞尾是 -ent：écoutent。"
+  },
+  {
+    "id": "a1-er-009",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "presentation"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我說中文和法文。",
+    "stem": "",
+    "answers": [
+      "Je parle chinois et français.",
+      "Je parle le chinois et le français.",
+      "Je parle mandarin et français.",
+      "Je parle chinois et le français."
+    ],
+    "explanation": "parler 加語言時，冠詞可以省略：je parle chinois，也可以說 je parle le chinois。"
+  },
+  {
+    "id": "a1-er-010",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "presentation",
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：你們住在巴黎嗎？",
+    "stem": "",
+    "answers": [
+      "Vous habitez à Paris ?",
+      "Habitez-vous à Paris ?",
+      "Est-ce que vous habitez à Paris ?",
+      "Vous habitez Paris ?"
+    ],
+    "explanation": "疑問句有三種寫法：語調上揚、est-ce que、主詞動詞倒裝。"
+  },
+  {
+    "id": "a1-er-011",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "nourriture",
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我們七點吃晚餐。",
+    "stem": "",
+    "answers": [
+      "Nous dînons à sept heures.",
+      "On dîne à sept heures.",
+      "Nous dînons à dix-neuf heures.",
+      "On dîne à dix-neuf heures.",
+      "Nous dînons à 19 heures.",
+      "Nous dînons à 7 heures.",
+      "Nous mangeons à sept heures.",
+      "On mange à sept heures."
+    ],
+    "explanation": "「吃晚餐」是 dîner；nous 的變化是 dînons。口語常用 on 代替 nous。"
+  },
+  {
+    "id": "a1-er-012",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：她在銀行工作。",
+    "stem": "",
+    "answers": [
+      "Elle travaille dans une banque.",
+      "Elle travaille à la banque."
+    ],
+    "explanation": "travailler 的第三人稱單數是 travaille。"
+  }
+]

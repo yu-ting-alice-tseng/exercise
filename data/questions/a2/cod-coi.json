@@ -1,0 +1,224 @@
+[
+  {
+    "id": "a2-cod-001",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "famille",
+      "presentation"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Tu connais Marie ? Oui, je ___ connais.",
+    "options": [
+      "la",
+      "le",
+      "lui",
+      "les"
+    ],
+    "answer": 0,
+    "explanation": "connaître 直接接受詞，Marie 是陰性單數，用 la。"
+  },
+  {
+    "id": "a2-cod-002",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Tu parles à ton père ? Oui, je ___ parle.",
+    "options": [
+      "lui",
+      "le",
+      "leur",
+      "la"
+    ],
+    "answer": 0,
+    "explanation": "parler à quelqu'un 是間接受詞，單數用 lui（男女同形）。"
+  },
+  {
+    "id": "a2-cod-003",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "famille",
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Tu as vu tes amis ? Oui, je ___ ai vus.",
+    "options": [
+      "les",
+      "leur",
+      "lui",
+      "en"
+    ],
+    "answer": 0,
+    "explanation": "voir 接直接受詞，複數用 les。直接受詞放在 avoir 前面時，過去分詞要配合：vus。"
+  },
+  {
+    "id": "a2-cod-004",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Tu téléphones à tes parents ? Oui, je ___ téléphone tous les jours.",
+    "options": [
+      "leur",
+      "les",
+      "lui",
+      "leurs"
+    ],
+    "answer": 0,
+    "explanation": "téléphoner à quelqu'un 是間接受詞，複數用 leur（代名詞 leur 不加 s）。"
+  },
+  {
+    "id": "a2-cod-005",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入代名詞，代替括號中的詞",
+    "stem": "Je ___ regarde. (la télévision)",
+    "answers": [
+      "la"
+    ],
+    "explanation": "regarder 接直接受詞，télévision 是陰性單數，用 la。"
+  },
+  {
+    "id": "a2-cod-006",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "famille",
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入代名詞，代替括號中的詞",
+    "stem": "Il ___ achète des fleurs. (à sa mère)",
+    "answers": [
+      "lui"
+    ],
+    "explanation": "acheter quelque chose à quelqu'un，à sa mère 是間接受詞，用 lui。"
+  },
+  {
+    "id": "a2-cod-007",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "logement",
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入代名詞，代替括號中的詞",
+    "stem": "Nous ___ invitons. (nos voisins)",
+    "answers": [
+      "les"
+    ],
+    "explanation": "inviter 接直接受詞，複數用 les。"
+  },
+  {
+    "id": "a2-cod-008",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入代名詞，代替括號中的詞",
+    "stem": "Elle ne ___ répond pas. (à ses collègues)",
+    "answers": [
+      "leur"
+    ],
+    "explanation": "répondre à quelqu'un 是間接受詞，複數用 leur；否定時 ne 放在代名詞前面。"
+  },
+  {
+    "id": "a2-cod-009",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請用代名詞肯定回答。",
+    "stem": "Tu aimes ce film ?",
+    "answers": [
+      "Oui, je l'aime.",
+      "Oui, je l'aime beaucoup.",
+      "Oui, je l'adore."
+    ],
+    "explanation": "ce film 是陽性單數直接受詞，用 le；遇到母音省略成 l'。"
+  },
+  {
+    "id": "a2-cod-010",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用代名詞肯定回答。",
+    "stem": "Tu écris à ta grand-mère ?",
+    "answers": [
+      "Oui, je lui écris.",
+      "Oui, je lui écris souvent."
+    ],
+    "explanation": "écrire à quelqu'un 是間接受詞，用 lui。"
+  },
+  {
+    "id": "a2-cod-011",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我明天打電話給你。",
+    "stem": "",
+    "answers": [
+      "Je te téléphone demain.",
+      "Je t'appelle demain.",
+      "Je vais te téléphoner demain.",
+      "Je vais t'appeler demain.",
+      "Je te téléphonerai demain.",
+      "Je t'appellerai demain.",
+      "Demain, je t'appelle.",
+      "Demain, je te téléphone."
+    ],
+    "explanation": "appeler 接直接受詞，téléphoner à 接間接受詞，但 tu 的形式都是 te。近未來式時代名詞放在原形動詞前面。"
+  },
+  {
+    "id": "a2-cod-012",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用代名詞肯定回答（用複合過去式）。",
+    "stem": "Tu as fini tes devoirs ?",
+    "answers": [
+      "Oui, je les ai finis."
+    ],
+    "explanation": "tes devoirs 是陽性複數，用 les；放在 avoir 前面，過去分詞要配合：finis。"
+  }
+]

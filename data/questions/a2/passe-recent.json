@@ -1,0 +1,221 @@
+[
+  {
+    "id": "a2-pr-001",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Je ___ de finir mes devoirs.",
+    "options": [
+      "viens",
+      "vais",
+      "suis",
+      "ai"
+    ],
+    "answer": 0,
+    "explanation": "近過去式：venir de + 原形動詞，表示「剛剛做完」。"
+  },
+  {
+    "id": "a2-pr-002",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Nous ___ d'arriver.",
+    "options": [
+      "venons",
+      "venez",
+      "allons",
+      "viennent"
+    ],
+    "answer": 0,
+    "explanation": "venir 的 nous 變化是 venons。"
+  },
+  {
+    "id": "a2-pr-003",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Le train ___ de partir.",
+    "options": [
+      "vient",
+      "va",
+      "viens",
+      "est"
+    ],
+    "answer": 0,
+    "explanation": "venir 的 il 變化是 vient。"
+  },
+  {
+    "id": "a2-pr-004",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出「他們剛吃過」",
+    "stem": "Ils ___ manger.",
+    "options": [
+      "viennent de",
+      "vont",
+      "sont",
+      "ont"
+    ],
+    "answer": 0,
+    "explanation": "venir de + 原形是「剛剛」；aller + 原形是「即將」，意思相反。"
+  },
+  {
+    "id": "a2-pr-005",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "logement",
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請用近過去式填空（venir de＋原形動詞）",
+    "stem": "Tu ___ (rentrer) ?",
+    "answers": [
+      "viens de rentrer"
+    ],
+    "explanation": "tu viens de + 原形動詞。"
+  },
+  {
+    "id": "a2-pr-006",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請用近過去式填空（venir de＋原形動詞）",
+    "stem": "Elle ___ (sortir).",
+    "answers": [
+      "vient de sortir"
+    ],
+    "explanation": "elle vient de + 原形動詞。"
+  },
+  {
+    "id": "a2-pr-007",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "achats",
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請用近過去式填空（venir de＋原形動詞）",
+    "stem": "Vous ___ (acheter) une voiture ?",
+    "answers": [
+      "venez d'acheter"
+    ],
+    "explanation": "acheter 以母音開頭，de 要省略成 d'。"
+  },
+  {
+    "id": "a2-pr-008",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請用近過去式填空（venir de＋原形動詞）",
+    "stem": "Mes parents ___ (téléphoner).",
+    "answers": [
+      "viennent de téléphoner"
+    ],
+    "explanation": "mes parents = ils，venir 變成 viennent。"
+  },
+  {
+    "id": "a2-pr-009",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我剛到。",
+    "stem": "",
+    "answers": [
+      "Je viens d'arriver."
+    ],
+    "explanation": "arriver 以母音開頭，de 省略成 d'。"
+  },
+  {
+    "id": "a2-pr-010",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：他剛吃完午餐。",
+    "stem": "",
+    "answers": [
+      "Il vient de déjeuner.",
+      "Il vient de finir de déjeuner.",
+      "Il vient de manger.",
+      "Il vient de finir son déjeuner."
+    ],
+    "explanation": "「吃午餐」是 déjeuner。近過去式：il vient de déjeuner。"
+  },
+  {
+    "id": "a2-pr-011",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我們剛看完這部電影。",
+    "stem": "",
+    "answers": [
+      "Nous venons de voir ce film.",
+      "On vient de voir ce film.",
+      "Nous venons de regarder ce film.",
+      "On vient de regarder ce film.",
+      "Nous venons de finir ce film.",
+      "On vient de finir ce film."
+    ],
+    "explanation": "nous venons de 或口語的 on vient de，加上原形動詞。"
+  },
+  {
+    "id": "a2-pr-012",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "loisirs",
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：電影剛開始。",
+    "stem": "",
+    "answers": [
+      "Le film vient de commencer."
+    ],
+    "explanation": "le film = il，venir 變成 vient。"
+  }
+]

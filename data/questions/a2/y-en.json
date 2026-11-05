@@ -1,0 +1,218 @@
+[
+  {
+    "id": "a2-yen-001",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Tu vas à Paris ? Oui, j'___ vais demain.",
+    "options": [
+      "y",
+      "en",
+      "le",
+      "lui"
+    ],
+    "answer": 0,
+    "explanation": "y 代替 à + 地點。"
+  },
+  {
+    "id": "a2-yen-002",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Tu veux du café ? Oui, j'___ veux bien.",
+    "options": [
+      "en",
+      "y",
+      "le",
+      "la"
+    ],
+    "answer": 0,
+    "explanation": "en 代替部分冠詞 + 名詞（du café）。"
+  },
+  {
+    "id": "a2-yen-003",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Tu as combien de frères ? J'___ ai deux.",
+    "options": [
+      "en",
+      "y",
+      "les",
+      "leur"
+    ],
+    "answer": 0,
+    "explanation": "有數量時用 en，數字放在句尾：j'en ai deux。"
+  },
+  {
+    "id": "a2-yen-004",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Tu penses à ton examen ? Oui, j'___ pense.",
+    "options": [
+      "y",
+      "en",
+      "lui",
+      "le"
+    ],
+    "answer": 0,
+    "explanation": "penser à + 事物用 y 代替（如果是人，要說 je pense à lui）。"
+  },
+  {
+    "id": "a2-yen-005",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "voyage",
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 y 或 en",
+    "stem": "Tu reviens de la plage ? Oui, j'___ reviens.",
+    "answers": [
+      "en"
+    ],
+    "explanation": "en 代替 de + 地點（從某處來）。"
+  },
+  {
+    "id": "a2-yen-006",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 y 或 en",
+    "stem": "Elle habite à Lyon ? Oui, elle ___ habite.",
+    "answers": [
+      "y"
+    ],
+    "explanation": "y 代替 à + 地點。"
+  },
+  {
+    "id": "a2-yen-007",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 y 或 en",
+    "stem": "Il y a du lait ? Oui, il y ___ a.",
+    "answers": [
+      "en"
+    ],
+    "explanation": "en 代替 du lait；il y a 的 y 本身不變，en 放在 a 前面：il y en a。"
+  },
+  {
+    "id": "a2-yen-008",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 y 或 en",
+    "stem": "Vous allez au marché ? Non, nous n'___ allons pas.",
+    "answers": [
+      "y"
+    ],
+    "explanation": "y 代替 au marché；否定時 ne 放在 y 前面，省略成 n'。"
+  },
+  {
+    "id": "a2-yen-009",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 en 否定回答。",
+    "stem": "Tu manges de la viande ?",
+    "answers": [
+      "Non, je n'en mange pas."
+    ],
+    "explanation": "en 代替 de la viande，否定時 ne…pas 夾住 en 和動詞：je n'en mange pas。"
+  },
+  {
+    "id": "a2-yen-010",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請用 y 肯定回答。",
+    "stem": "Tu vas au cinéma ce soir ?",
+    "answers": [
+      "Oui, j'y vais.",
+      "Oui, j'y vais ce soir."
+    ],
+    "explanation": "y 代替 au cinéma，放在動詞前面。"
+  },
+  {
+    "id": "a2-yen-011",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 en 肯定回答：有兩個。",
+    "stem": "Tu as des enfants ?",
+    "answers": [
+      "Oui, j'en ai deux."
+    ],
+    "explanation": "en 代替 des enfants，數字放在句尾。"
+  },
+  {
+    "id": "a2-yen-012",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "voyage",
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用 y 回答（肯定或否定都可以）。",
+    "stem": "Tu es déjà allé en France ?",
+    "answers": [
+      "Oui, j'y suis déjà allé.",
+      "Oui, j'y suis déjà allée.",
+      "Non, je n'y suis jamais allé.",
+      "Non, je n'y suis jamais allée.",
+      "Oui, j'y suis allé.",
+      "Oui, j'y suis allée."
+    ],
+    "explanation": "y 代替 en France，放在助動詞前面：j'y suis allé(e)。否定時說 je n'y suis jamais allé(e)。"
+  }
+]

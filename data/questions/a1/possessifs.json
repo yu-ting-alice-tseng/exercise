@@ -1,0 +1,221 @@
+[
+  {
+    "id": "a1-pos-001",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出「我的」",
+    "stem": "C'est ___ mère.",
+    "options": [
+      "ma",
+      "mon",
+      "mes",
+      "me"
+    ],
+    "answer": 0,
+    "explanation": "mère 是陰性單數，「我的」用 ma。"
+  },
+  {
+    "id": "a1-pos-002",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "famille",
+      "presentation"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出「我的」",
+    "stem": "Voici ___ amie Julie.",
+    "options": [
+      "mon",
+      "ma",
+      "mes",
+      "m'"
+    ],
+    "answer": 0,
+    "explanation": "amie 雖然是陰性，但以母音開頭，為了好發音要用 mon：mon amie。"
+  },
+  {
+    "id": "a1-pos-003",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出「他們的」",
+    "stem": "Ils aiment ___ parents.",
+    "options": [
+      "leurs",
+      "leur",
+      "ses",
+      "son"
+    ],
+    "answer": 0,
+    "explanation": "擁有者是「他們」，名詞是複數，用 leurs。"
+  },
+  {
+    "id": "a1-pos-004",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出「他的」",
+    "stem": "Paul cherche ___ clés.",
+    "options": [
+      "ses",
+      "son",
+      "sa",
+      "leurs"
+    ],
+    "answer": 0,
+    "explanation": "擁有者是一個人，名詞 clés 是複數，用 ses。"
+  },
+  {
+    "id": "a1-pos-005",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入所有格形容詞（提示：你的）",
+    "stem": "C'est ___ livre ?",
+    "answers": [
+      "ton"
+    ],
+    "explanation": "livre 是陽性單數，「你的」用 ton。"
+  },
+  {
+    "id": "a1-pos-006",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入所有格形容詞（提示：我們的）",
+    "stem": "___ maison est près de l'école.",
+    "answers": [
+      "notre"
+    ],
+    "explanation": "「我們的」單數名詞用 notre，陰陽性同形。"
+  },
+  {
+    "id": "a1-pos-007",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入所有格形容詞（提示：你們的）",
+    "stem": "Où sont ___ valises ?",
+    "answers": [
+      "vos"
+    ],
+    "explanation": "「你們的」複數名詞用 vos。"
+  },
+  {
+    "id": "a1-pos-008",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入所有格形容詞（提示：她的）",
+    "stem": "Marie adore ___ frère.",
+    "answers": [
+      "son"
+    ],
+    "explanation": "所有格配合的是被擁有的名詞，不是擁有者。frère 是陽性，所以「她的哥哥」是 son frère。"
+  },
+  {
+    "id": "a1-pos-009",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "famille",
+      "presentation"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：這是我的哥哥。",
+    "stem": "",
+    "answers": [
+      "C'est mon frère.",
+      "C'est mon grand frère.",
+      "Voici mon frère.",
+      "Voici mon grand frère."
+    ],
+    "explanation": "frère 是陽性，用 mon。"
+  },
+  {
+    "id": "a1-pos-010",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：他們的房子很漂亮。",
+    "stem": "",
+    "answers": [
+      "Leur maison est belle.",
+      "Leur maison est jolie.",
+      "Leur maison est très belle.",
+      "Leur maison est très jolie."
+    ],
+    "explanation": "「他們的」單數名詞用 leur。"
+  },
+  {
+    "id": "a1-pos-011",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "famille",
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：她的父親是醫生。",
+    "stem": "",
+    "answers": [
+      "Son père est médecin.",
+      "Son père est docteur."
+    ],
+    "explanation": "père 是陽性，「她的父親」是 son père。"
+  },
+  {
+    "id": "a1-pos-012",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "presentation"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：我的（女性）朋友叫做 Léa。",
+    "stem": "",
+    "answers": [
+      "Mon amie s'appelle Léa.",
+      "Mon amie, c'est Léa."
+    ],
+    "explanation": "amie 以母音開頭，用 mon 而不是 ma。"
+  }
+]

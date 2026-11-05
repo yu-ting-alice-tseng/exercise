@@ -1,0 +1,228 @@
+[
+  {
+    "id": "a1-par-001",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture",
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的冠詞",
+    "stem": "Le matin, je bois ___ café.",
+    "options": [
+      "du",
+      "de la",
+      "des",
+      "le"
+    ],
+    "answer": 0,
+    "explanation": "café 是陽性、不可數，表示「一些咖啡」用部分冠詞 du。"
+  },
+  {
+    "id": "a1-par-002",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的冠詞",
+    "stem": "Tu veux ___ eau ?",
+    "options": [
+      "de l'",
+      "du",
+      "de la",
+      "des"
+    ],
+    "answer": 0,
+    "explanation": "eau 是陰性名詞，但以母音開頭，部分冠詞 de la 要寫成 de l'。"
+  },
+  {
+    "id": "a1-par-003",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的冠詞",
+    "stem": "Elle mange ___ soupe.",
+    "options": [
+      "de la",
+      "du",
+      "des",
+      "de l'"
+    ],
+    "answer": 0,
+    "explanation": "soupe 是陰性、不可數，用部分冠詞 de la。"
+  },
+  {
+    "id": "a1-par-004",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的冠詞",
+    "stem": "Je ne mange pas ___ viande.",
+    "options": [
+      "de",
+      "de la",
+      "du",
+      "des"
+    ],
+    "answer": 0,
+    "explanation": "否定句 ne…pas 之後，部分冠詞（du、de la、de l'）一律變成 de。"
+  },
+  {
+    "id": "a1-par-005",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "achats",
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入部分冠詞（du、de la、de l'）",
+    "stem": "Il achète ___ pain à la boulangerie.",
+    "answers": [
+      "du"
+    ],
+    "explanation": "pain 是陽性，表示「一些麵包」用 du。"
+  },
+  {
+    "id": "a1-par-006",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入部分冠詞（du、de la、de l'）",
+    "stem": "Nous prenons ___ salade.",
+    "answers": [
+      "de la"
+    ],
+    "explanation": "salade 是陰性，用 de la。"
+  },
+  {
+    "id": "a1-par-007",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture",
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入部分冠詞（du、de la、de l'）",
+    "stem": "Vous voulez ___ huile d'olive ?",
+    "answers": [
+      "de l'"
+    ],
+    "explanation": "huile 以不發音的 h 開頭，視同母音開頭，用 de l'。"
+  },
+  {
+    "id": "a1-par-008",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture",
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入正確的冠詞（注意這是否定句）",
+    "stem": "Il n'y a plus ___ lait dans le frigo.",
+    "answers": [
+      "de"
+    ],
+    "explanation": "ne…plus 也是否定，部分冠詞 du 要變成 de。"
+  },
+  {
+    "id": "a1-par-009",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我想要一些水。",
+    "stem": "",
+    "answers": [
+      "Je voudrais de l'eau.",
+      "Je veux de l'eau.",
+      "J'aimerais de l'eau.",
+      "Je voudrais de l'eau, s'il vous plaît."
+    ],
+    "explanation": "eau 是陰性、母音開頭，「一些水」用 de l'eau。je voudrais 是比較有禮貌的說法。"
+  },
+  {
+    "id": "a1-par-010",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture",
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：他們早餐吃麵包和果醬。",
+    "stem": "",
+    "answers": [
+      "Ils mangent du pain et de la confiture au petit-déjeuner.",
+      "Au petit-déjeuner, ils mangent du pain et de la confiture.",
+      "Ils prennent du pain et de la confiture au petit-déjeuner.",
+      "Au petit-déjeuner, ils prennent du pain et de la confiture.",
+      "Ils mangent du pain et de la confiture au petit déjeuner.",
+      "Au petit déjeuner, ils mangent du pain et de la confiture."
+    ],
+    "explanation": "pain 陽性用 du，confiture 陰性用 de la。每個名詞前面都要各自加冠詞。"
+  },
+  {
+    "id": "a1-par-011",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我不喝咖啡。",
+    "stem": "",
+    "answers": [
+      "Je ne bois pas de café."
+    ],
+    "explanation": "否定句中部分冠詞 du 變成 de：je ne bois pas de café。"
+  },
+  {
+    "id": "a1-par-012",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：你要一點起司嗎？",
+    "stem": "",
+    "answers": [
+      "Tu veux du fromage ?",
+      "Est-ce que tu veux du fromage ?",
+      "Veux-tu du fromage ?",
+      "Vous voulez du fromage ?",
+      "Voulez-vous du fromage ?",
+      "Est-ce que vous voulez du fromage ?"
+    ],
+    "explanation": "fromage 是陽性、不可數，用 du。"
+  }
+]

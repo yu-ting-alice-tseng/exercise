@@ -1,0 +1,230 @@
+[
+  {
+    "id": "a2-pro-001",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的反身代名詞",
+    "stem": "Je ___ lève à sept heures.",
+    "options": [
+      "me",
+      "te",
+      "se",
+      "nous"
+    ],
+    "answer": 0,
+    "explanation": "反身代名詞要和主詞一致：je → me。"
+  },
+  {
+    "id": "a2-pro-002",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的反身代名詞",
+    "stem": "Nous ___ promenons dans le parc.",
+    "options": [
+      "nous",
+      "se",
+      "vous",
+      "me"
+    ],
+    "answer": 0,
+    "explanation": "nous 的反身代名詞也是 nous：nous nous promenons。"
+  },
+  {
+    "id": "a2-pro-003",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的反身代名詞",
+    "stem": "Tu ___ couches tard ?",
+    "options": [
+      "te",
+      "se",
+      "me",
+      "vous"
+    ],
+    "answer": 0,
+    "explanation": "tu → te。"
+  },
+  {
+    "id": "a2-pro-004",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "famille",
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的複合過去式",
+    "stem": "Ils ___ l'année dernière.",
+    "options": [
+      "se sont mariés",
+      "ont mariés",
+      "se sont marié",
+      "sont mariés"
+    ],
+    "answer": 0,
+    "explanation": "反身動詞的複合過去式用 être，過去分詞和主詞配合：ils se sont mariés。"
+  },
+  {
+    "id": "a2-pro-005",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "presentation"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的現在式（連同反身代名詞）",
+    "stem": "Elle ___ (s'appeler) Camille.",
+    "answers": [
+      "s'appelle"
+    ],
+    "explanation": "appeler 在 elle 時雙寫 l：elle s'appelle。"
+  },
+  {
+    "id": "a2-pro-006",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "loisirs",
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的現在式（連同反身代名詞）",
+    "stem": "Vous ___ (se reposer) le dimanche ?",
+    "answers": [
+      "vous reposez"
+    ],
+    "explanation": "vous 的反身代名詞是 vous：vous vous reposez。"
+  },
+  {
+    "id": "a2-pro-007",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "quotidien",
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的現在式（連同反身代名詞）",
+    "stem": "Je ___ (se brosser) les dents.",
+    "answers": [
+      "me brosse"
+    ],
+    "explanation": "je → me：je me brosse les dents。身體部位用定冠詞 les，不用所有格。"
+  },
+  {
+    "id": "a2-pro-008",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "famille",
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的現在式（連同反身代名詞）",
+    "stem": "Les enfants ___ (s'habiller) seuls.",
+    "answers": [
+      "s'habillent"
+    ],
+    "explanation": "ils → se，habiller 以不發音的 h 開頭，se 省略成 s'。"
+  },
+  {
+    "id": "a2-pro-009",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我每天早上六點起床。",
+    "stem": "",
+    "answers": [
+      "Je me lève à six heures tous les matins.",
+      "Tous les matins, je me lève à six heures.",
+      "Je me lève tous les matins à six heures.",
+      "Je me lève à 6 heures tous les matins.",
+      "Je me lève à six heures chaque matin.",
+      "Chaque matin, je me lève à six heures."
+    ],
+    "explanation": "se lever 的 je 變化是 je me lève（注意 e 上面要加重音）。"
+  },
+  {
+    "id": "a2-pro-010",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "presentation"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：你叫什麼名字？",
+    "stem": "",
+    "answers": [
+      "Comment tu t'appelles ?",
+      "Comment t'appelles-tu ?",
+      "Tu t'appelles comment ?",
+      "Comment vous appelez-vous ?",
+      "Comment vous vous appelez ?",
+      "Vous vous appelez comment ?"
+    ],
+    "explanation": "s'appeler 是反身動詞：tu t'appelles、vous vous appelez。"
+  },
+  {
+    "id": "a2-pro-011",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "famille",
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：我們不常見面。",
+    "stem": "",
+    "answers": [
+      "Nous ne nous voyons pas souvent.",
+      "On ne se voit pas souvent."
+    ],
+    "explanation": "se voir 表示「互相見面」。否定時 ne 放在反身代名詞前面：nous ne nous voyons pas。"
+  },
+  {
+    "id": "a2-pro-012",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：她昨天很早就睡了。",
+    "stem": "",
+    "answers": [
+      "Elle s'est couchée tôt hier.",
+      "Hier, elle s'est couchée tôt.",
+      "Elle s'est couchée très tôt hier.",
+      "Hier, elle s'est couchée très tôt.",
+      "Hier soir, elle s'est couchée tôt."
+    ],
+    "explanation": "反身動詞的複合過去式用 être，過去分詞要配合主詞 elle：couchée。"
+  }
+]

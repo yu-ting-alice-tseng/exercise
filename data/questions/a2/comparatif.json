@@ -1,0 +1,221 @@
+[
+  {
+    "id": "a2-cmp-001",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "voyage",
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的比較詞",
+    "stem": "Paris est ___ grand que Lyon.",
+    "options": [
+      "plus",
+      "plus de",
+      "autant",
+      "mieux"
+    ],
+    "answer": 0,
+    "explanation": "形容詞的比較級：plus + 形容詞 + que。"
+  },
+  {
+    "id": "a2-cmp-002",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的比較級",
+    "stem": "Ce gâteau est ___ que l'autre.",
+    "options": [
+      "meilleur",
+      "plus bon",
+      "mieux",
+      "bien"
+    ],
+    "answer": 0,
+    "explanation": "形容詞 bon 的比較級是不規則的 meilleur，不說 plus bon。"
+  },
+  {
+    "id": "a2-cmp-003",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的比較級",
+    "stem": "Elle chante ___ que moi.",
+    "options": [
+      "mieux",
+      "meilleur",
+      "plus bon",
+      "bonne"
+    ],
+    "answer": 0,
+    "explanation": "修飾動詞要用副詞 bien，bien 的比較級是 mieux。"
+  },
+  {
+    "id": "a2-cmp-004",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "voyage",
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的最高級",
+    "stem": "C'est la ___ ville du pays.",
+    "options": [
+      "plus grande",
+      "plus grand",
+      "grande plus",
+      "très grande"
+    ],
+    "answer": 0,
+    "explanation": "最高級：la/le/les + plus + 形容詞，形容詞要配合 ville（陰性）。"
+  },
+  {
+    "id": "a2-cmp-005",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入比較詞（提示：和…一樣）",
+    "stem": "Pierre est ___ grand que Paul.",
+    "answers": [
+      "aussi"
+    ],
+    "explanation": "同等比較：aussi + 形容詞 + que。"
+  },
+  {
+    "id": "a2-cmp-006",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "meteo"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入比較詞（提示：比較不）",
+    "stem": "Il fait ___ chaud qu'hier.",
+    "answers": [
+      "moins"
+    ],
+    "explanation": "劣等比較：moins + 形容詞 + que。"
+  },
+  {
+    "id": "a2-cmp-007",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 bon 的最高級",
+    "stem": "C'est le ___ restaurant du quartier.",
+    "answers": [
+      "meilleur"
+    ],
+    "explanation": "bon 的最高級是 le meilleur。"
+  },
+  {
+    "id": "a2-cmp-008",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "ecole-travail",
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入比較詞（提示：一樣多，後面是名詞）",
+    "stem": "J'ai ___ livres que toi.",
+    "answers": [
+      "autant de"
+    ],
+    "explanation": "名詞的同等比較用 autant de + 名詞 + que。"
+  },
+  {
+    "id": "a2-cmp-009",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我妹妹比我高。",
+    "stem": "",
+    "answers": [
+      "Ma sœur est plus grande que moi.",
+      "Ma petite sœur est plus grande que moi."
+    ],
+    "explanation": "plus + 形容詞 + que；形容詞配合 sœur 用陰性 grande。que 後面的人稱用重讀代名詞 moi。"
+  },
+  {
+    "id": "a2-cmp-010",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "meteo"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：今天比昨天冷。",
+    "stem": "",
+    "answers": [
+      "Aujourd'hui, il fait plus froid qu'hier.",
+      "Il fait plus froid aujourd'hui qu'hier."
+    ],
+    "explanation": "il fait froid 加上比較：il fait plus froid qu'hier（que 遇到母音省略成 qu'）。"
+  },
+  {
+    "id": "a2-cmp-011",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：這是全班最好的學生。",
+    "stem": "",
+    "answers": [
+      "C'est le meilleur élève de la classe.",
+      "C'est la meilleure élève de la classe.",
+      "C'est le meilleur étudiant de la classe.",
+      "C'est la meilleure étudiante de la classe."
+    ],
+    "explanation": "bon 的最高級是 le meilleur / la meilleure，「全班」用 de la classe。"
+  },
+  {
+    "id": "a2-cmp-012",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "presentation",
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：他法文說得比我好。",
+    "stem": "",
+    "answers": [
+      "Il parle mieux français que moi.",
+      "Il parle français mieux que moi.",
+      "Il parle mieux le français que moi."
+    ],
+    "explanation": "修飾動詞 parler 要用副詞，bien 的比較級是 mieux。"
+  }
+]

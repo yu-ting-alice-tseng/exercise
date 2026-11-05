@@ -1,0 +1,221 @@
+[
+  {
+    "id": "b1-pqp-001",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Quand je suis arrivé, le film ___.",
+    "options": [
+      "avait commencé",
+      "a commencé",
+      "commencera",
+      "avait commencée"
+    ],
+    "answer": 0,
+    "explanation": "在過去某個時間點之前已經完成的事，用愈過去式（avoir 的未完成過去式＋過去分詞）。"
+  },
+  {
+    "id": "b1-pqp-002",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的助動詞",
+    "stem": "Elle ___ déjà partie quand tu as appelé.",
+    "options": [
+      "était",
+      "avait",
+      "est",
+      "a"
+    ],
+    "answer": 0,
+    "explanation": "partir 用 être 當助動詞，愈過去式是 était partie。"
+  },
+  {
+    "id": "b1-pqp-003",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的助動詞",
+    "stem": "Ils ___ déjà mangé.",
+    "options": [
+      "avaient",
+      "étaient",
+      "ont",
+      "avait"
+    ],
+    "answer": 0,
+    "explanation": "manger 用 avoir，愈過去式是 avaient mangé。"
+  },
+  {
+    "id": "b1-pqp-004",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "logement",
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Je ne savais pas que tu ___ en Chine.",
+    "options": [
+      "avais habité",
+      "as habité",
+      "habiteras",
+      "avais habitée"
+    ],
+    "answer": 0,
+    "explanation": "主要子句是過去式，比它更早發生的事用愈過去式。用 avoir 時過去分詞不跟主詞配合。"
+  },
+  {
+    "id": "b1-pqp-005",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的愈過去式",
+    "stem": "Nous ___ (finir) avant midi.",
+    "answers": [
+      "avions fini"
+    ],
+    "explanation": "avoir 的未完成過去式 avions＋過去分詞 fini。"
+  },
+  {
+    "id": "b1-pqp-006",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的愈過去式",
+    "stem": "Tu ___ (oublier) tes clés.",
+    "answers": [
+      "avais oublié"
+    ],
+    "explanation": "avoir 的未完成過去式 avais＋過去分詞 oublié。"
+  },
+  {
+    "id": "b1-pqp-007",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的愈過去式",
+    "stem": "Elles ___ (arriver) en retard.",
+    "answers": [
+      "étaient arrivées"
+    ],
+    "explanation": "arriver 用 être，過去分詞要配合陰性複數主詞：arrivées。"
+  },
+  {
+    "id": "b1-pqp-008",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的愈過去式",
+    "stem": "Il m'a dit qu'il ___ (voir) ce film.",
+    "answers": [
+      "avait vu"
+    ],
+    "explanation": "間接引述過去說的話，更早的事用愈過去式：il avait vu。"
+  },
+  {
+    "id": "b1-pqp-009",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：我到車站的時候，火車已經開走了。",
+    "stem": "",
+    "answers": [
+      "Quand je suis arrivé à la gare, le train était déjà parti.",
+      "Quand je suis arrivée à la gare, le train était déjà parti.",
+      "Le train était déjà parti quand je suis arrivé à la gare.",
+      "Le train était déjà parti quand je suis arrivée à la gare."
+    ],
+    "explanation": "「我到了」用複合過去式；「已經開走」比它更早，用愈過去式 était parti。"
+  },
+  {
+    "id": "b1-pqp-010",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "voyage",
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：她以前從沒看過海。",
+    "stem": "",
+    "answers": [
+      "Elle n'avait jamais vu la mer."
+    ],
+    "explanation": "在過去某個時間點之前「從沒」做過，用愈過去式的否定：n'avait jamais vu。"
+  },
+  {
+    "id": "b1-pqp-011",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請用愈過去式翻譯成法文：我們（那時）已經吃過晚餐了。",
+    "stem": "",
+    "answers": [
+      "Nous avions déjà dîné.",
+      "On avait déjà dîné.",
+      "Nous avions déjà mangé.",
+      "On avait déjà mangé."
+    ],
+    "explanation": "avoir 的未完成過去式＋過去分詞；déjà 放在助動詞和過去分詞中間。"
+  },
+  {
+    "id": "b1-pqp-012",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：他說他忘了帶護照。",
+    "stem": "",
+    "answers": [
+      "Il a dit qu'il avait oublié son passeport.",
+      "Il m'a dit qu'il avait oublié son passeport.",
+      "Il a dit qu'il avait oublié de prendre son passeport.",
+      "Il m'a dit qu'il avait oublié de prendre son passeport."
+    ],
+    "explanation": "間接引述：主要子句是過去式，「忘了」發生得更早，用愈過去式。"
+  }
+]

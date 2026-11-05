@@ -1,0 +1,232 @@
+[
+  {
+    "id": "a1-q-001",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "logement",
+      "presentation"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的疑問詞",
+    "stem": "___ tu habites ?",
+    "options": [
+      "Où",
+      "Qui",
+      "Quand",
+      "Quel"
+    ],
+    "answer": 0,
+    "explanation": "問地點用 où（哪裡）。"
+  },
+  {
+    "id": "a1-q-002",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "presentation"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的疑問詞",
+    "stem": "___ tu t'appelles ?",
+    "options": [
+      "Comment",
+      "Quoi",
+      "Qui",
+      "Où"
+    ],
+    "answer": 0,
+    "explanation": "問名字用 comment：Comment tu t'appelles ?"
+  },
+  {
+    "id": "a1-q-003",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "presentation"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的疑問詞",
+    "stem": "___ âge as-tu ?",
+    "options": [
+      "Quel",
+      "Quelle",
+      "Combien",
+      "Qu'"
+    ],
+    "answer": 0,
+    "explanation": "âge 是陽性名詞，前面用 quel。"
+  },
+  {
+    "id": "a1-q-004",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "achats"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的疑問詞",
+    "stem": "___ coûte ce livre ?",
+    "options": [
+      "Combien",
+      "Comment",
+      "Quel",
+      "Où"
+    ],
+    "answer": 0,
+    "explanation": "問價錢、數量用 combien。"
+  },
+  {
+    "id": "a1-q-005",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入疑問詞（提示：什麼時候）",
+    "stem": "___ est-ce que tu pars en vacances ?",
+    "answers": [
+      "quand"
+    ],
+    "explanation": "「什麼時候」是 quand。"
+  },
+  {
+    "id": "a1-q-006",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入疑問詞（提示：為什麼）",
+    "stem": "___ est-ce que tu apprends le français ?",
+    "answers": [
+      "pourquoi"
+    ],
+    "explanation": "「為什麼」是 pourquoi，回答時常用 parce que（因為）。"
+  },
+  {
+    "id": "a1-q-007",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入疑問詞（提示：誰）",
+    "stem": "___ est ton professeur ?",
+    "answers": [
+      "qui"
+    ],
+    "explanation": "問人用 qui。"
+  },
+  {
+    "id": "a1-q-008",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 quel、quelle、quels 或 quelles",
+    "stem": "___ heure est-il ?",
+    "answers": [
+      "quelle"
+    ],
+    "explanation": "heure 是陰性單數，用 quelle。"
+  },
+  {
+    "id": "a1-q-009",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "logement",
+      "presentation"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：你住在哪裡？",
+    "stem": "",
+    "answers": [
+      "Où habites-tu ?",
+      "Tu habites où ?",
+      "Où est-ce que tu habites ?",
+      "Où tu habites ?",
+      "Vous habitez où ?",
+      "Où habitez-vous ?",
+      "Où est-ce que vous habitez ?"
+    ],
+    "explanation": "疑問詞可以放句首或句尾；放句首時可以用 est-ce que 或倒裝。"
+  },
+  {
+    "id": "a1-q-010",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "achats"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：這個多少錢？",
+    "stem": "",
+    "answers": [
+      "Combien ça coûte ?",
+      "Ça coûte combien ?",
+      "C'est combien ?",
+      "Combien est-ce que ça coûte ?",
+      "Combien coûte ceci ?",
+      "Combien ça fait ?",
+      "Ça fait combien ?"
+    ],
+    "explanation": "最常見的說法是 C'est combien ? 或 Ça coûte combien ?"
+  },
+  {
+    "id": "a1-q-011",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：你喜歡音樂嗎？",
+    "stem": "",
+    "answers": [
+      "Tu aimes la musique ?",
+      "Aimes-tu la musique ?",
+      "Est-ce que tu aimes la musique ?",
+      "Vous aimez la musique ?",
+      "Aimez-vous la musique ?",
+      "Est-ce que vous aimez la musique ?"
+    ],
+    "explanation": "是非問句可以用語調、est-ce que 或倒裝。aimer 後面的名詞用定冠詞。"
+  },
+  {
+    "id": "a1-q-012",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：現在幾點？",
+    "stem": "",
+    "answers": [
+      "Quelle heure est-il ?",
+      "Il est quelle heure ?",
+      "Quelle heure il est ?",
+      "Vous avez l'heure ?"
+    ],
+    "explanation": "問時間的固定說法是 Quelle heure est-il ?"
+  }
+]

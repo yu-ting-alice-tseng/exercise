@@ -1,0 +1,219 @@
+[
+  {
+    "id": "a1-neg-001",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的否定形式",
+    "stem": "Je ___ aime ___ les épinards.",
+    "options": [
+      "n' / pas",
+      "ne / pas",
+      "pas / ne",
+      "n' / rien"
+    ],
+    "answer": 0,
+    "explanation": "否定是 ne + 動詞 + pas；aime 以母音開頭，ne 要省略成 n'。"
+  },
+  {
+    "id": "a1-neg-002",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的答案",
+    "stem": "Je n'ai pas ___ frères.",
+    "options": [
+      "de",
+      "des",
+      "les",
+      "un"
+    ],
+    "answer": 0,
+    "explanation": "否定句中，不定冠詞 des 要變成 de：je n'ai pas de frères。"
+  },
+  {
+    "id": "a1-neg-003",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "loisirs",
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出意思是「從不」的否定詞",
+    "stem": "Elle ne sort ___ le soir.",
+    "options": [
+      "jamais",
+      "rien",
+      "personne",
+      "plus"
+    ],
+    "answer": 0,
+    "explanation": "ne…jamais 是「從不」；ne…rien 是「什麼都不」；ne…personne 是「沒有人」；ne…plus 是「不再」。"
+  },
+  {
+    "id": "a1-neg-004",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出意思是「沒有人」的否定詞",
+    "stem": "Il n'y a ___ dans la salle.",
+    "options": [
+      "personne",
+      "rien",
+      "jamais",
+      "plus"
+    ],
+    "answer": 0,
+    "explanation": "ne…personne 表示「沒有人」。"
+  },
+  {
+    "id": "a1-neg-005",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "presentation"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入缺少的否定詞",
+    "stem": "Je ___ parle pas allemand.",
+    "answers": [
+      "ne"
+    ],
+    "explanation": "否定需要 ne 和 pas 兩個部分，動詞夾在中間。"
+  },
+  {
+    "id": "a1-neg-006",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入正確的字",
+    "stem": "Je n'ai pas ___ voiture.",
+    "answers": [
+      "de"
+    ],
+    "explanation": "否定句中不定冠詞 une 變成 de：je n'ai pas de voiture。"
+  },
+  {
+    "id": "a1-neg-007",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入表示「不再」的否定詞",
+    "stem": "Il ne travaille ___ ici : il est à la retraite.",
+    "answers": [
+      "plus"
+    ],
+    "explanation": "ne…plus 表示「不再」。"
+  },
+  {
+    "id": "a1-neg-008",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入表示「什麼都（不）」的否定詞",
+    "stem": "Je ne comprends ___.",
+    "answers": [
+      "rien"
+    ],
+    "explanation": "ne…rien 表示「什麼都不」。"
+  },
+  {
+    "id": "a1-neg-009",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我不喝茶。",
+    "stem": "",
+    "answers": [
+      "Je ne bois pas de thé."
+    ],
+    "explanation": "否定句中 du thé 變成 de thé。"
+  },
+  {
+    "id": "a1-neg-010",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "logement",
+      "presentation"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：他們不住在台北。",
+    "stem": "",
+    "answers": [
+      "Ils n'habitent pas à Taipei.",
+      "Ils n'habitent pas Taipei.",
+      "Elles n'habitent pas à Taipei."
+    ],
+    "explanation": "habitent 以母音開頭，ne 省略成 n'。"
+  },
+  {
+    "id": "a1-neg-011",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "ecole-travail",
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我從來不在週末工作。",
+    "stem": "",
+    "answers": [
+      "Je ne travaille jamais le week-end.",
+      "Je ne travaille jamais le weekend.",
+      "Le week-end, je ne travaille jamais."
+    ],
+    "explanation": "「從不」用 ne…jamais。le week-end 表示「每個週末」。"
+  },
+  {
+    "id": "a1-neg-012",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：這裡沒有人。",
+    "stem": "",
+    "answers": [
+      "Il n'y a personne ici.",
+      "Il n'y a personne.",
+      "Personne n'est ici."
+    ],
+    "explanation": "il n'y a personne 是「沒有人」最常見的說法。"
+  }
+]

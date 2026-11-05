@@ -1,0 +1,233 @@
+[
+  {
+    "id": "b1-si-001",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "meteo",
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "S'il pleut demain, nous ___ à la maison.",
+    "options": [
+      "resterons",
+      "resterions",
+      "restions",
+      "sommes restés"
+    ],
+    "answer": 0,
+    "explanation": "si + 現在式，主要子句用簡單未來式（可能發生的事）。"
+  },
+  {
+    "id": "b1-si-002",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Si j'étais riche, je ___ le monde.",
+    "options": [
+      "voyagerais",
+      "voyagerai",
+      "voyageais",
+      "voyage"
+    ],
+    "answer": 0,
+    "explanation": "si + 未完成過去式，主要子句用條件式（與現在事實相反的假設）。"
+  },
+  {
+    "id": "b1-si-003",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Si tu ___ plus, tu réussirais.",
+    "options": [
+      "travaillais",
+      "travailles",
+      "travaillerais",
+      "travailleras"
+    ],
+    "answer": 0,
+    "explanation": "主要子句是條件式，si 子句要用未完成過去式。注意 si 後面不能用條件式。"
+  },
+  {
+    "id": "b1-si-004",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的助動詞",
+    "stem": "Si j'avais su, je ___ venu.",
+    "options": [
+      "serais",
+      "aurais",
+      "suis",
+      "étais"
+    ],
+    "answer": 0,
+    "explanation": "與過去事實相反：si + 愈過去式，主要子句用條件式過去式。venir 用 être：je serais venu。"
+  },
+  {
+    "id": "b1-si-005",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的正確形式",
+    "stem": "Si tu ___ (avoir) le temps, appelle-moi.",
+    "answers": [
+      "as"
+    ],
+    "explanation": "si + 現在式，主要子句可以用命令式。"
+  },
+  {
+    "id": "b1-si-006",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的正確形式",
+    "stem": "Si nous ___ (gagner) au loto, nous achèterions une maison.",
+    "answers": [
+      "gagnions"
+    ],
+    "explanation": "主要子句是條件式，si 子句用未完成過去式：gagnions。"
+  },
+  {
+    "id": "b1-si-007",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "meteo",
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的正確形式",
+    "stem": "S'il fait beau, on ___ (aller) à la plage.",
+    "answers": [
+      "ira",
+      "va"
+    ],
+    "explanation": "si + 現在式，主要子句用簡單未來式 ira（口語也可用現在式 va）。"
+  },
+  {
+    "id": "b1-si-008",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的正確形式",
+    "stem": "Si elle ___ (être) là, elle t'aiderait.",
+    "answers": [
+      "était"
+    ],
+    "explanation": "主要子句是條件式，si 子句用未完成過去式：était。"
+  },
+  {
+    "id": "b1-si-009",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "meteo",
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：如果明天下雨，我就待在家。",
+    "stem": "",
+    "answers": [
+      "S'il pleut demain, je resterai à la maison.",
+      "S'il pleut demain, je reste à la maison.",
+      "Je resterai à la maison s'il pleut demain.",
+      "S'il pleut demain, je resterai chez moi.",
+      "Je resterai chez moi s'il pleut demain.",
+      "S'il pleut demain, je reste chez moi."
+    ],
+    "explanation": "可能發生的條件：si + 現在式，主要子句用未來式（或現在式）。si 遇到 il 要省略成 s'il。"
+  },
+  {
+    "id": "b1-si-010",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：如果我是你，我會去看醫生。",
+    "stem": "",
+    "answers": [
+      "Si j'étais toi, j'irais voir un médecin.",
+      "Si j'étais toi, j'irais chez le médecin.",
+      "Si j'étais à ta place, j'irais voir un médecin.",
+      "Si j'étais à ta place, j'irais chez le médecin.",
+      "À ta place, j'irais voir un médecin.",
+      "À ta place, j'irais chez le médecin."
+    ],
+    "explanation": "與現在事實相反：si + 未完成過去式（j'étais），主要子句用條件式（j'irais）。"
+  },
+  {
+    "id": "b1-si-011",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：如果我有更多時間，我會學日文。",
+    "stem": "",
+    "answers": [
+      "Si j'avais plus de temps, j'apprendrais le japonais.",
+      "Si j'avais plus de temps, j'étudierais le japonais.",
+      "J'apprendrais le japonais si j'avais plus de temps.",
+      "J'étudierais le japonais si j'avais plus de temps."
+    ],
+    "explanation": "si + 未完成過去式（j'avais），主要子句用條件式（j'apprendrais）。"
+  },
+  {
+    "id": "b1-si-012",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "quotidien",
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：如果你早點出門，就不會遲到了。",
+    "stem": "",
+    "answers": [
+      "Si tu étais parti plus tôt, tu ne serais pas arrivé en retard.",
+      "Si tu étais partie plus tôt, tu ne serais pas arrivée en retard.",
+      "Si tu étais sorti plus tôt, tu ne serais pas arrivé en retard.",
+      "Si tu étais sortie plus tôt, tu ne serais pas arrivée en retard.",
+      "Si tu étais parti plus tôt, tu n'aurais pas été en retard.",
+      "Si tu étais partie plus tôt, tu n'aurais pas été en retard."
+    ],
+    "explanation": "與過去事實相反：si + 愈過去式，主要子句用條件式過去式。partir 和 arriver 都用 être 當助動詞。"
+  }
+]

@@ -1,0 +1,227 @@
+[
+  {
+    "id": "a1-fp-001",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "culture",
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Demain, je ___ visiter le Louvre.",
+    "options": [
+      "vais",
+      "va",
+      "vas",
+      "allons"
+    ],
+    "answer": 0,
+    "explanation": "近未來式是 aller 的現在式加原形動詞。je 的變化是 vais。"
+  },
+  {
+    "id": "a1-fp-002",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Nous ___ partir en vacances.",
+    "options": [
+      "allons",
+      "allez",
+      "vont",
+      "vais"
+    ],
+    "answer": 0,
+    "explanation": "nous 的變化是 allons。"
+  },
+  {
+    "id": "a1-fp-003",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "meteo"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Attention, il ___ pleuvoir !",
+    "options": [
+      "va",
+      "vais",
+      "vont",
+      "allez"
+    ],
+    "answer": 0,
+    "explanation": "il 的變化是 va：il va pleuvoir（快要下雨了）。"
+  },
+  {
+    "id": "a1-fp-004",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Ce soir, ils ne ___ pas sortir.",
+    "options": [
+      "vont",
+      "va",
+      "allons",
+      "vais"
+    ],
+    "answer": 0,
+    "explanation": "近未來式的否定，ne…pas 夾住 aller：ils ne vont pas sortir。"
+  },
+  {
+    "id": "a1-fp-005",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "nourriture",
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 aller 的現在式",
+    "stem": "Tu ___ manger avec nous ?",
+    "answers": [
+      "vas"
+    ],
+    "explanation": "tu 的變化是 vas。"
+  },
+  {
+    "id": "a1-fp-006",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 aller 的現在式",
+    "stem": "Vous ___ prendre le train ?",
+    "answers": [
+      "allez"
+    ],
+    "explanation": "vous 的變化是 allez。"
+  },
+  {
+    "id": "a1-fp-007",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請用近未來式填空（aller 和原形動詞都要寫）",
+    "stem": "Elle ___ (travailler) demain.",
+    "answers": [
+      "va travailler"
+    ],
+    "explanation": "aller 變化成 va，後面接原形動詞 travailler。"
+  },
+  {
+    "id": "a1-fp-008",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請用近未來式填空（aller 和原形動詞都要寫）",
+    "stem": "Nous ___ (finir) à six heures.",
+    "answers": [
+      "allons finir"
+    ],
+    "explanation": "aller 變化成 allons，後面接原形動詞 finir。"
+  },
+  {
+    "id": "a1-fp-009",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：明天我要去看電影。",
+    "stem": "",
+    "answers": [
+      "Demain, je vais aller au cinéma.",
+      "Je vais aller au cinéma demain.",
+      "Demain, je vais voir un film.",
+      "Je vais voir un film demain.",
+      "Demain, je vais au cinéma.",
+      "Je vais au cinéma demain."
+    ],
+    "explanation": "近未來式：je vais + 原形動詞。「去看電影」可以說 aller au cinéma 或 voir un film。"
+  },
+  {
+    "id": "a1-fp-010",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "meteo"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：快要下雨了。",
+    "stem": "",
+    "answers": [
+      "Il va pleuvoir."
+    ],
+    "explanation": "天氣用非人稱主詞 il：il va pleuvoir。"
+  },
+  {
+    "id": "a1-fp-011",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我們今晚要吃披薩。",
+    "stem": "",
+    "answers": [
+      "Ce soir, nous allons manger une pizza.",
+      "Nous allons manger une pizza ce soir.",
+      "Ce soir, on va manger une pizza.",
+      "On va manger une pizza ce soir.",
+      "Ce soir, nous allons manger de la pizza.",
+      "Ce soir, on va manger de la pizza.",
+      "Nous allons manger de la pizza ce soir.",
+      "On va manger de la pizza ce soir."
+    ],
+    "explanation": "nous allons 或口語的 on va，加上原形動詞 manger。"
+  },
+  {
+    "id": "a1-fp-012",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：他們這個週末不會工作。",
+    "stem": "",
+    "answers": [
+      "Ils ne vont pas travailler ce week-end.",
+      "Ce week-end, ils ne vont pas travailler.",
+      "Ils ne vont pas travailler ce weekend.",
+      "Ce weekend, ils ne vont pas travailler."
+    ],
+    "explanation": "否定時 ne…pas 夾住 aller，不是夾住原形動詞。"
+  }
+]

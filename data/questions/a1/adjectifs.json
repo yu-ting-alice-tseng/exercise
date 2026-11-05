@@ -1,0 +1,221 @@
+[
+  {
+    "id": "a1-adj-001",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的形容詞形式",
+    "stem": "C'est une ___ maison.",
+    "options": [
+      "petite",
+      "petit",
+      "petites",
+      "petits"
+    ],
+    "answer": 0,
+    "explanation": "maison 是陰性單數，形容詞加 e：petite。petit 這類短形容詞放在名詞前面。"
+  },
+  {
+    "id": "a1-adj-002",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "voyage",
+      "achats"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的形容詞形式",
+    "stem": "J'ai une voiture ___.",
+    "options": [
+      "rouge",
+      "rouges",
+      "rougee",
+      "rougée"
+    ],
+    "answer": 0,
+    "explanation": "以 e 結尾的形容詞，陰性不再加 e：rouge。顏色形容詞放在名詞後面。"
+  },
+  {
+    "id": "a1-adj-003",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "famille",
+      "presentation"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的形容詞形式",
+    "stem": "Ce sont des femmes très ___.",
+    "options": [
+      "gentilles",
+      "gentils",
+      "gentille",
+      "gentiles"
+    ],
+    "answer": 0,
+    "explanation": "gentil 的陰性是 gentille（雙寫 l），複數再加 s。"
+  },
+  {
+    "id": "a1-adj-004",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的形容詞形式",
+    "stem": "Il habite dans un ___ appartement.",
+    "options": [
+      "bel",
+      "beau",
+      "belle",
+      "beaux"
+    ],
+    "answer": 0,
+    "explanation": "beau 放在母音開頭的陽性單數名詞前面，要變成 bel：un bel appartement。"
+  },
+  {
+    "id": "a1-adj-005",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內形容詞的正確形式",
+    "stem": "Ma sœur est ___ (grand).",
+    "answers": [
+      "grande"
+    ],
+    "explanation": "主詞是陰性單數，形容詞加 e。"
+  },
+  {
+    "id": "a1-adj-006",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內形容詞的正確形式",
+    "stem": "Elles sont ___ (content).",
+    "answers": [
+      "contentes"
+    ],
+    "explanation": "主詞是陰性複數，加 es。"
+  },
+  {
+    "id": "a1-adj-007",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內形容詞的正確形式",
+    "stem": "C'est une ___ (bon) idée.",
+    "answers": [
+      "bonne"
+    ],
+    "explanation": "bon 的陰性是 bonne（雙寫 n）。"
+  },
+  {
+    "id": "a1-adj-008",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "loisirs",
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內形容詞的正確形式",
+    "stem": "Mes amies sont ___ (sportif).",
+    "answers": [
+      "sportives"
+    ],
+    "explanation": "-if 結尾的形容詞，陰性變成 -ive：sportive，複數再加 s。"
+  },
+  {
+    "id": "a1-adj-009",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我有一隻黑色的小狗。",
+    "stem": "",
+    "answers": [
+      "J'ai un petit chien noir."
+    ],
+    "explanation": "petit 放在名詞前面，顏色 noir 放在名詞後面。"
+  },
+  {
+    "id": "a1-adj-010",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：她的房子很大。",
+    "stem": "",
+    "answers": [
+      "Sa maison est grande.",
+      "Sa maison est très grande."
+    ],
+    "explanation": "maison 是陰性，形容詞要加 e：grande。"
+  },
+  {
+    "id": "a1-adj-011",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：這些蛋糕很好吃。",
+    "stem": "",
+    "answers": [
+      "Ces gâteaux sont délicieux.",
+      "Les gâteaux sont délicieux.",
+      "Ces gâteaux sont très bons.",
+      "Ces gâteaux sont bons.",
+      "Les gâteaux sont très bons.",
+      "Ces gâteaux sont très délicieux."
+    ],
+    "explanation": "délicieux 的陽性單複數同形。也可以用 bons。"
+  },
+  {
+    "id": "a1-adj-012",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：我們住在一棟漂亮的老房子裡。",
+    "stem": "",
+    "answers": [
+      "Nous habitons dans une belle vieille maison.",
+      "On habite dans une belle vieille maison.",
+      "Nous habitons une belle vieille maison."
+    ],
+    "explanation": "beau 和 vieux 都放在名詞前面，陰性分別是 belle 和 vieille。"
+  }
+]

@@ -1,0 +1,220 @@
+[
+  {
+    "id": "a2-imper-001",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的命令式（對 tu）",
+    "stem": "___ la porte, s'il te plaît !",
+    "options": [
+      "Ferme",
+      "Fermes",
+      "Fermez",
+      "Fermer"
+    ],
+    "answer": 0,
+    "explanation": "-er 動詞對 tu 的命令式要去掉 s：ferme。"
+  },
+  {
+    "id": "a2-imper-002",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "ecole-travail",
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的命令式（對 vous）",
+    "stem": "___ attention !",
+    "options": [
+      "Faites",
+      "Faisez",
+      "Fais",
+      "Faire"
+    ],
+    "answer": 0,
+    "explanation": "faire 的 vous 形式是不規則的 faites。"
+  },
+  {
+    "id": "a2-imper-003",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出「起床！」（對 tu）",
+    "stem": "___ ! Il est déjà huit heures.",
+    "options": [
+      "Lève-toi",
+      "Te lève",
+      "Lèves-toi",
+      "Toi lève"
+    ],
+    "answer": 0,
+    "explanation": "反身動詞的肯定命令式，代名詞放在動詞後面並用連字號，te 變成 toi：lève-toi。"
+  },
+  {
+    "id": "a2-imper-004",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的命令式（對 tu）",
+    "stem": "N'___ pas peur !",
+    "options": [
+      "aie",
+      "as",
+      "ai",
+      "avez"
+    ],
+    "answer": 0,
+    "explanation": "avoir 的命令式是不規則的：aie、ayons、ayez。"
+  },
+  {
+    "id": "a2-imper-005",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的命令式",
+    "stem": "___ (écouter, vous) bien !",
+    "answers": [
+      "écoutez"
+    ],
+    "explanation": "對 vous 的命令式和現在式相同，但不寫主詞：écoutez。"
+  },
+  {
+    "id": "a2-imper-006",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "ecole-travail",
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的命令式",
+    "stem": "___ (aller, tu) à l'école !",
+    "answers": [
+      "va"
+    ],
+    "explanation": "aller 對 tu 的命令式是 va（去掉 s）。"
+  },
+  {
+    "id": "a2-imper-007",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "nourriture",
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的命令式",
+    "stem": "___ (manger, nous) ensemble !",
+    "answers": [
+      "mangeons"
+    ],
+    "explanation": "對 nous 的命令式表示「我們一起…吧」：mangeons。"
+  },
+  {
+    "id": "a2-imper-008",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的命令式",
+    "stem": "___ (être, tu) sage !",
+    "answers": [
+      "sois"
+    ],
+    "explanation": "être 的命令式是不規則的：sois、soyons、soyez。"
+  },
+  {
+    "id": "a2-imper-009",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：請坐。（對 vous）",
+    "stem": "",
+    "answers": [
+      "Asseyez-vous.",
+      "Asseyez-vous, s'il vous plaît."
+    ],
+    "explanation": "s'asseoir 的 vous 命令式是 asseyez-vous。"
+  },
+  {
+    "id": "a2-imper-010",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：（你們）不要說話！",
+    "stem": "",
+    "answers": [
+      "Ne parlez pas !",
+      "Ne parlez pas, s'il vous plaît !"
+    ],
+    "explanation": "否定命令式：ne + 動詞 + pas。"
+  },
+  {
+    "id": "a2-imper-011",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "voyage",
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我們走吧！",
+    "stem": "",
+    "answers": [
+      "Allons-y !",
+      "Partons !",
+      "On y va !",
+      "Allons-y, alors !"
+    ],
+    "explanation": "最常見的說法是 Allons-y !（aller 的 nous 命令式加上 y）。"
+  },
+  {
+    "id": "a2-imper-012",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：打電話給我！（對 tu）",
+    "stem": "",
+    "answers": [
+      "Appelle-moi !",
+      "Téléphone-moi !"
+    ],
+    "explanation": "肯定命令式中，me 放在動詞後面變成 moi：appelle-moi。"
+  }
+]

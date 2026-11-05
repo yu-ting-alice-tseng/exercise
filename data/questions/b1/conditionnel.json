@@ -1,0 +1,230 @@
+[
+  {
+    "id": "b1-cond-001",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Je ___ un café, s'il vous plaît.",
+    "options": [
+      "voudrais",
+      "voudrai",
+      "voudront",
+      "voudriez"
+    ],
+    "answer": 0,
+    "explanation": "點餐、請求時用條件式表示禮貌：je voudrais。voudrai 是簡單未來式。"
+  },
+  {
+    "id": "b1-cond-002",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出最有禮貌的說法",
+    "stem": "Tu ___ m'aider ?",
+    "options": [
+      "pourrais",
+      "peux",
+      "pourras",
+      "pouvais"
+    ],
+    "answer": 0,
+    "explanation": "條件式 pourrais 比現在式 peux 更客氣，常用來請求別人幫忙。"
+  },
+  {
+    "id": "b1-cond-003",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Si j'avais de l'argent, j'___ un appartement.",
+    "options": [
+      "achèterais",
+      "achèterai",
+      "achetais",
+      "achète"
+    ],
+    "answer": 0,
+    "explanation": "si + 未完成過去式，主要子句用條件式。acheter 的詞幹要加重音：achèter-。"
+  },
+  {
+    "id": "b1-cond-004",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "À ta place, je ne le ___ pas.",
+    "options": [
+      "ferais",
+      "ferai",
+      "faisais",
+      "fairais"
+    ],
+    "answer": 0,
+    "explanation": "à ta place（如果我是你）後面用條件式。faire 的詞幹是 fer-：je ferais。"
+  },
+  {
+    "id": "b1-cond-005",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "voyage",
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的條件式現在式",
+    "stem": "Nous ___ (aimer) visiter Rome.",
+    "answers": [
+      "aimerions"
+    ],
+    "explanation": "條件式＝未來式詞幹＋未完成過去式詞尾。nous：aimer + -ions → aimerions。"
+  },
+  {
+    "id": "b1-cond-006",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的條件式現在式",
+    "stem": "Vous ___ (devoir) vous reposer.",
+    "answers": [
+      "devriez"
+    ],
+    "explanation": "devoir 的詞幹是不規則的 devr-，條件式表示建議：vous devriez（您應該）。"
+  },
+  {
+    "id": "b1-cond-007",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的條件式現在式",
+    "stem": "Il ___ (être) content de te voir.",
+    "answers": [
+      "serait"
+    ],
+    "explanation": "être 的詞幹是 ser-：il serait。"
+  },
+  {
+    "id": "b1-cond-008",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的條件式現在式",
+    "stem": "Elles ___ (venir) avec plaisir.",
+    "answers": [
+      "viendraient"
+    ],
+    "explanation": "venir 的詞幹是不規則的 viendr-：elles viendraient。"
+  },
+  {
+    "id": "b1-cond-009",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文（有禮貌的說法）：我想要一杯水。",
+    "stem": "",
+    "answers": [
+      "Je voudrais un verre d'eau.",
+      "Je voudrais un verre d'eau, s'il vous plaît.",
+      "J'aimerais un verre d'eau.",
+      "J'aimerais un verre d'eau, s'il vous plaît."
+    ],
+    "explanation": "禮貌請求用條件式 je voudrais 或 j'aimerais。"
+  },
+  {
+    "id": "b1-cond-010",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文（有禮貌的說法）：您可以幫我嗎？",
+    "stem": "",
+    "answers": [
+      "Pourriez-vous m'aider ?",
+      "Vous pourriez m'aider ?",
+      "Est-ce que vous pourriez m'aider ?",
+      "Pourriez-vous m'aider, s'il vous plaît ?",
+      "Tu pourrais m'aider ?",
+      "Pourrais-tu m'aider ?"
+    ],
+    "explanation": "pouvoir 的條件式 pourriez 讓請求更客氣。"
+  },
+  {
+    "id": "b1-cond-011",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：你應該多睡一點。",
+    "stem": "",
+    "answers": [
+      "Tu devrais dormir plus.",
+      "Tu devrais dormir davantage.",
+      "Tu devrais plus dormir.",
+      "Vous devriez dormir plus.",
+      "Vous devriez dormir davantage.",
+      "Tu devrais dormir un peu plus."
+    ],
+    "explanation": "devoir 的條件式用來給建議：tu devrais + 原形動詞。"
+  },
+  {
+    "id": "b1-cond-012",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "voyage",
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我們很想去法國。",
+    "stem": "",
+    "answers": [
+      "Nous aimerions aller en France.",
+      "On aimerait aller en France.",
+      "Nous voudrions aller en France.",
+      "On voudrait aller en France.",
+      "Nous aimerions beaucoup aller en France.",
+      "On aimerait beaucoup aller en France."
+    ],
+    "explanation": "表達願望用條件式 aimerions 或 voudrions。"
+  }
+]
