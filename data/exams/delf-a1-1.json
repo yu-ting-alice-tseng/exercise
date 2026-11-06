@@ -1,0 +1,292 @@
+{
+  "id": "delf-a1-1",
+  "exam": "delf",
+  "level": "A1",
+  "title": "DELF A1 模擬卷 1",
+  "fr": "DELF A1 – Sujet d'entraînement 1",
+  "minutes": 60,
+  "desc": "聽力 2 段、閱讀 2 篇、寫作 1 題。真實考試另有口說測驗。",
+  "sections": [
+    {
+      "kind": "listening",
+      "title": "聽力一：車站廣播",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Mesdames et messieurs, le train TGV numéro 6243 à destination de Lyon partira du quai 3 à 14 h 20. Attention : ce train a dix minutes de retard. Merci de votre compréhension.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "delf-a1-1-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le train va à…",
+          "options": [
+            "Lyon",
+            "Lille",
+            "Nice",
+            "Lens"
+          ],
+          "answer": 0,
+          "explanation": "à destination de Lyon：開往里昂。"
+        },
+        {
+          "id": "delf-a1-1-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le train part du quai…",
+          "options": [
+            "3",
+            "13",
+            "2",
+            "6"
+          ],
+          "answer": 0,
+          "explanation": "du quai 3：從第 3 月台出發。"
+        },
+        {
+          "id": "delf-a1-1-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "L'heure prévue du départ est…",
+          "options": [
+            "14 h 20",
+            "14 h 30",
+            "4 h 20",
+            "12 h 20"
+          ],
+          "answer": 0,
+          "explanation": "partira à 14 h 20：原定 14 點 20 分出發。"
+        },
+        {
+          "id": "delf-a1-1-q04",
+          "type": "fill",
+          "instruction": "請填入數字（可用阿拉伯數字或法文）",
+          "stem": "Le train a ___ minutes de retard.",
+          "answers": [
+            "dix",
+            "10"
+          ],
+          "explanation": "ce train a dix minutes de retard：誤點十分鐘。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力二：電話留言",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Salut Julie, c'est Marc. Samedi, c'est mon anniversaire ! Je fais une petite fête chez moi à 19 heures. Tu peux apporter une salade ? Mon adresse, c'est 12, rue Victor-Hugo. Appelle-moi si tu as un problème. À samedi !",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "delf-a1-1-q05",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La fête a lieu…",
+          "options": [
+            "samedi",
+            "dimanche",
+            "vendredi",
+            "lundi"
+          ],
+          "answer": 0,
+          "explanation": "Samedi, c'est mon anniversaire：星期六是他的生日。"
+        },
+        {
+          "id": "delf-a1-1-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La fête commence à…",
+          "options": [
+            "19 heures",
+            "9 heures",
+            "17 heures",
+            "20 heures"
+          ],
+          "answer": 0,
+          "explanation": "à 19 heures：晚上七點。"
+        },
+        {
+          "id": "delf-a1-1-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Julie doit apporter…",
+          "options": [
+            "une salade",
+            "un gâteau",
+            "des boissons",
+            "des fleurs"
+          ],
+          "answer": 0,
+          "explanation": "Tu peux apporter une salade ?"
+        },
+        {
+          "id": "delf-a1-1-q08",
+          "type": "fill",
+          "instruction": "請填入數字（可用阿拉伯數字或法文）",
+          "stem": "Marc habite au ___, rue Victor-Hugo.",
+          "answers": [
+            "12",
+            "douze"
+          ],
+          "explanation": "Mon adresse, c'est 12, rue Victor-Hugo."
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀一：電子郵件",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Bonjour Sophie,\n\nJe suis à Paris pour mon travail du lundi 3 au vendredi 7 mars. Tu es libre mercredi soir ? On peut dîner ensemble au restaurant « Le Petit Zinc », près de la gare de l'Est. Je réserve pour 20 heures.\n\nRéponds-moi avant mardi !\n\nBises,\nClaire",
+        "title": "電子郵件"
+      },
+      "questions": [
+        {
+          "id": "delf-a1-1-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Claire est à Paris…",
+          "options": [
+            "pour son travail",
+            "pour les vacances",
+            "pour voir sa famille",
+            "pour étudier"
+          ],
+          "answer": 0,
+          "explanation": "pour mon travail：因為工作。"
+        },
+        {
+          "id": "delf-a1-1-q10",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Claire propose de dîner…",
+          "options": [
+            "mercredi soir",
+            "lundi soir",
+            "vendredi midi",
+            "mardi soir"
+          ],
+          "answer": 0,
+          "explanation": "Tu es libre mercredi soir ?"
+        },
+        {
+          "id": "delf-a1-1-q11",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le restaurant est…",
+          "options": [
+            "près de la gare de l'Est",
+            "dans la gare de Lyon",
+            "chez Claire",
+            "à côté de l'hôtel"
+          ],
+          "answer": 0,
+          "explanation": "près de la gare de l'Est：在東站附近。"
+        },
+        {
+          "id": "delf-a1-1-q12",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Sophie doit répondre avant ___.",
+          "answers": [
+            "mardi"
+          ],
+          "explanation": "Réponds-moi avant mardi：星期二以前回覆。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀二：公告",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "BIBLIOTHÈQUE MUNICIPALE\n\nHoraires : du mardi au samedi, de 10 h à 18 h.\nFermée le dimanche et le lundi.\n\nInscription gratuite pour les moins de 18 ans.\nAtelier lecture pour les enfants : le mercredi à 15 h.",
+        "title": "公告"
+      },
+      "questions": [
+        {
+          "id": "delf-a1-1-q13",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La bibliothèque est fermée le…",
+          "options": [
+            "lundi",
+            "mardi",
+            "mercredi",
+            "samedi"
+          ],
+          "answer": 0,
+          "explanation": "Fermée le dimanche et le lundi。"
+        },
+        {
+          "id": "delf-a1-1-q14",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "L'inscription est gratuite pour…",
+          "options": [
+            "les moins de 18 ans",
+            "tout le monde",
+            "les étudiants",
+            "les plus de 60 ans"
+          ],
+          "answer": 0,
+          "explanation": "moins de 18 ans：未滿 18 歲。"
+        },
+        {
+          "id": "delf-a1-1-q15",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "L'atelier pour les enfants a lieu…",
+          "options": [
+            "le mercredi à 15 h",
+            "le samedi à 10 h",
+            "le mardi à 18 h",
+            "le dimanche à 15 h"
+          ],
+          "answer": 0,
+          "explanation": "le mercredi à 15 h。"
+        },
+        {
+          "id": "delf-a1-1-q16",
+          "type": "fill",
+          "instruction": "請填入數字（可用阿拉伯數字或法文）",
+          "stem": "La bibliothèque ouvre à ___ heures.",
+          "answers": [
+            "10",
+            "dix"
+          ],
+          "explanation": "de 10 h à 18 h：早上十點開門。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Vous êtes en vacances à Nice. Vous écrivez une carte postale à un(e) ami(e) français(e). Vous parlez du temps, de vos activités et de la nourriture. (40 à 50 mots)",
+        "minWords": 40,
+        "rubric": [
+          "有符合題目要求的情境（寫給誰、為什麼寫）",
+          "內容完整回答了題目要的每一點",
+          "有適當的開頭和結尾（稱呼、問候、署名）",
+          "用字正確、拼寫正確",
+          "動詞變化與時態正確",
+          "字數符合要求"
+        ],
+        "model": "Chère Emma,\n\nJe suis à Nice depuis trois jours. Il fait beau et chaud : 28 degrés ! Le matin, je vais à la plage et l'après-midi, je visite la vieille ville. J'adore la socca, une spécialité de Nice, et les glaces à la lavande. Je rentre dimanche.\n\nBisous,\nLéa",
+        "maxWords": 50
+      }
+    }
+  ]
+}

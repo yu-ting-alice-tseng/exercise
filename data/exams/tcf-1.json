@@ -1,0 +1,345 @@
+{
+  "id": "tcf-1",
+  "exam": "tcf",
+  "level": "B1",
+  "title": "TCF 風格模擬卷 1",
+  "fr": "TCF – Entraînement 1",
+  "minutes": 45,
+  "desc": "全部是選擇題，難度從 A1 逐步提高到 C1，可以用來估計自己的程度。",
+  "sections": [
+    {
+      "kind": "listening",
+      "title": "聽力一（A1）",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "A : Pardon, madame, la poste, s'il vous plaît ?\nB : Allez tout droit, puis prenez la deuxième rue à gauche. C'est à côté de la pharmacie.",
+        "speak": true,
+        "dialogue": true
+      },
+      "questions": [
+        {
+          "id": "tcf-1-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Où est la poste ?",
+          "options": [
+            "À côté de la pharmacie",
+            "En face de la pharmacie",
+            "Dans la première rue à droite",
+            "Derrière la gare"
+          ],
+          "answer": 0,
+          "explanation": "C'est à côté de la pharmacie：在藥局旁邊。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力二（A2）",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "A : Bonjour, je voudrais changer mon rendez-vous de jeudi.\nB : Pas de problème. Lundi à 9 heures, ça vous convient ?\nA : Plutôt mardi, si possible.\nB : Alors mardi à 14 heures.",
+        "speak": true,
+        "dialogue": true
+      },
+      "questions": [
+        {
+          "id": "tcf-1-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le nouveau rendez-vous est…",
+          "options": [
+            "mardi à 14 heures",
+            "lundi à 9 heures",
+            "jeudi à 14 heures",
+            "mardi à 9 heures"
+          ],
+          "answer": 0,
+          "explanation": "最後確定的是 mardi à 14 heures。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力三（B1）",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "En raison de travaux, la ligne 4 du métro sera fermée entre les stations Châtelet et Montparnasse ce week-end. Des bus de remplacement seront mis en place. Nous vous prions de nous excuser pour la gêne occasionnée.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "tcf-1-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Que se passe-t-il ce week-end ?",
+          "options": [
+            "Une partie de la ligne 4 est fermée",
+            "Toute la ligne 4 est fermée",
+            "Les bus sont en grève",
+            "La station Châtelet ferme définitivement"
+          ],
+          "answer": 0,
+          "explanation": "只有 Châtelet 到 Montparnasse 之間關閉，並有接駁公車。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力四（B2）",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Contrairement à ce qu'on entend souvent, je ne crois pas que les jeunes lisent moins. Ils lisent autrement : sur écran, par fragments, et beaucoup de bandes dessinées. Le vrai problème, à mon avis, c'est la lecture longue, celle qui demande de la concentration.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "tcf-1-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon cette personne…",
+          "options": [
+            "les jeunes ont du mal avec les lectures longues",
+            "les jeunes ne lisent plus du tout",
+            "les bandes dessinées ne sont pas de la lecture",
+            "il faut interdire les écrans"
+          ],
+          "answer": 0,
+          "explanation": "Le vrai problème, c'est la lecture longue。"
+        }
+      ]
+    },
+    {
+      "kind": "structure",
+      "title": "語言結構",
+      "fr": "Maîtrise des structures de la langue",
+      "instruction": "請選出正確的答案。題目由易到難。",
+      "questions": [
+        {
+          "id": "tcf-1-q05",
+          "type": "choice",
+          "instruction": "A1",
+          "stem": "Il ___ trois enfants.",
+          "options": [
+            "a",
+            "est",
+            "as",
+            "ont"
+          ],
+          "answer": 0,
+          "explanation": "avoir 的 il 變化是 a。"
+        },
+        {
+          "id": "tcf-1-q06",
+          "type": "choice",
+          "instruction": "A1",
+          "stem": "Nous allons ___ cinéma.",
+          "options": [
+            "au",
+            "à la",
+            "aux",
+            "en"
+          ],
+          "answer": 0,
+          "explanation": "à + le → au。"
+        },
+        {
+          "id": "tcf-1-q07",
+          "type": "choice",
+          "instruction": "A2",
+          "stem": "Hier, elle ___ partie tôt.",
+          "options": [
+            "est",
+            "a",
+            "était",
+            "sera"
+          ],
+          "answer": 0,
+          "explanation": "partir 用 être 當助動詞：elle est partie。"
+        },
+        {
+          "id": "tcf-1-q08",
+          "type": "choice",
+          "instruction": "A2",
+          "stem": "Je n'ai pas ___ voiture.",
+          "options": [
+            "de",
+            "une",
+            "la",
+            "des"
+          ],
+          "answer": 0,
+          "explanation": "否定句中 une 變成 de。"
+        },
+        {
+          "id": "tcf-1-q09",
+          "type": "choice",
+          "instruction": "B1",
+          "stem": "Si j'avais le temps, je ___ plus souvent.",
+          "options": [
+            "voyagerais",
+            "voyagerai",
+            "voyageais",
+            "voyage"
+          ],
+          "answer": 0,
+          "explanation": "si + 未完成過去式，主要子句用條件式。"
+        },
+        {
+          "id": "tcf-1-q10",
+          "type": "choice",
+          "instruction": "B1",
+          "stem": "C'est le film ___ je t'ai parlé.",
+          "options": [
+            "dont",
+            "que",
+            "qui",
+            "où"
+          ],
+          "answer": 0,
+          "explanation": "parler de → dont。"
+        },
+        {
+          "id": "tcf-1-q11",
+          "type": "choice",
+          "instruction": "B2",
+          "stem": "Il faut que tu ___ ce dossier avant midi.",
+          "options": [
+            "finisses",
+            "finis",
+            "finiras",
+            "finissais"
+          ],
+          "answer": 0,
+          "explanation": "il faut que + 虛擬式。"
+        },
+        {
+          "id": "tcf-1-q12",
+          "type": "choice",
+          "instruction": "B2",
+          "stem": "___ il pleuve, le match aura lieu.",
+          "options": [
+            "Bien qu'",
+            "Parce qu'",
+            "Puisqu'",
+            "Dès qu'"
+          ],
+          "answer": 0,
+          "explanation": "bien que + 虛擬式（pleuve）。"
+        },
+        {
+          "id": "tcf-1-q13",
+          "type": "choice",
+          "instruction": "C1",
+          "stem": "Il a toujours agi ___ ses principes.",
+          "options": [
+            "conformément à",
+            "faute de",
+            "au lieu de",
+            "à force de"
+          ],
+          "answer": 0,
+          "explanation": "conformément à＝依照、符合。"
+        },
+        {
+          "id": "tcf-1-q14",
+          "type": "choice",
+          "instruction": "C1",
+          "stem": "Quelles que ___ vos raisons, vous auriez dû prévenir.",
+          "options": [
+            "soient",
+            "sont",
+            "seront",
+            "soit"
+          ],
+          "answer": 0,
+          "explanation": "quel que soit + 名詞，動詞配合 raisons 用複數虛擬式 soient。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀一（A2）",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Salut ! Je suis en retard, le bus n'arrive pas. Commence le film sans moi, j'arrive dans vingt minutes. Garde-moi du pop-corn ! Léa",
+        "title": "簡訊"
+      },
+      "questions": [
+        {
+          "id": "tcf-1-q15",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Que demande Léa ?",
+          "options": [
+            "De commencer le film sans elle",
+            "De venir la chercher",
+            "D'acheter les billets",
+            "D'annuler la soirée"
+          ],
+          "answer": 0,
+          "explanation": "Commence le film sans moi。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀二（B1）",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "PISCINE MUNICIPALE – Le bonnet de bain est obligatoire. Les shorts de bain ne sont pas autorisés. Les enfants de moins de 10 ans doivent être accompagnés d'un adulte. Dernière entrée : 30 minutes avant la fermeture.",
+        "title": "公告"
+      },
+      "questions": [
+        {
+          "id": "tcf-1-q16",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Un enfant de 8 ans peut entrer…",
+          "options": [
+            "seulement avec un adulte",
+            "seul",
+            "seulement le mercredi",
+            "jamais"
+          ],
+          "answer": 0,
+          "explanation": "moins de 10 ans doivent être accompagnés d'un adulte。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀三（C1）",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Longtemps considéré comme une perte de temps, l'ennui fait aujourd'hui l'objet d'une réhabilitation. Plusieurs chercheurs soutiennent qu'il favorise la créativité : privé de stimulation extérieure, l'esprit vagabonde et établit des liens inattendus. Encore faut-il lui en laisser l'occasion, ce que nos téléphones, toujours à portée de main, rendent de plus en plus rare.",
+        "title": "短文"
+      },
+      "questions": [
+        {
+          "id": "tcf-1-q17",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "L'auteur suggère que…",
+          "options": [
+            "nos téléphones nous empêchent de nous ennuyer",
+            "l'ennui est une perte de temps",
+            "les chercheurs critiquent l'ennui",
+            "la créativité exige des stimulations constantes"
+          ],
+          "answer": 0,
+          "explanation": "Encore faut-il lui en laisser l'occasion… nos téléphones… rendent de plus en plus rare。"
+        }
+      ]
+    }
+  ]
+}

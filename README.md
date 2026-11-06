@@ -61,3 +61,12 @@ push 到 `main` 分支後，GitHub Actions 會自動檢查題庫、建置並部�
 
 - 資料表與權限規則：`supabase/migrations/0001_init.sql`
 - 登入狀態：`lib/auth.ts`；同步：`lib/sync.ts`；班級：`lib/classes.ts`
+
+## 模擬考
+
+`/exam/` 提供依照 DELF、DALF、TCF、TEF、商務法語題型**原創**的模擬卷，以及依等級出題的期末綜合卷。
+題目全部原創，不轉載官方真題。
+
+- 考卷檔案：`data/exams/<id>.json`，新增後要在 `lib/exams.ts` 加一行 import（`npm run validate` 會檢查）
+- 段落種類：`listening`（用瀏覽器語音朗讀）、`reading`、`structure`、`writing`（自我檢核＋範文）、`bank`（從題庫隨機抽題）
+- 格式定義：`lib/examTypes.ts`

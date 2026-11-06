@@ -1,0 +1,285 @@
+{
+  "id": "affaires-b1-1",
+  "exam": "affaires",
+  "level": "B1",
+  "title": "商務法語 B1 模擬卷",
+  "fr": "Français des affaires B1 – Entraînement 1",
+  "minutes": 75,
+  "desc": "商務書信、客戶電話留言、職場與商務用語（含 CDI、CDD、報價單、發票），以及商務電子郵件寫作。",
+  "sections": [
+    {
+      "kind": "reading",
+      "title": "閱讀：商務電子郵件",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Objet : Commande n° 4521 – retard de livraison\n\nMadame Leroy,\n\nNous avons bien reçu votre commande de 200 cartons d'emballage passée le 3 mars. Malheureusement, en raison d'une rupture de stock chez notre fournisseur, nous ne pourrons pas vous livrer avant le 20 mars, au lieu du 10 mars prévu.\n\nNous vous prions de nous excuser pour ce contretemps. Pour compenser, nous vous offrons les frais de livraison ainsi qu'une remise de 5 % sur votre prochaine commande. Si ce nouveau délai ne vous convient pas, vous pouvez annuler votre commande sans frais.\n\nCordialement,\n\nThomas Garnier\nService clients – EmbalPro",
+        "title": "商務電子郵件"
+      },
+      "questions": [
+        {
+          "id": "affaires-b1-1-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Cet e-mail a pour objet…",
+          "options": [
+            "d'informer d'un retard de livraison",
+            "de confirmer une livraison",
+            "de demander un paiement",
+            "de proposer un nouveau produit"
+          ],
+          "answer": 0,
+          "explanation": "Objet : retard de livraison。"
+        },
+        {
+          "id": "affaires-b1-1-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le retard est dû…",
+          "options": [
+            "à une rupture de stock chez le fournisseur",
+            "à une grève des transporteurs",
+            "à une erreur de Mme Leroy",
+            "à la météo"
+          ],
+          "answer": 0,
+          "explanation": "en raison d'une rupture de stock chez notre fournisseur。"
+        },
+        {
+          "id": "affaires-b1-1-q03",
+          "type": "fill",
+          "instruction": "請填入日期（數字）",
+          "stem": "La marchandise sera livrée le ___ mars.",
+          "answers": [
+            "20",
+            "vingt"
+          ],
+          "explanation": "pas avant le 20 mars, au lieu du 10 mars prévu。"
+        },
+        {
+          "id": "affaires-b1-1-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pour compenser, l'entreprise offre…",
+          "options": [
+            "la livraison et une remise sur la prochaine commande",
+            "un remboursement complet",
+            "des cartons supplémentaires",
+            "un bon d'achat de 200 €"
+          ],
+          "answer": 0,
+          "explanation": "nous vous offrons les frais de livraison ainsi qu'une remise de 5 %。"
+        },
+        {
+          "id": "affaires-b1-1-q05",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Si Mme Leroy n'accepte pas le nouveau délai, elle peut…",
+          "options": [
+            "annuler sans payer de frais",
+            "demander des dommages",
+            "changer de produit",
+            "venir chercher la commande"
+          ],
+          "answer": 0,
+          "explanation": "vous pouvez annuler votre commande sans frais。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力：客戶電話留言",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Bonjour, c'est Julien Morel, de la société Datanova. Je vous appelle au sujet du devis que vous nous avez envoyé la semaine dernière. Nous sommes intéressés, mais le prix nous paraît un peu élevé. Pourriez-vous nous faire une nouvelle proposition, avec une remise pour une commande de cinquante ordinateurs ? Je suis joignable au bureau jusqu'à 17 heures, ou demain matin. Merci.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "affaires-b1-1-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "M. Morel appelle au sujet…",
+          "options": [
+            "d'un devis",
+            "d'une facture impayée",
+            "d'un entretien d'embauche",
+            "d'une livraison"
+          ],
+          "answer": 0,
+          "explanation": "au sujet du devis：關於報價單。"
+        },
+        {
+          "id": "affaires-b1-1-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel est le problème ?",
+          "options": [
+            "Le prix est trop élevé",
+            "Le délai est trop long",
+            "Le produit est défectueux",
+            "Le devis est perdu"
+          ],
+          "answer": 0,
+          "explanation": "le prix nous paraît un peu élevé。"
+        },
+        {
+          "id": "affaires-b1-1-q08",
+          "type": "fill",
+          "instruction": "請填入數字",
+          "stem": "La société voudrait commander ___ ordinateurs.",
+          "answers": [
+            "50",
+            "cinquante"
+          ],
+          "explanation": "une commande de cinquante ordinateurs。"
+        },
+        {
+          "id": "affaires-b1-1-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "On peut le rappeler…",
+          "options": [
+            "jusqu'à 17 heures ou demain matin",
+            "seulement demain après-midi",
+            "le week-end",
+            "après 18 heures"
+          ],
+          "answer": 0,
+          "explanation": "joignable au bureau jusqu'à 17 heures, ou demain matin。"
+        }
+      ]
+    },
+    {
+      "kind": "structure",
+      "title": "職場與商務用語",
+      "fr": "Vocabulaire professionnel",
+      "instruction": "請選出或填入正確的答案。",
+      "questions": [
+        {
+          "id": "affaires-b1-1-q10",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Un CDI est un contrat…",
+          "options": [
+            "à durée indéterminée",
+            "à durée déterminée",
+            "de stage",
+            "d'intérim"
+          ],
+          "answer": 0,
+          "explanation": "CDI＝contrat à durée indéterminée（不定期契約，正職）。"
+        },
+        {
+          "id": "affaires-b1-1-q11",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Un CDD est un contrat…",
+          "options": [
+            "à durée déterminée",
+            "à durée indéterminée",
+            "de bénévolat",
+            "de freelance"
+          ],
+          "answer": 0,
+          "explanation": "CDD＝contrat à durée déterminée（定期契約）。"
+        },
+        {
+          "id": "affaires-b1-1-q12",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le document qui indique le prix AVANT la commande s'appelle…",
+          "options": [
+            "un devis",
+            "une facture",
+            "un reçu",
+            "un bon de livraison"
+          ],
+          "answer": 0,
+          "explanation": "le devis：報價單。"
+        },
+        {
+          "id": "affaires-b1-1-q13",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le document envoyé APRÈS la livraison pour demander le paiement s'appelle…",
+          "options": [
+            "une facture",
+            "un devis",
+            "un contrat",
+            "un bilan"
+          ],
+          "answer": 0,
+          "explanation": "la facture：發票、帳單。"
+        },
+        {
+          "id": "affaires-b1-1-q14",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Nous vous ___ de bien vouloir régler cette facture avant le 30 juin.",
+          "options": [
+            "prions",
+            "souhaitons",
+            "voulons",
+            "espérons"
+          ],
+          "answer": 0,
+          "explanation": "Nous vous prions de bien vouloir…：商務書信的固定客套說法。"
+        },
+        {
+          "id": "affaires-b1-1-q15",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Veuillez trouver ci-___ notre catalogue.",
+          "answers": [
+            "joint"
+          ],
+          "explanation": "ci-joint：隨信附上。"
+        },
+        {
+          "id": "affaires-b1-1-q16",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Le ___ d'affaires de l'entreprise a augmenté de 8 %.",
+          "answers": [
+            "chiffre"
+          ],
+          "explanation": "le chiffre d'affaires：營業額。"
+        },
+        {
+          "id": "affaires-b1-1-q17",
+          "type": "fill",
+          "instruction": "請填入一個字（信件結尾的客套話）",
+          "stem": "Je vous prie d'agréer, Madame, l'expression de mes ___ distinguées.",
+          "answers": [
+            "salutations"
+          ],
+          "explanation": "mes salutations distinguées：正式信件的結尾。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作：商務電子郵件",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Vous travaillez au service clients d'une entreprise de meubles. Un client se plaint par e-mail : la table qu'il a commandée est arrivée abîmée. Vous lui répondez : vous vous excusez, vous proposez une solution et vous concluez de façon professionnelle. (100 à 120 mots)",
+        "minWords": 100,
+        "rubric": [
+          "有符合題目要求的情境（寫給誰、為什麼寫）",
+          "內容完整回答了題目要的每一點",
+          "有適當的開頭和結尾（稱呼、問候、署名）",
+          "用字正確、拼寫正確",
+          "動詞變化與時態正確",
+          "字數符合要求",
+          "使用商務書信的固定用語（Objet、Madame/Monsieur、Cordialement 等）"
+        ],
+        "model": "Objet : Votre commande n° 7830 – table endommagée\n\nMonsieur Bernard,\n\nNous avons bien reçu votre message et nous vous prions de nous excuser pour ce désagrément. Il est inacceptable que votre table soit arrivée en mauvais état.\n\nNous vous proposons deux solutions : un remplacement gratuit de la table, livrée sous dix jours, ou un remboursement intégral. Dans les deux cas, notre transporteur viendra récupérer le meuble endommagé à votre domicile, sans frais pour vous.\n\nPourriez-vous nous indiquer la solution que vous préférez en répondant à ce message ? Nous vous remercions de votre compréhension et restons à votre disposition pour toute question.\n\nCordialement,\n\nSarah Lin\nService clients – Maison Bois",
+        "maxWords": 120
+      }
+    }
+  ]
+}

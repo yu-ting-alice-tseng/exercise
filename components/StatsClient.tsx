@@ -248,7 +248,7 @@ export default function StatsClient() {
                       <div className="truncate font-medium">{s.title}</div>
                       <div className="text-xs text-muted">
                         {md(s.at)} {new Date(s.at).toLocaleTimeString("zh-TW", { hour: "2-digit", minute: "2-digit" })}・
-                        {s.kind === "review" ? "複習" : "練習"}・{minutes(s.sec)} 分鐘
+                        {s.kind === "review" ? "複習" : s.kind === "exam" ? "模考" : "練習"}・{minutes(s.sec)} 分鐘
                       </div>
                     </div>
                     <span className="display shrink-0 text-lg font-bold tabular-nums">

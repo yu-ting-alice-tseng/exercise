@@ -1,0 +1,95 @@
+{
+  "id": "final-c2",
+  "exam": "final",
+  "level": "C2",
+  "title": "C2 期末綜合卷",
+  "fr": "Examen final – niveau C2",
+  "minutes": 120,
+  "desc": "從 C2 題庫隨機抽 14 題文法與詞彙，加上一篇閱讀和一題寫作。每次抽到的文法題都不同。",
+  "sections": [
+    {
+      "kind": "bank",
+      "title": "文法與詞彙",
+      "fr": "Grammaire et vocabulaire",
+      "instruction": "從題庫隨機抽題，每次作答題目都不同。",
+      "bank": {
+        "choice": 6,
+        "fill": 5,
+        "short": 3
+      }
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Il pleuvait depuis l'aube sur la petite gare de province, et le train, comme à son habitude, se faisait attendre. Sur le quai, les voyageurs avaient renoncé à consulter le panneau d'affichage, dont les lettres lumineuses répétaient obstinément le même mot : « retardé ». Seule une vieille dame, droite sous son parapluie noir, paraissait ne rien remarquer. Elle tenait à la main une lettre qu'elle ne lisait pas, mais qu'elle n'aurait lâchée pour rien au monde. Lorsque enfin le train entra en gare, elle ne monta pas. Elle regarda les portes s'ouvrir, puis se refermer, et resta là, immobile, comme si l'attente elle-même avait été le but de son voyage."
+      },
+      "questions": [
+        {
+          "id": "final-c2-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pourquoi les voyageurs ne regardent-ils plus le panneau ?",
+          "options": [
+            "Il affiche toujours le même mot",
+            "Il est en panne",
+            "Il pleut trop",
+            "Le train est déjà parti"
+          ],
+          "answer": 0,
+          "explanation": "dont les lettres lumineuses répétaient obstinément le même mot : « retardé »。"
+        },
+        {
+          "id": "final-c2-q02",
+          "type": "choice",
+          "instruction": "請選出 « qu'elle n'aurait lâchée pour rien au monde » 的意思",
+          "stem": "Cette expression signifie que la vieille dame…",
+          "options": [
+            "tient énormément à cette lettre",
+            "veut jeter la lettre",
+            "a peur de la lettre",
+            "a oublié la lettre"
+          ],
+          "answer": 0,
+          "explanation": "pour rien au monde＝無論如何都不會；表示這封信對她非常重要。"
+        },
+        {
+          "id": "final-c2-q03",
+          "type": "choice",
+          "instruction": "請選出最合理的解讀",
+          "stem": "La fin du texte suggère que…",
+          "options": [
+            "l'attente comptait plus pour elle que le départ",
+            "elle s'est trompée de train",
+            "elle attendait un autre train",
+            "elle avait peur de voyager"
+          ],
+          "answer": 0,
+          "explanation": "comme si l'attente elle-même avait été le but de son voyage。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "« Le progrès technique nous fait gagner du temps, mais nous n'en avons jamais eu aussi peu. » Commentez et discutez ce paradoxe dans un essai structuré. (250 mots minimum)",
+        "minWords": 250,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）",
+          "論證有層次：提出矛盾、分析原因、提出觀點並作結"
+        ],
+        "model": "Le temps gagné, le temps perdu\n\nLave-linge, trains à grande vitesse, messageries instantanées : jamais nos outils ne nous ont épargné autant d'efforts et de délais. Et pourtant, le sentiment de manquer de temps semble n'avoir jamais été aussi répandu. Comment expliquer ce paradoxe ?\n\nIl faut d'abord reconnaître que le progrès technique a bel et bien libéré du temps. Les tâches domestiques, qui occupaient autrefois des journées entières, se règlent désormais en quelques minutes ; un voyage qui exigeait une semaine se fait en quelques heures. Nier ces gains serait tout simplement absurde.\n\nMais le temps libéré ne reste jamais vacant. Puisqu'il est possible d'en faire davantage, on attend de nous que nous en fassions davantage. La rapidité devient une norme : un message reçu appelle une réponse immédiate, un déplacement plus court permet un rendez-vous supplémentaire. Le gain est aussitôt réinvesti, si bien que l'agenda se remplit à mesure qu'il se libère.\n\nÀ cela s'ajoute la fragmentation de l'attention. Sollicités en permanence par nos écrans, nous vivons un temps morcelé, fait d'interruptions, qui donne l'impression de filer sans jamais être habité. Ce n'est donc pas tant la quantité de temps qui fait défaut que sa qualité.\n\nDès lors, la solution ne saurait être uniquement technique. Retrouver du temps suppose un choix délibéré : renoncer à certaines sollicitations, accepter la lenteur, voire l'ennui. Le progrès nous offre du temps ; il nous reste à apprendre à ne pas le dépenser aussitôt qu'il nous est donné."
+      }
+    }
+  ]
+}

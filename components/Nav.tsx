@@ -9,6 +9,7 @@ import { useProgress } from "@/lib/useProgress";
 
 const LINKS = [
   { href: "/", zh: "出題", match: (p: string) => p === "/" || p.startsWith("/practice") || p.startsWith("/paper") },
+  { href: "/exam/", zh: "模考", match: (p: string) => p.startsWith("/exam") },
   { href: "/review/", zh: "複習", match: (p: string) => p.startsWith("/review") },
   { href: "/stats/", zh: "紀錄", match: (p: string) => p.startsWith("/stats") },
 ];

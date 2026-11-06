@@ -1,0 +1,298 @@
+{
+  "id": "delf-a2-1",
+  "exam": "delf",
+  "level": "A2",
+  "title": "DELF A2 模擬卷 1",
+  "fr": "DELF A2 – Sujet d'entraînement 1",
+  "minutes": 75,
+  "desc": "聽力 2 段、閱讀 2 篇、寫作 1 題。真實考試另有口說測驗。",
+  "sections": [
+    {
+      "kind": "listening",
+      "title": "聽力一：氣象報告",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Voici la météo pour demain, samedi. Dans le nord de la France, il va pleuvoir toute la journée et il fera frais : 12 degrés à Lille. À Paris, le matin sera nuageux, mais le soleil reviendra l'après-midi, avec 18 degrés. Dans le sud, il fera très beau et chaud : jusqu'à 28 degrés à Marseille. Attention au vent fort en Bretagne.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "delf-a2-1-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Demain, à Lille, …",
+          "options": [
+            "il va pleuvoir",
+            "il fera très chaud",
+            "il y aura du vent fort",
+            "il va neiger"
+          ],
+          "answer": 0,
+          "explanation": "Dans le nord… il va pleuvoir toute la journée。"
+        },
+        {
+          "id": "delf-a2-1-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "À Paris, l'après-midi, …",
+          "options": [
+            "il y aura du soleil",
+            "il pleuvra",
+            "il fera 12 degrés",
+            "il y aura du brouillard"
+          ],
+          "answer": 0,
+          "explanation": "le soleil reviendra l'après-midi。"
+        },
+        {
+          "id": "delf-a2-1-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Il y aura du vent fort…",
+          "options": [
+            "en Bretagne",
+            "à Marseille",
+            "à Paris",
+            "à Lille"
+          ],
+          "answer": 0,
+          "explanation": "Attention au vent fort en Bretagne。"
+        },
+        {
+          "id": "delf-a2-1-q04",
+          "type": "fill",
+          "instruction": "請填入數字（可用阿拉伯數字或法文）",
+          "stem": "À Marseille, il fera jusqu'à ___ degrés.",
+          "answers": [
+            "28",
+            "vingt-huit"
+          ],
+          "explanation": "jusqu'à 28 degrés à Marseille。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力二：訂房電話",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "A : Hôtel du Parc, bonjour !\nB : Bonjour, je voudrais réserver une chambre pour deux personnes, du 14 au 16 juillet.\nA : Oui, nous avons une chambre avec vue sur le jardin, à 95 euros la nuit. Le petit-déjeuner est compris.\nB : Parfait. Est-ce qu'il y a un parking ?\nA : Oui, il est gratuit pour nos clients.\nB : Très bien, je la prends.",
+        "speak": true,
+        "dialogue": true
+      },
+      "questions": [
+        {
+          "id": "delf-a2-1-q05",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La personne réserve pour…",
+          "options": [
+            "deux nuits",
+            "une nuit",
+            "trois nuits",
+            "une semaine"
+          ],
+          "answer": 0,
+          "explanation": "du 14 au 16 juillet：住 14、15 日兩晚。"
+        },
+        {
+          "id": "delf-a2-1-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La chambre coûte…",
+          "options": [
+            "95 euros la nuit",
+            "59 euros la nuit",
+            "95 euros pour le séjour",
+            "105 euros la nuit"
+          ],
+          "answer": 0,
+          "explanation": "à 95 euros la nuit。"
+        },
+        {
+          "id": "delf-a2-1-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le petit-déjeuner…",
+          "options": [
+            "est compris dans le prix",
+            "coûte 10 euros",
+            "n'est pas servi",
+            "est servi dans le jardin"
+          ],
+          "answer": 0,
+          "explanation": "Le petit-déjeuner est compris：含早餐。"
+        },
+        {
+          "id": "delf-a2-1-q08",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le parking est…",
+          "options": [
+            "gratuit pour les clients",
+            "payant",
+            "complet",
+            "loin de l'hôtel"
+          ],
+          "answer": 0,
+          "explanation": "il est gratuit pour nos clients。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀一：短文",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "La Fête des voisins aura lieu le vendredi 30 mai dans toute la France. L'idée est simple : chaque habitant apporte quelque chose à manger ou à boire, et on se retrouve dans la cour de l'immeuble ou dans la rue pour faire connaissance. Créée à Paris en 1999, cette fête réunit aujourd'hui des millions de personnes. Pour participer, il suffit de mettre une affiche dans le hall de votre immeuble. Des affiches gratuites sont disponibles à la mairie.",
+        "title": "報導"
+      },
+      "questions": [
+        {
+          "id": "delf-a2-1-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le but de la fête est de…",
+          "options": [
+            "faire connaissance avec ses voisins",
+            "nettoyer le quartier",
+            "vendre des objets",
+            "visiter la mairie"
+          ],
+          "answer": 0,
+          "explanation": "pour faire connaissance：認識鄰居。"
+        },
+        {
+          "id": "delf-a2-1-q10",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Chaque participant apporte…",
+          "options": [
+            "quelque chose à manger ou à boire",
+            "une affiche",
+            "de l'argent",
+            "un cadeau"
+          ],
+          "answer": 0,
+          "explanation": "chaque habitant apporte quelque chose à manger ou à boire。"
+        },
+        {
+          "id": "delf-a2-1-q11",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "On peut trouver des affiches gratuites…",
+          "options": [
+            "à la mairie",
+            "dans les magasins",
+            "sur Internet seulement",
+            "à la poste"
+          ],
+          "answer": 0,
+          "explanation": "Des affiches gratuites sont disponibles à la mairie。"
+        },
+        {
+          "id": "delf-a2-1-q12",
+          "type": "fill",
+          "instruction": "請填入年份",
+          "stem": "La fête a été créée en ___.",
+          "answers": [
+            "1999"
+          ],
+          "explanation": "Créée à Paris en 1999。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀二：租屋廣告",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "À LOUER – Studio meublé de 25 m², au 3e étage avec ascenseur, à 5 minutes à pied de l'université. Cuisine équipée, salle de douche. Loyer : 520 € par mois, charges comprises (eau et chauffage). Libre à partir du 1er septembre. Non-fumeurs uniquement. Contact : Mme Dubois, après 18 h.",
+        "title": "廣告"
+      },
+      "questions": [
+        {
+          "id": "delf-a2-1-q13",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le studio est…",
+          "options": [
+            "meublé",
+            "vide",
+            "au rez-de-chaussée",
+            "loin de l'université"
+          ],
+          "answer": 0,
+          "explanation": "Studio meublé：附家具。"
+        },
+        {
+          "id": "delf-a2-1-q14",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le loyer comprend…",
+          "options": [
+            "l'eau et le chauffage",
+            "l'électricité et Internet",
+            "le parking",
+            "rien d'autre"
+          ],
+          "answer": 0,
+          "explanation": "charges comprises (eau et chauffage)。"
+        },
+        {
+          "id": "delf-a2-1-q15",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "On peut appeler Mme Dubois…",
+          "options": [
+            "après 18 h",
+            "le matin",
+            "seulement le week-end",
+            "avant midi"
+          ],
+          "answer": 0,
+          "explanation": "Contact : Mme Dubois, après 18 h。"
+        },
+        {
+          "id": "delf-a2-1-q16",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Ce studio est pour une personne qui…",
+          "options": [
+            "ne fume pas",
+            "a une voiture",
+            "a un animal",
+            "travaille la nuit"
+          ],
+          "answer": 0,
+          "explanation": "Non-fumeurs uniquement：只租給不抽菸的人。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Votre ami(e) français(e) vous invite à son mariage le 12 juin, mais vous ne pouvez pas venir. Vous lui écrivez un message : vous le/la remerciez, vous expliquez pourquoi vous ne pouvez pas venir et vous proposez de le/la voir à un autre moment. (60 à 80 mots)",
+        "minWords": 60,
+        "rubric": [
+          "有符合題目要求的情境（寫給誰、為什麼寫）",
+          "內容完整回答了題目要的每一點",
+          "有適當的開頭和結尾（稱呼、問候、署名）",
+          "用字正確、拼寫正確",
+          "動詞變化與時態正確",
+          "字數符合要求"
+        ],
+        "model": "Cher Thomas,\n\nMerci beaucoup pour ton invitation, je suis très heureuse pour toi et Camille ! Malheureusement, je ne pourrai pas venir le 12 juin : j'ai mes examens à l'université cette semaine-là et je ne peux pas les changer. Je suis vraiment désolée. Est-ce qu'on peut se voir en juillet ? Je serai en vacances et je pourrais venir à Lyon pour fêter ça avec vous.\n\nGros bisous,\nMei",
+        "maxWords": 80
+      }
+    }
+  ]
+}

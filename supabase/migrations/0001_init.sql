@@ -49,7 +49,7 @@ create table public.sessions (
   id text not null check (char_length(id) <= 40),
   at timestamptz not null,
   sec integer not null default 0 check (sec between 0 and 86400),
-  kind text not null check (kind in ('practice', 'review')),
+  kind text not null check (kind in ('practice', 'review', 'exam')),
   level text check (level in ('A1', 'A2', 'B1', 'B2', 'C1', 'C2')),
   title text not null default '' check (char_length(title) <= 200),
   res jsonb not null default '{}'::jsonb,

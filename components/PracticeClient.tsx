@@ -17,9 +17,9 @@ import { paperTitle } from "@/lib/title";
 import type { DrawnQuestion, Level, PaperConfig } from "@/lib/types";
 import { useActiveTimer } from "@/lib/useActiveTimer";
 
-type Answer = string | number | undefined;
-type Verdict = "correct" | "wrong" | "accent" | "pending";
-interface Result {
+export type Answer = string | number | undefined;
+export type Verdict = "correct" | "wrong" | "accent" | "pending";
+export interface Result {
   verdict: Verdict;
   short?: ShortCheck;
   /** 系統判錯，但學生按了「我的寫法也對」 */
@@ -58,14 +58,14 @@ function PracticeSession({ query }: { query: string }) {
   );
 }
 
-function praise(ratio: number): { fr: string; zh: string } {
+export function praise(ratio: number): { fr: string; zh: string } {
   if (ratio >= 0.9) return { fr: "Excellent !", zh: "太厲害了，幾乎全對！" };
   if (ratio >= 0.7) return { fr: "Très bien !", zh: "很好，再看看答錯的地方。" };
   if (ratio >= 0.5) return { fr: "Pas mal !", zh: "不錯，重做答錯的題目會更熟。" };
   return { fr: "Courage !", zh: "別灰心，看完解析再挑戰一次。" };
 }
 
-function judge(q: DrawnQuestion, answer: Answer, mark: boolean | undefined): Result {
+export function judge(q: DrawnQuestion, answer: Answer, mark: boolean | undefined): Result {
   const text = typeof answer === "string" ? answer : "";
   if (q.type === "choice") return { verdict: answer === q.displayAnswer ? "correct" : "wrong" };
   if (q.type === "fill") {
@@ -78,7 +78,7 @@ function judge(q: DrawnQuestion, answer: Answer, mark: boolean | undefined): Res
   return mark ? { verdict: "correct", short, overridden: true } : { verdict: base, short };
 }
 
-const toRec = (v: Verdict): RecResult => (v === "correct" ? "c" : v === "accent" ? "a" : "w");
+export const toRec = (v: Verdict): RecResult => (v === "correct" ? "c" : v === "accent" ? "a" : "w");
 
 /** 作答介面：一般練習和複習共用，檢查答案時自動寫入學習紀錄 */
 export function QuizRunner({
@@ -92,7 +92,7 @@ export function QuizRunner({
   newBatchLabel = "換一批題目",
 }: {
   questions: DrawnQuestion[];
-  kind: "practice" | "review";
+  kind: "practice" | "review" | "exam";
   level?: Level;
   title: string;
   header: { back?: { href: string; label: string }; fr: string; zh: string; sub: string };
@@ -329,7 +329,7 @@ const VERDICT_STYLE: Record<Exclude<Verdict, "pending">, { label: string; badge:
   accent: { label: "差一點", badge: "bg-warn-soft text-warn", edge: "border-l-warn" },
 };
 
-function QuestionCard({
+export function QuestionCard({
   q,
   n,
   answer,

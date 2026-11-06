@@ -1,0 +1,205 @@
+{
+  "id": "delf-b2-1",
+  "exam": "delf",
+  "level": "B2",
+  "title": "DELF B2 模擬卷 1",
+  "fr": "DELF B2 – Sujet d'entraînement 1",
+  "minutes": 120,
+  "desc": "聽力 1 段廣播專欄、閱讀 1 篇論說文、寫作 1 題（正式書信）。真實考試另有口說測驗。",
+  "sections": [
+    {
+      "kind": "listening",
+      "title": "聽力：廣播專欄",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Un tee-shirt à cinq euros, un jean à quinze : la mode rapide séduit, surtout les jeunes. Pourtant, son coût réel est bien plus élevé. L'industrie textile serait responsable d'une part importante des émissions mondiales de gaz à effet de serre, et la fabrication d'un seul jean nécessite plusieurs milliers de litres d'eau. À cela s'ajoutent des conditions de travail souvent indignes dans les pays producteurs. Face à ce constat, de plus en plus de consommateurs se tournent vers la seconde main : les applications de revente de vêtements connaissent un succès considérable. Mais attention à l'effet pervers : certains achètent davantage, sous prétexte qu'ils pourront revendre. La vraie solution, selon les spécialistes, reste d'acheter moins, mais mieux.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "delf-b2-1-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La mode rapide attire surtout…",
+          "options": [
+            "les jeunes",
+            "les personnes âgées",
+            "les professionnels de la mode",
+            "les familles nombreuses"
+          ],
+          "answer": 0,
+          "explanation": "la mode rapide séduit, surtout les jeunes。"
+        },
+        {
+          "id": "delf-b2-1-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon la chronique, la fabrication d'un jean…",
+          "options": [
+            "consomme beaucoup d'eau",
+            "coûte quinze euros",
+            "se fait en France",
+            "pollue très peu"
+          ],
+          "answer": 0,
+          "explanation": "nécessite plusieurs milliers de litres d'eau。"
+        },
+        {
+          "id": "delf-b2-1-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Outre l'environnement, la chronique dénonce…",
+          "options": [
+            "les conditions de travail",
+            "la qualité des tissus",
+            "le prix des vêtements de luxe",
+            "la publicité"
+          ],
+          "answer": 0,
+          "explanation": "des conditions de travail souvent indignes。"
+        },
+        {
+          "id": "delf-b2-1-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel est l'« effet pervers » de la seconde main ?",
+          "options": [
+            "Certains achètent plus, car ils pensent revendre",
+            "Les vêtements d'occasion sont trop chers",
+            "Les applications ferment",
+            "Les magasins perdent des clients"
+          ],
+          "answer": 0,
+          "explanation": "certains achètent davantage, sous prétexte qu'ils pourront revendre。"
+        },
+        {
+          "id": "delf-b2-1-q05",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Selon les spécialistes, il faut acheter moins, mais ___.",
+          "answers": [
+            "mieux"
+          ],
+          "explanation": "acheter moins, mais mieux：少買，但買得更好。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀：論說文",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Travailler quatre jours au lieu de cinq, sans baisse de salaire : l'idée, longtemps jugée utopique, gagne du terrain en Europe. Au Royaume-Uni, une expérience menée en 2022 dans une soixantaine d'entreprises a donné des résultats encourageants : la plupart d'entre elles ont décidé de conserver ce rythme à l'issue de l'essai. Les salariés se disaient moins stressés et moins souvent malades, tandis que la productivité restait stable.\n\nLes partisans de la semaine de quatre jours y voient un moyen d'attirer les talents et de mieux concilier vie professionnelle et vie personnelle. Ses détracteurs, en revanche, soulignent qu'elle n'est pas adaptée à tous les secteurs : comment l'appliquer dans un hôpital, une école ou un commerce ouvert six jours sur sept ? Par ailleurs, concentrer le même nombre d'heures sur quatre jours peut conduire à des journées épuisantes.\n\nAu fond, la question dépasse la simple organisation du temps : elle interroge la place que nous voulons accorder au travail dans nos vies.",
+        "title": "論說文"
+      },
+      "questions": [
+        {
+          "id": "delf-b2-1-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Dans le modèle décrit, les salariés travaillent quatre jours…",
+          "options": [
+            "sans perdre de salaire",
+            "pour un salaire réduit",
+            "seulement en été",
+            "dix heures par jour obligatoirement"
+          ],
+          "answer": 0,
+          "explanation": "sans baisse de salaire：薪水不減。"
+        },
+        {
+          "id": "delf-b2-1-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "À la fin de l'expérience britannique, la plupart des entreprises…",
+          "options": [
+            "ont gardé la semaine de quatre jours",
+            "sont revenues à cinq jours",
+            "ont augmenté les salaires",
+            "ont fermé"
+          ],
+          "answer": 0,
+          "explanation": "la plupart d'entre elles ont décidé de conserver ce rythme。"
+        },
+        {
+          "id": "delf-b2-1-q08",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pendant l'essai, la productivité…",
+          "options": [
+            "n'a pas baissé",
+            "a fortement baissé",
+            "a doublé",
+            "n'a pas été mesurée"
+          ],
+          "answer": 0,
+          "explanation": "la productivité restait stable。"
+        },
+        {
+          "id": "delf-b2-1-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les détracteurs pensent que ce modèle…",
+          "options": [
+            "ne convient pas à tous les secteurs",
+            "coûte trop cher à l'État",
+            "rend les salariés paresseux",
+            "est illégal"
+          ],
+          "answer": 0,
+          "explanation": "elle n'est pas adaptée à tous les secteurs。"
+        },
+        {
+          "id": "delf-b2-1-q10",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel risque l'auteur mentionne-t-il ?",
+          "options": [
+            "Des journées trop longues et fatigantes",
+            "Une hausse du chômage",
+            "Une baisse des salaires",
+            "La disparition des hôpitaux"
+          ],
+          "answer": 0,
+          "explanation": "concentrer le même nombre d'heures sur quatre jours peut conduire à des journées épuisantes。"
+        },
+        {
+          "id": "delf-b2-1-q11",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Dans sa conclusion, l'auteur…",
+          "options": [
+            "élargit le débat à la place du travail dans la vie",
+            "rejette totalement l'idée",
+            "demande une loi immédiate",
+            "conseille de travailler plus"
+          ],
+          "answer": 0,
+          "explanation": "elle interroge la place que nous voulons accorder au travail dans nos vies：把問題延伸到更大的層次。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Votre entreprise envisage de passer à la semaine de quatre jours. La direction demande l'avis du personnel. Vous écrivez une lettre formelle au directeur dans laquelle vous présentez les avantages et les inconvénients de ce projet, puis vous donnez votre position de façon argumentée. (250 mots minimum)",
+        "minWords": 250,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Monsieur le Directeur,\n\nVous avez sollicité l'avis du personnel sur le passage à la semaine de quatre jours. Je vous remercie de cette consultation et je souhaite vous faire part de mon point de vue.\n\nCe projet présente, à mon sens, des avantages indéniables. Tout d'abord, un jour de repos supplémentaire permettrait aux salariés de mieux récupérer, ce qui réduirait la fatigue et l'absentéisme. Ensuite, dans un secteur où il est difficile de recruter, une telle organisation constituerait un argument de poids pour attirer et fidéliser des collaborateurs qualifiés. Enfin, les expériences menées à l'étranger montrent que la productivité ne baisse pas nécessairement, ce qui devrait rassurer ceux qui craignent une perte d'efficacité pour l'entreprise.\n\nIl convient toutefois de ne pas en sous-estimer les difficultés. Notre service clients doit rester joignable cinq jours sur cinq : il faudrait donc organiser des roulements entre collègues, ce qui demande une planification rigoureuse et une bonne communication entre les équipes. Par ailleurs, si les quatre journées deviennent trop longues, le gain de repos risque d'être annulé par l'épuisement.\n\nC'est pourquoi je suis favorable au projet, à condition qu'il soit mis en place progressivement. Je propose une période d'essai de six mois, suivie d'un bilan réalisé avec les représentants du personnel. Nous pourrions ainsi mesurer concrètement les effets sur notre activité et ajuster l'organisation si nécessaire.\n\nJe reste à votre disposition pour en discuter et vous prie d'agréer, Monsieur le Directeur, l'expression de mes salutations distinguées.\n\nLin Wei"
+      }
+    }
+  ]
+}

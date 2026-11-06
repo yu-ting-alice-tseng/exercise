@@ -34,7 +34,7 @@ export interface SessionRec {
   at: number;
   /** 實際作答秒數（畫面開著且有操作的時間） */
   sec: number;
-  kind: "practice" | "review";
+  kind: "practice" | "review" | "exam";
   level?: Level;
   title: string;
   /** 每一題的結果 */

@@ -1,0 +1,91 @@
+{
+  "id": "final-a2",
+  "exam": "final",
+  "level": "A2",
+  "title": "A2 期末綜合卷",
+  "fr": "Examen final – niveau A2",
+  "minutes": 60,
+  "desc": "從 A2 題庫隨機抽 16 題文法與詞彙，加上一篇閱讀和一題寫作。每次抽到的文法題都不同。",
+  "sections": [
+    {
+      "kind": "bank",
+      "title": "文法與詞彙",
+      "fr": "Grammaire et vocabulaire",
+      "instruction": "從題庫隨機抽題，每次作答題目都不同。",
+      "bank": {
+        "choice": 8,
+        "fill": 6,
+        "short": 2
+      }
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Le mois dernier, je suis partie une semaine en Bretagne avec deux amies. Nous avons loué une petite maison près de la mer. Il a plu les deux premiers jours, alors nous avons visité des musées et nous avons goûté les crêpes de la région. Ensuite, le soleil est revenu : nous avons fait du vélo le long de la côte et nous nous sommes baignées, même si l'eau était froide ! C'étaient des vacances parfaites."
+      },
+      "questions": [
+        {
+          "id": "final-a2-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le voyage a duré…",
+          "options": [
+            "une semaine",
+            "deux jours",
+            "un mois",
+            "un week-end"
+          ],
+          "answer": 0,
+          "explanation": "je suis partie une semaine。"
+        },
+        {
+          "id": "final-a2-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quand il pleuvait, elles…",
+          "options": [
+            "ont visité des musées",
+            "sont restées à la maison",
+            "ont fait du vélo",
+            "se sont baignées"
+          ],
+          "answer": 0,
+          "explanation": "Il a plu… alors nous avons visité des musées。"
+        },
+        {
+          "id": "final-a2-q03",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Elles ont loué une petite ___ près de la mer.",
+          "answers": [
+            "maison"
+          ],
+          "explanation": "Nous avons loué une petite maison。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Racontez votre dernier week-end : où vous êtes allé(e), avec qui, ce que vous avez fait et ce que vous en avez pensé. (60 à 80 mots)",
+        "minWords": 60,
+        "rubric": [
+          "有符合題目要求的情境（寫給誰、為什麼寫）",
+          "內容完整回答了題目要的每一點",
+          "有適當的開頭和結尾（稱呼、問候、署名）",
+          "用字正確、拼寫正確",
+          "動詞變化與時態正確",
+          "字數符合要求"
+        ],
+        "model": "Samedi dernier, je suis allée à Tainan avec ma cousine. Nous avons pris le train le matin et nous sommes arrivées vers dix heures. D'abord, nous avons visité un vieux temple, puis nous avons mangé des spécialités dans un petit restaurant. L'après-midi, il faisait très chaud, alors nous sommes entrées dans un café pour boire un thé glacé. Le soir, nous sommes rentrées fatiguées mais contentes. C'était un week-end très agréable !",
+        "maxWords": 80
+      }
+    }
+  ]
+}

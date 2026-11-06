@@ -1,0 +1,288 @@
+{
+  "id": "affaires-b2-1",
+  "exam": "affaires",
+  "level": "B2",
+  "title": "財經法語 B2 模擬卷",
+  "fr": "Français des affaires B2 – Économie et finance",
+  "minutes": 90,
+  "desc": "財經新聞閱讀、股市收盤報導、財經用語（股票、債券、股利、通膨），以及給客戶的投資建議信。",
+  "sections": [
+    {
+      "kind": "reading",
+      "title": "閱讀：財經新聞",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "La Banque centrale européenne (BCE) a annoncé jeudi une nouvelle baisse de ses taux directeurs d'un quart de point. Cette décision, largement anticipée par les marchés, vise à soutenir une économie européenne qui peine à retrouver de la croissance, alors que l'inflation est revenue près de l'objectif de 2 %.\n\nConcrètement, une baisse des taux rend le crédit moins cher pour les ménages et les entreprises. Elle devrait donc encourager l'investissement et la consommation. Les emprunteurs immobiliers pourraient en bénéficier dans les prochains mois, à condition que les banques répercutent cette baisse sur leurs offres.\n\nRevers de la médaille, les épargnants verront la rémunération de leurs livrets diminuer. Certains économistes s'inquiètent par ailleurs d'un risque de bulles sur les marchés financiers, alimentées par l'argent bon marché.\n\nÀ la Bourse de Paris, l'annonce a été bien accueillie : le CAC 40 a terminé la séance en hausse de 0,8 %.",
+        "title": "財經新聞"
+      },
+      "questions": [
+        {
+          "id": "affaires-b2-1-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Qu'a décidé la BCE ?",
+          "options": [
+            "De baisser ses taux d'un quart de point",
+            "D'augmenter ses taux",
+            "De ne rien changer",
+            "De supprimer l'euro"
+          ],
+          "answer": 0,
+          "explanation": "une nouvelle baisse de ses taux directeurs d'un quart de point。"
+        },
+        {
+          "id": "affaires-b2-1-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le but de cette décision est de…",
+          "options": [
+            "soutenir l'économie",
+            "faire baisser le chômage en Asie",
+            "augmenter l'inflation à 5 %",
+            "aider les épargnants"
+          ],
+          "answer": 0,
+          "explanation": "vise à soutenir une économie européenne qui peine à retrouver de la croissance。"
+        },
+        {
+          "id": "affaires-b2-1-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les emprunteurs immobiliers en profiteront si…",
+          "options": [
+            "les banques baissent aussi leurs taux",
+            "l'inflation augmente",
+            "la Bourse baisse",
+            "ils épargnent davantage"
+          ],
+          "answer": 0,
+          "explanation": "à condition que les banques répercutent cette baisse。"
+        },
+        {
+          "id": "affaires-b2-1-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Qui sont les perdants de cette décision ?",
+          "options": [
+            "Les épargnants",
+            "Les emprunteurs",
+            "Les entreprises",
+            "Les consommateurs"
+          ],
+          "answer": 0,
+          "explanation": "les épargnants verront la rémunération de leurs livrets diminuer。"
+        },
+        {
+          "id": "affaires-b2-1-q05",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Le CAC 40 a terminé la séance en ___ de 0,8 %.",
+          "answers": [
+            "hausse"
+          ],
+          "explanation": "en hausse：上漲。反義詞是 en baisse。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力：股市收盤",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Point sur les marchés à la clôture. La Bourse de Paris recule de 1,2 %, plombée par le secteur du luxe après des résultats décevants en Asie. Le pétrole, lui, grimpe de 3 % en raison de tensions au Moyen-Orient. Du côté des devises, l'euro se stabilise face au dollar. À suivre demain : la publication des chiffres du chômage aux États-Unis.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "affaires-b2-1-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Aujourd'hui, la Bourse de Paris…",
+          "options": [
+            "a baissé de 1,2 %",
+            "a monté de 1,2 %",
+            "a baissé de 3 %",
+            "est restée stable"
+          ],
+          "answer": 0,
+          "explanation": "recule de 1,2 %：下跌 1.2%。"
+        },
+        {
+          "id": "affaires-b2-1-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel secteur a fait baisser la Bourse ?",
+          "options": [
+            "Le luxe",
+            "L'énergie",
+            "La banque",
+            "L'automobile"
+          ],
+          "answer": 0,
+          "explanation": "plombée par le secteur du luxe。"
+        },
+        {
+          "id": "affaires-b2-1-q08",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le prix du pétrole…",
+          "options": [
+            "a augmenté de 3 %",
+            "a baissé de 3 %",
+            "est resté stable",
+            "a augmenté de 1,2 %"
+          ],
+          "answer": 0,
+          "explanation": "Le pétrole, lui, grimpe de 3 %。"
+        },
+        {
+          "id": "affaires-b2-1-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Demain, on attend…",
+          "options": [
+            "les chiffres du chômage américain",
+            "une décision de la BCE",
+            "les résultats du luxe",
+            "la clôture des marchés asiatiques"
+          ],
+          "answer": 0,
+          "explanation": "la publication des chiffres du chômage aux États-Unis。"
+        }
+      ]
+    },
+    {
+      "kind": "structure",
+      "title": "財經用語",
+      "fr": "Vocabulaire économique et financier",
+      "instruction": "請選出或填入正確的答案。",
+      "questions": [
+        {
+          "id": "affaires-b2-1-q10",
+          "type": "choice",
+          "instruction": "請選出 « une action » 的意思",
+          "stem": "Une action, c'est…",
+          "options": [
+            "une part du capital d'une entreprise",
+            "un prêt accordé à l'État",
+            "une taxe",
+            "un salaire"
+          ],
+          "answer": 0,
+          "explanation": "action：股票。"
+        },
+        {
+          "id": "affaires-b2-1-q11",
+          "type": "choice",
+          "instruction": "請選出 « une obligation » 的意思",
+          "stem": "Une obligation, c'est…",
+          "options": [
+            "un titre de dette",
+            "une part du capital",
+            "une assurance",
+            "un dividende"
+          ],
+          "answer": 0,
+          "explanation": "obligation：債券。"
+        },
+        {
+          "id": "affaires-b2-1-q12",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La part du bénéfice versée aux actionnaires s'appelle…",
+          "options": [
+            "un dividende",
+            "un intérêt",
+            "un loyer",
+            "une prime"
+          ],
+          "answer": 0,
+          "explanation": "dividende：股利。"
+        },
+        {
+          "id": "affaires-b2-1-q13",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Une entreprise qui ne peut plus payer ses dettes est en…",
+          "options": [
+            "faillite",
+            "croissance",
+            "bourse",
+            "bilan"
+          ],
+          "answer": 0,
+          "explanation": "être en faillite：破產。"
+        },
+        {
+          "id": "affaires-b2-1-q14",
+          "type": "choice",
+          "instruction": "請選出 « une hausse » 的反義詞",
+          "stem": "Le contraire d'une hausse, c'est…",
+          "options": [
+            "une baisse",
+            "une croissance",
+            "une augmentation",
+            "une reprise"
+          ],
+          "answer": 0,
+          "explanation": "hausse（上漲）↔ baisse（下跌）。"
+        },
+        {
+          "id": "affaires-b2-1-q15",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Les prix ont augmenté de 3 % en un an : c'est le taux d'___.",
+          "answers": [
+            "inflation"
+          ],
+          "explanation": "le taux d'inflation：通膨率。"
+        },
+        {
+          "id": "affaires-b2-1-q16",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Recettes moins dépenses : c'est le ___.",
+          "answers": [
+            "bénéfice",
+            "profit",
+            "résultat"
+          ],
+          "explanation": "le bénéfice：利潤、盈餘。"
+        },
+        {
+          "id": "affaires-b2-1-q17",
+          "type": "fill",
+          "instruction": "請填入 perdre 的過去分詞",
+          "stem": "La Bourse de Paris a ___ 2 % aujourd'hui.",
+          "answers": [
+            "perdu"
+          ],
+          "explanation": "perdre → perdu。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作：給客戶的投資建議信",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Vous êtes conseiller/conseillère dans une banque. Un client a 20 000 euros d'économies. Il vous demande par e-mail s'il vaut mieux les laisser sur un livret d'épargne ou les investir en Bourse. Vous lui répondez en présentant les avantages et les risques de chaque solution, puis vous lui donnez un conseil argumenté. (200 mots minimum)",
+        "minWords": 200,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）",
+          "使用正確的財經詞彙（rendement、risque、placement、diversifier 等）"
+        ],
+        "model": "Objet : Votre question sur le placement de votre épargne\n\nMonsieur Durand,\n\nJe vous remercie de votre message et vous réponds volontiers.\n\nLe livret d'épargne présente un avantage majeur : la sécurité. Votre capital est garanti et vous pouvez retirer votre argent à tout moment. En revanche, son rendement est modeste et, en période d'inflation, il peut même ne pas suffire à préserver votre pouvoir d'achat.\n\nUn placement en Bourse offre, sur le long terme, un rendement potentiellement plus élevé. Il comporte cependant un risque réel : la valeur des actions peut fortement baisser, parfois pendant plusieurs années. Il ne convient donc qu'à une somme dont vous n'aurez pas besoin à court terme.\n\nCompte tenu de votre situation, je vous conseillerais de ne pas choisir l'une ou l'autre solution, mais de diversifier. Vous pourriez conserver environ 8 000 euros sur votre livret, comme épargne de précaution, et investir le reste progressivement, par exemple chaque mois, dans un fonds diversifié. Cette méthode permet de lisser les fluctuations du marché.\n\nJe vous propose d'en parler lors d'un rendez-vous à l'agence, afin d'adapter ce conseil à vos projets et à votre situation personnelle.\n\nBien cordialement,\n\nClaire Wang\nConseillère clientèle"
+      }
+    }
+  ]
+}

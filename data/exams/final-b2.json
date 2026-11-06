@@ -1,0 +1,90 @@
+{
+  "id": "final-b2",
+  "exam": "final",
+  "level": "B2",
+  "title": "B2 期末綜合卷",
+  "fr": "Examen final – niveau B2",
+  "minutes": 90,
+  "desc": "從 B2 題庫隨機抽 15 題文法與詞彙，加上一篇閱讀和一題寫作。每次抽到的文法題都不同。",
+  "sections": [
+    {
+      "kind": "bank",
+      "title": "文法與詞彙",
+      "fr": "Grammaire et vocabulaire",
+      "instruction": "從題庫隨機抽題，每次作答題目都不同。",
+      "bank": {
+        "choice": 6,
+        "fill": 6,
+        "short": 3
+      }
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Le tourisme de masse est devenu, dans plusieurs villes européennes, une source de tensions. À Venise ou à Barcelone, les habitants dénoncent la hausse des loyers, provoquée par la multiplication des locations de courte durée, et l'impression de vivre dans un décor plutôt que dans une ville. Les municipalités tentent de réagir : taxe d'entrée pour les visiteurs d'un jour, limitation du nombre de bateaux de croisière, encadrement des locations touristiques. Ces mesures restent toutefois controversées : les commerçants craignent une baisse de leur chiffre d'affaires, tandis que d'autres jugent qu'elles transforment la ville en produit de luxe, réservé à ceux qui peuvent payer."
+      },
+      "questions": [
+        {
+          "id": "final-b2-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon le texte, la hausse des loyers s'explique par…",
+          "options": [
+            "les locations de courte durée",
+            "l'arrivée de nouvelles entreprises",
+            "la construction de logements",
+            "la baisse du tourisme"
+          ],
+          "answer": 0,
+          "explanation": "provoquée par la multiplication des locations de courte durée。"
+        },
+        {
+          "id": "final-b2-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Laquelle de ces mesures est citée dans le texte ?",
+          "options": [
+            "Une taxe pour les visiteurs d'un jour",
+            "L'interdiction totale du tourisme",
+            "La fermeture des musées",
+            "La gratuité des transports"
+          ],
+          "answer": 0,
+          "explanation": "taxe d'entrée pour les visiteurs d'un jour。"
+        },
+        {
+          "id": "final-b2-q03",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Les commerçants craignent une baisse de leur chiffre d'___.",
+          "answers": [
+            "affaires"
+          ],
+          "explanation": "le chiffre d'affaires：營業額。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Votre ville envisage d'interdire les voitures dans le centre-ville. Vous écrivez une lettre au maire pour exprimer votre opinion de façon argumentée. (250 mots minimum)",
+        "minWords": 250,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Monsieur le Maire,\n\nJ'ai appris par la presse que la municipalité envisageait d'interdire la circulation automobile dans le centre-ville. Habitante du quartier depuis dix ans, je souhaite vous faire part de mon avis sur ce projet.\n\nJe partage pleinement l'objectif de réduire la pollution et le bruit. Les jours de forte circulation, l'air du centre est difficilement respirable, et de nombreuses familles hésitent à laisser leurs enfants se déplacer à pied. Une zone piétonne rendrait par ailleurs le quartier plus agréable et pourrait attirer de nouveaux commerces, comme on l'a observé dans d'autres villes de taille comparable qui ont fait ce choix ces dernières années.\n\nCependant, une interdiction brutale risquerait de pénaliser certaines catégories d'habitants. Je pense notamment aux personnes âgées ou à mobilité réduite, ainsi qu'aux artisans qui ont besoin de leur véhicule pour travailler. De plus, si les transports en commun ne sont pas renforcés, le centre deviendra tout simplement plus difficile d'accès.\n\nC'est pourquoi je suis favorable au projet, à condition qu'il s'accompagne de mesures concrètes : des navettes gratuites et plus fréquentes, des parkings relais aux entrées de la ville, ainsi que des autorisations spéciales pour les résidents, les livraisons et les personnes handicapées. Une mise en place progressive, d'abord le week-end, permettrait également d'évaluer les effets avant de généraliser la mesure.\n\nEn espérant que ces propositions retiendront votre attention, je vous prie d'agréer, Monsieur le Maire, l'expression de mes salutations respectueuses.\n\nChen Ya-Wen"
+      }
+    }
+  ]
+}

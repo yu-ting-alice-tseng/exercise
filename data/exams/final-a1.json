@@ -1,0 +1,92 @@
+{
+  "id": "final-a1",
+  "exam": "final",
+  "level": "A1",
+  "title": "A1 期末綜合卷",
+  "fr": "Examen final – niveau A1",
+  "minutes": 50,
+  "desc": "從 A1 題庫隨機抽 16 題文法與詞彙，加上一篇閱讀和一題寫作。每次抽到的文法題都不同。",
+  "sections": [
+    {
+      "kind": "bank",
+      "title": "文法與詞彙",
+      "fr": "Grammaire et vocabulaire",
+      "instruction": "從題庫隨機抽題，每次作答題目都不同。",
+      "bank": {
+        "choice": 8,
+        "fill": 6,
+        "short": 2
+      }
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Je m'appelle Hugo. J'ai onze ans et j'habite à Bordeaux avec mes parents et ma petite sœur, Lina. Le matin, je vais à l'école à vélo. Ma matière préférée, c'est le sport. Le mercredi après-midi, je joue au football avec mes amis. Le week-end, nous allons souvent chez mes grands-parents, à la campagne."
+      },
+      "questions": [
+        {
+          "id": "final-a1-q01",
+          "type": "fill",
+          "instruction": "請填入數字（可用阿拉伯數字或法文）",
+          "stem": "Hugo a ___ ans.",
+          "answers": [
+            "11",
+            "onze"
+          ],
+          "explanation": "J'ai onze ans。"
+        },
+        {
+          "id": "final-a1-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Hugo va à l'école…",
+          "options": [
+            "à vélo",
+            "en bus",
+            "à pied",
+            "en voiture"
+          ],
+          "answer": 0,
+          "explanation": "je vais à l'école à vélo。"
+        },
+        {
+          "id": "final-a1-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le week-end, la famille va souvent…",
+          "options": [
+            "chez les grands-parents",
+            "au cinéma",
+            "à la plage",
+            "au stade"
+          ],
+          "answer": 0,
+          "explanation": "nous allons souvent chez mes grands-parents。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Présentez-vous : votre nom, votre âge, votre ville, votre famille et ce que vous aimez faire. (30 à 40 mots)",
+        "minWords": 30,
+        "rubric": [
+          "有符合題目要求的情境（寫給誰、為什麼寫）",
+          "內容完整回答了題目要的每一點",
+          "有適當的開頭和結尾（稱呼、問候、署名）",
+          "用字正確、拼寫正確",
+          "動詞變化與時態正確",
+          "字數符合要求"
+        ],
+        "model": "Bonjour ! Je m'appelle Yu-Ting. J'ai vingt ans et j'habite à Taichung, à Taïwan. J'ai un frère et une sœur. Je suis étudiante. J'aime la musique et le cinéma. Le week-end, je fais du vélo.",
+        "maxWords": 40
+      }
+    }
+  ]
+}

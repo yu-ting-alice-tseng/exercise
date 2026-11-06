@@ -1,0 +1,349 @@
+{
+  "id": "tef-1",
+  "exam": "tef",
+  "level": "B1",
+  "title": "TEF 風格模擬卷 1",
+  "fr": "TEF – Entraînement 1",
+  "minutes": 50,
+  "desc": "以生活與工作上的實用文件為主：徵才廣告、行政信件、電台廣告，以及詞彙與結構題。",
+  "sections": [
+    {
+      "kind": "reading",
+      "title": "閱讀一：徵才廣告",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Restaurant « Chez Paul » recherche serveur/serveuse pour la saison d'été (de juin à août). Expérience d'un an minimum. Anglais apprécié. Horaires : du mardi au samedi, de 18 h à minuit. Salaire : 1 900 € brut par mois + pourboires. Envoyez votre CV et une lettre de motivation avant le 15 mai.",
+        "title": "徵才廣告"
+      },
+      "questions": [
+        {
+          "id": "tef-1-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le contrat dure…",
+          "options": [
+            "trois mois",
+            "un an",
+            "deux mois",
+            "six mois"
+          ],
+          "answer": 0,
+          "explanation": "de juin à août：三個月。"
+        },
+        {
+          "id": "tef-1-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quelle compétence est un plus ?",
+          "options": [
+            "Parler anglais",
+            "Avoir le permis",
+            "Savoir cuisiner",
+            "Être étudiant"
+          ],
+          "answer": 0,
+          "explanation": "Anglais apprécié：會英文加分。"
+        },
+        {
+          "id": "tef-1-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les jours de repos sont…",
+          "options": [
+            "le dimanche et le lundi",
+            "le samedi et le dimanche",
+            "le mardi et le mercredi",
+            "seulement le lundi"
+          ],
+          "answer": 0,
+          "explanation": "工作日是星期二到星期六。"
+        },
+        {
+          "id": "tef-1-q04",
+          "type": "fill",
+          "instruction": "請填入數字",
+          "stem": "Il faut envoyer sa candidature avant le ___ mai.",
+          "answers": [
+            "15",
+            "quinze"
+          ],
+          "explanation": "avant le 15 mai。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀二：行政信件",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Madame, Monsieur,\n\nNous accusons réception de votre demande de titre de séjour. Votre dossier est cependant incomplet : il manque un justificatif de domicile de moins de trois mois et deux photos d'identité. Nous vous remercions de nous faire parvenir ces documents dans un délai de quinze jours. Passé ce délai, votre demande sera classée sans suite.\n\nLe service des étrangers",
+        "title": "行政信件"
+      },
+      "questions": [
+        {
+          "id": "tef-1-q05",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel est le problème ?",
+          "options": [
+            "Le dossier est incomplet",
+            "La demande est refusée",
+            "Le titre de séjour est prêt",
+            "Le rendez-vous est annulé"
+          ],
+          "answer": 0,
+          "explanation": "Votre dossier est cependant incomplet。"
+        },
+        {
+          "id": "tef-1-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quels documents manquent ?",
+          "options": [
+            "Un justificatif de domicile et deux photos",
+            "Un passeport et un diplôme",
+            "Un contrat de travail",
+            "Un relevé bancaire"
+          ],
+          "answer": 0,
+          "explanation": "justificatif de domicile… et deux photos d'identité。"
+        },
+        {
+          "id": "tef-1-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Si la personne n'envoie rien dans les quinze jours…",
+          "options": [
+            "sa demande sera abandonnée",
+            "elle devra payer une amende",
+            "elle sera convoquée",
+            "elle recevra un rappel"
+          ],
+          "answer": 0,
+          "explanation": "classée sans suite：不再處理。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力一：在藥局",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "A : Bonjour, j'ai mal à la gorge depuis deux jours.\nB : Vous avez de la fièvre ?\nA : Un peu, 38.\nB : Je vous donne ces pastilles. Trois par jour maximum. Si la fièvre dure plus de trois jours, consultez un médecin.",
+        "speak": true,
+        "dialogue": true
+      },
+      "questions": [
+        {
+          "id": "tef-1-q08",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le client a mal…",
+          "options": [
+            "à la gorge",
+            "à la tête",
+            "au ventre",
+            "au dos"
+          ],
+          "answer": 0,
+          "explanation": "j'ai mal à la gorge。"
+        },
+        {
+          "id": "tef-1-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Il peut prendre au maximum…",
+          "options": [
+            "trois pastilles par jour",
+            "deux pastilles par jour",
+            "une pastille par heure",
+            "trois pastilles par repas"
+          ],
+          "answer": 0,
+          "explanation": "Trois par jour maximum。"
+        },
+        {
+          "id": "tef-1-q10",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Il doit voir un médecin si…",
+          "options": [
+            "la fièvre dure plus de trois jours",
+            "il a mal demain",
+            "il n'a plus de pastilles",
+            "il tousse"
+          ],
+          "answer": 0,
+          "explanation": "Si la fièvre dure plus de trois jours, consultez un médecin。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力二：電台廣告",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Le festival de jazz de Saint-Aurin revient du 25 juillet au 6 août ! Cette année, plus de quarante concerts sont au programme, dont quinze gratuits sur la place du village. Les billets pour les grands concerts seront en vente sur le site du festival à partir de lundi.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "tef-1-q11",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Combien de concerts sont gratuits ?",
+          "options": [
+            "Quinze",
+            "Quarante",
+            "Cinq",
+            "Vingt-cinq"
+          ],
+          "answer": 0,
+          "explanation": "dont quinze gratuits。"
+        },
+        {
+          "id": "tef-1-q12",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les concerts gratuits ont lieu…",
+          "options": [
+            "sur la place du village",
+            "dans une salle de concert",
+            "sur Internet",
+            "à la plage"
+          ],
+          "answer": 0,
+          "explanation": "sur la place du village。"
+        },
+        {
+          "id": "tef-1-q13",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "On pourra acheter les billets…",
+          "options": [
+            "à partir de lundi",
+            "dès aujourd'hui",
+            "le 25 juillet",
+            "seulement sur place"
+          ],
+          "answer": 0,
+          "explanation": "à partir de lundi。"
+        }
+      ]
+    },
+    {
+      "kind": "structure",
+      "title": "詞彙與結構",
+      "fr": "Lexique et structure",
+      "instruction": "請選出或填入正確的答案。",
+      "questions": [
+        {
+          "id": "tef-1-q14",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Je ___ en France depuis deux ans.",
+          "options": [
+            "vis",
+            "ai vécu",
+            "vivrai",
+            "vivais"
+          ],
+          "answer": 0,
+          "explanation": "depuis + 時間長度，表示持續到現在，用現在式。"
+        },
+        {
+          "id": "tef-1-q15",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Il est arrivé ___ retard.",
+          "options": [
+            "en",
+            "au",
+            "à",
+            "de"
+          ],
+          "answer": 0,
+          "explanation": "être／arriver en retard。"
+        },
+        {
+          "id": "tef-1-q16",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Elle s'occupe ___ ses parents âgés.",
+          "options": [
+            "de",
+            "à",
+            "avec",
+            "pour"
+          ],
+          "answer": 0,
+          "explanation": "s'occuper de（照顧）。"
+        },
+        {
+          "id": "tef-1-q17",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Malgré ___, il est sorti.",
+          "options": [
+            "la pluie",
+            "il pleut",
+            "qu'il pleuve",
+            "pleuvoir"
+          ],
+          "answer": 0,
+          "explanation": "malgré 後面接名詞。"
+        },
+        {
+          "id": "tef-1-q18",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Je vous écris ___ de vous informer d'un changement.",
+          "options": [
+            "afin",
+            "pour",
+            "parce",
+            "grâce"
+          ],
+          "answer": 0,
+          "explanation": "afin de + 原形動詞；pour 後面不需要 de。"
+        },
+        {
+          "id": "tef-1-q19",
+          "type": "fill",
+          "instruction": "請填入一個字（每個月工作領到的錢）",
+          "stem": "Il touche un bon ___ chaque mois.",
+          "answers": [
+            "salaire"
+          ],
+          "explanation": "le salaire：薪水。"
+        },
+        {
+          "id": "tef-1-q20",
+          "type": "fill",
+          "instruction": "請填入 augmenter 的反義詞（原形動詞）",
+          "stem": "Les prix vont ___ l'année prochaine.",
+          "answers": [
+            "baisser",
+            "diminuer"
+          ],
+          "explanation": "baisser／diminuer：下降。"
+        },
+        {
+          "id": "tef-1-q21",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Je n'ai ___ compris à ses explications.",
+          "answers": [
+            "rien"
+          ],
+          "explanation": "ne…rien：什麼都沒有。"
+        }
+      ]
+    }
+  ]
+}

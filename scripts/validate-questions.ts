@@ -66,6 +66,59 @@ for (const file of walk(dir)) {
   }
 }
 
+// ===== 模考 =====
+const examDir = join(root, "data/exams");
+const examsSrc = readFileSync(join(root, "lib/exams.ts"), "utf8");
+const KINDS = ["delf", "dalf", "tcf", "tef", "affaires", "final"];
+const SECTIONS = ["listening", "reading", "structure", "writing", "bank"];
+let examCount = 0;
+for (const file of walk(examDir)) {
+  const rel = relative(root, file);
+  if (!examsSrc.includes("@/" + rel.replace(/\\/g, "/"))) errors.push(`${rel}：沒有加進 lib/exams.ts`);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let e: any;
+  try {
+    e = JSON.parse(readFileSync(file, "utf8"));
+  } catch (err) {
+    errors.push(`${rel}：JSON 格式錯誤 ${(err as Error).message}`);
+    continue;
+  }
+  examCount++;
+  const at = `${rel}`;
+  if (!KINDS.includes(e.exam)) errors.push(`${at}：exam 種類不正確`);
+  if (!LEVELS.some((l) => l.id === e.level)) errors.push(`${at}：level 不正確`);
+  if (!e.title || !e.minutes || !Array.isArray(e.sections) || e.sections.length === 0) errors.push(`${at}：缺少標題、時間或段落`);
+  for (const sec of e.sections ?? []) {
+    if (!SECTIONS.includes(sec.kind)) errors.push(`${at}：段落種類「${sec.kind}」不正確`);
+    if (sec.kind === "writing") {
+      const w = sec.writing;
+      if (!w?.prompt || !w?.model || !Array.isArray(w?.rubric) || !(w?.minWords > 0)) errors.push(`${at}：寫作題缺少題目、範文、評分項目或字數`);
+      continue;
+    }
+    if (sec.kind === "bank") {
+      if (!sec.bank) errors.push(`${at}：題庫段落缺少題數`);
+      continue;
+    }
+    if ((sec.kind === "listening" || sec.kind === "reading") && !sec.passage?.text) errors.push(`${at}：${sec.kind} 段落缺少文章`);
+    if (sec.kind === "listening" && !sec.passage?.speak) errors.push(`${at}：聽力段落要設定 speak`);
+    if (!Array.isArray(sec.questions) || sec.questions.length === 0) errors.push(`${at}：段落沒有題目`);
+    for (const q of sec.questions ?? []) {
+      const qa = `${at} ${q.id}`;
+      if (!q.id) errors.push(`${qa}：缺少 id`);
+      else if (ids.has(q.id)) errors.push(`${qa}：id 重複（也出現在 ${ids.get(q.id)}）`);
+      else ids.set(q.id, rel);
+      if (!q.instruction || !q.explanation || typeof q.stem !== "string") errors.push(`${qa}：缺少說明、解析或題幹`);
+      if (q.type === "choice") {
+        if (!Array.isArray(q.options) || q.options.length < 2 || new Set(q.options).size !== q.options.length) errors.push(`${qa}：選項不正確或重複`);
+        if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer >= (q.options?.length ?? 0)) errors.push(`${qa}：answer 索引超出範圍`);
+      } else if (q.type === "fill" || q.type === "short") {
+        if (!Array.isArray(q.answers) || q.answers.length === 0) errors.push(`${qa}：缺少 answers`);
+      } else errors.push(`${qa}：type 不正確`);
+    }
+  }
+}
+console.log(`模考 ${examCount} 份。`);
+
 for (const w of warnings) console.warn("⚠️ ", w);
 for (const e of errors) console.error("❌", e);
 console.log(`\n共 ${total} 題，${errors.length} 個錯誤，${warnings.length} 個提醒。`);

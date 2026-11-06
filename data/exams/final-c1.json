@@ -1,0 +1,91 @@
+{
+  "id": "final-c1",
+  "exam": "final",
+  "level": "C1",
+  "title": "C1 期末綜合卷",
+  "fr": "Examen final – niveau C1",
+  "minutes": 100,
+  "desc": "從 C1 題庫隨機抽 14 題文法與詞彙，加上一篇閱讀和一題寫作。每次抽到的文法題都不同。",
+  "sections": [
+    {
+      "kind": "bank",
+      "title": "文法與詞彙",
+      "fr": "Grammaire et vocabulaire",
+      "instruction": "從題庫隨機抽題，每次作答題目都不同。",
+      "bank": {
+        "choice": 6,
+        "fill": 5,
+        "short": 3
+      }
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "On oppose volontiers la lecture sur papier à la lecture sur écran, comme s'il s'agissait d'un combat dont l'une sortirait vainqueur. Les études récentes invitent pourtant à plus de nuance. Pour des textes courts et informatifs, la différence de compréhension entre les deux supports semble négligeable. En revanche, dès qu'il s'agit de textes longs et complexes, les lecteurs sur papier obtiennent, en moyenne, de meilleurs résultats. L'explication tiendrait moins à l'écran lui-même qu'aux habitudes qu'il suscite : sur un support numérique, on a tendance à survoler, à chercher l'information plutôt qu'à suivre un raisonnement. Autrement dit, ce n'est pas tant l'outil qui pose problème que la manière dont nous avons appris à nous en servir."
+      },
+      "questions": [
+        {
+          "id": "final-c1-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pour les textes courts et informatifs, …",
+          "options": [
+            "le support change peu la compréhension",
+            "le papier est nettement meilleur",
+            "l'écran est nettement meilleur",
+            "on ne comprend rien"
+          ],
+          "answer": 0,
+          "explanation": "la différence… semble négligeable。"
+        },
+        {
+          "id": "final-c1-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon l'auteur, le problème vient surtout…",
+          "options": [
+            "de nos habitudes de lecture sur écran",
+            "de la lumière des écrans",
+            "de la qualité des textes",
+            "du prix des livres"
+          ],
+          "answer": 0,
+          "explanation": "L'explication tiendrait moins à l'écran lui-même qu'aux habitudes qu'il suscite。"
+        },
+        {
+          "id": "final-c1-q03",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Ce n'est pas tant l'outil qui pose problème que la ___ dont nous avons appris à nous en servir.",
+          "answers": [
+            "manière",
+            "façon"
+          ],
+          "explanation": "ce n'est pas tant A que B：與其說是 A，不如說是 B。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Le gouvernement propose d'instaurer un service civique obligatoire de six mois pour tous les jeunes de 18 ans. Vous rédigez un essai argumenté sur cette proposition. (250 mots minimum)",
+        "minWords": 250,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Faut-il rendre le service civique obligatoire ?\n\nDans une société souvent décrite comme fragmentée, l'idée d'un service civique obligatoire séduit par sa simplicité : six mois au service de la collectivité pour apprendre à vivre ensemble. La proposition mérite toutefois d'être examinée avec soin.\n\nSes partisans avancent des arguments solides. Un tel service permettrait à des jeunes de milieux différents de se rencontrer, ce que l'école ne garantit plus toujours. Il offrirait aussi une première expérience concrète, utile pour s'orienter et découvrir des métiers méconnus, et renforcerait, chez beaucoup d'entre eux, le sentiment d'appartenance à une communauté.\n\nPour autant, l'obligation pose question. Un engagement imposé perd une partie de son sens : peut-on vraiment apprendre la solidarité sous la contrainte ? Par ailleurs, retarder de six mois les études ou l'entrée dans la vie active pourrait pénaliser les jeunes les plus fragiles. Enfin, encadrer chaque année plusieurs centaines de milliers de jeunes représenterait un coût considérable, au risque de proposer des missions sans réel intérêt.\n\nPlutôt qu'une obligation, il me semble préférable de rendre le service civique plus attractif : mieux le rémunérer, le reconnaître dans les parcours d'études et le faire connaître auprès de tous les publics. L'objectif d'un engagement partagé serait ainsi poursuivi, sans renoncer à la liberté qui en fait la valeur.\n\nEn somme, la question n'est pas tant de savoir s'il faut encourager l'engagement des jeunes que de choisir les moyens les plus justes pour y parvenir."
+      }
+    }
+  ]
+}

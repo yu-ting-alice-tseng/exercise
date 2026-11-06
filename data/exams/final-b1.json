@@ -1,0 +1,90 @@
+{
+  "id": "final-b1",
+  "exam": "final",
+  "level": "B1",
+  "title": "B1 期末綜合卷",
+  "fr": "Examen final – niveau B1",
+  "minutes": 75,
+  "desc": "從 B1 題庫隨機抽 15 題文法與詞彙，加上一篇閱讀和一題寫作。每次抽到的文法題都不同。",
+  "sections": [
+    {
+      "kind": "bank",
+      "title": "文法與詞彙",
+      "fr": "Grammaire et vocabulaire",
+      "instruction": "從題庫隨機抽題，每次作答題目都不同。",
+      "bank": {
+        "choice": 6,
+        "fill": 6,
+        "short": 3
+      }
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Depuis septembre, le collège Jean-Moulin teste une nouvelle règle : les élèves doivent déposer leur téléphone dans une boîte à l'entrée de la classe. Au début, beaucoup ont protesté. Trois mois plus tard, le bilan est plutôt positif : les professeurs constatent que les élèves sont plus attentifs et que les conflits pendant la récréation ont diminué. Certains parents restent cependant inquiets, car ils ne peuvent plus joindre leurs enfants en cas d'urgence. L'établissement leur rappelle qu'ils peuvent toujours appeler le secrétariat."
+      },
+      "questions": [
+        {
+          "id": "final-b1-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon les professeurs, depuis la nouvelle règle, les élèves…",
+          "options": [
+            "sont plus attentifs",
+            "ont de moins bonnes notes",
+            "protestent toujours",
+            "arrivent en retard"
+          ],
+          "answer": 0,
+          "explanation": "les élèves sont plus attentifs。"
+        },
+        {
+          "id": "final-b1-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pourquoi certains parents sont-ils inquiets ?",
+          "options": [
+            "Ils ne peuvent plus joindre leurs enfants",
+            "Les téléphones peuvent être volés",
+            "Les élèves ont plus de devoirs",
+            "La récréation est plus courte"
+          ],
+          "answer": 0,
+          "explanation": "ils ne peuvent plus joindre leurs enfants en cas d'urgence。"
+        },
+        {
+          "id": "final-b1-q03",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "En cas d'urgence, les parents peuvent appeler le ___.",
+          "answers": [
+            "secrétariat"
+          ],
+          "explanation": "ils peuvent toujours appeler le secrétariat。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Vous avez passé une semaine dans une famille d'accueil en France. Écrivez-leur une lettre pour les remercier : racontez ce que vous avez aimé et dites ce que vous ferez quand vous les reverrez. (120 mots minimum)",
+        "minWords": 120,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Chère famille Martin,\n\nJe suis bien rentrée à Taipei et je voulais vous remercier pour cette semaine merveilleuse. Grâce à vous, je me suis sentie chez moi dès le premier jour.\n\nJ'ai particulièrement aimé nos dîners en famille : vos plats étaient délicieux, et j'ai beaucoup appris en parlant avec vous. Je garde aussi un excellent souvenir de notre promenade au bord du lac et de la soirée où Paul m'a appris à jouer à la pétanque !\n\nQuand je reviendrai en France, l'été prochain, j'aimerais beaucoup vous revoir. Je vous apporterai du thé de Taïwan et je vous préparerai un repas taïwanais. Et si un jour vous venez à Taïwan, je serai très heureuse de vous faire découvrir mon pays.\n\nJe vous embrasse,\nMei"
+      }
+    }
+  ]
+}

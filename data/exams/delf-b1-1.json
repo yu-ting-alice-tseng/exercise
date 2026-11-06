@@ -1,0 +1,191 @@
+{
+  "id": "delf-b1-1",
+  "exam": "delf",
+  "level": "B1",
+  "title": "DELF B1 模擬卷 1",
+  "fr": "DELF B1 – Sujet d'entraînement 1",
+  "minutes": 90,
+  "desc": "聽力 1 段訪談、閱讀 2 篇、寫作 1 題（發表意見）。真實考試另有口說測驗。",
+  "sections": [
+    {
+      "kind": "listening",
+      "title": "聽力：訪談",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "A : Vous travaillez depuis chez vous trois jours par semaine. Qu'est-ce que cela a changé pour vous ?\nB : D'abord, je ne perds plus deux heures par jour dans les transports. J'ai donc plus de temps pour ma famille et pour faire du sport.\nA : Et du côté du travail ?\nB : Je suis plus concentrée, parce qu'il y a moins de bruit qu'au bureau. Mais le contact avec mes collègues me manque. C'est pour ça que je tiens à aller au bureau deux jours par semaine.\nA : Vous conseilleriez le télétravail à tout le monde ?\nB : Non, pas forcément. Il faut savoir s'organiser et séparer vie professionnelle et vie privée. Sinon, on finit par travailler tout le temps.",
+        "speak": true,
+        "dialogue": true
+      },
+      "questions": [
+        {
+          "id": "delf-b1-1-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La femme travaille chez elle…",
+          "options": [
+            "trois jours par semaine",
+            "deux jours par semaine",
+            "tous les jours",
+            "le week-end"
+          ],
+          "answer": 0,
+          "explanation": "depuis chez vous trois jours par semaine。"
+        },
+        {
+          "id": "delf-b1-1-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Grâce au télétravail, elle…",
+          "options": [
+            "gagne deux heures de transport par jour",
+            "gagne plus d'argent",
+            "voit plus ses collègues",
+            "travaille moins"
+          ],
+          "answer": 0,
+          "explanation": "je ne perds plus deux heures par jour dans les transports。"
+        },
+        {
+          "id": "delf-b1-1-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Elle est plus concentrée chez elle parce que…",
+          "options": [
+            "c'est plus calme",
+            "elle a un meilleur ordinateur",
+            "son chef n'est pas là",
+            "elle commence plus tôt"
+          ],
+          "answer": 0,
+          "explanation": "il y a moins de bruit qu'au bureau。"
+        },
+        {
+          "id": "delf-b1-1-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Ce qui lui manque, c'est…",
+          "options": [
+            "le contact avec ses collègues",
+            "son bureau",
+            "les transports",
+            "le sport"
+          ],
+          "answer": 0,
+          "explanation": "le contact avec mes collègues me manque。注意 manquer 的主詞是「缺少的東西」。"
+        },
+        {
+          "id": "delf-b1-1-q05",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon elle, pour bien télétravailler, il faut…",
+          "options": [
+            "savoir s'organiser",
+            "avoir des enfants",
+            "habiter loin du bureau",
+            "travailler le soir"
+          ],
+          "answer": 0,
+          "explanation": "Il faut savoir s'organiser et séparer vie professionnelle et vie privée。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀一：報導",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "À Lyon, le nombre de cyclistes a doublé en cinq ans. La ville a construit plus de 100 kilomètres de nouvelles pistes cyclables et a limité la vitesse des voitures à 30 km/h dans la plupart des rues. Pour la mairie, l'objectif est double : diminuer la pollution et rendre la ville plus agréable.\n\nTout le monde n'est pas convaincu. Certains commerçants craignent de perdre des clients qui venaient en voiture. Les livreurs, eux, se plaignent de ne plus trouver de place pour s'arrêter. La mairie répond que les rues piétonnes attirent au contraire plus de promeneurs, et donc plus d'acheteurs. Elle prévoit aussi de créer des zones de livraison réservées.",
+        "title": "報導"
+      },
+      "questions": [
+        {
+          "id": "delf-b1-1-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "En cinq ans, le nombre de cyclistes…",
+          "options": [
+            "a été multiplié par deux",
+            "a diminué",
+            "est resté stable",
+            "a été multiplié par cinq"
+          ],
+          "answer": 0,
+          "explanation": "a doublé：變成兩倍。"
+        },
+        {
+          "id": "delf-b1-1-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quelle mesure la ville a-t-elle prise ?",
+          "options": [
+            "Limiter la vitesse des voitures",
+            "Interdire les voitures",
+            "Rendre les vélos gratuits",
+            "Fermer les commerces"
+          ],
+          "answer": 0,
+          "explanation": "a limité la vitesse des voitures à 30 km/h。"
+        },
+        {
+          "id": "delf-b1-1-q08",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les commerçants ont peur de…",
+          "options": [
+            "perdre des clients",
+            "payer plus d'impôts",
+            "fermer le dimanche",
+            "embaucher des livreurs"
+          ],
+          "answer": 0,
+          "explanation": "craignent de perdre des clients。"
+        },
+        {
+          "id": "delf-b1-1-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon la mairie, les rues piétonnes…",
+          "options": [
+            "attirent plus d'acheteurs",
+            "font fuir les clients",
+            "coûtent trop cher",
+            "sont dangereuses"
+          ],
+          "answer": 0,
+          "explanation": "les rues piétonnes attirent au contraire plus de promeneurs, et donc plus d'acheteurs。"
+        },
+        {
+          "id": "delf-b1-1-q10",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "La mairie va créer des zones de ___ réservées.",
+          "answers": [
+            "livraison"
+          ],
+          "explanation": "des zones de livraison réservées：送貨專用區。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Sur un forum, on discute de la question suivante : « Faut-il interdire le téléphone portable à l'école ? » Vous donnez votre opinion et vous l'illustrez par des exemples. (160 mots minimum)",
+        "minWords": 160,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Bonjour à tous,\n\nÀ mon avis, il ne faut pas interdire complètement le téléphone à l'école, mais il faut encadrer son utilisation.\n\nD'un côté, je comprends les professeurs. Pendant les cours, les téléphones distraient les élèves : on reçoit des messages, on regarde des vidéos et on n'écoute plus. Au collège, j'avais un camarade qui jouait sur son portable pendant presque tous les cours de maths, et ses notes étaient très mauvaises.\n\nD'un autre côté, le téléphone peut être utile. Les parents veulent pouvoir joindre leurs enfants en cas de problème. De plus, certains professeurs l'utilisent pour faire des quiz ou chercher des informations, ce qui rend le cours plus vivant.\n\nC'est pourquoi je propose une solution intermédiaire : les élèves déposent leur téléphone à l'entrée de la classe et le récupèrent à la fin du cours. Ainsi, ils restent concentrés, mais ils peuvent l'utiliser pendant les pauses.\n\nEt vous, qu'en pensez-vous ?\n\nThomas"
+      }
+    }
+  ]
+}

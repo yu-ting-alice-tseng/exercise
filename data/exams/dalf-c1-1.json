@@ -1,0 +1,201 @@
+{
+  "id": "dalf-c1-1",
+  "exam": "dalf",
+  "level": "C1",
+  "title": "DALF C1 模擬卷 1",
+  "fr": "DALF C1 – Sujet d'entraînement 1",
+  "minutes": 150,
+  "desc": "聽力 1 段講座、閱讀 1 篇長文、寫作 1 題（論證文章）。真實考試的寫作還包含資料統整，另有口說測驗。",
+  "sections": [
+    {
+      "kind": "listening",
+      "title": "聽力：講座",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Mesdames et messieurs, permettez-moi de commencer par un constat : en quelques décennies, nous aurions perdu en moyenne près d'une heure de sommeil par nuit. Ce déficit n'est pas anodin. Le sommeil n'est pas un simple temps de repos ; c'est pendant la nuit que le cerveau consolide les apprentissages de la journée. Un manque chronique de sommeil augmente par ailleurs les risques d'obésité, de diabète et de troubles de l'humeur.\n\nParmi les responsables, les écrans occupent une place de choix : la lumière qu'ils émettent retarde la sécrétion de mélatonine, l'hormone qui prépare l'endormissement. Mais ce serait une erreur d'en faire les seuls coupables. Les horaires de travail décalés, le bruit urbain et, plus largement, une culture qui valorise la performance au détriment du repos jouent également un rôle déterminant. Autrement dit, améliorer notre sommeil n'est pas qu'une affaire de discipline individuelle : c'est aussi un enjeu de santé publique.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "dalf-c1-1-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon le conférencier, en quelques décennies, nous aurions perdu…",
+          "options": [
+            "près d'une heure de sommeil par nuit",
+            "trois heures de sommeil par nuit",
+            "une nuit de sommeil par semaine",
+            "le goût du repos"
+          ],
+          "answer": 0,
+          "explanation": "nous aurions perdu en moyenne près d'une heure de sommeil par nuit（條件式表示引述、未完全證實）。"
+        },
+        {
+          "id": "dalf-c1-1-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pendant la nuit, le cerveau…",
+          "options": [
+            "consolide ce qu'on a appris",
+            "se met complètement au repos",
+            "produit moins de mélatonine",
+            "oublie les soucis"
+          ],
+          "answer": 0,
+          "explanation": "le cerveau consolide les apprentissages de la journée。"
+        },
+        {
+          "id": "dalf-c1-1-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les écrans perturbent le sommeil parce qu'ils…",
+          "options": [
+            "retardent la production d'une hormone",
+            "font du bruit",
+            "fatiguent les yeux",
+            "nous font travailler plus"
+          ],
+          "answer": 0,
+          "explanation": "la lumière… retarde la sécrétion de mélatonine。"
+        },
+        {
+          "id": "dalf-c1-1-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le conférencier pense que les écrans…",
+          "options": [
+            "ne sont pas les seuls responsables",
+            "sont les seuls responsables",
+            "n'ont aucun effet",
+            "sont bénéfiques"
+          ],
+          "answer": 0,
+          "explanation": "ce serait une erreur d'en faire les seuls coupables。"
+        },
+        {
+          "id": "dalf-c1-1-q05",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Améliorer le sommeil est aussi un enjeu de santé ___.",
+          "answers": [
+            "publique"
+          ],
+          "explanation": "un enjeu de santé publique：公共衛生議題。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀：長文",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "La traduction automatique a fait en quelques années des progrès spectaculaires. Là où les premiers logiciels produisaient des phrases maladroites, souvent incompréhensibles, les outils fondés sur l'intelligence artificielle livrent aujourd'hui des textes fluides, parfois difficiles à distinguer d'une traduction humaine. Faut-il pour autant annoncer la disparition du métier de traducteur ?\n\nRien n'est moins sûr. D'abord, la fluidité peut être trompeuse : un texte qui « sonne bien » n'est pas nécessairement fidèle. Les erreurs de sens, plus rares, deviennent aussi plus difficiles à repérer, précisément parce qu'elles se fondent dans une langue impeccable. Dans les domaines juridique ou médical, où une nuance peut avoir des conséquences graves, la relecture humaine demeure indispensable.\n\nEnsuite, traduire ne consiste pas seulement à transposer des mots. Un slogan publicitaire, un poème ou une plaisanterie exigent de comprendre une culture, un public, une intention. C'est ce que les professionnels appellent l'adaptation, voire la « transcréation ».\n\nLe métier ne disparaît donc pas : il se transforme. De nombreux traducteurs consacrent désormais une part croissante de leur temps à la post-édition, c'est-à-dire à la correction de textes prétraduits par la machine. Certains y voient un gain de productivité ; d'autres déplorent un travail plus mécanique et moins bien rémunéré. Reste une question que la technique seule ne tranchera pas : quelle valeur sommes-nous prêts à accorder au travail de la langue ?",
+        "title": "論說文"
+      },
+      "questions": [
+        {
+          "id": "dalf-c1-1-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Aujourd'hui, les outils de traduction automatique…",
+          "options": [
+            "produisent des textes fluides",
+            "produisent des phrases incompréhensibles",
+            "ont remplacé tous les traducteurs",
+            "ne traduisent que des mots isolés"
+          ],
+          "answer": 0,
+          "explanation": "livrent aujourd'hui des textes fluides。"
+        },
+        {
+          "id": "dalf-c1-1-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pourquoi la fluidité est-elle « trompeuse » ?",
+          "options": [
+            "Elle cache des erreurs de sens",
+            "Elle rend les textes trop longs",
+            "Elle coûte cher",
+            "Elle n'existe pas vraiment"
+          ],
+          "answer": 0,
+          "explanation": "les erreurs… plus difficiles à repérer, précisément parce qu'elles se fondent dans une langue impeccable。"
+        },
+        {
+          "id": "dalf-c1-1-q08",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Dans quels domaines la relecture humaine reste-t-elle indispensable ?",
+          "options": [
+            "Juridique et médical",
+            "Sportif et culinaire",
+            "Touristique et scolaire",
+            "Publicitaire uniquement"
+          ],
+          "answer": 0,
+          "explanation": "Dans les domaines juridique ou médical。"
+        },
+        {
+          "id": "dalf-c1-1-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La « transcréation » consiste à…",
+          "options": [
+            "adapter un texte à une culture et à un public",
+            "corriger une traduction automatique",
+            "traduire mot à mot",
+            "créer un logiciel de traduction"
+          ],
+          "answer": 0,
+          "explanation": "exigent de comprendre une culture, un public, une intention。"
+        },
+        {
+          "id": "dalf-c1-1-q10",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La post-édition est…",
+          "options": [
+            "la correction de textes prétraduits par la machine",
+            "l'écriture de poèmes",
+            "la publication d'un livre",
+            "l'enseignement des langues"
+          ],
+          "answer": 0,
+          "explanation": "c'est-à-dire à la correction de textes prétraduits par la machine。"
+        },
+        {
+          "id": "dalf-c1-1-q11",
+          "type": "fill",
+          "instruction": "請填入一個字（原文的動詞）",
+          "stem": "Le métier ne disparaît pas : il se ___.",
+          "answers": [
+            "transforme"
+          ],
+          "explanation": "il se transforme：轉型。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "« L'intelligence artificielle rendra bientôt inutile l'apprentissage des langues étrangères. » Vous rédigez un article pour la revue de votre université dans lequel vous discutez cette affirmation de façon argumentée et nuancée. (250 mots minimum)",
+        "minWords": 250,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Apprendre une langue à l'ère de l'IA : un effort dépassé ?\n\nIl suffit aujourd'hui de parler à son téléphone pour être traduit presque instantanément. Dès lors, nombreux sont ceux qui s'interrogent : pourquoi consacrer des années à apprendre une langue étrangère ? L'argument mérite d'être pris au sérieux, mais il repose, me semble-t-il, sur une conception bien étroite de ce que signifie parler une langue.\n\nCertes, pour des besoins ponctuels, la machine est redoutablement efficace. Commander un repas, lire un mode d'emploi ou comprendre un panneau ne nécessite plus de connaissances linguistiques. Pour le voyageur occasionnel, l'apprentissage peut donc sembler superflu.\n\nPour autant, une langue n'est pas un simple code. La maîtriser, c'est accéder à une manière de voir le monde, à un humour, à des références qu'aucune traduction ne restitue pleinement. Une conversation traduite par une machine reste une conversation à distance : elle transmet des informations, mais rarement de la complicité. Par ailleurs, de nombreuses études montrent que l'apprentissage d'une langue développe la mémoire et la souplesse intellectuelle, bénéfices que la technologie ne saurait offrir.\n\nEnfin, s'en remettre entièrement à la machine, c'est accepter une forme de dépendance : comment vérifier une traduction lorsqu'on ignore tout de la langue d'arrivée ?\n\nEn définitive, l'intelligence artificielle ne rend pas l'apprentissage inutile ; elle en modifie les motivations. On apprendra peut-être moins une langue par nécessité, mais davantage par désir de rencontre et de compréhension. Et c'est, au fond, la meilleure raison qui soit."
+      }
+    }
+  ]
+}
