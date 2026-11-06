@@ -95,6 +95,48 @@ function save(p: Progress) {
   }
 }
 
+/* ===== 尚未上傳到雲端的變更 ===== */
+
+const DIRTY_KEY = "french-quiz:dirty:v1";
+export const DIRTY_EVENT = "french-quiz:dirty";
+
+export interface Dirty {
+  q: string[];
+  s: string[];
+}
+
+export function loadDirty(): Dirty {
+  try {
+    const d = JSON.parse(localStorage.getItem(DIRTY_KEY) ?? "null") as Dirty | null;
+    if (d && Array.isArray(d.q) && Array.isArray(d.s)) return d;
+  } catch {}
+  return { q: [], s: [] };
+}
+
+export function saveDirty(d: Dirty) {
+  try {
+    localStorage.setItem(DIRTY_KEY, JSON.stringify({ q: [...new Set(d.q)], s: [...new Set(d.s)] }));
+  } catch {}
+}
+
+/** 記下有變動的題目和練習紀錄，登入時會自動上傳 */
+export function markDirty(q: string[], s: string[]) {
+  const d = loadDirty();
+  saveDirty({ q: [...d.q, ...q], s: [...d.s, ...s] });
+  try {
+    window.dispatchEvent(new Event(DIRTY_EVENT));
+  } catch {}
+}
+
+/** 直接覆寫整份本機紀錄（雲端同步時使用，不會標記為待上傳） */
+export function replaceProgress(p: Progress) {
+  save(p);
+}
+
+export function loadProgress(): Progress {
+  return load();
+}
+
 /* ===== 卡片盒排程 ===== */
 
 /** 依照作答前的狀態和這次的結果，算出新的狀態 */
@@ -161,6 +203,7 @@ export function recordSession(
   p.s.push({ id: sessionId, at: now, sec: meta.sec, kind: meta.kind, level: meta.level, title: meta.title, res, g });
   if (p.s.length > MAX_SESSIONS) p.s = p.s.slice(-MAX_SESSIONS);
   save(p);
+  markDirty(Object.keys(res), [sessionId]);
   return { sessionId, prev };
 }
 
@@ -173,6 +216,7 @@ export function updateAnswer(sessionId: string, id: string, grammar: string, res
   s.g[id] = grammar;
   p.q[id] = schedule(prev, result, s.at);
   save(p);
+  markDirty([id], [sessionId]);
 }
 
 /** 把題目移出錯題本（標記為已掌握） */
@@ -180,13 +224,15 @@ export function markMastered(id: string) {
   const p = load();
   const q = p.q[id];
   if (!q) return;
-  p.q[id] = { ...q, box: MASTERED, due: 0 };
+  p.q[id] = { ...q, box: MASTERED, due: 0, last: Date.now() };
   save(p);
+  markDirty([id], []);
 }
 
 export function clearProgress() {
   try {
     localStorage.removeItem(KEY);
+    localStorage.removeItem(DIRTY_KEY);
     window.dispatchEvent(new Event(EVENT));
   } catch {}
 }
@@ -208,6 +254,7 @@ export function importProgress(json: string): { questions: number; sessions: num
   p.s.sort((a, b) => a.at - b.at);
   if (p.s.length > MAX_SESSIONS) p.s = p.s.slice(-MAX_SESSIONS);
   save(p);
+  markDirty(Object.keys(incoming.q), incoming.s.map((s) => s.id));
   return { questions: Object.keys(incoming.q).length, sessions: incoming.s.length };
 }
 
@@ -287,4 +334,26 @@ export { DAY };
 /** 讀取單一題目目前的狀態（用於簡答自評前保存原狀態） */
 export function getStat(id: string): QStat | undefined {
   return load().q[id];
+}
+
+/* ===== 合併雲端與本機紀錄 ===== */
+
+/**
+ * 合併兩份紀錄：同一題保留最後作答時間較新的狀態，練習紀錄依 id 取聯集。
+ * 回傳合併結果，以及「本機比較新、需要上傳」的項目。
+ */
+export function mergeProgress(local: Progress, remote: Progress): { merged: Progress; upload: Dirty } {
+  const q: Record<string, QStat> = { ...remote.q };
+  const upQ: string[] = [];
+  for (const [id, st] of Object.entries(local.q)) {
+    const r = remote.q[id];
+    if (!r || st.last > r.last) {
+      q[id] = st;
+      upQ.push(id);
+    }
+  }
+  const remoteIds = new Set(remote.s.map((s) => s.id));
+  const extra = local.s.filter((s) => !remoteIds.has(s.id));
+  const s = [...remote.s, ...extra].sort((a, b) => a.at - b.at).slice(-MAX_SESSIONS);
+  return { merged: { v: 1, q, s }, upload: { q: upQ, s: extra.map((x) => x.id) } };
 }

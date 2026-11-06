@@ -25,6 +25,8 @@ import { LEVELS, topicName } from "@/lib/taxonomy";
 import type { Level } from "@/lib/types";
 import { useProgress } from "@/lib/useProgress";
 import { useNow } from "@/lib/useNow";
+import { useAuth } from "@/lib/auth";
+import { deleteCloudProgress } from "@/lib/sync";
 
 const LEVEL_OF = new Map(BANK.map((q) => [q.id, q.level]));
 const WEEKS = 12;
@@ -441,6 +443,8 @@ function DailyBars({ days, today }: { days: Map<string, DayStat>; today: number 
 function DataTools() {
   const fileRef = useRef<HTMLInputElement>(null);
   const [msg, setMsg] = useState<string | null>(null);
+  const auth = useAuth();
+  const signedIn = auth.status === "signedIn";
 
   function download() {
     const blob = new Blob([exportProgress()], { type: "application/json" });
@@ -467,7 +471,19 @@ function DataTools() {
       <div className="eyebrow">Sauvegarde</div>
       <h2 className="display text-lg font-bold">備份與搬移紀錄</h2>
       <p className="mt-1 text-sm text-muted">
-        紀錄只存在這台裝置的瀏覽器裡。換手機或電腦時，先在這裡下載備份，再到新裝置匯入；清除瀏覽器資料也會讓紀錄消失。
+        {signedIn ? (
+          <>已登入 {auth.user?.email}，紀錄會自動同步到雲端，換裝置登入同一個帳號就能接著練習。也可以另外下載一份備份。</>
+        ) : auth.status === "signedOut" ? (
+          <>
+            目前紀錄只存在這台裝置的瀏覽器裡。
+            <Link href="/account/" className="text-accent underline underline-offset-2">
+              登入
+            </Link>
+            後會自動同步到雲端，換手機或電腦也不會不見。
+          </>
+        ) : (
+          <>紀錄只存在這台裝置的瀏覽器裡。換手機或電腦時，先在這裡下載備份，再到新裝置匯入；清除瀏覽器資料也會讓紀錄消失。</>
+        )}
       </p>
       <div className="mt-3 flex flex-wrap gap-2">
         <button type="button" className={btnQuiet} onClick={download}>
@@ -479,10 +495,17 @@ function DataTools() {
         <button
           type="button"
           className={`${btnQuiet} text-bad`}
-          onClick={() => {
-            if (window.confirm("確定要清除這台裝置上所有的學習紀錄嗎？這個動作無法復原。")) {
+          onClick={async () => {
+            const text = signedIn
+              ? "確定要清除所有學習紀錄嗎？這台裝置和雲端上的紀錄都會刪除，無法復原。"
+              : "確定要清除這台裝置上所有的學習紀錄嗎？這個動作無法復原。";
+            if (!window.confirm(text)) return;
+            try {
+              if (signedIn) await deleteCloudProgress();
               clearProgress();
               setMsg("已清除學習紀錄。");
+            } catch {
+              setMsg("清除雲端紀錄失敗，請稍後再試。");
             }
           }}
         >

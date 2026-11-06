@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import CloudBoot from "@/components/CloudBoot";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -43,6 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
         </header>
+        <CloudBoot />
         <div className="flex-1">{children}</div>
         <footer className="no-print mt-10 pb-28 text-center lg:pb-10">
           <div className="mx-auto mb-3 flex w-16 overflow-hidden rounded-full">

@@ -53,3 +53,11 @@ push 到 `main` 分支後，GitHub Actions 會自動檢查題庫、建置並部�
 `https://<帳號>.github.io/<repo 名稱>/`。
 
 第一次使用前，到 repo 的 **Settings → Pages → Source** 選擇 **GitHub Actions**。
+
+## 登入與雲端資料庫（選用）
+
+設定 Supabase 後，網站會出現登入功能：學習紀錄同步到雲端，老師可以建立班級、追蹤學生進度。
+設定步驟見 [docs/supabase-setup.md](docs/supabase-setup.md)。沒有設定時，紀錄只存在各自的瀏覽器裡。
+
+- 資料表與權限規則：`supabase/migrations/0001_init.sql`
+- 登入狀態：`lib/auth.ts`；同步：`lib/sync.ts`；班級：`lib/classes.ts`

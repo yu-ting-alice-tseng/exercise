@@ -29,6 +29,10 @@ jobs:
         env:
           # 網址是 https://<帳號>.github.io/<repo 名稱>/
           BASE_PATH: /${{ github.event.repository.name }}
+          # Supabase 的網址與 publishable key（在 repo 的 Settings → Secrets and variables → Actions → Variables 設定）
+          # 沒有設定時，網站維持「紀錄只存在本機」的模式
+          NEXT_PUBLIC_SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_KEY: ${{ vars.SUPABASE_PUBLISHABLE_KEY }}
       - run: touch out/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
