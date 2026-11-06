@@ -1,0 +1,299 @@
+{
+  "id": "delf-a2-3",
+  "exam": "delf",
+  "level": "A2",
+  "title": "DELF A2 模擬卷 3",
+  "fr": "DELF A2 – Sujet d'entraînement 3",
+  "minutes": 75,
+  "desc": "聽力 2 段、閱讀 2 篇、寫作 1 題。真實考試另有口說測驗。",
+  "sections": [
+    {
+      "kind": "listening",
+      "title": "聽力一：電台廣告",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Envie de bouger ? Le centre sportif Atlantis ouvre ses portes le 1er mars ! Piscine, salle de musculation, cours de yoga et de danse : il y en a pour tous les goûts. Pour l'ouverture, le premier mois est gratuit pour toute inscription avant le 15 mars. Le centre est ouvert tous les jours de 7 heures à 22 heures.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "delf-a2-3-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Atlantis est…",
+          "options": [
+            "un centre sportif",
+            "un cinéma",
+            "un restaurant",
+            "une école de danse seulement"
+          ],
+          "answer": 0,
+          "explanation": "Le centre sportif Atlantis。"
+        },
+        {
+          "id": "delf-a2-3-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "On peut y faire…",
+          "options": [
+            "de la natation et du yoga",
+            "du tennis et du golf",
+            "de l'équitation",
+            "du ski"
+          ],
+          "answer": 0,
+          "explanation": "Piscine… cours de yoga et de danse。"
+        },
+        {
+          "id": "delf-a2-3-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le premier mois est gratuit si on s'inscrit…",
+          "options": [
+            "avant le 15 mars",
+            "avant le 1er mars",
+            "en avril",
+            "le week-end"
+          ],
+          "answer": 0,
+          "explanation": "pour toute inscription avant le 15 mars。"
+        },
+        {
+          "id": "delf-a2-3-q04",
+          "type": "fill",
+          "instruction": "請填入數字（可用阿拉伯數字或法文）",
+          "stem": "Le centre ferme à ___ heures.",
+          "answers": [
+            "22",
+            "vingt-deux"
+          ],
+          "explanation": "ouvert… de 7 heures à 22 heures。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力二：在服飾店",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "A : Bonjour, je peux vous aider ?\nB : Oui, je cherche ce pull en taille M, mais en bleu.\nA : Désolée, en bleu, il ne reste que du S et du L. Mais nous l'avons en vert, en taille M.\nB : Hmm, le vert ne me va pas très bien… Vous allez en recevoir ?\nA : Oui, mardi prochain. Je peux vous en mettre un de côté.\nB : Super, merci ! Je repasserai mercredi.",
+        "speak": true,
+        "dialogue": true
+      },
+      "questions": [
+        {
+          "id": "delf-a2-3-q05",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La cliente cherche un pull…",
+          "options": [
+            "bleu, en taille M",
+            "vert, en taille M",
+            "bleu, en taille S",
+            "noir, en taille L"
+          ],
+          "answer": 0,
+          "explanation": "je cherche ce pull en taille M, mais en bleu。"
+        },
+        {
+          "id": "delf-a2-3-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel est le problème ?",
+          "options": [
+            "Il n'y a plus de taille M en bleu",
+            "Le pull est trop cher",
+            "Le magasin est fermé",
+            "Le pull est abîmé"
+          ],
+          "answer": 0,
+          "explanation": "en bleu, il ne reste que du S et du L。"
+        },
+        {
+          "id": "delf-a2-3-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le magasin va recevoir des pulls…",
+          "options": [
+            "mardi prochain",
+            "demain",
+            "mercredi",
+            "dans un mois"
+          ],
+          "answer": 0,
+          "explanation": "Oui, mardi prochain。"
+        },
+        {
+          "id": "delf-a2-3-q08",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La cliente reviendra…",
+          "options": [
+            "mercredi",
+            "mardi",
+            "samedi",
+            "la semaine suivante"
+          ],
+          "answer": 0,
+          "explanation": "Je repasserai mercredi。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀一：報導",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Le premier dimanche de chaque mois, de nombreux musées nationaux sont gratuits en France. Cette mesure permet à tous de découvrir les collections, même avec un petit budget. Mais attention : ces jours-là, il y a souvent beaucoup de monde. Pour éviter les longues files d'attente, il est conseillé d'arriver dès l'ouverture ou de réserver un créneau en ligne quand c'est possible. Les jeunes de moins de 26 ans qui habitent dans l'Union européenne peuvent aussi entrer gratuitement toute l'année dans les musées nationaux.",
+        "title": "報導"
+      },
+      "questions": [
+        {
+          "id": "delf-a2-3-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Beaucoup de musées nationaux sont gratuits…",
+          "options": [
+            "le premier dimanche du mois",
+            "tous les dimanches",
+            "le premier lundi du mois",
+            "pendant les vacances"
+          ],
+          "answer": 0,
+          "explanation": "Le premier dimanche de chaque mois。"
+        },
+        {
+          "id": "delf-a2-3-q10",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le problème de ces journées, c'est…",
+          "options": [
+            "qu'il y a beaucoup de monde",
+            "que les musées ferment tôt",
+            "qu'il faut payer la réservation",
+            "que les collections sont fermées"
+          ],
+          "answer": 0,
+          "explanation": "il y a souvent beaucoup de monde。"
+        },
+        {
+          "id": "delf-a2-3-q11",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pour éviter d'attendre, on conseille…",
+          "options": [
+            "d'arriver tôt ou de réserver",
+            "de venir le soir",
+            "de venir en groupe",
+            "d'acheter une carte"
+          ],
+          "answer": 0,
+          "explanation": "arriver dès l'ouverture ou… réserver un créneau en ligne。"
+        },
+        {
+          "id": "delf-a2-3-q12",
+          "type": "fill",
+          "instruction": "請填入數字",
+          "stem": "Les jeunes de moins de ___ ans résidant dans l'UE entrent gratuitement toute l'année.",
+          "answers": [
+            "26",
+            "vingt-six"
+          ],
+          "explanation": "Les jeunes de moins de 26 ans…。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀二：分租廣告",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "COLOCATION – Nous sommes deux étudiants (21 et 23 ans) et nous cherchons un(e) troisième colocataire pour notre appartement de 80 m² près de la gare. Chambre de 12 m² avec bureau ; cuisine et salle de bains partagées. 380 € par mois + 40 € de charges. Nous sommes calmes, mais nous aimons cuisiner ensemble le dimanche soir ! Animaux non acceptés.",
+        "title": "廣告"
+      },
+      "questions": [
+        {
+          "id": "delf-a2-3-q13",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Combien de personnes habitent déjà dans l'appartement ?",
+          "options": [
+            "Deux",
+            "Trois",
+            "Une",
+            "Quatre"
+          ],
+          "answer": 0,
+          "explanation": "Nous sommes deux étudiants。"
+        },
+        {
+          "id": "delf-a2-3-q14",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Au total, la chambre coûte…",
+          "options": [
+            "420 € par mois",
+            "380 € par mois",
+            "340 € par mois",
+            "800 € par mois"
+          ],
+          "answer": 0,
+          "explanation": "380 € + 40 € de charges = 420 €。"
+        },
+        {
+          "id": "delf-a2-3-q15",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le dimanche soir, les colocataires…",
+          "options": [
+            "cuisinent ensemble",
+            "font la fête",
+            "vont au cinéma",
+            "rentrent chez leurs parents"
+          ],
+          "answer": 0,
+          "explanation": "nous aimons cuisiner ensemble le dimanche soir。"
+        },
+        {
+          "id": "delf-a2-3-q16",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les colocataires n'acceptent pas…",
+          "options": [
+            "les animaux",
+            "les fumeurs",
+            "les étudiants",
+            "les visites"
+          ],
+          "answer": 0,
+          "explanation": "Animaux non acceptés。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Vous cherchez un(e) colocataire. Vous écrivez une petite annonce : vous présentez votre logement, vous vous présentez et vous dites quel(le) colocataire vous cherchez. (60 à 80 mots)",
+        "minWords": 60,
+        "rubric": [
+          "有符合題目要求的情境（寫給誰、為什麼寫）",
+          "內容完整回答了題目要的每一點",
+          "有適當的開頭和結尾（稱呼、問候、署名）",
+          "用字正確、拼寫正確",
+          "動詞變化與時態正確",
+          "字數符合要求"
+        ],
+        "model": "Cherche colocataire !\n\nJe m'appelle Hana, j'ai 24 ans et je suis infirmière. J'habite dans un grand appartement de trois pièces, au centre-ville, à cinq minutes du métro. La chambre libre est lumineuse et elle a un grand placard. Le loyer est de 450 euros par mois, charges comprises. Je cherche une personne calme, propre et sympathique, qui aime partager un repas de temps en temps. Les non-fumeurs sont préférés.\n\nContactez-moi !",
+        "maxWords": 80
+      }
+    }
+  ]
+}

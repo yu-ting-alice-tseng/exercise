@@ -1,0 +1,201 @@
+{
+  "id": "dalf-c1-2",
+  "exam": "dalf",
+  "level": "C1",
+  "title": "DALF C1 模擬卷 2",
+  "fr": "DALF C1 – Sujet d'entraînement 2",
+  "minutes": 150,
+  "desc": "聽力 1 段講座、閱讀 1 篇長文、寫作 1 題（公開信）。真實考試另有資料統整與口說測驗。",
+  "sections": [
+    {
+      "kind": "listening",
+      "title": "聽力：講座",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "On dit souvent que, sur Internet, « si c'est gratuit, c'est vous le produit ». La formule est juste, mais incomplète. Ce que vendent les plateformes, ce n'est pas tant nous-mêmes que notre attention, c'est-à-dire du temps de cerveau disponible, revendu aux annonceurs. D'où une course à la captation : notifications, défilement infini, lecture automatique des vidéos… Chacun de ces dispositifs a été conçu pour réduire au minimum les moments où nous pourrions décider de nous arrêter.\n\nFaut-il pour autant tout miser sur la volonté individuelle ? Je ne le crois pas. Demander à chacun de résister seul à des systèmes optimisés par des milliers d'ingénieurs, c'est un peu comme demander à un nageur de remonter le courant à la seule force des bras. La régulation de ces techniques, au même titre que celle de la publicité, me paraît donc indispensable.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "dalf-c1-2-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon le conférencier, les plateformes vendent surtout…",
+          "options": [
+            "notre attention",
+            "nos données bancaires",
+            "des abonnements",
+            "des objets"
+          ],
+          "answer": 0,
+          "explanation": "ce n'est pas tant nous-mêmes que notre attention。"
+        },
+        {
+          "id": "dalf-c1-2-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les notifications et le défilement infini visent à…",
+          "options": [
+            "nous empêcher de nous arrêter",
+            "nous informer plus vite",
+            "économiser de l'énergie",
+            "protéger nos données"
+          ],
+          "answer": 0,
+          "explanation": "réduire au minimum les moments où nous pourrions décider de nous arrêter。"
+        },
+        {
+          "id": "dalf-c1-2-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Que pense-t-il de la volonté individuelle ?",
+          "options": [
+            "Elle ne suffit pas",
+            "C'est la seule solution",
+            "Elle est inutile pour les jeunes",
+            "Elle est plus forte que la technologie"
+          ],
+          "answer": 0,
+          "explanation": "Faut-il pour autant tout miser sur la volonté individuelle ? Je ne le crois pas。"
+        },
+        {
+          "id": "dalf-c1-2-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "L'image du nageur illustre…",
+          "options": [
+            "la difficulté de résister seul",
+            "le plaisir du sport",
+            "la vitesse d'Internet",
+            "l'efficacité des ingénieurs"
+          ],
+          "answer": 0,
+          "explanation": "remonter le courant à la seule force des bras：一個人逆流而上。"
+        },
+        {
+          "id": "dalf-c1-2-q05",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Pour lui, la régulation de ces techniques est ___.",
+          "answers": [
+            "indispensable"
+          ],
+          "explanation": "me paraît donc indispensable。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀：長文",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Imaginée par l'urbaniste Carlos Moreno, la « ville du quart d'heure » repose sur une idée simple : chaque habitant devrait pouvoir accéder, en quinze minutes à pied ou à vélo, aux services essentiels de la vie quotidienne – travailler, se soigner, s'approvisionner, s'instruire et se divertir. Plusieurs métropoles s'en sont inspirées, à commencer par Paris.\n\nSes partisans y voient une réponse à plusieurs maux contemporains. Réduire les déplacements contraints, c'est diminuer la pollution et le temps perdu dans les transports ; c'est aussi revitaliser la vie de quartier et les commerces de proximité.\n\nLe concept n'échappe pourtant pas aux critiques. Certains y voient une utopie de centre-ville, difficilement transposable dans des banlieues peu denses, où les services sont dispersés. D'autres redoutent un effet pervers : en rendant certains quartiers plus agréables, on risquerait d'y faire grimper les prix immobiliers et d'en chasser les ménages modestes. Plus étonnant, le projet a suscité des rumeurs selon lesquelles il viserait à restreindre la liberté de circuler, une interprétation que ses concepteurs démentent catégoriquement.\n\nAu-delà de ces débats, la ville du quart d'heure a le mérite de déplacer la question. Plutôt que de chercher à aller plus vite, elle propose d'avoir moins besoin d'aller loin.",
+        "title": "論說文"
+      },
+      "questions": [
+        {
+          "id": "dalf-c1-2-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le principe de la « ville du quart d'heure » est…",
+          "options": [
+            "d'accéder aux services essentiels en quinze minutes",
+            "de limiter la journée de travail",
+            "de construire des transports plus rapides",
+            "de fermer les centres-villes"
+          ],
+          "answer": 0,
+          "explanation": "accéder, en quinze minutes à pied ou à vélo, aux services essentiels。"
+        },
+        {
+          "id": "dalf-c1-2-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon ses partisans, ce modèle permet notamment de…",
+          "options": [
+            "revitaliser les commerces de proximité",
+            "augmenter les loyers",
+            "développer les autoroutes",
+            "supprimer les écoles"
+          ],
+          "answer": 0,
+          "explanation": "revitaliser la vie de quartier et les commerces de proximité。"
+        },
+        {
+          "id": "dalf-c1-2-q08",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quelle critique concerne les banlieues ?",
+          "options": [
+            "Les services y sont trop dispersés",
+            "Elles sont trop peuplées",
+            "Elles n'ont pas de vélos",
+            "Elles refusent le projet"
+          ],
+          "answer": 0,
+          "explanation": "difficilement transposable dans des banlieues peu denses, où les services sont dispersés。"
+        },
+        {
+          "id": "dalf-c1-2-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel effet pervers est redouté ?",
+          "options": [
+            "La hausse des prix immobiliers",
+            "La baisse de la pollution",
+            "La fermeture des commerces",
+            "Le manque de vélos"
+          ],
+          "answer": 0,
+          "explanation": "faire grimper les prix immobiliers et… chasser les ménages modestes。"
+        },
+        {
+          "id": "dalf-c1-2-q10",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Que disent les concepteurs des rumeurs sur la liberté de circuler ?",
+          "options": [
+            "Ils les démentent",
+            "Ils les confirment",
+            "Ils n'ont pas répondu",
+            "Ils ont modifié le projet"
+          ],
+          "answer": 0,
+          "explanation": "une interprétation que ses concepteurs démentent catégoriquement。"
+        },
+        {
+          "id": "dalf-c1-2-q11",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Le modèle propose d'avoir moins besoin d'aller ___.",
+          "answers": [
+            "loin"
+          ],
+          "explanation": "plutôt que d'aller plus vite, avoir moins besoin d'aller loin。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Votre municipalité envisage d'appliquer le modèle de la ville du quart d'heure. Vous rédigez une lettre ouverte, publiée dans le journal local, dans laquelle vous défendez une position nuancée. (250 mots minimum)",
+        "minWords": 250,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Lettre ouverte au conseil municipal : pour une ville du quart d'heure… à l'échelle de tous\n\nMesdames et messieurs les élus,\n\nLe projet de faire de notre commune une « ville du quart d'heure » suscite à la fois enthousiasme et inquiétudes. Habitant d'un quartier périphérique, je souhaite apporter au débat un point de vue que l'on entend peu.\n\nSur le principe, comment ne pas adhérer à l'idée ? Pouvoir faire ses courses, accompagner ses enfants à l'école ou consulter un médecin sans prendre sa voiture améliorerait sensiblement notre qualité de vie. Ce serait aussi une avancée décisive pour l'environnement, et une chance pour les petits commerces qui disparaissent peu à peu.\n\nEncore faut-il que ce projet profite à tous. Or, dans mon quartier, le médecin le plus proche est à quatre kilomètres et la dernière boulangerie a fermé il y a deux ans. Si les investissements se concentrent sur le centre, déjà bien équipé, la ville du quart d'heure risque de creuser les inégalités au lieu de les réduire. Je crains également que l'embellissement de certains quartiers ne fasse flamber les loyers.\n\nJe vous invite donc à inverser la logique : commencer par les quartiers les moins bien dotés, en y installant une maison de santé, des commerces et des lignes de bus plus fréquentes. Accompagner le projet de mesures contre la hausse des loyers serait aussi indispensable.\n\nC'est à ces conditions que la ville du quart d'heure deviendra non pas un privilège, mais un droit partagé.\n\nVeuillez agréer, Mesdames et messieurs, l'expression de ma considération distinguée.\n\nMarc Delorme"
+      }
+    }
+  ]
+}

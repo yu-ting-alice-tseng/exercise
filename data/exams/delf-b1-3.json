@@ -1,0 +1,192 @@
+{
+  "id": "delf-b1-3",
+  "exam": "delf",
+  "level": "B1",
+  "title": "DELF B1 模擬卷 3",
+  "fr": "DELF B1 – Sujet d'entraînement 3",
+  "minutes": 90,
+  "desc": "聽力 1 段廣播報導、閱讀 1 篇、寫作 1 題（論壇發表意見）。真實考試另有口說測驗。",
+  "sections": [
+    {
+      "kind": "listening",
+      "title": "聽力：廣播報導",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Dans les villages de la région, de plus en plus de producteurs vendent directement leurs produits aux consommateurs. Marie, maraîchère depuis dix ans, a ouvert un petit magasin à la ferme. « Avant, je vendais tout à un grossiste, qui me payait mal. Aujourd'hui, je fixe moi-même mes prix, et je discute avec mes clients. » Pour les consommateurs, l'intérêt est double : des produits plus frais, et la certitude de savoir d'où ils viennent. Les prix ne sont pas toujours plus bas qu'au supermarché, reconnaît Marie, mais la qualité, elle, n'a rien à voir. Le principal défi reste le temps : produire, vendre et gérer le magasin représente des journées de plus de douze heures.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "delf-b1-3-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le reportage parle de producteurs qui…",
+          "options": [
+            "vendent directement aux clients",
+            "ferment leur ferme",
+            "vendent à l'étranger",
+            "travaillent pour un supermarché"
+          ],
+          "answer": 0,
+          "explanation": "vendent directement leurs produits aux consommateurs。"
+        },
+        {
+          "id": "delf-b1-3-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Avant, Marie…",
+          "options": [
+            "vendait à un grossiste qui la payait mal",
+            "travaillait dans un supermarché",
+            "n'avait pas de clients",
+            "vendait sur Internet"
+          ],
+          "answer": 0,
+          "explanation": "je vendais tout à un grossiste, qui me payait mal。"
+        },
+        {
+          "id": "delf-b1-3-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pour les clients, un avantage est…",
+          "options": [
+            "de savoir d'où viennent les produits",
+            "de payer toujours moins cher",
+            "d'être livrés à domicile",
+            "d'acheter en grande quantité"
+          ],
+          "answer": 0,
+          "explanation": "la certitude de savoir d'où ils viennent。"
+        },
+        {
+          "id": "delf-b1-3-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon Marie, ses prix…",
+          "options": [
+            "ne sont pas toujours plus bas qu'au supermarché",
+            "sont toujours plus bas",
+            "sont très élevés",
+            "changent chaque jour"
+          ],
+          "answer": 0,
+          "explanation": "Les prix ne sont pas toujours plus bas qu'au supermarché。"
+        },
+        {
+          "id": "delf-b1-3-q05",
+          "type": "fill",
+          "instruction": "請填入數字（可用阿拉伯數字或法文）",
+          "stem": "Marie travaille plus de ___ heures par jour.",
+          "answers": [
+            "12",
+            "douze"
+          ],
+          "explanation": "des journées de plus de douze heures。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀：報導",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Dans plusieurs écoles primaires, les notes sur 20 ont été remplacées par des couleurs ou des appréciations : « acquis », « en cours d'acquisition », « non acquis ». Les partisans de cette évaluation estiment que les notes stressent les élèves et encouragent la compétition plutôt que l'entraide. Une appréciation, disent-ils, indique plus clairement à l'enfant ce qu'il doit améliorer.\n\nLes opposants, eux, craignent que les élèves perdent leurs repères et que les parents ne comprennent plus le niveau réel de leur enfant. Au collège, où les notes reviennent, le passage peut être brutal. Entre ces deux positions, certains enseignants choisissent de combiner les deux systèmes : une note, accompagnée d'un commentaire détaillé.",
+        "title": "報導"
+      },
+      "questions": [
+        {
+          "id": "delf-b1-3-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Dans ces écoles, les notes ont été remplacées par…",
+          "options": [
+            "des couleurs ou des appréciations",
+            "des examens oraux",
+            "des notes sur 10",
+            "rien du tout"
+          ],
+          "answer": 0,
+          "explanation": "remplacées par des couleurs ou des appréciations。"
+        },
+        {
+          "id": "delf-b1-3-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon les partisans, les notes…",
+          "options": [
+            "stressent les élèves",
+            "motivent les élèves",
+            "aident les parents",
+            "sont plus justes"
+          ],
+          "answer": 0,
+          "explanation": "les notes stressent les élèves。"
+        },
+        {
+          "id": "delf-b1-3-q08",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Une appréciation permet à l'enfant de…",
+          "options": [
+            "savoir ce qu'il doit améliorer",
+            "se comparer aux autres",
+            "avoir de meilleures notes",
+            "éviter les devoirs"
+          ],
+          "answer": 0,
+          "explanation": "indique plus clairement… ce qu'il doit améliorer。"
+        },
+        {
+          "id": "delf-b1-3-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les opposants craignent que les parents…",
+          "options": [
+            "ne comprennent plus le niveau de leur enfant",
+            "paient plus cher",
+            "ne viennent plus à l'école",
+            "aident trop leurs enfants"
+          ],
+          "answer": 0,
+          "explanation": "que les parents ne comprennent plus le niveau réel de leur enfant。"
+        },
+        {
+          "id": "delf-b1-3-q10",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Certains enseignants choisissent…",
+          "options": [
+            "une note avec un commentaire",
+            "de supprimer toute évaluation",
+            "des notes sur 100",
+            "des examens chaque semaine"
+          ],
+          "answer": 0,
+          "explanation": "une note, accompagnée d'un commentaire détaillé。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Votre école de langues propose de supprimer les examens et de les remplacer par un projet de groupe. Vous écrivez un message sur le forum de l'école pour donner votre avis, avec des exemples. (160 mots minimum)",
+        "minWords": 160,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Bonjour à tous,\n\nJ'ai appris que l'école voulait remplacer les examens par un projet de groupe. Je trouve l'idée intéressante, mais je ne suis pas sûre que ce soit une bonne solution pour tout le monde.\n\nD'abord, un projet de groupe permet de pratiquer la langue de façon plus naturelle. L'année dernière, nous avons préparé une émission de radio en français : j'ai beaucoup plus parlé que pendant les cours habituels, et j'ai appris du vocabulaire utile. De plus, il y a moins de stress qu'avant un examen.\n\nPourtant, le travail de groupe a aussi des inconvénients. Souvent, une ou deux personnes font presque tout le travail, et les autres profitent de la note. Par ailleurs, il est difficile pour le professeur de savoir quel est le niveau réel de chaque étudiant.\n\nC'est pourquoi je propose de garder un petit examen individuel à la fin du semestre et d'ajouter un projet de groupe. Comme ça, on aurait les avantages des deux systèmes.\n\nQu'en pensez-vous ?\nAiko"
+      }
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "id": "dalf-c1-3",
+  "exam": "dalf",
+  "level": "C1",
+  "title": "DALF C1 模擬卷 3",
+  "fr": "DALF C1 – Sujet d'entraînement 3",
+  "minutes": 150,
+  "desc": "聽力 1 段廣播分析、閱讀 1 篇長文、寫作 1 題（論證文章）。真實考試另有資料統整與口說測驗。",
+  "sections": [
+    {
+      "kind": "listening",
+      "title": "聽力：廣播分析",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Selon plusieurs enquêtes récentes, une part croissante de la population déclare éviter volontairement l'actualité. Ce phénomène, que les chercheurs appellent l'« évitement de l'information », peut sembler paradoxal à une époque où les nouvelles n'ont jamais été aussi accessibles. Il s'explique pourtant assez bien. L'abondance elle-même épuise : alertes, fils d'actualité, chaînes en continu… Le flux ne s'interrompt jamais. Le ton anxiogène de nombreux contenus pèse aussi sur le moral. Enfin, beaucoup ont le sentiment de ne rien pouvoir faire face aux problèmes évoqués, ce qui nourrit un sentiment d'impuissance. Faut-il s'en inquiéter ? Oui, si l'évitement conduit à se couper de toute information fiable, au profit de sources moins rigoureuses. Mais il peut aussi être le signe d'un besoin légitime : celui de choisir le rythme et la manière dont on s'informe. Certains médias l'ont compris et proposent désormais des formats plus lents, comme des lettres hebdomadaires ou des enquêtes au long cours.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "dalf-c1-3-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "De plus en plus de gens…",
+          "options": [
+            "évitent volontairement l'actualité",
+            "lisent plusieurs journaux par jour",
+            "travaillent dans les médias",
+            "n'ont pas accès aux nouvelles"
+          ],
+          "answer": 0,
+          "explanation": "une part croissante… déclare éviter volontairement l'actualité。"
+        },
+        {
+          "id": "dalf-c1-3-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pourquoi ce phénomène semble-t-il paradoxal ?",
+          "options": [
+            "Les nouvelles n'ont jamais été aussi accessibles",
+            "Les journaux sont gratuits",
+            "Les gens aiment l'actualité",
+            "Les médias disparaissent"
+          ],
+          "answer": 0,
+          "explanation": "à une époque où les nouvelles n'ont jamais été aussi accessibles。"
+        },
+        {
+          "id": "dalf-c1-3-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Parmi les causes citées, on trouve…",
+          "options": [
+            "le sentiment d'impuissance",
+            "le prix des abonnements",
+            "le manque de temps libre",
+            "la mauvaise qualité du son"
+          ],
+          "answer": 0,
+          "explanation": "ce qui nourrit un sentiment d'impuissance。"
+        },
+        {
+          "id": "dalf-c1-3-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "L'évitement est inquiétant lorsqu'il…",
+          "options": [
+            "pousse vers des sources peu fiables",
+            "réduit le stress",
+            "laisse plus de temps libre",
+            "favorise la lecture de livres"
+          ],
+          "answer": 0,
+          "explanation": "au profit de sources moins rigoureuses。"
+        },
+        {
+          "id": "dalf-c1-3-q05",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Certains médias proposent des formats plus ___.",
+          "answers": [
+            "lents"
+          ],
+          "explanation": "des formats plus lents：較慢的形式，如每週電子報。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀：長文",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Inscrit dans le Code du travail depuis 2017, le droit à la déconnexion devait protéger les salariés contre l'envahissement de leur vie privée par les outils numériques. Les entreprises d'une certaine taille sont tenues d'en définir les modalités, par accord ou par une charte. Plusieurs années plus tard, le bilan est mitigé.\n\nSur le papier, l'avancée est réelle : le principe est désormais reconnu, et nombre d'entreprises ont instauré des plages pendant lesquelles les courriels ne sont pas envoyés. Dans les faits, pourtant, beaucoup de salariés continuent de consulter leur messagerie le soir ou pendant leurs congés. Non qu'on le leur impose explicitement : la pression est plus diffuse. Répondre vite est perçu comme un signe d'engagement, et celui qui se déconnecte craint de passer pour moins impliqué que ses collègues.\n\nC'est là toute la limite d'un droit individuel : il suppose que chacun ose l'exercer. Or, dans une organisation où l'hyperdisponibilité est valorisée, revendiquer son droit au repos peut sembler risqué. Certains spécialistes plaident donc pour déplacer la responsabilité vers l'employeur : plutôt que d'autoriser le salarié à ne pas répondre, il s'agirait d'interdire qu'on le sollicite en dehors de ses horaires.\n\nLe débat dépasse la question technique. Il interroge notre rapport au travail et la frontière que nous souhaitons maintenir entre le temps que nous lui devons et celui qui nous appartient.",
+        "title": "論說文"
+      },
+      "questions": [
+        {
+          "id": "dalf-c1-3-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le droit à la déconnexion vise à…",
+          "options": [
+            "protéger la vie privée des salariés",
+            "interdire le télétravail",
+            "augmenter les salaires",
+            "limiter l'usage d'Internet au bureau"
+          ],
+          "answer": 0,
+          "explanation": "protéger les salariés contre l'envahissement de leur vie privée。"
+        },
+        {
+          "id": "dalf-c1-3-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pourquoi beaucoup de salariés consultent-ils encore leurs courriels le soir ?",
+          "options": [
+            "À cause d'une pression diffuse",
+            "Parce que leur contrat l'exige",
+            "Parce qu'ils s'ennuient",
+            "Parce que la loi l'oblige"
+          ],
+          "answer": 0,
+          "explanation": "Non qu'on le leur impose explicitement : la pression est plus diffuse。"
+        },
+        {
+          "id": "dalf-c1-3-q08",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quelle est la limite d'un droit individuel selon le texte ?",
+          "options": [
+            "Il faut oser l'exercer",
+            "Il est trop coûteux",
+            "Il ne concerne que les cadres",
+            "Il est mal connu des juges"
+          ],
+          "answer": 0,
+          "explanation": "il suppose que chacun ose l'exercer。"
+        },
+        {
+          "id": "dalf-c1-3-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Que proposent certains spécialistes ?",
+          "options": [
+            "Interdire de solliciter les salariés hors de leurs horaires",
+            "Supprimer les courriels",
+            "Payer les heures de connexion",
+            "Laisser chacun décider"
+          ],
+          "answer": 0,
+          "explanation": "il s'agirait d'interdire qu'on le sollicite en dehors de ses horaires。"
+        },
+        {
+          "id": "dalf-c1-3-q10",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Dans la conclusion, l'auteur…",
+          "options": [
+            "élargit le débat au rapport au travail",
+            "réclame une nouvelle loi précise",
+            "conseille de changer d'emploi",
+            "défend l'hyperdisponibilité"
+          ],
+          "answer": 0,
+          "explanation": "Il interroge notre rapport au travail。"
+        },
+        {
+          "id": "dalf-c1-3-q11",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Plusieurs années plus tard, le bilan est ___.",
+          "answers": [
+            "mitigé"
+          ],
+          "explanation": "le bilan est mitigé：成效好壞參半。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "« Le télétravail rend impossible toute séparation entre vie professionnelle et vie privée. » Vous rédigez un essai pour une revue spécialisée, dans lequel vous discutez cette affirmation. (250 mots minimum)",
+        "minWords": 250,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Télétravail : la fin de la frontière ?\n\nEn quelques années, le télétravail est passé du statut d'exception à celui de pratique courante. Pour certains, il signerait la disparition de toute frontière entre vie professionnelle et vie privée. Le constat mérite d'être nuancé.\n\nIl faut reconnaître que le risque est réel. Lorsque le bureau se trouve sur la table de la cuisine, rien ne marque plus la fin de la journée : ni trajet, ni changement de lieu. L'ordinateur reste à portée de main, et la tentation de « vérifier une dernière fois » ses messages est permanente. Plusieurs enquêtes montrent d'ailleurs que les télétravailleurs ont tendance à travailler plus longtemps que leurs collègues présents au bureau.\n\nPour autant, parler d'impossibilité serait excessif. La frontière n'a pas disparu ; elle a cessé d'être imposée de l'extérieur pour devenir une construction personnelle. Certains la recréent par des rituels simples : un horaire fixe, une pièce réservée au travail, un ordinateur que l'on range en fin de journée. Le télétravail peut même améliorer l'équilibre de vie, en supprimant des trajets épuisants et en laissant davantage de temps pour la famille.\n\nLa question est donc moins technique qu'organisationnelle. Une entreprise qui valorise la disponibilité permanente rendra la séparation difficile, que l'on travaille chez soi ou au bureau. À l'inverse, des règles claires et un management fondé sur les résultats plutôt que sur la présence permettent de préserver ce temps qui n'appartient qu'à nous.\n\nEn définitive, le télétravail ne supprime pas la frontière : il nous oblige à la tracer nous-mêmes."
+      }
+    }
+  ]
+}

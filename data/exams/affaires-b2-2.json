@@ -1,0 +1,300 @@
+{
+  "id": "affaires-b2-2",
+  "exam": "affaires",
+  "level": "B2",
+  "title": "財經法語 B2 模擬卷 2",
+  "fr": "Français des affaires B2 – Économie et finance 2",
+  "minutes": 90,
+  "desc": "企業年度財報新聞、經濟學家訪談（物價上漲）、企業財經用語，以及寫內部公告。",
+  "sections": [
+    {
+      "kind": "reading",
+      "title": "閱讀：企業財報新聞",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Le groupe agroalimentaire Valmont a publié mardi ses résultats annuels. Son chiffre d'affaires atteint 4,2 milliards d'euros, en hausse de 6 % sur un an, porté par la forte croissance de ses ventes en Asie. Le bénéfice net, en revanche, recule de 3 %, à 310 millions d'euros. La direction explique ce repli par la hausse des coûts de l'énergie et des matières premières, qu'elle n'a répercutée qu'en partie sur ses prix de vente afin de préserver ses parts de marché.\n\nPour l'année à venir, le groupe se montre prudent. Il prévoit de fermer deux usines jugées peu rentables en Europe, tout en investissant 150 millions d'euros dans une nouvelle unité de production au Vietnam. Les syndicats ont immédiatement dénoncé ces fermetures, qui pourraient concerner près de 400 salariés.\n\nLes investisseurs, eux, ont salué la stratégie : l'action Valmont a gagné 2,5 % à la clôture.",
+        "title": "財經新聞"
+      },
+      "questions": [
+        {
+          "id": "affaires-b2-2-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le chiffre d'affaires de Valmont…",
+          "options": [
+            "a augmenté de 6 %",
+            "a baissé de 3 %",
+            "est resté stable",
+            "a augmenté de 2,5 %"
+          ],
+          "answer": 0,
+          "explanation": "en hausse de 6 % sur un an。"
+        },
+        {
+          "id": "affaires-b2-2-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le bénéfice net…",
+          "options": [
+            "a diminué",
+            "a augmenté",
+            "a doublé",
+            "n'a pas été publié"
+          ],
+          "answer": 0,
+          "explanation": "Le bénéfice net, en revanche, recule de 3 %。"
+        },
+        {
+          "id": "affaires-b2-2-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pourquoi le bénéfice a-t-il baissé ?",
+          "options": [
+            "À cause de la hausse des coûts",
+            "À cause de la baisse des ventes en Asie",
+            "À cause d'une grève",
+            "À cause d'un nouveau concurrent"
+          ],
+          "answer": 0,
+          "explanation": "la hausse des coûts de l'énergie et des matières premières。"
+        },
+        {
+          "id": "affaires-b2-2-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quelle est la stratégie du groupe ?",
+          "options": [
+            "Fermer des usines en Europe et investir au Vietnam",
+            "Ouvrir des usines en Europe",
+            "Baisser les prix",
+            "Vendre l'entreprise"
+          ],
+          "answer": 0,
+          "explanation": "fermer deux usines… en Europe… investissant… au Vietnam。"
+        },
+        {
+          "id": "affaires-b2-2-q05",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Comment ont réagi les syndicats ?",
+          "options": [
+            "Ils ont dénoncé les fermetures",
+            "Ils ont salué la stratégie",
+            "Ils n'ont pas réagi",
+            "Ils ont acheté des actions"
+          ],
+          "answer": 0,
+          "explanation": "Les syndicats ont immédiatement dénoncé ces fermetures。"
+        },
+        {
+          "id": "affaires-b2-2-q06",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "L'action Valmont a gagné 2,5 % à la ___.",
+          "answers": [
+            "clôture"
+          ],
+          "explanation": "à la clôture：收盤時。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力：經濟學家訪談",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "A : Les prix alimentaires ont fortement augmenté ces dernières années. Pourquoi ?\nB : Plusieurs facteurs se sont combinés : la hausse du prix de l'énergie, qui renchérit la production et le transport, mais aussi de mauvaises récoltes liées aux sécheresses.\nA : Les consommateurs ont-ils changé leurs habitudes ?\nB : Oui, nettement. Ils achètent davantage de produits de marques de distributeur, moins chers, et réduisent certains achats, comme la viande ou les produits bio.\nA : Les prix vont-ils baisser ?\nB : Il ne faut pas s'attendre à un retour aux prix d'avant. Ce qu'on peut espérer, c'est une stabilisation, c'est-à-dire des prix qui augmentent beaucoup moins vite.",
+        "speak": true,
+        "dialogue": true
+      },
+      "questions": [
+        {
+          "id": "affaires-b2-2-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Parmi les causes de la hausse des prix, il y a…",
+          "options": [
+            "le prix de l'énergie et les sécheresses",
+            "la baisse des salaires",
+            "la fermeture des supermarchés",
+            "les grèves des transports"
+          ],
+          "answer": 0,
+          "explanation": "la hausse du prix de l'énergie… de mauvaises récoltes liées aux sécheresses。"
+        },
+        {
+          "id": "affaires-b2-2-q08",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les consommateurs achètent davantage…",
+          "options": [
+            "de produits de marques de distributeur",
+            "de produits bio",
+            "de viande",
+            "de produits de luxe"
+          ],
+          "answer": 0,
+          "explanation": "Ils achètent davantage de produits de marques de distributeur。"
+        },
+        {
+          "id": "affaires-b2-2-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Ils réduisent leurs achats de…",
+          "options": [
+            "viande et produits bio",
+            "pain et lait",
+            "fruits et légumes",
+            "produits ménagers"
+          ],
+          "answer": 0,
+          "explanation": "comme la viande ou les produits bio。"
+        },
+        {
+          "id": "affaires-b2-2-q10",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "L'économiste espère une ___ des prix.",
+          "answers": [
+            "stabilisation"
+          ],
+          "explanation": "une stabilisation：物價漲幅趨緩，不是下跌。"
+        }
+      ]
+    },
+    {
+      "kind": "structure",
+      "title": "財經用語",
+      "fr": "Vocabulaire économique et financier",
+      "instruction": "請選出或填入正確的答案。",
+      "questions": [
+        {
+          "id": "affaires-b2-2-q11",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les marques de distributeur sont…",
+          "options": [
+            "des produits vendus sous le nom du supermarché",
+            "des produits de luxe",
+            "des produits importés",
+            "des marques de vêtements"
+          ],
+          "answer": 0,
+          "explanation": "marques de distributeur：通路自有品牌。"
+        },
+        {
+          "id": "affaires-b2-2-q12",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Délocaliser une usine, c'est…",
+          "options": [
+            "la transférer dans un autre pays",
+            "la fermer définitivement",
+            "la moderniser",
+            "l'agrandir"
+          ],
+          "answer": 0,
+          "explanation": "délocaliser：移往海外。"
+        },
+        {
+          "id": "affaires-b2-2-q13",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La rentabilité d'une entreprise mesure…",
+          "options": [
+            "sa capacité à faire des bénéfices",
+            "son nombre de salariés",
+            "son ancienneté",
+            "sa notoriété"
+          ],
+          "answer": 0,
+          "explanation": "rentabilité：獲利能力。"
+        },
+        {
+          "id": "affaires-b2-2-q14",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Une fusion, c'est…",
+          "options": [
+            "le regroupement de deux entreprises en une seule",
+            "une faillite",
+            "une vente d'actions",
+            "une embauche"
+          ],
+          "answer": 0,
+          "explanation": "fusion：合併。"
+        },
+        {
+          "id": "affaires-b2-2-q15",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le pouvoir d'achat diminue quand…",
+          "options": [
+            "les prix augmentent plus vite que les revenus",
+            "les salaires augmentent",
+            "les prix baissent",
+            "le chômage baisse"
+          ],
+          "answer": 0,
+          "explanation": "pouvoir d'achat：購買力。"
+        },
+        {
+          "id": "affaires-b2-2-q16",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "« Le chômage a reculé de 0,3 point. » Cela signifie que le chômage…",
+          "options": [
+            "a baissé",
+            "a augmenté",
+            "est stable",
+            "a doublé"
+          ],
+          "answer": 0,
+          "explanation": "reculer：下降、後退。"
+        },
+        {
+          "id": "affaires-b2-2-q17",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Les personnes qui possèdent des actions sont les ___.",
+          "answers": [
+            "actionnaires"
+          ],
+          "explanation": "les actionnaires：股東。"
+        },
+        {
+          "id": "affaires-b2-2-q18",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Le PIB, c'est le produit intérieur ___.",
+          "answers": [
+            "brut"
+          ],
+          "explanation": "PIB＝produit intérieur brut：國內生產毛額。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作：內部公告",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Vous travaillez au service communication de l'entreprise Valmont. Rédigez un communiqué interne pour expliquer aux salariés les résultats annuels (chiffre d'affaires en hausse, bénéfice en baisse) et les mesures prévues pour l'année prochaine. (200 mots minimum)",
+        "minWords": 200,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）",
+          "使用正確的財經詞彙（chiffre d'affaires、bénéfice、investissement 等）"
+        ],
+        "model": "Communiqué interne – Résultats annuels\n\nChères collaboratrices, chers collaborateurs,\n\nNous avons publié aujourd'hui nos résultats annuels et souhaitons vous les présenter en toute transparence.\n\nNotre chiffre d'affaires atteint 4,2 milliards d'euros, en hausse de 6 %. Cette progression est le fruit de votre travail, en particulier du développement remarquable de nos ventes en Asie. Notre bénéfice net, en revanche, recule de 3 %. Cette baisse s'explique principalement par la forte hausse des coûts de l'énergie et des matières premières, que nous avons choisi de ne pas répercuter entièrement sur nos clients afin de rester compétitifs.\n\nPour l'année prochaine, la direction a décidé d'investir dans une nouvelle unité de production en Asie, au plus près de nos marchés en croissance. Elle étudie également l'avenir de deux sites européens dont la rentabilité est insuffisante. Aucune décision définitive ne sera prise sans concertation avec les représentants du personnel, et des solutions de reclassement seront proposées en priorité.\n\nNous savons que ces annonces peuvent susciter des inquiétudes. Une réunion d'information sera organisée dans chaque site la semaine prochaine afin de répondre à vos questions. Votre responsable reste également à votre écoute d'ici là, et nous vous tiendrons informés à chaque étape du projet.\n\nLa Direction de la communication"
+      }
+    }
+  ]
+}

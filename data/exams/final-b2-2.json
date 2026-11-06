@@ -1,0 +1,90 @@
+{
+  "id": "final-b2-2",
+  "exam": "final",
+  "level": "B2",
+  "title": "B2 期末綜合卷 2",
+  "fr": "Examen final – niveau B2 (2)",
+  "minutes": 90,
+  "desc": "從 B2 題庫隨機抽 15 題文法與詞彙，加上一篇閱讀和一題寫作。每次抽到的文法題都不同。",
+  "sections": [
+    {
+      "kind": "bank",
+      "title": "文法與詞彙",
+      "fr": "Grammaire et vocabulaire",
+      "instruction": "從題庫隨機抽題，每次作答題目都不同。",
+      "bank": {
+        "choice": 6,
+        "fill": 6,
+        "short": 3
+      }
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Autrefois, on apprenait un métier pour la vie. Aujourd'hui, les transformations rapides de l'économie obligent de nombreux salariés à se former tout au long de leur carrière. En France, chaque actif dispose d'un compte personnel de formation, alimenté chaque année, qu'il peut utiliser pour suivre des formations certifiantes. Le dispositif a connu un grand succès, mais il a aussi été critiqué : certaines formations de qualité douteuse ont profité du système, et les personnes les moins qualifiées, qui en auraient le plus besoin, l'utilisent moins que les cadres. Se former suppose en effet du temps, de l'information et de la confiance en soi, trois ressources inégalement réparties."
+      },
+      "questions": [
+        {
+          "id": "final-b2-2-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pourquoi faut-il se former tout au long de sa carrière ?",
+          "options": [
+            "L'économie change rapidement",
+            "La loi l'impose chaque année",
+            "Les salaires baissent",
+            "Les diplômes ne sont plus reconnus"
+          ],
+          "answer": 0,
+          "explanation": "les transformations rapides de l'économie obligent…"
+        },
+        {
+          "id": "final-b2-2-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel paradoxe le texte souligne-t-il ?",
+          "options": [
+            "Les moins qualifiés utilisent moins le dispositif",
+            "Les cadres refusent de se former",
+            "Les formations sont trop chères",
+            "Le compte n'est jamais alimenté"
+          ],
+          "answer": 0,
+          "explanation": "les personnes les moins qualifiées… l'utilisent moins que les cadres。"
+        },
+        {
+          "id": "final-b2-2-q03",
+          "type": "fill",
+          "instruction": "請填入一個字（過去分詞）",
+          "stem": "Le temps, l'information et la confiance en soi sont inégalement ___.",
+          "answers": [
+            "réparties"
+          ],
+          "explanation": "trois ressources inégalement réparties：分配不均。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Votre entreprise propose de financer une formation à chaque salarié, mais seulement en dehors des heures de travail. Vous écrivez une lettre au directeur des ressources humaines pour donner votre avis de façon argumentée. (250 mots minimum)",
+        "minWords": 250,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Monsieur le Directeur des ressources humaines,\n\nJ'ai pris connaissance avec intérêt du projet de financer une formation pour chaque salarié. Je tiens d'abord à saluer très sincèrement cette initiative, qui montre que l'entreprise croit en l'évolution de ses collaborateurs. Je souhaite cependant vous faire part de mes réserves concernant une condition : l'obligation de suivre ces formations en dehors des heures de travail.\n\nCette règle risque en effet de réduire fortement l'intérêt du dispositif. Beaucoup d'entre nous ont des contraintes familiales le soir ou le week-end : enfants à garder, parents âgés, longs trajets. Ce sont souvent les salariés qui en auraient le plus besoin, notamment dans les postes moins qualifiés, qui renonceront à se former. Par ailleurs, apprendre après une longue journée de travail est fatigant, ce qui diminue nettement l'efficacité de la formation et la motivation des participants.\n\nIl me semble également que l'entreprise est la première bénéficiaire de ces formations : des salariés plus compétents travaillent mieux, sont plus autonomes et restent plus longtemps dans l'entreprise. Il serait donc logique qu'une partie de ce temps soit prise sur les heures de travail.\n\nJe propose une solution intermédiaire : la moitié de la formation pourrait avoir lieu pendant le temps de travail, et l'autre moitié en dehors, avec des horaires adaptés à chacun, par exemple en ligne.\n\nJe reste à votre disposition pour en discuter et vous prie d'agréer, Monsieur, l'expression de mes salutations distinguées.\n\nNguyen Thi Lan"
+      }
+    }
+  ]
+}

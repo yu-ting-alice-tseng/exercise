@@ -1,0 +1,345 @@
+{
+  "id": "tcf-3",
+  "exam": "tcf",
+  "level": "B1",
+  "title": "TCF 風格模擬卷 3",
+  "fr": "TCF – Entraînement 3",
+  "minutes": 45,
+  "desc": "全部是選擇題，難度從 A1 逐步提高到 C1，可以用來估計自己的程度。",
+  "sections": [
+    {
+      "kind": "listening",
+      "title": "聽力一（A1）",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "A : Le magasin ferme à quelle heure ?\nB : À sept heures et demie du soir.",
+        "speak": true,
+        "dialogue": true
+      },
+      "questions": [
+        {
+          "id": "tcf-3-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le magasin ferme à…",
+          "options": [
+            "19 h 30",
+            "17 h 30",
+            "7 h 15",
+            "19 h"
+          ],
+          "answer": 0,
+          "explanation": "sept heures et demie du soir＝19 點 30 分。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力二（A2）",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Allô, maman ? Je ne rentre pas dîner ce soir : je reste chez Paul pour réviser l'examen de demain. Je rentrerai vers dix heures.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "tcf-3-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Ce soir, le jeune homme…",
+          "options": [
+            "dîne chez Paul et rentre vers 22 heures",
+            "rentre dîner à la maison",
+            "passe un examen",
+            "dort chez Paul"
+          ],
+          "answer": 0,
+          "explanation": "je reste chez Paul… Je rentrerai vers dix heures。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力三（B1）",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Suite à de nombreuses plaintes des habitants, la mairie a décidé de limiter l'horaire des terrasses : elles devront fermer à 23 heures en semaine et à minuit le week-end.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "tcf-3-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Que décide la mairie ?",
+          "options": [
+            "Les terrasses fermeront plus tôt",
+            "Les bars seront fermés le week-end",
+            "Les terrasses seront agrandies",
+            "Les habitants paieront une taxe"
+          ],
+          "answer": 0,
+          "explanation": "limiter l'horaire des terrasses。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力四（B2）",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Je ne suis pas contre le tourisme, au contraire. Mais quand un quartier entier se transforme en locations pour vacanciers, il perd ses habitants, ses écoles, ses commerces du quotidien. À la fin, il ne reste qu'un décor.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "tcf-3-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon cette personne, …",
+          "options": [
+            "le tourisme excessif vide les quartiers de leurs habitants",
+            "il faut interdire le tourisme",
+            "les touristes sont mal accueillis",
+            "les écoles attirent les touristes"
+          ],
+          "answer": 0,
+          "explanation": "il perd ses habitants… il ne reste qu'un décor。"
+        }
+      ]
+    },
+    {
+      "kind": "structure",
+      "title": "語言結構",
+      "fr": "Maîtrise des structures de la langue",
+      "instruction": "請選出正確的答案。題目由易到難。",
+      "questions": [
+        {
+          "id": "tcf-3-q05",
+          "type": "choice",
+          "instruction": "A1",
+          "stem": "Ils ___ au cinéma ce soir.",
+          "options": [
+            "vont",
+            "va",
+            "allez",
+            "vais"
+          ],
+          "answer": 0,
+          "explanation": "aller 的 ils 變化是 vont。"
+        },
+        {
+          "id": "tcf-3-q06",
+          "type": "choice",
+          "instruction": "A1",
+          "stem": "C'est ___ amie Lucie.",
+          "options": [
+            "mon",
+            "ma",
+            "mes",
+            "me"
+          ],
+          "answer": 0,
+          "explanation": "母音開頭的陰性名詞前用 mon。"
+        },
+        {
+          "id": "tcf-3-q07",
+          "type": "choice",
+          "instruction": "A2",
+          "stem": "Il fait froid : mets ___ manteau !",
+          "options": [
+            "ton",
+            "ta",
+            "tes",
+            "te"
+          ],
+          "answer": 0,
+          "explanation": "manteau 是陽性：ton。"
+        },
+        {
+          "id": "tcf-3-q08",
+          "type": "choice",
+          "instruction": "A2",
+          "stem": "Elle s'est ___ à 7 heures.",
+          "options": [
+            "levée",
+            "levé",
+            "lever",
+            "lève"
+          ],
+          "answer": 0,
+          "explanation": "反身動詞，過去分詞配合主詞 elle。"
+        },
+        {
+          "id": "tcf-3-q09",
+          "type": "choice",
+          "instruction": "B1",
+          "stem": "Je te téléphonerai quand je ___ arrivé.",
+          "options": [
+            "serai",
+            "suis",
+            "serais",
+            "étais"
+          ],
+          "answer": 0,
+          "explanation": "quand + 先未來式：quand je serai arrivé。"
+        },
+        {
+          "id": "tcf-3-q10",
+          "type": "choice",
+          "instruction": "B1",
+          "stem": "C'est la maison ___ j'ai grandi.",
+          "options": [
+            "où",
+            "que",
+            "dont",
+            "qui"
+          ],
+          "answer": 0,
+          "explanation": "地點用 où。"
+        },
+        {
+          "id": "tcf-3-q11",
+          "type": "choice",
+          "instruction": "B2",
+          "stem": "Bien que ce ___ difficile, il a réussi.",
+          "options": [
+            "soit",
+            "est",
+            "sera",
+            "était"
+          ],
+          "answer": 0,
+          "explanation": "bien que + 虛擬式。"
+        },
+        {
+          "id": "tcf-3-q12",
+          "type": "choice",
+          "instruction": "B2",
+          "stem": "Il est parti sans qu'on le ___.",
+          "options": [
+            "remarque",
+            "remarquait",
+            "remarquera",
+            "remarqué"
+          ],
+          "answer": 0,
+          "explanation": "sans que + 虛擬式。"
+        },
+        {
+          "id": "tcf-3-q13",
+          "type": "choice",
+          "instruction": "C1",
+          "stem": "Il n'est pas venu, ___ il l'avait promis.",
+          "options": [
+            "alors qu'",
+            "puisqu'",
+            "parce qu'",
+            "dès qu'"
+          ],
+          "answer": 0,
+          "explanation": "alors que 表示對比或讓步：明明答應了卻沒來。"
+        },
+        {
+          "id": "tcf-3-q14",
+          "type": "choice",
+          "instruction": "C1",
+          "stem": "Je vous serais reconnaissant de bien vouloir me ___ votre réponse.",
+          "options": [
+            "faire parvenir",
+            "faire parvenu",
+            "fait parvenir",
+            "faites parvenir"
+          ],
+          "answer": 0,
+          "explanation": "de + 原形動詞：faire parvenir（寄送、轉交）。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀一（A2）",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Magasin fermé pour congés du 1er au 21 août. Réouverture le lundi 22 août à 9 h.",
+        "title": "告示"
+      },
+      "questions": [
+        {
+          "id": "tcf-3-q15",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le magasin rouvre…",
+          "options": [
+            "le 22 août",
+            "le 1er août",
+            "le 21 août",
+            "en septembre"
+          ],
+          "answer": 0,
+          "explanation": "Réouverture le lundi 22 août。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀二（B1）",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Bonjour Madame Lambert,\n\nSuite à notre entretien d'hier, j'ai le plaisir de vous informer que votre candidature a été retenue. Pourriez-vous passer signer votre contrat lundi à 10 h ?\n\nCordialement,\nM. Dumas, service des ressources humaines",
+        "title": "電子郵件"
+      },
+      "questions": [
+        {
+          "id": "tcf-3-q16",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Mme Lambert…",
+          "options": [
+            "a obtenu le poste",
+            "doit passer un entretien demain",
+            "n'a pas été retenue",
+            "doit envoyer son CV"
+          ],
+          "answer": 0,
+          "explanation": "votre candidature a été retenue：被錄取了。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀三（C1）",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "La lenteur n'a pas bonne presse. Dans une société qui valorise l'efficacité, prendre son temps passe volontiers pour un luxe, voire pour de la paresse. Pourtant, nombre de décisions importantes gagneraient à être mûries plutôt que précipitées : l'urgence n'est souvent qu'une impression entretenue par le rythme de nos outils.",
+        "title": "短文"
+      },
+      "questions": [
+        {
+          "id": "tcf-3-q17",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "L'auteur…",
+          "options": [
+            "défend la valeur de la réflexion lente",
+            "critique la paresse",
+            "recommande de décider vite",
+            "veut supprimer les outils numériques"
+          ],
+          "answer": 0,
+          "explanation": "décisions… gagneraient à être mûries plutôt que précipitées。"
+        }
+      ]
+    }
+  ]
+}

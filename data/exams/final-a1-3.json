@@ -1,0 +1,91 @@
+{
+  "id": "final-a1-3",
+  "exam": "final",
+  "level": "A1",
+  "title": "A1 期末綜合卷 3",
+  "fr": "Examen final – niveau A1 (3)",
+  "minutes": 50,
+  "desc": "從 A1 題庫隨機抽 16 題文法與詞彙，加上一篇閱讀和一題寫作。每次抽到的文法題都不同。",
+  "sections": [
+    {
+      "kind": "bank",
+      "title": "文法與詞彙",
+      "fr": "Grammaire et vocabulaire",
+      "instruction": "從題庫隨機抽題，每次作答題目都不同。",
+      "bank": {
+        "choice": 8,
+        "fill": 6,
+        "short": 2
+      }
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Dans ma famille, nous sommes quatre : mon père, ma mère, mon frère et moi. Mon père est cuisinier et ma mère est infirmière. Mon frère s'appelle Victor. Il a seize ans et il adore la musique : il joue de la guitare tous les jours ! Nous avons aussi un chat noir, Minou. Le dimanche, nous déjeunons chez ma grand-mère."
+      },
+      "questions": [
+        {
+          "id": "final-a1-3-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Combien de personnes y a-t-il dans la famille ?",
+          "options": [
+            "Quatre",
+            "Trois",
+            "Cinq",
+            "Deux"
+          ],
+          "answer": 0,
+          "explanation": "nous sommes quatre。"
+        },
+        {
+          "id": "final-a1-3-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La mère est…",
+          "options": [
+            "infirmière",
+            "cuisinière",
+            "professeure",
+            "musicienne"
+          ],
+          "answer": 0,
+          "explanation": "ma mère est infirmière。"
+        },
+        {
+          "id": "final-a1-3-q03",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Le dimanche, ils déjeunent chez la ___.",
+          "answers": [
+            "grand-mère"
+          ],
+          "explanation": "nous déjeunons chez ma grand-mère。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Présentez votre famille ou vos amis : qui ils sont, ce qu'ils font et ce qu'ils aiment. (30 à 40 mots)",
+        "minWords": 30,
+        "rubric": [
+          "有符合題目要求的情境（寫給誰、為什麼寫）",
+          "內容完整回答了題目要的每一點",
+          "有適當的開頭和結尾（稱呼、問候、署名）",
+          "用字正確、拼寫正確",
+          "動詞變化與時態正確",
+          "字數符合要求"
+        ],
+        "model": "Dans ma famille, nous sommes cinq. Mon père est ingénieur et ma mère est professeure. J'ai deux sœurs. Lucie aime la danse et Emma adore les animaux. Le samedi, nous mangeons ensemble au restaurant.",
+        "maxWords": 40
+      }
+    }
+  ]
+}

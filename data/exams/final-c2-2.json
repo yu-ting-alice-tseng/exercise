@@ -1,0 +1,90 @@
+{
+  "id": "final-c2-2",
+  "exam": "final",
+  "level": "C2",
+  "title": "C2 期末綜合卷 2",
+  "fr": "Examen final – niveau C2 (2)",
+  "minutes": 120,
+  "desc": "從 C2 題庫隨機抽 14 題文法與詞彙，加上一篇閱讀和一題寫作。每次抽到的文法題都不同。",
+  "sections": [
+    {
+      "kind": "bank",
+      "title": "文法與詞彙",
+      "fr": "Grammaire et vocabulaire",
+      "instruction": "從題庫隨機抽題，每次作答題目都不同。",
+      "bank": {
+        "choice": 6,
+        "fill": 5,
+        "short": 3
+      }
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Le vieil horloger avait fermé boutique un mardi, sans prévenir personne. Pendant quarante ans, il avait réparé les montres du quartier, et chacun, en passant devant sa vitrine, réglait machinalement la sienne sur la grande pendule qui y trônait. Lorsque le rideau de fer resta baissé, on mit plusieurs jours à comprendre ce qui manquait. Ce n'était pas l'horloger lui-même – on le connaissait à peine –, mais cette heure commune, partagée sans y penser, qui avait discrètement accordé les vies de tout un quartier. Désormais, chacun vivait à l'heure de son téléphone, exacte à la seconde près, et pourtant, curieusement, personne ne semblait plus jamais être à l'heure."
+      },
+      "questions": [
+        {
+          "id": "final-c2-2-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "En passant devant la vitrine, les habitants…",
+          "options": [
+            "réglaient leur montre sur la pendule",
+            "saluaient l'horloger",
+            "achetaient des montres",
+            "regardaient l'heure du train"
+          ],
+          "answer": 0,
+          "explanation": "réglait machinalement la sienne sur la grande pendule。"
+        },
+        {
+          "id": "final-c2-2-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon le texte, ce qui manquait vraiment, c'était…",
+          "options": [
+            "une heure partagée par tout le quartier",
+            "l'horloger lui-même",
+            "un magasin de montres",
+            "une horloge exacte"
+          ],
+          "answer": 0,
+          "explanation": "cette heure commune, partagée sans y penser。"
+        },
+        {
+          "id": "final-c2-2-q03",
+          "type": "fill",
+          "instruction": "請填入動詞（未完成過去式）",
+          "stem": "On mit plusieurs jours à comprendre ce qui ___.",
+          "answers": [
+            "manquait"
+          ],
+          "explanation": "ce qui manquait：缺少的是什麼。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "« Ce que nous gagnons en précision, nous le perdons en lien. » Commentez cette affirmation dans un essai structuré, en vous appuyant sur des exemples. (250 mots minimum)",
+        "minWords": 250,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Précision et lien : un échange inévitable ?\n\nNos outils n'ont jamais été aussi précis. Le téléphone nous donne l'heure à la seconde près, le GPS notre position au mètre, les applications de santé le nombre exact de nos pas. Pourtant, cette précision semble s'accompagner d'un certain isolement : « ce que nous gagnons en précision, nous le perdons en lien ». L'affirmation mérite d'être examinée.\n\nElle contient une part de vérité indéniable. Autrefois, demander son chemin obligeait à parler à un inconnu ; l'horloge de la place ou la cloche de l'église imposaient un temps commun. Ces imprécisions créaient des occasions de rencontre et un rythme partagé. En individualisant chaque mesure, la technique a supprimé ces médiations : chacun dispose désormais de son propre temps, de son propre itinéraire, et n'a plus besoin des autres pour s'orienter.\n\nIl serait toutefois réducteur d'y voir une loi fatale. La précision n'a pas seulement isolé : elle a aussi rendu possibles des liens nouveaux. Les messageries instantanées permettent à des familles dispersées sur plusieurs continents de rester proches ; la cartographie collaborative repose sur la contribution de milliers d'anonymes. Le lien ne disparaît pas ; il change de nature, devenant plus choisi, mais aussi plus fragile.\n\nAu fond, ce n'est pas la précision qui défait le lien, mais l'usage que nous en faisons. Un outil exact peut servir à se passer des autres comme à les retrouver. L'enjeu est donc moins de renoncer à la précision que de préserver, volontairement, les occasions de partage qu'elle ne crée plus d'elle-même."
+      }
+    }
+  ]
+}

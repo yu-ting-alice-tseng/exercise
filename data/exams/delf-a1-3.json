@@ -1,0 +1,293 @@
+{
+  "id": "delf-a1-3",
+  "exam": "delf",
+  "level": "A1",
+  "title": "DELF A1 模擬卷 3",
+  "fr": "DELF A1 – Sujet d'entraînement 3",
+  "minutes": 60,
+  "desc": "聽力 2 段、閱讀 2 篇、寫作 1 題。真實考試另有口說測驗。",
+  "sections": [
+    {
+      "kind": "listening",
+      "title": "聽力一：電影院語音服務",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Bienvenue au cinéma Le Rex. Aujourd'hui, le film « Le Grand Voyage » passe à 14 heures, 17 heures et 20 heures 30. Le tarif normal est de 10 euros. Pour les étudiants et les moins de 14 ans, la place coûte 7 euros. Le mercredi, toutes les places sont à 6 euros.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "delf-a1-3-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quelle est la dernière séance ?",
+          "options": [
+            "20 h 30",
+            "17 h",
+            "14 h",
+            "21 h 30"
+          ],
+          "answer": 0,
+          "explanation": "14 heures, 17 heures et 20 heures 30。"
+        },
+        {
+          "id": "delf-a1-3-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pour un étudiant, la place coûte…",
+          "options": [
+            "7 euros",
+            "10 euros",
+            "6 euros",
+            "14 euros"
+          ],
+          "answer": 0,
+          "explanation": "Pour les étudiants… la place coûte 7 euros。"
+        },
+        {
+          "id": "delf-a1-3-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le Rex est…",
+          "options": [
+            "un cinéma",
+            "un restaurant",
+            "un hôtel",
+            "un magasin"
+          ],
+          "answer": 0,
+          "explanation": "Bienvenue au cinéma Le Rex。"
+        },
+        {
+          "id": "delf-a1-3-q04",
+          "type": "fill",
+          "instruction": "請填入數字（可用阿拉伯數字或法文）",
+          "stem": "Le mercredi, toutes les places sont à ___ euros.",
+          "answers": [
+            "6",
+            "six"
+          ],
+          "explanation": "Le mercredi, toutes les places sont à 6 euros。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力二：在麵包店",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "A : Bonjour, madame !\nB : Bonjour ! Je voudrais une baguette et deux croissants, s'il vous plaît.\nA : Voilà. Et avec ceci ?\nB : Un pain au chocolat aussi. C'est combien ?\nA : Ça fait 4 euros 60.\nB : Voilà 5 euros.\nA : Merci, et voici 40 centimes.",
+        "speak": true,
+        "dialogue": true
+      },
+      "questions": [
+        {
+          "id": "delf-a1-3-q05",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La cliente achète combien de croissants ?",
+          "options": [
+            "Deux",
+            "Un",
+            "Trois",
+            "Quatre"
+          ],
+          "answer": 0,
+          "explanation": "deux croissants。"
+        },
+        {
+          "id": "delf-a1-3-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Elle achète aussi…",
+          "options": [
+            "un pain au chocolat",
+            "une tarte",
+            "un gâteau",
+            "une deuxième baguette"
+          ],
+          "answer": 0,
+          "explanation": "Un pain au chocolat aussi。"
+        },
+        {
+          "id": "delf-a1-3-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Elle paie…",
+          "options": [
+            "4 euros 60",
+            "5 euros 40",
+            "6 euros 40",
+            "4 euros 16"
+          ],
+          "answer": 0,
+          "explanation": "Ça fait 4 euros 60。"
+        },
+        {
+          "id": "delf-a1-3-q08",
+          "type": "fill",
+          "instruction": "請填入數字",
+          "stem": "La boulangère lui rend ___ centimes.",
+          "answers": [
+            "40",
+            "quarante"
+          ],
+          "explanation": "voici 40 centimes：找 40 分。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀一：生日邀請卡",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Camille a 8 ans !\n\nViens fêter son anniversaire le dimanche 14 avril, de 14 h à 17 h, au 5, place des Lilas.\nAu programme : jeux, gâteau et chasse au trésor !\n\nMerci de répondre avant le 10 avril à la maman de Camille.",
+        "title": "邀請卡"
+      },
+      "questions": [
+        {
+          "id": "delf-a1-3-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "C'est une invitation pour…",
+          "options": [
+            "un anniversaire",
+            "un mariage",
+            "une sortie scolaire",
+            "un concert"
+          ],
+          "answer": 0,
+          "explanation": "Viens fêter son anniversaire。"
+        },
+        {
+          "id": "delf-a1-3-q10",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La fête a lieu…",
+          "options": [
+            "le dimanche 14 avril",
+            "le samedi 14 avril",
+            "le dimanche 10 avril",
+            "le lundi 5 avril"
+          ],
+          "answer": 0,
+          "explanation": "le dimanche 14 avril。"
+        },
+        {
+          "id": "delf-a1-3-q11",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Qu'est-ce qu'on va faire ?",
+          "options": [
+            "Des jeux et une chasse au trésor",
+            "Du sport",
+            "Un spectacle de musique",
+            "Une visite au zoo"
+          ],
+          "answer": 0,
+          "explanation": "jeux, gâteau et chasse au trésor。"
+        },
+        {
+          "id": "delf-a1-3-q12",
+          "type": "fill",
+          "instruction": "請填入日期（數字）",
+          "stem": "Il faut répondre avant le ___ avril.",
+          "answers": [
+            "10",
+            "dix"
+          ],
+          "explanation": "Merci de répondre avant le 10 avril。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀二：學校通知",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Chers parents,\n\nLa sortie au zoo aura lieu le vendredi 23 mai. Le départ est à 8 h 30 devant l'école et le retour vers 16 h. Les enfants doivent apporter un pique-nique et une bouteille d'eau. La sortie coûte 12 euros. Merci de donner l'argent à l'enseignant avant le 16 mai.\n\nLa directrice",
+        "title": "通知"
+      },
+      "questions": [
+        {
+          "id": "delf-a1-3-q13",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les enfants vont…",
+          "options": [
+            "au zoo",
+            "à la piscine",
+            "au musée",
+            "à la plage"
+          ],
+          "answer": 0,
+          "explanation": "La sortie au zoo。"
+        },
+        {
+          "id": "delf-a1-3-q14",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le départ a lieu…",
+          "options": [
+            "à 8 h 30 devant l'école",
+            "à 16 h devant le zoo",
+            "à 8 h 30 au zoo",
+            "à 9 h devant la mairie"
+          ],
+          "answer": 0,
+          "explanation": "Le départ est à 8 h 30 devant l'école。"
+        },
+        {
+          "id": "delf-a1-3-q15",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les enfants doivent apporter…",
+          "options": [
+            "un pique-nique et de l'eau",
+            "un maillot de bain",
+            "un livre",
+            "de l'argent de poche"
+          ],
+          "answer": 0,
+          "explanation": "un pique-nique et une bouteille d'eau。"
+        },
+        {
+          "id": "delf-a1-3-q16",
+          "type": "fill",
+          "instruction": "請填入數字（可用阿拉伯數字或法文）",
+          "stem": "La sortie coûte ___ euros.",
+          "answers": [
+            "12",
+            "douze"
+          ],
+          "explanation": "La sortie coûte 12 euros。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Vous êtes malade et vous ne pouvez pas aller au cours de français demain. Vous écrivez un message à votre professeur(e) : vous expliquez ce que vous avez et vous demandez les devoirs. (40 à 50 mots)",
+        "minWords": 40,
+        "rubric": [
+          "有符合題目要求的情境（寫給誰、為什麼寫）",
+          "內容完整回答了題目要的每一點",
+          "有適當的開頭和結尾（稱呼、問候、署名）",
+          "用字正確、拼寫正確",
+          "動詞變化與時態正確",
+          "字數符合要求"
+        ],
+        "model": "Bonjour Madame Leroy,\n\nJe suis désolé, mais je ne peux pas venir au cours demain. Je suis malade : j'ai de la fièvre et j'ai mal à la tête. Je reste à la maison. Est-ce que vous pouvez m'envoyer les devoirs, s'il vous plaît ?\n\nMerci beaucoup,\nKevin",
+        "maxWords": 50
+      }
+    }
+  ]
+}

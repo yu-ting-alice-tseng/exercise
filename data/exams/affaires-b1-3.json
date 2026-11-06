@@ -1,0 +1,288 @@
+{
+  "id": "affaires-b1-3",
+  "exam": "affaires",
+  "level": "B1",
+  "title": "商務法語 B1 模擬卷 3",
+  "fr": "Français des affaires B1 – Entraînement 3",
+  "minutes": 75,
+  "desc": "徵才廣告、求職面試、求職與人事用語（CDI、試用期、稅前薪資），以及寫求職信。",
+  "sections": [
+    {
+      "kind": "reading",
+      "title": "閱讀：徵才廣告",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Offre d'emploi – Chargé(e) de clientèle (CDI)\n\nL'agence de voyages Horizon recrute un(e) chargé(e) de clientèle pour son agence de Nantes.\n\nMissions : accueillir et conseiller les clients, vendre des séjours, gérer les réservations et le suivi après-vente.\n\nProfil : formation dans le tourisme ou le commerce, première expérience souhaitée. Maîtrise de l'anglais indispensable ; une deuxième langue étrangère serait un plus.\n\nConditions : CDI à temps plein, 35 heures par semaine, du mardi au samedi. Salaire selon expérience + prime sur objectifs.",
+        "title": "徵才廣告"
+      },
+      "questions": [
+        {
+          "id": "affaires-b1-3-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Il s'agit d'un contrat…",
+          "options": [
+            "à durée indéterminée",
+            "à durée déterminée",
+            "de stage",
+            "à temps partiel"
+          ],
+          "answer": 0,
+          "explanation": "CDI à temps plein。"
+        },
+        {
+          "id": "affaires-b1-3-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Parmi les missions, il y a…",
+          "options": [
+            "conseiller les clients",
+            "conduire des bus",
+            "faire la comptabilité",
+            "nettoyer l'agence"
+          ],
+          "answer": 0,
+          "explanation": "accueillir et conseiller les clients。"
+        },
+        {
+          "id": "affaires-b1-3-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quelle langue est indispensable ?",
+          "options": [
+            "L'anglais",
+            "L'espagnol",
+            "Le chinois",
+            "L'allemand"
+          ],
+          "answer": 0,
+          "explanation": "Maîtrise de l'anglais indispensable。"
+        },
+        {
+          "id": "affaires-b1-3-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "En plus du salaire, l'employé peut recevoir…",
+          "options": [
+            "une prime sur objectifs",
+            "une voiture",
+            "un logement",
+            "des voyages gratuits"
+          ],
+          "answer": 0,
+          "explanation": "Salaire selon expérience + prime sur objectifs。"
+        },
+        {
+          "id": "affaires-b1-3-q05",
+          "type": "fill",
+          "instruction": "請填入數字（可用阿拉伯數字或法文）",
+          "stem": "Le poste est de ___ heures par semaine.",
+          "answers": [
+            "35",
+            "trente-cinq"
+          ],
+          "explanation": "35 heures par semaine。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力：求職面試",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "A : Pourquoi souhaitez-vous travailler chez nous ?\nB : Votre entreprise est connue pour ses voyages responsables, et c'est un domaine qui me passionne.\nA : Parlez-moi de votre expérience.\nB : J'ai travaillé deux ans dans un office de tourisme, où je renseignais surtout des visiteurs étrangers.\nA : Quelles langues parlez-vous ?\nB : L'anglais couramment, et j'ai un bon niveau en espagnol.\nA : Très bien. Vous seriez disponible quand ?\nB : Dès le mois prochain.",
+        "speak": true,
+        "dialogue": true
+      },
+      "questions": [
+        {
+          "id": "affaires-b1-3-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pourquoi le candidat veut-il travailler dans cette entreprise ?",
+          "options": [
+            "Pour ses voyages responsables",
+            "Pour le salaire",
+            "Parce qu'elle est près de chez lui",
+            "Pour voyager gratuitement"
+          ],
+          "answer": 0,
+          "explanation": "connue pour ses voyages responsables。"
+        },
+        {
+          "id": "affaires-b1-3-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Il a travaillé…",
+          "options": [
+            "deux ans dans un office de tourisme",
+            "deux mois dans un hôtel",
+            "dans une banque",
+            "dans une agence à l'étranger"
+          ],
+          "answer": 0,
+          "explanation": "J'ai travaillé deux ans dans un office de tourisme。"
+        },
+        {
+          "id": "affaires-b1-3-q08",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Il parle…",
+          "options": [
+            "anglais et espagnol",
+            "anglais et allemand",
+            "seulement français",
+            "chinois et anglais"
+          ],
+          "answer": 0,
+          "explanation": "L'anglais couramment… espagnol。"
+        },
+        {
+          "id": "affaires-b1-3-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Il peut commencer…",
+          "options": [
+            "le mois prochain",
+            "demain",
+            "dans un an",
+            "la semaine prochaine"
+          ],
+          "answer": 0,
+          "explanation": "Dès le mois prochain。"
+        }
+      ]
+    },
+    {
+      "kind": "structure",
+      "title": "求職與人事用語",
+      "fr": "Vocabulaire de l'emploi",
+      "instruction": "請選出或填入正確的答案。",
+      "questions": [
+        {
+          "id": "affaires-b1-3-q10",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Avec son CV, on envoie une lettre de ___.",
+          "answers": [
+            "motivation"
+          ],
+          "explanation": "la lettre de motivation：求職信。"
+        },
+        {
+          "id": "affaires-b1-3-q11",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Démissionner, c'est…",
+          "options": [
+            "quitter volontairement son emploi",
+            "être licencié",
+            "partir à la retraite",
+            "être promu"
+          ],
+          "answer": 0,
+          "explanation": "démissionner：主動辭職。"
+        },
+        {
+          "id": "affaires-b1-3-q12",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Être licencié, c'est…",
+          "options": [
+            "perdre son emploi sur décision de l'employeur",
+            "quitter volontairement son emploi",
+            "changer de poste",
+            "prendre des congés"
+          ],
+          "answer": 0,
+          "explanation": "être licencié：被解僱。"
+        },
+        {
+          "id": "affaires-b1-3-q13",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Un entretien d'embauche est…",
+          "options": [
+            "un rendez-vous pour obtenir un emploi",
+            "une réunion d'équipe",
+            "une formation",
+            "un contrat"
+          ],
+          "answer": 0,
+          "explanation": "entretien d'embauche：求職面試。"
+        },
+        {
+          "id": "affaires-b1-3-q14",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Travailler à temps partiel, c'est…",
+          "options": [
+            "travailler moins que la durée normale",
+            "faire des heures supplémentaires",
+            "travailler la nuit",
+            "travailler à domicile"
+          ],
+          "answer": 0,
+          "explanation": "temps partiel：兼職、部分工時。"
+        },
+        {
+          "id": "affaires-b1-3-q15",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le salaire brut est…",
+          "options": [
+            "le salaire avant les cotisations sociales",
+            "le salaire après impôts",
+            "une prime",
+            "le salaire versé en espèces"
+          ],
+          "answer": 0,
+          "explanation": "brut：稅前（扣除社會分攤金之前）；net：實領。"
+        },
+        {
+          "id": "affaires-b1-3-q16",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Au début d'un CDI, il y a souvent une période d'___.",
+          "answers": [
+            "essai"
+          ],
+          "explanation": "la période d'essai：試用期。"
+        },
+        {
+          "id": "affaires-b1-3-q17",
+          "type": "fill",
+          "instruction": "請填入一個字（原形動詞）",
+          "stem": "Je vous prie d'___, Madame, l'expression de mes salutations distinguées.",
+          "answers": [
+            "agréer"
+          ],
+          "explanation": "Je vous prie d'agréer…：正式信件的結尾句。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作：求職信",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Vous répondez à l'offre d'emploi de l'agence Horizon (chargé(e) de clientèle). Rédigez votre lettre de motivation par courriel. (100 à 120 mots)",
+        "minWords": 100,
+        "rubric": [
+          "有符合題目要求的情境（寫給誰、為什麼寫）",
+          "內容完整回答了題目要的每一點",
+          "有適當的開頭和結尾（稱呼、問候、署名）",
+          "用字正確、拼寫正確",
+          "動詞變化與時態正確",
+          "字數符合要求",
+          "使用商務書信的固定用語（Objet、Madame/Monsieur、Cordialement 等）"
+        ],
+        "model": "Objet : Candidature au poste de chargée de clientèle\n\nMadame, Monsieur,\n\nVotre offre de chargé(e) de clientèle a retenu toute mon attention. Diplômée en tourisme, j'ai travaillé deux ans dans un office de tourisme, où j'accueillais et conseillais des visiteurs du monde entier. Cette expérience m'a appris à comprendre rapidement les besoins des clients.\n\nJe parle couramment anglais et mandarin, ce qui serait un atout pour votre clientèle internationale. Votre engagement en faveur des voyages responsables correspond par ailleurs à mes valeurs.\n\nJe serais heureuse de vous présenter ma motivation lors d'un entretien. Vous trouverez mon CV en pièce jointe.\n\nCordialement,\n\nLin Yu-Chen",
+        "maxWords": 120
+      }
+    }
+  ]
+}

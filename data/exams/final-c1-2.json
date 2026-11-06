@@ -1,0 +1,90 @@
+{
+  "id": "final-c1-2",
+  "exam": "final",
+  "level": "C1",
+  "title": "C1 期末綜合卷 2",
+  "fr": "Examen final – niveau C1 (2)",
+  "minutes": 100,
+  "desc": "從 C1 題庫隨機抽 14 題文法與詞彙，加上一篇閱讀和一題寫作。每次抽到的文法題都不同。",
+  "sections": [
+    {
+      "kind": "bank",
+      "title": "文法與詞彙",
+      "fr": "Grammaire et vocabulaire",
+      "instruction": "從題庫隨機抽題，每次作答題目都不同。",
+      "bank": {
+        "choice": 6,
+        "fill": 5,
+        "short": 3
+      }
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Répondre à un courriel en participant à une réunion, écouter un podcast en rédigeant un rapport : nous sommes nombreux à croire que faire plusieurs choses à la fois nous rend plus efficaces. Les recherches en psychologie cognitive invitent à déchanter. Hormis pour des tâches très automatisées, comme marcher en parlant, notre cerveau ne traite pas réellement deux activités exigeantes en parallèle : il passe rapidement de l'une à l'autre. Or chaque bascule a un coût, sous forme de temps perdu et d'erreurs. Le paradoxe est que les personnes qui pratiquent le plus le multitâche s'estiment souvent particulièrement douées pour cela, alors que leurs performances sont plutôt moins bonnes. L'efficacité, conclut-on, tient moins à la capacité de tout mener de front qu'à celle de se protéger des interruptions."
+      },
+      "questions": [
+        {
+          "id": "final-c1-2-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon les recherches, face à deux tâches exigeantes, le cerveau…",
+          "options": [
+            "passe rapidement de l'une à l'autre",
+            "les traite vraiment en même temps",
+            "abandonne l'une des deux",
+            "devient plus rapide"
+          ],
+          "answer": 0,
+          "explanation": "il passe rapidement de l'une à l'autre。"
+        },
+        {
+          "id": "final-c1-2-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel paradoxe est souligné ?",
+          "options": [
+            "Ceux qui font le plus de multitâche se croient doués mais réussissent moins bien",
+            "Le multitâche améliore la mémoire",
+            "Les experts refusent le multitâche",
+            "Marcher en parlant est difficile"
+          ],
+          "answer": 0,
+          "explanation": "s'estiment… douées… alors que leurs performances sont plutôt moins bonnes。"
+        },
+        {
+          "id": "final-c1-2-q03",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "L'efficacité tient surtout à la capacité de se protéger des ___.",
+          "answers": [
+            "interruptions"
+          ],
+          "explanation": "se protéger des interruptions：避免被打斷。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Les entreprises devraient-elles interdire les réunions pendant certaines plages horaires afin de protéger la concentration des salariés ? Rédigez un essai argumenté. (250 mots minimum)",
+        "minWords": 250,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Des matinées sans réunion : une protection ou une contrainte de plus ?\n\nDans bien des entreprises, l'agenda des salariés ressemble à une mosaïque de réunions, entre lesquelles il faut caser le travail de fond. Certaines organisations ont donc décidé d'interdire les réunions pendant des plages horaires précises, par exemple le matin. La mesure est séduisante ; elle n'est pas pour autant une solution miracle.\n\nSes avantages sont réels. Un travail qui exige de la réflexion – rédiger, analyser, concevoir – suppose de longues périodes sans interruption. Or une réunion au milieu d'une matinée suffit à fragmenter le temps disponible et à rendre impossible toute concentration durable. En sanctuarisant certains créneaux, l'entreprise envoie aussi un message clair : le temps de réflexion a autant de valeur que le temps d'échange.\n\nToutefois, une interdiction rigide comporte des risques. Certaines équipes, notamment celles qui travaillent avec des partenaires à l'étranger, ont besoin de souplesse. Par ailleurs, si le nombre de réunions reste le même, elles se concentreront simplement l'après-midi, au détriment d'autres activités. Le problème ne serait alors que déplacé.\n\nLa véritable question est donc moins celle du moment des réunions que celle de leur nombre et de leur utilité. Avant d'interdire, il faudrait s'interroger : cette réunion est-elle nécessaire ? Un message écrit ne suffirait-il pas ? Combinées à une telle réflexion, des plages protégées peuvent devenir un véritable outil au service de la qualité du travail.\n\nEn somme, protéger la concentration relève moins d'une règle que d'une culture d'entreprise."
+      }
+    }
+  ]
+}

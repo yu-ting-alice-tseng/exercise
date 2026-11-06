@@ -1,0 +1,201 @@
+{
+  "id": "delf-b2-3",
+  "exam": "delf",
+  "level": "B2",
+  "title": "DELF B2 模擬卷 3",
+  "fr": "DELF B2 – Sujet d'entraînement 3",
+  "minutes": 120,
+  "desc": "聽力 1 段訪談、閱讀 1 篇論說文、寫作 1 題（正式書信）。真實考試另有口說測驗。",
+  "sections": [
+    {
+      "kind": "listening",
+      "title": "聽力：訪談",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "A : Les trains de nuit reviennent en Europe. Comment expliquez-vous ce regain d'intérêt ?\nB : Il y a d'abord une raison écologique : pour une même distance, le train émet beaucoup moins de CO2 que l'avion. Mais ce n'est pas tout. Beaucoup de voyageurs redécouvrent le plaisir de partir le soir et d'arriver le matin en centre-ville, sans perdre une journée.\nA : Pourtant, ces trains avaient presque disparu…\nB : Oui, parce qu'ils coûtent cher à exploiter : le matériel ne sert qu'une fois par jour, et le personnel travaille de nuit. Face à la concurrence des compagnies aériennes à bas prix, beaucoup de lignes ont fermé.\nA : Le modèle est-il viable aujourd'hui ?\nB : Il le sera à condition que les États le soutiennent. Sans cela, le train de nuit restera un produit de niche.",
+        "speak": true,
+        "dialogue": true
+      },
+      "questions": [
+        {
+          "id": "delf-b2-3-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quelle est la première raison du retour des trains de nuit ?",
+          "options": [
+            "Écologique",
+            "Économique",
+            "Touristique",
+            "Politique"
+          ],
+          "answer": 0,
+          "explanation": "Il y a d'abord une raison écologique。"
+        },
+        {
+          "id": "delf-b2-3-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel autre avantage est mentionné ?",
+          "options": [
+            "Arriver le matin en centre-ville sans perdre une journée",
+            "Voyager moins cher qu'en avion",
+            "Dormir dans des chambres de luxe",
+            "Voyager plus vite"
+          ],
+          "answer": 0,
+          "explanation": "partir le soir et d'arriver le matin en centre-ville, sans perdre une journée。"
+        },
+        {
+          "id": "delf-b2-3-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pourquoi ces trains avaient-ils presque disparu ?",
+          "options": [
+            "Ils coûtaient cher à exploiter",
+            "Les voyageurs n'aimaient pas dormir dans le train",
+            "Ils étaient dangereux",
+            "Il n'y avait plus de rails"
+          ],
+          "answer": 0,
+          "explanation": "parce qu'ils coûtent cher à exploiter。"
+        },
+        {
+          "id": "delf-b2-3-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon l'invité, le modèle sera viable si…",
+          "options": [
+            "les États le soutiennent",
+            "les billets deviennent plus chers",
+            "les avions disparaissent",
+            "les trains roulent le jour"
+          ],
+          "answer": 0,
+          "explanation": "à condition que les États le soutiennent。"
+        },
+        {
+          "id": "delf-b2-3-q05",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Sinon, le train de nuit restera un produit de ___.",
+          "answers": [
+            "niche"
+          ],
+          "explanation": "un produit de niche：小眾產品。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀：論說文",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Pendant longtemps, on a cru qu'élever un enfant dans deux langues risquait de le perturber : il les mélangerait, parlerait plus tard, aurait du mal à l'école. Les recherches menées depuis plusieurs décennies ont largement démenti ces craintes.\n\nCertes, un enfant bilingue peut connaître moins de mots dans chacune de ses langues, mais l'ensemble de son vocabulaire est comparable à celui d'un enfant monolingue. Quant au mélange des langues, il ne traduit pas une confusion : c'est au contraire une compétence, qui consiste à mobiliser le mot le plus disponible. Certaines études suggèrent même que passer d'une langue à l'autre entraînerait la capacité à se concentrer et à changer de tâche, même si ces résultats font encore débat.\n\nLe véritable défi est ailleurs : maintenir la langue minoritaire, celle qui n'est parlée qu'à la maison. Sans occasions régulières de la pratiquer, beaucoup d'enfants finissent par la comprendre sans plus oser la parler.",
+        "title": "論說文"
+      },
+      "questions": [
+        {
+          "id": "delf-b2-3-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Autrefois, on pensait que le bilinguisme…",
+          "options": [
+            "pouvait perturber l'enfant",
+            "rendait l'enfant plus intelligent",
+            "était obligatoire",
+            "n'avait aucun effet"
+          ],
+          "answer": 0,
+          "explanation": "on a cru qu'élever un enfant dans deux langues risquait de le perturber。"
+        },
+        {
+          "id": "delf-b2-3-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le vocabulaire total d'un enfant bilingue est…",
+          "options": [
+            "comparable à celui d'un monolingue",
+            "deux fois plus grand",
+            "beaucoup plus petit",
+            "impossible à mesurer"
+          ],
+          "answer": 0,
+          "explanation": "l'ensemble de son vocabulaire est comparable。"
+        },
+        {
+          "id": "delf-b2-3-q08",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon le texte, mélanger les langues est…",
+          "options": [
+            "une compétence",
+            "un signe de confusion",
+            "un problème grave",
+            "une habitude à corriger"
+          ],
+          "answer": 0,
+          "explanation": "c'est au contraire une compétence。"
+        },
+        {
+          "id": "delf-b2-3-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les effets sur la concentration…",
+          "options": [
+            "ne sont pas encore certains",
+            "sont prouvés",
+            "sont négatifs",
+            "n'ont jamais été étudiés"
+          ],
+          "answer": 0,
+          "explanation": "même si ces résultats font encore débat。"
+        },
+        {
+          "id": "delf-b2-3-q10",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel est le vrai défi ?",
+          "options": [
+            "Maintenir la langue parlée seulement à la maison",
+            "Apprendre une troisième langue",
+            "Éviter les mélanges",
+            "Choisir la bonne école"
+          ],
+          "answer": 0,
+          "explanation": "maintenir la langue minoritaire。"
+        },
+        {
+          "id": "delf-b2-3-q11",
+          "type": "fill",
+          "instruction": "請填入一個字（原形動詞）",
+          "stem": "Beaucoup d'enfants finissent par comprendre la langue sans plus oser la ___.",
+          "answers": [
+            "parler"
+          ],
+          "explanation": "sans plus oser la parler：聽得懂卻不敢說。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Vous vivez à l'étranger avec votre famille. L'école de votre enfant conseille aux parents de ne parler que la langue du pays à la maison. Vous écrivez une lettre formelle à la directrice pour exprimer votre désaccord de façon argumentée. (250 mots minimum)",
+        "minWords": 250,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Madame la Directrice,\n\nLors de la dernière réunion de parents, l'équipe enseignante nous a conseillé de ne parler que français à la maison afin de faciliter l'intégration de nos enfants. Je comprends l'intention de ce conseil, mais je souhaite vous faire part de mon désaccord.\n\nTout d'abord, les recherches sur le bilinguisme montrent qu'apprendre deux langues ne nuit pas à la réussite scolaire. Au contraire, un enfant qui maîtrise bien sa langue maternelle s'appuie sur elle pour apprendre la seconde. Abandonner le mandarin à la maison risquerait donc de fragiliser, plutôt que de renforcer, les apprentissages de ma fille.\n\nEnsuite, notre langue est le lien qui unit notre fille à ses grands-parents, qui ne parlent pas français. Renoncer à la parler, ce serait la couper d'une partie de sa famille et de son histoire. De plus, mon français n'est pas encore parfait : en le parlant à la maison, je lui transmettrais sans doute des erreurs.\n\nEnfin, ma fille est exposée au français toute la journée, à l'école comme avec ses amis. Elle progresse d'ailleurs très rapidement, comme l'a souligné son enseignante.\n\nJe propose donc une autre approche : nous continuerons à parler mandarin à la maison, mais nous lirons régulièrement des livres français avec elle et nous l'inscrirons à des activités en français le mercredi.\n\nJe reste à votre disposition pour en discuter et vous prie d'agréer, Madame la Directrice, l'expression de mes salutations distinguées.\n\nWang Li"
+      }
+    }
+  ]
+}

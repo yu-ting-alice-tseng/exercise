@@ -1,0 +1,291 @@
+{
+  "id": "affaires-b1-2",
+  "exam": "affaires",
+  "level": "B1",
+  "title": "商務法語 B1 模擬卷 2",
+  "fr": "Français des affaires B1 – Entraînement 2",
+  "minutes": 75,
+  "desc": "詢價信、催款電話、公司與職場用語，以及寫會議通知信。",
+  "sections": [
+    {
+      "kind": "reading",
+      "title": "閱讀：詢價信",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Objet : Demande de devis – séminaire\n\nMadame, Monsieur,\n\nNotre société organise un séminaire pour 35 collaborateurs les 12 et 13 juin prochains. Nous recherchons un hôtel proche de Lyon disposant d'une salle de réunion équipée (vidéoprojecteur, connexion wifi) et pouvant assurer les repas du midi et du soir.\n\nPourriez-vous nous faire parvenir un devis détaillé avant le 15 mai ? Nous souhaiterions également savoir si une visite des lieux est possible.\n\nDans l'attente de votre réponse, nous vous prions d'agréer, Madame, Monsieur, nos salutations distinguées.\n\nNadia Ferhat\nAssistante de direction – Solvia",
+        "title": "商務電子郵件"
+      },
+      "questions": [
+        {
+          "id": "affaires-b1-2-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Mme Ferhat écrit pour…",
+          "options": [
+            "demander un devis",
+            "réserver une salle de concert",
+            "se plaindre d'un service",
+            "annuler une réservation"
+          ],
+          "answer": 0,
+          "explanation": "Objet : Demande de devis。"
+        },
+        {
+          "id": "affaires-b1-2-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Combien de personnes participeront au séminaire ?",
+          "options": [
+            "35",
+            "13",
+            "12",
+            "53"
+          ],
+          "answer": 0,
+          "explanation": "un séminaire pour 35 collaborateurs。"
+        },
+        {
+          "id": "affaires-b1-2-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La salle doit être équipée…",
+          "options": [
+            "d'un vidéoprojecteur et du wifi",
+            "d'une cuisine",
+            "d'une piscine",
+            "d'un parking privé"
+          ],
+          "answer": 0,
+          "explanation": "vidéoprojecteur, connexion wifi。"
+        },
+        {
+          "id": "affaires-b1-2-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Elle demande aussi…",
+          "options": [
+            "s'il est possible de visiter les lieux",
+            "une réduction",
+            "un transport depuis Paris",
+            "des chambres individuelles"
+          ],
+          "answer": 0,
+          "explanation": "savoir si une visite des lieux est possible。"
+        },
+        {
+          "id": "affaires-b1-2-q05",
+          "type": "fill",
+          "instruction": "請填入日期（數字）",
+          "stem": "Le devis doit arriver avant le ___ mai.",
+          "answers": [
+            "15",
+            "quinze"
+          ],
+          "explanation": "avant le 15 mai。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力：催款電話",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Bonjour, ici Pierre Lambert, du service comptabilité de Fournitures Express. Je vous appelle car nous n'avons pas encore reçu le paiement de la facture numéro 2087, d'un montant de 1 250 euros, qui devait être réglée le 31 mars. Il s'agit peut-être d'un oubli. Pourriez-vous vérifier et nous rappeler au plus vite ? Merci.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "affaires-b1-2-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "M. Lambert travaille…",
+          "options": [
+            "au service comptabilité",
+            "au service commercial",
+            "à la direction",
+            "à l'accueil"
+          ],
+          "answer": 0,
+          "explanation": "du service comptabilité。"
+        },
+        {
+          "id": "affaires-b1-2-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pourquoi appelle-t-il ?",
+          "options": [
+            "Une facture n'a pas été payée",
+            "Une livraison est en retard",
+            "Un produit est cassé",
+            "Il veut vendre un produit"
+          ],
+          "answer": 0,
+          "explanation": "nous n'avons pas encore reçu le paiement de la facture。"
+        },
+        {
+          "id": "affaires-b1-2-q08",
+          "type": "fill",
+          "instruction": "請填入數字（不用寫單位）",
+          "stem": "Le montant de la facture est de ___ euros.",
+          "answers": [
+            "1250",
+            "1 250",
+            "1.250"
+          ],
+          "explanation": "d'un montant de 1 250 euros。法文的千位分隔通常用空格。"
+        },
+        {
+          "id": "affaires-b1-2-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La facture devait être payée…",
+          "options": [
+            "le 31 mars",
+            "le 2 mars",
+            "le 31 mai",
+            "aujourd'hui"
+          ],
+          "answer": 0,
+          "explanation": "qui devait être réglée le 31 mars。"
+        }
+      ]
+    },
+    {
+      "kind": "structure",
+      "title": "職場與商務用語",
+      "fr": "Vocabulaire professionnel",
+      "instruction": "請選出或填入正確的答案。",
+      "questions": [
+        {
+          "id": "affaires-b1-2-q10",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Une personne qui achète régulièrement chez une entreprise est…",
+          "options": [
+            "un client",
+            "un fournisseur",
+            "un salarié",
+            "un concurrent"
+          ],
+          "answer": 0,
+          "explanation": "client：客戶。"
+        },
+        {
+          "id": "affaires-b1-2-q11",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Une entreprise qui vend des marchandises à une autre entreprise est…",
+          "options": [
+            "un fournisseur",
+            "un client",
+            "un actionnaire",
+            "un stagiaire"
+          ],
+          "answer": 0,
+          "explanation": "fournisseur：供應商。"
+        },
+        {
+          "id": "affaires-b1-2-q12",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Une période de formation en entreprise pour un étudiant s'appelle…",
+          "options": [
+            "un stage",
+            "un congé",
+            "un CDI",
+            "le chômage"
+          ],
+          "answer": 0,
+          "explanation": "stage：實習。"
+        },
+        {
+          "id": "affaires-b1-2-q13",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les congés payés sont…",
+          "options": [
+            "des vacances payées par l'employeur",
+            "des heures supplémentaires",
+            "une prime",
+            "un arrêt maladie"
+          ],
+          "answer": 0,
+          "explanation": "congés payés：有薪假。"
+        },
+        {
+          "id": "affaires-b1-2-q14",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "L'argent qu'on reçoit en plus du salaire pour de bons résultats est…",
+          "options": [
+            "une prime",
+            "une facture",
+            "un devis",
+            "une remise"
+          ],
+          "answer": 0,
+          "explanation": "prime：獎金。"
+        },
+        {
+          "id": "affaires-b1-2-q15",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Le ___ général dirige l'entreprise.",
+          "answers": [
+            "directeur",
+            "président"
+          ],
+          "explanation": "le directeur général：總經理。"
+        },
+        {
+          "id": "affaires-b1-2-q16",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Nous accusons ___ de votre courrier du 3 mars.",
+          "answers": [
+            "réception"
+          ],
+          "explanation": "accuser réception de：確認收到（商務書信用語）。"
+        },
+        {
+          "id": "affaires-b1-2-q17",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Un salarié en CDD a un contrat…",
+          "options": [
+            "qui se termine à une date prévue",
+            "sans date de fin",
+            "uniquement le week-end",
+            "sans salaire"
+          ],
+          "answer": 0,
+          "explanation": "CDD＝contrat à durée déterminée：有固定的結束日期。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作：會議通知",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Vous êtes assistant(e) dans une entreprise. Vous écrivez un courriel à vos collègues pour annoncer une réunion importante : date, heure, lieu, sujet, et ce que chacun doit préparer. (100 à 120 mots)",
+        "minWords": 100,
+        "rubric": [
+          "有符合題目要求的情境（寫給誰、為什麼寫）",
+          "內容完整回答了題目要的每一點",
+          "有適當的開頭和結尾（稱呼、問候、署名）",
+          "用字正確、拼寫正確",
+          "動詞變化與時態正確",
+          "字數符合要求",
+          "使用商務書信的固定用語（Objet、Madame/Monsieur、Cordialement 等）"
+        ],
+        "model": "Objet : Réunion de service – mardi 14 mai\n\nBonjour à tous,\n\nJe vous informe qu'une réunion de service aura lieu le mardi 14 mai, de 10 h à 11 h 30, dans la salle de conférence du deuxième étage. La directrice commerciale nous présentera les résultats du premier trimestre et les objectifs pour l'été.\n\nAfin que la réunion soit efficace, merci de préparer chacun un court bilan de vos dossiers en cours, ainsi que vos questions éventuelles. Un café sera servi à l'accueil.\n\nSi vous ne pouvez pas être présent, merci de me prévenir avant vendredi.\n\nCordialement,\n\nJulie Moreau\nAssistante de direction",
+        "maxWords": 120
+      }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "final-a2-2",
+  "exam": "final",
+  "level": "A2",
+  "title": "A2 期末綜合卷 2",
+  "fr": "Examen final – niveau A2 (2)",
+  "minutes": 60,
+  "desc": "從 A2 題庫隨機抽 16 題文法與詞彙，加上一篇閱讀和一題寫作。每次抽到的文法題都不同。",
+  "sections": [
+    {
+      "kind": "bank",
+      "title": "文法與詞彙",
+      "fr": "Grammaire et vocabulaire",
+      "instruction": "從題庫隨機抽題，每次作答題目都不同。",
+      "bank": {
+        "choice": 8,
+        "fill": 6,
+        "short": 2
+      }
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Hier, j'ai eu une journée catastrophique ! D'abord, mon réveil n'a pas sonné et je me suis levé avec une heure de retard. J'ai couru jusqu'à la gare, mais j'ai raté mon train. Quand je suis enfin arrivé au bureau, j'ai remarqué que j'avais oublié mon ordinateur à la maison ! Heureusement, une collègue m'a prêté le sien. Le soir, pour oublier cette journée, je suis allé au restaurant avec des amis."
+      },
+      "questions": [
+        {
+          "id": "final-a2-2-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pourquoi s'est-il levé en retard ?",
+          "options": [
+            "Son réveil n'a pas sonné",
+            "Il était malade",
+            "Il s'est couché tard",
+            "Il y avait une grève"
+          ],
+          "answer": 0,
+          "explanation": "mon réveil n'a pas sonné。"
+        },
+        {
+          "id": "final-a2-2-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Au bureau, il a remarqué qu'il avait oublié…",
+          "options": [
+            "son ordinateur",
+            "ses clés",
+            "son portefeuille",
+            "son téléphone"
+          ],
+          "answer": 0,
+          "explanation": "j'avais oublié mon ordinateur à la maison。"
+        },
+        {
+          "id": "final-a2-2-q03",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Le soir, il est allé au ___ avec des amis.",
+          "answers": [
+            "restaurant"
+          ],
+          "explanation": "je suis allé au restaurant avec des amis。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Racontez un voyage ou une sortie qui s'est mal passé(e). Qu'est-ce qui est arrivé ? Comment ça s'est terminé ? (60 à 80 mots)",
+        "minWords": 60,
+        "rubric": [
+          "有符合題目要求的情境（寫給誰、為什麼寫）",
+          "內容完整回答了題目要的每一點",
+          "有適當的開頭和結尾（稱呼、問候、署名）",
+          "用字正確、拼寫正確",
+          "動詞變化與時態正確",
+          "字數符合要求"
+        ],
+        "model": "L'été dernier, je suis partie camper à la montagne avec mon frère. Le premier soir, il a commencé à pleuvoir très fort et notre tente était mouillée. Nous n'avons pas dormi de la nuit ! Le lendemain matin, la voiture ne voulait plus démarrer. Heureusement, un agriculteur très gentil nous a aidés et nous a même invités à prendre le petit-déjeuner chez lui. Finalement, c'est un bon souvenir !",
+        "maxWords": 80
+      }
+    }
+  ]
+}

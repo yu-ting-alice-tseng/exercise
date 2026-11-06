@@ -1,0 +1,350 @@
+{
+  "id": "tef-2",
+  "exam": "tef",
+  "level": "B1",
+  "title": "TEF 風格模擬卷 2",
+  "fr": "TEF – Entraînement 2",
+  "minutes": 50,
+  "desc": "以生活與工作上的實用文件為主：廣告、通知、對話與廣播，以及詞彙與結構題。",
+  "sections": [
+    {
+      "kind": "reading",
+      "title": "閱讀一：課程廣告",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Atelier « Cuisine du monde » – Chaque samedi de 10 h à 13 h, apprenez à préparer un plat d'un pays différent avec notre chef. Groupes de 8 personnes maximum. Tarif : 45 € la séance, ingrédients compris. Vous repartez avec vos préparations ! Réservation obligatoire au moins 3 jours à l'avance.",
+        "title": "廣告"
+      },
+      "questions": [
+        {
+          "id": "tef-2-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Un atelier dure…",
+          "options": [
+            "trois heures",
+            "deux heures",
+            "une journée",
+            "quarante-cinq minutes"
+          ],
+          "answer": 0,
+          "explanation": "de 10 h à 13 h：三小時。"
+        },
+        {
+          "id": "tef-2-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les groupes comptent…",
+          "options": [
+            "8 personnes au maximum",
+            "au moins 8 personnes",
+            "13 personnes",
+            "45 personnes"
+          ],
+          "answer": 0,
+          "explanation": "Groupes de 8 personnes maximum。"
+        },
+        {
+          "id": "tef-2-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le prix comprend…",
+          "options": [
+            "les ingrédients",
+            "le transport",
+            "un repas au restaurant",
+            "un livre de recettes"
+          ],
+          "answer": 0,
+          "explanation": "45 € la séance, ingrédients compris。"
+        },
+        {
+          "id": "tef-2-q04",
+          "type": "fill",
+          "instruction": "請填入數字（可用阿拉伯數字或法文）",
+          "stem": "Il faut réserver au moins ___ jours à l'avance.",
+          "answers": [
+            "3",
+            "trois"
+          ],
+          "explanation": "au moins 3 jours à l'avance。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀二：銀行信件",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Madame,\n\nNous vous informons qu'à compter du 1er janvier, les frais de tenue de compte passeront de 2 € à 3 € par mois. Si vous n'acceptez pas cette modification, vous pouvez résilier votre convention de compte sans frais avant cette date. Votre conseiller reste à votre disposition pour toute question.\n\nVotre agence",
+        "title": "信件"
+      },
+      "questions": [
+        {
+          "id": "tef-2-q05",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Qu'est-ce qui change ?",
+          "options": [
+            "Les frais mensuels augmentent",
+            "Le numéro de compte",
+            "L'adresse de l'agence",
+            "Le nom du conseiller"
+          ],
+          "answer": 0,
+          "explanation": "les frais… passeront de 2 € à 3 € par mois。"
+        },
+        {
+          "id": "tef-2-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Ce changement s'applique…",
+          "options": [
+            "à partir du 1er janvier",
+            "immédiatement",
+            "dans un an",
+            "seulement pour les nouveaux clients"
+          ],
+          "answer": 0,
+          "explanation": "à compter du 1er janvier。"
+        },
+        {
+          "id": "tef-2-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Si la cliente n'est pas d'accord, elle peut…",
+          "options": [
+            "fermer son compte sans frais",
+            "refuser de payer",
+            "demander un remboursement",
+            "changer de conseiller"
+          ],
+          "answer": 0,
+          "explanation": "résilier votre convention de compte sans frais。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力一：在火車站",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "A : Bonjour, un aller-retour pour Marseille, s'il vous plaît.\nB : Pour quand ?\nA : Aller vendredi matin, retour dimanche soir.\nB : Vous avez une carte de réduction ?\nA : Oui, la carte Jeune.\nB : Alors ça fait 64 euros. Vous voulez une place côté fenêtre ?\nA : Oui, volontiers.",
+        "speak": true,
+        "dialogue": true
+      },
+      "questions": [
+        {
+          "id": "tef-2-q08",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le voyageur achète…",
+          "options": [
+            "un aller-retour",
+            "un aller simple",
+            "deux allers simples",
+            "un abonnement"
+          ],
+          "answer": 0,
+          "explanation": "un aller-retour pour Marseille。"
+        },
+        {
+          "id": "tef-2-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Il revient…",
+          "options": [
+            "dimanche soir",
+            "vendredi matin",
+            "samedi soir",
+            "lundi matin"
+          ],
+          "answer": 0,
+          "explanation": "retour dimanche soir。"
+        },
+        {
+          "id": "tef-2-q10",
+          "type": "fill",
+          "instruction": "請填入數字（可用阿拉伯數字或法文）",
+          "stem": "Le billet coûte ___ euros.",
+          "answers": [
+            "64",
+            "soixante-quatre"
+          ],
+          "explanation": "ça fait 64 euros。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力二：路況廣播",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Infos route : un accident sur l'autoroute A7 provoque un bouchon de dix kilomètres en direction de Lyon. Il est conseillé de sortir à Valence et de prendre la route nationale. Les secours sont sur place.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "tef-2-q11",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel est le problème ?",
+          "options": [
+            "Un accident sur l'autoroute",
+            "Une route fermée pour travaux",
+            "De la neige",
+            "Une grève"
+          ],
+          "answer": 0,
+          "explanation": "un accident sur l'autoroute A7。"
+        },
+        {
+          "id": "tef-2-q12",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le bouchon fait…",
+          "options": [
+            "dix kilomètres",
+            "sept kilomètres",
+            "deux kilomètres",
+            "vingt kilomètres"
+          ],
+          "answer": 0,
+          "explanation": "un bouchon de dix kilomètres。"
+        },
+        {
+          "id": "tef-2-q13",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "On conseille aux conducteurs de…",
+          "options": [
+            "sortir à Valence",
+            "s'arrêter sur le bord de la route",
+            "faire demi-tour",
+            "prendre le train"
+          ],
+          "answer": 0,
+          "explanation": "Il est conseillé de sortir à Valence。"
+        }
+      ]
+    },
+    {
+      "kind": "structure",
+      "title": "詞彙與結構",
+      "fr": "Lexique et structure",
+      "instruction": "請選出或填入正確的答案。",
+      "questions": [
+        {
+          "id": "tef-2-q14",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Je cherche un appartement ___ deux chambres.",
+          "options": [
+            "avec",
+            "pour",
+            "en",
+            "à"
+          ],
+          "answer": 0,
+          "explanation": "avec deux chambres：有兩間臥室。"
+        },
+        {
+          "id": "tef-2-q15",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Il pleut, ___ je prends un parapluie.",
+          "options": [
+            "donc",
+            "mais",
+            "car",
+            "parce que"
+          ],
+          "answer": 0,
+          "explanation": "donc 表示結果。"
+        },
+        {
+          "id": "tef-2-q16",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Elle est partie ___ dire au revoir.",
+          "options": [
+            "sans",
+            "pour",
+            "avant",
+            "après"
+          ],
+          "answer": 0,
+          "explanation": "sans + 原形動詞：連再見都沒說就走了。"
+        },
+        {
+          "id": "tef-2-q17",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Vous êtes ___ fatigué que moi.",
+          "options": [
+            "aussi",
+            "autant",
+            "même",
+            "tant"
+          ],
+          "answer": 0,
+          "explanation": "形容詞的同等比較用 aussi…que。"
+        },
+        {
+          "id": "tef-2-q18",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Il faut ___ ce formulaire avant vendredi.",
+          "options": [
+            "remplir",
+            "remplit",
+            "rempli",
+            "remplissant"
+          ],
+          "answer": 0,
+          "explanation": "il faut + 原形動詞。"
+        },
+        {
+          "id": "tef-2-q19",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Je vous remercie ___ votre aide.",
+          "options": [
+            "de",
+            "à",
+            "avec",
+            "sur"
+          ],
+          "answer": 0,
+          "explanation": "remercier de／pour quelque chose。"
+        },
+        {
+          "id": "tef-2-q20",
+          "type": "fill",
+          "instruction": "請填入一個字（每個月付的房租）",
+          "stem": "Le ___ de cet appartement est de 700 euros.",
+          "answers": [
+            "loyer"
+          ],
+          "explanation": "le loyer：房租。"
+        },
+        {
+          "id": "tef-2-q21",
+          "type": "fill",
+          "instruction": "請填入一個字（原形動詞，意思是考試沒通過）",
+          "stem": "Il a peur de ___ son examen.",
+          "answers": [
+            "rater",
+            "louper"
+          ],
+          "explanation": "rater／louper un examen：考砸。"
+        }
+      ]
+    }
+  ]
+}

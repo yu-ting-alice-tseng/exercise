@@ -1,0 +1,191 @@
+{
+  "id": "delf-b1-2",
+  "exam": "delf",
+  "level": "B1",
+  "title": "DELF B1 模擬卷 2",
+  "fr": "DELF B1 – Sujet d'entraînement 2",
+  "minutes": 90,
+  "desc": "聽力 1 段訪談、閱讀 1 篇、寫作 1 題（投書發表意見）。真實考試另有口說測驗。",
+  "sections": [
+    {
+      "kind": "listening",
+      "title": "聽力：訪談",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "A : Vous êtes partie un an en Espagne avec le programme Erasmus. Pourquoi ce choix ?\nB : Je voulais améliorer mon espagnol, bien sûr, mais surtout devenir plus autonome. Avant, je n'avais jamais quitté ma famille.\nA : Les débuts ont été difficiles ?\nB : Oui, les deux premiers mois. Je comprenais mal les cours et je me sentais un peu seule. Puis j'ai rejoint une association d'étudiants internationaux, et tout a changé : je me suis fait des amis du monde entier.\nA : Qu'est-ce que cette expérience vous a apporté ?\nB : De la confiance en moi. Aujourd'hui, je n'ai plus peur de prendre la parole en public.\nA : Un conseil pour les futurs étudiants Erasmus ?\nB : Ne restez pas seulement avec les gens de votre pays !",
+        "speak": true,
+        "dialogue": true
+      },
+      "questions": [
+        {
+          "id": "delf-b1-2-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La jeune femme est partie surtout pour…",
+          "options": [
+            "devenir plus autonome",
+            "trouver un travail",
+            "suivre son petit ami",
+            "faire du tourisme"
+          ],
+          "answer": 0,
+          "explanation": "mais surtout devenir plus autonome。"
+        },
+        {
+          "id": "delf-b1-2-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Au début, elle…",
+          "options": [
+            "se sentait seule",
+            "parlait parfaitement espagnol",
+            "voulait rentrer tout de suite",
+            "avait beaucoup d'amis"
+          ],
+          "answer": 0,
+          "explanation": "je me sentais un peu seule。"
+        },
+        {
+          "id": "delf-b1-2-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Qu'est-ce qui a changé sa situation ?",
+          "options": [
+            "Une association d'étudiants internationaux",
+            "Un nouveau logement",
+            "Un cours d'espagnol",
+            "La visite de sa famille"
+          ],
+          "answer": 0,
+          "explanation": "j'ai rejoint une association d'étudiants internationaux, et tout a changé。"
+        },
+        {
+          "id": "delf-b1-2-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Grâce à cette expérience, elle…",
+          "options": [
+            "a plus confiance en elle",
+            "veut devenir professeure",
+            "parle cinq langues",
+            "a quitté l'université"
+          ],
+          "answer": 0,
+          "explanation": "De la confiance en moi。"
+        },
+        {
+          "id": "delf-b1-2-q05",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Elle conseille aux futurs étudiants de…",
+          "options": [
+            "ne pas rester seulement avec des compatriotes",
+            "partir avec des amis",
+            "choisir l'Espagne",
+            "étudier tous les soirs"
+          ],
+          "answer": 0,
+          "explanation": "Ne restez pas seulement avec les gens de votre pays !"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀：報導",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Longtemps considérés comme un loisir pour enfants, les jeux de société connaissent un vrai succès chez les adultes. En France, les ventes ont nettement augmenté ces dernières années, et des bars à jeux ouvrent dans de nombreuses villes.\n\nComment expliquer cet engouement ? Pour les sociologues, ces jeux répondent à un besoin de se retrouver autour d'une table, loin des écrans. Ils permettent aussi de rencontrer de nouvelles personnes de façon détendue. Les éditeurs, de leur côté, proposent des jeux de plus en plus variés : coopératifs, rapides, ou inspirés de films et de séries. Certains enseignants les utilisent même en classe pour travailler la logique ou les langues étrangères.",
+        "title": "報導"
+      },
+      "questions": [
+        {
+          "id": "delf-b1-2-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Autrefois, les jeux de société étaient vus comme…",
+          "options": [
+            "un loisir pour enfants",
+            "un loisir de luxe",
+            "un sport",
+            "une activité scolaire"
+          ],
+          "answer": 0,
+          "explanation": "Longtemps considérés comme un loisir pour enfants。"
+        },
+        {
+          "id": "delf-b1-2-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel signe montre le succès des jeux ?",
+          "options": [
+            "L'ouverture de bars à jeux",
+            "La fermeture des magasins de jouets",
+            "Des jeux gratuits à l'école",
+            "La baisse des prix"
+          ],
+          "answer": 0,
+          "explanation": "des bars à jeux ouvrent dans de nombreuses villes。"
+        },
+        {
+          "id": "delf-b1-2-q08",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon les sociologues, les jeux répondent au besoin de…",
+          "options": [
+            "se retrouver sans écrans",
+            "gagner de l'argent",
+            "apprendre à lire",
+            "faire du sport"
+          ],
+          "answer": 0,
+          "explanation": "un besoin de se retrouver autour d'une table, loin des écrans。"
+        },
+        {
+          "id": "delf-b1-2-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les éditeurs proposent des jeux…",
+          "options": [
+            "de plus en plus variés",
+            "uniquement pour enfants",
+            "seulement sur écran",
+            "très chers"
+          ],
+          "answer": 0,
+          "explanation": "des jeux de plus en plus variés。"
+        },
+        {
+          "id": "delf-b1-2-q10",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Certains enseignants utilisent les jeux en ___.",
+          "answers": [
+            "classe"
+          ],
+          "explanation": "les utilisent même en classe。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Vous avez lu dans un magazine : « Les jeunes passent trop de temps sur les réseaux sociaux. » Vous écrivez au courrier des lecteurs pour donner votre opinion, avec des exemples. (160 mots minimum)",
+        "minWords": 160,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Madame, Monsieur,\n\nJ'ai lu avec intérêt votre article sur les jeunes et les réseaux sociaux. Je suis en partie d'accord avec vous, mais je pense que la situation est plus nuancée.\n\nIl est vrai que beaucoup de jeunes passent plusieurs heures par jour sur leur téléphone. Moi-même, j'ai remarqué que je regardais des vidéos le soir au lieu de dormir, et j'étais fatigué en cours. Certains de mes amis se comparent aussi sans cesse aux autres, ce qui les rend tristes.\n\nCependant, les réseaux sociaux ne sont pas seulement une perte de temps. Grâce à eux, je reste en contact avec ma famille à l'étranger, et j'ai découvert des associations dans lesquelles je fais du bénévolat. Ils peuvent aussi être un moyen d'apprendre : je suis des comptes qui expliquent l'histoire ou les sciences.\n\nÀ mon avis, il ne faut pas les interdire, mais apprendre aux jeunes à les utiliser de façon raisonnable, par exemple en fixant des horaires sans écran.\n\nVeuillez agréer mes salutations,\nYang Ming"
+      }
+    }
+  ]
+}

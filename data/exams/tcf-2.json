@@ -1,0 +1,345 @@
+{
+  "id": "tcf-2",
+  "exam": "tcf",
+  "level": "B1",
+  "title": "TCF 風格模擬卷 2",
+  "fr": "TCF – Entraînement 2",
+  "minutes": 45,
+  "desc": "全部是選擇題，難度從 A1 逐步提高到 C1，可以用來估計自己的程度。",
+  "sections": [
+    {
+      "kind": "listening",
+      "title": "聽力一（A1）",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "A : Tu as quel âge ?\nB : J'ai vingt-deux ans. Et toi ?\nA : Moi, j'ai dix-neuf ans.",
+        "speak": true,
+        "dialogue": true
+      },
+      "questions": [
+        {
+          "id": "tcf-2-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel âge a la personne B ?",
+          "options": [
+            "22 ans",
+            "19 ans",
+            "12 ans",
+            "29 ans"
+          ],
+          "answer": 0,
+          "explanation": "B 說 J'ai vingt-deux ans。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力二（A2）",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Bonjour, je vous appelle pour la petite annonce. Le vélo est toujours à vendre ? Il est dans quel état ? Et vous pouvez baisser un peu le prix ?",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "tcf-2-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La personne appelle pour…",
+          "options": [
+            "acheter un vélo",
+            "vendre un vélo",
+            "réparer un vélo",
+            "louer un vélo"
+          ],
+          "answer": 0,
+          "explanation": "她問腳踏車還在賣嗎、能不能降價：想買。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力三（B1）",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Mesdames et messieurs, en raison du mauvais temps, le concert prévu ce soir dans le parc est déplacé dans la salle des fêtes. L'heure ne change pas : 20 heures. Les billets achetés restent valables.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "tcf-2-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le concert…",
+          "options": [
+            "aura lieu à l'intérieur, à la même heure",
+            "est annulé",
+            "est reporté à demain",
+            "devient gratuit"
+          ],
+          "answer": 0,
+          "explanation": "déplacé dans la salle des fêtes. L'heure ne change pas。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力四（B2）",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Ce qui me frappe, dans ce débat sur l'intelligence artificielle à l'école, c'est qu'on se demande sans cesse comment empêcher les élèves de l'utiliser. On ferait mieux de leur apprendre à s'en servir de manière critique.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "tcf-2-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon cette personne, il faut…",
+          "options": [
+            "apprendre aux élèves à utiliser l'IA avec esprit critique",
+            "interdire l'IA à l'école",
+            "remplacer les professeurs par l'IA",
+            "arrêter ce débat"
+          ],
+          "answer": 0,
+          "explanation": "On ferait mieux de leur apprendre à s'en servir de manière critique。"
+        }
+      ]
+    },
+    {
+      "kind": "structure",
+      "title": "語言結構",
+      "fr": "Maîtrise des structures de la langue",
+      "instruction": "請選出正確的答案。題目由易到難。",
+      "questions": [
+        {
+          "id": "tcf-2-q05",
+          "type": "choice",
+          "instruction": "A1",
+          "stem": "Elle ___ française.",
+          "options": [
+            "est",
+            "a",
+            "es",
+            "et"
+          ],
+          "answer": 0,
+          "explanation": "être 的 elle 變化是 est。"
+        },
+        {
+          "id": "tcf-2-q06",
+          "type": "choice",
+          "instruction": "A1",
+          "stem": "J'aime ___ chocolat.",
+          "options": [
+            "le",
+            "du",
+            "un",
+            "de"
+          ],
+          "answer": 0,
+          "explanation": "aimer 後面接定冠詞。"
+        },
+        {
+          "id": "tcf-2-q07",
+          "type": "choice",
+          "instruction": "A2",
+          "stem": "Hier soir, nous ___ au restaurant.",
+          "options": [
+            "avons dîné",
+            "dînons",
+            "dînerons",
+            "avions dîner"
+          ],
+          "answer": 0,
+          "explanation": "hier soir 用複合過去式。"
+        },
+        {
+          "id": "tcf-2-q08",
+          "type": "choice",
+          "instruction": "A2",
+          "stem": "Tu connais Paul ? Oui, je ___ connais bien.",
+          "options": [
+            "le",
+            "lui",
+            "la",
+            "les"
+          ],
+          "answer": 0,
+          "explanation": "connaître 接直接受詞，Paul 用 le。"
+        },
+        {
+          "id": "tcf-2-q09",
+          "type": "choice",
+          "instruction": "B1",
+          "stem": "Quand j'étais petit, je ___ souvent à la plage.",
+          "options": [
+            "allais",
+            "irai",
+            "vais aller",
+            "irais"
+          ],
+          "answer": 0,
+          "explanation": "過去的習慣用未完成過去式。"
+        },
+        {
+          "id": "tcf-2-q10",
+          "type": "choice",
+          "instruction": "B1",
+          "stem": "Il m'a demandé ___ je voulais venir.",
+          "options": [
+            "si",
+            "que",
+            "ce que",
+            "quoi"
+          ],
+          "answer": 0,
+          "explanation": "是非問句的間接問句用 si。"
+        },
+        {
+          "id": "tcf-2-q11",
+          "type": "choice",
+          "instruction": "B2",
+          "stem": "Je doute qu'il ___ la vérité.",
+          "options": [
+            "dise",
+            "dit",
+            "dira",
+            "disait"
+          ],
+          "answer": 0,
+          "explanation": "douter que + 虛擬式。"
+        },
+        {
+          "id": "tcf-2-q12",
+          "type": "choice",
+          "instruction": "B2",
+          "stem": "Le livre ___ je pense est épuisé.",
+          "options": [
+            "auquel",
+            "dont",
+            "que",
+            "lequel"
+          ],
+          "answer": 0,
+          "explanation": "penser à → auquel。"
+        },
+        {
+          "id": "tcf-2-q13",
+          "type": "choice",
+          "instruction": "C1",
+          "stem": "Si j'avais su, je ne ___ pas venu.",
+          "options": [
+            "serais",
+            "aurais",
+            "suis",
+            "serai"
+          ],
+          "answer": 0,
+          "explanation": "與過去事實相反：條件式過去式 je ne serais pas venu。"
+        },
+        {
+          "id": "tcf-2-q14",
+          "type": "choice",
+          "instruction": "C1",
+          "stem": "___ soit la difficulté, nous trouverons une solution.",
+          "options": [
+            "Quelle que",
+            "Quel que",
+            "Quoi que",
+            "Quelque"
+          ],
+          "answer": 0,
+          "explanation": "quel que soit + 名詞，difficulté 是陰性：quelle que。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀一（A2）",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Mamie, je suis chez Julie pour faire nos devoirs. Je rentre pour le dîner. J'ai pris mes clés. Bisous, Théo",
+        "title": "留言"
+      },
+      "questions": [
+        {
+          "id": "tcf-2-q15",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Où est Théo ?",
+          "options": [
+            "Chez Julie",
+            "À l'école",
+            "Chez sa grand-mère",
+            "Au restaurant"
+          ],
+          "answer": 0,
+          "explanation": "je suis chez Julie。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀二（B1）",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Avis aux locataires : la chaudière de l'immeuble sera en maintenance jeudi de 9 h à 13 h. Il n'y aura pas d'eau chaude pendant cette période. Merci de votre compréhension.",
+        "title": "公告"
+      },
+      "questions": [
+        {
+          "id": "tcf-2-q16",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Jeudi matin, les habitants…",
+          "options": [
+            "n'auront pas d'eau chaude",
+            "n'auront pas d'électricité",
+            "devront quitter l'immeuble",
+            "devront payer une réparation"
+          ],
+          "answer": 0,
+          "explanation": "Il n'y aura pas d'eau chaude。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀三（C1）",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "On a longtemps opposé la mémoire et l'imagination, comme si l'une regardait vers le passé et l'autre vers l'avenir. Les neurosciences suggèrent pourtant que les deux reposent sur des mécanismes voisins : se souvenir, c'est déjà reconstruire, et imaginer, c'est recombiner des fragments d'expérience. Notre mémoire serait donc moins un enregistrement fidèle qu'un récit sans cesse réécrit.",
+        "title": "短文"
+      },
+      "questions": [
+        {
+          "id": "tcf-2-q17",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon ce texte, …",
+          "options": [
+            "la mémoire reconstruit plutôt qu'elle n'enregistre",
+            "la mémoire est un enregistrement fidèle",
+            "l'imagination n'a aucun lien avec la mémoire",
+            "les neurosciences opposent mémoire et imagination"
+          ],
+          "answer": 0,
+          "explanation": "moins un enregistrement fidèle qu'un récit sans cesse réécrit。"
+        }
+      ]
+    }
+  ]
+}

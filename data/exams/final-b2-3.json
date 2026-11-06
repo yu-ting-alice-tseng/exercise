@@ -1,0 +1,90 @@
+{
+  "id": "final-b2-3",
+  "exam": "final",
+  "level": "B2",
+  "title": "B2 期末綜合卷 3",
+  "fr": "Examen final – niveau B2 (3)",
+  "minutes": 90,
+  "desc": "從 B2 題庫隨機抽 15 題文法與詞彙，加上一篇閱讀和一題寫作。每次抽到的文法題都不同。",
+  "sections": [
+    {
+      "kind": "bank",
+      "title": "文法與詞彙",
+      "fr": "Grammaire et vocabulaire",
+      "instruction": "從題庫隨機抽題，每次作答題目都不同。",
+      "bank": {
+        "choice": 6,
+        "fill": 6,
+        "short": 3
+      }
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Il y a vingt ans, l'information passait presque entièrement par les journaux, la radio et la télévision. Aujourd'hui, une grande partie du public, en particulier les jeunes, s'informe d'abord par les réseaux sociaux. Ce changement a des avantages : chacun peut témoigner d'un événement en temps réel, et des sujets ignorés par les grands médias trouvent un écho. Mais il favorise aussi la circulation de fausses informations, qui se diffusent souvent plus vite que les démentis. Les algorithmes, conçus pour retenir l'attention, mettent en avant les contenus qui suscitent le plus de réactions, souvent les plus choquants. Face à ce constat, l'éducation aux médias apparaît comme une priorité : apprendre à vérifier une source est devenu une compétence de base."
+      },
+      "questions": [
+        {
+          "id": "final-b2-3-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel avantage des réseaux sociaux est mentionné ?",
+          "options": [
+            "Chacun peut témoigner en temps réel",
+            "Les informations sont toujours vérifiées",
+            "Ils remplacent les écoles",
+            "Ils sont plus calmes que la télévision"
+          ],
+          "answer": 0,
+          "explanation": "chacun peut témoigner d'un événement en temps réel。"
+        },
+        {
+          "id": "final-b2-3-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les algorithmes mettent en avant…",
+          "options": [
+            "les contenus qui font le plus réagir",
+            "les informations les plus fiables",
+            "les articles les plus longs",
+            "les médias traditionnels"
+          ],
+          "answer": 0,
+          "explanation": "les contenus qui suscitent le plus de réactions。"
+        },
+        {
+          "id": "final-b2-3-q03",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Apprendre à vérifier une ___ est devenu une compétence de base.",
+          "answers": [
+            "source"
+          ],
+          "explanation": "vérifier une source：查證消息來源。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Faut-il enseigner l'éducation aux médias comme une matière à part entière à l'école ? Rédigez un article argumenté. (250 mots minimum)",
+        "minWords": 250,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Apprendre à s'informer : une matière à part entière ?\n\nUne fausse nouvelle peut aujourd'hui faire le tour du monde en quelques heures. Dans ce contexte, de nombreuses voix réclament que l'éducation aux médias devienne une matière scolaire à part entière, avec ses horaires et ses évaluations. L'idée me paraît juste, à condition d'éviter certains pièges.\n\nLes arguments en sa faveur sont nombreux. Les élèves passent plusieurs heures par jour sur des écrans, mais personne ne leur apprend vraiment à distinguer une information vérifiée d'une rumeur. Savoir identifier l'auteur d'un article, croiser les sources ou reconnaître une image retouchée est devenu aussi essentiel que savoir lire. Une matière spécifique garantirait que tous les élèves, quel que soit leur établissement, reçoivent cette formation.\n\nCertains objectent que les programmes sont déjà surchargés et que l'éducation aux médias peut être intégrée à d'autres disciplines, comme l'histoire ou le français. C'est vrai en théorie, mais dans les faits, elle dépend alors de la bonne volonté de chaque enseignant et reste souvent marginale.\n\nÀ mon sens, la meilleure solution serait une matière courte mais obligatoire, une heure par semaine au collège, fondée sur des exercices pratiques : analyser des publications réelles, enquêter sur une rumeur, produire soi-même un article vérifié. Les élèves apprendraient ainsi par l'expérience plutôt que par des cours théoriques.\n\nFormer des citoyens capables de réfléchir par eux-mêmes est l'une des missions premières de l'école. À l'ère des réseaux sociaux, cette mission passe par l'éducation aux médias."
+      }
+    }
+  ]
+}

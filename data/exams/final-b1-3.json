@@ -1,0 +1,90 @@
+{
+  "id": "final-b1-3",
+  "exam": "final",
+  "level": "B1",
+  "title": "B1 期末綜合卷 3",
+  "fr": "Examen final – niveau B1 (3)",
+  "minutes": 75,
+  "desc": "從 B1 題庫隨機抽 15 題文法與詞彙，加上一篇閱讀和一題寫作。每次抽到的文法題都不同。",
+  "sections": [
+    {
+      "kind": "bank",
+      "title": "文法與詞彙",
+      "fr": "Grammaire et vocabulaire",
+      "instruction": "從題庫隨機抽題，每次作答題目都不同。",
+      "bank": {
+        "choice": 6,
+        "fill": 6,
+        "short": 3
+      }
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Le gaspillage alimentaire représente des millions de tonnes de nourriture jetées chaque année en France. Une partie importante de ce gaspillage a lieu à la maison : on achète trop, on oublie des produits au fond du réfrigérateur ou on confond la date limite de consommation avec la date de durabilité minimale. Pour réduire ce gaspillage, des applications permettent désormais d'acheter à petit prix les invendus des boulangeries et des restaurants. Les grandes surfaces, elles, sont obligées de donner leurs invendus encore consommables à des associations."
+      },
+      "questions": [
+        {
+          "id": "final-b1-3-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon le texte, une grande partie du gaspillage a lieu…",
+          "options": [
+            "à la maison",
+            "dans les usines",
+            "dans les écoles",
+            "dans les champs"
+          ],
+          "answer": 0,
+          "explanation": "Une partie importante de ce gaspillage a lieu à la maison。"
+        },
+        {
+          "id": "final-b1-3-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les applications permettent de…",
+          "options": [
+            "acheter des invendus à petit prix",
+            "commander des repas gratuits",
+            "vérifier les dates de consommation",
+            "vendre ses propres produits"
+          ],
+          "answer": 0,
+          "explanation": "acheter à petit prix les invendus。"
+        },
+        {
+          "id": "final-b1-3-q03",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Les grandes surfaces doivent donner leurs invendus à des ___.",
+          "answers": [
+            "associations"
+          ],
+          "explanation": "donner leurs invendus… à des associations。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Vous écrivez au courrier des lecteurs d'un magazine pour proposer des idées concrètes contre le gaspillage alimentaire à la maison. (120 mots minimum)",
+        "minWords": 120,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Madame, Monsieur,\n\nVotre article sur le gaspillage alimentaire m'a fait réfléchir, et je voudrais partager quelques idées simples que j'applique chez moi.\n\nTout d'abord, je prépare une liste avant de faire les courses. Ainsi, j'achète seulement ce dont j'ai besoin, et je ne me laisse pas tenter par les promotions inutiles. Ensuite, je range les produits les plus anciens devant, dans le réfrigérateur, pour ne pas les oublier. Enfin, j'utilise les restes : avec du pain sec, je fais du pain perdu, et avec des légumes un peu fatigués, une bonne soupe.\n\nCes petits gestes ne prennent pas beaucoup de temps, mais ils permettent de faire des économies et de protéger la planète.\n\nCordialement,\nKim"
+      }
+    }
+  ]
+}

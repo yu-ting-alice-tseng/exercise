@@ -1,0 +1,92 @@
+{
+  "id": "final-b1-2",
+  "exam": "final",
+  "level": "B1",
+  "title": "B1 期末綜合卷 2",
+  "fr": "Examen final – niveau B1 (2)",
+  "minutes": 75,
+  "desc": "從 B1 題庫隨機抽 15 題文法與詞彙，加上一篇閱讀和一題寫作。每次抽到的文法題都不同。",
+  "sections": [
+    {
+      "kind": "bank",
+      "title": "文法與詞彙",
+      "fr": "Grammaire et vocabulaire",
+      "instruction": "從題庫隨機抽題，每次作答題目都不同。",
+      "bank": {
+        "choice": 6,
+        "fill": 6,
+        "short": 3
+      }
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "De plus en plus de Français choisissent de quitter les grandes villes pour s'installer à la campagne. Depuis le développement du télétravail, il est possible de garder son emploi tout en vivant loin du bureau. Les nouveaux arrivants recherchent surtout de l'espace, un jardin et un rythme de vie plus calme. Mais la réalité n'est pas toujours idyllique : dans certains villages, il faut prendre la voiture pour faire ses courses, les médecins sont rares et la connexion Internet n'est pas toujours bonne. Certains finissent d'ailleurs par revenir en ville après quelques années."
+      },
+      "questions": [
+        {
+          "id": "final-b1-2-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Qu'est-ce qui permet de quitter la ville sans changer d'emploi ?",
+          "options": [
+            "Le télétravail",
+            "Les trains rapides",
+            "Les aides de l'État",
+            "La baisse des loyers"
+          ],
+          "answer": 0,
+          "explanation": "Depuis le développement du télétravail。"
+        },
+        {
+          "id": "final-b1-2-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quelle difficulté de la vie à la campagne est citée ?",
+          "options": [
+            "Le manque de médecins",
+            "Le bruit",
+            "La pollution",
+            "Le prix des maisons"
+          ],
+          "answer": 0,
+          "explanation": "les médecins sont rares。"
+        },
+        {
+          "id": "final-b1-2-q03",
+          "type": "fill",
+          "instruction": "請填入一個字（原形動詞）",
+          "stem": "Certains finissent par ___ en ville.",
+          "answers": [
+            "revenir",
+            "retourner",
+            "rentrer"
+          ],
+          "explanation": "Certains finissent d'ailleurs par revenir en ville。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Préférez-vous vivre en ville ou à la campagne ? Vous écrivez un article pour le journal de votre école, avec des arguments et des exemples. (120 mots minimum)",
+        "minWords": 120,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Ville ou campagne ? Mon choix est fait !\n\nBeaucoup de gens rêvent de vivre à la campagne, mais moi, je préfère la ville. D'abord, tout est proche : je peux aller à l'école, au cinéma ou chez mes amis à pied ou en métro. Quand j'habitais chez mes grands-parents, dans un petit village, il fallait toujours demander à quelqu'un de m'emmener en voiture. Ensuite, la ville offre beaucoup d'activités : concerts, expositions, clubs de sport… On ne s'ennuie jamais.\n\nBien sûr, la campagne a des avantages : l'air est plus pur et c'est plus calme. C'est pourquoi j'aime y passer mes vacances. Mais pour la vie de tous les jours, la ville me convient beaucoup mieux."
+      }
+    }
+  ]
+}

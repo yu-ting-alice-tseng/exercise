@@ -1,0 +1,91 @@
+{
+  "id": "final-a2-3",
+  "exam": "final",
+  "level": "A2",
+  "title": "A2 期末綜合卷 3",
+  "fr": "Examen final – niveau A2 (3)",
+  "minutes": 60,
+  "desc": "從 A2 題庫隨機抽 16 題文法與詞彙，加上一篇閱讀和一題寫作。每次抽到的文法題都不同。",
+  "sections": [
+    {
+      "kind": "bank",
+      "title": "文法與詞彙",
+      "fr": "Grammaire et vocabulaire",
+      "instruction": "從題庫隨機抽題，每次作答題目都不同。",
+      "bank": {
+        "choice": 8,
+        "fill": 6,
+        "short": 2
+      }
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Chère Anne,\n\nMerci pour ta lettre ! Ici, à Québec, tout va bien. Il fait très froid en ce moment : moins quinze degrés ce matin ! Mais j'adore la neige. Le week-end dernier, j'ai fait du ski avec mes collègues et nous avons goûté la poutine, une spécialité d'ici. Mon nouveau travail me plaît beaucoup, même si les journées sont longues. Tu viens me voir au printemps ?\n\nBises,\nClaire"
+      },
+      "questions": [
+        {
+          "id": "final-a2-3-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Claire habite maintenant…",
+          "options": [
+            "à Québec",
+            "à Paris",
+            "à Montréal",
+            "en Suisse"
+          ],
+          "answer": 0,
+          "explanation": "Ici, à Québec。"
+        },
+        {
+          "id": "final-a2-3-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le week-end dernier, Claire…",
+          "options": [
+            "a fait du ski",
+            "est restée chez elle",
+            "a travaillé",
+            "est allée à la plage"
+          ],
+          "answer": 0,
+          "explanation": "j'ai fait du ski avec mes collègues。"
+        },
+        {
+          "id": "final-a2-3-q03",
+          "type": "fill",
+          "instruction": "請填入一個字（季節）",
+          "stem": "Claire invite Anne à venir au ___.",
+          "answers": [
+            "printemps"
+          ],
+          "explanation": "Tu viens me voir au printemps ?"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Vous habitez depuis un mois dans une nouvelle ville. Écrivez une lettre à un(e) ami(e) pour lui raconter votre nouvelle vie. (60 à 80 mots)",
+        "minWords": 60,
+        "rubric": [
+          "有符合題目要求的情境（寫給誰、為什麼寫）",
+          "內容完整回答了題目要的每一點",
+          "有適當的開頭和結尾（稱呼、問候、署名）",
+          "用字正確、拼寫正確",
+          "動詞變化與時態正確",
+          "字數符合要求"
+        ],
+        "model": "Cher Hugo,\n\nJe suis à Marseille depuis un mois et je suis très contente ! Mon appartement est petit, mais il a une jolie vue sur la mer. Au travail, mes collègues sont sympathiques et ils m'ont fait découvrir la ville. Le week-end, je me promène sur le port ou je vais à la plage. La seule chose difficile, c'est le vent ! Viens me voir bientôt.\n\nBises,\nYuna",
+        "maxWords": 80
+      }
+    }
+  ]
+}

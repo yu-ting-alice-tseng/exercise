@@ -1,0 +1,90 @@
+{
+  "id": "final-c1-3",
+  "exam": "final",
+  "level": "C1",
+  "title": "C1 期末綜合卷 3",
+  "fr": "Examen final – niveau C1 (3)",
+  "minutes": 100,
+  "desc": "從 C1 題庫隨機抽 14 題文法與詞彙，加上一篇閱讀和一題寫作。每次抽到的文法題都不同。",
+  "sections": [
+    {
+      "kind": "bank",
+      "title": "文法與詞彙",
+      "fr": "Grammaire et vocabulaire",
+      "instruction": "從題庫隨機抽題，每次作答題目都不同。",
+      "bank": {
+        "choice": 6,
+        "fill": 5,
+        "short": 3
+      }
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "L'inscription d'un site sur la liste du patrimoine mondial de l'Unesco est généralement accueillie comme une consécration. Elle offre une reconnaissance internationale, attire des visiteurs et, avec eux, des retombées économiques. Pourtant, ce succès peut se retourner contre ce qu'il est censé protéger. Afflux massif de touristes, flambée des prix, transformation des commerces en boutiques de souvenirs : certains lieux, victimes de leur notoriété, voient leur authenticité s'éroder. Les gestionnaires sont alors confrontés à un dilemme délicat : limiter l'accès, au risque d'être accusés d'élitisme, ou accepter une fréquentation qui menace la préservation du site. Entre ces deux écueils, des solutions intermédiaires émergent, comme les réservations obligatoires ou les tarifs modulés selon la saison."
+      },
+      "questions": [
+        {
+          "id": "final-c1-3-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel risque l'inscription au patrimoine mondial fait-elle courir ?",
+          "options": [
+            "La perte d'authenticité du site",
+            "La fermeture du site",
+            "La baisse du nombre de visiteurs",
+            "La disparition des aides publiques"
+          ],
+          "answer": 0,
+          "explanation": "voient leur authenticité s'éroder。"
+        },
+        {
+          "id": "final-c1-3-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quelle solution intermédiaire est citée ?",
+          "options": [
+            "Les réservations obligatoires",
+            "L'interdiction totale des visites",
+            "La suppression des boutiques",
+            "La gratuité pour tous"
+          ],
+          "answer": 0,
+          "explanation": "les réservations obligatoires ou les tarifs modulés selon la saison。"
+        },
+        {
+          "id": "final-c1-3-q03",
+          "type": "fill",
+          "instruction": "請填入一個字（原形動詞）",
+          "stem": "Ce succès peut se ___ contre ce qu'il est censé protéger.",
+          "answers": [
+            "retourner"
+          ],
+          "explanation": "se retourner contre：反過來傷害。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Faut-il limiter l'accès aux sites touristiques les plus fréquentés ? Rédigez une lettre ouverte au ministre de la Culture. (250 mots minimum)",
+        "minWords": 250,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Lettre ouverte au ministre de la Culture\n\nMonsieur le Ministre,\n\nChaque été, des milliers de visiteurs se pressent dans nos sites les plus célèbres, au point de rendre parfois la visite pénible et de menacer la conservation des lieux. Faut-il, dès lors, en limiter l'accès ? Je crois que oui, mais pas à n'importe quelles conditions.\n\nLa nécessité d'agir ne fait guère de doute. Les sols s'usent, les peintures souffrent de l'humidité dégagée par la foule, et les habitants des villes concernées voient leur quotidien bouleversé. Un patrimoine que l'on abîme en le visitant n'est plus transmis aux générations futures : il est simplement consommé.\n\nCependant, une limitation mal pensée serait profondément injuste. Si l'accès devient réservé à ceux qui peuvent payer un billet plus cher ou réserver des mois à l'avance, le patrimoine cessera d'être un bien commun pour devenir un privilège. Or l'accès à la culture est un principe auquel nous sommes tous attachés.\n\nC'est pourquoi je vous propose de combiner plusieurs mesures : un nombre maximal de visiteurs par jour, une réservation gratuite et simple, des créneaux réservés aux scolaires et aux habitants, ainsi que des tarifs plus élevés en haute saison compensés par des journées gratuites hors saison. Il faudrait aussi valoriser des sites moins connus, afin de mieux répartir les flux touristiques sur le territoire.\n\nProtéger notre patrimoine et le rendre accessible ne sont pas des objectifs contradictoires ; c'est leur conciliation qui fera la réussite de votre politique.\n\nVeuillez agréer, Monsieur le Ministre, l'expression de ma haute considération.\n\nÉlise Martin"
+      }
+    }
+  ]
+}

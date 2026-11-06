@@ -1,0 +1,295 @@
+{
+  "id": "delf-a2-2",
+  "exam": "delf",
+  "level": "A2",
+  "title": "DELF A2 模擬卷 2",
+  "fr": "DELF A2 – Sujet d'entraînement 2",
+  "minutes": 75,
+  "desc": "聽力 2 段、閱讀 2 篇、寫作 1 題。真實考試另有口說測驗。",
+  "sections": [
+    {
+      "kind": "listening",
+      "title": "聽力一：車站廣播",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Votre attention, s'il vous plaît. Le train Intercités numéro 3615, à destination de Bordeaux, est supprimé en raison d'un problème technique. Les voyageurs peuvent prendre le train suivant, à 16 h 42, voie B. Les billets restent valables. Nous vous prions de nous excuser.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "delf-a2-2-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Qu'est-ce qui se passe ?",
+          "options": [
+            "Le train est supprimé",
+            "Le train a 10 minutes de retard",
+            "Le train change de voie",
+            "Le train part plus tôt"
+          ],
+          "answer": 0,
+          "explanation": "est supprimé：取消。"
+        },
+        {
+          "id": "delf-a2-2-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pourquoi ?",
+          "options": [
+            "À cause d'un problème technique",
+            "À cause de la neige",
+            "À cause d'une grève",
+            "À cause d'un accident"
+          ],
+          "answer": 0,
+          "explanation": "en raison d'un problème technique。"
+        },
+        {
+          "id": "delf-a2-2-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le train suivant part…",
+          "options": [
+            "à 16 h 42, voie B",
+            "à 16 h 24, voie B",
+            "à 16 h 42, voie D",
+            "à 17 h 42, voie B"
+          ],
+          "answer": 0,
+          "explanation": "à 16 h 42, voie B。"
+        },
+        {
+          "id": "delf-a2-2-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les voyageurs…",
+          "options": [
+            "peuvent utiliser le même billet",
+            "doivent acheter un nouveau billet",
+            "sont remboursés",
+            "doivent prendre le bus"
+          ],
+          "answer": 0,
+          "explanation": "Les billets restent valables：車票仍然有效。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力二：朋友對話",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "A : Tu fais quoi ce week-end ?\nB : Samedi, je dois travailler le matin, mais je suis libre l'après-midi.\nA : Ça te dit d'aller voir l'exposition de photos au musée ?\nB : Bonne idée ! Mais pas trop tard, parce que le soir, je dîne chez mes parents.\nA : D'accord. On se retrouve à 14 heures devant le musée ?\nB : Parfait !",
+        "speak": true,
+        "dialogue": true
+      },
+      "questions": [
+        {
+          "id": "delf-a2-2-q05",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Samedi matin, la personne B…",
+          "options": [
+            "travaille",
+            "va au musée",
+            "dîne chez ses parents",
+            "fait du sport"
+          ],
+          "answer": 0,
+          "explanation": "Samedi, je dois travailler le matin。"
+        },
+        {
+          "id": "delf-a2-2-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Ils vont voir…",
+          "options": [
+            "une exposition de photos",
+            "un film",
+            "un concert",
+            "un match"
+          ],
+          "answer": 0,
+          "explanation": "l'exposition de photos au musée。"
+        },
+        {
+          "id": "delf-a2-2-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Samedi soir, B…",
+          "options": [
+            "dîne chez ses parents",
+            "travaille",
+            "va au cinéma",
+            "reste chez lui"
+          ],
+          "answer": 0,
+          "explanation": "le soir, je dîne chez mes parents。"
+        },
+        {
+          "id": "delf-a2-2-q08",
+          "type": "fill",
+          "instruction": "請填入數字（可用阿拉伯數字或法文）",
+          "stem": "Ils se retrouvent à ___ heures devant le musée.",
+          "answers": [
+            "14",
+            "quatorze"
+          ],
+          "explanation": "On se retrouve à 14 heures devant le musée。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀一：報導",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Depuis deux ans, l'association « Les Paniers de Lucie » distribue chaque semaine des fruits et des légumes aux familles en difficulté du quartier. Les produits viennent de petits agriculteurs de la région, qui donnent ce qu'ils ne peuvent pas vendre. L'association cherche des bénévoles pour la distribution du jeudi soir, entre 17 h et 19 h. Pas besoin d'expérience : il suffit d'être motivé et d'avoir un peu de temps. Pour s'inscrire, il faut remplir un formulaire sur le site de l'association.",
+        "title": "報導"
+      },
+      "questions": [
+        {
+          "id": "delf-a2-2-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "L'association distribue…",
+          "options": [
+            "des fruits et des légumes",
+            "des vêtements",
+            "des repas chauds",
+            "des livres"
+          ],
+          "answer": 0,
+          "explanation": "distribue… des fruits et des légumes。"
+        },
+        {
+          "id": "delf-a2-2-q10",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les produits viennent…",
+          "options": [
+            "d'agriculteurs de la région",
+            "de supermarchés",
+            "de l'étranger",
+            "du jardin de Lucie"
+          ],
+          "answer": 0,
+          "explanation": "Les produits viennent de petits agriculteurs de la région。"
+        },
+        {
+          "id": "delf-a2-2-q11",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pour devenir bénévole, il faut…",
+          "options": [
+            "être motivé et avoir du temps",
+            "avoir de l'expérience",
+            "habiter à la campagne",
+            "payer une inscription"
+          ],
+          "answer": 0,
+          "explanation": "Pas besoin d'expérience : il suffit d'être motivé。"
+        },
+        {
+          "id": "delf-a2-2-q12",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Pour s'inscrire, il faut remplir un ___ sur le site.",
+          "answers": [
+            "formulaire"
+          ],
+          "explanation": "il faut remplir un formulaire。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀二：大樓公告",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Madame, Monsieur,\n\nDes travaux de peinture auront lieu dans l'escalier de l'immeuble du lundi 7 au vendredi 11 octobre. Pendant cette période, l'ascenseur fonctionnera normalement, mais il est interdit de toucher les murs. Les vélos ne doivent pas rester dans l'entrée.\n\nNous vous remercions de votre compréhension.\n\nLe syndic",
+        "title": "公告"
+      },
+      "questions": [
+        {
+          "id": "delf-a2-2-q13",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les travaux concernent…",
+          "options": [
+            "l'escalier",
+            "l'ascenseur",
+            "les appartements",
+            "le parking"
+          ],
+          "answer": 0,
+          "explanation": "des travaux de peinture… dans l'escalier。"
+        },
+        {
+          "id": "delf-a2-2-q14",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pendant les travaux, l'ascenseur…",
+          "options": [
+            "fonctionne",
+            "est fermé",
+            "est repeint",
+            "ne marche que le matin"
+          ],
+          "answer": 0,
+          "explanation": "l'ascenseur fonctionnera normalement。"
+        },
+        {
+          "id": "delf-a2-2-q15",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les habitants ne doivent pas…",
+          "options": [
+            "laisser leurs vélos dans l'entrée",
+            "prendre l'ascenseur",
+            "sortir le soir",
+            "ouvrir les fenêtres"
+          ],
+          "answer": 0,
+          "explanation": "Les vélos ne doivent pas rester dans l'entrée。"
+        },
+        {
+          "id": "delf-a2-2-q16",
+          "type": "fill",
+          "instruction": "請填入日期（數字）",
+          "stem": "Les travaux se terminent le vendredi ___ octobre.",
+          "answers": [
+            "11",
+            "onze"
+          ],
+          "explanation": "du lundi 7 au vendredi 11 octobre。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Le week-end dernier, vous avez participé à une fête (anniversaire, mariage…). Vous écrivez à un(e) ami(e) pour raconter : où c'était, avec qui, ce que vous avez fait et ce que vous avez aimé. (60 à 80 mots)",
+        "minWords": 60,
+        "rubric": [
+          "有符合題目要求的情境（寫給誰、為什麼寫）",
+          "內容完整回答了題目要的每一點",
+          "有適當的開頭和結尾（稱呼、問候、署名）",
+          "用字正確、拼寫正確",
+          "動詞變化與時態正確",
+          "字數符合要求"
+        ],
+        "model": "Salut Paul !\n\nSamedi dernier, je suis allée au mariage de ma cousine Inès, dans un petit village près de Tours. Toute ma famille était là ! Après la cérémonie, nous avons mangé dans un beau jardin. Le repas était délicieux, surtout le dessert. Le soir, nous avons dansé jusqu'à deux heures du matin. J'ai beaucoup aimé l'ambiance : tout le monde était très joyeux. Et toi, ton week-end ?\n\nBises,\nLucie",
+        "maxWords": 80
+      }
+    }
+  ]
+}

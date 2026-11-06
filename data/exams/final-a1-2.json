@@ -1,0 +1,92 @@
+{
+  "id": "final-a1-2",
+  "exam": "final",
+  "level": "A1",
+  "title": "A1 期末綜合卷 2",
+  "fr": "Examen final – niveau A1 (2)",
+  "minutes": 50,
+  "desc": "從 A1 題庫隨機抽 16 題文法與詞彙，加上一篇閱讀和一題寫作。每次抽到的文法題都不同。",
+  "sections": [
+    {
+      "kind": "bank",
+      "title": "文法與詞彙",
+      "fr": "Grammaire et vocabulaire",
+      "instruction": "從題庫隨機抽題，每次作答題目都不同。",
+      "bank": {
+        "choice": 8,
+        "fill": 6,
+        "short": 2
+      }
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Bonjour ! Je m'appelle Inès. J'ai vingt ans et je suis étudiante en biologie à Lille. J'habite dans un appartement avec une amie, près de l'université. Le matin, je bois un café et je mange une tartine. Je vais à l'université en tram. Le soir, nous cuisinons ensemble et nous regardons une série."
+      },
+      "questions": [
+        {
+          "id": "final-a1-2-q01",
+          "type": "fill",
+          "instruction": "請填入數字（可用阿拉伯數字或法文）",
+          "stem": "Inès a ___ ans.",
+          "answers": [
+            "20",
+            "vingt"
+          ],
+          "explanation": "J'ai vingt ans。"
+        },
+        {
+          "id": "final-a1-2-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Inès étudie…",
+          "options": [
+            "la biologie",
+            "les langues",
+            "la médecine",
+            "l'histoire"
+          ],
+          "answer": 0,
+          "explanation": "étudiante en biologie。"
+        },
+        {
+          "id": "final-a1-2-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Elle va à l'université…",
+          "options": [
+            "en tram",
+            "à vélo",
+            "à pied",
+            "en voiture"
+          ],
+          "answer": 0,
+          "explanation": "Je vais à l'université en tram。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Décrivez votre journée habituelle : le matin, l'après-midi et le soir. (30 à 40 mots)",
+        "minWords": 30,
+        "rubric": [
+          "有符合題目要求的情境（寫給誰、為什麼寫）",
+          "內容完整回答了題目要的每一點",
+          "有適當的開頭和結尾（稱呼、問候、署名）",
+          "用字正確、拼寫正確",
+          "動詞變化與時態正確",
+          "字數符合要求"
+        ],
+        "model": "Le matin, je me lève à sept heures. Je prends un thé et je vais au travail en bus. L'après-midi, je travaille au bureau. Le soir, je cuisine, je lis un livre et je dors à onze heures.",
+        "maxWords": 40
+      }
+    }
+  ]
+}

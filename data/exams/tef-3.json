@@ -1,0 +1,364 @@
+{
+  "id": "tef-3",
+  "exam": "tef",
+  "level": "B1",
+  "title": "TEF 風格模擬卷 3",
+  "fr": "TEF – Entraînement 3",
+  "minutes": 50,
+  "desc": "以生活與工作上的實用文件為主：廣告、通知、對話與廣播，以及詞彙與結構題。",
+  "sections": [
+    {
+      "kind": "reading",
+      "title": "閱讀一：徵才廣告",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "La mairie de Saint-Aurin recrute des animateurs et animatrices pour son centre de loisirs pendant les vacances d'été. Missions : organiser des activités pour des enfants de 6 à 12 ans. Profil : sens des responsabilités, expérience avec les enfants souhaitée. Contrat de 4 semaines en juillet. Candidature par courriel avant le 30 avril.",
+        "title": "徵才廣告"
+      },
+      "questions": [
+        {
+          "id": "tef-3-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La mairie recrute des personnes pour…",
+          "options": [
+            "s'occuper d'enfants",
+            "nettoyer les rues",
+            "travailler à l'accueil",
+            "garder des personnes âgées"
+          ],
+          "answer": 0,
+          "explanation": "organiser des activités pour des enfants。"
+        },
+        {
+          "id": "tef-3-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les enfants ont…",
+          "options": [
+            "entre 6 et 12 ans",
+            "moins de 6 ans",
+            "entre 12 et 16 ans",
+            "plus de 12 ans"
+          ],
+          "answer": 0,
+          "explanation": "des enfants de 6 à 12 ans。"
+        },
+        {
+          "id": "tef-3-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le contrat dure…",
+          "options": [
+            "quatre semaines",
+            "deux mois",
+            "un an",
+            "une semaine"
+          ],
+          "answer": 0,
+          "explanation": "Contrat de 4 semaines en juillet。"
+        },
+        {
+          "id": "tef-3-q04",
+          "type": "fill",
+          "instruction": "請填入日期（數字）",
+          "stem": "Il faut envoyer sa candidature avant le ___ avril.",
+          "answers": [
+            "30",
+            "trente"
+          ],
+          "explanation": "avant le 30 avril。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀二：藥品說明",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Mode d'emploi : prendre un comprimé matin et soir, au cours des repas, pendant 5 jours. Ne pas dépasser 2 comprimés par jour. Déconseillé aux enfants de moins de 12 ans. En cas de doute, demandez conseil à votre pharmacien.",
+        "title": "說明書"
+      },
+      "questions": [
+        {
+          "id": "tef-3-q05",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "On peut prendre au maximum…",
+          "options": [
+            "deux comprimés par jour",
+            "un comprimé par jour",
+            "cinq comprimés par jour",
+            "deux comprimés par repas"
+          ],
+          "answer": 0,
+          "explanation": "Ne pas dépasser 2 comprimés par jour。"
+        },
+        {
+          "id": "tef-3-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Il faut prendre le médicament…",
+          "options": [
+            "pendant les repas",
+            "à jeun",
+            "avant de dormir seulement",
+            "une heure après les repas"
+          ],
+          "answer": 0,
+          "explanation": "au cours des repas。"
+        },
+        {
+          "id": "tef-3-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Ce médicament est déconseillé…",
+          "options": [
+            "aux enfants de moins de 12 ans",
+            "aux personnes âgées",
+            "aux sportifs",
+            "aux femmes enceintes"
+          ],
+          "answer": 0,
+          "explanation": "Déconseillé aux enfants de moins de 12 ans。"
+        },
+        {
+          "id": "tef-3-q08",
+          "type": "fill",
+          "instruction": "請填入數字（可用阿拉伯數字或法文）",
+          "stem": "Le traitement dure ___ jours.",
+          "answers": [
+            "5",
+            "cinq"
+          ],
+          "explanation": "pendant 5 jours。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力一：打電話給房屋仲介",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "A : Bonjour, je vous appelle pour l'appartement de la rue Pasteur. Il est encore disponible ?\nB : Oui. C'est un deux-pièces de 45 mètres carrés, au deuxième étage, à 750 euros par mois, charges comprises.\nA : Est-ce qu'on peut le visiter cette semaine ?\nB : Jeudi à 18 heures, ça vous va ?\nA : Parfait.",
+        "speak": true,
+        "dialogue": true
+      },
+      "questions": [
+        {
+          "id": "tef-3-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "L'appartement fait…",
+          "options": [
+            "45 m²",
+            "54 m²",
+            "75 m²",
+            "25 m²"
+          ],
+          "answer": 0,
+          "explanation": "45 mètres carrés。"
+        },
+        {
+          "id": "tef-3-q10",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le loyer est de…",
+          "options": [
+            "750 € charges comprises",
+            "750 € sans les charges",
+            "570 € charges comprises",
+            "450 € par mois"
+          ],
+          "answer": 0,
+          "explanation": "750 euros par mois, charges comprises。"
+        },
+        {
+          "id": "tef-3-q11",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La visite aura lieu…",
+          "options": [
+            "jeudi à 18 heures",
+            "mardi à 18 heures",
+            "jeudi à 8 heures",
+            "ce soir"
+          ],
+          "answer": 0,
+          "explanation": "Jeudi à 18 heures。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力二：市政廣播",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "La bibliothèque municipale lance un nouveau service : à partir du mois prochain, les habitants pourront emprunter non seulement des livres, mais aussi des outils, comme des perceuses ou des échelles. Le service sera gratuit pour toutes les personnes inscrites.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "tef-3-q12",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel est le nouveau service ?",
+          "options": [
+            "Le prêt d'outils",
+            "La vente de livres",
+            "Des cours de bricolage",
+            "La livraison à domicile"
+          ],
+          "answer": 0,
+          "explanation": "emprunter… des outils。"
+        },
+        {
+          "id": "tef-3-q13",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Ce service commencera…",
+          "options": [
+            "le mois prochain",
+            "demain",
+            "l'année prochaine",
+            "la semaine prochaine"
+          ],
+          "answer": 0,
+          "explanation": "à partir du mois prochain。"
+        },
+        {
+          "id": "tef-3-q14",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le service est gratuit pour…",
+          "options": [
+            "les personnes inscrites",
+            "les enfants",
+            "tout le monde",
+            "les retraités"
+          ],
+          "answer": 0,
+          "explanation": "gratuit pour toutes les personnes inscrites。"
+        }
+      ]
+    },
+    {
+      "kind": "structure",
+      "title": "詞彙與結構",
+      "fr": "Lexique et structure",
+      "instruction": "請選出或填入正確的答案。",
+      "questions": [
+        {
+          "id": "tef-3-q15",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Je n'ai jamais ___ à Paris.",
+          "options": [
+            "été",
+            "allé",
+            "aller",
+            "étais"
+          ],
+          "answer": 0,
+          "explanation": "aller 要用 être 當助動詞，所以只能說 je n'ai jamais été（或 je ne suis jamais allé）。"
+        },
+        {
+          "id": "tef-3-q16",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Nous habitons ici ___ 2015.",
+          "options": [
+            "depuis",
+            "pendant",
+            "il y a",
+            "dans"
+          ],
+          "answer": 0,
+          "explanation": "depuis + 時間點。"
+        },
+        {
+          "id": "tef-3-q17",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "C'est la personne ___ je t'ai parlé.",
+          "options": [
+            "dont",
+            "que",
+            "qui",
+            "où"
+          ],
+          "answer": 0,
+          "explanation": "parler de → dont。"
+        },
+        {
+          "id": "tef-3-q18",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Si tu viens demain, je ___ très content.",
+          "options": [
+            "serai",
+            "serais",
+            "étais",
+            "été"
+          ],
+          "answer": 0,
+          "explanation": "si + 現在式，主要子句用簡單未來式。"
+        },
+        {
+          "id": "tef-3-q19",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Il est interdit ___ fumer ici.",
+          "options": [
+            "de",
+            "à",
+            "pour",
+            "en"
+          ],
+          "answer": 0,
+          "explanation": "il est interdit de + 原形動詞。"
+        },
+        {
+          "id": "tef-3-q20",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Elle parle ___ que son frère.",
+          "options": [
+            "mieux",
+            "meilleur",
+            "plus bon",
+            "bien"
+          ],
+          "answer": 0,
+          "explanation": "修飾動詞用 bien 的比較級 mieux。"
+        },
+        {
+          "id": "tef-3-q21",
+          "type": "fill",
+          "instruction": "請填入一個字（出國需要的證件）",
+          "stem": "Pour voyager hors d'Europe, il faut un ___.",
+          "answers": [
+            "passeport"
+          ],
+          "explanation": "le passeport：護照。"
+        },
+        {
+          "id": "tef-3-q22",
+          "type": "fill",
+          "instruction": "請填入一個字（在公司工作的人）",
+          "stem": "Cette entreprise compte cinquante ___.",
+          "answers": [
+            "salariés",
+            "employés"
+          ],
+          "explanation": "salarié／employé：員工。"
+        }
+      ]
+    }
+  ]
+}

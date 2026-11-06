@@ -1,0 +1,90 @@
+{
+  "id": "final-c2-3",
+  "exam": "final",
+  "level": "C2",
+  "title": "C2 期末綜合卷 3",
+  "fr": "Examen final – niveau C2 (3)",
+  "minutes": 120,
+  "desc": "從 C2 題庫隨機抽 14 題文法與詞彙，加上一篇閱讀和一題寫作。每次抽到的文法題都不同。",
+  "sections": [
+    {
+      "kind": "bank",
+      "title": "文法與詞彙",
+      "fr": "Grammaire et vocabulaire",
+      "instruction": "從題庫隨機抽題，每次作答題目都不同。",
+      "bank": {
+        "choice": 6,
+        "fill": 5,
+        "short": 3
+      }
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "« Traduttore, traditore » : le proverbe italien, qui rapproche le traducteur du traître, a la vie dure. Il repose sur une conception de la langue comme un contenant, dont il suffirait de transvaser le sens d'un récipient à l'autre, au prix de quelques inévitables pertes. Mais si l'on admet que le sens ne préexiste pas aux mots, qu'il se forme dans la langue même, alors la traduction cesse d'être une perte pour devenir une création. Le traducteur ne trahit pas l'original : il en propose une lecture, nécessairement située, qui révèle parfois des possibles que l'auteur lui-même ignorait. C'est sans doute pourquoi les grandes œuvres appellent sans cesse de nouvelles traductions : non parce que les précédentes seraient fausses, mais parce que chaque époque y entend autre chose."
+      },
+      "questions": [
+        {
+          "id": "final-c2-3-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le proverbe italien présente le traducteur comme…",
+          "options": [
+            "un traître",
+            "un créateur",
+            "un auteur",
+            "un lecteur fidèle"
+          ],
+          "answer": 0,
+          "explanation": "rapproche le traducteur du traître。"
+        },
+        {
+          "id": "final-c2-3-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon l'auteur, si le sens se forme dans la langue même, la traduction devient…",
+          "options": [
+            "une création",
+            "une simple perte",
+            "impossible",
+            "inutile"
+          ],
+          "answer": 0,
+          "explanation": "la traduction cesse d'être une perte pour devenir une création。"
+        },
+        {
+          "id": "final-c2-3-q03",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Chaque époque entend dans les grandes œuvres autre ___.",
+          "answers": [
+            "chose"
+          ],
+          "explanation": "chaque époque y entend autre chose：每個時代都讀出不同的意涵。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "« Une œuvre traduite n'est jamais tout à fait la même œuvre. » Discutez cette affirmation dans un essai structuré. (250 mots minimum)",
+        "minWords": 250,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Une œuvre traduite est-elle encore la même œuvre ?\n\nLorsque nous lisons Dostoïevski en français ou Proust en chinois, lisons-nous vraiment Dostoïevski et Proust ? L'affirmation selon laquelle « une œuvre traduite n'est jamais tout à fait la même œuvre » semble d'abord relever de l'évidence. Elle mérite pourtant d'être interrogée.\n\nIl est vrai que toute traduction transforme. Les sonorités, les jeux de mots, le rythme d'une phrase tiennent à une langue particulière et ne se transportent pas sans dommage. Un poème fondé sur des rimes ou une allitération perd nécessairement une part de sa musique. Plus profondément, chaque langue découpe le réel à sa manière : un mot n'a jamais d'équivalent parfait, chargé des mêmes connotations.\n\nFaut-il pour autant conclure que l'œuvre traduite serait une œuvre différente, voire inférieure ? Ce serait oublier que l'identité d'une œuvre ne se réduit pas à la matérialité de ses mots. Une intrigue, des personnages, une vision du monde, une interrogation sur la condition humaine traversent les langues. Si tant de lecteurs ont pu être bouleversés par des œuvres qu'ils n'ont jamais lues dans l'original, c'est bien que quelque chose d'essentiel a été transmis.\n\nPeut-être faut-il alors renverser la perspective : l'œuvre originale elle-même n'est jamais tout à fait la même, puisque chaque lecteur, chaque époque la relit différemment. La traduction ne fait que rendre visible cette pluralité. Loin d'altérer l'œuvre, elle prolonge sa vie et en révèle des facettes insoupçonnées."
+      }
+    }
+  ]
+}

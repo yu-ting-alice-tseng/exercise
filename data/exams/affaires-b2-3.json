@@ -1,0 +1,304 @@
+{
+  "id": "affaires-b2-3",
+  "exam": "affaires",
+  "level": "B2",
+  "title": "財經法語 B2 模擬卷 3",
+  "fr": "Français des affaires B2 – Économie et finance 3",
+  "minutes": 90,
+  "desc": "數位銀行報導、就業市場廣播、銀行與就業用語，以及寫理財建議信。",
+  "sections": [
+    {
+      "kind": "reading",
+      "title": "閱讀：數位銀行",
+      "fr": "Compréhension écrite",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "En quelques années, les banques en ligne et les néobanques ont conquis des millions de clients en France, en particulier parmi les moins de 35 ans. Leur atout principal : des frais réduits, voire inexistants, et une application mobile simple qui permet d'ouvrir un compte en quelques minutes.\n\nLes banques traditionnelles ont dû réagir. Elles ont modernisé leurs applications, réduit certains frais et fermé une partie de leurs agences, devenues moins fréquentées. Ce mouvement inquiète toutefois les associations de consommateurs, qui rappellent que les personnes âgées ou peu à l'aise avec le numérique ont encore besoin d'un conseiller en chair et en os.\n\nLes néobanques, de leur côté, doivent encore prouver qu'elles peuvent être rentables. Beaucoup d'entre elles perdent de l'argent, car leurs revenus dépendent largement de commissions modestes. Pour y remédier, elles développent des offres payantes et proposent désormais des crédits, de l'épargne ou des assurances.",
+        "title": "財經報導"
+      },
+      "questions": [
+        {
+          "id": "affaires-b2-3-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les néobanques attirent surtout…",
+          "options": [
+            "les moins de 35 ans",
+            "les retraités",
+            "les entreprises",
+            "les touristes"
+          ],
+          "answer": 0,
+          "explanation": "en particulier parmi les moins de 35 ans。"
+        },
+        {
+          "id": "affaires-b2-3-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Leur principal atout, ce sont…",
+          "options": [
+            "des frais réduits et une application simple",
+            "de nombreuses agences",
+            "des taux d'épargne très élevés",
+            "des conseillers disponibles la nuit"
+          ],
+          "answer": 0,
+          "explanation": "des frais réduits… et une application mobile simple。"
+        },
+        {
+          "id": "affaires-b2-3-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Comment les banques traditionnelles ont-elles réagi ?",
+          "options": [
+            "Elles ont fermé une partie de leurs agences",
+            "Elles ont augmenté leurs frais",
+            "Elles ont supprimé leurs applications",
+            "Elles ont racheté toutes les néobanques"
+          ],
+          "answer": 0,
+          "explanation": "fermé une partie de leurs agences。"
+        },
+        {
+          "id": "affaires-b2-3-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les associations de consommateurs s'inquiètent pour…",
+          "options": [
+            "les personnes peu à l'aise avec le numérique",
+            "les jeunes",
+            "les actionnaires",
+            "les conseillers bancaires"
+          ],
+          "answer": 0,
+          "explanation": "les personnes âgées ou peu à l'aise avec le numérique。"
+        },
+        {
+          "id": "affaires-b2-3-q05",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel est le défi des néobanques ?",
+          "options": [
+            "Devenir rentables",
+            "Attirer des jeunes",
+            "Ouvrir des agences",
+            "Baisser leurs frais"
+          ],
+          "answer": 0,
+          "explanation": "doivent encore prouver qu'elles peuvent être rentables。"
+        },
+        {
+          "id": "affaires-b2-3-q06",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Pour gagner plus, elles développent des offres ___.",
+          "answers": [
+            "payantes"
+          ],
+          "explanation": "des offres payantes：付費方案。"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "聽力：就業市場廣播",
+      "fr": "Compréhension orale",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Bonne nouvelle pour l'emploi : le taux de chômage a reculé au troisième trimestre, à 7,1 % de la population active. Ce recul s'explique notamment par la vigueur des secteurs de la santé et du numérique, qui continuent de recruter. En revanche, l'industrie a encore perdu des emplois. Les économistes restent prudents : avec le ralentissement de la croissance, cette amélioration pourrait être de courte durée.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "affaires-b2-3-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Au troisième trimestre, le chômage…",
+          "options": [
+            "a baissé",
+            "a augmenté",
+            "est resté stable",
+            "a doublé"
+          ],
+          "answer": 0,
+          "explanation": "le taux de chômage a reculé。"
+        },
+        {
+          "id": "affaires-b2-3-q08",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quels secteurs recrutent ?",
+          "options": [
+            "La santé et le numérique",
+            "L'industrie et l'agriculture",
+            "Le tourisme et la banque",
+            "Le bâtiment et le commerce"
+          ],
+          "answer": 0,
+          "explanation": "les secteurs de la santé et du numérique。"
+        },
+        {
+          "id": "affaires-b2-3-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Dans l'industrie, …",
+          "options": [
+            "des emplois ont encore été supprimés",
+            "on recrute beaucoup",
+            "les salaires ont augmenté",
+            "le chômage a disparu"
+          ],
+          "answer": 0,
+          "explanation": "l'industrie a encore perdu des emplois。"
+        },
+        {
+          "id": "affaires-b2-3-q10",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les économistes pensent que cette amélioration…",
+          "options": [
+            "pourrait ne pas durer",
+            "va durer longtemps",
+            "est due à l'industrie",
+            "est exagérée par les médias"
+          ],
+          "answer": 0,
+          "explanation": "cette amélioration pourrait être de courte durée。"
+        }
+      ]
+    },
+    {
+      "kind": "structure",
+      "title": "銀行與就業用語",
+      "fr": "Vocabulaire de la banque et de l'emploi",
+      "instruction": "請選出或填入正確的答案。",
+      "questions": [
+        {
+          "id": "affaires-b2-3-q11",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Un prêt immobilier sert à…",
+          "options": [
+            "acheter un logement",
+            "payer ses impôts",
+            "ouvrir un compte",
+            "partir en vacances"
+          ],
+          "answer": 0,
+          "explanation": "prêt immobilier：房貸。"
+        },
+        {
+          "id": "affaires-b2-3-q12",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Les intérêts d'un crédit sont…",
+          "options": [
+            "ce que l'emprunteur paie en plus de la somme empruntée",
+            "une réduction",
+            "un salaire",
+            "une taxe locale"
+          ],
+          "answer": 0,
+          "explanation": "intérêts：利息。"
+        },
+        {
+          "id": "affaires-b2-3-q13",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Être à découvert, c'est…",
+          "options": [
+            "avoir un solde négatif sur son compte",
+            "ouvrir un nouveau compte",
+            "avoir beaucoup d'épargne",
+            "perdre sa carte"
+          ],
+          "answer": 0,
+          "explanation": "découvert：透支。"
+        },
+        {
+          "id": "affaires-b2-3-q14",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Le taux de chômage mesure…",
+          "options": [
+            "la part des actifs sans emploi",
+            "le nombre d'entreprises",
+            "le niveau des salaires",
+            "le nombre de retraités"
+          ],
+          "answer": 0,
+          "explanation": "taux de chômage：失業率。"
+        },
+        {
+          "id": "affaires-b2-3-q15",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Un trimestre dure…",
+          "options": [
+            "trois mois",
+            "six mois",
+            "quatre mois",
+            "un an"
+          ],
+          "answer": 0,
+          "explanation": "trimestre：一季、三個月。"
+        },
+        {
+          "id": "affaires-b2-3-q16",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La population active comprend…",
+          "options": [
+            "les personnes qui travaillent ou cherchent un emploi",
+            "seulement les retraités",
+            "les enfants",
+            "seulement les étudiants"
+          ],
+          "answer": 0,
+          "explanation": "population active：勞動人口（包含就業與正在找工作的人）。"
+        },
+        {
+          "id": "affaires-b2-3-q17",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "L'argent qu'on met de côté s'appelle l'___.",
+          "answers": [
+            "épargne"
+          ],
+          "explanation": "l'épargne：儲蓄。"
+        },
+        {
+          "id": "affaires-b2-3-q18",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "On retire de l'argent au distributeur automatique de ___.",
+          "answers": [
+            "billets"
+          ],
+          "explanation": "distributeur automatique de billets（DAB）：提款機。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作：理財建議信",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Un ami de 25 ans vient de commencer à travailler. Il vous demande s'il doit ouvrir un compte dans une néobanque ou rester dans sa banque traditionnelle. Vous lui répondez par un courriel argumenté. (200 mots minimum)",
+        "minWords": 200,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）",
+          "使用正確的銀行詞彙（frais、conseiller、épargne、crédit 等）"
+        ],
+        "model": "Objet : Néobanque ou banque traditionnelle ?\n\nSalut Antoine,\n\nFélicitations pour ton nouveau travail ! Tu me demandes s'il vaut mieux passer à une néobanque. C'est une bonne question, et la réponse dépend surtout de tes projets. Voici ce que j'en pense.\n\nLes néobanques ont de vrais avantages. Leurs frais sont très faibles, souvent nuls, et leur application est vraiment pratique : tu peux bloquer ta carte, suivre tes dépenses en temps réel ou payer à l'étranger sans commission. Pour un jeune actif qui gère tout depuis son téléphone, c'est idéal.\n\nEn revanche, elles ont aussi des limites. Il est difficile de parler à un conseiller en cas de problème, et elles proposent encore peu de crédits immobiliers. Or, si tu envisages d'acheter un appartement dans quelques années, une banque traditionnelle qui connaît ton historique sera plus disposée à te prêter de l'argent.\n\nÀ ta place, je garderais les deux. Tu pourrais utiliser la néobanque pour tes dépenses quotidiennes et tes voyages, et conserver ton compte traditionnel pour recevoir ton salaire et commencer à épargner. Ainsi, tu profites des frais réduits tout en préparant tes futurs projets.\n\nOn en parle autour d'un café ce week-end ?\n\nAmitiés,\nSophie"
+      }
+    }
+  ]
+}

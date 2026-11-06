@@ -1,0 +1,201 @@
+{
+  "id": "delf-b2-2",
+  "exam": "delf",
+  "level": "B2",
+  "title": "DELF B2 模擬卷 2",
+  "fr": "DELF B2 – Sujet d'entraînement 2",
+  "minutes": 120,
+  "desc": "聽力 1 段廣播專欄、閱讀 1 篇論說文、寫作 1 題（論證文章）。真實考試另有口說測驗。",
+  "sections": [
+    {
+      "kind": "listening",
+      "title": "聽力：廣播專欄",
+      "fr": "Compréhension de l'oral",
+      "instruction": "請先聽錄音（最多播放兩次），再回答問題。",
+      "passage": {
+        "text": "Les vagues de chaleur se multiplient, et nos villes n'y sont pas préparées. Le phénomène porte un nom : l'îlot de chaleur urbain. Le béton et l'asphalte emmagasinent la chaleur pendant la journée et la restituent la nuit, si bien qu'en ville, la température nocturne peut dépasser de plusieurs degrés celle de la campagne voisine. Or ce sont précisément ces nuits sans fraîcheur qui mettent en danger les personnes âgées. Pour lutter contre ce phénomène, plusieurs municipalités transforment les cours d'école en îlots de fraîcheur : on remplace le bitume par de la terre et on plante des arbres. D'autres repeignent les toits en blanc pour réfléchir le soleil. Ces solutions ont un coût, mais, rappellent les experts, l'inaction coûtera bien plus cher.",
+        "speak": true,
+        "dialogue": false
+      },
+      "questions": [
+        {
+          "id": "delf-b2-2-q01",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "L'îlot de chaleur urbain s'explique par…",
+          "options": [
+            "les matériaux comme le béton et l'asphalte",
+            "le manque de vent",
+            "la pollution des voitures",
+            "le nombre d'habitants"
+          ],
+          "answer": 0,
+          "explanation": "Le béton et l'asphalte emmagasinent la chaleur。"
+        },
+        {
+          "id": "delf-b2-2-q02",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "La nuit, en ville, …",
+          "options": [
+            "il fait plus chaud qu'à la campagne",
+            "il fait plus froid qu'à la campagne",
+            "la température est la même",
+            "il pleut davantage"
+          ],
+          "answer": 0,
+          "explanation": "la température nocturne peut dépasser… celle de la campagne voisine。"
+        },
+        {
+          "id": "delf-b2-2-q03",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Qui est le plus menacé par ces nuits chaudes ?",
+          "options": [
+            "Les personnes âgées",
+            "Les enfants",
+            "Les sportifs",
+            "Les touristes"
+          ],
+          "answer": 0,
+          "explanation": "mettent en danger les personnes âgées。"
+        },
+        {
+          "id": "delf-b2-2-q04",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Dans les cours d'école, on…",
+          "options": [
+            "remplace le bitume par de la terre et des arbres",
+            "installe la climatisation",
+            "construit des piscines",
+            "ferme les cours l'été"
+          ],
+          "answer": 0,
+          "explanation": "on remplace le bitume par de la terre et on plante des arbres。"
+        },
+        {
+          "id": "delf-b2-2-q05",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Selon les experts, l'inaction coûtera bien plus ___.",
+          "answers": [
+            "cher"
+          ],
+          "explanation": "l'inaction coûtera bien plus cher：不作為的代價更高。"
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "閱讀：論說文",
+      "fr": "Compréhension des écrits",
+      "instruction": "請閱讀下面的文件，再回答問題。",
+      "passage": {
+        "text": "Jeter un grille-pain parce qu'une pièce à deux euros est cassée : le geste est devenu banal. Les fabricants ont longtemps conçu des appareils difficiles à démonter, et les pièces détachées étaient rares ou hors de prix. Résultat : réparer coûtait souvent plus cher qu'acheter neuf.\n\nLa tendance commence pourtant à s'inverser. En France, un indice de réparabilité, noté sur 10, est désormais affiché sur plusieurs catégories d'appareils, comme les téléphones ou les ordinateurs portables, afin d'informer le consommateur avant l'achat. Parallèlement, les « repair cafés » se multiplient : des bénévoles y aident gratuitement les habitants à réparer eux-mêmes leurs objets.\n\nLes bénéfices sont multiples. Réparer réduit les déchets et économise les ressources nécessaires à la fabrication de nouveaux produits. C'est aussi une source d'emplois locaux, difficiles à délocaliser.\n\nReste un obstacle de taille : nos habitudes. Tant que la nouveauté sera valorisée et que les prix des produits neufs resteront bas, la réparation demeurera, pour beaucoup, un choix militant plutôt qu'un réflexe.",
+        "title": "論說文"
+      },
+      "questions": [
+        {
+          "id": "delf-b2-2-q06",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Pourquoi jetait-on souvent les appareils ?",
+          "options": [
+            "Réparer coûtait plus cher qu'acheter neuf",
+            "Les appareils étaient trop vieux",
+            "Il était interdit de réparer",
+            "Les magasins reprenaient les appareils"
+          ],
+          "answer": 0,
+          "explanation": "réparer coûtait souvent plus cher qu'acheter neuf。"
+        },
+        {
+          "id": "delf-b2-2-q07",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "L'indice de réparabilité sert à…",
+          "options": [
+            "informer le consommateur avant l'achat",
+            "réparer les appareils",
+            "fixer le prix des pièces",
+            "noter les réparateurs"
+          ],
+          "answer": 0,
+          "explanation": "afin d'informer le consommateur avant l'achat。"
+        },
+        {
+          "id": "delf-b2-2-q08",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Dans un « repair café », …",
+          "options": [
+            "des bénévoles aident à réparer gratuitement",
+            "on achète des appareils d'occasion",
+            "on boit un café en attendant le réparateur",
+            "on vend des pièces détachées"
+          ],
+          "answer": 0,
+          "explanation": "des bénévoles y aident gratuitement les habitants à réparer eux-mêmes leurs objets。"
+        },
+        {
+          "id": "delf-b2-2-q09",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Selon l'auteur, la réparation crée…",
+          "options": [
+            "des emplois locaux",
+            "des déchets",
+            "de la concurrence étrangère",
+            "des produits neufs"
+          ],
+          "answer": 0,
+          "explanation": "une source d'emplois locaux, difficiles à délocaliser。"
+        },
+        {
+          "id": "delf-b2-2-q10",
+          "type": "choice",
+          "instruction": "請選出正確答案",
+          "stem": "Quel est le principal obstacle ?",
+          "options": [
+            "Nos habitudes de consommation",
+            "Le manque de bénévoles",
+            "La loi",
+            "Le prix de l'indice"
+          ],
+          "answer": 0,
+          "explanation": "Reste un obstacle de taille : nos habitudes。"
+        },
+        {
+          "id": "delf-b2-2-q11",
+          "type": "fill",
+          "instruction": "請填入一個字",
+          "stem": "Pour beaucoup, la réparation reste un choix ___ plutôt qu'un réflexe.",
+          "answers": [
+            "militant"
+          ],
+          "explanation": "un choix militant：出於理念的選擇。"
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "寫作",
+      "fr": "Production écrite",
+      "instruction": "寫完後，依照下方的評分項目自我檢核，再對照範文。",
+      "writing": {
+        "prompt": "Le magazine de votre ville lance un débat : « Faut-il obliger les fabricants à garantir leurs produits pendant dix ans ? » Vous écrivez un article argumenté pour donner votre point de vue. (250 mots minimum)",
+        "minWords": 250,
+        "rubric": [
+          "切合題目要求（文體、對象、字數）",
+          "立場清楚，並用具體例子支持",
+          "段落分明，使用連接詞讓論點有條理",
+          "詞彙豐富、用字精確，少重複",
+          "文法正確（時態、語式、配合）",
+          "句型有變化（關係子句、讓步、假設等）"
+        ],
+        "model": "Une garantie de dix ans : une fausse bonne idée ?\n\nQui n'a jamais vu son téléphone ou son lave-linge tomber en panne juste après la fin de la garantie ? Face à cette frustration, l'idée d'imposer aux fabricants une garantie de dix ans séduit. Elle mérite pourtant d'être examinée de près, car ses conséquences seraient importantes.\n\nLes avantages semblent évidents. Une garantie longue obligerait les entreprises à concevoir des produits solides et réparables, puisqu'elles devraient en assumer les pannes. Les consommateurs feraient des économies, et la quantité de déchets électroniques diminuerait nettement. Ce serait aussi une manière efficace de lutter contre l'obsolescence programmée, que beaucoup de consommateurs soupçonnent sans pouvoir la prouver.\n\nToutefois, une telle mesure aurait un prix. Les fabricants répercuteraient sans doute le coût de la garantie sur les produits, ce qui pénaliserait les ménages modestes. Par ailleurs, dix ans, c'est une éternité pour certains appareils : un ordinateur peut fonctionner parfaitement et devenir pourtant inutilisable, faute de mises à jour.\n\nÀ mon avis, il serait plus réaliste d'adapter la durée de la garantie à chaque type de produit : dix ans pour un réfrigérateur, cinq ans pour un téléphone, par exemple. Il faudrait aussi obliger les fabricants à vendre des pièces détachées à un prix raisonnable pendant toute la durée de vie de l'appareil.\n\nEn somme, l'objectif me semble tout à fait juste : consommer moins, mais mieux. Encore faut-il choisir des règles qui protègent l'environnement sans faire exploser les prix."
+      }
+    }
+  ]
+}
