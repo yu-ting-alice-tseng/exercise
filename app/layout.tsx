@@ -36,7 +36,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="border-b border-line bg-surface/80 backdrop-blur">
             <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-2 sm:px-6 sm:py-3 lg:px-8">
               <Link href="/" className="group flex items-baseline gap-2.5">
-                <span className="display text-lg font-bold whitespace-nowrap text-ink sm:text-xl">法文練習題</span>
+                <span className="display text-lg font-bold whitespace-nowrap text-ink max-[420px]:hidden sm:text-xl">法文練習題</span>
+                <span className="display text-lg font-bold whitespace-nowrap text-ink min-[421px]:hidden">
+                  法文
+                </span>
                 <span className="display hidden text-base text-muted italic md:inline">
                   Exercices de français
                 </span>

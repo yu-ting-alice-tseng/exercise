@@ -150,3 +150,10 @@ export function topicName(level: Level, by: "grammar" | "theme", id: string): st
   const list = by === "grammar" ? GRAMMAR[level] : THEMES;
   return list.find((t) => t.id === id)?.zh ?? id;
 }
+
+const GRAMMAR_IDS = new Set(Object.values(GRAMMAR).flatMap((l) => l.map((t) => t.id)));
+
+/** 是不是題庫裡的文法點（每個文法點都有一份文法筆記） */
+export function isGrammarId(id: string): boolean {
+  return GRAMMAR_IDS.has(id);
+}

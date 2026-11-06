@@ -13,7 +13,7 @@ import { drawPaper, OPTION_LETTERS, type Version } from "@/lib/draw";
 import { saveHistory } from "@/lib/history";
 import { getStat, recordSession, updateAnswer, type QStat, type Result as RecResult } from "@/lib/progress";
 import { newSeed } from "@/lib/random";
-import { TYPE_LABELS } from "@/lib/taxonomy";
+import { isGrammarId, TYPE_LABELS } from "@/lib/taxonomy";
 import { paperTitle } from "@/lib/title";
 import type { DrawnQuestion, Level, PaperConfig } from "@/lib/types";
 import { useActiveTimer } from "@/lib/useActiveTimer";
@@ -519,6 +519,11 @@ export function QuestionCard({
           <p className="rounded-lg bg-sunken px-3 py-2 text-muted">
             <span className="display mr-1 font-bold text-ink italic">Explication</span>
             {q.explanation}
+            {isGrammarId(q.grammar) && (
+              <Link href={`/learn/grammar/${q.grammar}/`} className="ml-1.5 whitespace-nowrap text-accent underline-offset-4 hover:underline">
+                看文法筆記 →
+              </Link>
+            )}
           </p>
         </div>
       )}

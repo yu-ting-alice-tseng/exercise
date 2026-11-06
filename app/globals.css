@@ -363,3 +363,24 @@ body {
 @media print {
   .feuille { background: none; box-shadow: none; padding-left: 0 !important; }
 }
+
+/* 文法筆記：法國學生複習用的 fiche bristol 卡片，上方一條紅線、淡藍橫線 */
+.fiche {
+  position: relative;
+  background-color: var(--surface);
+  background-image:
+    linear-gradient(var(--rouge) 2px, transparent 2px),
+    repeating-linear-gradient(transparent 0 27px, var(--fiche-line) 27px 28px);
+  background-size: 100% 100%, 100% 28px;
+  background-position: 0 2.5rem, 0 calc(2.5rem + 2px);
+  background-repeat: no-repeat, repeat-y;
+  line-height: 28px;
+}
+:root { --fiche-line: rgba(31, 58, 147, 0.14); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --fiche-line: rgba(159, 178, 255, 0.12); }
+}
+:root[data-theme="dark"] { --fiche-line: rgba(159, 178, 255, 0.12); }
+@media print {
+  .fiche { background: none; }
+}

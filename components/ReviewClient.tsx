@@ -9,7 +9,7 @@ import { BANK } from "@/lib/bank";
 import { prepare } from "@/lib/draw";
 import { dueIds, markMastered, reviewIds, type QStat } from "@/lib/progress";
 import { mulberry32, newSeed, shuffle } from "@/lib/random";
-import { GRAMMAR, LEVELS, TYPE_LABELS, topicName } from "@/lib/taxonomy";
+import { GRAMMAR, isGrammarId, LEVELS, TYPE_LABELS, topicName } from "@/lib/taxonomy";
 import type { DrawnQuestion, Level, Question } from "@/lib/types";
 import { useProgress } from "@/lib/useProgress";
 import { useNow } from "@/lib/useNow";
@@ -242,6 +242,11 @@ function BookList({ ids, stats }: { ids: string[]; stats: Record<string, QStat> 
                 <p className="mt-2 rounded-lg bg-sunken px-3 py-2 text-sm text-muted">
                   <span className="display mr-1 font-bold text-ink italic">Explication</span>
                   {q.explanation}
+                  {isGrammarId(q.grammar) && (
+                    <Link href={`/learn/grammar/${q.grammar}/`} className="ml-1.5 whitespace-nowrap text-accent underline-offset-4 hover:underline">
+                      看文法筆記 →
+                    </Link>
+                  )}
                 </p>
                 <button
                   type="button"

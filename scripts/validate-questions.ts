@@ -2,6 +2,14 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { join, relative } from "node:path";
 import { GRAMMAR, LEVELS, THEMES } from "../lib/taxonomy.ts";
+import { NOTES_A1 } from "../data/learn/grammar-a1.ts";
+import { NOTES_A2 } from "../data/learn/grammar-a2.ts";
+import { NOTES_B1 } from "../data/learn/grammar-b1.ts";
+import { NOTES_B2 } from "../data/learn/grammar-b2.ts";
+import { NOTES_C1 } from "../data/learn/grammar-c1.ts";
+import { NOTES_C2 } from "../data/learn/grammar-c2.ts";
+import { PATTERNS } from "../data/learn/patterns.ts";
+import { VOCAB } from "../data/learn/vocab.ts";
 
 const root = join(import.meta.dirname, "..");
 const dir = join(root, "data/questions");
@@ -118,6 +126,27 @@ for (const file of walk(examDir)) {
   }
 }
 console.log(`模考 ${examCount} 份。`);
+
+// 學習區：每個文法點都要有筆記，每個主題都要有單字，表格欄數要一致
+{
+  const notes = [...NOTES_A1, ...NOTES_A2, ...NOTES_B1, ...NOTES_B2, ...NOTES_C1, ...NOTES_C2];
+  const noteIds = new Set(notes.map((n) => n.id));
+  const grammarIds = new Set(Object.values(GRAMMAR).flatMap((l) => l.map((t) => t.id)));
+  for (const g of grammarIds) if (!noteIds.has(g)) errors.push(`文法筆記：缺少 ${g}`);
+  for (const n of notes) if (!grammarIds.has(n.id)) errors.push(`文法筆記：${n.id} 不是文法點`);
+  if (noteIds.size !== notes.length) errors.push("文法筆記：id 重複");
+  const rules = [...notes.flatMap((n) => n.rules.map((r) => [n.id, r] as const)), ...PATTERNS.flatMap((p) => p.sections.map((r) => [p.id, r] as const))];
+  for (const [id, r] of rules) {
+    if (!r.d && !r.table && !r.ex) errors.push(`學習區 ${id}「${r.t}」：沒有內容`);
+    for (const row of r.table?.rows ?? []) if (row.length !== r.table!.head.length) errors.push(`學習區 ${id}「${r.t}」：表格欄數不一致`);
+  }
+  for (const p of PATTERNS) for (const g of p.related ?? []) if (!grammarIds.has(g)) errors.push(`句型 ${p.id}：相關文法 ${g} 不存在`);
+  for (const t of THEMES) if (!VOCAB.some((v) => v.id === t.id)) errors.push(`主題單字：缺少 ${t.id}`);
+  const all = JSON.stringify([notes, PATTERNS, VOCAB]);
+  if (all.includes("—")) errors.push("學習區：請不要用破折號");
+  const words = VOCAB.reduce((s, v) => s + v.groups.reduce((a, g) => a + g.words.length, 0), 0);
+  console.log(`學習區：文法筆記 ${notes.length} 份、句型整理 ${PATTERNS.length} 份、單字 ${words} 個。`);
+}
 
 for (const w of warnings) console.warn("⚠️ ", w);
 for (const e of errors) console.error("❌", e);

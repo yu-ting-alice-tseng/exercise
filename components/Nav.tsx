@@ -9,6 +9,7 @@ import { useProgress } from "@/lib/useProgress";
 
 const LINKS = [
   { href: "/", zh: "出題", match: (p: string) => p === "/" || p.startsWith("/practice") || p.startsWith("/paper") },
+  { href: "/learn/", zh: "學習", match: (p: string) => p.startsWith("/learn") },
   { href: "/exam/", zh: "模考", match: (p: string) => p.startsWith("/exam") },
   { href: "/review/", zh: "複習", match: (p: string) => p.startsWith("/review") },
   { href: "/stats/", zh: "紀錄", match: (p: string) => p.startsWith("/stats") },
@@ -28,7 +29,7 @@ export default function Nav() {
     : LINKS;
 
   return (
-    <nav aria-label="主要導覽" className="flex items-center gap-1">
+    <nav aria-label="主要導覽" className="flex items-center gap-0.5 sm:gap-1">
       {links.map((l) => {
         const on = l.match(path);
         return (
@@ -36,7 +37,7 @@ export default function Nav() {
             key={l.href}
             href={l.href}
             aria-current={on ? "page" : undefined}
-            className={`relative inline-flex min-h-10 items-center rounded-lg px-2.5 text-sm sm:px-3 font-medium transition ${
+            className={`relative inline-flex min-h-10 items-center rounded-lg px-2 text-sm min-[400px]:px-2.5 sm:px-3 font-medium transition ${
               on ? "nav-current bg-accent-soft text-accent" : "text-muted hover:text-ink"
             }`}
           >
