@@ -272,6 +272,7 @@ function answerText(q: Question): string {
 function Empty({ text }: { text: string }) {
   return (
     <Card className="p-8 text-center">
+      <div className="mb-2 text-5xl" aria-hidden>☕️</div>
       <p className="display mb-2 text-2xl text-rouge italic">Rien à réviser</p>
       <p className="mb-5 text-muted">{text}</p>
       <Link href="/" className={btnPrimary}>

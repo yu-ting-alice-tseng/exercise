@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import ListenPlayer from "./ListenPlayer";
+import { Confetti, Tampon } from "./Decor";
 import { Invalid, judge, praise, QuestionCard, toRec, type Answer } from "./PracticeClient";
 import { BottomBar, btnPrimary, btnQuiet, Card, container, PageTitle, twoCol } from "./ui";
 import { drawPaper, prepare } from "@/lib/draw";
@@ -121,7 +122,9 @@ function ExamRunner({ set, seed }: { set: ExamSet; seed: number }) {
           {correct}
           <span className="text-2xl text-muted">／{all.length}</span>
         </div>
-        <div className="display pb-1 text-xl font-bold text-rouge italic">{p.fr}</div>
+        <div className="pb-2 pr-1">
+          <Tampon text={p.fr} />
+        </div>
       </div>
       <ul className="mt-3 space-y-1 text-sm">
         {built
@@ -152,11 +155,12 @@ function ExamRunner({ set, seed }: { set: ExamSet; seed: number }) {
 
       <div className={twoCol}>
         <div className="space-y-5">
+          {checked && all.length > 0 && correct / all.length >= 0.8 && <Confetti seed={correct + all.length} />}
           {checked && <Card className="p-4 lg:hidden">{scoreCard}</Card>}
           {built.map((b, si) => (
             <Card key={si} className="overflow-hidden">
               <div className="flex items-center gap-3 border-b border-line bg-sunken/60 px-4 py-3 sm:px-5">
-                <span className="display grid size-9 shrink-0 place-items-center rounded-full bg-accent text-base font-bold text-accent-ink" aria-hidden>
+                <span className="timbre display grid size-11 shrink-0 place-items-center bg-accent text-lg font-bold text-accent-ink" aria-hidden>
                   {SECTION_ICON[b.section.kind]}
                 </span>
                 <div className="min-w-0">
@@ -182,7 +186,7 @@ function ExamRunner({ set, seed }: { set: ExamSet; seed: number }) {
                 )}
 
                 {b.section.passage && !b.section.passage.speak && (
-                  <article className="rounded-lg border border-line bg-bg px-4 py-3">
+                  <article className="feuille rounded-lg border border-line px-4 py-3">
                     {b.section.passage.title && <div className="mb-1 text-xs text-muted">{b.section.passage.title}</div>}
                     <p lang="fr" className="fr whitespace-pre-line">
                       {b.section.passage.text}
@@ -316,7 +320,7 @@ function WritingBox({
         spellCheck={false}
         placeholder="請在這裡用法文寫作…"
         aria-label="寫作作答區"
-        className="fr w-full resize-y rounded-lg border border-line bg-sunken px-3 py-2 outline-none focus:border-accent focus:bg-surface"
+        className="fr seyes w-full resize-y rounded-lg border border-line px-3 pb-1 outline-none focus:border-accent"
       />
       <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
         <span className={ok ? "text-ok" : "text-muted"}>

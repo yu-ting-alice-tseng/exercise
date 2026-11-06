@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import CloudBoot from "@/components/CloudBoot";
+import { ProverbeDuJour } from "@/components/Decor";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -52,7 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <span className="h-1 flex-1 bg-line" />
             <span className="h-1 flex-1 bg-[#c8283c]" />
           </div>
-          <p className="display text-sm text-muted italic">Bon courage !</p>
+          <ProverbeDuJour />
         </footer>
       </body>
     </html>

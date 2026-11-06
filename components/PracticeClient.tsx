@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import AccentBar from "./AccentBar";
+import { Confetti, Tampon } from "./Decor";
 import Stem, { hasBlank } from "./Stem";
 import { BottomBar, btnPrimary, btnSecondary, Card, container, PageTitle, Progress, twoCol } from "./ui";
 import { checkFill, checkShort, joinTokens, type ShortCheck, type Token } from "@/lib/check";
@@ -59,6 +60,7 @@ function PracticeSession({ query }: { query: string }) {
 }
 
 export function praise(ratio: number): { fr: string; zh: string } {
+  if (ratio >= 1) return { fr: "Parfait !", zh: "全部答對，太厲害了！" };
   if (ratio >= 0.9) return { fr: "Excellent !", zh: "太厲害了，幾乎全對！" };
   if (ratio >= 0.7) return { fr: "Très bien !", zh: "很好，再看看答錯的地方。" };
   if (ratio >= 0.5) return { fr: "Pas mal !", zh: "不錯，重做答錯的題目會更熟。" };
@@ -182,7 +184,9 @@ export function QuizRunner({
           {correctCount}
           <span className="text-2xl text-muted">／{shown.length}</span>
         </div>
-        <div className="display pb-1 text-xl font-bold text-rouge italic">{p.fr}</div>
+        <div className="pb-2 pr-1">
+          <Tampon text={p.fr} />
+        </div>
       </div>
       <p className="mt-2 text-sm text-muted">
         {pendingCount > 0 ? `還有 ${pendingCount} 題請對照參考答案自己批改。` : p.zh}
@@ -218,6 +222,7 @@ export function QuizRunner({
 
       <div className={twoCol}>
         <div>
+          {checked && !onlyIds && shown.length > 0 && correctCount / shown.length >= 0.8 && <Confetti seed={correctCount + shown.length} />}
           {checked && <Card className={`mb-4 p-4 lg:hidden ${allCorrect ? "bg-ok-soft" : ""}`}>{scoreCard}</Card>}
           <ol className="space-y-3 sm:space-y-4">
             {shown.map((q, i) => (
@@ -392,7 +397,9 @@ export function QuestionCard({
   return (
     <li
       id={`q-${q.id}`}
-      className={`scroll-mt-6 rounded-xl border border-l-4 border-line bg-surface p-4 sm:p-5 ${style?.edge ?? "border-l-line"}`}
+      className={`scroll-mt-6 rounded-xl border border-l-4 border-line bg-surface p-4 sm:p-5 ${style?.edge ?? "border-l-line"} ${
+        v === "correct" ? "anim-pop" : v === "wrong" ? "anim-shake" : ""
+      }`}
     >
       <div className="mb-2 flex items-start justify-between gap-2">
         <div className="flex items-baseline gap-2">
@@ -483,7 +490,7 @@ export function QuestionCard({
             spellCheck={false}
             placeholder="請用法文作答…"
             aria-label={`第 ${n} 題答案`}
-            className="fr w-full resize-y rounded-lg border border-line bg-sunken px-3 py-2 outline-none focus:border-accent focus:bg-surface disabled:opacity-100"
+            className="fr seyes w-full resize-y rounded-lg border border-line px-3 pb-1 outline-none focus:border-accent disabled:opacity-100"
           />
           {focused && !checked && <AccentBar target={getInput} onInsert={onAnswer} />}
         </>

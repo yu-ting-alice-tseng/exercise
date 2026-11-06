@@ -198,3 +198,168 @@ body {
     break-inside: avoid;
   }
 }
+
+/* =========================================================
+   巧思：法國作業簿、郵票、准考證、印章、彩帶
+   ========================================================= */
+
+:root {
+  --seyes-major: rgba(76, 102, 196, 0.32);
+  --seyes-minor: rgba(76, 102, 196, 0.12);
+  --seyes-margin: rgba(200, 40, 60, 0.45);
+  --ink-stamp: #c8283c;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --seyes-major: rgba(159, 178, 255, 0.24);
+    --seyes-minor: rgba(159, 178, 255, 0.08);
+    --seyes-margin: rgba(255, 122, 137, 0.45);
+    --ink-stamp: #ff7a89;
+  }
+}
+:root[data-theme="dark"] {
+  --seyes-major: rgba(159, 178, 255, 0.24);
+  --seyes-minor: rgba(159, 178, 255, 0.08);
+  --seyes-margin: rgba(255, 122, 137, 0.45);
+  --ink-stamp: #ff7a89;
+}
+
+/* Seyès 格線：每 8px 一條細線，每 32px 一條粗線，左側一條紅色邊線。
+   文字行高設成 32px，字就會寫在粗線上；捲動時格線跟著文字走。 */
+.seyes {
+  background-color: var(--surface);
+  background-image:
+    linear-gradient(90deg, transparent 2.25rem, var(--seyes-margin) 2.25rem, var(--seyes-margin) calc(2.25rem + 1.5px), transparent calc(2.25rem + 1.5px)),
+    linear-gradient(var(--seyes-major) 1px, transparent 1px),
+    linear-gradient(var(--seyes-minor) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 32px, 100% 8px;
+  background-position: 0 0, 0 31px, 0 7px;
+  background-attachment: local;
+  line-height: 32px !important;
+  padding-left: 3rem !important;
+  padding-top: 0 !important;
+}
+
+/* 郵票：背景色上的白色虛線邊框，看起來像齒孔 */
+.timbre {
+  position: relative;
+  border: 3px dotted var(--surface);
+  outline: 1.5px solid var(--accent);
+  outline-offset: -1.5px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+}
+
+/* 准考證：左右兩側半圓缺口 */
+.billet {
+  --notch: 84px;
+  -webkit-mask:
+    radial-gradient(circle at 0 var(--notch), transparent 10px, #000 10.5px) left / 51% 100% no-repeat,
+    radial-gradient(circle at 100% var(--notch), transparent 10px, #000 10.5px) right / 51% 100% no-repeat;
+  mask:
+    radial-gradient(circle at 0 var(--notch), transparent 10px, #000 10.5px) left / 51% 100% no-repeat,
+    radial-gradient(circle at 100% var(--notch), transparent 10px, #000 10.5px) right / 51% 100% no-repeat;
+}
+.billet-tear {
+  border-top: 2px dashed var(--line);
+}
+
+/* 老師的印章 */
+.tampon {
+  display: inline-block;
+  color: var(--ink-stamp);
+  border: 3px double currentColor;
+  border-radius: 10px;
+  padding: 0.15rem 0.7rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  transform: rotate(-9deg);
+  opacity: 0.92;
+  /* 讓印泥有一點不均勻的質感 */
+  -webkit-mask-image: radial-gradient(circle at 30% 40%, #000 55%, rgba(0, 0, 0, 0.72) 75%, #000 100%);
+  mask-image: radial-gradient(circle at 30% 40%, #000 55%, rgba(0, 0, 0, 0.72) 75%, #000 100%);
+}
+
+/* 導覽列：目前頁面底下的三色細線 */
+.nav-current::after {
+  content: "";
+  position: absolute;
+  left: 22%;
+  right: 22%;
+  bottom: 3px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #1f3a93 0 33.33%, #e4dccb 33.33% 66.66%, #c8283c 66.66% 100%);
+}
+
+/* 彩帶 */
+.confetti {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 50;
+}
+.confetti i {
+  position: absolute;
+  top: -12px;
+  width: 8px;
+  height: 14px;
+  border-radius: 2px;
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes stamp-in {
+    0% { transform: rotate(-9deg) scale(2.2); opacity: 0; }
+    60% { transform: rotate(-9deg) scale(0.92); opacity: 1; }
+    100% { transform: rotate(-9deg) scale(1); opacity: 0.92; }
+  }
+  .tampon { animation: stamp-in 0.45s cubic-bezier(0.2, 0.8, 0.3, 1.2) both; }
+
+  @keyframes pop {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.012); }
+    100% { transform: scale(1); }
+  }
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+  }
+  .anim-pop { animation: pop 0.4s ease-out both; }
+  .anim-shake { animation: shake 0.3s ease-in-out 2; }
+
+  @keyframes fall {
+    0% { transform: translate3d(0, 0, 0) rotate(0); opacity: 1; }
+    100% { transform: translate3d(var(--dx), 105vh, 0) rotate(var(--rot)); opacity: 1; }
+  }
+  .confetti i { animation: fall var(--dur) cubic-bezier(0.25, 0.4, 0.6, 1) var(--delay) forwards; }
+
+  @keyframes rise {
+    from { transform: translateY(8px); opacity: 0; }
+    to { transform: none; opacity: 1; }
+  }
+  .anim-rise { animation: rise 0.5s ease-out both; }
+}
+
+@media print {
+  .seyes { background: none; padding-left: 0 !important; }
+  .confetti { display: none; }
+}
+
+/* 閱讀文章：像一疊講義，最上面一張有紅色邊線 */
+.feuille {
+  position: relative;
+  background-color: var(--surface);
+  background-image: linear-gradient(90deg, transparent 1.75rem, var(--seyes-margin) 1.75rem, var(--seyes-margin) calc(1.75rem + 1.5px), transparent calc(1.75rem + 1.5px));
+  padding-left: 2.5rem !important;
+  box-shadow:
+    0 1px 0 var(--line),
+    3px 4px 0 -1px var(--surface),
+    3px 4px 0 0 var(--line);
+}
+@media print {
+  .feuille { background: none; box-shadow: none; padding-left: 0 !important; }
+}

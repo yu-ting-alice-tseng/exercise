@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { Card, container, PageTitle } from "./ui";
+import { Skyline } from "./Decor";
 import { bankQuestionCount, EXAMS, fixedQuestionCount } from "@/lib/exams";
 import { EXAM_KINDS, OFFICIAL_LINKS, type SectionKind } from "@/lib/examTypes";
 import { newSeed } from "@/lib/random";
@@ -13,11 +14,14 @@ export default function ExamList() {
 
   return (
     <main className={`${container} pt-5 sm:pt-8`}>
+      <div className="relative">
+      <Skyline className="pointer-events-none absolute right-0 bottom-0 hidden h-24 w-[420px] text-accent opacity-[0.12] md:block" />
       <PageTitle
         fr="Examens blancs"
         zh="模擬考"
         sub="依照 DELF、DALF、TCF、TEF、商務法語的題型原創的模擬卷，也有依等級出題的期末綜合卷。"
       />
+      </div>
 
       <p className="mb-6 rounded-lg bg-warn-soft px-4 py-3 text-sm text-warn">
         這裡的模擬題全部是原創，依照各考試的題型和難度編寫，不是官方試題。正式考試的真題與範例試題，請到下方的官方網站下載。
@@ -46,18 +50,27 @@ export default function ExamList() {
                       onClick={() => router.push(`/exam/run/?id=${s.id}&seed=${newSeed()}`)}
                       className="text-left"
                     >
-                      <Card className="h-full p-4 transition hover:border-accent/60 hover:shadow-sm">
-                        <div className="flex items-start justify-between gap-2">
-                          <span className="display text-lg font-bold">{s.title}</span>
-                          <span className="shrink-0 rounded bg-accent-soft px-1.5 py-0.5 text-xs font-semibold text-accent">{s.level}</span>
+                      {/* 准考證造型：兩側缺口、虛線撕線 */}
+                      <div className="billet h-full rounded-xl border border-line bg-surface transition hover:-translate-y-0.5 hover:shadow-md">
+                        {/* 上半部固定高度，讓兩側缺口剛好對齊撕線 */}
+                        <div className="h-[84px] overflow-hidden p-4 pb-3">
+                          <div className="flex items-start justify-between gap-2">
+                            <span className="display truncate text-lg font-bold">{s.title}</span>
+                            <span className="timbre display shrink-0 bg-accent px-1.5 text-xs font-bold text-accent-ink">{s.level}</span>
+                          </div>
+                          <p className="mt-1 truncate text-sm text-muted">{parts.join("・")}</p>
                         </div>
-                        <p className="mt-1 text-sm text-muted">{parts.join("・")}</p>
-                        <p className="mt-2 text-xs text-muted">
-                          約 {s.minutes} 分鐘・{fixed + drawn} 題{drawn ? `（其中 ${drawn} 題每次隨機）` : ""}
-                          {s.sections.some((x) => x.writing) ? "・含寫作" : ""}
-                        </p>
-                        <span className="mt-3 inline-flex text-sm font-medium text-accent">開始作答 →</span>
-                      </Card>
+                        <div className="billet-tear mx-4" />
+                        <div className="flex items-center justify-between gap-2 px-4 py-3">
+                          <p className="text-xs text-muted">
+                            約 {s.minutes} 分鐘・{fixed + drawn} 題
+                            {s.sections.some((x) => x.writing) ? "・含寫作" : ""}
+                            {drawn ? <span className="block">其中 {drawn} 題每次隨機</span> : null}
+                          </p>
+                          <span className="display shrink-0 text-xs text-muted italic">N° {String(EXAMS.indexOf(s) + 1).padStart(2, "0")}</span>
+                        </div>
+                        <div className="px-4 pb-3 text-sm font-medium text-accent">開始作答 →</div>
+                      </div>
                     </button>
                   );
                 })}

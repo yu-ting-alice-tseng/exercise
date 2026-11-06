@@ -37,7 +37,7 @@ export default function Nav() {
             href={l.href}
             aria-current={on ? "page" : undefined}
             className={`relative inline-flex min-h-10 items-center rounded-lg px-2.5 text-sm sm:px-3 font-medium transition ${
-              on ? "bg-accent-soft text-accent" : "text-muted hover:text-ink"
+              on ? "nav-current bg-accent-soft text-accent" : "text-muted hover:text-ink"
             }`}
           >
             {l.zh}

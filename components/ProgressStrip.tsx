@@ -24,7 +24,21 @@ export default function ProgressStrip() {
 
   return (
     <section className="mb-5 flex flex-wrap items-center gap-x-6 gap-y-3 rounded-xl border border-line bg-surface px-4 py-3 sm:px-5">
-      <Stat label="連續學習" value={info.streak} unit="天" />
+      <div>
+        <div className="text-xs text-muted">連續學習</div>
+        <div className="flex items-center gap-2">
+          <span>
+            <span className="display text-2xl font-bold tabular-nums">{info.streak}</span>
+            <span className="ml-1 text-sm text-muted">天</span>
+          </span>
+          {info.streak > 0 && (
+            <span className="text-base tracking-tighter" role="img" aria-label={`連續 ${info.streak} 天`} title="每連續學習一天，就多一個可頌">
+              {"🥐".repeat(Math.min(info.streak, 7))}
+              {info.streak > 7 ? <span className="ml-0.5 text-xs text-muted">+{info.streak - 7}</span> : null}
+            </span>
+          )}
+        </div>
+      </div>
       <Stat label="今天練習" value={info.today} unit="分鐘" />
       <Stat label="待複習" value={info.due} unit="題" />
       <div className="ml-auto flex w-full gap-2 sm:w-auto">

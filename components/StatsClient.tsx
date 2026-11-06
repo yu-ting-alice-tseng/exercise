@@ -128,6 +128,7 @@ export default function StatsClient() {
 
       {empty ? (
         <Card className="mb-5 p-8 text-center">
+          <div className="mb-2 text-5xl" aria-hidden>📒</div>
           <p className="display mb-2 text-2xl text-rouge italic">C&apos;est parti !</p>
           <p className="mb-5 text-muted">還沒有學習紀錄。完成第一次線上練習後，這裡就會出現你的學習日曆和統計。</p>
           <Link href="/" className={btnPrimary}>
