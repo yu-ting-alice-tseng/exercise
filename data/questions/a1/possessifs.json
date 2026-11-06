@@ -217,5 +217,153 @@
       "Mon amie, c'est Léa."
     ],
     "explanation": "amie 以母音開頭，用 mon 而不是 ma。"
+  },
+  {
+    "id": "a1-pos-013",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出「我的」",
+    "stem": "C'est ___ école.",
+    "options": [
+      "mon",
+      "ma",
+      "mes",
+      "m'"
+    ],
+    "answer": 0,
+    "explanation": "école 是陰性，但以母音開頭，用 mon。"
+  },
+  {
+    "id": "a1-pos-014",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出「你們的」",
+    "stem": "___ professeur est sympa.",
+    "options": [
+      "Votre",
+      "Vos",
+      "Ton",
+      "Ta"
+    ],
+    "answer": 0,
+    "explanation": "「你們的」單數名詞用 votre。"
+  },
+  {
+    "id": "a1-pos-015",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出「他的」",
+    "stem": "Il cherche ___ lunettes.",
+    "options": [
+      "ses",
+      "son",
+      "sa",
+      "leurs"
+    ],
+    "answer": 0,
+    "explanation": "lunettes 是複數，用 ses。"
+  },
+  {
+    "id": "a1-pos-016",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入所有格形容詞（提示：她的）",
+    "stem": "Elle téléphone à ___ mère.",
+    "answers": [
+      "sa"
+    ],
+    "explanation": "mère 是陰性單數：sa。"
+  },
+  {
+    "id": "a1-pos-017",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "famille",
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入所有格形容詞（提示：我們的）",
+    "stem": "___ enfants sont à l'école.",
+    "answers": [
+      "nos"
+    ],
+    "explanation": "「我們的」複數名詞用 nos。"
+  },
+  {
+    "id": "a1-pos-018",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入所有格形容詞（提示：他們的）",
+    "stem": "Ils aiment beaucoup ___ chien.",
+    "answers": [
+      "leur"
+    ],
+    "explanation": "擁有者是「他們」，名詞單數：leur。"
+  },
+  {
+    "id": "a1-pos-019",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我的手機在哪裡？",
+    "stem": "",
+    "answers": [
+      "Où est mon téléphone ?",
+      "Où est mon portable ?",
+      "Mon téléphone est où ?",
+      "Mon portable est où ?"
+    ],
+    "explanation": "téléphone 是陽性：mon。"
+  },
+  {
+    "id": "a1-pos-020",
+    "level": "A1",
+    "grammar": "possessifs",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：你的姊姊幾歲？",
+    "stem": "",
+    "answers": [
+      "Quel âge a ta sœur ?",
+      "Ta sœur a quel âge ?",
+      "Quel âge a ta grande sœur ?",
+      "Ta grande sœur a quel âge ?",
+      "Quel âge a votre sœur ?"
+    ],
+    "explanation": "sœur 是陰性：ta。年齡用 avoir。"
   }
 ]

@@ -211,5 +211,147 @@
       "Je doutais qu'ils aient compris."
     ],
     "explanation": "eussent compris 是虛擬式愈過去式，現代法語改成虛擬式過去式：qu'ils aient compris。"
+  },
+  {
+    "id": "c2-sim-013",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出文學語體中正確的形式",
+    "stem": "Il exigea qu'on lui ___ la vérité.",
+    "options": [
+      "dît",
+      "dit",
+      "dise",
+      "disait"
+    ],
+    "answer": 0,
+    "explanation": "主句是過去式，文學語體用虛擬式未完成過去式：qu'on dît（有長音符號）。"
+  },
+  {
+    "id": "c2-sim-014",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出文學語體中正確的形式",
+    "stem": "Elle attendait qu'il ___ enfin.",
+    "options": [
+      "revînt",
+      "revint",
+      "revienne",
+      "revenait"
+    ],
+    "answer": 0,
+    "explanation": "revînt（虛擬式）有長音符號；revint 是簡單過去式。"
+  },
+  {
+    "id": "c2-sim-015",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出文學語體中正確的形式",
+    "stem": "Il était nécessaire que nous ___ prudents.",
+    "options": [
+      "fussions",
+      "fûmes",
+      "soyons",
+      "serions"
+    ],
+    "answer": 0,
+    "explanation": "être 的虛擬式未完成過去式：que nous fussions。"
+  },
+  {
+    "id": "c2-sim-016",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的虛擬式未完成過去式",
+    "stem": "Il fallait qu'elle ___ (partir) sur-le-champ.",
+    "answers": [
+      "partît"
+    ],
+    "explanation": "partir：qu'elle partît。"
+  },
+  {
+    "id": "c2-sim-017",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的虛擬式未完成過去式",
+    "stem": "Le roi voulut que l'on ___ (chanter).",
+    "answers": [
+      "chantât"
+    ],
+    "explanation": "-er 動詞第三人稱單數：-ât。"
+  },
+  {
+    "id": "c2-sim-018",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的虛擬式未完成過去式",
+    "stem": "Je craignais qu'il ne ___ (savoir) tout.",
+    "answers": [
+      "sût"
+    ],
+    "explanation": "savoir：qu'il sût。"
+  },
+  {
+    "id": "c2-sim-019",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請改成現代法語（用虛擬式現在式）。",
+    "stem": "Il ordonna qu'on fermât les portes.",
+    "answers": [
+      "Il ordonna qu'on ferme les portes.",
+      "Il a ordonné qu'on ferme les portes."
+    ],
+    "explanation": "現代法語用虛擬式現在式取代未完成過去式。"
+  },
+  {
+    "id": "c2-sim-020",
+    "level": "C2",
+    "grammar": "subjonctif-imparfait",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請改成現代法語（用虛擬式現在式）。",
+    "stem": "Bien qu'elle eût peur, elle avança.",
+    "answers": [
+      "Bien qu'elle ait peur, elle avança.",
+      "Bien qu'elle ait peur, elle a avancé."
+    ],
+    "explanation": "eût → ait（avoir 的虛擬式現在式）。"
   }
 ]

@@ -229,5 +229,156 @@
       "Si tu étais partie plus tôt, tu n'aurais pas été en retard."
     ],
     "explanation": "與過去事實相反：si + 愈過去式，主要子句用條件式過去式。partir 和 arriver 都用 être 當助動詞。"
+  },
+  {
+    "id": "b1-si-013",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Si tu ___ fatigué, repose-toi.",
+    "options": [
+      "es",
+      "étais",
+      "serais",
+      "seras"
+    ],
+    "answer": 0,
+    "explanation": "si + 現在式，主要子句用命令式。"
+  },
+  {
+    "id": "b1-si-014",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Si j'___ une voiture, je partirais en week-end.",
+    "options": [
+      "avais",
+      "ai",
+      "aurais",
+      "aurai"
+    ],
+    "answer": 0,
+    "explanation": "主要子句是條件式，si 子句用未完成過去式。"
+  },
+  {
+    "id": "b1-si-015",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "meteo",
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "S'il fait beau demain, nous ___ un pique-nique.",
+    "options": [
+      "ferons",
+      "ferions",
+      "faisions",
+      "ferait"
+    ],
+    "answer": 0,
+    "explanation": "si + 現在式，主要子句用未來式。"
+  },
+  {
+    "id": "b1-si-016",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "voyage",
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的正確形式",
+    "stem": "Si vous ___ (venir) demain, je vous montrerai la ville.",
+    "answers": [
+      "venez"
+    ],
+    "explanation": "si + 現在式，主要子句用未來式。"
+  },
+  {
+    "id": "b1-si-017",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的正確形式",
+    "stem": "Si j'étais riche, j'___ (acheter) une maison.",
+    "answers": [
+      "achèterais"
+    ],
+    "explanation": "si + 未完成過去式，主要子句用條件式：achèterais。"
+  },
+  {
+    "id": "b1-si-018",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的正確形式",
+    "stem": "Si tu ___ (pouvoir) m'aider, ce serait génial.",
+    "answers": [
+      "pouvais"
+    ],
+    "explanation": "主要子句是條件式，si 子句用未完成過去式。"
+  },
+  {
+    "id": "b1-si-019",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：如果你有空，打給我。",
+    "stem": "",
+    "answers": [
+      "Si tu as le temps, appelle-moi.",
+      "Si tu es libre, appelle-moi.",
+      "Si tu as le temps, téléphone-moi.",
+      "Si tu es libre, téléphone-moi.",
+      "Appelle-moi si tu as le temps.",
+      "Appelle-moi si tu es libre."
+    ],
+    "explanation": "si + 現在式，主要子句用命令式。"
+  },
+  {
+    "id": "b1-si-020",
+    "level": "B1",
+    "grammar": "si-hypothese",
+    "themes": [
+      "culture",
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：如果我會說法文，我就會住在法國。",
+    "stem": "",
+    "answers": [
+      "Si je parlais français, j'habiterais en France.",
+      "Si je parlais français, je vivrais en France.",
+      "Si je savais parler français, j'habiterais en France.",
+      "Si je savais parler français, je vivrais en France."
+    ],
+    "explanation": "與現在事實相反：si + 未完成過去式，主要子句用條件式。"
   }
 ]

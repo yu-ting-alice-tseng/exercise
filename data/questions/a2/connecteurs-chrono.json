@@ -233,5 +233,157 @@
       "Enfin, nous sommes rentrées à la maison."
     ],
     "explanation": "enfin／finalement 放句首表示「最後」。"
+  },
+  {
+    "id": "a2-chr-013",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "ecole-travail",
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的說法（吃完之後）",
+    "stem": "___ mangé, je fais mes devoirs.",
+    "options": [
+      "Après avoir",
+      "Après",
+      "Pendant",
+      "Ensuite"
+    ],
+    "answer": 0,
+    "explanation": "après + 過去不定式：après avoir mangé。"
+  },
+  {
+    "id": "a2-chr-014",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "voyage",
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的說法",
+    "stem": "Je lis ___ le trajet en train.",
+    "options": [
+      "pendant",
+      "pendant que",
+      "quand",
+      "ensuite"
+    ],
+    "answer": 0,
+    "explanation": "pendant + 名詞；pendant que + 句子。"
+  },
+  {
+    "id": "a2-chr-015",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的連接詞",
+    "stem": "___, je me suis levé ; puis, j'ai pris mon café.",
+    "options": [
+      "D'abord",
+      "Enfin",
+      "Ensuite",
+      "Après que"
+    ],
+    "answer": 0,
+    "explanation": "第一步用 d'abord。"
+  },
+  {
+    "id": "a2-chr-016",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "nourriture",
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入表示「在…之前」的字",
+    "stem": "Lave-toi les mains ___ de manger.",
+    "answers": [
+      "avant"
+    ],
+    "explanation": "avant de + 原形動詞。"
+  },
+  {
+    "id": "a2-chr-017",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入表示「最後」的連接詞",
+    "stem": "___, nous sommes arrivés à l'hôtel.",
+    "answers": [
+      "enfin",
+      "finalement"
+    ],
+    "explanation": "enfin／finalement＝最後。"
+  },
+  {
+    "id": "a2-chr-018",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "meteo",
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入表示「當…的時候」的連接詞",
+    "stem": "___ il fait beau, je vais à la plage.",
+    "answers": [
+      "quand",
+      "lorsque"
+    ],
+    "explanation": "quand／lorsque＝當…的時候。"
+  },
+  {
+    "id": "a2-chr-019",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：吃完早餐後，我去上班。",
+    "stem": "",
+    "answers": [
+      "Après le petit-déjeuner, je vais au travail.",
+      "Après avoir pris le petit-déjeuner, je vais au travail.",
+      "Après le petit déjeuner, je vais au travail.",
+      "Après avoir mangé, je vais au travail.",
+      "Après le petit-déjeuner, je pars au travail.",
+      "Après avoir pris mon petit-déjeuner, je vais au travail."
+    ],
+    "explanation": "après + 名詞，或 après avoir + 過去分詞。"
+  },
+  {
+    "id": "a2-chr-020",
+    "level": "A2",
+    "grammar": "connecteurs-chrono",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：在你準備的時候，我來叫計程車。",
+    "stem": "",
+    "answers": [
+      "Pendant que tu te prépares, j'appelle un taxi.",
+      "Pendant que tu te prépares, je vais appeler un taxi."
+    ],
+    "explanation": "pendant que + 句子。"
   }
 ]

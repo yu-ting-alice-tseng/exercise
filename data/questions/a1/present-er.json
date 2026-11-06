@@ -226,5 +226,151 @@
       "Elle travaille à la banque."
     ],
     "explanation": "travailler 的第三人稱單數是 travaille。"
+  },
+  {
+    "id": "a1-er-013",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Je ___ du piano.",
+    "options": [
+      "joue",
+      "joues",
+      "jouent",
+      "jouons"
+    ],
+    "answer": 0,
+    "explanation": "je 的詞尾是 -e。"
+  },
+  {
+    "id": "a1-er-014",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "presentation"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Vous ___ quelle langue ?",
+    "options": [
+      "parlez",
+      "parlons",
+      "parles",
+      "parle"
+    ],
+    "answer": 0,
+    "explanation": "vous 的詞尾是 -ez。"
+  },
+  {
+    "id": "a1-er-015",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Elles ___ beaucoup.",
+    "options": [
+      "voyagent",
+      "voyagons",
+      "voyagez",
+      "voyage"
+    ],
+    "answer": 0,
+    "explanation": "elles 的詞尾是 -ent。"
+  },
+  {
+    "id": "a1-er-016",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的現在式",
+    "stem": "Tu ___ (chercher) quelque chose ?",
+    "answers": [
+      "cherches"
+    ],
+    "explanation": "tu 的詞尾是 -es。"
+  },
+  {
+    "id": "a1-er-017",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的現在式",
+    "stem": "Nous ___ (voyager) en train.",
+    "answers": [
+      "voyageons"
+    ],
+    "explanation": "-ger 動詞在 nous 時保留 e：voyageons。"
+  },
+  {
+    "id": "a1-er-018",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的現在式",
+    "stem": "Il ___ (préférer) le thé.",
+    "answers": [
+      "préfère"
+    ],
+    "explanation": "préférer 在 je、tu、il、ils 時，é 變成 è：préfère。"
+  },
+  {
+    "id": "a1-er-019",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：他們在學法文。",
+    "stem": "",
+    "answers": [
+      "Ils étudient le français.",
+      "Ils apprennent le français.",
+      "Elles étudient le français."
+    ],
+    "explanation": "étudier 的 ils 變化：étudient。"
+  },
+  {
+    "id": "a1-er-020",
+    "level": "A1",
+    "grammar": "present-er",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：你喜歡跳舞嗎？",
+    "stem": "",
+    "answers": [
+      "Tu aimes danser ?",
+      "Aimes-tu danser ?",
+      "Est-ce que tu aimes danser ?",
+      "Vous aimez danser ?",
+      "Aimez-vous danser ?"
+    ],
+    "explanation": "aimer + 原形動詞。"
   }
 ]

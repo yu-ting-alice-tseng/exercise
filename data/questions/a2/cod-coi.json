@@ -220,5 +220,147 @@
       "Oui, je les ai finis."
     ],
     "explanation": "tes devoirs 是陽性複數，用 les；放在 avoir 前面，過去分詞要配合：finis。"
+  },
+  {
+    "id": "a2-cod-013",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Tu vois Julie demain ? Oui, je ___ vois.",
+    "options": [
+      "la",
+      "lui",
+      "le",
+      "les"
+    ],
+    "answer": 0,
+    "explanation": "voir 接直接受詞，Julie：la。"
+  },
+  {
+    "id": "a2-cod-014",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Tu parles à tes voisins ? Non, je ne ___ parle pas.",
+    "options": [
+      "leur",
+      "les",
+      "lui",
+      "leurs"
+    ],
+    "answer": 0,
+    "explanation": "parler à：間接受詞複數 leur。"
+  },
+  {
+    "id": "a2-cod-015",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Il m'a offert un livre et je ___ ai remercié.",
+    "options": [
+      "l'",
+      "lui",
+      "le leur",
+      "y"
+    ],
+    "answer": 0,
+    "explanation": "remercier quelqu'un 接直接受詞：je l'ai remercié。"
+  },
+  {
+    "id": "a2-cod-016",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入代名詞，代替前面的名詞",
+    "stem": "Ce gâteau ? Je ___ mange.",
+    "answers": [
+      "le"
+    ],
+    "explanation": "直接受詞陽性單數：le。"
+  },
+  {
+    "id": "a2-cod-017",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "presentation"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入代名詞，代替「à Marc」",
+    "stem": "Tu donnes ton adresse à Marc ? Oui, je ___ donne mon adresse.",
+    "answers": [
+      "lui"
+    ],
+    "explanation": "donner à quelqu'un：lui。"
+  },
+  {
+    "id": "a2-cod-018",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入代名詞，代替前面的名詞",
+    "stem": "Mes parents ? Je ___ appelle chaque dimanche.",
+    "answers": [
+      "les"
+    ],
+    "explanation": "appeler 接直接受詞：les。"
+  },
+  {
+    "id": "a2-cod-019",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用代名詞否定回答。",
+    "stem": "Tu connais mes parents ?",
+    "answers": [
+      "Non, je ne les connais pas."
+    ],
+    "explanation": "直接受詞複數 les，放在動詞前面。"
+  },
+  {
+    "id": "a2-cod-020",
+    "level": "A2",
+    "grammar": "cod-coi",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用代名詞肯定回答。",
+    "stem": "Vous écrivez à votre professeur ?",
+    "answers": [
+      "Oui, je lui écris.",
+      "Oui, nous lui écrivons.",
+      "Oui, on lui écrit."
+    ],
+    "explanation": "écrire à：lui。"
   }
 ]

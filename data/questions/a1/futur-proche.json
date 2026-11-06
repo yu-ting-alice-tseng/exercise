@@ -223,5 +223,149 @@
       "Ce weekend, ils ne vont pas travailler."
     ],
     "explanation": "否定時 ne…pas 夾住 aller，不是夾住原形動詞。"
+  },
+  {
+    "id": "a1-fp-013",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Je ___ partir en vacances.",
+    "options": [
+      "vais",
+      "va",
+      "vas",
+      "vont"
+    ],
+    "answer": 0,
+    "explanation": "je vais + 原形動詞。"
+  },
+  {
+    "id": "a1-fp-014",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Qu'est-ce que tu ___ faire ce week-end ?",
+    "options": [
+      "vas",
+      "va",
+      "vais",
+      "allez"
+    ],
+    "answer": 0,
+    "explanation": "tu vas + 原形動詞。"
+  },
+  {
+    "id": "a1-fp-015",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Les enfants ___ dormir.",
+    "options": [
+      "vont",
+      "va",
+      "allons",
+      "vais"
+    ],
+    "answer": 0,
+    "explanation": "ils vont + 原形動詞。"
+  },
+  {
+    "id": "a1-fp-016",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請用近未來式填空（aller 和原形動詞都要寫）",
+    "stem": "Elle ___ (acheter) une voiture.",
+    "answers": [
+      "va acheter"
+    ],
+    "explanation": "elle va + acheter。"
+  },
+  {
+    "id": "a1-fp-017",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請用近未來式填空（aller 和原形動詞都要寫）",
+    "stem": "Vous ___ (voir) le film ?",
+    "answers": [
+      "allez voir"
+    ],
+    "explanation": "vous allez + voir。"
+  },
+  {
+    "id": "a1-fp-018",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 aller 的現在式",
+    "stem": "Je ne ___ pas sortir ce soir.",
+    "answers": [
+      "vais"
+    ],
+    "explanation": "否定時 ne…pas 夾住 aller。"
+  },
+  {
+    "id": "a1-fp-019",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：我明天要打電話給她。",
+    "stem": "",
+    "answers": [
+      "Je vais lui téléphoner demain.",
+      "Demain, je vais lui téléphoner.",
+      "Je vais l'appeler demain.",
+      "Demain, je vais l'appeler."
+    ],
+    "explanation": "代名詞放在原形動詞前面：je vais lui téléphoner。"
+  },
+  {
+    "id": "a1-fp-020",
+    "level": "A1",
+    "grammar": "futur-proche",
+    "themes": [
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我們要搬家了。",
+    "stem": "",
+    "answers": [
+      "Nous allons déménager.",
+      "On va déménager."
+    ],
+    "explanation": "déménager＝搬家。"
   }
 ]

@@ -232,5 +232,154 @@
       "Par conséquent, on doit prendre une décision."
     ],
     "explanation": "par conséquent 表示結果；「做決定」是 prendre une décision。"
+  },
+  {
+    "id": "b2-art-013",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出最適合的邏輯連接詞",
+    "stem": "___, je voudrais vous remercier d'être venus.",
+    "options": [
+      "Tout d'abord",
+      "En revanche",
+      "Par conséquent",
+      "Pourtant"
+    ],
+    "answer": 0,
+    "explanation": "tout d'abord 用來開始致詞或論述。"
+  },
+  {
+    "id": "b2-art-014",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出最適合的邏輯連接詞",
+    "stem": "Le film était long ; ___, les acteurs étaient excellents.",
+    "options": [
+      "en revanche",
+      "de plus",
+      "ainsi",
+      "c'est-à-dire"
+    ],
+    "answer": 0,
+    "explanation": "en revanche 表示對比：另一方面卻。"
+  },
+  {
+    "id": "b2-art-015",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出最適合的邏輯連接詞",
+    "stem": "Le magasin a fermé plus tôt ; ___, nous n'avons rien acheté.",
+    "options": [
+      "par conséquent",
+      "en revanche",
+      "néanmoins",
+      "d'ailleurs"
+    ],
+    "answer": 0,
+    "explanation": "par conséquent 表示結果：因此。"
+  },
+  {
+    "id": "b2-art-016",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入最適合的連接詞（de plus、en effet、bref）",
+    "stem": "Ce candidat est compétent. ___, il parle trois langues.",
+    "answers": [
+      "De plus",
+      "de plus"
+    ],
+    "explanation": "de plus＝此外，用來補充論點。"
+  },
+  {
+    "id": "b2-art-017",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入最適合的連接詞（de plus、en effet、bref）",
+    "stem": "Il faut faire du sport. ___, c'est bon pour le cœur.",
+    "answers": [
+      "En effet",
+      "en effet"
+    ],
+    "explanation": "en effet＝確實，用來說明理由。"
+  },
+  {
+    "id": "b2-art-018",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入最適合的連接詞（de plus、en effet、bref）",
+    "stem": "Il pleuvait, le train était en retard, j'ai perdu mes clés… ___, une journée horrible.",
+    "answers": [
+      "Bref",
+      "bref"
+    ],
+    "explanation": "bref＝總之，用來簡短總結。"
+  },
+  {
+    "id": "b2-art-019",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：總之，這個計畫是成功的。（用 En conclusion）",
+    "stem": "",
+    "answers": [
+      "En conclusion, ce projet est un succès.",
+      "En conclusion, ce projet a été un succès.",
+      "En conclusion, ce projet est réussi.",
+      "En conclusion, ce projet a réussi."
+    ],
+    "explanation": "en conclusion 用在文章或報告結尾。"
+  },
+  {
+    "id": "b2-art-020",
+    "level": "B2",
+    "grammar": "articulateurs",
+    "themes": [
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：一方面很貴，另一方面很實用。（用 d'une part… d'autre part）",
+    "stem": "",
+    "answers": [
+      "D'une part, c'est cher ; d'autre part, c'est pratique.",
+      "D'une part c'est cher, d'autre part c'est pratique.",
+      "D'une part, c'est cher, d'autre part, c'est pratique.",
+      "D'une part, c'est cher et d'autre part, c'est pratique."
+    ],
+    "explanation": "d'une part… d'autre part 用來列出兩個面向。"
   }
 ]

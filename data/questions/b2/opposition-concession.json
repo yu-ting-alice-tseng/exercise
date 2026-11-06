@@ -231,5 +231,151 @@
       "Fais quelque chose au lieu de te plaindre."
     ],
     "explanation": "au lieu de／plutôt que de + 原形動詞；反身動詞的代名詞要配合 tu：te plaindre。"
+  },
+  {
+    "id": "b2-oc-013",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "meteo"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的表達方式",
+    "stem": "___ la pluie, nous sommes sortis.",
+    "options": [
+      "Malgré",
+      "Bien que",
+      "Pourtant",
+      "Même si"
+    ],
+    "answer": 0,
+    "explanation": "malgré + 名詞；bien que 和 même si 後面要接子句。"
+  },
+  {
+    "id": "b2-oc-014",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Bien qu'il ___ beaucoup, il n'a pas réussi.",
+    "options": [
+      "ait travaillé",
+      "a travaillé",
+      "avait travaillé",
+      "aura travaillé"
+    ],
+    "answer": 0,
+    "explanation": "bien que 後面接虛擬式。"
+  },
+  {
+    "id": "b2-oc-015",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出最適合的連接詞",
+    "stem": "Mon frère adore le sport, ___ ma sœur le déteste.",
+    "options": [
+      "alors que",
+      "bien que",
+      "malgré",
+      "puisque"
+    ],
+    "answer": 0,
+    "explanation": "alors que 表示兩件事的對比，後面接直陳式。"
+  },
+  {
+    "id": "b2-oc-016",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的正確形式",
+    "stem": "Même s'il ___ (être) malade, il ira au travail.",
+    "answers": [
+      "est"
+    ],
+    "explanation": "même si 後面接直陳式。"
+  },
+  {
+    "id": "b2-oc-017",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的正確形式",
+    "stem": "Quoiqu'elle ___ (être) fatiguée, elle continue.",
+    "answers": [
+      "soit"
+    ],
+    "explanation": "quoique 後面接虛擬式。"
+  },
+  {
+    "id": "b2-oc-018",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入最適合的表達（avoir beau）",
+    "stem": "J'___ chercher, je ne trouve pas mes clés.",
+    "answers": [
+      "ai beau"
+    ],
+    "explanation": "avoir beau + 原形動詞＝儘管…也沒用。"
+  },
+  {
+    "id": "b2-oc-019",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "meteo"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：儘管天氣冷，他還是穿短褲。（用 malgré）",
+    "stem": "",
+    "answers": [
+      "Malgré le froid, il porte un short.",
+      "Il porte un short malgré le froid.",
+      "Malgré le froid, il est en short.",
+      "Il est en short malgré le froid."
+    ],
+    "explanation": "malgré + 名詞。"
+  },
+  {
+    "id": "b2-oc-020",
+    "level": "B2",
+    "grammar": "opposition-concession",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：雖然她很年輕，卻很有經驗。（用 bien que）",
+    "stem": "",
+    "answers": [
+      "Bien qu'elle soit jeune, elle a beaucoup d'expérience.",
+      "Bien qu'elle soit très jeune, elle a beaucoup d'expérience.",
+      "Elle a beaucoup d'expérience bien qu'elle soit jeune.",
+      "Elle a beaucoup d'expérience bien qu'elle soit très jeune."
+    ],
+    "explanation": "bien que + 虛擬式 soit。"
   }
 ]

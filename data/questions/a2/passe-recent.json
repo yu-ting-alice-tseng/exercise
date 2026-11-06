@@ -217,5 +217,148 @@
       "Le film vient de commencer."
     ],
     "explanation": "le film = il，venir 變成 vient。"
+  },
+  {
+    "id": "a2-pr-013",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Le bébé ___ de s'endormir.",
+    "options": [
+      "vient",
+      "va",
+      "est",
+      "a"
+    ],
+    "answer": 0,
+    "explanation": "venir de + 原形＝剛剛。"
+  },
+  {
+    "id": "a2-pr-014",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的形式",
+    "stem": "Je ___ apprendre la nouvelle.",
+    "options": [
+      "viens d'",
+      "viens de",
+      "vais d'",
+      "suis d'"
+    ],
+    "answer": 0,
+    "explanation": "apprendre 以母音開頭，de 省略成 d'。"
+  },
+  {
+    "id": "a2-pr-015",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞變化",
+    "stem": "Tu ___ de rentrer ?",
+    "options": [
+      "viens",
+      "vient",
+      "viennes",
+      "venez"
+    ],
+    "answer": 0,
+    "explanation": "tu viens。"
+  },
+  {
+    "id": "a2-pr-016",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請用近過去式填空（venir de＋原形動詞）",
+    "stem": "Nous ___ (finir) le travail.",
+    "answers": [
+      "venons de finir"
+    ],
+    "explanation": "nous venons de + 原形。"
+  },
+  {
+    "id": "a2-pr-017",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請用近過去式填空（venir de＋原形動詞）",
+    "stem": "Ils ___ (partir).",
+    "answers": [
+      "viennent de partir"
+    ],
+    "explanation": "ils viennent de + 原形。"
+  },
+  {
+    "id": "a2-pr-018",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請用近過去式填空（venir de＋原形動詞）",
+    "stem": "Elle ___ (avoir) un bébé.",
+    "answers": [
+      "vient d'avoir"
+    ],
+    "explanation": "avoir 以母音開頭：d'avoir。"
+  },
+  {
+    "id": "a2-pr-019",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我剛收到你的訊息。",
+    "stem": "",
+    "answers": [
+      "Je viens de recevoir ton message.",
+      "Je viens de recevoir votre message.",
+      "Je viens de lire ton message."
+    ],
+    "explanation": "je viens de + 原形。"
+  },
+  {
+    "id": "a2-pr-020",
+    "level": "A2",
+    "grammar": "passe-recent",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：火車剛到站。",
+    "stem": "",
+    "answers": [
+      "Le train vient d'arriver.",
+      "Le train vient d'arriver en gare."
+    ],
+    "explanation": "arriver 以母音開頭：d'arriver。"
   }
 ]

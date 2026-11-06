@@ -227,5 +227,149 @@
       "Elles arriveront à dix-sept heures."
     ],
     "explanation": "arriver 加 -ont：arriveront。法文正式時間常用 24 小時制，所以也可以說 dix-sept heures。"
+  },
+  {
+    "id": "b1-fs-013",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的簡單未來式",
+    "stem": "Je ___ chez toi à huit heures.",
+    "options": [
+      "passerai",
+      "passerais",
+      "passerait",
+      "passerez"
+    ],
+    "answer": 0,
+    "explanation": "je 的未來式詞尾 -ai：passerai。passerais 是條件式。"
+  },
+  {
+    "id": "b1-fs-014",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的簡單未來式",
+    "stem": "Vous ___ une réponse demain.",
+    "options": [
+      "recevrez",
+      "recevrerez",
+      "recevriez",
+      "receverez"
+    ],
+    "answer": 0,
+    "explanation": "recevoir 的未來式詞幹是 recevr-：vous recevrez。"
+  },
+  {
+    "id": "b1-fs-015",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Quand tu ___ dix-huit ans, tu pourras voter.",
+    "options": [
+      "auras",
+      "as",
+      "aurais",
+      "avais"
+    ],
+    "answer": 0,
+    "explanation": "quand 後面講未來的事，用未來式。"
+  },
+  {
+    "id": "b1-fs-016",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的簡單未來式",
+    "stem": "Elle ___ (pouvoir) venir samedi.",
+    "answers": [
+      "pourra"
+    ],
+    "explanation": "pouvoir 的詞幹 pourr-。"
+  },
+  {
+    "id": "b1-fs-017",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的簡單未來式",
+    "stem": "Nous ___ (être) en retard.",
+    "answers": [
+      "serons"
+    ],
+    "explanation": "être 的詞幹 ser-。"
+  },
+  {
+    "id": "b1-fs-018",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的簡單未來式",
+    "stem": "Ils ___ (faire) du ski en février.",
+    "answers": [
+      "feront"
+    ],
+    "explanation": "faire 的詞幹 fer-。"
+  },
+  {
+    "id": "b1-fs-019",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我下個月會開始新工作。",
+    "stem": "",
+    "answers": [
+      "Je commencerai un nouveau travail le mois prochain.",
+      "Le mois prochain, je commencerai un nouveau travail.",
+      "Je commencerai un nouvel emploi le mois prochain.",
+      "Le mois prochain, je commencerai un nouvel emploi."
+    ],
+    "explanation": "commencer 規則變化：je commencerai。"
+  },
+  {
+    "id": "b1-fs-020",
+    "level": "B1",
+    "grammar": "futur-simple",
+    "themes": [
+      "meteo"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：明天會下雪。",
+    "stem": "",
+    "answers": [
+      "Il neigera demain.",
+      "Demain, il neigera."
+    ],
+    "explanation": "neiger 的未來式：il neigera。"
   }
 ]

@@ -229,5 +229,150 @@
       "Il l'aura oublié."
     ],
     "explanation": "先未來式可以表示推測，比 il a dû oublier 更書面。"
+  },
+  {
+    "id": "c1-fa-013",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Je te rendrai ton livre dès que je l'___.",
+    "options": [
+      "aurai lu",
+      "ai lu",
+      "lirai",
+      "aurais lu"
+    ],
+    "answer": 0,
+    "explanation": "dès que 引導未來先完成的動作，用先未來式。"
+  },
+  {
+    "id": "c1-fa-014",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Une fois que nous ___, nous chercherons un taxi.",
+    "options": [
+      "serons arrivés",
+      "aurons arrivé",
+      "sommes arrivés",
+      "arriverons"
+    ],
+    "answer": 0,
+    "explanation": "arriver 用 être 當助動詞：nous serons arrivés。"
+  },
+  {
+    "id": "c1-fa-015",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出表示「推測」的說法",
+    "stem": "Je ne trouve plus mes lunettes ; je les ___ au bureau.",
+    "options": [
+      "aurai laissées",
+      "laisserai",
+      "aurai laissé",
+      "aurais laissées"
+    ],
+    "answer": 0,
+    "explanation": "先未來式可表示對過去的推測；les 在前，過去分詞配合 laissées。"
+  },
+  {
+    "id": "c1-fa-016",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的先未來式",
+    "stem": "Après que vous ___ (signer) le contrat, le travail commencera.",
+    "answers": [
+      "aurez signé"
+    ],
+    "explanation": "après que + 未來先完成的動作，用先未來式。"
+  },
+  {
+    "id": "c1-fa-017",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的先未來式",
+    "stem": "Quand les enfants ___ (se coucher), nous regarderons un film.",
+    "answers": [
+      "se seront couchés"
+    ],
+    "explanation": "代動詞用 être 當助動詞，主詞陽性複數加 -s。"
+  },
+  {
+    "id": "c1-fa-018",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的先未來式",
+    "stem": "Dans deux semaines, elle ___ (partir) en Espagne.",
+    "answers": [
+      "sera partie"
+    ],
+    "explanation": "partir 用 être，主詞 elle，過去分詞加 -e。"
+  },
+  {
+    "id": "c1-fa-019",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：等我寫完這封電子郵件，我就去找你。（用 quand）",
+    "stem": "",
+    "answers": [
+      "Quand j'aurai fini cet e-mail, je viendrai te voir.",
+      "Quand j'aurai écrit cet e-mail, je viendrai te voir.",
+      "Quand j'aurai fini ce mail, je viendrai te voir.",
+      "Quand j'aurai terminé cet e-mail, je viendrai te voir.",
+      "Quand j'aurai fini cet e-mail, j'irai te voir."
+    ],
+    "explanation": "quand + 先未來式，主句簡單未來式。"
+  },
+  {
+    "id": "c1-fa-020",
+    "level": "C1",
+    "grammar": "futur-anterieur",
+    "themes": [
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用先未來式翻譯成法文：她大概是生病了。",
+    "stem": "",
+    "answers": [
+      "Elle aura été malade.",
+      "Elle sera tombée malade."
+    ],
+    "explanation": "先未來式可以表達對過去事情的推測。"
   }
 ]

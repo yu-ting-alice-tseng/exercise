@@ -211,5 +211,150 @@
       "Voici le livre dont j'ai besoin."
     ],
     "explanation": "avoir besoin de quelque chose，代替 de + 名詞用 dont。"
+  },
+  {
+    "id": "b1-rel-013",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "famille",
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的關係代名詞",
+    "stem": "Le garçon ___ joue au foot est mon frère.",
+    "options": [
+      "qui",
+      "que",
+      "dont",
+      "où"
+    ],
+    "answer": 0,
+    "explanation": "le garçon 是 joue 的主詞：qui。"
+  },
+  {
+    "id": "b1-rel-014",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的關係代名詞",
+    "stem": "Le pays ___ je rêve, c'est le Japon.",
+    "options": [
+      "dont",
+      "que",
+      "où",
+      "qui"
+    ],
+    "answer": 0,
+    "explanation": "rêver de → dont。"
+  },
+  {
+    "id": "b1-rel-015",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的關係代名詞",
+    "stem": "Le jour ___ je suis arrivé, il pleuvait.",
+    "options": [
+      "où",
+      "que",
+      "quand",
+      "dont"
+    ],
+    "answer": 0,
+    "explanation": "時間也用 où：le jour où…"
+  },
+  {
+    "id": "b1-rel-016",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 qui、que、où 或 dont",
+    "stem": "C'est un livre ___ j'adore.",
+    "answers": [
+      "que"
+    ],
+    "explanation": "un livre 是 adorer 的受詞：que。"
+  },
+  {
+    "id": "b1-rel-017",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 qui、que、où 或 dont",
+    "stem": "Voici l'appartement ___ j'habite.",
+    "answers": [
+      "où"
+    ],
+    "explanation": "地點：où。"
+  },
+  {
+    "id": "b1-rel-018",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入 qui、que、où 或 dont",
+    "stem": "C'est un ami ___ je suis fier.",
+    "answers": [
+      "dont"
+    ],
+    "explanation": "être fier de → dont。"
+  },
+  {
+    "id": "b1-rel-019",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：這是我上週看的電影。",
+    "stem": "",
+    "answers": [
+      "C'est le film que j'ai vu la semaine dernière.",
+      "Voici le film que j'ai vu la semaine dernière."
+    ],
+    "explanation": "le film 是 voir 的受詞：que。"
+  },
+  {
+    "id": "b1-rel-020",
+    "level": "B1",
+    "grammar": "relatifs",
+    "themes": [
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我住的城市很漂亮。",
+    "stem": "",
+    "answers": [
+      "La ville où j'habite est belle.",
+      "La ville où j'habite est très belle.",
+      "La ville où je vis est belle.",
+      "La ville où j'habite est jolie."
+    ],
+    "explanation": "地點：où。"
   }
 ]

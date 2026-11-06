@@ -226,5 +226,155 @@
       "On aimerait beaucoup aller en France."
     ],
     "explanation": "表達願望用條件式 aimerions 或 voudrions。"
+  },
+  {
+    "id": "b1-cond-013",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞形式（禮貌地表達想要）",
+    "stem": "J'___ bien un thé.",
+    "options": [
+      "aimerais",
+      "aimerai",
+      "aimerait",
+      "aimeraient"
+    ],
+    "answer": 0,
+    "explanation": "j'aimerais bien…＝我很想要…（條件式）。"
+  },
+  {
+    "id": "b1-cond-014",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出最有禮貌的說法",
+    "stem": "Vous ___ fermer la porte, s'il vous plaît ?",
+    "options": [
+      "pourriez",
+      "pourrez",
+      "pouvez",
+      "pourrais"
+    ],
+    "answer": 0,
+    "explanation": "條件式 pourriez 最客氣。"
+  },
+  {
+    "id": "b1-cond-015",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "À ta place, je ___ ce travail.",
+    "options": [
+      "prendrais",
+      "prendrai",
+      "prenais",
+      "prends"
+    ],
+    "answer": 0,
+    "explanation": "à ta place（如果我是你）後面用條件式。"
+  },
+  {
+    "id": "b1-cond-016",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的條件式現在式",
+    "stem": "Tu ___ (devoir) appeler tes parents.",
+    "answers": [
+      "devrais"
+    ],
+    "explanation": "給建議：tu devrais。"
+  },
+  {
+    "id": "b1-cond-017",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的條件式現在式",
+    "stem": "Nous ___ (vouloir) réserver une table.",
+    "answers": [
+      "voudrions"
+    ],
+    "explanation": "vouloir 的條件式：nous voudrions。"
+  },
+  {
+    "id": "b1-cond-018",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的條件式現在式",
+    "stem": "Ce ___ (être) bien de partir tôt.",
+    "answers": [
+      "serait"
+    ],
+    "explanation": "ce serait bien de…＝最好…。"
+  },
+  {
+    "id": "b1-cond-019",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "logement",
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我很想住在巴黎。",
+    "stem": "",
+    "answers": [
+      "J'aimerais vivre à Paris.",
+      "J'aimerais habiter à Paris.",
+      "Je voudrais vivre à Paris.",
+      "Je voudrais habiter à Paris.",
+      "J'aimerais beaucoup vivre à Paris.",
+      "J'aimerais beaucoup habiter à Paris."
+    ],
+    "explanation": "表達願望用條件式。"
+  },
+  {
+    "id": "b1-cond-020",
+    "level": "B1",
+    "grammar": "conditionnel",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文（有禮貌的說法）：你可以借我你的筆嗎？",
+    "stem": "",
+    "answers": [
+      "Pourrais-tu me prêter ton stylo ?",
+      "Tu pourrais me prêter ton stylo ?",
+      "Est-ce que tu pourrais me prêter ton stylo ?",
+      "Pourriez-vous me prêter votre stylo ?",
+      "Vous pourriez me prêter votre stylo ?"
+    ],
+    "explanation": "pouvoir 的條件式讓請求更客氣。"
   }
 ]

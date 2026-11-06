@@ -230,5 +230,151 @@
       "Elle a répondu en riant."
     ],
     "explanation": "sourire 的現在分詞是 souriant。"
+  },
+  {
+    "id": "b2-ger-013",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的副動詞",
+    "stem": "Ne parle pas ___ !",
+    "options": [
+      "en mangeant",
+      "en mangant",
+      "mangeant",
+      "en mangé"
+    ],
+    "answer": 0,
+    "explanation": "manger 的現在分詞保留 e：mangeant。"
+  },
+  {
+    "id": "b2-ger-014",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的副動詞",
+    "stem": "Il est tombé ___ du bus.",
+    "options": [
+      "en descendant",
+      "en descendu",
+      "descendre",
+      "en descendre"
+    ],
+    "answer": 0,
+    "explanation": "副動詞＝en + 現在分詞，表示同時發生。"
+  },
+  {
+    "id": "b2-ger-015",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的形式（表示對比：雖然）",
+    "stem": "Tout ___ très riche, il vit simplement.",
+    "options": [
+      "en étant",
+      "étant",
+      "en étant que",
+      "été"
+    ],
+    "answer": 0,
+    "explanation": "tout en + 現在分詞可以表示讓步：雖然…卻…。"
+  },
+  {
+    "id": "b2-ger-016",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請用副動詞（en + 現在分詞）填空",
+    "stem": "Il a trouvé un hôtel ___ (chercher) sur Internet.",
+    "answers": [
+      "en cherchant"
+    ],
+    "explanation": "副動詞表示方式：透過上網搜尋。"
+  },
+  {
+    "id": "b2-ger-017",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請用副動詞（en + 現在分詞）填空",
+    "stem": "Ferme la porte ___ (partir).",
+    "answers": [
+      "en partant"
+    ],
+    "explanation": "en partant＝離開的時候。"
+  },
+  {
+    "id": "b2-ger-018",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請用副動詞（en + 現在分詞）填空",
+    "stem": "On maigrit ___ (choisir) des aliments sains.",
+    "answers": [
+      "en choisissant"
+    ],
+    "explanation": "choisir 的現在分詞：choisissant（nous choisissons 去掉 -ons 加 -ant）。"
+  },
+  {
+    "id": "b2-ger-019",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用副動詞翻譯成法文：她邊煮飯邊唱歌。",
+    "stem": "",
+    "answers": [
+      "Elle chante en cuisinant.",
+      "Elle chante en faisant la cuisine.",
+      "Elle cuisine en chantant.",
+      "Elle fait la cuisine en chantant."
+    ],
+    "explanation": "en + 現在分詞表示同時進行的動作。"
+  },
+  {
+    "id": "b2-ger-020",
+    "level": "B2",
+    "grammar": "gerondif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用副動詞翻譯成法文：他是靠著存錢買了這間房子。",
+    "stem": "",
+    "answers": [
+      "Il a acheté cette maison en économisant.",
+      "Il a acheté cette maison en faisant des économies.",
+      "C'est en économisant qu'il a acheté cette maison.",
+      "C'est en faisant des économies qu'il a acheté cette maison."
+    ],
+    "explanation": "副動詞表示方式或手段。"
   }
 ]

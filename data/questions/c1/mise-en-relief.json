@@ -210,5 +210,145 @@
       "Ce dont il a besoin, c'est du calme."
     ],
     "explanation": "avoir besoin de → ce dont；後半句保留介系詞 de。"
+  },
+  {
+    "id": "c1-mr-013",
+    "level": "C1",
+    "grammar": "mise-en-relief",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的說法",
+    "stem": "C'est ma grand-mère ___ m'a appris à cuisiner.",
+    "options": [
+      "qui",
+      "que",
+      "dont",
+      "laquelle"
+    ],
+    "answer": 0,
+    "explanation": "強調主詞用 c'est…qui。"
+  },
+  {
+    "id": "c1-mr-014",
+    "level": "C1",
+    "grammar": "mise-en-relief",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的說法",
+    "stem": "C'est à Lyon ___ nous nous sommes rencontrés.",
+    "options": [
+      "que",
+      "qui",
+      "où",
+      "dont"
+    ],
+    "answer": 0,
+    "explanation": "強調地點補語時用 c'est…que。"
+  },
+  {
+    "id": "c1-mr-015",
+    "level": "C1",
+    "grammar": "mise-en-relief",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的說法",
+    "stem": "___ je rêve, c'est de voyager autour du monde.",
+    "options": [
+      "Ce dont",
+      "Ce que",
+      "Ce qui",
+      "Ce à quoi"
+    ],
+    "answer": 0,
+    "explanation": "rêver de → ce dont。"
+  },
+  {
+    "id": "c1-mr-016",
+    "level": "C1",
+    "grammar": "mise-en-relief",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 qui 或 que",
+    "stem": "Ce sont mes collègues ___ m'ont aidé.",
+    "answers": [
+      "qui"
+    ],
+    "explanation": "強調主詞 mes collègues，用 qui；複數用 ce sont。"
+  },
+  {
+    "id": "c1-mr-017",
+    "level": "C1",
+    "grammar": "mise-en-relief",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 ce qui、ce que 或 ce dont",
+    "stem": "___ m'inquiète, c'est sa santé.",
+    "answers": [
+      "Ce qui"
+    ],
+    "explanation": "m'inquiète 缺少主詞，用 ce qui。"
+  },
+  {
+    "id": "c1-mr-018",
+    "level": "C1",
+    "grammar": "mise-en-relief",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入 ce qui、ce que、ce dont 或 ce à quoi",
+    "stem": "___ je pense, c'est à l'avenir.",
+    "answers": [
+      "Ce à quoi"
+    ],
+    "explanation": "penser à → ce à quoi。"
+  },
+  {
+    "id": "c1-mr-019",
+    "level": "C1",
+    "grammar": "mise-en-relief",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 C'est…que 強調 le dimanche。",
+    "stem": "Nous allons au marché le dimanche.",
+    "answers": [
+      "C'est le dimanche que nous allons au marché."
+    ],
+    "explanation": "強調時間補語：c'est + 補語 + que + 句子。"
+  },
+  {
+    "id": "c1-mr-020",
+    "level": "C1",
+    "grammar": "mise-en-relief",
+    "themes": [
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用 Ce qui…, c'est… 改寫，強調 le stress。",
+    "stem": "Le stress me fatigue.",
+    "answers": [
+      "Ce qui me fatigue, c'est le stress."
+    ],
+    "explanation": "主詞被強調時用 ce qui…, c'est…。"
   }
 ]

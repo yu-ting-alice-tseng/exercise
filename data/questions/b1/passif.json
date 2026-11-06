@@ -218,5 +218,148 @@
       "Le français est parlé dans plusieurs pays."
     ],
     "explanation": "被動現在式：est parlé。"
+  },
+  {
+    "id": "b1-pas-013",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的被動形式",
+    "stem": "La tour Eiffel ___ en 1889.",
+    "options": [
+      "a été construite",
+      "a construit",
+      "est construit",
+      "a été construit"
+    ],
+    "answer": 0,
+    "explanation": "被動複合過去式，配合陰性主詞：construite。"
+  },
+  {
+    "id": "b1-pas-014",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "nourriture",
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Le gâteau a été mangé ___ les enfants.",
+    "options": [
+      "par",
+      "de",
+      "à",
+      "pour"
+    ],
+    "answer": 0,
+    "explanation": "動作的執行者用 par。"
+  },
+  {
+    "id": "b1-pas-015",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的被動形式",
+    "stem": "La réunion ___ demain.",
+    "options": [
+      "sera annulée",
+      "sera annulé",
+      "va annuler",
+      "serons annulées"
+    ],
+    "answer": 0,
+    "explanation": "被動未來式，配合陰性單數：annulée。"
+  },
+  {
+    "id": "b1-pas-016",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請把括號內的動詞改成被動語態（現在式）",
+    "stem": "Ce livre ___ (traduire) en vingt langues.",
+    "answers": [
+      "est traduit"
+    ],
+    "explanation": "être + 過去分詞 traduit。"
+  },
+  {
+    "id": "b1-pas-017",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請把括號內的動詞改成被動語態（複合過去式）",
+    "stem": "Les voleurs ___ (arrêter) par la police.",
+    "answers": [
+      "ont été arrêtés"
+    ],
+    "explanation": "ont été + 過去分詞，配合陽性複數：arrêtés。"
+  },
+  {
+    "id": "b1-pas-018",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請把括號內的動詞改成被動語態（現在式）",
+    "stem": "Le magasin ___ (ouvrir) le dimanche.",
+    "answers": [
+      "est ouvert"
+    ],
+    "explanation": "être + ouvert。"
+  },
+  {
+    "id": "b1-pas-019",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：這封信是我媽媽寫的。（用被動語態）",
+    "stem": "",
+    "answers": [
+      "Cette lettre a été écrite par ma mère.",
+      "La lettre a été écrite par ma mère."
+    ],
+    "explanation": "lettre 是陰性：écrite。"
+  },
+  {
+    "id": "b1-pas-020",
+    "level": "B1",
+    "grammar": "passif",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：比賽被取消了。",
+    "stem": "",
+    "answers": [
+      "Le match a été annulé.",
+      "La compétition a été annulée."
+    ],
+    "explanation": "被動複合過去式：a été annulé。"
   }
 ]

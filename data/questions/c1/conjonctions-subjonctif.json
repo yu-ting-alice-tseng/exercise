@@ -227,5 +227,152 @@
       "Pourvu qu'elles arrivent à temps !"
     ],
     "explanation": "Pourvu que + 虛擬式，表示「但願」。"
+  },
+  {
+    "id": "c1-cs-013",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Je resterai ici ___ tu reviennes.",
+    "options": [
+      "jusqu'à ce que",
+      "après que",
+      "pendant que",
+      "parce que"
+    ],
+    "answer": 0,
+    "explanation": "jusqu'à ce que＝直到，後面接虛擬式。"
+  },
+  {
+    "id": "c1-cs-014",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Rentre avant qu'il ___ nuit.",
+    "options": [
+      "fasse",
+      "fait",
+      "fera",
+      "faisait"
+    ],
+    "answer": 0,
+    "explanation": "avant que 後面接虛擬式：fasse。"
+  },
+  {
+    "id": "c1-cs-015",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Je te prête ma voiture ___ tu fasses attention.",
+    "options": [
+      "pourvu que",
+      "puisque",
+      "tandis que",
+      "dès que"
+    ],
+    "answer": 0,
+    "explanation": "pourvu que＝只要，接虛擬式。"
+  },
+  {
+    "id": "c1-cs-016",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的虛擬式現在式",
+    "stem": "Je pars sans que tu le ___ (savoir).",
+    "answers": [
+      "saches"
+    ],
+    "explanation": "sans que 接虛擬式：tu saches。"
+  },
+  {
+    "id": "c1-cs-017",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的虛擬式現在式",
+    "stem": "Quoiqu'il ___ (faire) froid, les enfants jouent dehors.",
+    "answers": [
+      "fasse"
+    ],
+    "explanation": "quoique 接虛擬式：il fasse。"
+  },
+  {
+    "id": "c1-cs-018",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的虛擬式現在式",
+    "stem": "À moins que le médecin ne ___ (dire) le contraire, tu peux sortir.",
+    "answers": [
+      "dise"
+    ],
+    "explanation": "à moins que 接虛擬式，常加贅詞 ne。"
+  },
+  {
+    "id": "c1-cs-019",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：只要你開心，我就滿足了。（用 pourvu que）",
+    "stem": "",
+    "answers": [
+      "Pourvu que tu sois heureux, je suis content.",
+      "Pourvu que tu sois heureuse, je suis contente.",
+      "Pourvu que tu sois heureux, je suis satisfait.",
+      "Je suis content pourvu que tu sois heureux."
+    ],
+    "explanation": "pourvu que + 虛擬式 sois。"
+  },
+  {
+    "id": "c1-cs-020",
+    "level": "C1",
+    "grammar": "conjonctions-subjonctif",
+    "themes": [
+      "meteo"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：除非下雨，否則我們明天去健行。（用 à moins que）",
+    "stem": "",
+    "answers": [
+      "Nous ferons une randonnée demain, à moins qu'il ne pleuve.",
+      "Nous ferons une randonnée demain à moins qu'il pleuve.",
+      "Nous ferons une randonnée demain, à moins qu'il pleuve.",
+      "À moins qu'il ne pleuve, nous ferons une randonnée demain.",
+      "À moins qu'il pleuve, nous ferons une randonnée demain."
+    ],
+    "explanation": "à moins que + 虛擬式，可加贅詞 ne。"
   }
 ]

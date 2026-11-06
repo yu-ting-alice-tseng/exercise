@@ -219,5 +219,149 @@
       "Je ne retrouve nulle part mes clés."
     ],
     "explanation": "ne…nulle part 表示「哪裡都不」。"
+  },
+  {
+    "id": "c1-na-013",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的否定形式",
+    "stem": "Il n'y a ___ dans le frigo.",
+    "options": [
+      "rien",
+      "aucun",
+      "personne ne",
+      "pas rien"
+    ],
+    "answer": 0,
+    "explanation": "ne…rien＝什麼都沒有。"
+  },
+  {
+    "id": "c1-na-014",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的否定形式（不定式的否定）",
+    "stem": "Il m'a conseillé de ___ trop travailler.",
+    "options": [
+      "ne pas",
+      "pas ne",
+      "ne",
+      "non"
+    ],
+    "answer": 0,
+    "explanation": "原形動詞的否定：ne pas 一起放在原形動詞前面。"
+  },
+  {
+    "id": "c1-na-015",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的說法",
+    "stem": "Je n'ai vu ___ de ses films.",
+    "options": [
+      "aucun",
+      "aucune",
+      "personne",
+      "nul part"
+    ],
+    "answer": 0,
+    "explanation": "film 是陽性，用 aucun。"
+  },
+  {
+    "id": "c1-na-016",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入表示「再也不」的否定詞",
+    "stem": "Elle ne travaille ___ ici.",
+    "answers": [
+      "plus"
+    ],
+    "explanation": "ne…plus＝不再。"
+  },
+  {
+    "id": "c1-na-017",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入表示「還沒」的否定詞",
+    "stem": "Nous ne sommes pas ___ arrivés.",
+    "answers": [
+      "encore"
+    ],
+    "explanation": "ne…pas encore＝還沒。"
+  },
+  {
+    "id": "c1-na-018",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入表示「沒有人」的否定詞",
+    "stem": "Je n'ai rencontré ___ en chemin.",
+    "answers": [
+      "personne"
+    ],
+    "explanation": "複合過去式中 personne 放在過去分詞後面。"
+  },
+  {
+    "id": "c1-na-019",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我從來沒去過巴黎。",
+    "stem": "",
+    "answers": [
+      "Je ne suis jamais allé à Paris.",
+      "Je ne suis jamais allée à Paris."
+    ],
+    "explanation": "ne…jamais 夾住助動詞。"
+  },
+  {
+    "id": "c1-na-020",
+    "level": "C1",
+    "grammar": "negation-avancee",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：沒有任何學生通過考試。（用 aucun）",
+    "stem": "",
+    "answers": [
+      "Aucun étudiant n'a réussi l'examen.",
+      "Aucun élève n'a réussi l'examen.",
+      "Aucun étudiant n'a réussi à l'examen.",
+      "Aucun élève n'a réussi à l'examen."
+    ],
+    "explanation": "aucun 當主詞時放句首，動詞前加 ne，不用 pas。"
   }
 ]

@@ -217,5 +217,154 @@
       "Il m'a dit qu'il avait oublié de prendre son passeport."
     ],
     "explanation": "間接引述：主要子句是過去式，「忘了」發生得更早，用愈過去式。"
+  },
+  {
+    "id": "b1-pqp-013",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Quand nous sommes arrivés, ils ___ déjà.",
+    "options": [
+      "étaient partis",
+      "avaient partis",
+      "sont partis",
+      "partaient"
+    ],
+    "answer": 0,
+    "explanation": "比「我們到了」更早完成：愈過去式；partir 用 être。"
+  },
+  {
+    "id": "b1-pqp-014",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "sante",
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的助動詞",
+    "stem": "J'étais fatigué parce que je n'___ pas bien dormi.",
+    "options": [
+      "avais",
+      "étais",
+      "ai",
+      "aurais"
+    ],
+    "answer": 0,
+    "explanation": "dormir 用 avoir：je n'avais pas bien dormi。"
+  },
+  {
+    "id": "b1-pqp-015",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的愈過去式",
+    "stem": "Elle a retrouvé le livre qu'elle ___.",
+    "options": [
+      "avait perdu",
+      "avait perdue",
+      "perdait",
+      "était perdu"
+    ],
+    "answer": 0,
+    "explanation": "que 代替陽性的 le livre，過去分詞配合陽性：perdu。"
+  },
+  {
+    "id": "b1-pqp-016",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的愈過去式",
+    "stem": "Nous ___ (réserver) une table.",
+    "answers": [
+      "avions réservé"
+    ],
+    "explanation": "avoir 的未完成過去式＋過去分詞。"
+  },
+  {
+    "id": "b1-pqp-017",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "voyage",
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的愈過去式",
+    "stem": "Tu ___ (venir) en France avant ?",
+    "answers": [
+      "étais venu",
+      "étais venue"
+    ],
+    "explanation": "venir 用 être。"
+  },
+  {
+    "id": "b1-pqp-018",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的愈過去式",
+    "stem": "Ils m'ont dit qu'ils ___ (comprendre).",
+    "answers": [
+      "avaient compris"
+    ],
+    "explanation": "間接引述：更早的事用愈過去式。"
+  },
+  {
+    "id": "b1-pqp-019",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我到的時候，會議已經開始了。",
+    "stem": "",
+    "answers": [
+      "Quand je suis arrivé, la réunion avait déjà commencé.",
+      "Quand je suis arrivée, la réunion avait déjà commencé.",
+      "La réunion avait déjà commencé quand je suis arrivé.",
+      "La réunion avait déjà commencé quand je suis arrivée."
+    ],
+    "explanation": "「會議開始」比「我到」更早：愈過去式。"
+  },
+  {
+    "id": "b1-pqp-020",
+    "level": "B1",
+    "grammar": "plus-que-parfait",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：她說她已經吃過了。",
+    "stem": "",
+    "answers": [
+      "Elle a dit qu'elle avait déjà mangé.",
+      "Elle m'a dit qu'elle avait déjà mangé.",
+      "Elle a dit qu'elle avait déjà dîné.",
+      "Elle m'a dit qu'elle avait déjà dîné."
+    ],
+    "explanation": "間接引述中，更早的事用愈過去式。"
   }
 ]

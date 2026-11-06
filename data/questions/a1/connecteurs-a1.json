@@ -219,5 +219,153 @@
       "Vous voulez un café ou un thé ?"
     ],
     "explanation": "ou 表示選擇；飲料前面用部分冠詞或 un。"
+  },
+  {
+    "id": "a1-con-013",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "ecole-travail",
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Il est fatigué ___ il travaille trop.",
+    "options": [
+      "parce qu'",
+      "mais",
+      "ou",
+      "et"
+    ],
+    "answer": 0,
+    "explanation": "parce que 表示原因，遇到 il 省略成 parce qu'。"
+  },
+  {
+    "id": "a1-con-014",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Tu prends le bus ___ le métro ?",
+    "options": [
+      "ou",
+      "mais",
+      "parce que",
+      "alors"
+    ],
+    "answer": 0,
+    "explanation": "ou＝或是。"
+  },
+  {
+    "id": "a1-con-015",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "presentation"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Elle est petite ___ très forte.",
+    "options": [
+      "mais",
+      "ou",
+      "alors",
+      "parce que"
+    ],
+    "answer": 0,
+    "explanation": "mais＝但是。"
+  },
+  {
+    "id": "a1-con-016",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入表示「所以」的連接詞",
+    "stem": "J'ai faim, ___ je mange un sandwich.",
+    "answers": [
+      "alors",
+      "donc"
+    ],
+    "explanation": "alors／donc 表示結果。"
+  },
+  {
+    "id": "a1-con-017",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "presentation"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入表示「和」的連接詞",
+    "stem": "Il parle anglais ___ espagnol.",
+    "answers": [
+      "et"
+    ],
+    "explanation": "et＝和。"
+  },
+  {
+    "id": "a1-con-018",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "meteo"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入表示「因為」的連接詞",
+    "stem": "Je reste à la maison ___ il pleut.",
+    "answers": [
+      "parce qu'"
+    ],
+    "explanation": "parce que 遇到 il 省略成 parce qu'。"
+  },
+  {
+    "id": "a1-con-019",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我很累，所以我要去睡覺。",
+    "stem": "",
+    "answers": [
+      "Je suis fatigué, alors je vais dormir.",
+      "Je suis fatiguée, alors je vais dormir.",
+      "Je suis fatigué, donc je vais dormir.",
+      "Je suis fatiguée, donc je vais dormir.",
+      "Je suis fatigué, alors je vais me coucher.",
+      "Je suis fatiguée, alors je vais me coucher."
+    ],
+    "explanation": "alors／donc 表示結果。"
+  },
+  {
+    "id": "a1-con-020",
+    "level": "A1",
+    "grammar": "connecteurs-a1",
+    "themes": [
+      "presentation"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：她很聰明，但是很懶。",
+    "stem": "",
+    "answers": [
+      "Elle est intelligente, mais paresseuse.",
+      "Elle est intelligente, mais elle est paresseuse."
+    ],
+    "explanation": "intelligent、paresseux 的陰性：intelligente、paresseuse。"
   }
 ]

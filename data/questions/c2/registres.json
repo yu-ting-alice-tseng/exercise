@@ -209,5 +209,150 @@
       "Il n'y a pas d'argent."
     ],
     "explanation": "y a → il y a，補上 ne；fric → argent；否定句中 de 遇到母音省略成 d'。"
+  },
+  {
+    "id": "c2-reg-013",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "下列哪一個是「朋友」的口語說法？",
+    "stem": "",
+    "options": [
+      "un pote",
+      "un collègue",
+      "un voisin",
+      "un camarade"
+    ],
+    "answer": 0,
+    "explanation": "un pote 是口語的「朋友、哥們」。"
+  },
+  {
+    "id": "c2-reg-014",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "下列哪一個是「吃」的口語說法？",
+    "stem": "",
+    "options": [
+      "bouffer",
+      "dîner",
+      "déguster",
+      "consommer"
+    ],
+    "answer": 0,
+    "explanation": "bouffer 是口語，標準說法是 manger。"
+  },
+  {
+    "id": "c2-reg-015",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "下列哪一句最適合用在正式書信的開頭？",
+    "stem": "",
+    "options": [
+      "Madame, Monsieur,",
+      "Salut !",
+      "Coucou,",
+      "Bisous,"
+    ],
+    "answer": 0,
+    "explanation": "不知道收件人姓名時，正式書信用 Madame, Monsieur,。"
+  },
+  {
+    "id": "c2-reg-016",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入口語 flic 的標準說法（一個字）",
+    "stem": "Un ___ m'a arrêté pour un contrôle.",
+    "answers": [
+      "policier"
+    ],
+    "explanation": "flic 是口語，標準說法是 policier。"
+  },
+  {
+    "id": "c2-reg-017",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入口語 fringues 的標準說法（一個字）",
+    "stem": "J'ai acheté de nouveaux ___.",
+    "answers": [
+      "vêtements",
+      "habits"
+    ],
+    "explanation": "fringues 是口語，標準說法是 vêtements。"
+  },
+  {
+    "id": "c2-reg-018",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入口語 se planter 的標準說法（原形動詞）",
+    "stem": "Il a peur de ___ à l'examen.",
+    "answers": [
+      "échouer",
+      "se tromper"
+    ],
+    "explanation": "se planter 是口語「失敗、搞砸」，標準說法 échouer。"
+  },
+  {
+    "id": "c2-reg-019",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "achats"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請改寫成標準書面語（「錢」用 argent）。",
+    "stem": "J'ai pas de fric.",
+    "answers": [
+      "Je n'ai pas d'argent."
+    ],
+    "explanation": "補回 ne，fric 改成 argent。"
+  },
+  {
+    "id": "c2-reg-020",
+    "level": "C2",
+    "grammar": "registres",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請改寫成標準書面語（「工作」用 travail）。",
+    "stem": "Il a trouvé un boulot sympa.",
+    "answers": [
+      "Il a trouvé un travail agréable.",
+      "Il a trouvé un travail intéressant.",
+      "Il a trouvé un emploi agréable.",
+      "Il a trouvé un emploi intéressant."
+    ],
+    "explanation": "boulot → travail；sympa → agréable。"
   }
 ]

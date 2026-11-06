@@ -208,5 +208,146 @@
       "Ne le regarde pas !"
     ],
     "explanation": "否定命令式中，代名詞放在動詞前面。"
+  },
+  {
+    "id": "b1-plp-013",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Ces lettres ? Je ___ ai envoyées hier.",
+    "options": [
+      "les",
+      "leur",
+      "l'",
+      "lui"
+    ],
+    "answer": 0,
+    "explanation": "直接受詞複數 les；過去分詞配合：envoyées。"
+  },
+  {
+    "id": "b1-plp-014",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Ta grand-mère ? Je vais ___ rendre visite.",
+    "options": [
+      "lui",
+      "la",
+      "leur",
+      "y"
+    ],
+    "answer": 0,
+    "explanation": "rendre visite à quelqu'un：間接受詞 lui。"
+  },
+  {
+    "id": "b1-plp-015",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Cette chanson ? Ne ___ chante pas !",
+    "options": [
+      "la",
+      "lui",
+      "le",
+      "en"
+    ],
+    "answer": 0,
+    "explanation": "直接受詞陰性：la，否定命令式放在動詞前。"
+  },
+  {
+    "id": "b1-plp-016",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入受詞代名詞",
+    "stem": "Ce film ? Je ne ___ ai pas vu.",
+    "answers": [
+      "l'"
+    ],
+    "explanation": "le 遇到母音省略成 l'。"
+  },
+  {
+    "id": "b1-plp-017",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "famille",
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入受詞代名詞",
+    "stem": "Tes amis ? Invite-___ !",
+    "answers": [
+      "les"
+    ],
+    "explanation": "肯定命令式：invite-les。"
+  },
+  {
+    "id": "b1-plp-018",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入受詞代名詞",
+    "stem": "Ton frère ? Je vais ___ téléphoner.",
+    "answers": [
+      "lui"
+    ],
+    "explanation": "téléphoner à：lui，放在原形動詞前。"
+  },
+  {
+    "id": "b1-plp-019",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請用代名詞肯定回答。",
+    "stem": "Tu as lu ce livre ?",
+    "answers": [
+      "Oui, je l'ai lu."
+    ],
+    "explanation": "直接受詞 le → l'，放在助動詞前。"
+  },
+  {
+    "id": "b1-plp-020",
+    "level": "B1",
+    "grammar": "place-pronoms",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用代名詞肯定回答（用近未來式）。",
+    "stem": "Tu vas répondre à tes clients ?",
+    "answers": [
+      "Oui, je vais leur répondre."
+    ],
+    "explanation": "répondre à：leur，放在原形動詞前。"
   }
 ]

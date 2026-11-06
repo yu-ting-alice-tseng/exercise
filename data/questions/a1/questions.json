@@ -228,5 +228,155 @@
       "Vous avez l'heure ?"
     ],
     "explanation": "問時間的固定說法是 Quelle heure est-il ?"
+  },
+  {
+    "id": "a1-q-013",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的疑問詞",
+    "stem": "___ est-ce que tu fais ?",
+    "options": [
+      "Qu'",
+      "Où",
+      "Qui",
+      "Quand"
+    ],
+    "answer": 0,
+    "explanation": "問「什麼」：qu'est-ce que。"
+  },
+  {
+    "id": "a1-q-014",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出意思是「什麼時候」的疑問詞",
+    "stem": "Tu pars ___ ?",
+    "options": [
+      "quand",
+      "comment",
+      "combien",
+      "quel"
+    ],
+    "answer": 0,
+    "explanation": "quand＝什麼時候。"
+  },
+  {
+    "id": "a1-q-015",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "famille",
+      "presentation"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的疑問詞",
+    "stem": "___ sont tes amis ?",
+    "options": [
+      "Qui",
+      "Que",
+      "Quoi",
+      "Quel"
+    ],
+    "answer": 0,
+    "explanation": "問人用 qui。"
+  },
+  {
+    "id": "a1-q-016",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入疑問詞（提示：哪裡）",
+    "stem": "___ est la gare ?",
+    "answers": [
+      "où"
+    ],
+    "explanation": "où＝哪裡。"
+  },
+  {
+    "id": "a1-q-017",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入疑問詞（提示：怎麼）",
+    "stem": "___ vas-tu à l'école ?",
+    "answers": [
+      "comment"
+    ],
+    "explanation": "comment＝怎麼、如何。"
+  },
+  {
+    "id": "a1-q-018",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 quel、quelle、quels 或 quelles",
+    "stem": "___ livres aimes-tu ?",
+    "answers": [
+      "quels"
+    ],
+    "explanation": "livres 是陽性複數：quels。"
+  },
+  {
+    "id": "a1-q-019",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "presentation"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：你幾歲？",
+    "stem": "",
+    "answers": [
+      "Quel âge as-tu ?",
+      "Tu as quel âge ?",
+      "Quel âge avez-vous ?",
+      "Vous avez quel âge ?",
+      "Quel âge est-ce que tu as ?"
+    ],
+    "explanation": "年齡用 avoir：quel âge as-tu。"
+  },
+  {
+    "id": "a1-q-020",
+    "level": "A1",
+    "grammar": "questions",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：你為什麼學法文？",
+    "stem": "",
+    "answers": [
+      "Pourquoi tu apprends le français ?",
+      "Pourquoi est-ce que tu apprends le français ?",
+      "Pourquoi apprends-tu le français ?",
+      "Pourquoi étudies-tu le français ?",
+      "Pourquoi tu étudies le français ?",
+      "Pourquoi est-ce que tu étudies le français ?"
+    ],
+    "explanation": "pourquoi＝為什麼。"
   }
 ]

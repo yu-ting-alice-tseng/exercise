@@ -221,5 +221,153 @@
       "Elle a acheté une robe."
     ],
     "explanation": "acheter 用 avoir 當助動詞，過去分詞 acheté。用 avoir 時，過去分詞不跟主詞配合。"
+  },
+  {
+    "id": "a2-pc-013",
+    "level": "A2",
+    "grammar": "passe-compose",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的複合過去式",
+    "stem": "Ils ___ en vacances hier.",
+    "options": [
+      "sont partis",
+      "ont partis",
+      "sont parti",
+      "ont parti"
+    ],
+    "answer": 0,
+    "explanation": "partir 用 être，過去分詞配合 ils：partis。"
+  },
+  {
+    "id": "a2-pc-014",
+    "level": "A2",
+    "grammar": "passe-compose",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的複合過去式",
+    "stem": "J'___ un bon livre.",
+    "options": [
+      "ai lu",
+      "ai lit",
+      "suis lu",
+      "ai lis"
+    ],
+    "answer": 0,
+    "explanation": "lire 的過去分詞是 lu。"
+  },
+  {
+    "id": "a2-pc-015",
+    "level": "A2",
+    "grammar": "passe-compose",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的複合過去式",
+    "stem": "Vous ___ le musée ?",
+    "options": [
+      "avez visité",
+      "êtes visité",
+      "avez visiter",
+      "avez visités"
+    ],
+    "answer": 0,
+    "explanation": "visiter 用 avoir，過去分詞 visité 不配合主詞。"
+  },
+  {
+    "id": "a2-pc-016",
+    "level": "A2",
+    "grammar": "passe-compose",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的複合過去式（助動詞和過去分詞都要寫）",
+    "stem": "Elles ___ (venir) à la fête.",
+    "answers": [
+      "sont venues"
+    ],
+    "explanation": "venir 用 être，配合陰性複數：venues。"
+  },
+  {
+    "id": "a2-pc-017",
+    "level": "A2",
+    "grammar": "passe-compose",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的複合過去式（助動詞和過去分詞都要寫）",
+    "stem": "Nous ___ (prendre) le métro.",
+    "answers": [
+      "avons pris"
+    ],
+    "explanation": "prendre 的過去分詞是 pris。"
+  },
+  {
+    "id": "a2-pc-018",
+    "level": "A2",
+    "grammar": "passe-compose",
+    "themes": [
+      "meteo",
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的複合過去式（助動詞和過去分詞都要寫）",
+    "stem": "Il ___ (mettre) son manteau.",
+    "answers": [
+      "a mis"
+    ],
+    "explanation": "mettre 的過去分詞是 mis。"
+  },
+  {
+    "id": "a2-pc-019",
+    "level": "A2",
+    "grammar": "passe-compose",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我昨天看了一部電影。",
+    "stem": "",
+    "answers": [
+      "J'ai vu un film hier.",
+      "Hier, j'ai vu un film.",
+      "J'ai regardé un film hier.",
+      "Hier, j'ai regardé un film."
+    ],
+    "explanation": "voir → vu；regarder → regardé。"
+  },
+  {
+    "id": "a2-pc-020",
+    "level": "A2",
+    "grammar": "passe-compose",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：她九點回到家。",
+    "stem": "",
+    "answers": [
+      "Elle est rentrée à neuf heures.",
+      "Elle est rentrée chez elle à neuf heures.",
+      "Elle est rentrée à la maison à neuf heures.",
+      "Elle est rentrée à 21 heures.",
+      "Elle est rentrée à vingt et une heures."
+    ],
+    "explanation": "rentrer 用 être，過去分詞配合 elle：rentrée。"
   }
 ]

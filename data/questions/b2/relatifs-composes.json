@@ -223,5 +223,152 @@
       "La personne à côté de laquelle je suis assise est mon collègue."
     ],
     "explanation": "à côté de 是複合介系詞，不能用 dont；personne 是陰性：à côté de laquelle。"
+  },
+  {
+    "id": "b2-rc-013",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的關係代名詞",
+    "stem": "C'est l'ordinateur avec ___ je travaille.",
+    "options": [
+      "lequel",
+      "laquelle",
+      "qui",
+      "que"
+    ],
+    "answer": 0,
+    "explanation": "ordinateur 是陽性單數，介系詞後用 lequel。"
+  },
+  {
+    "id": "b2-rc-014",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的關係代名詞",
+    "stem": "La maison dans ___ j'ai grandi a été vendue.",
+    "options": [
+      "laquelle",
+      "lequel",
+      "lesquelles",
+      "où laquelle"
+    ],
+    "answer": 0,
+    "explanation": "maison 陰性單數：dans laquelle。"
+  },
+  {
+    "id": "b2-rc-015",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的關係代名詞",
+    "stem": "Le musée près ___ nous habitons est fermé.",
+    "options": [
+      "duquel",
+      "auquel",
+      "lequel",
+      "dont"
+    ],
+    "answer": 0,
+    "explanation": "près de + lequel 合寫成 duquel；dont 不能接在介系詞片語後面。"
+  },
+  {
+    "id": "b2-rc-016",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入正確的關係代名詞（lequel 的形式）",
+    "stem": "Ce sont des questions ___ (à) je n'ai pas pensé.",
+    "answers": [
+      "auxquelles"
+    ],
+    "explanation": "penser à + lesquelles 合寫成 auxquelles。"
+  },
+  {
+    "id": "b2-rc-017",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入正確的關係代名詞（lequel 的形式）",
+    "stem": "Les amis avec ___ je voyage sont belges.",
+    "answers": [
+      "lesquels",
+      "qui"
+    ],
+    "explanation": "指人時，介系詞後可以用 qui 或 lesquels。"
+  },
+  {
+    "id": "b2-rc-018",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入正確的關係代名詞（lequel 的形式）",
+    "stem": "Le projet ___ (à) je participe est ambitieux.",
+    "answers": [
+      "auquel"
+    ],
+    "explanation": "participer à + lequel 合寫成 auquel。"
+  },
+  {
+    "id": "b2-rc-019",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：這是我寫報告用的那支筆。（用 avec lequel）",
+    "stem": "",
+    "answers": [
+      "C'est le stylo avec lequel j'écris mon rapport.",
+      "C'est le stylo avec lequel j'ai écrit mon rapport.",
+      "Voici le stylo avec lequel j'écris mon rapport.",
+      "Voici le stylo avec lequel j'ai écrit mon rapport."
+    ],
+    "explanation": "stylo 陽性單數，avec lequel。"
+  },
+  {
+    "id": "b2-rc-020",
+    "level": "B2",
+    "grammar": "relatifs-composes",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：我們經過的那座橋很古老。（用 sur lequel）",
+    "stem": "",
+    "answers": [
+      "Le pont sur lequel nous sommes passés est très ancien.",
+      "Le pont sur lequel nous sommes passés est ancien.",
+      "Le pont sur lequel on est passés est très ancien.",
+      "Le pont sur lequel on est passé est très ancien."
+    ],
+    "explanation": "passer sur un pont → le pont sur lequel…。"
   }
 ]

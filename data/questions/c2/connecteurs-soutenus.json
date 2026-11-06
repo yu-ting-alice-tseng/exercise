@@ -224,5 +224,152 @@
       "Il était fatigué, il n'en a pas moins continué."
     ],
     "explanation": "il n'en a pas moins + 過去分詞＝儘管如此，他仍然…"
+  },
+  {
+    "id": "c2-cs-013",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出合適的連接詞（從此以後）",
+    "stem": "___, toutes les réunions auront lieu le lundi.",
+    "options": [
+      "Désormais",
+      "Néanmoins",
+      "Toutefois",
+      "Cependant"
+    ],
+    "answer": 0,
+    "explanation": "désormais＝從今以後。"
+  },
+  {
+    "id": "c2-cs-014",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出合適的連接詞（何況、更何況）",
+    "stem": "Je n'ai pas envie de sortir, ___ il pleut.",
+    "options": [
+      "d'autant qu'",
+      "pour autant qu'",
+      "tant qu'",
+      "bien qu'"
+    ],
+    "answer": 0,
+    "explanation": "d'autant que＝況且、尤其因為，接直陳式。"
+  },
+  {
+    "id": "c2-cs-015",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出合適的說法（然而並不因此…）",
+    "stem": "Il a échoué ; il ne se décourage pas ___.",
+    "options": [
+      "pour autant",
+      "d'autant",
+      "autant que",
+      "néanmoins que"
+    ],
+    "answer": 0,
+    "explanation": "ne…pas pour autant＝並不因此…。"
+  },
+  {
+    "id": "c2-cs-016",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入缺少的字（意思：再說、此外）",
+    "stem": "Je n'aime pas ce film ; d'___, je ne l'ai pas fini.",
+    "answers": [
+      "ailleurs"
+    ],
+    "explanation": "d'ailleurs＝再說、況且。"
+  },
+  {
+    "id": "c2-cs-017",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入缺少的字（意思：鑒於）",
+    "stem": "___ de la situation, nous reportons la réunion.",
+    "answers": [
+      "Compte tenu",
+      "compte tenu"
+    ],
+    "explanation": "compte tenu de＝考慮到、鑒於。"
+  },
+  {
+    "id": "c2-cs-018",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入缺少的字（意思：至少）",
+    "stem": "Il faut dormir sept heures, à tout le ___.",
+    "answers": [
+      "moins"
+    ],
+    "explanation": "à tout le moins＝至少（書面語）。"
+  },
+  {
+    "id": "c2-cs-019",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用 ne…pas pour autant 翻譯成法文：他很有錢，但並不因此快樂。",
+    "stem": "",
+    "answers": [
+      "Il est riche, mais il n'est pas heureux pour autant.",
+      "Il est très riche, mais il n'est pas heureux pour autant.",
+      "Il est riche mais il n'est pas heureux pour autant.",
+      "Il est très riche mais il n'est pas heureux pour autant."
+    ],
+    "explanation": "pour autant 放在否定句末。"
+  },
+  {
+    "id": "c2-cs-020",
+    "level": "C2",
+    "grammar": "connecteurs-soutenus",
+    "themes": [
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用 désormais 翻譯成法文：從今以後，博物館週一休館。",
+    "stem": "",
+    "answers": [
+      "Désormais, le musée est fermé le lundi.",
+      "Désormais, le musée sera fermé le lundi.",
+      "Désormais, le musée ferme le lundi.",
+      "Désormais, le musée fermera le lundi."
+    ],
+    "explanation": "désormais 常放句首。"
   }
 ]

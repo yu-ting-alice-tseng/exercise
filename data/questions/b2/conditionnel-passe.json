@@ -231,5 +231,150 @@
       "Selon les médias, le ministre aurait démissionné."
     ],
     "explanation": "條件式過去式在新聞中表示「據說、尚未證實」：le ministre aurait démissionné。"
+  },
+  {
+    "id": "b2-cp-013",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的條件式過去式",
+    "stem": "Si nous étions partis plus tôt, nous ___ le train.",
+    "options": [
+      "n'aurions pas raté",
+      "n'aurons pas raté",
+      "ne raterions pas",
+      "n'avions pas raté"
+    ],
+    "answer": 0,
+    "explanation": "si + 愈過去式，主句用條件式過去式：n'aurions pas raté。"
+  },
+  {
+    "id": "b2-cp-014",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的條件式過去式（表達後悔）",
+    "stem": "J'___ dû accepter ce poste.",
+    "options": [
+      "aurais",
+      "aurai",
+      "avais",
+      "aurait"
+    ],
+    "answer": 0,
+    "explanation": "j'aurais dû…＝我早該…。"
+  },
+  {
+    "id": "b2-cp-015",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的形式（新聞中未經證實的消息）",
+    "stem": "Selon la police, le voleur ___ par la fenêtre.",
+    "options": [
+      "serait entré",
+      "sera entré",
+      "était entré",
+      "aurait entré"
+    ],
+    "answer": 0,
+    "explanation": "未經證實的過去事件用條件式過去式；entrer 用 être 當助動詞。"
+  },
+  {
+    "id": "b2-cp-016",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的條件式過去式",
+    "stem": "Tu ___ (pouvoir) me prévenir !",
+    "answers": [
+      "aurais pu"
+    ],
+    "explanation": "責備：tu aurais pu…＝你本來可以…。"
+  },
+  {
+    "id": "b2-cp-017",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的條件式過去式",
+    "stem": "Elles ___ (venir) si elles avaient su.",
+    "answers": [
+      "seraient venues"
+    ],
+    "explanation": "venir 用 être，主詞陰性複數，過去分詞加 -es。"
+  },
+  {
+    "id": "b2-cp-018",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的條件式過去式",
+    "stem": "Sans ce médecin, il ___ (mourir).",
+    "answers": [
+      "serait mort"
+    ],
+    "explanation": "sans + 名詞相當於假設語氣；mourir 用 être，過去分詞 mort。"
+  },
+  {
+    "id": "b2-cp-019",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我早該多讀一點書。",
+    "stem": "",
+    "answers": [
+      "J'aurais dû étudier plus.",
+      "J'aurais dû travailler plus.",
+      "J'aurais dû étudier davantage.",
+      "J'aurais dû travailler davantage."
+    ],
+    "explanation": "devoir 的條件式過去式表達後悔：j'aurais dû + 原形動詞。"
+  },
+  {
+    "id": "b2-cp-020",
+    "level": "B2",
+    "grammar": "conditionnel-passe",
+    "themes": [
+      "meteo"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：如果昨天沒下雨，我們就去海灘了。",
+    "stem": "",
+    "answers": [
+      "S'il n'avait pas plu hier, nous serions allés à la plage.",
+      "S'il n'avait pas plu hier, on serait allés à la plage.",
+      "S'il n'avait pas plu hier, on serait allé à la plage."
+    ],
+    "explanation": "si + 愈過去式（n'avait pas plu），主句條件式過去式（serions allés）。"
   }
 ]

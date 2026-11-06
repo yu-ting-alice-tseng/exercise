@@ -216,5 +216,148 @@
       "Il a plu ce matin."
     ],
     "explanation": "ce matin 表示「今天早上」。"
+  },
+  {
+    "id": "a1-dem-013",
+    "level": "A1",
+    "grammar": "demonstratifs",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的指示形容詞",
+    "stem": "___ appartement est grand.",
+    "options": [
+      "Cet",
+      "Ce",
+      "Cette",
+      "Ces"
+    ],
+    "answer": 0,
+    "explanation": "陽性單數、母音開頭：cet。"
+  },
+  {
+    "id": "a1-dem-014",
+    "level": "A1",
+    "grammar": "demonstratifs",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的指示形容詞",
+    "stem": "J'adore ___ ville !",
+    "options": [
+      "cette",
+      "ce",
+      "cet",
+      "ces"
+    ],
+    "answer": 0,
+    "explanation": "ville 是陰性：cette。"
+  },
+  {
+    "id": "a1-dem-015",
+    "level": "A1",
+    "grammar": "demonstratifs",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的指示形容詞",
+    "stem": "___ fleurs sont pour toi.",
+    "options": [
+      "Ces",
+      "Cettes",
+      "Cet",
+      "Ce"
+    ],
+    "answer": 0,
+    "explanation": "複數一律用 ces。"
+  },
+  {
+    "id": "a1-dem-016",
+    "level": "A1",
+    "grammar": "demonstratifs",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 ce、cet、cette 或 ces",
+    "stem": "___ arbre est très vieux.",
+    "answers": [
+      "cet"
+    ],
+    "explanation": "arbre 是陽性、母音開頭：cet。"
+  },
+  {
+    "id": "a1-dem-017",
+    "level": "A1",
+    "grammar": "demonstratifs",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 ce、cet、cette 或 ces",
+    "stem": "___ année, je vais en France.",
+    "answers": [
+      "cette"
+    ],
+    "explanation": "année 是陰性：cette année（今年）。"
+  },
+  {
+    "id": "a1-dem-018",
+    "level": "A1",
+    "grammar": "demonstratifs",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 ce、cet、cette 或 ces",
+    "stem": "Tu aimes ___ chaussures ?",
+    "answers": [
+      "ces"
+    ],
+    "explanation": "複數：ces。"
+  },
+  {
+    "id": "a1-dem-019",
+    "level": "A1",
+    "grammar": "demonstratifs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：這本書很有趣。",
+    "stem": "",
+    "answers": [
+      "Ce livre est intéressant."
+    ],
+    "explanation": "livre 是陽性：ce。"
+  },
+  {
+    "id": "a1-dem-020",
+    "level": "A1",
+    "grammar": "demonstratifs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我今天晚上要工作。",
+    "stem": "",
+    "answers": [
+      "Je travaille ce soir.",
+      "Ce soir, je travaille.",
+      "Je vais travailler ce soir.",
+      "Ce soir, je vais travailler."
+    ],
+    "explanation": "ce soir＝今晚。"
   }
 ]

@@ -234,5 +234,156 @@
       "Il n'est pas venu en cours parce qu'il est malade."
     ],
     "explanation": "結果用 donc、alors、c'est pourquoi；原因用 parce que、comme。"
+  },
+  {
+    "id": "b1-cc-013",
+    "level": "B1",
+    "grammar": "cause-consequence",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出合適的說法",
+    "stem": "Il est en retard ___ la grève.",
+    "options": [
+      "à cause de",
+      "grâce à",
+      "parce que",
+      "puisque"
+    ],
+    "answer": 0,
+    "explanation": "負面原因 + 名詞：à cause de。"
+  },
+  {
+    "id": "b1-cc-014",
+    "level": "B1",
+    "grammar": "cause-consequence",
+    "themes": [
+      "meteo",
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的連接詞",
+    "stem": "___ il fait beau, on va se promener.",
+    "options": [
+      "Comme",
+      "Car",
+      "Donc",
+      "Grâce à"
+    ],
+    "answer": 0,
+    "explanation": "句首表示原因用 comme。"
+  },
+  {
+    "id": "b1-cc-015",
+    "level": "B1",
+    "grammar": "cause-consequence",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的連接詞",
+    "stem": "Elle a beaucoup révisé ; ___, elle a réussi.",
+    "options": [
+      "par conséquent",
+      "parce que",
+      "car",
+      "grâce à"
+    ],
+    "answer": 0,
+    "explanation": "par conséquent 表示結果。"
+  },
+  {
+    "id": "b1-cc-016",
+    "level": "B1",
+    "grammar": "cause-consequence",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入缺少的字（正面的原因）",
+    "stem": "___ à toi, j'ai compris.",
+    "answers": [
+      "grâce"
+    ],
+    "explanation": "grâce à＝多虧。"
+  },
+  {
+    "id": "b1-cc-017",
+    "level": "B1",
+    "grammar": "cause-consequence",
+    "themes": [
+      "meteo"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入表示結果的連接詞（所以）",
+    "stem": "Il pleut, ___ je prends un parapluie.",
+    "answers": [
+      "donc",
+      "alors"
+    ],
+    "explanation": "donc／alors 表示結果。"
+  },
+  {
+    "id": "b1-cc-018",
+    "level": "B1",
+    "grammar": "cause-consequence",
+    "themes": [
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入表示原因的連接詞",
+    "stem": "Je suis fatigué ___ j'ai mal dormi.",
+    "answers": [
+      "car",
+      "parce que"
+    ],
+    "explanation": "car／parce que 表示原因。"
+  },
+  {
+    "id": "b1-cc-019",
+    "level": "B1",
+    "grammar": "cause-consequence",
+    "themes": [
+      "meteo",
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：因為天氣不好，我們留在家裡。",
+    "stem": "",
+    "answers": [
+      "Comme il faisait mauvais, nous sommes restés à la maison.",
+      "Comme il fait mauvais, nous restons à la maison.",
+      "À cause du mauvais temps, nous sommes restés à la maison.",
+      "À cause du mauvais temps, nous restons à la maison.",
+      "Nous sommes restés à la maison parce qu'il faisait mauvais.",
+      "Nous restons à la maison parce qu'il fait mauvais.",
+      "Comme il faisait mauvais, on est restés à la maison."
+    ],
+    "explanation": "comme（句首）、parce que（句中）、à cause de + 名詞。"
+  },
+  {
+    "id": "b1-cc-020",
+    "level": "B1",
+    "grammar": "cause-consequence",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：多虧了這本書，我進步了很多。",
+    "stem": "",
+    "answers": [
+      "Grâce à ce livre, j'ai fait beaucoup de progrès.",
+      "Grâce à ce livre, j'ai beaucoup progressé."
+    ],
+    "explanation": "grâce à + 名詞。"
   }
 ]

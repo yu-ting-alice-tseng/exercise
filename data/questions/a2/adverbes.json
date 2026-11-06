@@ -214,5 +214,146 @@
       "Tu viendras vraiment ?"
     ],
     "explanation": "vraiment 放在變化的動詞後面。"
+  },
+  {
+    "id": "a2-adv-013",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "presentation"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出 courant 的副詞形式",
+    "stem": "Il parle ___ anglais.",
+    "options": [
+      "couramment",
+      "courament",
+      "couramant",
+      "courant"
+    ],
+    "answer": 0,
+    "explanation": "-ant 結尾的形容詞，副詞變成 -amment。"
+  },
+  {
+    "id": "a2-adv-014",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的字",
+    "stem": "Elle a ___ travaillé hier.",
+    "options": [
+      "beaucoup",
+      "beaucoup de",
+      "très",
+      "bon"
+    ],
+    "answer": 0,
+    "explanation": "beaucoup 修飾動詞，放在助動詞和過去分詞中間。"
+  },
+  {
+    "id": "a2-adv-015",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的字",
+    "stem": "Parle plus ___, je n'entends rien !",
+    "options": [
+      "fort",
+      "fortement",
+      "forte",
+      "forts"
+    ],
+    "answer": 0,
+    "explanation": "parler fort（大聲說）：fort 在這裡當副詞，不變化。"
+  },
+  {
+    "id": "a2-adv-016",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請寫出形容詞的副詞形式",
+    "stem": "heureux → ___",
+    "answers": [
+      "heureusement"
+    ],
+    "explanation": "陰性 heureuse + -ment。"
+  },
+  {
+    "id": "a2-adv-017",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請寫出形容詞的副詞形式",
+    "stem": "gentil → ___",
+    "answers": [
+      "gentiment"
+    ],
+    "explanation": "gentil 的副詞是不規則的 gentiment。"
+  },
+  {
+    "id": "a2-adv-018",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請寫出形容詞的副詞形式",
+    "stem": "constant → ___",
+    "answers": [
+      "constamment"
+    ],
+    "explanation": "-ant → -amment。"
+  },
+  {
+    "id": "a2-adv-019",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我很少看電視。",
+    "stem": "",
+    "answers": [
+      "Je regarde rarement la télé.",
+      "Je regarde rarement la télévision."
+    ],
+    "explanation": "rarement 放在動詞後面。"
+  },
+  {
+    "id": "a2-adv-020",
+    "level": "A2",
+    "grammar": "adverbes",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：幸好，他準時到了。",
+    "stem": "",
+    "answers": [
+      "Heureusement, il est arrivé à l'heure."
+    ],
+    "explanation": "heureusement＝幸好；à l'heure＝準時。"
   }
 ]

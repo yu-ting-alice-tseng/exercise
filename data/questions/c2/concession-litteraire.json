@@ -218,5 +218,149 @@
       "Tout fatigué qu'il soit, il continue."
     ],
     "explanation": "tout + 形容詞 + que，傳統上接直陳式（現代也接受虛擬式）。"
+  },
+  {
+    "id": "c2-cl-013",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的字",
+    "stem": "___ grands que soient les risques, nous continuerons.",
+    "options": [
+      "Si",
+      "Tant",
+      "Même",
+      "Bien"
+    ],
+    "answer": 0,
+    "explanation": "si + 形容詞 + que + 虛擬式＝無論多麼…。"
+  },
+  {
+    "id": "c2-cl-014",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的字",
+    "stem": "___ que soient ses défauts, je l'aime.",
+    "options": [
+      "Quels",
+      "Quelles",
+      "Quoi",
+      "Quel"
+    ],
+    "answer": 0,
+    "explanation": "quel que 和後面的主詞 ses défauts（陽性複數）配合：quels。"
+  },
+  {
+    "id": "c2-cl-015",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的說法（書面語：無論多麼）",
+    "stem": "___ habile qu'il fût, il échoua.",
+    "options": [
+      "Quelque",
+      "Quel",
+      "Quoique",
+      "Quoi"
+    ],
+    "answer": 0,
+    "explanation": "quelque + 形容詞 + que＝無論多麼…，此時 quelque 是副詞不變化。"
+  },
+  {
+    "id": "c2-cl-016",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的虛擬式",
+    "stem": "Où que tu ___ (aller), je te suivrai.",
+    "answers": [
+      "ailles"
+    ],
+    "explanation": "où que + 虛擬式：où que tu ailles＝無論你去哪裡。"
+  },
+  {
+    "id": "c2-cl-017",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的虛擬式",
+    "stem": "Si difficile que ___ (être) la tâche, il faut la finir.",
+    "answers": [
+      "soit"
+    ],
+    "explanation": "si…que + 虛擬式。"
+  },
+  {
+    "id": "c2-cl-018",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入正確的字（quel que 的形式）",
+    "stem": "___ que soit l'heure, appelle-moi.",
+    "answers": [
+      "Quelle"
+    ],
+    "explanation": "l'heure 是陰性單數：quelle que soit。"
+  },
+  {
+    "id": "c2-cl-019",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：無論你在哪裡，都要打電話給我。（用 Où que）",
+    "stem": "",
+    "answers": [
+      "Où que tu sois, appelle-moi.",
+      "Où que vous soyez, appelez-moi.",
+      "Où que tu sois, téléphone-moi.",
+      "Où que vous soyez, téléphonez-moi."
+    ],
+    "explanation": "où que + 虛擬式。"
+  },
+  {
+    "id": "c2-cl-020",
+    "level": "C2",
+    "grammar": "concession-litteraire",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用 Si…que 改寫這個句子。",
+    "stem": "Bien que ce travail soit dur, il l'aime.",
+    "answers": [
+      "Si dur que soit ce travail, il l'aime.",
+      "Si dur que ce travail soit, il l'aime."
+    ],
+    "explanation": "si + 形容詞 + que + 虛擬式，名詞主詞常倒裝。"
   }
 ]

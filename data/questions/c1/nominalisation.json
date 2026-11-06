@@ -220,5 +220,152 @@
       "Réforme des retraites."
     ],
     "explanation": "réformer → la réforme。名詞化後，原本的受詞用 de 連接。"
+  },
+  {
+    "id": "c1-nom-013",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出動詞的名詞形式",
+    "stem": "embaucher → l'___",
+    "options": [
+      "embauche",
+      "embauchement",
+      "embauchage",
+      "embauchure"
+    ],
+    "answer": 0,
+    "explanation": "embaucher 的名詞是 l'embauche（雇用）。"
+  },
+  {
+    "id": "c1-nom-014",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出動詞的名詞形式",
+    "stem": "découvrir → la ___",
+    "options": [
+      "découverte",
+      "découvrement",
+      "découvrance",
+      "découvrition"
+    ],
+    "answer": 0,
+    "explanation": "découvrir → la découverte（發現）。"
+  },
+  {
+    "id": "c1-nom-015",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "meteo"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的名詞化說法",
+    "stem": "Les températures ont fortement chuté. → Une forte ___ des températures",
+    "options": [
+      "chute",
+      "chutement",
+      "chutage",
+      "chutance"
+    ],
+    "answer": 0,
+    "explanation": "chuter → la chute；副詞 fortement 變成形容詞 forte。"
+  },
+  {
+    "id": "c1-nom-016",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請寫出動詞的名詞形式",
+    "stem": "payer → le ___",
+    "answers": [
+      "paiement",
+      "payement"
+    ],
+    "explanation": "payer → le paiement（也寫作 payement）。"
+  },
+  {
+    "id": "c1-nom-017",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請寫出動詞的名詞形式",
+    "stem": "partir → le ___",
+    "answers": [
+      "départ"
+    ],
+    "explanation": "partir → le départ。"
+  },
+  {
+    "id": "c1-nom-018",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請寫出動詞的名詞形式",
+    "stem": "guérir → la ___",
+    "answers": [
+      "guérison"
+    ],
+    "explanation": "guérir → la guérison（痊癒）。"
+  },
+  {
+    "id": "c1-nom-019",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請改寫成名詞化的新聞標題（不用動詞變化）。",
+    "stem": "Le festival a été annulé.",
+    "answers": [
+      "Annulation du festival",
+      "Annulation du festival.",
+      "L'annulation du festival",
+      "L'annulation du festival."
+    ],
+    "explanation": "annuler → l'annulation；新聞標題常省略冠詞。"
+  },
+  {
+    "id": "c1-nom-020",
+    "level": "C1",
+    "grammar": "nominalisation",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請改寫成名詞化的新聞標題（不用動詞變化）。",
+    "stem": "Le chômage a légèrement baissé.",
+    "answers": [
+      "Légère baisse du chômage",
+      "Légère baisse du chômage.",
+      "Une légère baisse du chômage",
+      "Une légère baisse du chômage."
+    ],
+    "explanation": "baisser → la baisse；副詞 légèrement 變形容詞 légère。"
   }
 ]

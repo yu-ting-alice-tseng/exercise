@@ -224,5 +224,150 @@
       "Est-ce que vous voulez du fromage ?"
     ],
     "explanation": "fromage 是陽性、不可數，用 du。"
+  },
+  {
+    "id": "a1-par-013",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的冠詞",
+    "stem": "Le soir, je mange ___ riz.",
+    "options": [
+      "du",
+      "de la",
+      "des",
+      "de l'"
+    ],
+    "answer": 0,
+    "explanation": "riz 是陽性、不可數，用 du。"
+  },
+  {
+    "id": "a1-par-014",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的冠詞",
+    "stem": "Il boit ___ jus d'orange.",
+    "options": [
+      "du",
+      "de la",
+      "des",
+      "de l'"
+    ],
+    "answer": 0,
+    "explanation": "jus 是陽性，用 du。"
+  },
+  {
+    "id": "a1-par-015",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的冠詞",
+    "stem": "Il n'y a pas ___ sucre.",
+    "options": [
+      "de",
+      "du",
+      "le",
+      "des"
+    ],
+    "answer": 0,
+    "explanation": "否定句中 du 變成 de。"
+  },
+  {
+    "id": "a1-par-016",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入部分冠詞（du、de la、de l'）",
+    "stem": "Je prends ___ eau gazeuse.",
+    "answers": [
+      "de l'"
+    ],
+    "explanation": "eau 以母音開頭，用 de l'。"
+  },
+  {
+    "id": "a1-par-017",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入部分冠詞（du、de la、de l'）",
+    "stem": "Mets ___ sel dans la soupe.",
+    "answers": [
+      "du"
+    ],
+    "explanation": "sel 是陽性，用 du。"
+  },
+  {
+    "id": "a1-par-018",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture",
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入正確的冠詞（注意這是否定句）",
+    "stem": "Nous n'avons plus ___ pain.",
+    "answers": [
+      "de"
+    ],
+    "explanation": "ne…plus 也是否定，du 變成 de。"
+  },
+  {
+    "id": "a1-par-019",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture",
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我早餐喝牛奶。",
+    "stem": "",
+    "answers": [
+      "Je bois du lait au petit-déjeuner.",
+      "Au petit-déjeuner, je bois du lait.",
+      "Je bois du lait au petit déjeuner.",
+      "Au petit déjeuner, je bois du lait."
+    ],
+    "explanation": "lait 是陽性，用 du。"
+  },
+  {
+    "id": "a1-par-020",
+    "level": "A1",
+    "grammar": "partitifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：她不吃魚。",
+    "stem": "",
+    "answers": [
+      "Elle ne mange pas de poisson."
+    ],
+    "explanation": "否定句中 du poisson 變成 de poisson。"
   }
 ]

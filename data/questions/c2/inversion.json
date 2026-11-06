@@ -208,5 +208,146 @@
       "« Je reviens », dit-il."
     ],
     "explanation": "引號在前時，引述動詞要倒裝：a-t-il dit。"
+  },
+  {
+    "id": "c2-inv-013",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的倒裝形式",
+    "stem": "Ainsi ___ le règne du vieux roi.",
+    "options": [
+      "s'acheva",
+      "il s'acheva",
+      "s'acheva-t-il",
+      "achevait"
+    ],
+    "answer": 0,
+    "explanation": "ainsi 開頭表示「就這樣」時，名詞主詞可以簡單倒裝：ainsi s'acheva le règne…。"
+  },
+  {
+    "id": "c2-inv-014",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的倒裝形式",
+    "stem": "Aussi ___ partir plus tôt.",
+    "options": [
+      "avons-nous décidé de",
+      "nous avons décidé de",
+      "avons nous décidé de",
+      "décidé avons-nous de"
+    ],
+    "answer": 0,
+    "explanation": "aussi 開頭表示「因此」時，主詞代名詞要倒裝並加連字號。"
+  },
+  {
+    "id": "c2-inv-015",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的引述形式",
+    "stem": "« Entrez », ___ le directeur.",
+    "options": [
+      "dit",
+      "le directeur dit",
+      "dit-il",
+      "a dit-il"
+    ],
+    "answer": 0,
+    "explanation": "引號後的引述動詞要倒裝，名詞主詞直接放在動詞後面。"
+  },
+  {
+    "id": "c2-inv-016",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入倒裝時需要的字母",
+    "stem": "Sans doute aime-___-elle ce film.",
+    "answers": [
+      "t"
+    ],
+    "explanation": "動詞以母音結尾時，倒裝要加 -t-。"
+  },
+  {
+    "id": "c2-inv-017",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的現在式（注意倒裝）",
+    "stem": "Peut-être ___-ils déjà partis. (être)",
+    "answers": [
+      "sont"
+    ],
+    "explanation": "peut-être 開頭時主詞倒裝：peut-être sont-ils…。"
+  },
+  {
+    "id": "c2-inv-018",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的簡單過去式（引述倒裝）",
+    "stem": "« Jamais ! » ___-il. (s'écrier)",
+    "answers": [
+      "s'écria"
+    ],
+    "explanation": "引述倒裝：s'écria-t-il。"
+  },
+  {
+    "id": "c2-inv-019",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 Peut-être 開頭改寫（主詞動詞倒裝）。",
+    "stem": "Elle viendra ce soir.",
+    "answers": [
+      "Peut-être viendra-t-elle ce soir."
+    ],
+    "explanation": "peut-être 開頭時倒裝，母音結尾加 -t-。"
+  },
+  {
+    "id": "c2-inv-020",
+    "level": "C2",
+    "grammar": "inversion",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請改寫成引號在前、引述動詞倒裝的形式。",
+    "stem": "Elle a répondu : « Je ne sais pas. »",
+    "answers": [
+      "« Je ne sais pas », a-t-elle répondu.",
+      "« Je ne sais pas », répondit-elle."
+    ],
+    "explanation": "引號在前，引述動詞和主詞倒裝：a-t-elle répondu。"
   }
 ]

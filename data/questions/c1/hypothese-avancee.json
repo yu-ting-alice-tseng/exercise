@@ -227,5 +227,156 @@
       "Faute d'argent, il a abandonné le voyage."
     ],
     "explanation": "faute de + 名詞（不加冠詞）：faute d'argent。"
+  },
+  {
+    "id": "c1-ha-013",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Au cas où le vol ___ annulé, on vous remboursera.",
+    "options": [
+      "serait",
+      "sera",
+      "soit",
+      "est"
+    ],
+    "answer": 0,
+    "explanation": "au cas où 後面接條件式。"
+  },
+  {
+    "id": "c1-ha-014",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Pourvu qu'il ___ à l'heure, tout ira bien.",
+    "options": [
+      "arrive",
+      "arrivera",
+      "arriverait",
+      "arrivait"
+    ],
+    "answer": 0,
+    "explanation": "pourvu que 接虛擬式。"
+  },
+  {
+    "id": "c1-ha-015",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "achats"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出合適的說法（假設）",
+    "stem": "___ vous gagniez au loto, que feriez-vous ?",
+    "options": [
+      "Supposons que",
+      "Si",
+      "Au cas où",
+      "Même si"
+    ],
+    "answer": 0,
+    "explanation": "supposons que 接虛擬式 gagniez；si 和 au cas où 不接虛擬式。"
+  },
+  {
+    "id": "c1-ha-016",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入缺少的字（意思：如果沒有）",
+    "stem": "Sans ___ aide, je n'y serais jamais arrivé.",
+    "answers": [
+      "ton",
+      "votre",
+      "son",
+      "leur"
+    ],
+    "explanation": "sans + 名詞可以代替 si 子句。"
+  },
+  {
+    "id": "c1-ha-017",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "meteo"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的正確形式",
+    "stem": "En admettant qu'il ___ (faire) beau, partirons-nous ?",
+    "answers": [
+      "fasse"
+    ],
+    "explanation": "en admettant que 接虛擬式。"
+  },
+  {
+    "id": "c1-ha-018",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的條件式",
+    "stem": "Même si tu insistais, je ne ___ (changer) pas d'avis.",
+    "answers": [
+      "changerais"
+    ],
+    "explanation": "même si + 未完成過去式，主句用條件式現在式。"
+  },
+  {
+    "id": "c1-ha-019",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 au cas où 翻譯成法文：萬一你迷路了，打給我。",
+    "stem": "",
+    "answers": [
+      "Au cas où tu te perdrais, appelle-moi.",
+      "Appelle-moi au cas où tu te perdrais.",
+      "Au cas où vous vous perdriez, appelez-moi.",
+      "Appelez-moi au cas où vous vous perdriez."
+    ],
+    "explanation": "au cas où + 條件式。"
+  },
+  {
+    "id": "c1-ha-020",
+    "level": "C1",
+    "grammar": "hypothese-avancee",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用 à condition de 翻譯成法文：只要努力，你就會成功。",
+    "stem": "",
+    "answers": [
+      "Tu réussiras à condition de travailler.",
+      "À condition de travailler, tu réussiras.",
+      "Tu réussiras à condition de faire des efforts.",
+      "À condition de faire des efforts, tu réussiras.",
+      "Tu réussiras à condition de travailler dur.",
+      "À condition de travailler dur, tu réussiras."
+    ],
+    "explanation": "主詞相同時用 à condition de + 原形動詞。"
   }
 ]

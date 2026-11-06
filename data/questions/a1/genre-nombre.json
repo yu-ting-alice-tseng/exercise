@@ -219,5 +219,147 @@
       "Les chevaux sont beaux."
     ],
     "explanation": "cheval 的複數是 chevaux；形容詞 beau 的陽性複數是 beaux，也是加 x。"
+  },
+  {
+    "id": "a1-gn-013",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的複數形",
+    "stem": "un œil → des ___",
+    "options": [
+      "yeux",
+      "œils",
+      "œux",
+      "yeuxs"
+    ],
+    "answer": 0,
+    "explanation": "œil 的複數是完全不規則的 yeux。"
+  },
+  {
+    "id": "a1-gn-014",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "loisirs",
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的陰性形",
+    "stem": "un chanteur → une ___",
+    "options": [
+      "chanteuse",
+      "chanteure",
+      "chantrice",
+      "chanteresse"
+    ],
+    "answer": 0,
+    "explanation": "-eur 結尾、由動詞來的名詞，陰性多半是 -euse。"
+  },
+  {
+    "id": "a1-gn-015",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "下面哪一個名詞是陽性？",
+    "stem": "",
+    "options": [
+      "problème",
+      "table",
+      "chaise",
+      "fenêtre"
+    ],
+    "answer": 0,
+    "explanation": "problème 雖然以 e 結尾，卻是陽性：le problème。"
+  },
+  {
+    "id": "a1-gn-016",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請寫出括號內名詞的複數形",
+    "stem": "Il a trois ___ (animal).",
+    "answers": [
+      "animaux"
+    ],
+    "explanation": "-al → -aux。"
+  },
+  {
+    "id": "a1-gn-017",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請寫出括號內名詞的複數形",
+    "stem": "Ces ___ (prix) sont trop élevés.",
+    "answers": [
+      "prix"
+    ],
+    "explanation": "以 x 結尾的名詞，複數不變。"
+  },
+  {
+    "id": "a1-gn-018",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請寫出括號內名詞的陰性形",
+    "stem": "Ma ___ (cousin) habite à Lyon.",
+    "answers": [
+      "cousine"
+    ],
+    "explanation": "大部分名詞的陰性直接加 e。"
+  },
+  {
+    "id": "a1-gn-019",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：她有兩個女兒。",
+    "stem": "",
+    "answers": [
+      "Elle a deux filles."
+    ],
+    "explanation": "fille 複數加 s。"
+  },
+  {
+    "id": "a1-gn-020",
+    "level": "A1",
+    "grammar": "genre-nombre",
+    "themes": [
+      "achats",
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我買了三份報紙。",
+    "stem": "",
+    "answers": [
+      "J'ai acheté trois journaux."
+    ],
+    "explanation": "journal 的複數是 journaux。"
   }
 ]

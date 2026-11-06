@@ -227,5 +227,151 @@
       "Quant à ta question, je te répondrai demain."
     ],
     "explanation": "au sujet de、concernant、en ce qui concerne 都表示「關於」。"
+  },
+  {
+    "id": "c1-pa-013",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的介系詞片語（沿著）",
+    "stem": "Nous nous sommes promenés ___ la Seine.",
+    "options": [
+      "le long de",
+      "au lieu de",
+      "à force de",
+      "faute de"
+    ],
+    "answer": 0,
+    "explanation": "le long de＝沿著。"
+  },
+  {
+    "id": "c1-pa-014",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出合適的介系詞片語（代替）",
+    "stem": "___ te plaindre, cherche une solution.",
+    "options": [
+      "Au lieu de",
+      "Au lieu que",
+      "À la place que",
+      "Malgré"
+    ],
+    "answer": 0,
+    "explanation": "au lieu de + 原形動詞＝與其…不如…。"
+  },
+  {
+    "id": "c1-pa-015",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出合適的介系詞片語（為了…的利益）",
+    "stem": "Cette loi a été votée ___ des patients.",
+    "options": [
+      "en faveur",
+      "à l'égard",
+      "en dépit",
+      "à force"
+    ],
+    "answer": 0,
+    "explanation": "en faveur de＝有利於、為了…。"
+  },
+  {
+    "id": "c1-pa-016",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入缺少的字（意思：根據）",
+    "stem": "Le salaire est fixé en ___ de l'expérience.",
+    "answers": [
+      "fonction"
+    ],
+    "explanation": "en fonction de＝根據、視…而定。"
+  },
+  {
+    "id": "c1-pa-017",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入缺少的字（意思：面對）",
+    "stem": "Face ___ ces difficultés, le gouvernement a réagi.",
+    "answers": [
+      "à"
+    ],
+    "explanation": "face à＝面對。"
+  },
+  {
+    "id": "c1-pa-018",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入缺少的字（意思：除非）",
+    "stem": "Nous partirons demain, sauf ___ problème.",
+    "answers": [
+      "imprévu"
+    ],
+    "explanation": "sauf imprévu＝除非有意外。"
+  },
+  {
+    "id": "c1-pa-019",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 au lieu de 翻譯成法文：與其搭計程車，我們走路吧。",
+    "stem": "",
+    "answers": [
+      "Au lieu de prendre un taxi, marchons.",
+      "Au lieu de prendre un taxi, allons-y à pied.",
+      "Au lieu de prendre le taxi, marchons.",
+      "Au lieu de prendre un taxi, on va marcher."
+    ],
+    "explanation": "au lieu de + 原形動詞。"
+  },
+  {
+    "id": "c1-pa-020",
+    "level": "C1",
+    "grammar": "prepositions-avancees",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用 faute de 翻譯成法文：因為時間不夠，我們沒完成計畫。",
+    "stem": "",
+    "answers": [
+      "Faute de temps, nous n'avons pas fini le projet.",
+      "Faute de temps, nous n'avons pas terminé le projet.",
+      "Faute de temps, on n'a pas fini le projet.",
+      "Faute de temps, on n'a pas terminé le projet."
+    ],
+    "explanation": "faute de + 名詞（不加冠詞）＝因為缺少…。"
   }
 ]

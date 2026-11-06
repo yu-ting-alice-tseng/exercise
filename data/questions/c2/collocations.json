@@ -222,5 +222,150 @@
       "Ce film a remporté un énorme succès."
     ],
     "explanation": "「獲得成功」常用 remporter／connaître un succès。"
+  },
+  {
+    "id": "c2-col-013",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出最恰當的動詞",
+    "stem": "Il faut ___ un rendez-vous chez le dentiste.",
+    "options": [
+      "prendre",
+      "faire",
+      "donner",
+      "mettre"
+    ],
+    "answer": 0,
+    "explanation": "prendre rendez-vous＝預約。"
+  },
+  {
+    "id": "c2-col-014",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出最恰當的動詞",
+    "stem": "Ce scandale a ___ une vive polémique.",
+    "options": [
+      "suscité",
+      "fait",
+      "mis",
+      "posé"
+    ],
+    "answer": 0,
+    "explanation": "susciter une polémique＝引發爭議。"
+  },
+  {
+    "id": "c2-col-015",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出最恰當的動詞",
+    "stem": "Il faut ___ un terme à ce conflit.",
+    "options": [
+      "mettre",
+      "faire",
+      "donner",
+      "poser"
+    ],
+    "answer": 0,
+    "explanation": "mettre un terme à＝終結。"
+  },
+  {
+    "id": "c2-col-016",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入最恰當的動詞（原形）",
+    "stem": "Il faut ___ soin de ta santé.",
+    "answers": [
+      "prendre"
+    ],
+    "explanation": "prendre soin de＝照顧。"
+  },
+  {
+    "id": "c2-col-017",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入最恰當的動詞（原形）",
+    "stem": "Nous devons ___ face à la crise.",
+    "answers": [
+      "faire"
+    ],
+    "explanation": "faire face à＝面對。"
+  },
+  {
+    "id": "c2-col-018",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入最恰當的動詞（原形）",
+    "stem": "Ce livre va ___ date dans l'histoire.",
+    "answers": [
+      "faire"
+    ],
+    "explanation": "faire date＝具有劃時代意義。"
+  },
+  {
+    "id": "c2-col-019",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我們必須做出決定。（用 prendre une décision）",
+    "stem": "",
+    "answers": [
+      "Nous devons prendre une décision.",
+      "Il faut prendre une décision.",
+      "On doit prendre une décision.",
+      "Il faut que nous prenions une décision."
+    ],
+    "explanation": "prendre une décision＝做決定。"
+  },
+  {
+    "id": "c2-col-020",
+    "level": "C2",
+    "grammar": "collocations",
+    "themes": [
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：她要照顧她的母親。（用 prendre soin de）",
+    "stem": "",
+    "answers": [
+      "Elle doit prendre soin de sa mère.",
+      "Elle prend soin de sa mère.",
+      "Elle va prendre soin de sa mère."
+    ],
+    "explanation": "prendre soin de qqn＝照顧某人。"
   }
 ]

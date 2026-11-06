@@ -219,5 +219,148 @@
       "Elle travaille aux Etats-Unis."
     ],
     "explanation": "les États-Unis 是複數，用 aux。"
+  },
+  {
+    "id": "a1-pl-013",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Il habite ___ Portugal.",
+    "options": [
+      "au",
+      "en",
+      "à",
+      "aux"
+    ],
+    "answer": 0,
+    "explanation": "le Portugal 是陽性：au。"
+  },
+  {
+    "id": "a1-pl-014",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Nous allons ___ Allemagne.",
+    "options": [
+      "en",
+      "au",
+      "à",
+      "aux"
+    ],
+    "answer": 0,
+    "explanation": "l'Allemagne 是陰性：en。"
+  },
+  {
+    "id": "a1-pl-015",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Elle travaille ___ Londres.",
+    "options": [
+      "à",
+      "en",
+      "au",
+      "aux"
+    ],
+    "answer": 0,
+    "explanation": "城市用 à。"
+  },
+  {
+    "id": "a1-pl-016",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 à、en、au 或 aux",
+    "stem": "Je voyage ___ Chine cet été.",
+    "answers": [
+      "en"
+    ],
+    "explanation": "la Chine 是陰性：en。"
+  },
+  {
+    "id": "a1-pl-017",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "presentation"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入 à、en、au 或 aux",
+    "stem": "Ils sont nés ___ Pays-Bas.",
+    "answers": [
+      "aux"
+    ],
+    "explanation": "les Pays-Bas 是複數：aux。"
+  },
+  {
+    "id": "a1-pl-018",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 à、en、au 或 aux",
+    "stem": "Tu vas ___ Brésil ?",
+    "answers": [
+      "au"
+    ],
+    "explanation": "le Brésil 是陽性：au。"
+  },
+  {
+    "id": "a1-pl-019",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我想去法國。",
+    "stem": "",
+    "answers": [
+      "Je voudrais aller en France.",
+      "Je veux aller en France.",
+      "J'aimerais aller en France."
+    ],
+    "explanation": "la France 是陰性：en France。"
+  },
+  {
+    "id": "a1-pl-020",
+    "level": "A1",
+    "grammar": "prepositions-lieux",
+    "themes": [
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：他住在日本的東京。",
+    "stem": "",
+    "answers": [
+      "Il habite à Tokyo, au Japon.",
+      "Il vit à Tokyo, au Japon."
+    ],
+    "explanation": "城市用 à，陽性國家用 au。"
   }
 ]

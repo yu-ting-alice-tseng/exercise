@@ -215,5 +215,147 @@
       "Donne-le-moi."
     ],
     "explanation": "肯定命令式：直接受詞在前，moi 在後：donne-le-moi。"
+  },
+  {
+    "id": "b2-pd-013",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "achats"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的代名詞順序",
+    "stem": "Le livre ? Je ___ ai prêté hier.",
+    "options": [
+      "le lui",
+      "lui le",
+      "l'y",
+      "lui en"
+    ],
+    "answer": 0,
+    "explanation": "le（直接受詞）在 lui（間接受詞）前面：je le lui ai prêté。"
+  },
+  {
+    "id": "b2-pd-014",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的代名詞順序",
+    "stem": "Tes photos ? Montre-___ !",
+    "options": [
+      "les-moi",
+      "moi-les",
+      "me-les",
+      "les-me"
+    ],
+    "answer": 0,
+    "explanation": "肯定命令式：動詞-直接受詞-間接受詞，me 變 moi。"
+  },
+  {
+    "id": "b2-pd-015",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Du gâteau ? Je vais ___ donner un morceau.",
+    "options": [
+      "lui en",
+      "en lui",
+      "le lui",
+      "lui y"
+    ],
+    "answer": 0,
+    "explanation": "lui 在 en 前面：je vais lui en donner。"
+  },
+  {
+    "id": "b2-pd-016",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請用兩個代名詞取代受詞並填空",
+    "stem": "Je donne le dossier à Marc. → Je ___ donne.",
+    "answers": [
+      "le lui"
+    ],
+    "explanation": "le dossier → le，à Marc → lui。"
+  },
+  {
+    "id": "b2-pd-017",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請用兩個代名詞取代受詞並填空",
+    "stem": "Il m'envoie des fleurs. → Il ___ envoie.",
+    "answers": [
+      "m'en"
+    ],
+    "explanation": "des fleurs → en；me 在 en 前面縮寫成 m'en。"
+  },
+  {
+    "id": "b2-pd-018",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請用兩個代名詞取代受詞並填空",
+    "stem": "Je vous emmène à la gare. → Je ___ emmène.",
+    "answers": [
+      "vous y"
+    ],
+    "explanation": "à la gare（地點）→ y；vous 在 y 前面。"
+  },
+  {
+    "id": "b2-pd-019",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用兩個代名詞翻譯成法文：（那封信）我已經把它寄給她了。",
+    "stem": "",
+    "answers": [
+      "Je la lui ai envoyée.",
+      "Je la lui ai déjà envoyée."
+    ],
+    "explanation": "la lettre → la，à elle → lui；直接受詞在前，過去分詞配合 la 加 -e。"
+  },
+  {
+    "id": "b2-pd-020",
+    "level": "B2",
+    "grammar": "pronoms-doubles",
+    "themes": [
+      "achats"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用兩個代名詞翻譯成法文：（關於錢）別再跟我談這件事！",
+    "stem": "",
+    "answers": [
+      "Ne m'en parle plus !",
+      "Ne m'en parlez plus !"
+    ],
+    "explanation": "parler de qqch → en；否定命令式代名詞放動詞前面：ne m'en parle plus。"
   }
 ]

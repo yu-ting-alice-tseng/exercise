@@ -216,5 +216,150 @@
       "Je veux manger quelque chose de sucré."
     ],
     "explanation": "quelque chose 後面接形容詞時要加 de：quelque chose de sucré。"
+  },
+  {
+    "id": "b1-ind-013",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的不定代名詞",
+    "stem": "Je n'ai vu ___.",
+    "options": [
+      "personne",
+      "quelqu'un",
+      "chacun",
+      "tous"
+    ],
+    "answer": 0,
+    "explanation": "ne…personne＝沒有人；複合過去式中 personne 放在過去分詞後面。"
+  },
+  {
+    "id": "b1-ind-014",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "sante",
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的字",
+    "stem": "___ les jours, je fais du sport.",
+    "options": [
+      "Tous",
+      "Tout",
+      "Toutes",
+      "Chaque"
+    ],
+    "answer": 0,
+    "explanation": "jours 是陽性複數：tous les jours。"
+  },
+  {
+    "id": "b1-ind-015",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的字",
+    "stem": "Il a ___ idées intéressantes.",
+    "options": [
+      "quelques",
+      "quelque",
+      "chaque",
+      "aucun"
+    ],
+    "answer": 0,
+    "explanation": "複數名詞前用 quelques（幾個）。"
+  },
+  {
+    "id": "b1-ind-016",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "ecole-travail",
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 tout、toute、tous 或 toutes",
+    "stem": "Elle a lu ___ les livres.",
+    "answers": [
+      "tous"
+    ],
+    "explanation": "livres 是陽性複數：tous。"
+  },
+  {
+    "id": "b1-ind-017",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入表示「每一個」的字",
+    "stem": "___ élève a reçu un cadeau.",
+    "answers": [
+      "chaque"
+    ],
+    "explanation": "chaque + 單數名詞。"
+  },
+  {
+    "id": "b1-ind-018",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入缺少的字",
+    "stem": "Il y a ___ chose de bizarre.",
+    "answers": [
+      "quelque"
+    ],
+    "explanation": "quelque chose＝某件事。"
+  },
+  {
+    "id": "b1-ind-019",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：每個人都必須帶護照。",
+    "stem": "",
+    "answers": [
+      "Chacun doit apporter son passeport.",
+      "Tout le monde doit apporter son passeport.",
+      "Chacun doit avoir son passeport.",
+      "Tout le monde doit avoir son passeport."
+    ],
+    "explanation": "chacun／tout le monde 當主詞用單數動詞。"
+  },
+  {
+    "id": "b1-ind-020",
+    "level": "B1",
+    "grammar": "indefinis",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我什麼都不想要。",
+    "stem": "",
+    "answers": [
+      "Je ne veux rien."
+    ],
+    "explanation": "ne…rien。"
   }
 ]

@@ -217,5 +217,148 @@
       "Elle est plus grande que moi."
     ],
     "explanation": "比較句 que 後面用重讀代名詞：que moi。"
+  },
+  {
+    "id": "a1-pt-013",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的答案",
+    "stem": "Tu viens avec ___ ?",
+    "options": [
+      "moi",
+      "me",
+      "je",
+      "mon"
+    ],
+    "answer": 0,
+    "explanation": "介系詞後面用重讀代名詞：avec moi。"
+  },
+  {
+    "id": "a1-pt-014",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的答案",
+    "stem": "C'est ___ qui a raison.",
+    "options": [
+      "lui",
+      "il",
+      "le",
+      "son"
+    ],
+    "answer": 0,
+    "explanation": "c'est 後面用重讀代名詞：c'est lui。"
+  },
+  {
+    "id": "a1-pt-015",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "presentation",
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的答案",
+    "stem": "Chez ___, on parle chinois.",
+    "options": [
+      "nous",
+      "on",
+      "notre",
+      "nos"
+    ],
+    "answer": 0,
+    "explanation": "chez + 重讀代名詞：chez nous（在我們家）。"
+  },
+  {
+    "id": "a1-pt-016",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入重讀人稱代名詞（提示：你）",
+    "stem": "Ce cadeau est pour ___.",
+    "answers": [
+      "toi"
+    ],
+    "explanation": "pour + 重讀代名詞：pour toi。"
+  },
+  {
+    "id": "a1-pt-017",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入重讀人稱代名詞",
+    "stem": "Elles ? Je travaille avec ___.",
+    "answers": [
+      "elles"
+    ],
+    "explanation": "陰性複數：elles。"
+  },
+  {
+    "id": "a1-pt-018",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入重讀人稱代名詞（提示：我）",
+    "stem": "Vous venez chez ___ ce soir ?",
+    "answers": [
+      "moi"
+    ],
+    "explanation": "chez moi＝到我家。"
+  },
+  {
+    "id": "a1-pt-019",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "presentation"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我也是。",
+    "stem": "",
+    "answers": [
+      "Moi aussi."
+    ],
+    "explanation": "回應別人時常用 moi aussi；否定說 moi non plus。"
+  },
+  {
+    "id": "a1-pt-020",
+    "level": "A1",
+    "grammar": "pronoms-toniques",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：他和我是好朋友。",
+    "stem": "",
+    "answers": [
+      "Lui et moi, nous sommes de bons amis.",
+      "Lui et moi sommes de bons amis.",
+      "Moi et lui, nous sommes de bons amis."
+    ],
+    "explanation": "並列的主詞用重讀代名詞；複數形容詞前面的 des 變成 de：de bons amis。"
   }
 ]

@@ -216,5 +216,150 @@
       "Téléphone-moi !"
     ],
     "explanation": "肯定命令式中，me 放在動詞後面變成 moi：appelle-moi。"
+  },
+  {
+    "id": "a2-imper-013",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "meteo"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的命令式（對 tu）",
+    "stem": "___ ton manteau, il fait froid !",
+    "options": [
+      "Prends",
+      "Prend",
+      "Prendre",
+      "Prenons"
+    ],
+    "answer": 0,
+    "explanation": "prendre 對 tu 的命令式：prends。"
+  },
+  {
+    "id": "a2-imper-014",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的命令式（對 vous）",
+    "stem": "___ vos livres à la page 10.",
+    "options": [
+      "Ouvrez",
+      "Ouvre",
+      "Ouvrons",
+      "Ouvrir"
+    ],
+    "answer": 0,
+    "explanation": "對 vous：ouvrez。"
+  },
+  {
+    "id": "a2-imper-015",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的否定命令式（對 vous）",
+    "stem": "Ne ___ pas !",
+    "options": [
+      "vous inquiétez",
+      "inquiétez-vous",
+      "vous inquiéter",
+      "t'inquiète"
+    ],
+    "answer": 0,
+    "explanation": "否定命令式中，反身代名詞放在動詞前面：ne vous inquiétez pas。"
+  },
+  {
+    "id": "a2-imper-016",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的命令式",
+    "stem": "___ (venir, tu) ici !",
+    "answers": [
+      "viens"
+    ],
+    "explanation": "venir 對 tu：viens。"
+  },
+  {
+    "id": "a2-imper-017",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的命令式",
+    "stem": "___ (savoir, vous) que c'est interdit.",
+    "answers": [
+      "sachez"
+    ],
+    "explanation": "savoir 的命令式不規則：sache、sachons、sachez。"
+  },
+  {
+    "id": "a2-imper-018",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的命令式",
+    "stem": "___ (attendre, nous) un peu.",
+    "answers": [
+      "attendons"
+    ],
+    "explanation": "對 nous：attendons。"
+  },
+  {
+    "id": "a2-imper-019",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：請說慢一點。（對 vous）",
+    "stem": "",
+    "answers": [
+      "Parlez lentement, s'il vous plaît.",
+      "Parlez plus lentement, s'il vous plaît.",
+      "Parlez lentement.",
+      "Parlez plus lentement."
+    ],
+    "explanation": "對 vous 的命令式：parlez。"
+  },
+  {
+    "id": "a2-imper-020",
+    "level": "A2",
+    "grammar": "imperatif",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：快起床！（對 tu）",
+    "stem": "",
+    "answers": [
+      "Lève-toi vite !",
+      "Lève-toi !",
+      "Dépêche-toi de te lever !"
+    ],
+    "explanation": "肯定命令式：lève-toi。"
   }
 ]

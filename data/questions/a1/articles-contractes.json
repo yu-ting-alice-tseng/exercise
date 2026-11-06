@@ -212,5 +212,148 @@
       "Elle sait jouer du piano."
     ],
     "explanation": "樂器用 jouer de：jouer du piano（de + le → du）。注意和運動用的 jouer à 不同。"
+  },
+  {
+    "id": "a1-ac-013",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的答案",
+    "stem": "Elle parle ___ professeur.",
+    "options": [
+      "au",
+      "à le",
+      "du",
+      "aux"
+    ],
+    "answer": 0,
+    "explanation": "parler à + le → au。"
+  },
+  {
+    "id": "a1-ac-014",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的答案",
+    "stem": "Je reviens ___ États-Unis.",
+    "options": [
+      "des",
+      "de les",
+      "du",
+      "aux"
+    ],
+    "answer": 0,
+    "explanation": "revenir de + les → des。"
+  },
+  {
+    "id": "a1-ac-015",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "logement",
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的答案",
+    "stem": "Le chat ___ voisin est noir.",
+    "options": [
+      "du",
+      "de le",
+      "au",
+      "des"
+    ],
+    "answer": 0,
+    "explanation": "de + le → du。"
+  },
+  {
+    "id": "a1-ac-016",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 à 加冠詞（au、à la、à l'、aux）",
+    "stem": "On se retrouve ___ café ?",
+    "answers": [
+      "au"
+    ],
+    "explanation": "à + le → au。"
+  },
+  {
+    "id": "a1-ac-017",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 de 加冠詞（du、de la、de l'、des）",
+    "stem": "C'est la voiture ___ directrice.",
+    "answers": [
+      "de la"
+    ],
+    "explanation": "de + la 不縮合。"
+  },
+  {
+    "id": "a1-ac-018",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 à 加冠詞（au、à la、à l'、aux）",
+    "stem": "Il joue ___ cartes avec ses amis.",
+    "answers": [
+      "aux"
+    ],
+    "explanation": "jouer aux cartes：à + les → aux。"
+  },
+  {
+    "id": "a1-ac-019",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我在辦公室。",
+    "stem": "",
+    "answers": [
+      "Je suis au bureau."
+    ],
+    "explanation": "à + le bureau → au bureau。"
+  },
+  {
+    "id": "a1-ac-020",
+    "level": "A1",
+    "grammar": "articles-contractes",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：他們從電影院回來。",
+    "stem": "",
+    "answers": [
+      "Ils reviennent du cinéma.",
+      "Ils rentrent du cinéma.",
+      "Elles reviennent du cinéma."
+    ],
+    "explanation": "de + le cinéma → du cinéma。"
   }
 ]

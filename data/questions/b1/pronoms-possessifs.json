@@ -210,5 +210,148 @@
       "Notre professeur est strict, et le vôtre ?"
     ],
     "explanation": "所有格代名詞 le vôtre、le nôtre 有長音符號；形容詞 votre、notre 沒有。"
+  },
+  {
+    "id": "b1-pp-013",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的所有格代名詞",
+    "stem": "C'est ta valise ? Oui, c'est ___.",
+    "options": [
+      "la mienne",
+      "le mien",
+      "ma",
+      "les miennes"
+    ],
+    "answer": 0,
+    "explanation": "valise 是陰性單數：la mienne。"
+  },
+  {
+    "id": "b1-pp-014",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出「你的」",
+    "stem": "Mon téléphone est en panne. Tu peux me prêter ___ ?",
+    "options": [
+      "le tien",
+      "la tienne",
+      "ton",
+      "les tiens"
+    ],
+    "answer": 0,
+    "explanation": "téléphone 是陽性單數：le tien。"
+  },
+  {
+    "id": "b1-pp-015",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出「我們的」",
+    "stem": "Nos voisins ont un jardin ; ___ est plus petit.",
+    "options": [
+      "le nôtre",
+      "la nôtre",
+      "notre",
+      "les nôtres"
+    ],
+    "answer": 0,
+    "explanation": "jardin 是陽性單數：le nôtre。"
+  },
+  {
+    "id": "b1-pp-016",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入所有格代名詞（提示：她的）",
+    "stem": "Mon vélo est bleu, ___ est rouge.",
+    "answers": [
+      "le sien"
+    ],
+    "explanation": "vélo 是陽性：le sien。"
+  },
+  {
+    "id": "b1-pp-017",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "famille",
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入所有格代名詞（提示：你們的）",
+    "stem": "Nos enfants vont à l'école. Et ___ ?",
+    "answers": [
+      "les vôtres"
+    ],
+    "explanation": "enfants 是複數：les vôtres。"
+  },
+  {
+    "id": "b1-pp-018",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入所有格代名詞（提示：他們的）",
+    "stem": "Notre maison est petite, ___ est grande.",
+    "answers": [
+      "la leur"
+    ],
+    "explanation": "maison 是陰性單數：la leur。"
+  },
+  {
+    "id": "b1-pp-019",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：這些是我的鑰匙，不是你的。",
+    "stem": "",
+    "answers": [
+      "Ce sont mes clés, pas les tiennes.",
+      "Ce sont mes clés, ce ne sont pas les tiennes."
+    ],
+    "explanation": "clés 是陰性複數：les tiennes。"
+  },
+  {
+    "id": "b1-pp-020",
+    "level": "B1",
+    "grammar": "pronoms-possessifs",
+    "themes": [
+      "achats"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用所有格代名詞否定回答，說是她的。",
+    "stem": "C'est ton sac ?",
+    "answers": [
+      "Non, c'est le sien.",
+      "Non, ce n'est pas le mien, c'est le sien."
+    ],
+    "explanation": "sac 是陽性：le sien。"
   }
 ]

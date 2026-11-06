@@ -217,5 +217,150 @@
       "Il parle mieux le français que moi."
     ],
     "explanation": "修飾動詞 parler 要用副詞，bien 的比較級是 mieux。"
+  },
+  {
+    "id": "a2-cmp-013",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的比較詞",
+    "stem": "Le TGV est ___ rapide que le bus.",
+    "options": [
+      "plus",
+      "plus de",
+      "mieux",
+      "meilleur"
+    ],
+    "answer": 0,
+    "explanation": "形容詞比較級：plus + 形容詞 + que。"
+  },
+  {
+    "id": "a2-cmp-014",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出「比較好」",
+    "stem": "Ce café est ___ que celui d'hier.",
+    "options": [
+      "meilleur",
+      "mieux",
+      "plus bon",
+      "bien"
+    ],
+    "answer": 0,
+    "explanation": "形容詞 bon 的比較級是 meilleur。"
+  },
+  {
+    "id": "a2-cmp-015",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "loisirs",
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的最高級",
+    "stem": "Elle court le ___ de toute l'équipe.",
+    "options": [
+      "plus vite",
+      "plus rapide",
+      "meilleur",
+      "mieux de"
+    ],
+    "answer": 0,
+    "explanation": "修飾動詞 courir 用副詞 vite：le plus vite。"
+  },
+  {
+    "id": "a2-cmp-016",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "famille",
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入比較詞（提示：比較多，後面是名詞）",
+    "stem": "Il a ___ amis que moi.",
+    "answers": [
+      "plus d'"
+    ],
+    "explanation": "名詞的比較級：plus de；amis 以母音開頭：plus d'。"
+  },
+  {
+    "id": "a2-cmp-017",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "voyage",
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入最高級需要的字",
+    "stem": "C'est la ville la ___ belle du monde.",
+    "answers": [
+      "plus"
+    ],
+    "explanation": "最高級：la plus + 形容詞。"
+  },
+  {
+    "id": "a2-cmp-018",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 bien 的比較級",
+    "stem": "Tu chantes ___ que lui.",
+    "answers": [
+      "mieux"
+    ],
+    "explanation": "副詞 bien 的比較級是 mieux。"
+  },
+  {
+    "id": "a2-cmp-019",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：巴黎比里昂大。",
+    "stem": "",
+    "answers": [
+      "Paris est plus grand que Lyon.",
+      "Paris est plus grande que Lyon."
+    ],
+    "explanation": "plus + 形容詞 + que。"
+  },
+  {
+    "id": "a2-cmp-020",
+    "level": "A2",
+    "grammar": "comparatif",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：她和她媽媽一樣高。",
+    "stem": "",
+    "answers": [
+      "Elle est aussi grande que sa mère.",
+      "Elle est aussi grande que sa maman."
+    ],
+    "explanation": "同等比較：aussi + 形容詞 + que。"
   }
 ]

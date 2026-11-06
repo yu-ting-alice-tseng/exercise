@@ -215,5 +215,149 @@
       "Il a essayé de vous appeler."
     ],
     "explanation": "essayer de + 原形動詞。"
+  },
+  {
+    "id": "a2-vp-013",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的介系詞",
+    "stem": "J'ai envie ___ dormir.",
+    "options": [
+      "de",
+      "à",
+      "pour",
+      "en"
+    ],
+    "answer": 0,
+    "explanation": "avoir envie de＝想要。"
+  },
+  {
+    "id": "a2-vp-014",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "famille",
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Il aide sa mère ___ faire la cuisine.",
+    "options": [
+      "à",
+      "de",
+      "pour",
+      "en"
+    ],
+    "answer": 0,
+    "explanation": "aider quelqu'un à + 原形動詞。"
+  },
+  {
+    "id": "a2-vp-015",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Arrête ___ parler !",
+    "options": [
+      "de",
+      "à",
+      "pour",
+      "en"
+    ],
+    "answer": 0,
+    "explanation": "arrêter de + 原形動詞。"
+  },
+  {
+    "id": "a2-vp-016",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 à 或 de",
+    "stem": "Elle continue ___ travailler.",
+    "answers": [
+      "à",
+      "de"
+    ],
+    "explanation": "continuer à／de + 原形動詞，兩種都可以。"
+  },
+  {
+    "id": "a2-vp-017",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 à 或 de",
+    "stem": "N'oublie pas ___ fermer la fenêtre.",
+    "answers": [
+      "de"
+    ],
+    "explanation": "oublier de + 原形動詞。"
+  },
+  {
+    "id": "a2-vp-018",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 à 或 de",
+    "stem": "Ils ont commencé ___ manger.",
+    "answers": [
+      "à"
+    ],
+    "explanation": "commencer à + 原形動詞。"
+  },
+  {
+    "id": "a2-vp-019",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我需要休息。",
+    "stem": "",
+    "answers": [
+      "J'ai besoin de me reposer.",
+      "J'ai besoin de repos."
+    ],
+    "explanation": "avoir besoin de + 原形動詞或名詞。"
+  },
+  {
+    "id": "a2-vp-020",
+    "level": "A2",
+    "grammar": "verbes-prepositions",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：他們決定去法國。",
+    "stem": "",
+    "answers": [
+      "Ils ont décidé d'aller en France.",
+      "Elles ont décidé d'aller en France."
+    ],
+    "explanation": "décider de + 原形；aller 以母音開頭：d'aller。"
   }
 ]

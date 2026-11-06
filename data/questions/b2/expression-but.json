@@ -230,5 +230,151 @@
       "Parle doucement afin de ne pas réveiller les enfants."
     ],
     "explanation": "pour ne pas + 原形動詞表示「以免」。"
+  },
+  {
+    "id": "b2-but-013",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的表達方式",
+    "stem": "Je travaille ___ gagner de l'argent.",
+    "options": [
+      "pour",
+      "pour que",
+      "afin que",
+      "de peur que"
+    ],
+    "answer": 0,
+    "explanation": "主詞相同時用 pour + 原形動詞。"
+  },
+  {
+    "id": "b2-but-014",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Je t'explique pour que tu ___.",
+    "options": [
+      "comprennes",
+      "comprends",
+      "comprendras",
+      "comprendre"
+    ],
+    "answer": 0,
+    "explanation": "pour que 後面接虛擬式。"
+  },
+  {
+    "id": "b2-but-015",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的表達方式",
+    "stem": "Il met un manteau ___ attraper froid.",
+    "options": [
+      "de peur d'",
+      "pour",
+      "afin d'",
+      "pour qu'"
+    ],
+    "answer": 0,
+    "explanation": "de peur de + 原形動詞＝怕…。"
+  },
+  {
+    "id": "b2-but-016",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的正確形式",
+    "stem": "Parle plus fort afin que tout le monde t'___ (entendre).",
+    "answers": [
+      "entende"
+    ],
+    "explanation": "afin que 接虛擬式：entende。"
+  },
+  {
+    "id": "b2-but-017",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的正確形式",
+    "stem": "Partons tôt de façon à ___ (éviter) les bouchons.",
+    "answers": [
+      "éviter"
+    ],
+    "explanation": "de façon à + 原形動詞。"
+  },
+  {
+    "id": "b2-but-018",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的正確形式",
+    "stem": "Ferme la fenêtre de peur qu'il ne ___ (pleuvoir).",
+    "answers": [
+      "pleuve"
+    ],
+    "explanation": "de peur que 接虛擬式，常加贅詞 ne。"
+  },
+  {
+    "id": "b2-but-019",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我很早起床是為了不遲到。（用 pour ne pas）",
+    "stem": "",
+    "answers": [
+      "Je me lève tôt pour ne pas être en retard.",
+      "Je me lève tôt pour ne pas arriver en retard.",
+      "Je me lève très tôt pour ne pas être en retard.",
+      "Je me lève très tôt pour ne pas arriver en retard."
+    ],
+    "explanation": "pour ne pas + 原形動詞，否定詞放在原形動詞前面。"
+  },
+  {
+    "id": "b2-but-020",
+    "level": "B2",
+    "grammar": "expression-but",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：我給你我的電話號碼，好讓你能打給我。（用 pour que）",
+    "stem": "",
+    "answers": [
+      "Je te donne mon numéro pour que tu puisses m'appeler.",
+      "Je te donne mon numéro de téléphone pour que tu puisses m'appeler.",
+      "Je vous donne mon numéro pour que vous puissiez m'appeler.",
+      "Je vous donne mon numéro de téléphone pour que vous puissiez m'appeler."
+    ],
+    "explanation": "主詞不同時用 pour que + 虛擬式。"
   }
 ]

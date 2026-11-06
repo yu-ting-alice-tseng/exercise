@@ -221,5 +221,149 @@
       "Nous sommes restées à Paris pendant une semaine."
     ],
     "explanation": "pendant 表示持續的時間，也可以省略；passer une semaine 也很常用。"
+  },
+  {
+    "id": "a2-pt-013",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的時間表達（到現在還在等）",
+    "stem": "Je l'attends ___ une heure !",
+    "options": [
+      "depuis",
+      "il y a",
+      "dans",
+      "en"
+    ],
+    "answer": 0,
+    "explanation": "depuis：從過去持續到現在。"
+  },
+  {
+    "id": "a2-pt-014",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的時間表達（住了十年，已經結束）",
+    "stem": "Il a vécu à Paris ___ dix ans, puis il est parti.",
+    "options": [
+      "pendant",
+      "depuis",
+      "dans",
+      "il y a"
+    ],
+    "answer": 0,
+    "explanation": "已經結束的一段時間用 pendant。"
+  },
+  {
+    "id": "a2-pt-015",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出表示「三天後」的時間表達",
+    "stem": "Je pars en vacances ___ trois jours.",
+    "options": [
+      "dans",
+      "il y a",
+      "depuis",
+      "en"
+    ],
+    "answer": 0,
+    "explanation": "dans + 時間長度＝…之後。"
+  },
+  {
+    "id": "a2-pt-016",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "presentation"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入時間表達（提示：一年前）",
+    "stem": "Je suis arrivé en France ___ un an.",
+    "answers": [
+      "il y a"
+    ],
+    "explanation": "il y a + 時間長度＝…以前。"
+  },
+  {
+    "id": "a2-pt-017",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入時間介系詞（提示：持續了兩小時）",
+    "stem": "Nous avons marché ___ deux heures.",
+    "answers": [
+      "pendant"
+    ],
+    "explanation": "pendant＝持續。"
+  },
+  {
+    "id": "a2-pt-018",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入時間介系詞（提示：花了三十分鐘）",
+    "stem": "Il a fait le trajet ___ trente minutes.",
+    "answers": [
+      "en"
+    ],
+    "explanation": "en + 時間長度＝花多少時間完成。"
+  },
+  {
+    "id": "a2-pt-019",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我認識他十年了。",
+    "stem": "",
+    "answers": [
+      "Je le connais depuis dix ans.",
+      "Ça fait dix ans que je le connais.",
+      "Il y a dix ans que je le connais."
+    ],
+    "explanation": "持續到現在：depuis + 現在式。"
+  },
+  {
+    "id": "a2-pt-020",
+    "level": "A2",
+    "grammar": "prepositions-temps",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我一個小時後回來。",
+    "stem": "",
+    "answers": [
+      "Je reviens dans une heure.",
+      "Je serai de retour dans une heure.",
+      "Je rentre dans une heure."
+    ],
+    "explanation": "dans une heure＝一小時後。"
   }
 ]

@@ -230,5 +230,151 @@
       "D'ailleurs, ce projet n'est pas réaliste."
     ],
     "explanation": "par ailleurs、en outre、de plus 用來補充論點。"
+  },
+  {
+    "id": "c1-arg-013",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出合適的連接詞（表示讓步後的反駁）",
+    "stem": "Ce travail est bien payé ; ___, il est très stressant.",
+    "options": [
+      "toutefois",
+      "ainsi",
+      "en effet",
+      "donc"
+    ],
+    "answer": 0,
+    "explanation": "toutefois＝然而，表示轉折。"
+  },
+  {
+    "id": "c1-arg-014",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出合適的連接詞（舉例）",
+    "stem": "Plusieurs pays, ___ la France, ont adopté cette loi.",
+    "options": [
+      "notamment",
+      "néanmoins",
+      "désormais",
+      "dorénavant"
+    ],
+    "answer": 0,
+    "explanation": "notamment＝尤其是、例如。"
+  },
+  {
+    "id": "c1-arg-015",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出合適的說法（表達反對意見）",
+    "stem": "Contrairement ___ ce qu'on pense, le sucre n'est pas un aliment anodin.",
+    "options": [
+      "à",
+      "de",
+      "que",
+      "par"
+    ],
+    "answer": 0,
+    "explanation": "contrairement à＝與…相反。"
+  },
+  {
+    "id": "c1-arg-016",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入表示「一方面」的說法",
+    "stem": "D'une ___, c'est utile ; d'autre part, c'est cher.",
+    "answers": [
+      "part"
+    ],
+    "explanation": "d'une part… d'autre part…。"
+  },
+  {
+    "id": "c1-arg-017",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入表示「換言之」的說法",
+    "stem": "Il refuse de signer ; ___ dire, le projet est bloqué.",
+    "answers": [
+      "autrement"
+    ],
+    "explanation": "autrement dit＝換句話說。"
+  },
+  {
+    "id": "c1-arg-018",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入表示「從…角度來看」的字",
+    "stem": "D'un point de ___ économique, cette mesure est efficace.",
+    "answers": [
+      "vue"
+    ],
+    "explanation": "d'un point de vue + 形容詞＝從…的角度來看。"
+  },
+  {
+    "id": "c1-arg-019",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：與一般人想的相反，運動不一定能讓人變瘦。（用 Contrairement à ce qu'on pense）",
+    "stem": "",
+    "answers": [
+      "Contrairement à ce qu'on pense, le sport ne fait pas toujours maigrir.",
+      "Contrairement à ce qu'on pense, le sport ne fait pas forcément maigrir.",
+      "Contrairement à ce que l'on pense, le sport ne fait pas toujours maigrir.",
+      "Contrairement à ce que l'on pense, le sport ne fait pas forcément maigrir."
+    ],
+    "explanation": "contrairement à ce qu'on pense 用來反駁常見看法。"
+  },
+  {
+    "id": "c1-arg-020",
+    "level": "C1",
+    "grammar": "argumentation",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：首先，我想說明問題。（用 En premier lieu）",
+    "stem": "",
+    "answers": [
+      "En premier lieu, je voudrais présenter le problème.",
+      "En premier lieu, je voudrais expliquer le problème.",
+      "En premier lieu, j'aimerais présenter le problème.",
+      "En premier lieu, j'aimerais expliquer le problème."
+    ],
+    "explanation": "en premier lieu 用於論述開頭，比 d'abord 正式。"
   }
 ]

@@ -241,5 +241,151 @@
       "Je suis sortie tôt pour ne pas rater le train."
     ],
     "explanation": "表示目的的否定：pour ne pas / afin de ne pas + 原形動詞（兩個否定詞都放在原形動詞前面）。"
+  },
+  {
+    "id": "b2-con-013",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "sante"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出最適合的連接詞",
+    "stem": "Il était malade, ___ il est resté à la maison.",
+    "options": [
+      "donc",
+      "pourtant",
+      "car",
+      "bien que"
+    ],
+    "answer": 0,
+    "explanation": "donc 表示結果：所以。"
+  },
+  {
+    "id": "b2-con-014",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出最適合的連接詞",
+    "stem": "Je ne suis pas venu ___ j'avais trop de travail.",
+    "options": [
+      "car",
+      "donc",
+      "alors",
+      "pourtant"
+    ],
+    "answer": 0,
+    "explanation": "car 表示原因，放在句中。"
+  },
+  {
+    "id": "b2-con-015",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "meteo"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出最適合的連接詞",
+    "stem": "Il fait beau ; ___, il fait un peu froid.",
+    "options": [
+      "cependant",
+      "ainsi",
+      "c'est pourquoi",
+      "par conséquent"
+    ],
+    "answer": 0,
+    "explanation": "cependant 表示轉折：然而。"
+  },
+  {
+    "id": "b2-con-016",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入最適合的連接詞（donc、car、mais、pourtant）",
+    "stem": "Il a beaucoup mangé, ___ il a encore faim.",
+    "answers": [
+      "pourtant",
+      "mais"
+    ],
+    "explanation": "前後相反，用轉折連接詞。"
+  },
+  {
+    "id": "b2-con-017",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入最適合的連接詞（d'abord、ensuite、enfin）",
+    "stem": "___, lisez le texte ; ensuite, répondez aux questions.",
+    "answers": [
+      "D'abord",
+      "d'abord"
+    ],
+    "explanation": "d'abord＝首先，用來開始列舉步驟。"
+  },
+  {
+    "id": "b2-con-018",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入最適合的連接詞（grâce à、à cause de）",
+    "stem": "Nous sommes arrivés en retard ___ la grève.",
+    "answers": [
+      "à cause de"
+    ],
+    "explanation": "à cause de 表示負面原因；grâce à 表示正面原因。"
+  },
+  {
+    "id": "b2-con-019",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "meteo"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：因為下雨，所以比賽取消了。（用 à cause de）",
+    "stem": "",
+    "answers": [
+      "Le match a été annulé à cause de la pluie.",
+      "À cause de la pluie, le match a été annulé."
+    ],
+    "explanation": "à cause de + 名詞表示負面原因。"
+  },
+  {
+    "id": "b2-con-020",
+    "level": "B2",
+    "grammar": "connecteurs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：多虧了你，我才通過考試。（用 grâce à）",
+    "stem": "",
+    "answers": [
+      "Grâce à toi, j'ai réussi mon examen.",
+      "J'ai réussi mon examen grâce à toi.",
+      "Grâce à toi, j'ai réussi l'examen.",
+      "J'ai réussi l'examen grâce à toi."
+    ],
+    "explanation": "grâce à 表示正面原因。"
   }
 ]

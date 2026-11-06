@@ -210,5 +210,150 @@
       "Ne tourne pas autour du pot !"
     ],
     "explanation": "tourner autour du pot：繞著鍋子轉，表示說話不直接。"
+  },
+  {
+    "id": "c2-exp-013",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出這個慣用語的意思",
+    "stem": "« Avoir la flemme »",
+    "options": [
+      "懶得做事",
+      "很害怕",
+      "很生氣",
+      "很餓"
+    ],
+    "answer": 0,
+    "explanation": "avoir la flemme＝懶得動。"
+  },
+  {
+    "id": "c2-exp-014",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出這個慣用語的意思",
+    "stem": "« Casser les pieds à quelqu'un »",
+    "options": [
+      "讓人很煩",
+      "讓人受傷",
+      "讓人跌倒",
+      "讓人很開心"
+    ],
+    "answer": 0,
+    "explanation": "casser les pieds＝煩死人。"
+  },
+  {
+    "id": "c2-exp-015",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出這個慣用語的意思",
+    "stem": "« Être soupe au lait »",
+    "options": [
+      "容易發脾氣",
+      "很愛喝湯",
+      "很溫柔",
+      "很會煮飯"
+    ],
+    "answer": 0,
+    "explanation": "être soupe au lait＝像煮牛奶一樣容易沸騰，指脾氣急。"
+  },
+  {
+    "id": "c2-exp-016",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入缺少的字（意思：睡得很熟）",
+    "stem": "Il dort comme un ___.",
+    "answers": [
+      "loir",
+      "bébé"
+    ],
+    "explanation": "dormir comme un loir（睡鼠）＝睡得很熟。"
+  },
+  {
+    "id": "c2-exp-017",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入缺少的字（意思：拐彎抹角）",
+    "stem": "Arrête de tourner autour du ___ !",
+    "answers": [
+      "pot"
+    ],
+    "explanation": "tourner autour du pot＝說話繞圈子。"
+  },
+  {
+    "id": "c2-exp-018",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入缺少的字（意思：很快就完成）",
+    "stem": "Il a fait ça en deux ___ trois mouvements.",
+    "answers": [
+      "temps"
+    ],
+    "explanation": "en deux temps trois mouvements＝三兩下就完成。"
+  },
+  {
+    "id": "c2-exp-019",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 avoir la flemme 翻譯成法文：我今天懶得煮飯。",
+    "stem": "",
+    "answers": [
+      "J'ai la flemme de cuisiner aujourd'hui.",
+      "Aujourd'hui, j'ai la flemme de cuisiner.",
+      "J'ai la flemme de faire la cuisine aujourd'hui.",
+      "Aujourd'hui, j'ai la flemme de faire la cuisine."
+    ],
+    "explanation": "avoir la flemme de + 原形動詞。"
+  },
+  {
+    "id": "c2-exp-020",
+    "level": "C2",
+    "grammar": "expressions",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請用 casser les pieds 翻譯成法文：他讓我很煩。",
+    "stem": "",
+    "answers": [
+      "Il me casse les pieds.",
+      "Il me casse vraiment les pieds."
+    ],
+    "explanation": "casser les pieds à qqn → il me casse les pieds。"
   }
 ]

@@ -226,5 +226,150 @@
       "Hier soir, elle s'est couchée tôt."
     ],
     "explanation": "反身動詞的複合過去式用 être，過去分詞要配合主詞 elle：couchée。"
+  },
+  {
+    "id": "a2-pro-013",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Ils ___ à huit heures.",
+    "options": [
+      "se réveillent",
+      "se réveille",
+      "nous réveillons",
+      "réveillent"
+    ],
+    "answer": 0,
+    "explanation": "ils → se réveillent。"
+  },
+  {
+    "id": "a2-pro-014",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Tu ___ souvent avec ta sœur ?",
+    "options": [
+      "te disputes",
+      "se disputes",
+      "te dispute",
+      "disputes"
+    ],
+    "answer": 0,
+    "explanation": "tu → te disputes。"
+  },
+  {
+    "id": "a2-pro-015",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "presentation"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的複合過去式",
+    "stem": "Nous ___ hier au café.",
+    "options": [
+      "nous sommes rencontrés",
+      "nous avons rencontrés",
+      "sommes rencontrés",
+      "nous sommes rencontré"
+    ],
+    "answer": 0,
+    "explanation": "反身動詞用 être，過去分詞配合 nous。"
+  },
+  {
+    "id": "a2-pro-016",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的現在式（連同反身代名詞）",
+    "stem": "Je ___ (s'habiller) vite le matin.",
+    "answers": [
+      "m'habille"
+    ],
+    "explanation": "me 遇到不發音的 h 省略成 m'。"
+  },
+  {
+    "id": "a2-pro-017",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的現在式（連同反身代名詞）",
+    "stem": "Elle ___ (se maquiller) rarement.",
+    "answers": [
+      "se maquille"
+    ],
+    "explanation": "elle → se maquille。"
+  },
+  {
+    "id": "a2-pro-018",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的現在式（連同反身代名詞）",
+    "stem": "Vous ___ (s'amuser) bien ?",
+    "answers": [
+      "vous amusez"
+    ],
+    "explanation": "vous → vous amusez。"
+  },
+  {
+    "id": "a2-pro-019",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我每天晚上十一點睡覺。",
+    "stem": "",
+    "answers": [
+      "Je me couche à onze heures tous les soirs.",
+      "Tous les soirs, je me couche à onze heures.",
+      "Je me couche à 23 heures tous les soirs.",
+      "Je me couche tous les soirs à onze heures.",
+      "Je me couche à vingt-trois heures tous les soirs."
+    ],
+    "explanation": "se coucher：je me couche。"
+  },
+  {
+    "id": "a2-pro-020",
+    "level": "A2",
+    "grammar": "pronominaux",
+    "themes": [
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：別擔心！（對 tu）",
+    "stem": "",
+    "answers": [
+      "Ne t'inquiète pas !",
+      "T'inquiète pas !"
+    ],
+    "explanation": "否定命令式：ne + te + 動詞 + pas。"
   }
 ]

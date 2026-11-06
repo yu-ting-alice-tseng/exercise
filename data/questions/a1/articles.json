@@ -223,5 +223,149 @@
       "J'aime bien le café, mais je n'aime pas le thé."
     ],
     "explanation": "aimer 後面用定冠詞，否定句 ne…pas 之後定冠詞不變（le thé），這點和不定冠詞變成 de 不同。"
+  },
+  {
+    "id": "a1-art-013",
+    "level": "A1",
+    "grammar": "articles",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的冠詞",
+    "stem": "Voici ___ photo de mes vacances.",
+    "options": [
+      "une",
+      "un",
+      "des",
+      "le"
+    ],
+    "answer": 0,
+    "explanation": "photo 是陰性，「一張照片」用 une。"
+  },
+  {
+    "id": "a1-art-014",
+    "level": "A1",
+    "grammar": "articles",
+    "themes": [
+      "voyage",
+      "culture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的冠詞",
+    "stem": "___ Japon est un beau pays.",
+    "options": [
+      "Le",
+      "La",
+      "L'",
+      "Un"
+    ],
+    "answer": 0,
+    "explanation": "國名前面要加定冠詞，Japon 是陽性：le Japon。"
+  },
+  {
+    "id": "a1-art-015",
+    "level": "A1",
+    "grammar": "articles",
+    "themes": [
+      "achats"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的冠詞",
+    "stem": "Il y a ___ chaussures dans la vitrine.",
+    "options": [
+      "des",
+      "les",
+      "une",
+      "du"
+    ],
+    "answer": 0,
+    "explanation": "il y a 後面接不特定的複數名詞，用 des。"
+  },
+  {
+    "id": "a1-art-016",
+    "level": "A1",
+    "grammar": "articles",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入定冠詞（le、la、l'、les）",
+    "stem": "___ hôtel est près de la gare.",
+    "answers": [
+      "l'"
+    ],
+    "explanation": "hôtel 以不發音的 h 開頭，le 省略成 l'。"
+  },
+  {
+    "id": "a1-art-017",
+    "level": "A1",
+    "grammar": "articles",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入不定冠詞（un、une、des）",
+    "stem": "C'est ___ bonne idée !",
+    "answers": [
+      "une"
+    ],
+    "explanation": "idée 是陰性，用 une。"
+  },
+  {
+    "id": "a1-art-018",
+    "level": "A1",
+    "grammar": "articles",
+    "themes": [
+      "meteo"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入定冠詞（le、la、l'、les）",
+    "stem": "Je déteste ___ pluie.",
+    "answers": [
+      "la"
+    ],
+    "explanation": "détester 表示喜好，後面用定冠詞；pluie 是陰性。"
+  },
+  {
+    "id": "a1-art-019",
+    "level": "A1",
+    "grammar": "articles",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：這是一部好電影。",
+    "stem": "",
+    "answers": [
+      "C'est un bon film."
+    ],
+    "explanation": "film 是陽性，用 un；bon 放在名詞前面。"
+  },
+  {
+    "id": "a1-art-020",
+    "level": "A1",
+    "grammar": "articles",
+    "themes": [
+      "famille",
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我喜歡貓，但不喜歡狗。",
+    "stem": "",
+    "answers": [
+      "J'aime les chats, mais je n'aime pas les chiens.",
+      "J'aime les chats mais pas les chiens.",
+      "J'aime les chats, mais pas les chiens."
+    ],
+    "explanation": "aimer 後面用定冠詞 les；否定句中定冠詞不變。"
   }
 ]

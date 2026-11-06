@@ -214,5 +214,148 @@
       "Oui, j'y suis allée."
     ],
     "explanation": "y 代替 en France，放在助動詞前面：j'y suis allé(e)。否定時說 je n'y suis jamais allé(e)。"
+  },
+  {
+    "id": "a2-yen-013",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Tu as des frères ? Oui, j'___ ai un.",
+    "options": [
+      "en",
+      "y",
+      "les",
+      "leur"
+    ],
+    "answer": 0,
+    "explanation": "有數量時用 en。"
+  },
+  {
+    "id": "a2-yen-014",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "achats"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Vous allez à la banque ? Oui, nous ___ allons.",
+    "options": [
+      "y",
+      "en",
+      "la",
+      "lui"
+    ],
+    "answer": 0,
+    "explanation": "à + 地點用 y。"
+  },
+  {
+    "id": "a2-yen-015",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的代名詞",
+    "stem": "Tu t'occupes du dossier ? Oui, je m'___ occupe.",
+    "options": [
+      "en",
+      "y",
+      "le",
+      "lui"
+    ],
+    "answer": 0,
+    "explanation": "s'occuper de + 事物，用 en 代替。"
+  },
+  {
+    "id": "a2-yen-016",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 y 或 en",
+    "stem": "Tu penses à ton voyage ? Oui, j'___ pense souvent.",
+    "answers": [
+      "y"
+    ],
+    "explanation": "penser à + 事物：y。"
+  },
+  {
+    "id": "a2-yen-017",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 y 或 en",
+    "stem": "Elle boit du café ? Non, elle n'___ boit pas.",
+    "answers": [
+      "en"
+    ],
+    "explanation": "du café → en。"
+  },
+  {
+    "id": "a2-yen-018",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "logement"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 y 或 en",
+    "stem": "Ils habitent en Suisse ? Oui, ils ___ habitent depuis 2010.",
+    "answers": [
+      "y"
+    ],
+    "explanation": "en Suisse（地點）→ y。"
+  },
+  {
+    "id": "a2-yen-019",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "nourriture",
+      "achats"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請用 en 回答：要三個。",
+    "stem": "Combien de pommes veux-tu ?",
+    "answers": [
+      "J'en veux trois.",
+      "J'en voudrais trois."
+    ],
+    "explanation": "en 代替 pommes，數字放句尾。"
+  },
+  {
+    "id": "a2-yen-020",
+    "level": "A2",
+    "grammar": "y-en",
+    "themes": [
+      "achats"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 y 肯定回答。",
+    "stem": "Tu es allé au marché ?",
+    "answers": [
+      "Oui, j'y suis allé.",
+      "Oui, j'y suis allée."
+    ],
+    "explanation": "y 放在助動詞前面。"
   }
 ]

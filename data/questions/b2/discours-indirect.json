@@ -208,5 +208,146 @@
       "Le professeur m'a demandé si j'avais fini."
     ],
     "explanation": "是非問句用 si；複合過去式改成愈過去式。"
+  },
+  {
+    "id": "b2-di-013",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的間接引語",
+    "stem": "Elle dit : « J'habite à Lyon. » → Elle dit qu'elle ___ à Lyon.",
+    "options": [
+      "habite",
+      "habitait",
+      "habiterait",
+      "habite-t-elle"
+    ],
+    "answer": 0,
+    "explanation": "引述動詞是現在式 dit，時態不用改變；je 改成 elle。"
+  },
+  {
+    "id": "b2-di-014",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的間接引語",
+    "stem": "Elle a dit : « Je partirai demain. » → Elle a dit qu'elle ___ le lendemain.",
+    "options": [
+      "partirait",
+      "partira",
+      "partirais",
+      "partait"
+    ],
+    "answer": 0,
+    "explanation": "引述動詞是過去式時，未來式變條件式現在式；demain 變 le lendemain。"
+  },
+  {
+    "id": "b2-di-015",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的間接問句連接詞",
+    "stem": "« Tu viens ? » → Il me demande ___ je viens.",
+    "options": [
+      "si",
+      "que",
+      "ce que",
+      "qu'est-ce que"
+    ],
+    "answer": 0,
+    "explanation": "是非問句改成間接問句用 si。"
+  },
+  {
+    "id": "b2-di-016",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入正確的連接詞（que、si、ce que、ce qui）",
+    "stem": "« Qu'est-ce que vous voulez ? » → Le vendeur nous demande ___ nous voulons.",
+    "answers": [
+      "ce que"
+    ],
+    "explanation": "qu'est-ce que 在間接問句中變成 ce que。"
+  },
+  {
+    "id": "b2-di-017",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入正確的連接詞（que、si、ce que、ce qui）",
+    "stem": "« Qu'est-ce qui se passe ? » → Elle demande ___ se passe.",
+    "answers": [
+      "ce qui"
+    ],
+    "explanation": "qu'est-ce qui 在間接問句中變成 ce qui。"
+  },
+  {
+    "id": "b2-di-018",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的正確形式（時態轉換）",
+    "stem": "Il a dit : « J'ai fini. » → Il a dit qu'il ___ (finir).",
+    "answers": [
+      "avait fini"
+    ],
+    "explanation": "引述動詞是過去式時，複合過去式變愈過去式。"
+  },
+  {
+    "id": "b2-di-019",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請改寫成間接引語：Elle me dit : « Ferme la porte ! »",
+    "stem": "",
+    "answers": [
+      "Elle me dit de fermer la porte.",
+      "Elle me demande de fermer la porte."
+    ],
+    "explanation": "命令句改成間接引語：dire de + 原形動詞。"
+  },
+  {
+    "id": "b2-di-020",
+    "level": "B2",
+    "grammar": "discours-indirect",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請改寫成間接引語：Il m'a demandé : « Où vas-tu ? »",
+    "stem": "",
+    "answers": [
+      "Il m'a demandé où j'allais."
+    ],
+    "explanation": "疑問詞 où 保留，倒裝取消；過去式引述，現在式變未完成過去式。"
   }
 ]

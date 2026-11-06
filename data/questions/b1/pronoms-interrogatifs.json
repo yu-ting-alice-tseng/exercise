@@ -220,5 +220,153 @@
       "Qui attendez-vous ?"
     ],
     "explanation": "attendre 直接接受詞，問人用 qui。"
+  },
+  {
+    "id": "b1-pi-013",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的疑問代名詞",
+    "stem": "Il y a trois films ce soir. ___ veux-tu voir ?",
+    "options": [
+      "Lequel",
+      "Laquelle",
+      "Lesquels",
+      "Quel"
+    ],
+    "answer": 0,
+    "explanation": "問「哪一部」，film 是陽性單數：lequel。"
+  },
+  {
+    "id": "b1-pi-014",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的疑問代名詞",
+    "stem": "___ tu veux manger ?",
+    "options": [
+      "Qu'est-ce que",
+      "Qu'est-ce qui",
+      "Qui est-ce qui",
+      "Quoi"
+    ],
+    "answer": 0,
+    "explanation": "問「什麼」當受詞：qu'est-ce que。"
+  },
+  {
+    "id": "b1-pi-015",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的疑問代名詞",
+    "stem": "Avec ___ pars-tu en vacances ?",
+    "options": [
+      "qui",
+      "que",
+      "quoi",
+      "quel"
+    ],
+    "answer": 0,
+    "explanation": "介系詞後面問人：qui。"
+  },
+  {
+    "id": "b1-pi-016",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "sante"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入疑問代名詞（提示：什麼，當主詞）",
+    "stem": "___ ne va pas ?",
+    "answers": [
+      "qu'est-ce qui"
+    ],
+    "explanation": "事物當主詞：qu'est-ce qui。"
+  },
+  {
+    "id": "b1-pi-017",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入疑問代名詞（提示：哪些，陰性複數）",
+    "stem": "Parmi ces robes, ___ préfères-tu ?",
+    "answers": [
+      "lesquelles"
+    ],
+    "explanation": "robes 是陰性複數：lesquelles。"
+  },
+  {
+    "id": "b1-pi-018",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入疑問代名詞（提示：誰，當主詞）",
+    "stem": "___ a téléphoné ?",
+    "answers": [
+      "qui"
+    ],
+    "explanation": "問人當主詞：qui。"
+  },
+  {
+    "id": "b1-pi-019",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：你在找什麼？",
+    "stem": "",
+    "answers": [
+      "Qu'est-ce que tu cherches ?",
+      "Que cherches-tu ?",
+      "Tu cherches quoi ?",
+      "Qu'est-ce que vous cherchez ?",
+      "Que cherchez-vous ?"
+    ],
+    "explanation": "問「什麼」當受詞。"
+  },
+  {
+    "id": "b1-pi-020",
+    "level": "B1",
+    "grammar": "pronoms-interrogatifs",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：你在跟誰說話？",
+    "stem": "",
+    "answers": [
+      "À qui tu parles ?",
+      "À qui parles-tu ?",
+      "Tu parles à qui ?",
+      "À qui est-ce que tu parles ?",
+      "À qui parlez-vous ?"
+    ],
+    "explanation": "parler à quelqu'un，問句用 à qui。"
   }
 ]

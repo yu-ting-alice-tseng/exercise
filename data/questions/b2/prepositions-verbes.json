@@ -224,5 +224,151 @@
       "Il a cessé de fumer."
     ],
     "explanation": "arrêter de／cesser de + 原形動詞；renoncer à + 原形動詞。"
+  },
+  {
+    "id": "b2-pv-013",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Il a décidé ___ changer de travail.",
+    "options": [
+      "de",
+      "à",
+      "pour",
+      "（不填）"
+    ],
+    "answer": 0,
+    "explanation": "décider de + 原形動詞。"
+  },
+  {
+    "id": "b2-pv-014",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Elle a commencé ___ jouer du piano à cinq ans.",
+    "options": [
+      "à",
+      "de",
+      "par",
+      "en"
+    ],
+    "answer": 0,
+    "explanation": "commencer à + 原形動詞。"
+  },
+  {
+    "id": "b2-pv-015",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的介系詞",
+    "stem": "Je compte ___ toi pour m'aider.",
+    "options": [
+      "sur",
+      "à",
+      "de",
+      "avec"
+    ],
+    "answer": 0,
+    "explanation": "compter sur qqn＝靠某人。"
+  },
+  {
+    "id": "b2-pv-016",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入正確的介系詞（à 或 de）",
+    "stem": "Pense ___ acheter du pain.",
+    "answers": [
+      "à"
+    ],
+    "explanation": "penser à + 原形動詞＝記得做某事。"
+  },
+  {
+    "id": "b2-pv-017",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入正確的介系詞（à 或 de）",
+    "stem": "Il hésite ___ partir.",
+    "answers": [
+      "à"
+    ],
+    "explanation": "hésiter à + 原形動詞。"
+  },
+  {
+    "id": "b2-pv-018",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入正確的介系詞（à 或 de）",
+    "stem": "Les enfants ressemblent ___ leur père.",
+    "answers": [
+      "à"
+    ],
+    "explanation": "ressembler à qqn＝長得像某人。"
+  },
+  {
+    "id": "b2-pv-019",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我答應你會準時到。（用 promettre de）",
+    "stem": "",
+    "answers": [
+      "Je te promets d'arriver à l'heure.",
+      "Je vous promets d'arriver à l'heure.",
+      "Je te promets d'être à l'heure.",
+      "Je vous promets d'être à l'heure."
+    ],
+    "explanation": "promettre à qqn de faire qqch。"
+  },
+  {
+    "id": "b2-pv-020",
+    "level": "B2",
+    "grammar": "prepositions-verbes",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：他們邀請我們吃晚餐。（用 inviter à）",
+    "stem": "",
+    "answers": [
+      "Ils nous ont invités à dîner.",
+      "Ils nous invitent à dîner.",
+      "Ils nous ont invités à dîner chez eux.",
+      "Ils nous invitent à dîner chez eux."
+    ],
+    "explanation": "inviter qqn à faire qqch。"
   }
 ]

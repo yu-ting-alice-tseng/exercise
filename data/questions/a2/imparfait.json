@@ -230,5 +230,152 @@
       "Je regardais la télévision quand il est rentré à la maison."
     ],
     "explanation": "正在進行的背景用未完成過去式（je regardais），打斷它的事件用複合過去式（il est rentré）。"
+  },
+  {
+    "id": "a2-imp-013",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "presentation"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Quand il ___ jeune, il habitait à Lyon.",
+    "options": [
+      "était",
+      "a été",
+      "est",
+      "sera"
+    ],
+    "answer": 0,
+    "explanation": "過去的狀態用未完成過去式。"
+  },
+  {
+    "id": "a2-imp-014",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "meteo"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Il ___ quand je suis sorti.",
+    "options": [
+      "pleuvait",
+      "a plu",
+      "pleut",
+      "pleuvra"
+    ],
+    "answer": 0,
+    "explanation": "背景描述（正在下雨）用未完成過去式。"
+  },
+  {
+    "id": "a2-imp-015",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "voyage",
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Chaque été, nous ___ à la plage.",
+    "options": [
+      "allions",
+      "sommes allé",
+      "allaient",
+      "irions"
+    ],
+    "answer": 0,
+    "explanation": "過去反覆發生的習慣用未完成過去式：nous allions。"
+  },
+  {
+    "id": "a2-imp-016",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "presentation"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的未完成過去式",
+    "stem": "Elle ___ (avoir) les cheveux longs.",
+    "answers": [
+      "avait"
+    ],
+    "explanation": "描述過去的外表用未完成過去式。"
+  },
+  {
+    "id": "a2-imp-017",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的未完成過去式",
+    "stem": "Je ___ (faire) du piano quand j'étais petit.",
+    "answers": [
+      "faisais"
+    ],
+    "explanation": "faire 的詞幹 fais-：je faisais。"
+  },
+  {
+    "id": "a2-imp-018",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的未完成過去式",
+    "stem": "Vous ___ (dormir) quand j'ai appelé ?",
+    "answers": [
+      "dormiez"
+    ],
+    "explanation": "正在進行的動作被打斷，用未完成過去式：vous dormiez。"
+  },
+  {
+    "id": "a2-imp-019",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我小時候很怕狗。",
+    "stem": "",
+    "answers": [
+      "Quand j'étais petit, j'avais peur des chiens.",
+      "Quand j'étais petite, j'avais peur des chiens.",
+      "Enfant, j'avais peur des chiens.",
+      "Quand j'étais enfant, j'avais peur des chiens."
+    ],
+    "explanation": "avoir peur de + les chiens → des chiens。"
+  },
+  {
+    "id": "a2-imp-020",
+    "level": "A2",
+    "grammar": "imparfait",
+    "themes": [
+      "logement",
+      "achats"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：以前這裡有一家麵包店。",
+    "stem": "",
+    "answers": [
+      "Avant, il y avait une boulangerie ici.",
+      "Il y avait une boulangerie ici avant.",
+      "Autrefois, il y avait une boulangerie ici."
+    ],
+    "explanation": "il y a 的未完成過去式是 il y avait。"
   }
 ]

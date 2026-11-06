@@ -217,5 +217,149 @@
       "Nous habitons une belle vieille maison."
     ],
     "explanation": "beau 和 vieux 都放在名詞前面，陰性分別是 belle 和 vieille。"
+  },
+  {
+    "id": "a1-adj-013",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的形容詞形式",
+    "stem": "C'est une fille très ___.",
+    "options": [
+      "gentille",
+      "gentil",
+      "gentile",
+      "gentils"
+    ],
+    "answer": 0,
+    "explanation": "gentil 的陰性雙寫 l：gentille。"
+  },
+  {
+    "id": "a1-adj-014",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "voyage",
+      "achats"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的形容詞形式",
+    "stem": "J'ai acheté une ___ voiture.",
+    "options": [
+      "nouvelle",
+      "nouveau",
+      "nouvel",
+      "nouveaux"
+    ],
+    "answer": 0,
+    "explanation": "nouveau 的陰性是 nouvelle。"
+  },
+  {
+    "id": "a1-adj-015",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的形容詞形式",
+    "stem": "Ce sont des livres ___.",
+    "options": [
+      "intéressants",
+      "intéressant",
+      "intéressantes",
+      "intéressante"
+    ],
+    "answer": 0,
+    "explanation": "livres 是陽性複數，加 s。"
+  },
+  {
+    "id": "a1-adj-016",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內形容詞的正確形式",
+    "stem": "C'est un ___ (vieux) ami.",
+    "answers": [
+      "vieil"
+    ],
+    "explanation": "vieux 放在母音開頭的陽性單數名詞前面，要變成 vieil。"
+  },
+  {
+    "id": "a1-adj-017",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內形容詞的正確形式",
+    "stem": "Elle porte une robe ___ (blanc).",
+    "answers": [
+      "blanche"
+    ],
+    "explanation": "blanc 的陰性是 blanche。"
+  },
+  {
+    "id": "a1-adj-018",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內形容詞的正確形式",
+    "stem": "Les rues sont ___ (long).",
+    "answers": [
+      "longues"
+    ],
+    "explanation": "long 的陰性是 longue，複數再加 s。"
+  },
+  {
+    "id": "a1-adj-019",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：他有一隻大狗。",
+    "stem": "",
+    "answers": [
+      "Il a un grand chien."
+    ],
+    "explanation": "grand 放在名詞前面。"
+  },
+  {
+    "id": "a1-adj-020",
+    "level": "A1",
+    "grammar": "adjectifs",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：這些花很漂亮。",
+    "stem": "",
+    "answers": [
+      "Ces fleurs sont belles.",
+      "Les fleurs sont belles.",
+      "Ces fleurs sont jolies.",
+      "Les fleurs sont jolies."
+    ],
+    "explanation": "fleur 是陰性：belles／jolies。"
   }
 ]

@@ -218,5 +218,147 @@
       "Ils se sont écrit énormément de lettres."
     ],
     "explanation": "écrire à quelqu'un：se 是間接受詞，直接受詞 lettres 在後面，所以過去分詞 écrit 不配合。"
+  },
+  {
+    "id": "c1-ap-013",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的過去分詞",
+    "stem": "La chanson qu'elle a ___ était magnifique.",
+    "options": [
+      "chantée",
+      "chanté",
+      "chantés",
+      "chantées"
+    ],
+    "answer": 0,
+    "explanation": "直接受詞 que（＝la chanson，陰性單數）在前，過去分詞配合：chantée。"
+  },
+  {
+    "id": "c1-ap-014",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的過去分詞",
+    "stem": "Elles se sont ___ des cadeaux.",
+    "options": [
+      "offert",
+      "offertes",
+      "offerts",
+      "offerte"
+    ],
+    "answer": 0,
+    "explanation": "直接受詞 des cadeaux 在後面，se 是間接受詞，過去分詞不配合。"
+  },
+  {
+    "id": "c1-ap-015",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "voyage"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的過去分詞",
+    "stem": "Les touristes sont ___ très tôt.",
+    "options": [
+      "partis",
+      "parti",
+      "parties",
+      "partie"
+    ],
+    "answer": 0,
+    "explanation": "partir 用 être，配合主詞 les touristes（陽性複數）。"
+  },
+  {
+    "id": "c1-ap-016",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的過去分詞（注意配合）",
+    "stem": "Ces chaussures, je les ai ___ (acheter) en solde.",
+    "answers": [
+      "achetées"
+    ],
+    "explanation": "les（＝ces chaussures，陰性複數）在前，加 -ées。"
+  },
+  {
+    "id": "c1-ap-017",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的過去分詞（注意配合）",
+    "stem": "Elle s'est ___ (laver) les cheveux.",
+    "answers": [
+      "lavé"
+    ],
+    "explanation": "直接受詞 les cheveux 在後面，過去分詞不配合。"
+  },
+  {
+    "id": "c1-ap-018",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "culture"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的過去分詞（注意配合）",
+    "stem": "La pièce que nous avons ___ (voir) jouer était drôle.",
+    "answers": [
+      "vu"
+    ],
+    "explanation": "que 是 jouer 的受詞而不是 voir 的施動者，所以不配合。"
+  },
+  {
+    "id": "c1-ap-019",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用代名詞取代 ta mère 改寫（注意過去分詞的配合）。",
+    "stem": "J'ai appelé ta mère.",
+    "answers": [
+      "Je l'ai appelée."
+    ],
+    "explanation": "l'（＝ta mère，陰性）在前，過去分詞加 -e。"
+  },
+  {
+    "id": "c1-ap-020",
+    "level": "C1",
+    "grammar": "accord-participe",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：她們在派對上玩得很開心。（用 s'amuser）",
+    "stem": "",
+    "answers": [
+      "Elles se sont bien amusées à la fête.",
+      "Elles se sont beaucoup amusées à la fête.",
+      "Elles se sont bien amusées pendant la fête."
+    ],
+    "explanation": "代動詞 s'amuser，se 是直接受詞，過去分詞配合主詞：amusées。"
   }
 ]

@@ -231,5 +231,149 @@
       "Il faut qu'on finisse avant 17 heures."
     ],
     "explanation": "il faut que + 虛擬式。finir 的詞幹是 finiss-：que nous finissions。"
+  },
+  {
+    "id": "b1-subj-013",
+    "level": "B1",
+    "grammar": "subjonctif",
+    "themes": [
+      "achats"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Il faut que j'___ à la banque.",
+    "options": [
+      "aille",
+      "vais",
+      "irai",
+      "allais"
+    ],
+    "answer": 0,
+    "explanation": "il faut que + 虛擬式：que j'aille。"
+  },
+  {
+    "id": "b1-subj-014",
+    "level": "B1",
+    "grammar": "subjonctif",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Je veux que tu ___ la vérité.",
+    "options": [
+      "dises",
+      "dis",
+      "diras",
+      "disais"
+    ],
+    "answer": 0,
+    "explanation": "vouloir que + 虛擬式：que tu dises。"
+  },
+  {
+    "id": "b1-subj-015",
+    "level": "B1",
+    "grammar": "subjonctif",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "C'est dommage qu'il ne ___ pas venir.",
+    "options": [
+      "puisse",
+      "peut",
+      "pourra",
+      "pouvait"
+    ],
+    "answer": 0,
+    "explanation": "表達遺憾後面用虛擬式：qu'il puisse。"
+  },
+  {
+    "id": "b1-subj-016",
+    "level": "B1",
+    "grammar": "subjonctif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的虛擬式現在式",
+    "stem": "Il faut que vous ___ (être) patients.",
+    "answers": [
+      "soyez"
+    ],
+    "explanation": "être 的虛擬式：que vous soyez。"
+  },
+  {
+    "id": "b1-subj-017",
+    "level": "B1",
+    "grammar": "subjonctif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入 avoir 的虛擬式（構成虛擬式過去式）",
+    "stem": "Je suis contente que tu ___ réussi.",
+    "answers": [
+      "aies"
+    ],
+    "explanation": "虛擬式過去式＝avoir 的虛擬式 + 過去分詞：que tu aies réussi。"
+  },
+  {
+    "id": "b1-subj-018",
+    "level": "B1",
+    "grammar": "subjonctif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入括號內動詞的虛擬式現在式",
+    "stem": "Il est important que nous ___ (parler).",
+    "answers": [
+      "parlions"
+    ],
+    "explanation": "il est important que + 虛擬式。"
+  },
+  {
+    "id": "b1-subj-019",
+    "level": "B1",
+    "grammar": "subjonctif",
+    "themes": [
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我希望你明天來。（用 vouloir 或 aimer）",
+    "stem": "",
+    "answers": [
+      "Je veux que tu viennes demain.",
+      "Je voudrais que tu viennes demain.",
+      "J'aimerais que tu viennes demain.",
+      "Je souhaite que tu viennes demain."
+    ],
+    "explanation": "表達希望 + que + 虛擬式。"
+  },
+  {
+    "id": "b1-subj-020",
+    "level": "B1",
+    "grammar": "subjonctif",
+    "themes": [
+      "sante"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請用 il faut que 翻譯成法文：你必須休息。",
+    "stem": "",
+    "answers": [
+      "Il faut que tu te reposes.",
+      "Il faut que vous vous reposiez."
+    ],
+    "explanation": "il faut que + 虛擬式：que tu te reposes。"
   }
 ]

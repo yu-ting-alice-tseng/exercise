@@ -224,5 +224,147 @@
       "Je trouve que c'est une bonne idée."
     ],
     "explanation": "肯定的 penser、croire、trouver que 表示說話者的看法，用直陳式。"
+  },
+  {
+    "id": "b2-si-013",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Je crois que nous ___ le temps.",
+    "options": [
+      "avons",
+      "ayons",
+      "ayez",
+      "avoir"
+    ],
+    "answer": 0,
+    "explanation": "肯定的 croire que 後面用直陳式。"
+  },
+  {
+    "id": "b2-si-014",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Crois-tu qu'il ___ la vérité ?",
+    "options": [
+      "dise",
+      "dit",
+      "dira",
+      "disait"
+    ],
+    "answer": 0,
+    "explanation": "倒裝疑問的 croire 帶有懷疑，常接虛擬式。"
+  },
+  {
+    "id": "b2-si-015",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 3,
+    "instruction": "請選出正確的動詞形式",
+    "stem": "Il est évident que ce projet ___ du temps.",
+    "options": [
+      "prendra",
+      "prenne",
+      "prennent",
+      "prendre"
+    ],
+    "answer": 0,
+    "explanation": "il est évident que 表示確定，用直陳式。"
+  },
+  {
+    "id": "b2-si-016",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的正確形式（直陳式或虛擬式）",
+    "stem": "Je ne crois pas que ce film ___ (être) bon.",
+    "answers": [
+      "soit"
+    ],
+    "explanation": "否定的 croire 表達懷疑，用虛擬式。"
+  },
+  {
+    "id": "b2-si-017",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入括號內動詞的正確形式（直陳式或虛擬式）",
+    "stem": "Il est certain qu'elle ___ (venir).",
+    "answers": [
+      "viendra",
+      "vient"
+    ],
+    "explanation": "il est certain que 表示確定，用直陳式。"
+  },
+  {
+    "id": "b2-si-018",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "fill",
+    "difficulty": 3,
+    "instruction": "請填入括號內動詞的正確形式（直陳式或虛擬式）",
+    "stem": "Il me semble que tu ___ (avoir) raison.",
+    "answers": [
+      "as"
+    ],
+    "explanation": "il me semble que 後面通常用直陳式；il semble que 才常接虛擬式。"
+  },
+  {
+    "id": "b2-si-019",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我不認為她在說謊。（用 Je ne crois pas que）",
+    "stem": "",
+    "answers": [
+      "Je ne crois pas qu'elle mente."
+    ],
+    "explanation": "否定的 croire que 用虛擬式：mentir → qu'elle mente。"
+  },
+  {
+    "id": "b2-si-020",
+    "level": "B2",
+    "grammar": "subjonctif-indicatif",
+    "themes": [
+      "culture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我覺得這部電影很有趣。（用 Je trouve que）",
+    "stem": "",
+    "answers": [
+      "Je trouve que ce film est intéressant.",
+      "Je trouve que ce film est très intéressant."
+    ],
+    "explanation": "肯定的 trouver que 表達意見，用直陳式。"
   }
 ]

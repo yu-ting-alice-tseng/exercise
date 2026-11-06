@@ -215,5 +215,145 @@
       "Personne n'est ici."
     ],
     "explanation": "il n'y a personne 是「沒有人」最常見的說法。"
+  },
+  {
+    "id": "a1-neg-013",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出意思是「從不」的否定詞",
+    "stem": "Il ne mange ___ de viande.",
+    "options": [
+      "jamais",
+      "rien",
+      "personne",
+      "plus de"
+    ],
+    "answer": 0,
+    "explanation": "ne…jamais＝從不。"
+  },
+  {
+    "id": "a1-neg-014",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出意思是「什麼都（不）」的否定詞",
+    "stem": "Je n'ai ___ fait aujourd'hui.",
+    "options": [
+      "rien",
+      "personne",
+      "pas de",
+      "plus de"
+    ],
+    "answer": 0,
+    "explanation": "ne…rien＝什麼都沒有；複合過去式中 rien 放在助動詞後面。"
+  },
+  {
+    "id": "a1-neg-015",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "logement"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出意思是「不再」的否定詞",
+    "stem": "Elle n'habite ___ ici.",
+    "options": [
+      "plus",
+      "rien",
+      "personne",
+      "aucun"
+    ],
+    "answer": 0,
+    "explanation": "ne…plus＝不再。"
+  },
+  {
+    "id": "a1-neg-016",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "voyage"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入表示「沒有人」的否定詞",
+    "stem": "Je ne connais ___ dans cette ville.",
+    "answers": [
+      "personne"
+    ],
+    "explanation": "ne…personne＝沒有人。"
+  },
+  {
+    "id": "a1-neg-017",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入缺少的否定詞",
+    "stem": "Nous ___ allons pas au cinéma.",
+    "answers": [
+      "n'"
+    ],
+    "explanation": "allons 以母音開頭，ne 省略成 n'。"
+  },
+  {
+    "id": "a1-neg-018",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入正確的字",
+    "stem": "Il n'y a pas ___ lait.",
+    "answers": [
+      "de"
+    ],
+    "explanation": "否定句中 du 變成 de。"
+  },
+  {
+    "id": "a1-neg-019",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "short",
+    "difficulty": 1,
+    "instruction": "請翻譯成法文：我不懂。",
+    "stem": "",
+    "answers": [
+      "Je ne comprends pas."
+    ],
+    "explanation": "ne + comprends + pas。"
+  },
+  {
+    "id": "a1-neg-020",
+    "level": "A1",
+    "grammar": "negation",
+    "themes": [
+      "logement"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：他已經不住在這裡了。",
+    "stem": "",
+    "answers": [
+      "Il n'habite plus ici."
+    ],
+    "explanation": "ne…plus＝不再。"
   }
 ]

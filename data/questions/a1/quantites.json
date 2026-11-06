@@ -216,5 +216,146 @@
       "Je n'ai pas assez d'argent."
     ],
     "explanation": "assez de + 名詞；argent 以母音開頭，寫成 d'argent。"
+  },
+  {
+    "id": "a1-qt-013",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "nourriture",
+      "achats"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的答案",
+    "stem": "Je voudrais une bouteille ___ vin.",
+    "options": [
+      "de",
+      "du",
+      "des",
+      "le"
+    ],
+    "answer": 0,
+    "explanation": "數量詞後面接 de。"
+  },
+  {
+    "id": "a1-qt-014",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的答案",
+    "stem": "Il a trop ___ travail.",
+    "options": [
+      "de",
+      "du",
+      "des",
+      "le"
+    ],
+    "answer": 0,
+    "explanation": "trop de + 名詞。"
+  },
+  {
+    "id": "a1-qt-015",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的答案",
+    "stem": "Combien ___ œufs veux-tu ?",
+    "options": [
+      "d'",
+      "des",
+      "les",
+      "du"
+    ],
+    "answer": 0,
+    "explanation": "combien de + 名詞；œufs 以母音開頭：d'。"
+  },
+  {
+    "id": "a1-qt-016",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 de 或 d'",
+    "stem": "Un peu ___ sucre, s'il vous plaît.",
+    "answers": [
+      "de"
+    ],
+    "explanation": "un peu de + 名詞。"
+  },
+  {
+    "id": "a1-qt-017",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入 de 或 d'",
+    "stem": "Elle a beaucoup ___ patience.",
+    "answers": [
+      "de"
+    ],
+    "explanation": "beaucoup de + 名詞。"
+  },
+  {
+    "id": "a1-qt-018",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入 de 或 d'",
+    "stem": "J'achète un kilo ___ oranges.",
+    "answers": [
+      "d'"
+    ],
+    "explanation": "oranges 以母音開頭：d'。"
+  },
+  {
+    "id": "a1-qt-019",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "quotidien"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：我需要一點時間。",
+    "stem": "",
+    "answers": [
+      "J'ai besoin d'un peu de temps."
+    ],
+    "explanation": "avoir besoin de + un peu de temps。"
+  },
+  {
+    "id": "a1-qt-020",
+    "level": "A1",
+    "grammar": "quantites",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：他喝太多咖啡了。",
+    "stem": "",
+    "answers": [
+      "Il boit trop de café."
+    ],
+    "explanation": "trop de + 名詞。"
   }
 ]

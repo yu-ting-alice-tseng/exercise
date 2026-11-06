@@ -217,5 +217,152 @@
       "Lequel voulez-vous ? Celui-ci ou celui-là ?"
     ],
     "explanation": "lequel 問「哪一個」，celui-ci／celui-là 回答「這個／那個」。"
+  },
+  {
+    "id": "b1-pd-013",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "nourriture"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的指示代名詞",
+    "stem": "Tu préfères quel gâteau ? ___ au chocolat.",
+    "options": [
+      "Celui",
+      "Celle",
+      "Ceux",
+      "Ce"
+    ],
+    "answer": 0,
+    "explanation": "gâteau 是陽性單數：celui。"
+  },
+  {
+    "id": "b1-pd-014",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "achats",
+      "famille"
+    ],
+    "type": "choice",
+    "difficulty": 1,
+    "instruction": "請選出正確的指示代名詞",
+    "stem": "Mes chaussures sont noires, ___ de ma sœur sont rouges.",
+    "options": [
+      "celles",
+      "ceux",
+      "celle",
+      "ces"
+    ],
+    "answer": 0,
+    "explanation": "chaussures 是陰性複數：celles。"
+  },
+  {
+    "id": "b1-pd-015",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "ecole-travail"
+    ],
+    "type": "choice",
+    "difficulty": 2,
+    "instruction": "請選出正確的指示代名詞",
+    "stem": "___ qui travaille beaucoup réussit.",
+    "options": [
+      "Celui",
+      "Ce",
+      "Ceux",
+      "Cela"
+    ],
+    "answer": 0,
+    "explanation": "動詞是單數 travaille，用 celui qui（…的人）。"
+  },
+  {
+    "id": "b1-pd-016",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "achats"
+    ],
+    "type": "fill",
+    "difficulty": 1,
+    "instruction": "請填入正確的指示代名詞",
+    "stem": "Cette robe-ci est belle, mais ___-là est plus chic.",
+    "answers": [
+      "celle"
+    ],
+    "explanation": "robe 是陰性單數：celle。"
+  },
+  {
+    "id": "b1-pd-017",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "culture",
+      "loisirs"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入正確的指示代名詞",
+    "stem": "J'aime les films français, surtout ___ des années 60.",
+    "answers": [
+      "ceux"
+    ],
+    "explanation": "films 是陽性複數：ceux。"
+  },
+  {
+    "id": "b1-pd-018",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "meteo",
+      "famille"
+    ],
+    "type": "fill",
+    "difficulty": 2,
+    "instruction": "請填入正確的指示代名詞",
+    "stem": "Prends ton parapluie, pas ___ de ton père !",
+    "answers": [
+      "celui"
+    ],
+    "explanation": "parapluie 是陽性單數：celui。"
+  },
+  {
+    "id": "b1-pd-019",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "logement",
+      "famille"
+    ],
+    "type": "short",
+    "difficulty": 2,
+    "instruction": "請翻譯成法文：我的房間比我弟弟的大。",
+    "stem": "",
+    "answers": [
+      "Ma chambre est plus grande que celle de mon frère.",
+      "Ma chambre est plus grande que celle de mon petit frère."
+    ],
+    "explanation": "chambre 是陰性：celle de…"
+  },
+  {
+    "id": "b1-pd-020",
+    "level": "B1",
+    "grammar": "pronoms-demonstratifs",
+    "themes": [
+      "voyage"
+    ],
+    "type": "short",
+    "difficulty": 3,
+    "instruction": "請翻譯成法文：你的車是哪一輛？這輛還是那輛？",
+    "stem": "",
+    "answers": [
+      "Quelle est ta voiture ? Celle-ci ou celle-là ?",
+      "Laquelle est ta voiture ? Celle-ci ou celle-là ?",
+      "C'est laquelle, ta voiture ? Celle-ci ou celle-là ?"
+    ],
+    "explanation": "voiture 是陰性：celle-ci／celle-là。"
   }
 ]
