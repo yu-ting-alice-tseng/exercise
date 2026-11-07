@@ -12,12 +12,27 @@ import { MORE_C1 } from "@/data/learn/more-c1";
 import { MORE_C2 } from "@/data/learn/more-c2";
 import { MORE_PATTERNS } from "@/data/learn/more-patterns";
 import { PATTERNS } from "@/data/learn/patterns";
-import { VOCAB } from "@/data/learn/vocab";
-import type { Ex, GrammarNote } from "./learnTypes";
+import { VOCAB as VOCAB_BASE } from "@/data/learn/vocab";
+import { MORE_PHRASES_1, VOCAB_EX_1 } from "@/data/learn/vocab-ex-1";
+import { MORE_PHRASES_2, VOCAB_EX_2 } from "@/data/learn/vocab-ex-2";
+import type { Ex, GrammarNote, VocabTheme } from "./learnTypes";
 import { GRAMMAR, LEVELS, THEMES, type Topic } from "./taxonomy";
 import type { Level } from "./types";
 
-export { PATTERNS, VOCAB };
+export { PATTERNS };
+
+const VOCAB_EX = { ...VOCAB_EX_1, ...VOCAB_EX_2 };
+const MORE_PHRASES = { ...MORE_PHRASES_1, ...MORE_PHRASES_2 };
+
+/** 主題單字：把每個單字的例句和額外的常用句合併進來 */
+export const VOCAB: VocabTheme[] = VOCAB_BASE.map((v) => ({
+  ...v,
+  groups: v.groups.map((g) => ({
+    ...g,
+    words: g.words.map((w) => ({ ...w, ex: w.ex ?? VOCAB_EX[v.id]?.[w.fr] })),
+  })),
+  phrases: [...(v.phrases ?? []), ...(MORE_PHRASES[v.id] ?? [])],
+}));
 
 const ALL_NOTES: GrammarNote[] = [...NOTES_A1, ...NOTES_A2, ...NOTES_B1, ...NOTES_B2, ...NOTES_C1, ...NOTES_C2];
 const NOTE_BY_ID = new Map(ALL_NOTES.map((n) => [n.id, n]));

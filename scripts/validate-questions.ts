@@ -10,6 +10,8 @@ import { NOTES_C1 } from "../data/learn/grammar-c1.ts";
 import { NOTES_C2 } from "../data/learn/grammar-c2.ts";
 import { PATTERNS } from "../data/learn/patterns.ts";
 import { VOCAB } from "../data/learn/vocab.ts";
+import { MORE_PHRASES_1, VOCAB_EX_1 } from "../data/learn/vocab-ex-1.ts";
+import { MORE_PHRASES_2, VOCAB_EX_2 } from "../data/learn/vocab-ex-2.ts";
 import { MORE_A1 } from "../data/learn/more-a1.ts";
 import { MORE_A2 } from "../data/learn/more-a2.ts";
 import { MORE_B1 } from "../data/learn/more-b1.ts";
@@ -159,10 +161,22 @@ console.log(`模考 ${examCount} 份。`);
     if (!fr || !zh) errors.push(`更多例句：有空白的例句（${fr}）`);
     if ((fr.match(/\*\*/g)?.length ?? 0) % 2) errors.push(`更多例句：粗體標記沒有成對「${fr}」`);
   }
-  const all = JSON.stringify([notes, PATTERNS, VOCAB, more, MORE_PATTERNS]);
+  const vex: Record<string, Record<string, unknown>> = { ...VOCAB_EX_1, ...VOCAB_EX_2 };
+  let vexCount = 0;
+  for (const v of VOCAB) {
+    const words = new Set(v.groups.flatMap((g) => g.words.map((w) => w.fr)));
+    for (const g of v.groups) for (const w of g.words) {
+      if (w.ex || vex[v.id]?.[w.fr]) vexCount++;
+      else errors.push(`主題單字 ${v.id}：「${w.fr}」沒有例句`);
+    }
+    for (const k of Object.keys(vex[v.id] ?? {})) if (!words.has(k)) errors.push(`主題單字 ${v.id}：例句對應的「${k}」不存在`);
+  }
+  for (const k of Object.keys(vex)) if (!VOCAB.some((v) => v.id === k)) errors.push(`主題單字：${k} 不是主題`);
+  const phraseCount = VOCAB.reduce((s, v) => s + (v.phrases?.length ?? 0), 0) + Object.values({ ...MORE_PHRASES_1, ...MORE_PHRASES_2 }).flat().length;
+  const all = JSON.stringify([notes, PATTERNS, VOCAB, more, MORE_PATTERNS, vex, MORE_PHRASES_1, MORE_PHRASES_2]);
   if (all.includes("—")) errors.push("學習區：請不要用破折號");
   const words = VOCAB.reduce((s, v) => s + v.groups.reduce((a, g) => a + g.words.length, 0), 0);
-  console.log(`學習區：文法筆記 ${notes.length} 份、句型整理 ${PATTERNS.length} 份、更多例句 ${exList.length} 句、單字 ${words} 個。`);
+  console.log(`學習區：文法筆記 ${notes.length} 份、句型整理 ${PATTERNS.length} 份、更多例句 ${exList.length} 句、單字 ${words} 個（${vexCount} 個有例句）、主題常用句 ${phraseCount} 句。`);
 }
 
 for (const w of warnings) console.warn("⚠️ ", w);

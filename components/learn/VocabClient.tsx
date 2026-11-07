@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { Ex, VocabGroup } from "@/lib/learnTypes";
+import { Rich } from "./Blocks";
 import Speak from "./Speak";
 
 const LVL_LABEL = { 1: "A1", 2: "A2", 3: "B1+" } as const;
@@ -50,6 +51,7 @@ export default function VocabClient({ groups, phrases }: { groups: VocabGroup[];
   const [mode, setMode] = useState<Mode>("all");
   const [lvl, setLvl] = useState<Lvl>(0);
   const [shown, setShown] = useState<Set<string>>(new Set());
+  const [showEx, setShowEx] = useState(true);
 
   const toggle = (k: string) =>
     setShown((s) => {
@@ -92,6 +94,15 @@ export default function VocabClient({ groups, phrases }: { groups: VocabGroup[];
             </Chip>
           ))}
         </div>
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="w-10 text-xs text-muted">例句</span>
+          <Chip on={showEx} onClick={() => setShowEx(true)}>
+            顯示
+          </Chip>
+          <Chip on={!showEx} onClick={() => setShowEx(false)}>
+            隱藏
+          </Chip>
+        </div>
         {mode !== "all" && <p className="text-xs text-muted">先在心裡回想答案，再點一下卡片看答案。</p>}
       </div>
 
@@ -105,7 +116,8 @@ export default function VocabClient({ groups, phrases }: { groups: VocabGroup[];
                 const hideZh = hidden(w.k, "zh");
                 const quiz = mode !== "all";
                 return (
-                  <li key={w.k} className="flex items-start gap-2.5 rounded-lg border border-line bg-surface px-3 py-2.5">
+                  <li key={w.k} className="rounded-lg border border-line bg-surface px-3 py-2.5">
+                    <div className="flex items-start gap-2.5">
                     <Speak text={speakable(w.fr)} className="mt-0.5" />
                     <button
                       type="button"
@@ -120,16 +132,20 @@ export default function VocabClient({ groups, phrases }: { groups: VocabGroup[];
                       <span className={`block text-sm text-muted ${hideZh ? "rounded bg-sunken text-transparent select-none" : ""}`}>
                         {w.zh}
                       </span>
-                      {w.ex && !hideFr && !hideZh && (
-                        <span className="mt-1 block text-sm">
-                          <span lang="fr" className="italic">
-                            {w.ex[0]}
-                          </span>
-                          <span className="text-muted">　{w.ex[1]}</span>
-                        </span>
-                      )}
                     </button>
                     <span className="shrink-0 rounded bg-sunken px-1.5 text-[11px] leading-5 text-muted tabular-nums">{LVL_LABEL[w.lvl]}</span>
+                    </div>
+                    {showEx && w.ex && !hideFr && !hideZh && (
+                      <div className="mt-2 flex items-start gap-2 border-t border-dashed border-line pt-2">
+                        <Speak text={w.ex[0].replace(/\*\*/g, "")} label={`朗讀例句：${w.ex[0].replace(/\*\*/g, "")}`} className="size-7" />
+                        <div className="min-w-0 text-sm">
+                          <p lang="fr" className="italic">
+                            <Rich text={w.ex[0]} />
+                          </p>
+                          <p className="text-muted">{w.ex[1]}</p>
+                        </div>
+                      </div>
+                    )}
                   </li>
                 );
               })}
