@@ -1,9 +1,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import ExampleDrill from "@/components/learn/ExampleDrill";
 import Fiche from "@/components/learn/Fiche";
+import NoteQuiz from "@/components/learn/NoteQuiz";
 import PracticeLink from "@/components/learn/PracticeLink";
-import { btnPrimary, container, twoCol } from "@/components/ui";
-import { getNote, NOTE_ENTRIES, PATTERNS } from "@/lib/learn";
+import { btnPrimary, btnQuiet, container, twoCol } from "@/components/ui";
+import { BANK } from "@/lib/bank";
+import { getNote, moreExamples, NOTE_ENTRIES, PATTERNS } from "@/lib/learn";
 import { CATEGORIES, LEVELS } from "@/lib/taxonomy";
 
 export const dynamicParams = false;
@@ -30,11 +33,35 @@ export default async function GrammarNotePage({ params }: { params: Promise<{ id
   const patterns = PATTERNS.filter((p) => p.related?.includes(id));
   const cat = CATEGORIES.find((c) => c.id === topic.cat);
   const lv = LEVELS.find((l) => l.id === level)!;
+  const pool = BANK.filter((q) => q.grammar === id);
+  const more = moreExamples(id);
+  const n = { choice: 0, fill: 0, short: 0 };
+  for (const q of pool) n[q.type]++;
 
   const practice = (
-    <PracticeLink level={level} by="grammar" topic={id} className={`${btnPrimary} w-full`}>
-      練習這個文法（10 題）
-    </PracticeLink>
+    <div className="space-y-2">
+      <PracticeLink level={level} by="grammar" topic={id} className={`${btnPrimary} w-full`}>
+        練習這個文法（10 題）
+      </PracticeLink>
+      <div className="grid grid-cols-3 gap-2">
+        <PracticeLink level={level} by="grammar" topic={id} counts={{ choice: Math.min(10, n.choice), fill: 0, short: 0 }} className={`${btnQuiet} px-2`}>
+          選擇題
+        </PracticeLink>
+        <PracticeLink level={level} by="grammar" topic={id} counts={{ choice: 0, fill: Math.min(10, n.fill), short: 0 }} className={`${btnQuiet} px-2`}>
+          填充題
+        </PracticeLink>
+        <PracticeLink level={level} by="grammar" topic={id} counts={{ choice: 0, fill: 0, short: Math.min(6, n.short) }} className={`${btnQuiet} px-2`}>
+          簡答題
+        </PracticeLink>
+      </div>
+      <p className="text-center text-xs text-muted">
+        題庫裡這個文法點共 {pool.length} 題，或是
+        <a href="#exercice" className="text-accent underline-offset-2 hover:underline">
+          直接在下面做 5 題小測驗
+        </a>
+        。
+      </p>
+    </div>
   );
 
   return (
@@ -57,9 +84,34 @@ export default async function GrammarNotePage({ params }: { params: Promise<{ id
 
       <div className={twoCol}>
         <article className="min-w-0">
+          <div className="mb-6 flex flex-wrap gap-2 text-sm lg:hidden">
+            <a href="#exercice" className="inline-flex min-h-9 items-center rounded-full border border-accent/40 bg-accent-soft px-3 font-medium text-accent">
+              跳到小測驗 ↓
+            </a>
+            {more.length > 0 && (
+              <a href="#exemples" className="inline-flex min-h-9 items-center rounded-full border border-line bg-surface px-3">
+                更多例句 ↓
+              </a>
+            )}
+          </div>
+
           <Fiche summary={note.summary} rules={note.rules} pitfalls={note.pitfalls} tip={note.tip} />
 
-          <div className="mt-8 lg:hidden">{practice}</div>
+          {more.length > 0 && (
+            <section id="exemples" className="mt-10 scroll-mt-6">
+              <h3 className="display mb-1 text-lg font-bold">
+                更多例句 <span className="text-sm font-normal text-muted italic">Encore des exemples</span>
+              </h3>
+              <p className="mb-3 text-sm text-muted">{more.length} 個例句，可以遮住一邊自我測驗，也可以全部連續朗讀。</p>
+              <ExampleDrill ex={more} />
+            </section>
+          )}
+
+          <div className="mt-10">
+            <NoteQuiz id={id} zh={topic.zh} level={level} pool={pool} />
+          </div>
+
+          <div className="mt-6 lg:hidden">{practice}</div>
 
           <nav aria-label="上一個與下一個文法點" className="mt-8 grid grid-cols-2 gap-3 border-t border-line pt-5 text-sm">
             {prev ? (

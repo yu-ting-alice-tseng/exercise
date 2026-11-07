@@ -10,6 +10,13 @@ import { NOTES_C1 } from "../data/learn/grammar-c1.ts";
 import { NOTES_C2 } from "../data/learn/grammar-c2.ts";
 import { PATTERNS } from "../data/learn/patterns.ts";
 import { VOCAB } from "../data/learn/vocab.ts";
+import { MORE_A1 } from "../data/learn/more-a1.ts";
+import { MORE_A2 } from "../data/learn/more-a2.ts";
+import { MORE_B1 } from "../data/learn/more-b1.ts";
+import { MORE_B2 } from "../data/learn/more-b2.ts";
+import { MORE_C1 } from "../data/learn/more-c1.ts";
+import { MORE_C2 } from "../data/learn/more-c2.ts";
+import { MORE_PATTERNS } from "../data/learn/more-patterns.ts";
 
 const root = join(import.meta.dirname, "..");
 const dir = join(root, "data/questions");
@@ -142,10 +149,20 @@ console.log(`模考 ${examCount} 份。`);
   }
   for (const p of PATTERNS) for (const g of p.related ?? []) if (!grammarIds.has(g)) errors.push(`句型 ${p.id}：相關文法 ${g} 不存在`);
   for (const t of THEMES) if (!VOCAB.some((v) => v.id === t.id)) errors.push(`主題單字：缺少 ${t.id}`);
-  const all = JSON.stringify([notes, PATTERNS, VOCAB]);
+  const more = { ...MORE_A1, ...MORE_A2, ...MORE_B1, ...MORE_B2, ...MORE_C1, ...MORE_C2 };
+  for (const g of grammarIds) if ((more[g]?.length ?? 0) < 8) errors.push(`更多例句：${g} 少於 8 句`);
+  for (const k of Object.keys(more)) if (!grammarIds.has(k)) errors.push(`更多例句：${k} 不是文法點`);
+  for (const p of PATTERNS) if ((MORE_PATTERNS[p.id]?.length ?? 0) < 6) errors.push(`更多例句：句型 ${p.id} 少於 6 句`);
+  for (const k of Object.keys(MORE_PATTERNS)) if (!PATTERNS.some((p) => p.id === k)) errors.push(`更多例句：${k} 不是句型頁`);
+  const exList = [...Object.values(more), ...Object.values(MORE_PATTERNS)].flat();
+  for (const [fr, zh] of exList) {
+    if (!fr || !zh) errors.push(`更多例句：有空白的例句（${fr}）`);
+    if ((fr.match(/\*\*/g)?.length ?? 0) % 2) errors.push(`更多例句：粗體標記沒有成對「${fr}」`);
+  }
+  const all = JSON.stringify([notes, PATTERNS, VOCAB, more, MORE_PATTERNS]);
   if (all.includes("—")) errors.push("學習區：請不要用破折號");
   const words = VOCAB.reduce((s, v) => s + v.groups.reduce((a, g) => a + g.words.length, 0), 0);
-  console.log(`學習區：文法筆記 ${notes.length} 份、句型整理 ${PATTERNS.length} 份、單字 ${words} 個。`);
+  console.log(`學習區：文法筆記 ${notes.length} 份、句型整理 ${PATTERNS.length} 份、更多例句 ${exList.length} 句、單字 ${words} 個。`);
 }
 
 for (const w of warnings) console.warn("⚠️ ", w);

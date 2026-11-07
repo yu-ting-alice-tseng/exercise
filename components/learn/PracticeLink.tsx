@@ -8,12 +8,15 @@ export default function PracticeLink({
   level,
   by,
   topic,
+  counts = { choice: 4, fill: 4, short: 2 },
   className,
   children,
 }: {
   level: Level;
   by: "grammar" | "theme";
   topic: string;
+  /** 各題型題數，預設選擇 4、填充 4、簡答 2 */
+  counts?: { choice: number; fill: number; short: number };
   className?: string;
   children: React.ReactNode;
 }) {
@@ -28,9 +31,9 @@ export default function PracticeLink({
           level,
           by,
           topics: topic,
-          choice: "4",
-          fill: "4",
-          short: "2",
+          choice: String(counts.choice),
+          fill: String(counts.fill),
+          short: String(counts.short),
           d: "all",
           seed: String(seed),
         });

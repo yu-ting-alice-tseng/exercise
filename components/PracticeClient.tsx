@@ -13,7 +13,7 @@ import { drawPaper, OPTION_LETTERS, type Version } from "@/lib/draw";
 import { saveHistory } from "@/lib/history";
 import { getStat, recordSession, updateAnswer, type QStat, type Result as RecResult } from "@/lib/progress";
 import { newSeed } from "@/lib/random";
-import { isGrammarId, TYPE_LABELS } from "@/lib/taxonomy";
+import { grammarName, isGrammarId, TYPE_LABELS } from "@/lib/taxonomy";
 import { paperTitle } from "@/lib/title";
 import type { DrawnQuestion, Level, PaperConfig } from "@/lib/types";
 import { useActiveTimer } from "@/lib/useActiveTimer";
@@ -51,11 +51,34 @@ function PracticeSession({ query }: { query: string }) {
       title={paperTitle(config)}
       historyConfig={config}
       header={{ back: { href: "/", label: "回到設定" }, fr: "Exercice en ligne", zh: paperTitle(config), sub: "線上練習" }}
+      intro={config.by === "grammar" && <NoteLinks topics={config.topics} />}
       onNewBatch={() => {
         router.replace(`/practice/?${configToQuery({ ...config, seed: newSeed() })}`);
         window.scrollTo({ top: 0 });
       }}
     />
+  );
+}
+
+/** 練習頁上方：這次練習範圍的文法筆記 */
+function NoteLinks({ topics }: { topics: string[] }) {
+  const list = topics.filter(isGrammarId);
+  if (!list.length) return null;
+  const shownTopics = list.slice(0, 6);
+  return (
+    <div className="-mt-2 mb-4 flex flex-wrap items-center gap-1.5 text-sm">
+      <span className="text-muted">先複習規則：</span>
+      {shownTopics.map((id) => (
+        <Link
+          key={id}
+          href={`/learn/grammar/${id}/`}
+          className="inline-flex min-h-8 items-center rounded-full border border-line bg-surface px-3 hover:border-accent/60 hover:text-accent"
+        >
+          {grammarName(id)}筆記
+        </Link>
+      ))}
+      {list.length > shownTopics.length && <span className="text-muted">等 {list.length} 份</span>}
+    </div>
   );
 }
 
@@ -92,6 +115,7 @@ export function QuizRunner({
   historyConfig,
   onNewBatch,
   newBatchLabel = "換一批題目",
+  intro,
 }: {
   questions: DrawnQuestion[];
   kind: "practice" | "review" | "exam";
@@ -101,6 +125,8 @@ export function QuizRunner({
   historyConfig?: PaperConfig;
   onNewBatch?: () => void;
   newBatchLabel?: string;
+  /** 標題下方的額外內容，例如文法筆記連結 */
+  intro?: React.ReactNode;
 }) {
   const [answers, setAnswers] = useState<Record<string, Answer>>({});
   const [checked, setChecked] = useState(false);
@@ -219,6 +245,7 @@ export function QuizRunner({
         zh={header.zh}
         sub={`${header.sub}${onlyIds ? "・重做答錯的題目" : ""}・共 ${shown.length} 題`}
       />
+      {intro}
 
       <div className={twoCol}>
         <div>
@@ -348,6 +375,7 @@ export function QuestionCard({
   getInput,
   onAnswer,
   onMark,
+  noteLink = true,
 }: {
   q: DrawnQuestion;
   n: number;
@@ -362,6 +390,8 @@ export function QuestionCard({
   getInput: () => HTMLInputElement | HTMLTextAreaElement | null;
   onAnswer: (v: Answer) => void;
   onMark: (ok: boolean) => void;
+  /** 解析後面要不要加「看文法筆記」連結（在筆記頁裡就不用） */
+  noteLink?: boolean;
 }) {
   const text = typeof answer === "string" ? answer : "";
   const v = result?.verdict;
@@ -519,7 +549,7 @@ export function QuestionCard({
           <p className="rounded-lg bg-sunken px-3 py-2 text-muted">
             <span className="display mr-1 font-bold text-ink italic">Explication</span>
             {q.explanation}
-            {isGrammarId(q.grammar) && (
+            {noteLink && isGrammarId(q.grammar) && (
               <Link href={`/learn/grammar/${q.grammar}/`} className="ml-1.5 whitespace-nowrap text-accent underline-offset-4 hover:underline">
                 看文法筆記 →
               </Link>

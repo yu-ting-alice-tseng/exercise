@@ -157,3 +157,12 @@ const GRAMMAR_IDS = new Set(Object.values(GRAMMAR).flatMap((l) => l.map((t) => t
 export function isGrammarId(id: string): boolean {
   return GRAMMAR_IDS.has(id);
 }
+
+/** 文法點的中文名稱（不分等級） */
+export function grammarName(id: string): string {
+  for (const list of Object.values(GRAMMAR)) {
+    const t = list.find((x) => x.id === id);
+    if (t) return t.zh;
+  }
+  return id;
+}
