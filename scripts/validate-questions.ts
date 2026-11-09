@@ -193,7 +193,7 @@ console.log(`模考 ${examCount} 份。`);
     if (!levelIds.has(r.level)) errors.push(`${at}：等級不正確`);
     if (!themeIds.has(r.theme)) errors.push(`${at}：主題 ${r.theme} 不存在`);
     if (r.kind === "classic" && !r.source?.url) errors.push(`${at}：經典作品要寫出處`);
-    if (r.kind === "original" && r.facts?.some((f) => !f.url)) errors.push(`${at}：查證項目缺少來源`);
+    if (r.kind === "original" && r.refs?.some((f) => !f.url || !f.title)) errors.push(`${at}：參考資料缺少標題或網址`);
     const used = new Set<string>();
     for (const [fr, zh] of r.paragraphs.flat()) {
       if (!fr || !zh) errors.push(`${at}：有空白的句子`);
@@ -206,7 +206,11 @@ console.log(`模考 ${examCount} 份。`);
     }
     for (const k of Object.keys(r.glossary)) if (!used.has(k)) errors.push(`${at}：單字解釋「${k}」沒有在文中標出`);
     if (r.quiz.length < 4) errors.push(`${at}：閱讀測驗少於 4 題`);
-    for (const q of r.quiz) if (q.options.length < 3 || new Set(q.options).size !== q.options.length) errors.push(`${at}：「${q.q}」選項太少或重複`);
+    for (const q of r.quiz) {
+      const fr = q.options.map((o) => o[0]);
+      if (fr.length < 3 || new Set(fr).size !== fr.length) errors.push(`${at}：「${q.q}」選項太少或重複`);
+      if (!q.qZh || q.options.some((o) => !o[1])) errors.push(`${at}：「${q.q}」缺少中文翻譯`);
+    }
     if (JSON.stringify(r).includes("—")) errors.push(`${at}：請不要用破折號`);
   }
   console.log(`閱讀：${readings.length} 篇（原創 ${ORIGINALS.length}、經典 ${CLASSICS.length}）。`);

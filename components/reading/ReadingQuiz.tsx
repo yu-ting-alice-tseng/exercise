@@ -6,7 +6,19 @@ import { btnPrimary } from "@/components/ui";
 import type { DrawnQuestion, Level } from "@/lib/types";
 
 /** 文章最後的閱讀測驗，可以重做 */
-export default function ReadingQuiz({ id, level, title, questions }: { id: string; level: Level; title: string; questions: DrawnQuestion[] }) {
+export default function ReadingQuiz({
+  id,
+  level,
+  title,
+  questions,
+  zh,
+}: {
+  id: string;
+  level: Level;
+  title: string;
+  questions: DrawnQuestion[];
+  zh: "show" | "tap" | "hide";
+}) {
   const [round, setRound] = useState(0);
   return (
     <InlineQuiz
@@ -14,9 +26,10 @@ export default function ReadingQuiz({ id, level, title, questions }: { id: strin
       questions={questions}
       level={level}
       recordTitle={`閱讀：${title}`}
+      zh={zh}
       eyebrow="Compréhension écrite"
       heading={`閱讀測驗：${questions.length} 題`}
-      sub="讀完文章再作答，結果會記進學習紀錄。"
+      sub={zh === "hide" ? "讀完文章再作答，題目只顯示法文。" : zh === "tap" ? "讀完文章再作答，按每題右上角的「看翻譯」顯示中文。" : "讀完文章再作答，結果會記進學習紀錄。"}
       actions={() => (
         <button
           type="button"

@@ -51,10 +51,10 @@ export const CLASSICS: Reading[] = [
       "fort aise": { lemma: "être fort aise", pos: "形容詞片語", zh: "非常高興", note: "fort 在這裡是副詞「非常」。這句話其實帶著諷刺。" },
     },
     quiz: [
-      { q: "蟬在夏天做了什麼？", options: ["一直唱歌", "儲存糧食", "幫螞蟻工作", "去旅行"], why: "La cigale, ayant chanté tout l’été：蟬唱了一整個夏天。" },
-      { q: "蟬向螞蟻要求什麼？", options: ["借一點穀粒", "一起唱歌", "住在螞蟻家", "教她跳舞"], why: "La priant de lui prêter quelque grain：請求借她一些穀粒。" },
-      { q: "蟬答應什麼時候還？", options: ["秋收之前", "明年夏天", "下個星期", "永遠不還"], why: "Avant l’oût：oût 是古字，指八月的收成。" },
-      { q: "「Eh bien ! dansez maintenant.」表達螞蟻的什麼態度？", options: ["諷刺並拒絕", "熱情邀請", "道歉", "同意借糧"], why: "螞蟻用「那就去跳舞吧」諷刺蟬只顧玩樂，拒絕借糧。" },
+      { q: "Qu’a fait la cigale pendant l’été ?", qZh: "蟬在夏天做了什麼？", options: [["Elle a chanté.", "她一直唱歌。"], ["Elle a fait des provisions.", "她儲存了糧食。"], ["Elle a aidé la fourmi.", "她幫螞蟻工作。"], ["Elle a voyagé.", "她去旅行。"]], why: "La cigale, ayant chanté tout l’été：蟬唱了一整個夏天。" },
+      { q: "Que demande la cigale à la fourmi ?", qZh: "蟬向螞蟻要求什麼？", options: [["De lui prêter quelques grains", "借她一些穀粒"], ["De chanter avec elle", "和她一起唱歌"], ["De l’accueillir chez elle", "讓她住在螞蟻家"], ["De lui apprendre à danser", "教她跳舞"]], why: "La priant de lui prêter quelque grain：請求借她一些穀粒。" },
+      { q: "Quand la cigale promet-elle de rembourser ?", qZh: "蟬答應什麼時候還？", options: [["Avant la moisson (« l’oût »)", "秋收以前"], ["L’été prochain", "明年夏天"], ["La semaine prochaine", "下個星期"], ["Jamais", "永遠不還"]], why: "Avant l’oût：oût 是古字，指八月的收成。" },
+      { q: "En disant « Eh bien ! dansez maintenant », la fourmi…", qZh: "說「Eh bien ! dansez maintenant」時，螞蟻……", options: [["se moque de la cigale et refuse.", "在諷刺蟬，並且拒絕了她。"], ["invite la cigale à danser.", "邀請蟬去跳舞。"], ["s’excuse.", "在道歉。"], ["accepte de lui prêter des grains.", "同意借她穀粒。"]], why: "螞蟻用「那就去跳舞吧」諷刺蟬只顧玩樂，拒絕借糧。" },
     ],
   },
   {
@@ -103,10 +103,10 @@ export const CLASSICS: Reading[] = [
       confus: { lemma: "confus(e)", pos: "形容詞", zh: "窘迫的、難為情的" },
     },
     quiz: [
-      { q: "一開始烏鴉嘴裡叼著什麼？", options: ["乳酪", "麵包", "一顆蘋果", "一條魚"], why: "Tenait en son bec un fromage。" },
-      { q: "狐狸用什麼方法拿到乳酪？", options: ["稱讚烏鴉，讓他開口唱歌", "爬上樹去搶", "用東西跟他交換", "等烏鴉睡著"], why: "狐狸誇烏鴉漂亮，烏鴉張嘴想唱歌，乳酪就掉下來了。" },
-      { q: "這則寓言的教訓是什麼？", options: ["拍馬屁的人靠聽他說話的人過活", "要和朋友分享食物", "早起的鳥兒有蟲吃", "不要在樹上吃東西"], why: "tout flatteur vit aux dépens de celui qui l’écoute。" },
-      { q: "最後一句中 un peu tard 指的是什麼？", options: ["烏鴉發誓的時候已經太遲了", "狐狸來得太晚", "天色已晚", "乳酪已經壞了"], why: "Jura, mais un peu tard：烏鴉發誓不再上當，但乳酪已經沒了。" },
+      { q: "Que tient le corbeau dans son bec ?", qZh: "烏鴉嘴裡叼著什麼？", options: [["Un fromage", "一塊乳酪"], ["Du pain", "麵包"], ["Une pomme", "一顆蘋果"], ["Un poisson", "一條魚"]], why: "Tenait en son bec un fromage。" },
+      { q: "Comment le renard obtient-il le fromage ?", qZh: "狐狸怎麼拿到乳酪？", options: [["Il flatte le corbeau, qui ouvre le bec pour chanter.", "他奉承烏鴉，烏鴉張嘴想唱歌。"], ["Il monte dans l’arbre.", "他爬上樹。"], ["Il l’échange contre autre chose.", "他用別的東西交換。"], ["Il attend que le corbeau s’endorme.", "他等烏鴉睡著。"]], why: "狐狸誇烏鴉漂亮，烏鴉張嘴想唱歌，乳酪就掉下來了。" },
+      { q: "Quelle est la morale de la fable ?", qZh: "這則寓言的寓意是什麼？", options: [["Tout flatteur vit aux dépens de celui qui l’écoute.", "拍馬屁的人都靠聽他說話的人過活。"], ["Il faut partager sa nourriture.", "要和別人分享食物。"], ["Le monde appartient à ceux qui se lèvent tôt.", "世界屬於早起的人。"], ["Il ne faut pas manger dans les arbres.", "不要在樹上吃東西。"]], why: "tout flatteur vit aux dépens de celui qui l’écoute。" },
+      { q: "Que signifie « mais un peu tard » à la fin ?", qZh: "結尾的「mais un peu tard」是什麼意思？", options: [["Le corbeau jure trop tard : il a déjà perdu le fromage.", "烏鴉發誓時已經太遲，乳酪已經沒了。"], ["Le renard est arrivé en retard.", "狐狸來晚了。"], ["Il faisait déjà nuit.", "天已經黑了。"], ["Le fromage était trop vieux.", "乳酪太舊了。"]], why: "Jura, mais un peu tard：烏鴉發誓不再上當，但乳酪已經沒了。" },
     ],
   },
   {
@@ -158,10 +158,10 @@ export const CLASSICS: Reading[] = [
       noisettes: { lemma: "la noisette", pos: "陰性名詞", zh: "榛果" },
     },
     quiz: [
-      { q: "小紅帽為什麼叫這個名字？", options: ["因為外婆替她做了一頂紅色的帽子", "因為她的頭髮是紅色的", "因為她喜歡紅色的衣服", "因為她住在紅色的房子裡"], why: "Cette bonne femme lui fit faire un petit chaperon rouge。" },
-      { q: "媽媽要小紅帽帶什麼給外婆？", options: ["一塊餅和一小罐奶油", "藥和水果", "花和蛋糕", "牛奶和麵包"], why: "porte-lui une galette et ce petit pot de beurre。" },
-      { q: "狼為什麼沒有在森林裡馬上吃掉小紅帽？", options: ["因為森林裡有樵夫", "因為他不餓", "因為小紅帽跑掉了", "因為外婆在旁邊"], why: "il n’osa, à cause de quelques bûcherons qui étaient dans la forêt。" },
-      { q: "小紅帽走哪一條路？", options: ["最長的路，一路上摘花、追蝴蝶", "最短的路", "和狼走同一條路", "她搭車去"], why: "la petite fille s’en alla par le chemin le plus long。" },
+      { q: "Pourquoi appelle-t-on la petite fille « le petit Chaperon rouge » ?", qZh: "為什麼大家叫這個小女孩「小紅帽」？", options: [["Parce que sa mère-grand lui a fait faire un petit chaperon rouge", "因為外婆請人替她做了一頂小紅帽"], ["Parce qu’elle a les cheveux roux", "因為她的頭髮是紅色的"], ["Parce qu’elle aime les robes rouges", "因為她喜歡紅色的洋裝"], ["Parce qu’elle habite une maison rouge", "因為她住在紅色的房子裡"]], why: "Cette bonne femme lui fit faire un petit chaperon rouge。" },
+      { q: "Que doit-elle porter à sa mère-grand ?", qZh: "她要帶什麼給外婆？", options: [["Une galette et un petit pot de beurre", "一塊餅和一小罐奶油"], ["Des médicaments et des fruits", "藥和水果"], ["Des fleurs et un gâteau", "花和蛋糕"], ["Du lait et du pain", "牛奶和麵包"]], why: "porte-lui une galette et ce petit pot de beurre。" },
+      { q: "Pourquoi le Loup ne la mange-t-il pas tout de suite ?", qZh: "狼為什麼沒有馬上吃掉她？", options: [["À cause des bûcherons dans la forêt", "因為森林裡有樵夫"], ["Parce qu’il n’a pas faim", "因為他不餓"], ["Parce qu’elle s’enfuit", "因為她逃走了"], ["Parce que la mère-grand est là", "因為外婆在旁邊"]], why: "il n’osa, à cause de quelques bûcherons qui étaient dans la forêt。" },
+      { q: "Quel chemin prend la petite fille ?", qZh: "小女孩走哪一條路？", options: [["Le plus long, en cueillant des noisettes et des fleurs", "最長的路，一路摘榛果和花"], ["Le plus court", "最短的路"], ["Le même chemin que le Loup", "和狼走同一條路"], ["Elle prend une voiture.", "她搭車去。"]], why: "la petite fille s’en alla par le chemin le plus long。" },
     ],
   },
   {
@@ -221,10 +221,10 @@ export const CLASSICS: Reading[] = [
       mairie: { lemma: "la mairie", pos: "陰性名詞", zh: "市政府、鎮公所" },
     },
     quiz: [
-      { q: "法蘭茲那天早上為什麼害怕？", options: ["他遲到了，而且不會老師要考的分詞", "他把作業弄丟了", "他看到普魯士士兵", "他生病了"], why: "j’étais très en retard… je n’en savais pas le premier mot。" },
-      { q: "法蘭茲一度想做什麼？", options: ["翹課到田野裡跑", "回家睡覺", "去鎮公所看公告", "找鐵匠聊天"], why: "l’idée me vint de manquer la classe et de prendre ma course à travers champs。" },
-      { q: "阿梅爾先生宣布了什麼消息？", options: ["學校以後只能教德文，今天是最後一堂法文課", "他要退休去旅行", "明天放假", "要舉行頒獎典禮"], why: "L’ordre est venu de Berlin de ne plus enseigner que l’allemand…" },
-      { q: "文中 bouleversèrent 用的是什麼時態？", options: ["簡單過去式", "未完成過去式", "複合過去式", "條件式"], why: "bouleverser 的簡單過去式第三人稱複數：bouleversèrent，是文學敘述用的時態。" },
+      { q: "Pourquoi Franz a-t-il peur ce matin-là ?", qZh: "那天早上法蘭茲為什麼害怕？", options: [["Il est en retard et ne sait pas sa leçon sur les participes.", "他遲到了，又不會老師要考的分詞。"], ["Il a perdu ses devoirs.", "他弄丟了作業。"], ["Il a vu des soldats prussiens.", "他看到普魯士士兵。"], ["Il est malade.", "他生病了。"]], why: "j’étais très en retard… je n’en savais pas le premier mot。" },
+      { q: "Quelle idée lui vient un moment ?", qZh: "他一度想做什麼？", options: [["Manquer la classe et courir à travers champs", "翹課到田野裡跑"], ["Rentrer dormir", "回家睡覺"], ["Aller à la pêche", "去釣魚"], ["Aller voir le maire", "去找鎮長"]], why: "l’idée me vint de manquer la classe et de prendre ma course à travers champs。" },
+      { q: "Quelle nouvelle M. Hamel annonce-t-il ?", qZh: "阿梅爾先生宣布了什麼消息？", options: [["On n’enseignera plus que l’allemand : c’est la dernière leçon de français.", "以後只能教德文，這是最後一堂法文課。"], ["Il part en voyage.", "他要去旅行。"], ["Demain, il n’y a pas d’école.", "明天不用上學。"], ["Il y aura une distribution de prix.", "要舉行頒獎典禮。"]], why: "L’ordre est venu de Berlin de ne plus enseigner que l’allemand…" },
+      { q: "À quel temps est le verbe « bouleversèrent » ?", qZh: "「bouleversèrent」是什麼時態？", options: [["Au passé simple", "簡單過去式"], ["À l’imparfait", "未完成過去式"], ["Au passé composé", "複合過去式"], ["Au conditionnel", "條件式"]], why: "bouleverser 的簡單過去式第三人稱複數：bouleversèrent，是文學敘述用的時態。" },
     ],
   },
 ];

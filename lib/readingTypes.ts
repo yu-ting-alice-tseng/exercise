@@ -10,11 +10,20 @@ export interface Gloss {
   note?: string;
 }
 
-/** 閱讀測驗題：options 第一個是正確答案 */
+/** 閱讀測驗題（法文，附中文翻譯）：options 第一個是正確答案 */
 export interface ReadingQ {
   q: string;
-  options: string[];
+  qZh: string;
+  options: [fr: string, zh: string][];
+  /** 解析（中文） */
   why: string;
+}
+
+/** 參考資料（原創文章參考過的資料，只取事實，不轉載文字） */
+export interface Ref {
+  title: string;
+  site: string;
+  url: string;
 }
 
 export interface Reading {
@@ -29,8 +38,8 @@ export interface Reading {
   intro: string;
   /** 經典作品的出處 */
   source?: { author: string; work: string; edition: string; url: string; note?: string };
-  /** 原創文章裡事實的查證來源 */
-  facts?: { claim: string; url: string }[];
+  /** 原創文章參考過的資料；沒有就代表是純虛構的故事 */
+  refs?: Ref[];
   /** 詩：每句裡的換行要保留 */
   verse?: boolean;
   /**

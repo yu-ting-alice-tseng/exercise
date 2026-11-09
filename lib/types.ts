@@ -11,8 +11,10 @@ interface BaseQuestion {
   /** 主題代號，可多個 */
   themes: string[];
   difficulty: Difficulty;
-  /** 題目說明（繁體中文） */
+  /** 題目說明（繁體中文）；閱讀測驗是法文題目 */
   instruction: string;
+  /** 閱讀測驗：題目的中文翻譯 */
+  instructionZh?: string;
   /** 題幹（法文）；填充題用 ___ 表示空格 */
   stem: string;
   /** 解析（繁體中文） */
@@ -57,6 +59,6 @@ export interface PaperConfig {
 
 /** 抽出來、選項已打亂的題目 */
 export type DrawnQuestion =
-  | (ChoiceQuestion & { displayOptions: string[]; displayAnswer: number })
+  | (ChoiceQuestion & { displayOptions: string[]; displayAnswer: number; displayOptionsZh?: string[] })
   | FillQuestion
   | ShortQuestion;

@@ -19,6 +19,7 @@ export default function InlineQuiz({
   heading,
   sub,
   actions,
+  zh,
 }: {
   questions: DrawnQuestion[];
   level: Level;
@@ -28,6 +29,8 @@ export default function InlineQuiz({
   sub: string;
   /** 批改後顯示的按鈕 */
   actions?: (correct: number) => React.ReactNode;
+  /** 閱讀測驗的翻譯顯示方式，跟著文章的設定 */
+  zh?: "show" | "tap" | "hide";
 }) {
   const [answers, setAnswers] = useState<Record<string, Answer>>({});
   const [marks, setMarks] = useState<Record<string, boolean>>({});
@@ -100,6 +103,7 @@ export default function InlineQuiz({
               if (session.current) updateAnswer(session.current.id, q.id, q.grammar, ok ? "c" : "w", session.current.prev[q.id]);
             }}
             noteLink={false}
+            zh={zh}
           />
         ))}
       </ol>

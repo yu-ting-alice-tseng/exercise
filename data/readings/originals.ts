@@ -1,7 +1,7 @@
 import type { Reading } from "@/lib/readingTypes";
 
 /**
- * 本站原創文章。人物與情節是虛構的；文中提到的事實都附上查證來源（facts），
+ * 本站原創文章。人物與情節是虛構的；背景資訊參考的資料列在 refs，只採用事實、不轉載原文，
  * 數字會變動的資訊（使用人數、國家數）刻意不寫。
  */
 export const ORIGINALS: Reading[] = [
@@ -44,10 +44,10 @@ export const ORIGINALS: Reading[] = [
       visiter: { lemma: "visiter", pos: "動詞", zh: "參觀、遊覽（地方）", note: "拜訪人要用 rendre visite à。" },
     },
     quiz: [
-      { q: "蕾雅住在哪裡？", options: ["里昂", "巴黎", "台北", "馬賽"], why: "J’habite à Lyon。" },
-      { q: "蕾雅的工作是什麼？", options: ["護理師", "學生", "老師", "廚師"], why: "Je suis infirmière dans un hôpital。" },
-      { q: "誰在巴黎讀大學？", options: ["她的哥哥雨果", "她的妹妹克蘿伊", "蕾雅自己", "她的爸爸"], why: "Mon frère s’appelle Hugo ; il est étudiant à Paris。" },
-      { q: "蕾雅為什麼學中文？", options: ["因為她想去台灣玩", "因為工作需要", "因為她的妹妹在學", "因為她住在台灣"], why: "parce que je voudrais visiter Taïwan。" },
+      { q: "Où habite Léa ?", qZh: "蕾雅住在哪裡？", options: [["À Lyon", "在里昂"], ["À Paris", "在巴黎"], ["À Taipei", "在台北"], ["À Marseille", "在馬賽"]], why: "J’habite à Lyon。" },
+      { q: "Quel est le métier de Léa ?", qZh: "蕾雅的職業是什麼？", options: [["Elle est infirmière.", "她是護理師。"], ["Elle est étudiante.", "她是學生。"], ["Elle est professeure.", "她是老師。"], ["Elle est cuisinière.", "她是廚師。"]], why: "Je suis infirmière dans un hôpital。" },
+      { q: "Qui fait ses études à Paris ?", qZh: "誰在巴黎讀書？", options: [["Son frère Hugo", "她的哥哥雨果"], ["Sa sœur Chloé", "她的妹妹克蘿伊"], ["Léa", "蕾雅"], ["Son père", "她的爸爸"]], why: "Mon frère s’appelle Hugo ; il est étudiant à Paris。" },
+      { q: "Pourquoi Léa apprend-elle le chinois ?", qZh: "蕾雅為什麼學中文？", options: [["Parce qu’elle voudrait visiter Taïwan.", "因為她想去台灣玩。"], ["Pour son travail.", "為了工作。"], ["Parce que sa sœur l’apprend.", "因為她妹妹在學。"], ["Parce qu’elle habite à Taïwan.", "因為她住在台灣。"]], why: "parce que je voudrais visiter Taïwan。" },
     ],
   },
   {
@@ -84,10 +84,10 @@ export const ORIGINALS: Reading[] = [
       boulangerie: { lemma: "la boulangerie", pos: "陰性名詞", zh: "麵包店" },
     },
     quiz: [
-      { q: "湯瑪買了多少番茄？", options: ["一公斤", "兩公斤", "半公斤", "一盒"], why: "Je voudrais un kilo de tomates。" },
-      { q: "一盒草莓多少錢？", options: ["四歐元", "兩歐元", "十歐元五十分", "五歐元"], why: "Quatre euros la barquette。" },
-      { q: "「Et avec ça ?」是什麼意思？", options: ["還要什麼嗎？", "要付現嗎？", "要袋子嗎？", "這個怎麼樣？"], why: "店家問客人還要不要買別的東西。" },
-      { q: "湯瑪中午要做什麼？", options: ["請朋友吃午餐", "去餐廳", "再去市場", "去上班"], why: "Ce midi, il invite ses amis à déjeuner。" },
+      { q: "Combien de tomates Thomas achète-t-il ?", qZh: "湯瑪買了多少番茄？", options: [["Un kilo", "一公斤"], ["Deux kilos", "兩公斤"], ["Un demi-kilo", "半公斤"], ["Une barquette", "一盒"]], why: "Je voudrais un kilo de tomates。" },
+      { q: "Combien coûte une barquette de fraises ?", qZh: "一盒草莓多少錢？", options: [["Quatre euros", "四歐元"], ["Deux euros", "兩歐元"], ["Dix euros cinquante", "十歐元五十分"], ["Cinq euros", "五歐元"]], why: "Quatre euros la barquette。" },
+      { q: "Que veut dire « Et avec ça ? » ?", qZh: "「Et avec ça ?」是什麼意思？", options: [["Vous voulez autre chose ?", "還要別的嗎？"], ["Vous payez en espèces ?", "要付現嗎？"], ["Vous voulez un sac ?", "要袋子嗎？"], ["C’est comment ?", "這個怎麼樣？"]], why: "店家問客人還要不要買別的東西。" },
+      { q: "Que fait Thomas ce midi ?", qZh: "湯瑪今天中午要做什麼？", options: [["Il invite ses amis à déjeuner.", "請朋友吃午餐。"], ["Il va au restaurant.", "去餐廳。"], ["Il retourne au marché.", "再去市場。"], ["Il va au travail.", "去上班。"]], why: "Ce midi, il invite ses amis à déjeuner。" },
     ],
   },
   {
@@ -98,9 +98,8 @@ export const ORIGINALS: Reading[] = [
     zh: "聖燭節：可麗餅的日子",
     theme: "culture",
     intro: "每年 2 月 2 日，法國人會在家做可麗餅。這個節日從哪裡來？翻可麗餅又有什麼傳統？",
-    facts: [
-      { claim: "聖燭節在 2 月 2 日，是聖誕節後的第四十天；在法國、比利時和瑞士法語區傳統上會吃可麗餅。", url: "https://fr.wikipedia.org/wiki/Chandeleur" },
-      { claim: "傳統習俗：右手翻可麗餅、左手握著一枚金幣，據說能帶來好運與財富。", url: "https://fr.wikipedia.org/wiki/Chandeleur" },
+    refs: [
+      { title: "Chandeleur", site: "維基百科（法文）", url: "https://fr.wikipedia.org/wiki/Chandeleur" },
     ],
     paragraphs: [
       [
@@ -127,10 +126,10 @@ export const ORIGINALS: Reading[] = [
       "faisait sauter": { lemma: "faire sauter", pos: "動詞片語（未完成過去式）", zh: "拋起來翻面；（烹飪）快炒" },
     },
     quiz: [
-      { q: "聖燭節是哪一天？", options: ["2 月 2 日", "12 月 25 日", "1 月 1 日", "7 月 14 日"], why: "le 2 février。" },
-      { q: "聖燭節和聖誕節相隔多久？", options: ["四十天", "一個星期", "一百天", "兩個月"], why: "quarante jours après Noël。" },
-      { q: "傳統上，翻第一張可麗餅時左手要拿什麼？", options: ["一枚金幣", "一個蛋", "一支湯匙", "一根蠟燭"], why: "en tenant une pièce d’or dans la main gauche。" },
-      { q: "文中 « elle finit parfois par terre » 指的是什麼？", options: ["可麗餅有時掉到地上", "節日有時取消", "孩子有時跌倒", "麵糊有時不夠"], why: "孩子拋可麗餅時，有時沒接住，掉到地上。" },
+      { q: "Quand a lieu la Chandeleur ?", qZh: "聖燭節是哪一天？", options: [["Le 2 février", "2 月 2 日"], ["Le 25 décembre", "12 月 25 日"], ["Le 1er janvier", "1 月 1 日"], ["Le 14 juillet", "7 月 14 日"]], why: "le 2 février。" },
+      { q: "Combien de jours après Noël a lieu la Chandeleur ?", qZh: "聖燭節在聖誕節後幾天？", options: [["Quarante jours", "四十天"], ["Une semaine", "一個星期"], ["Cent jours", "一百天"], ["Deux mois", "兩個月"]], why: "quarante jours après Noël。" },
+      { q: "Autrefois, que tenait-on dans la main gauche en faisant sauter la première crêpe ?", qZh: "從前翻第一張可麗餅時，左手拿著什麼？", options: [["Une pièce d’or", "一枚金幣"], ["Un œuf", "一顆蛋"], ["Une cuillère", "一支湯匙"], ["Une bougie", "一根蠟燭"]], why: "en tenant une pièce d’or dans la main gauche。" },
+      { q: "Que veut dire « elle finit parfois par terre » ?", qZh: "「elle finit parfois par terre」是什麼意思？", options: [["La crêpe tombe parfois par terre.", "可麗餅有時會掉到地上。"], ["La fête est parfois annulée.", "節日有時會取消。"], ["Les enfants tombent parfois.", "孩子有時會跌倒。"], ["Il n’y a parfois pas assez de pâte.", "麵糊有時不夠。"]], why: "孩子拋可麗餅時，有時沒接住，掉到地上。" },
     ],
   },
   {
@@ -141,9 +140,8 @@ export const ORIGINALS: Reading[] = [
     zh: "台北週末",
     theme: "voyage",
     intro: "法國學生馬克第一次來台灣，寫信告訴朋友他在台北的週末，重點是夜市。練習複合過去式。",
-    facts: [
-      { claim: "士林夜市位於台北市士林區，是台灣最大、最有名的夜市之一，靠近捷運淡水信義線（紅線）劍潭站。", url: "https://fr.wikipedia.org/wiki/March%C3%A9_de_nuit_de_Shilin" },
-      { claim: "士林夜市的攤位大約下午四點開始營業，晚上八點到十一點人最多。", url: "https://fr.wikipedia.org/wiki/March%C3%A9_de_nuit_de_Shilin" },
+    refs: [
+      { title: "Marché de nuit de Shilin", site: "維基百科（法文）", url: "https://fr.wikipedia.org/wiki/March%C3%A9_de_nuit_de_Shilin" },
     ],
     paragraphs: [
       [
@@ -176,10 +174,10 @@ export const ORIGINALS: Reading[] = [
       bises: { lemma: "la bise", pos: "陰性名詞", zh: "親吻（臉頰）", note: "Bises 是寫給朋友的信件結尾。" },
     },
     quiz: [
-      { q: "馬克搭捷運到哪一站？", options: ["劍潭站", "台北車站", "淡水站", "士林站"], why: "j’ai pris le métro jusqu’à la station Jiantan。" },
-      { q: "夜市什麼時候人最多？", options: ["晚上八點到十一點", "下午四點", "中午", "早上"], why: "il y a le plus de monde le soir, entre vingt heures et vingt-trois heures。" },
-      { q: "馬克覺得臭豆腐怎麼樣？", options: ["味道很重，但很好吃", "很難吃", "沒有味道", "他沒有吃"], why: "L’odeur est très forte, mais le goût est délicieux。" },
-      { q: "馬克星期天為什麼休息？", options: ["因為前一晚很晚才回家", "因為他生病了", "因為下雨", "因為夜市沒開"], why: "parce que nous sommes rentrés très tard。" },
+      { q: "Jusqu’à quelle station Marc a-t-il pris le métro ?", qZh: "馬克搭捷運到哪一站？", options: [["Jiantan", "劍潭站"], ["La gare de Taipei", "台北車站"], ["Tamsui", "淡水站"], ["Shilin", "士林站"]], why: "j’ai pris le métro jusqu’à la station Jiantan。" },
+      { q: "Quand y a-t-il le plus de monde au marché de nuit ?", qZh: "夜市什麼時候人最多？", options: [["Entre vingt heures et vingt-trois heures", "晚上八點到十一點"], ["Vers seize heures", "下午四點左右"], ["À midi", "中午"], ["Le matin", "早上"]], why: "il y a le plus de monde le soir, entre vingt heures et vingt-trois heures。" },
+      { q: "Que pense Marc du tofu puant ?", qZh: "馬克覺得臭豆腐怎麼樣？", options: [["L’odeur est forte, mais c’est délicieux.", "味道很重，但很好吃。"], ["C’est mauvais.", "很難吃。"], ["Ça n’a pas de goût.", "沒有味道。"], ["Il n’en a pas mangé.", "他沒有吃。"]], why: "L’odeur est très forte, mais le goût est délicieux。" },
+      { q: "Pourquoi Marc s’est-il reposé dimanche ?", qZh: "馬克星期天為什麼休息？", options: [["Parce qu’il est rentré très tard la veille.", "因為前一天很晚才回家。"], ["Parce qu’il était malade.", "因為他生病了。"], ["Parce qu’il pleuvait.", "因為下雨。"], ["Parce que le marché était fermé.", "因為夜市沒開。"]], why: "parce que nous sommes rentrés très tard。" },
     ],
   },
   {
@@ -190,10 +188,8 @@ export const ORIGINALS: Reading[] = [
     zh: "長棍麵包：人類的文化遺產",
     theme: "nourriture",
     intro: "2022 年，長棍麵包的手藝與文化被列入聯合國教科文組織的非物質文化遺產。為什麼一根麵包這麼重要？",
-    facts: [
-      { claim: "「長棍麵包的手工技藝與文化」於 2022 年 11 月底列入聯合國教科文組織人類非物質文化遺產代表作名錄；2018 年先列入法國的非物質文化遺產清單。", url: "https://fr.wikipedia.org/wiki/Baguette_(pain)" },
-      { claim: "依 1993 年 9 月 13 日的第 93-1074 號法令，「法國傳統麵包」只能用麵粉、水、鹽和酵母或天然酵種製作，只允許極少量的特定添加物。", url: "https://fr.wikipedia.org/wiki/Baguette_(pain)" },
-      { claim: "長棍麵包在 1950 年代末形成今天的樣子：約 250 克、長約 60 公分。", url: "https://fr.wikipedia.org/wiki/Baguette_(pain)" },
+    refs: [
+      { title: "Baguette (pain)", site: "維基百科（法文）", url: "https://fr.wikipedia.org/wiki/Baguette_(pain)" },
     ],
     paragraphs: [
       [
@@ -221,10 +217,10 @@ export const ORIGINALS: Reading[] = [
       rituel: { lemma: "le rituel", pos: "陽性名詞", zh: "儀式、習慣" },
     },
     quiz: [
-      { q: "聯合國教科文組織保護的是什麼？", options: ["長棍麵包的手藝與相關文化", "麵包本身的配方專利", "某一家麵包店", "法國所有的麵包"], why: "Ce n’est donc pas le pain lui-même qui est protégé, mais le savoir-faire des boulangers…" },
-      { q: "長棍麵包的現代樣子大約是什麼時候定型的？", options: ["1950 年代末", "1993 年", "2022 年", "十八世紀"], why: "date de la fin des années 1950。" },
-      { q: "依照 1993 年的法令，「傳統長棍麵包」基本上可以用哪些材料？", options: ["麵粉、水、鹽、酵母或天然酵種", "麵粉、牛奶、奶油、糖", "麵粉、蛋、水、鹽", "任何材料都可以"], why: "essentiellement avec de la farine, de l’eau, du sel et de la levure ou du levain。" },
-      { q: "文中「art de vivre」最接近哪個意思？", options: ["生活藝術、生活方式", "藝術品", "烹飪課", "美術館"], why: "un art de vivre＝一種生活的藝術、生活方式。" },
+      { q: "Qu’est-ce que l’UNESCO a inscrit sur sa liste ?", qZh: "聯合國教科文組織列入名錄的是什麼？", options: [["Le savoir-faire des boulangers et la culture de la baguette", "麵包師傅的手藝與長棍麵包的文化"], ["La recette secrète d’une boulangerie", "某家麵包店的祕方"], ["Une boulangerie parisienne", "一家巴黎的麵包店"], ["Tous les pains français", "所有法國麵包"]], why: "Ce n’est donc pas le pain lui-même qui est protégé, mais le savoir-faire des boulangers…" },
+      { q: "De quand date la baguette telle qu’on la connaît aujourd’hui ?", qZh: "今天的長棍麵包是什麼時候定型的？", options: [["De la fin des années 1950", "1950 年代末"], ["De 1993", "1993 年"], ["De 2022", "2022 年"], ["Du XVIIIe siècle", "十八世紀"]], why: "date de la fin des années 1950。" },
+      { q: "Avec quoi fabrique-t-on la « baguette de tradition française » ?", qZh: "「法國傳統長棍麵包」用什麼做？", options: [["Essentiellement de la farine, de l’eau, du sel et de la levure ou du levain", "基本上是麵粉、水、鹽和酵母或天然酵種"], ["De la farine, du lait, du beurre et du sucre", "麵粉、牛奶、奶油和糖"], ["De la farine, des œufs, de l’eau et du sel", "麵粉、蛋、水和鹽"], ["N’importe quels ingrédients", "任何材料都可以"]], why: "essentiellement avec de la farine, de l’eau, du sel et de la levure ou du levain。" },
+      { q: "Dans la dernière phrase, « un art de vivre » signifie :", qZh: "最後一句的「un art de vivre」是指：", options: [["une manière de vivre", "一種生活方式"], ["une œuvre d’art", "一件藝術品"], ["un cours de cuisine", "一堂烹飪課"], ["un musée", "一間博物館"]], why: "un art de vivre＝一種生活的藝術、生活方式。" },
     ],
   },
   {
@@ -235,12 +231,9 @@ export const ORIGINALS: Reading[] = [
     zh: "環法自行車賽",
     theme: "loisirs",
     intro: "全世界最有名的自行車賽事。黃衫、圓點衫、綠衫代表什麼？終點為什麼常在香榭麗舍大道？",
-    facts: [
-      { claim: "第一屆環法賽在 1903 年舉行，由《L’Auto》報主辦，目的是提高報紙銷量；此後每年舉辦，兩次世界大戰期間除外。", url: "https://fr.wikipedia.org/wiki/Tour_de_France" },
-      { claim: "現代的環法賽有 21 個賽段和 2 個休息日，共約 23 天、將近 3,500 公里，通常在七月舉行。", url: "https://fr.wikipedia.org/wiki/Tour_de_France" },
-      { claim: "黃衫至遲在 1919 年出現（1919 年 7 月 19 日首次頒發）。", url: "https://fr.wikipedia.org/wiki/Maillot_jaune" },
-      { claim: "1975 年首次在香榭麗舍大道結束，同年引入圓點衫（最佳爬坡手）與白衫（最佳年輕車手）；綠衫是積分領先者。", url: "https://fr.wikipedia.org/wiki/Tour_de_France" },
-      { claim: "2024 年因巴黎奧運，終點首次移到法蘭西島以外的尼斯。", url: "https://fr.wikipedia.org/wiki/Tour_de_France" },
+    refs: [
+      { title: "Tour de France", site: "維基百科（法文）", url: "https://fr.wikipedia.org/wiki/Tour_de_France" },
+      { title: "Maillot jaune", site: "維基百科（法文）", url: "https://fr.wikipedia.org/wiki/Maillot_jaune" },
     ],
     paragraphs: [
       [
@@ -272,10 +265,10 @@ export const ORIGINALS: Reading[] = [
       grimpeur: { lemma: "le grimpeur", pos: "陽性名詞", zh: "爬坡手" },
     },
     quiz: [
-      { q: "第一屆環法賽是誰舉辦的？為什麼？", options: ["一家報社，為了提高銷量", "法國政府，為了推廣觀光", "奧運委員會，為了選拔選手", "自行車公司，為了賣車"], why: "organisée par le journal L’Auto pour augmenter ses ventes。" },
-      { q: "現代的環法賽有幾個賽段？", options: ["二十一個", "三個", "十個", "三十五個"], why: "vingt et une étapes。" },
-      { q: "最佳爬坡手穿什麼車衫？", options: ["紅圓點衫", "黃衫", "綠衫", "白衫"], why: "le maillot à pois rouges pour le meilleur grimpeur。" },
-      { q: "2024 年的終點為什麼不在巴黎？", options: ["因為巴黎舉辦奧運", "因為下雨", "因為香榭麗舍大道在施工", "因為車手要求"], why: "à cause des Jeux olympiques de Paris。" },
+      { q: "Qui a organisé le premier Tour de France, et pourquoi ?", qZh: "誰舉辦了第一屆環法賽？為什麼？", options: [["Un journal, pour augmenter ses ventes", "一家報社，為了提高銷量"], ["Le gouvernement, pour le tourisme", "政府，為了推廣觀光"], ["Le comité olympique, pour choisir des athlètes", "奧運委員會，為了選拔選手"], ["Une marque de vélos, pour vendre des vélos", "自行車品牌，為了賣車"]], why: "organisée par le journal L’Auto pour augmenter ses ventes。" },
+      { q: "Combien d’étapes compte le Tour aujourd’hui ?", qZh: "現在的環法賽有幾個賽段？", options: [["Vingt et une", "二十一個"], ["Trois", "三個"], ["Dix", "十個"], ["Trente-cinq", "三十五個"]], why: "vingt et une étapes。" },
+      { q: "Quel maillot porte le meilleur grimpeur ?", qZh: "最佳爬坡手穿哪件車衫？", options: [["Le maillot à pois rouges", "紅圓點衫"], ["Le maillot jaune", "黃衫"], ["Le maillot vert", "綠衫"], ["Le maillot blanc", "白衫"]], why: "le maillot à pois rouges pour le meilleur grimpeur。" },
+      { q: "Pourquoi l’arrivée de 2024 n’était-elle pas à Paris ?", qZh: "2024 年的終點為什麼不在巴黎？", options: [["À cause des Jeux olympiques de Paris", "因為巴黎舉辦奧運"], ["À cause de la pluie", "因為下雨"], ["À cause de travaux sur les Champs-Élysées", "因為香榭麗舍大道在施工"], ["Parce que les coureurs l’ont demandé", "因為車手要求"]], why: "à cause des Jeux olympiques de Paris。" },
     ],
   },
   {
@@ -316,10 +309,10 @@ export const ORIGINALS: Reading[] = [
       décrocher: { lemma: "décrocher", pos: "動詞", zh: "（口語）放下工作、抽離；接電話", note: "這裡指下班後不再想工作的事。" },
     },
     quiz: [
-      { q: "作者提到遠端工作的哪一個優點？", options: ["省下通勤的時間和金錢", "薪水比較高", "可以認識更多同事", "工作量變少"], why: "On économise le temps et l’argent des trajets。" },
-      { q: "作者提到的缺點是什麼？", options: ["可能讓人孤立，而且很難區分工作和私生活", "電腦太貴", "老闆會加班", "沒有休假"], why: "il peut aussi isoler les employés… la frontière… devient floue。" },
-      { q: "作者的結論是什麼？", options: ["在家和辦公室之間取得平衡", "應該完全禁止遠端工作", "所有人都應該在家工作", "遠端工作沒有任何缺點"], why: "la meilleure solution semble être un équilibre。" },
-      { q: "最後一句 « Encore faut-il que… » 的意思最接近：", options: ["但前提是……", "從此以後……", "相反地……", "總而言之……"], why: "encore faut-il que + 虛擬式＝但還必須……（提出條件）。" },
+      { q: "Quel avantage du télétravail l’auteur cite-t-il ?", qZh: "作者提到遠端工作的哪個優點？", options: [["On économise le temps et l’argent des trajets.", "省下通勤的時間和金錢。"], ["On gagne un meilleur salaire.", "薪水比較高。"], ["On rencontre plus de collègues.", "會認識更多同事。"], ["On travaille moins.", "工作量變少。"]], why: "On économise le temps et l’argent des trajets。" },
+      { q: "Quel inconvénient l’auteur mentionne-t-il ?", qZh: "作者提到什麼缺點？", options: [["L’isolement et une frontière floue entre travail et vie privée", "孤立，以及工作和私生活的界線變模糊"], ["Les ordinateurs coûtent trop cher.", "電腦太貴。"], ["Les patrons font des heures supplémentaires.", "老闆會加班。"], ["Il n’y a plus de congés.", "沒有休假了。"]], why: "il peut aussi isoler les employés… la frontière… devient floue。" },
+      { q: "Quelle est la conclusion de l’auteur ?", qZh: "作者的結論是什麼？", options: [["Il faut trouver un équilibre entre la maison et le bureau.", "要在家裡和辦公室之間取得平衡。"], ["Il faut interdire le télétravail.", "應該禁止遠端工作。"], ["Tout le monde doit travailler à la maison.", "所有人都應該在家工作。"], ["Le télétravail n’a aucun inconvénient.", "遠端工作沒有任何缺點。"]], why: "la meilleure solution semble être un équilibre。" },
+      { q: "« Encore faut-il que… » veut dire :", qZh: "「Encore faut-il que…」的意思是：", options: [["Mais il faut d’abord que…", "但前提是……"], ["À partir de maintenant…", "從此以後……"], ["Au contraire…", "相反地……"], ["En résumé…", "總而言之……"]], why: "encore faut-il que + 虛擬式＝但還必須……（提出條件）。" },
     ],
   },
   {
@@ -330,11 +323,9 @@ export const ORIGINALS: Reading[] = [
     zh: "法語：一種世界語言",
     theme: "culture",
     intro: "法語不只在法國使用。這篇文章介紹法語在世界上的地位、法蘭西學術院，以及非洲對法語未來的重要性。",
-    facts: [
-      { claim: "法語是聯合國六種官方語言之一，也是兩種工作語言之一。", url: "https://fr.wikipedia.org/wiki/Langue_fran%C3%A7aise" },
-      { claim: "法語是在英語之後學習人數最多的外語；也是非洲大陸使用最廣的語言之一。", url: "https://fr.wikipedia.org/wiki/Langue_fran%C3%A7aise" },
-      { claim: "依法語國家國際組織（OIF）的推估，2050 年法語人口可能接近 7 億，其中約 85% 在非洲。", url: "https://fr.wikipedia.org/wiki/Langue_fran%C3%A7aise" },
-      { claim: "法蘭西學術院 1634 年成立，1635 年由黎胥留樞機主教正式設立，共有 40 名院士，別稱「不朽者」；負責編纂《法蘭西學術院詞典》並審定外來專業術語的法語對應詞。", url: "https://fr.wikipedia.org/wiki/Acad%C3%A9mie_fran%C3%A7aise" },
+    refs: [
+      { title: "Langue française", site: "維基百科（法文）", url: "https://fr.wikipedia.org/wiki/Langue_fran%C3%A7aise" },
+      { title: "Académie française", site: "維基百科（法文）", url: "https://fr.wikipedia.org/wiki/Acad%C3%A9mie_fran%C3%A7aise" },
     ],
     paragraphs: [
       [
@@ -362,10 +353,10 @@ export const ORIGINALS: Reading[] = [
       projections: { lemma: "la projection", pos: "陰性名詞", zh: "推估、預測；投影" },
     },
     quiz: [
-      { q: "根據文章，法語在聯合國的地位是什麼？", options: ["六種官方語言之一、兩種工作語言之一", "唯一的官方語言", "不是官方語言", "只在歐洲辦事處使用"], why: "l’une des six langues officielles… et l’une de ses deux langues de travail。" },
-      { q: "法蘭西學術院有幾位院士？", options: ["四十位", "一百位", "十二位", "六位"], why: "elle compte quarante membres。" },
-      { q: "為什麼作者說法語的未來取決於非洲？", options: ["因為非洲人口成長快，未來多數法語人口會在非洲", "因為學術院搬到了非洲", "因為非洲的法語最標準", "因為法國人口在減少"], why: "la grande majorité des francophones vivront sur ce continent d’ici 2050, en raison de sa forte croissance démographique。" },
-      { q: "« Loin d’être une langue figée » 的意思是：", options: ["絕不是一個僵化的語言", "離我們很遠的語言", "很難學的語言", "古老的語言"], why: "loin de + 原形動詞＝絕非……；figé＝凝固的、僵化的。" },
+      { q: "Quel est le statut du français à l’ONU ?", qZh: "法語在聯合國的地位是什麼？", options: [["C’est l’une des six langues officielles et l’une des deux langues de travail.", "六種官方語言之一，也是兩種工作語言之一。"], ["C’est la seule langue officielle.", "唯一的官方語言。"], ["Ce n’est pas une langue officielle.", "不是官方語言。"], ["On ne l’utilise qu’en Europe.", "只在歐洲使用。"]], why: "l’une des six langues officielles… et l’une de ses deux langues de travail。" },
+      { q: "Combien de membres compte l’Académie française ?", qZh: "法蘭西學術院有幾位成員？", options: [["Quarante", "四十位"], ["Cent", "一百位"], ["Douze", "十二位"], ["Six", "六位"]], why: "elle compte quarante membres。" },
+      { q: "Selon l’article, pourquoi l’avenir du français se joue-t-il en Afrique ?", qZh: "根據文章，為什麼法語的未來取決於非洲？", options: [["Parce que la majorité des francophones y vivront d’ici 2050", "因為到 2050 年，多數說法語的人會住在那裡"], ["Parce que l’Académie française s’y est installée", "因為學術院搬到了那裡"], ["Parce qu’on y parle le français le plus correct", "因為那裡的法語最標準"], ["Parce que la France perd des habitants", "因為法國人口在減少"]], why: "la grande majorité des francophones vivront sur ce continent d’ici 2050, en raison de sa forte croissance démographique。" },
+      { q: "« Loin d’être une langue figée » signifie :", qZh: "「Loin d’être une langue figée」的意思是：", options: [["Ce n’est pas du tout une langue figée.", "絕不是一個僵化的語言。"], ["C’est une langue lointaine.", "是一個遙遠的語言。"], ["C’est une langue difficile.", "是一個很難的語言。"], ["C’est une langue ancienne.", "是一個古老的語言。"]], why: "loin de + 原形動詞＝絕非……；figé＝凝固的、僵化的。" },
     ],
   },
 ];

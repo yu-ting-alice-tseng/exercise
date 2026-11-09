@@ -3,6 +3,8 @@
 import { Fragment, useRef, useState } from "react";
 import Speak from "@/components/learn/Speak";
 import type { Gloss, Reading } from "@/lib/readingTypes";
+import type { DrawnQuestion } from "@/lib/types";
+import ReadingQuiz from "./ReadingQuiz";
 import { glossKey, MARK, plainText } from "@/lib/readingText";
 import { speakFr, stopSpeaking } from "@/lib/speak";
 
@@ -64,7 +66,7 @@ function Sentence({
   return <>{out}</>;
 }
 
-export default function ReaderClient({ reading }: { reading: Reading }) {
+export default function ReaderClient({ reading, questions }: { reading: Reading; questions: DrawnQuestion[] }) {
   const [mode, setMode] = useState<Mode>("show");
   const [open, setOpen] = useState<Set<string>>(new Set());
   const [active, setActive] = useState<Active | null>(null);
@@ -130,7 +132,9 @@ export default function ReaderClient({ reading }: { reading: Reading }) {
           </span>
           {playing === null ? "全文朗讀" : "停止"}
         </button>
-        <p className="w-full text-xs text-muted">有底線的字可以點開看解釋。{mode === "tap" ? "點一下句子就會顯示翻譯。" : ""}</p>
+        <p className="w-full text-xs text-muted">
+          有底線的字可以點開看解釋。{mode === "tap" ? "點一下句子就會顯示翻譯。" : ""}這個設定也會套用到文末的閱讀測驗。
+        </p>
       </div>
 
       <article className="feuille rounded-xl px-4 py-5 sm:px-6">
@@ -223,6 +227,10 @@ export default function ReaderClient({ reading }: { reading: Reading }) {
             </Fragment>
           ))}
         </dl>
+      </section>
+
+      <section id={`quiz-${reading.id}`} className="mt-10 scroll-mt-20 rounded-2xl border-2 border-accent/30 bg-accent-soft/40 p-4 sm:p-6">
+        <ReadingQuiz id={reading.id} level={reading.level} title={reading.title} questions={questions} zh={mode} />
       </section>
     </div>
   );

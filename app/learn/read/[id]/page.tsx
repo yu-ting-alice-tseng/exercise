@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ReaderClient from "@/components/reading/ReaderClient";
-import ReadingQuiz from "@/components/reading/ReadingQuiz";
 import { container } from "@/components/ui";
-import { getReading, READINGS, readingQuestions, wordCount } from "@/lib/readings";
+import { getReading, READINGS, readingQuestions, REFS_ACCESSED, wordCount } from "@/lib/readings";
 import { LEVELS, THEMES } from "@/lib/taxonomy";
 
 export const dynamicParams = false;
@@ -46,51 +45,48 @@ export default async function ReadPage({ params }: { params: Promise<{ id: strin
       </div>
       <p className="mb-5 text-muted">{r.intro}</p>
 
-      <ReaderClient reading={r} />
+      <ReaderClient reading={r} questions={readingQuestions(r)} />
 
-      <section id={`quiz-${r.id}`} className="mt-10 scroll-mt-6 rounded-2xl border-2 border-accent/30 bg-accent-soft/40 p-4 sm:p-6">
-        <ReadingQuiz id={r.id} level={r.level} title={r.title} questions={readingQuestions(r)} />
-      </section>
-
-      {r.source && (
-        <aside className="mt-8 rounded-xl border border-line bg-surface p-4 text-sm">
-          <div className="mb-1 font-bold">出處</div>
-          <p>{r.source.author}</p>
-          <p lang="fr" className="italic">
-            {r.source.work}
-          </p>
-          <p className="text-muted">
-            原文依據：
-            <a href={r.source.url} target="_blank" rel="noreferrer" className="text-accent underline-offset-2 hover:underline">
-              {r.source.edition}（維基文庫）
-            </a>
-          </p>
-          {r.source.note && <p className="text-muted">{r.source.note}</p>}
-          <p className="mt-1 text-xs text-muted">作品已進入公有領域。對話破折號改成短橫線，其餘文字與原版相同；中文為本站翻譯。</p>
-        </aside>
-      )}
-
-      {r.facts && r.facts.length > 0 && (
-        <aside className="mt-8 rounded-xl border border-line bg-surface p-4 text-sm">
-          <div className="mb-1 font-bold">事實查證</div>
-          <p className="mb-2 text-xs text-muted">本文是本站原創，人物與情節是虛構的。文中提到的事實已對照以下資料：</p>
-          <ul className="space-y-1.5">
-            {r.facts.map((f, k) => (
-              <li key={k} className="flex gap-2">
-                <span className="text-ok" aria-hidden>
-                  ✓
-                </span>
-                <span>
-                  {f.claim}{" "}
-                  <a href={f.url} target="_blank" rel="noreferrer" className="text-accent underline-offset-2 hover:underline">
-                    來源
+      <footer className="mt-10 border-t border-line pt-5 text-sm">
+        <h2 className="mb-2 font-bold">
+          資料來源 <span className="display font-normal text-muted italic">Sources</span>
+        </h2>
+        {r.source ? (
+          <div className="space-y-1.5">
+            <p>
+              <span lang="fr">{r.source.author}</span>，〈<span lang="fr" className="italic">{r.title.replace(/ \(.*\)$/, "")}</span>〉，
+              <span lang="fr">{r.source.work}</span>。
+            </p>
+            <p className="text-muted">
+              法文原文取自
+              <a href={r.source.url} target="_blank" rel="noreferrer" className="mx-1 text-accent underline-offset-2 hover:underline">
+                維基文庫
+              </a>
+              收錄之 <span lang="fr">{r.source.edition}</span>
+              {r.source.note ? `，${r.source.note}` : "。"}
+            </p>
+            <p className="text-muted">
+              著作權：作者逝世已逾百年，原作屬公有領域。除了把對話破折號改成短橫線外，原文未經更動。中文翻譯、單字解釋與閱讀測驗由本站製作。
+            </p>
+          </div>
+        ) : r.refs && r.refs.length > 0 ? (
+          <div className="space-y-1.5">
+            <p className="text-muted">本文由本站原創撰寫，人物與情節為虛構。文中的背景資訊參考下列資料，僅採用其中的事實，未轉載原文。</p>
+            <ol className="list-decimal space-y-1 pl-5">
+              {r.refs.map((ref) => (
+                <li key={ref.url}>
+                  <span lang="fr">〈{ref.title}〉</span>，{ref.site}，{REFS_ACCESSED}查閱。
+                  <a href={ref.url} target="_blank" rel="noreferrer" className="ml-1 break-all text-accent underline-offset-2 hover:underline">
+                    {decodeURI(ref.url)}
                   </a>
-                </span>
-              </li>
-            ))}
-          </ul>
-        </aside>
-      )}
+                </li>
+              ))}
+            </ol>
+          </div>
+        ) : (
+          <p className="text-muted">本文由本站原創撰寫，人物與情節為虛構，未參考或轉載其他資料。</p>
+        )}
+      </footer>
 
       <div className="mt-6 text-right">
         <Link href={`/learn/read/${next.id}/`} className="inline-flex min-h-10 items-center text-sm text-muted hover:text-ink">

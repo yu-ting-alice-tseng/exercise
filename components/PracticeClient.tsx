@@ -376,6 +376,7 @@ export function QuestionCard({
   onAnswer,
   onMark,
   noteLink = true,
+  zh = "show",
 }: {
   q: DrawnQuestion;
   n: number;
@@ -392,7 +393,12 @@ export function QuestionCard({
   onMark: (ok: boolean) => void;
   /** 解析後面要不要加「看文法筆記」連結（在筆記頁裡就不用） */
   noteLink?: boolean;
+  /** 有中文翻譯的題目（閱讀測驗）：顯示、點開才顯示、或隱藏翻譯 */
+  zh?: "show" | "tap" | "hide";
 }) {
+  const [zhOpen, setZhOpen] = useState(false);
+  const bilingual = !!q.instructionZh;
+  const showZh = zh === "show" || (zh === "tap" && zhOpen);
   const text = typeof answer === "string" ? answer : "";
   const v = result?.verdict;
   const style = v && v !== "pending" ? VERDICT_STYLE[v] : null;
@@ -439,15 +445,38 @@ export function QuestionCard({
             <span className="display ml-1 italic">· {TYPE_LABELS[q.type].fr}</span>
           </span>
         </div>
-        {style && <span className={`shrink-0 rounded-full px-2.5 py-0.5 text-xs font-semibold ${style.badge}`}>{style.label}</span>}
+        <div className="flex shrink-0 items-center gap-2">
+          {bilingual && zh === "tap" && (
+            <button
+              type="button"
+              onClick={() => setZhOpen((o) => !o)}
+              aria-pressed={zhOpen}
+              className="rounded-full border border-line px-2.5 py-0.5 text-xs text-muted hover:border-accent/60 hover:text-ink"
+            >
+              {zhOpen ? "收起翻譯" : "看翻譯"}
+            </button>
+          )}
+          {style && <span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${style.badge}`}>{style.label}</span>}
+        </div>
       </div>
-      <p className="mb-2 text-sm text-muted">{q.instruction}</p>
+      {bilingual ? (
+        <div className="mb-3">
+          <p lang="fr" className="fr font-medium">
+            {q.instruction}
+          </p>
+          {showZh && <p className="text-sm text-muted">{q.instructionZh}</p>}
+        </div>
+      ) : (
+        <p className="mb-2 text-sm text-muted">{q.instruction}</p>
+      )}
 
       {q.type === "choice" && (
         <>
-          <p className="mb-3">
-            <Stem text={q.stem} />
-          </p>
+          {q.stem && (
+            <p className="mb-3">
+              <Stem text={q.stem} />
+            </p>
+          )}
           <div className="grid gap-2 sm:grid-cols-2">
             {q.displayOptions.map((opt, i) => {
               const picked = answer === i;
@@ -473,8 +502,11 @@ export function QuestionCard({
                   >
                     {OPTION_LETTERS[i]}
                   </span>
-                  <span lang="fr" className="fr">
-                    {opt}
+                  <span className="min-w-0">
+                    <span lang="fr" className="fr block">
+                      {opt}
+                    </span>
+                    {showZh && q.displayOptionsZh && <span className="block text-sm text-muted">{q.displayOptionsZh[i]}</span>}
                   </span>
                 </button>
               );
