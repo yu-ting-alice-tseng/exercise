@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMemo } from "react";
 import { btnPrimary, btnQuiet } from "./ui";
-import { byDay, dayKey, dueIds, startOfDay, streak } from "@/lib/progress";
+import { byDay, dayKey, dueIds, isBankId, startOfDay, streak } from "@/lib/progress";
 import { useProgress } from "@/lib/useProgress";
 import { useNow } from "@/lib/useNow";
 
@@ -16,7 +16,7 @@ export default function ProgressStrip() {
     return {
       streak: streak(days, now),
       today: Math.round((days.get(dayKey(startOfDay(now)))?.sec ?? 0) / 60),
-      due: dueIds(progress, now).length,
+      due: dueIds(progress, now).filter(isBankId).length,
     };
   }, [progress, now]);
 

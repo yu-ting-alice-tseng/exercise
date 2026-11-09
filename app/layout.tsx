@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 };
 
 const FONTS =
-  "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap";
+  "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

@@ -12,6 +12,8 @@ import { PATTERNS } from "../data/learn/patterns.ts";
 import { VOCAB } from "../data/learn/vocab.ts";
 import { MORE_PHRASES_1, VOCAB_EX_1 } from "../data/learn/vocab-ex-1.ts";
 import { MORE_PHRASES_2, VOCAB_EX_2 } from "../data/learn/vocab-ex-2.ts";
+import { CLASSICS } from "../data/readings/classics.ts";
+import { ORIGINALS } from "../data/readings/originals.ts";
 import { MORE_A1 } from "../data/learn/more-a1.ts";
 import { MORE_A2 } from "../data/learn/more-a2.ts";
 import { MORE_B1 } from "../data/learn/more-b1.ts";
@@ -177,6 +179,37 @@ console.log(`模考 ${examCount} 份。`);
   if (all.includes("—")) errors.push("學習區：請不要用破折號");
   const words = VOCAB.reduce((s, v) => s + v.groups.reduce((a, g) => a + g.words.length, 0), 0);
   console.log(`學習區：文法筆記 ${notes.length} 份、句型整理 ${PATTERNS.length} 份、更多例句 ${exList.length} 句、單字 ${words} 個（${vexCount} 個有例句）、主題常用句 ${phraseCount} 句。`);
+}
+
+// 閱讀：標記的單字都要有解釋、解釋都要用到、測驗題選項不重複、原創文章要有查證來源
+{
+  const readings = [...ORIGINALS, ...CLASSICS];
+  const ids = new Set<string>();
+  const levelIds = new Set(LEVELS.map((l) => l.id));
+  for (const r of readings) {
+    const at = `閱讀 ${r.id}`;
+    if (ids.has(r.id)) errors.push(`${at}：id 重複`);
+    ids.add(r.id);
+    if (!levelIds.has(r.level)) errors.push(`${at}：等級不正確`);
+    if (!themeIds.has(r.theme)) errors.push(`${at}：主題 ${r.theme} 不存在`);
+    if (r.kind === "classic" && !r.source?.url) errors.push(`${at}：經典作品要寫出處`);
+    if (r.kind === "original" && r.facts?.some((f) => !f.url)) errors.push(`${at}：查證項目缺少來源`);
+    const used = new Set<string>();
+    for (const [fr, zh] of r.paragraphs.flat()) {
+      if (!fr || !zh) errors.push(`${at}：有空白的句子`);
+      if ((fr.match(/\[\[/g)?.length ?? 0) !== (fr.match(/\]\]/g)?.length ?? 0)) errors.push(`${at}：標記沒有成對「${fr.slice(0, 30)}」`);
+      for (const m of fr.matchAll(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g)) {
+        const k = m[2] ?? m[1];
+        used.add(k);
+        if (!r.glossary[k]) errors.push(`${at}：「${k}」沒有單字解釋`);
+      }
+    }
+    for (const k of Object.keys(r.glossary)) if (!used.has(k)) errors.push(`${at}：單字解釋「${k}」沒有在文中標出`);
+    if (r.quiz.length < 4) errors.push(`${at}：閱讀測驗少於 4 題`);
+    for (const q of r.quiz) if (q.options.length < 3 || new Set(q.options).size !== q.options.length) errors.push(`${at}：「${q.q}」選項太少或重複`);
+    if (JSON.stringify(r).includes("—")) errors.push(`${at}：請不要用破折號`);
+  }
+  console.log(`閱讀：${readings.length} 篇（原創 ${ORIGINALS.length}、經典 ${CLASSICS.length}）。`);
 }
 
 for (const w of warnings) console.warn("⚠️ ", w);

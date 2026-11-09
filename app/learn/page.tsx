@@ -2,11 +2,13 @@ import Link from "next/link";
 import { container } from "@/components/ui";
 import { Skyline } from "@/components/Decor";
 import { NOTE_ENTRIES, PATTERNS, VOCAB, wordCount } from "@/lib/learn";
+import { READINGS } from "@/lib/readings";
 import { CATEGORIES, LEVELS, THEMES } from "@/lib/taxonomy";
 
 export const metadata = { title: "文法與單字整理｜法文練習題" };
 
 const JUMP = [
+  { href: "#lectures", zh: "閱讀", fr: "Lectures" },
   { href: "#phrases", zh: "句型總整理", fr: "Fiches de synthèse" },
   { href: "#grammaire", zh: "文法筆記", fr: "Grammaire" },
   { href: "#vocabulaire", zh: "主題單字", fr: "Vocabulaire" },
@@ -21,7 +23,7 @@ export default function LearnPage() {
         <div className="eyebrow">Mes fiches de révision</div>
         <h1 className="display text-3xl font-bold sm:text-4xl">文法與單字整理</h1>
         <p className="mt-2 max-w-2xl text-muted">
-          {PATTERNS.length} 份句型總整理、{NOTE_ENTRIES.length} 個文法點的規則筆記、{VOCAB.length} 個主題共 {totalWords} 個單字。
+          {READINGS.length} 篇中法對照閱讀、{PATTERNS.length} 份句型總整理、{NOTE_ENTRIES.length} 個文法點的規則筆記、{VOCAB.length} 個主題共 {totalWords} 個單字。
           每個例句都可以聽發音，讀完可以直接練習。
         </p>
       </div>
@@ -38,6 +40,40 @@ export default function LearnPage() {
           </a>
         ))}
       </nav>
+
+      <section id="lectures" className="mb-12 scroll-mt-20">
+        <div className="flex flex-wrap items-end justify-between gap-2">
+          <div>
+            <div className="eyebrow">Lectures</div>
+            <h2 className="display mb-1 text-2xl font-bold">閱讀</h2>
+            <p className="mb-4 text-sm text-muted">中法對照的分級文章：點字看解釋、逐句朗讀、讀完做測驗。</p>
+          </div>
+          <Link href="/learn/read/" className="mb-4 text-sm text-accent underline-offset-4 hover:underline">
+            全部 {READINGS.length} 篇 →
+          </Link>
+        </div>
+        <ul className="scroll-x -mx-4 flex snap-x gap-3 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 lg:grid-cols-4">
+          {READINGS.map((r) => (
+            <li key={r.id} className="w-64 shrink-0 snap-start sm:w-auto">
+              <Link
+                href={`/learn/read/${r.id}/`}
+                className="feuille block h-full rounded-xl py-3 pr-3 transition hover:-translate-y-0.5 hover:shadow-md"
+              >
+                <div className="mb-1 flex items-center gap-1.5 text-[11px]">
+                  <span className="rounded bg-accent px-1.5 font-bold text-accent-ink">{r.level}</span>
+                  <span className={`rounded px-1.5 font-bold ${r.kind === "classic" ? "bg-warn-soft text-warn" : "bg-accent-soft text-accent"}`}>
+                    {r.kind === "classic" ? "經典" : "原創"}
+                  </span>
+                </div>
+                <div lang="fr" className="display font-bold">
+                  {r.title}
+                </div>
+                <div className="text-sm text-muted">{r.zh}</div>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
 
       <section id="phrases" className="scroll-mt-20">
         <div className="eyebrow">Fiches de synthèse</div>

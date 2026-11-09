@@ -264,6 +264,11 @@ export function isInReview(st: QStat) {
   return st.box >= 1 && st.box < MASTERED;
 }
 
+/** 題庫題目的 id 以等級開頭（a1-art-001）；模考與閱讀測驗的題目不會出現在複習頁 */
+export function isBankId(id: string): boolean {
+  return /^[abc][12]-/.test(id);
+}
+
 export function dueIds(p: Progress, now = Date.now()): string[] {
   return Object.entries(p.q)
     .filter(([, st]) => isInReview(st) && st.due <= endOfToday(now))

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useAuth } from "@/lib/auth";
-import { dueIds } from "@/lib/progress";
+import { dueIds, isBankId } from "@/lib/progress";
 import { cloudEnabled } from "@/lib/supabase";
 import { useProgress } from "@/lib/useProgress";
 
@@ -22,7 +22,7 @@ export default function Nav() {
   const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   const path = raw.startsWith(base) ? raw.slice(base.length) || "/" : raw;
   const { progress, ready } = useProgress();
-  const due = ready ? dueIds(progress).length : 0;
+  const due = ready ? dueIds(progress).filter(isBankId).length : 0;
   const auth = useAuth();
   const links = cloudEnabled
     ? [...LINKS, { href: "/account/", zh: auth.status === "signedIn" ? "我的" : "登入", match: ACCOUNT }]

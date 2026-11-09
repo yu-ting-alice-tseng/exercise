@@ -14,6 +14,7 @@ import {
   dueIds,
   exportProgress,
   importProgress,
+  isBankId,
   isInReview,
   MASTERED,
   startOfDay,
@@ -62,7 +63,7 @@ export default function StatsClient() {
       practicedDays: days.size,
       mastered: qs.filter((q) => q.box === MASTERED).length,
       reviewing: qs.filter(isInReview).length,
-      due: dueIds(progress, now).length,
+      due: dueIds(progress, now).filter(isBankId).length,
     };
   }, [days, progress, today, now]);
 
