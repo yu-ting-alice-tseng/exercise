@@ -68,10 +68,25 @@ export default async function ReadPage({ params }: { params: Promise<{ id: strin
             <p className="text-muted">
               著作權：作者逝世已逾百年，原作屬公有領域。除了把對話破折號改成短橫線外，原文未經更動。中文翻譯、單字解釋與閱讀測驗由本站製作。
             </p>
+            {r.refs && r.refs.length > 0 && (
+              <p className="text-muted">
+                作品簡介參考：
+                {r.refs.map((ref, k) => (
+                  <span key={ref.url}>
+                    {k > 0 && "；"}
+                    <span lang="fr">〈{ref.title}〉</span>，{ref.site}，{REFS_ACCESSED}查閱
+                    <a href={ref.url} target="_blank" rel="noreferrer" className="ml-1 text-accent underline-offset-2 hover:underline">
+                      連結
+                    </a>
+                  </span>
+                ))}
+                。
+              </p>
+            )}
           </div>
         ) : r.refs && r.refs.length > 0 ? (
           <div className="space-y-1.5">
-            <p className="text-muted">本文由本站原創撰寫，人物與情節為虛構。文中的背景資訊參考下列資料，僅採用其中的事實，未轉載原文。</p>
+            <p className="text-muted">本文由本站原創撰寫。文中的背景資訊參考下列資料，僅採用其中的事實，未轉載原文。</p>
             <ol className="list-decimal space-y-1 pl-5">
               {r.refs.map((ref) => (
                 <li key={ref.url}>
@@ -84,7 +99,7 @@ export default async function ReadPage({ params }: { params: Promise<{ id: strin
             </ol>
           </div>
         ) : (
-          <p className="text-muted">本文由本站原創撰寫，人物與情節為虛構，未參考或轉載其他資料。</p>
+          <p className="text-muted">本文由本站原創撰寫，未參考或轉載其他資料。</p>
         )}
       </footer>
 
