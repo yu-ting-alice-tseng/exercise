@@ -37,7 +37,15 @@ export interface Reading {
   theme: string;
   intro: string;
   /** 經典作品的出處 */
-  source?: { author: string; work: string; edition: string; url: string; note?: string };
+  source?: {
+    author: string;
+    work: string;
+    edition: string;
+    url: string;
+    note?: string;
+    /** 依初版改成現代拼寫（用字、語序不變） */
+    modernized?: boolean;
+  };
   /** 原創文章參考過的資料；沒有就代表是純虛構的故事 */
   refs?: Ref[];
   /** 詩：每句裡的換行要保留 */

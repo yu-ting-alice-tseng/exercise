@@ -1,5 +1,6 @@
 import { CLASSICS } from "@/data/readings/classics";
 import { CLASSICS_2 } from "@/data/readings/classics2";
+import { CLASSICS_3 } from "@/data/readings/classics3";
 import { ORIGINALS } from "@/data/readings/originals";
 import { ORIGINALS_2 } from "@/data/readings/originals2";
 import { plainText } from "./readingText";
@@ -13,7 +14,7 @@ const ORDER = LEVELS.map((l) => l.id);
 export const REFS_ACCESSED = "2026 年 11 月 9 日";
 
 /** 依等級排序，同等級原創在前 */
-export const READINGS: Reading[] = [...ORIGINALS, ...ORIGINALS_2, ...CLASSICS, ...CLASSICS_2].sort(
+export const READINGS: Reading[] = [...ORIGINALS, ...ORIGINALS_2, ...CLASSICS, ...CLASSICS_2, ...CLASSICS_3].sort(
   (a, b) => ORDER.indexOf(a.level) - ORDER.indexOf(b.level) || (a.kind === b.kind ? 0 : a.kind === "original" ? -1 : 1),
 );
 

@@ -16,6 +16,7 @@ import { CLASSICS } from "../data/readings/classics.ts";
 import { ORIGINALS } from "../data/readings/originals.ts";
 import { ORIGINALS_2 } from "../data/readings/originals2.ts";
 import { CLASSICS_2 } from "../data/readings/classics2.ts";
+import { CLASSICS_3 } from "../data/readings/classics3.ts";
 import { MORE_A1 } from "../data/learn/more-a1.ts";
 import { MORE_A2 } from "../data/learn/more-a2.ts";
 import { MORE_B1 } from "../data/learn/more-b1.ts";
@@ -185,7 +186,7 @@ console.log(`模考 ${examCount} 份。`);
 
 // 閱讀：標記的單字都要有解釋、解釋都要用到、測驗題選項不重複、原創文章要有查證來源
 {
-  const readings = [...ORIGINALS, ...ORIGINALS_2, ...CLASSICS, ...CLASSICS_2];
+  const readings = [...ORIGINALS, ...ORIGINALS_2, ...CLASSICS, ...CLASSICS_2, ...CLASSICS_3];
   const ids = new Set<string>();
   const levelIds = new Set(LEVELS.map((l) => l.id));
   for (const r of readings) {
@@ -215,7 +216,7 @@ console.log(`模考 ${examCount} 份。`);
     }
     if (JSON.stringify(r).includes("—")) errors.push(`${at}：請不要用破折號`);
   }
-  console.log(`閱讀：${readings.length} 篇（原創 ${ORIGINALS.length + ORIGINALS_2.length}、經典 ${CLASSICS.length + CLASSICS_2.length}）。`);
+  console.log(`閱讀：${readings.length} 篇（原創 ${ORIGINALS.length + ORIGINALS_2.length}、經典 ${CLASSICS.length + CLASSICS_2.length + CLASSICS_3.length}）。`);
 }
 
 for (const w of warnings) console.warn("⚠️ ", w);

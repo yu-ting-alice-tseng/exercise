@@ -66,7 +66,11 @@ export default async function ReadPage({ params }: { params: Promise<{ id: strin
               {r.source.note ? `，${r.source.note}` : "。"}
             </p>
             <p className="text-muted">
-              著作權：作者逝世已逾百年，原作屬公有領域。除了把對話破折號改成短橫線外，原文未經更動。中文翻譯、單字解釋與閱讀測驗由本站製作。
+              著作權：作者逝世已逾百年，原作屬公有領域。
+              {r.source.modernized
+                ? "法文依初版照錄，只把古式拼寫改成現代拼寫，用字、語序與標點未更動。"
+                : "除了把長破折號改成短橫線外，原文未經更動。"}
+              中文翻譯、單字解釋與閱讀測驗由本站製作。
             </p>
             {r.refs && r.refs.length > 0 && (
               <p className="text-muted">
