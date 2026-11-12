@@ -40,7 +40,7 @@ function Card({ it, guess, open, onToggle }: { it: IdiomEntry; guess: boolean; o
           <p lang="fr" className="display mt-1 text-lg leading-snug font-bold">
             {it.fr}
           </p>
-          {it.lit && <p className="mt-0.5 text-xs text-muted">{it.kind === "familier" ? <span lang="fr">{it.lit}</span> : t(`字面：${it.lit}`, `Mot à mot : ${it.lit}`)}</p>}
+          {it.lit && <p className="mt-0.5 text-xs text-muted">{it.kind === "familier" || it.kind === "jeunes" ? <span lang="fr">{it.lit}</span> : t(`字面：${it.lit}`, `Mot à mot : ${it.lit}`)}</p>}
         </div>
       </div>
 
@@ -119,7 +119,7 @@ export default function IdiomsClient() {
 
   return (
     <div>
-      <div className="mb-4 grid grid-cols-3 gap-2" role="tablist" aria-label={t("類別", "Catégorie")}>
+      <div className="mb-4 grid grid-cols-2 gap-2 sm:grid-cols-4" role="tablist" aria-label={t("類別", "Catégorie")}>
         {IDIOM_KINDS.map((x) => {
           const n = IDIOMS.filter((it) => it.kind === x.id).length;
           const on = kind === x.id && !q;

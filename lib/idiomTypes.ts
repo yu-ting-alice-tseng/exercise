@@ -1,7 +1,7 @@
 import type { Level } from "./types";
 
-/** proverbe＝諺語；expression＝慣用語（形象化的說法）；familier＝口語與俚語 */
-export type IdiomKind = "proverbe" | "expression" | "familier";
+/** proverbe＝諺語；expression＝慣用語（形象化的說法）；familier＝口語與俚語；jeunes＝年輕人口語 */
+export type IdiomKind = "proverbe" | "expression" | "familier" | "jeunes";
 
 export interface Idiom {
   fr: string;

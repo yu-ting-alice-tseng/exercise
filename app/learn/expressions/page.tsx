@@ -21,8 +21,8 @@ export default function ExpressionsPage() {
         </h1>
         <p className="mt-2 max-w-2xl text-muted">
           <T
-            zh={`${IDIOMS.length} 則法國人常說的慣用語、諺語和口語。每則都有字面意思、真正的意思、意思相近的中文說法、例句和發音，還可以先遮住意思自己猜。`}
-            fr={`${IDIOMS.length} expressions, proverbes et mots familiers, avec le sens mot à mot, le vrai sens, un équivalent chinois, un exemple et la prononciation.`}
+            zh={`${IDIOMS.length} 則法國人常說的慣用語、諺語、口語，以及年輕人現在流行的說法。每則都有字面意思、真正的意思、意思相近的中文說法、例句和發音，還可以先遮住意思自己猜。`}
+            fr={`${IDIOMS.length} expressions, proverbes, mots familiers et parler jeune, avec le sens mot à mot, le vrai sens, un équivalent chinois, un exemple et la prononciation.`}
           />
         </p>
       </div>

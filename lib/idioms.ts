@@ -1,4 +1,8 @@
 import { EXPRESSIONS } from "@/data/idioms/expressions";
+import { EXPRESSIONS_2 } from "@/data/idioms/expressions2";
+import { FAMILIER_2 } from "@/data/idioms/familier2";
+import { JEUNES } from "@/data/idioms/jeunes";
+import { PROVERBES_2 } from "@/data/idioms/proverbes2";
 import { FAMILIER } from "@/data/idioms/familier";
 import { PROVERBES } from "@/data/idioms/proverbes";
 import type { Idiom, IdiomKind } from "./idiomTypes";
@@ -9,6 +13,7 @@ export const IDIOM_KINDS: { id: IdiomKind; zh: string; fr: string; desc: string;
   { id: "expression", zh: "慣用語", fr: "Expressions imagées", desc: "字面和真正意思不一樣的形象化說法，法國人天天掛在嘴邊。", descFr: "Des images qui ne veulent pas dire ce qu’elles disent, utilisées tous les jours." },
   { id: "proverbe", zh: "諺語", fr: "Proverbes", desc: "流傳已久的人生智慧，很多都能找到意思相近的中文成語。", descFr: "La sagesse populaire, souvent proche d’un chengyu chinois." },
   { id: "familier", zh: "口語與俚語", fr: "Langue familière", desc: "朋友之間的說法、倒序詞（verlan）和簡稱。聽得懂很重要，但寫作和正式場合不要用。", descFr: "Mots de tous les jours entre amis, verlan et abréviations. À comprendre, mais pas à l’écrit formel." },
+  { id: "jeunes", zh: "年輕人口語", fr: "Le parler jeune", desc: "法國年輕人現在常說的流行語、網路縮寫和外來字。流行語變得很快，也有地區差異；只適合朋友之間，對長輩、老師或正式場合都不要用。", descFr: "Le langage des ados et des jeunes adultes d’aujourd’hui : expressions, abréviations SMS, mots venus d’ailleurs. Ça change vite, et c’est uniquement entre amis." },
 ];
 
 export const IDIOM_THEMES: { id: string; kind: IdiomKind; zh: string; fr: string }[] = [
@@ -27,6 +32,12 @@ export const IDIOM_THEMES: { id: string; kind: IdiomKind; zh: string; fr: string
   { id: "reponses", kind: "familier", zh: "回應與感嘆", fr: "Réactions" },
   { id: "verlan", kind: "familier", zh: "倒序詞 verlan", fr: "Le verlan" },
   { id: "abreviations", kind: "familier", zh: "簡稱與省略", fr: "Abréviations" },
+  { id: "reactions", kind: "jeunes", zh: "反應與感嘆", fr: "Réactions" },
+  { id: "parler", kind: "jeunes", zh: "口頭禪", fr: "Tics de langage" },
+  { id: "relations", kind: "jeunes", zh: "人與關係", fr: "Les gens" },
+  { id: "origines", kind: "jeunes", zh: "來自阿拉伯語與非洲法語", fr: "Mots venus d’ailleurs" },
+  { id: "anglais", kind: "jeunes", zh: "英文借字", fr: "Anglicismes" },
+  { id: "sms", kind: "jeunes", zh: "簡訊與網路縮寫", fr: "SMS et réseaux" },
 ];
 
 export interface IdiomEntry extends Idiom {
@@ -46,7 +57,12 @@ function slug(s: string): string {
 
 const tag = (kind: IdiomKind) => (i: Idiom): IdiomEntry => ({ ...i, kind, id: `${kind[0]}-${slug(i.fr)}` });
 
-export const IDIOMS: IdiomEntry[] = [...EXPRESSIONS.map(tag("expression")), ...PROVERBES.map(tag("proverbe")), ...FAMILIER.map(tag("familier"))];
+export const IDIOMS: IdiomEntry[] = [
+  ...[...EXPRESSIONS, ...EXPRESSIONS_2].map(tag("expression")),
+  ...[...PROVERBES, ...PROVERBES_2].map(tag("proverbe")),
+  ...[...FAMILIER, ...FAMILIER_2].map(tag("familier")),
+  ...JEUNES.map(tag("jeunes")),
+];
 
 export const REG_LABEL: Record<Idiom["reg"], { zh: string; fr: string }> = {
   soutenu: { zh: "正式", fr: "soutenu" },

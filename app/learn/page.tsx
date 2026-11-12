@@ -115,7 +115,7 @@ export default function LearnPage() {
             <T zh="全部看看" fr="Tout voir" /> →
           </Link>
         </div>
-        <ul className="grid gap-3 sm:grid-cols-3">
+        <ul className="grid grid-cols-2 gap-3 lg:grid-cols-4">
           {IDIOM_KINDS.map((k) => {
             const sample = IDIOMS.find((i) => i.kind === k.id)!;
             return (

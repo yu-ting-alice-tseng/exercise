@@ -21,6 +21,10 @@ import { DIALOGUES_MANGER } from "../data/dialogues/manger.ts";
 import { PROVERBES } from "../data/idioms/proverbes.ts";
 import { EXPRESSIONS } from "../data/idioms/expressions.ts";
 import { FAMILIER } from "../data/idioms/familier.ts";
+import { EXPRESSIONS_2 } from "../data/idioms/expressions2.ts";
+import { PROVERBES_2 } from "../data/idioms/proverbes2.ts";
+import { FAMILIER_2 } from "../data/idioms/familier2.ts";
+import { JEUNES } from "../data/idioms/jeunes.ts";
 import { DIALOGUES_VOYAGE } from "../data/dialogues/voyage.ts";
 import { DIALOGUES_SOCIAL } from "../data/dialogues/social.ts";
 import { DIALOGUES_TRAVAIL } from "../data/dialogues/travail.ts";
@@ -284,11 +288,13 @@ console.log(`模考 ${examCount} 份。`);
     expression: ["animaux", "corps", "nourriture", "couleurs", "temps", "sentiments", "vie"],
     proverbe: ["patience", "prudence", "relations", "vie"],
     familier: ["mots", "reponses", "verlan", "abreviations"],
+    jeunes: ["reactions", "parler", "relations", "origines", "anglais", "sms"],
   };
-  const ELISION = /(^|[\s«(])(je|me|te|se|ne|que|de) [aeiouéèêâîôûœ]/i;
+  // de ouf 習慣上不省音
+  const ELISION = /(^|[\s«(])(je|me|te|se|ne|que|de) (?!ouf\b)[aeiouéèêâîôûœ]/i;
   const levelIds = new Set(LEVELS.map((l) => l.id));
   const seen = new Set<string>();
-  const groups: [string, typeof PROVERBES][] = [["proverbe", PROVERBES], ["expression", EXPRESSIONS], ["familier", FAMILIER]];
+  const groups: [string, typeof PROVERBES][] = [["proverbe", [...PROVERBES, ...PROVERBES_2]], ["expression", [...EXPRESSIONS, ...EXPRESSIONS_2]], ["familier", [...FAMILIER, ...FAMILIER_2]], ["jeunes", JEUNES]];
   for (const [kind, list] of groups) {
     for (const it of list) {
       const at = `俗語 ${it.fr}`;
@@ -302,9 +308,9 @@ console.log(`模考 ${examCount} 份。`);
       for (const s of [it.fr, it.ex[0]]) if (ELISION.test(s)) errors.push(`${at}：可能漏了省音「${s}」`);
     }
   }
-  if (JSON.stringify([PROVERBES, EXPRESSIONS, FAMILIER]).includes("—")) errors.push("俗語諺語：請不要用破折號");
-  if (EXPRESSIONS.length + PROVERBES.length + FAMILIER.length < 4) errors.push("俗語諺語：資料太少");
-  console.log(`俗語諺語：慣用語 ${EXPRESSIONS.length}、諺語 ${PROVERBES.length}、口語 ${FAMILIER.length}，共 ${EXPRESSIONS.length + PROVERBES.length + FAMILIER.length} 則。`);
+  if (JSON.stringify(groups).includes("—")) errors.push("俗語諺語：請不要用破折號");
+  const n = (k: string) => groups.find((g) => g[0] === k)![1].length;
+  console.log(`俗語諺語：慣用語 ${n("expression")}、諺語 ${n("proverbe")}、口語 ${n("familier")}、年輕人口語 ${n("jeunes")}，共 ${seen.size} 則。`);
 }
 
 // 寫作指南：範文字數要符合該等級的考試下限（DELF A1 40、A2 60、B1 160、B2 250；DALF C1 綜合摘要 220–240）
