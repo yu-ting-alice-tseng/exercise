@@ -5,6 +5,7 @@ import { NOTE_ENTRIES, PATTERNS, VOCAB, wordCount } from "@/lib/learn";
 import { READINGS } from "@/lib/readings";
 import { GUIDES } from "@/lib/writing";
 import { DIALOGUES, SCENES } from "@/lib/dialogues";
+import { IDIOM_KINDS, IDIOMS } from "@/lib/idioms";
 import { CATEGORIES, LEVELS, THEMES } from "@/lib/taxonomy";
 import { T, ZhOnly } from "@/components/T";
 
@@ -12,6 +13,7 @@ export const metadata = { title: "文法與單字整理｜法文練習題" };
 
 const JUMP = [
   { href: "#dialogues", zh: "情境對話", fr: "Dialogues" },
+  { href: "#expressions", zh: "俗語諺語", fr: "Expressions" },
   { href: "#lectures", zh: "閱讀", fr: "Lectures" },
   { href: "#ecriture", zh: "寫作", fr: "Écriture" },
   { href: "#phrases", zh: "句型總整理", fr: "Fiches de synthèse" },
@@ -86,6 +88,46 @@ export default function LearnPage() {
                   <div className="mt-1 text-xs text-muted tabular-nums">
                     <T zh={`${n} 段對話`} fr={`${n} dialogues`} />
                   </div>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+
+      <section id="expressions" className="mb-12 scroll-mt-20">
+        <div className="flex flex-wrap items-end justify-between gap-2">
+          <div>
+            <ZhOnly>
+              <div className="eyebrow">Expressions et proverbes</div>
+            </ZhOnly>
+            <h2 className="display mb-1 text-2xl font-bold">
+              <T zh="俗語與諺語" fr="Expressions et proverbes" />
+            </h2>
+            <p className="mb-4 text-sm text-muted">
+              <T
+                zh={`${IDIOMS.length} 則慣用語、諺語和口語：字面意思、真正意思、相近的中文說法和例句，還有猜意思小測驗。`}
+                fr={`${IDIOMS.length} expressions, proverbes et mots familiers, avec équivalents chinois, exemples et quiz.`}
+              />
+            </p>
+          </div>
+          <Link href="/learn/expressions/" className="mb-4 text-sm text-accent underline-offset-4 hover:underline">
+            <T zh="全部看看" fr="Tout voir" /> →
+          </Link>
+        </div>
+        <ul className="grid gap-3 sm:grid-cols-3">
+          {IDIOM_KINDS.map((k) => {
+            const sample = IDIOMS.find((i) => i.kind === k.id)!;
+            return (
+              <li key={k.id}>
+                <Link href="/learn/expressions/" className="feuille block h-full rounded-xl py-3 pr-3 transition hover:-translate-y-0.5 hover:shadow-md">
+                  <div className="text-sm font-bold">
+                    <T zh={`${k.zh}・${IDIOMS.filter((i) => i.kind === k.id).length} 則`} fr={`${k.fr} · ${IDIOMS.filter((i) => i.kind === k.id).length}`} />
+                  </div>
+                  <div lang="fr" className="display mt-1 italic">
+                    {sample.fr}
+                  </div>
+                  <div className="text-xs text-muted">{sample.zh}</div>
                 </Link>
               </li>
             );

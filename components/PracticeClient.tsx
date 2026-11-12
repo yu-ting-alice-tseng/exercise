@@ -513,7 +513,7 @@ export function QuestionCard({
                     {OPTION_LETTERS[i]}
                   </span>
                   <span className="min-w-0">
-                    <span lang="fr" className="fr block">
+                    <span lang={/[\u4e00-\u9fff]/.test(opt) ? "zh-Hant" : "fr"} className="fr block">
                       {opt}
                     </span>
                     {showZh && q.displayOptionsZh && <span className="block text-sm text-muted">{q.displayOptionsZh[i]}</span>}

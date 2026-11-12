@@ -164,6 +164,7 @@ export function isGrammarId(id: string): boolean {
 export function grammarName(id: string, lang: "zh" | "fr" = "zh"): string {
   if (id === "lecture") return lang === "fr" ? "Lecture" : "閱讀";
   if (id === "dialogue") return lang === "fr" ? "Dialogue" : "情境對話";
+  if (id === "expressions") return lang === "fr" ? "Expressions" : "俗語諺語";
   for (const list of Object.values(GRAMMAR)) {
     const t = list.find((x) => x.id === id);
     if (t) return lang === "fr" ? t.fr : t.zh;

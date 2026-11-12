@@ -1,0 +1,97 @@
+import type { Idiom } from "@/lib/idiomTypes";
+
+/** 法文慣用語（字面和實際意思不同的形象化說法）。例句為本站原創。 */
+export const EXPRESSIONS: Idiom[] = [
+  // 動物
+  { fr: "poser un lapin (à qqn)", lit: "放一隻兔子（給某人）", zh: "約好了卻沒出現，放人鴿子。", eq: "放鴿子", ex: ["Je l’ai attendu une heure au café, il m’a posé un lapin !", "我在咖啡館等了他一小時，他放我鴿子！"], reg: "courant", level: "B1", th: "animaux" },
+  { fr: "avoir un chat dans la gorge", lit: "喉嚨裡有一隻貓", zh: "喉嚨卡卡的、聲音沙啞。", ex: ["Excusez-moi, j’ai un chat dans la gorge.", "不好意思，我喉嚨有點卡。"], reg: "courant", level: "B1", th: "animaux" },
+  { fr: "il fait un froid de canard", lit: "天氣是鴨子般的冷", zh: "天氣冷得要命。", eq: "冷得要命", ex: ["Mets ton bonnet, il fait un froid de canard ce matin !", "戴上毛帽，今天早上冷死了！"], reg: "courant", level: "A2", th: "animaux", note: "據說源自冬天獵野鴨要在寒冷中久候。" },
+  { fr: "être une poule mouillée", lit: "是一隻淋濕的母雞", zh: "是個膽小鬼。", eq: "膽小鬼、沒膽", ex: ["Tu n’oses pas monter dans le grand huit ? Quelle poule mouillée !", "你不敢坐雲霄飛車？真是膽小鬼！"], reg: "familier", level: "B1", th: "animaux" },
+  { fr: "avoir une mémoire de poisson rouge", lit: "有金魚的記憶力", zh: "記性很差、很健忘。", eq: "金魚腦", ex: ["J’ai encore oublié mes clés… j’ai une mémoire de poisson rouge !", "我又忘了帶鑰匙……我真是金魚腦！"], reg: "familier", level: "A2", th: "animaux" },
+  { fr: "donner sa langue au chat", lit: "把舌頭給貓", zh: "猜不出來，放棄猜謎。", eq: "我投降，告訴我答案吧", ex: ["Qui a écrit ce livre ? Je donne ma langue au chat, dis-moi !", "這本書是誰寫的？我猜不出來，告訴我吧！"], reg: "courant", level: "B1", th: "animaux" },
+  { fr: "quand les poules auront des dents", lit: "等到母雞長牙的時候", zh: "永遠不可能發生。", eq: "等到猴年馬月、太陽打西邊出來", ex: ["Mon frère rangera sa chambre quand les poules auront des dents.", "我弟弟要整理房間，等到太陽打西邊出來吧。"], reg: "courant", level: "B1", th: "animaux" },
+  { fr: "avoir d’autres chats à fouetter", lit: "有別的貓要鞭打", zh: "有更重要的事要做，沒空管這個。", ex: ["Ses petits commentaires ? Je m’en fiche, j’ai d’autres chats à fouetter.", "他那些小評論？我才不在乎，我有更重要的事要做。"], reg: "courant", level: "B2", th: "animaux" },
+  { fr: "revenons à nos moutons", lit: "回到我們的羊身上", zh: "言歸正傳，回到原本的話題。", eq: "言歸正傳", ex: ["Bon, assez parlé de vacances, revenons à nos moutons : le budget.", "好，假期聊夠了，言歸正傳：預算。"], reg: "courant", level: "B1", th: "animaux", note: "出自中世紀鬧劇《La Farce de maître Pathelin》，劇中法官一再要大家回到偷羊案的正題。" },
+  { fr: "avoir le cafard", lit: "有蟑螂", zh: "心情低落、憂鬱。", eq: "心情很差、很鬱悶", ex: ["Le dimanche soir, j’ai souvent le cafard.", "星期天晚上我常常心情很差。"], reg: "familier", level: "B1", th: "animaux" },
+  { fr: "être têtu comme une mule", lit: "固執得像頭騾子", zh: "非常固執。", eq: "牛脾氣、固執得像頭牛", ex: ["Impossible de le faire changer d’avis, il est têtu comme une mule.", "不可能讓他改變主意，他固執得要命。"], reg: "courant", level: "A2", th: "animaux" },
+  { fr: "avoir une faim de loup", lit: "有狼一般的飢餓", zh: "餓得要命。", eq: "餓扁了", ex: ["Après la randonnée, on avait une faim de loup.", "健行完，我們餓得要命。"], reg: "courant", level: "A2", th: "animaux" },
+  { fr: "verser des larmes de crocodile", lit: "流鱷魚的眼淚", zh: "假裝難過、假哭。", eq: "鱷魚的眼淚、貓哭耗子", ex: ["Il pleure parce qu’il est puni, mais ce sont des larmes de crocodile.", "他因為被罰在哭，但那都是假哭。"], reg: "courant", level: "B2", th: "animaux" },
+  { fr: "prendre la mouche", lit: "抓住蒼蠅", zh: "為小事突然生氣。", eq: "動不動就生氣", ex: ["Je plaisantais ! Ne prends pas la mouche pour si peu.", "我開玩笑的！別為這點小事生氣。"], reg: "courant", level: "B2", th: "animaux" },
+  { fr: "se coucher avec les poules", lit: "跟母雞一起睡", zh: "很早就睡覺。", eq: "早睡", ex: ["Mon grand-père se couche avec les poules, vers vingt et une heures.", "我爺爺很早睡，大概九點。"], reg: "courant", level: "B1", th: "animaux" },
+
+  // 身體
+  { fr: "coûter les yeux de la tête", lit: "要花掉頭上的眼睛", zh: "貴得要命。", eq: "貴得離譜", ex: ["Ce sac est magnifique, mais il coûte les yeux de la tête !", "這個包包很漂亮，但貴得要命！"], reg: "courant", level: "B1", th: "corps", note: "口語也說 coûter un bras（要花掉一隻手臂）。" },
+  { fr: "avoir le bras long", lit: "手臂很長", zh: "有權勢、人脈很廣。", eq: "神通廣大、有門路", ex: ["Demande à ton oncle, il a le bras long dans cette entreprise.", "去問你叔叔，他在那家公司很有門路。"], reg: "courant", level: "B2", th: "corps" },
+  { fr: "avoir la tête dans les nuages", lit: "頭在雲裡", zh: "心不在焉、愛做白日夢。", eq: "心不在焉", ex: ["Tu as encore oublié ? Tu as vraiment la tête dans les nuages en ce moment.", "你又忘了？你最近真的很心不在焉。"], reg: "courant", level: "A2", th: "corps" },
+  { fr: "mettre les pieds dans le plat", lit: "把腳放進盤子裡", zh: "冒失地提起敏感話題。", eq: "哪壺不開提哪壺", ex: ["J’ai mis les pieds dans le plat en parlant de son ex pendant le dîner.", "我在晚餐時提到他的前任，真是哪壺不開提哪壺。"], reg: "courant", level: "B2", th: "corps" },
+  { fr: "avoir un poil dans la main", lit: "手掌心長了一根毛", zh: "非常懶惰。", eq: "懶骨頭", ex: ["Il ne fait jamais la vaisselle, il a un poil dans la main.", "他從來不洗碗，真是懶骨頭。"], reg: "familier", level: "B2", th: "corps", note: "意思是手從來不工作，懶到掌心都長毛了。" },
+  { fr: "tirer les vers du nez à qqn", lit: "從某人的鼻子裡拉出蟲來", zh: "想辦法套出某人的話、秘密。", eq: "套話", ex: ["Elle ne veut pas dire avec qui elle sort, mais je vais lui tirer les vers du nez.", "她不肯說在跟誰交往，但我會套出她的話。"], reg: "courant", level: "C1", th: "corps" },
+  { fr: "ne pas avoir la langue dans sa poche", lit: "舌頭不在口袋裡", zh: "口才好、敢說話、反應快。", eq: "伶牙俐齒", ex: ["Ma petite sœur n’a pas la langue dans sa poche, elle répond à tout le monde.", "我妹妹伶牙俐齒，誰的話都敢回。"], reg: "courant", level: "B2", th: "corps" },
+  { fr: "se mettre le doigt dans l’œil", lit: "把手指戳進自己眼睛", zh: "大錯特錯。", eq: "大錯特錯", ex: ["Si tu crois que je vais payer pour toi, tu te mets le doigt dans l’œil !", "如果你以為我會幫你付錢，那你就大錯特錯了！"], reg: "familier", level: "B2", th: "corps" },
+  { fr: "avoir le cœur sur la main", lit: "心在手上", zh: "非常慷慨、樂於助人。", eq: "慷慨大方、熱心腸", ex: ["Notre voisine a le cœur sur la main, elle aide tout le quartier.", "我們的鄰居很熱心，整個社區她都幫。"], reg: "courant", level: "B1", th: "corps" },
+  { fr: "faire la tête", lit: "做頭", zh: "生悶氣、擺臭臉。", eq: "擺臭臉、鬧彆扭", ex: ["Pourquoi tu fais la tête ? Je t’ai dit quelque chose de mal ?", "你為什麼擺臭臉？我說錯什麼了嗎？"], reg: "courant", level: "A2", th: "corps" },
+  { fr: "garder la tête froide", lit: "保持頭腦冰冷", zh: "保持冷靜。", eq: "保持冷靜", ex: ["Même pendant la panne, le pilote a gardé la tête froide.", "就算在故障的時候，機長也保持冷靜。"], reg: "courant", level: "B1", th: "corps" },
+  { fr: "prendre ses jambes à son cou", lit: "把腿抓到脖子上", zh: "拔腿就跑。", eq: "拔腿就跑", ex: ["Quand il a vu le chien, il a pris ses jambes à son cou.", "他一看到那隻狗，就拔腿就跑。"], reg: "courant", level: "B2", th: "corps" },
+  { fr: "rester bouche bée", lit: "嘴巴張開地待著", zh: "驚訝得說不出話。", eq: "目瞪口呆", ex: ["Quand elle a annoncé son mariage, on est restés bouche bée.", "她宣布要結婚時，我們都目瞪口呆。"], reg: "courant", level: "B1", th: "corps" },
+  { fr: "avoir les dents longues", lit: "牙齒很長", zh: "野心勃勃。", eq: "野心勃勃", ex: ["Ce jeune stagiaire a les dents longues, il veut déjà le poste du directeur.", "這個年輕實習生野心勃勃，已經想要主管的位子了。"], reg: "courant", level: "C1", th: "corps" },
+  { fr: "casser les pieds à qqn", lit: "打斷某人的腳", zh: "讓人很煩。", eq: "煩死人", ex: ["Arrête de me casser les pieds avec tes questions !", "別再用你的問題煩我了！"], reg: "familier", level: "B1", th: "corps" },
+
+  // 食物
+  { fr: "avoir la pêche", lit: "有桃子", zh: "精神很好、充滿活力。", eq: "精神飽滿", ex: ["Tu as l’air d’avoir la pêche ce matin !", "你今天早上看起來精神很好！"], reg: "familier", level: "A2", th: "nourriture", note: "也可以說 avoir la frite（有薯條）。" },
+  { fr: "raconter des salades", lit: "講沙拉", zh: "胡說八道、說謊。", eq: "胡扯、瞎掰", ex: ["Ne l’écoute pas, il raconte des salades.", "別聽他的，他在瞎掰。"], reg: "familier", level: "B1", th: "nourriture" },
+  { fr: "tomber dans les pommes", lit: "掉進蘋果裡", zh: "昏倒。", eq: "昏倒", ex: ["Il faisait si chaud dans le métro qu’une dame est tombée dans les pommes.", "地鐵裡熱到有一位女士昏倒了。"], reg: "familier", level: "B1", th: "nourriture" },
+  { fr: "ce n’est pas ma tasse de thé", lit: "這不是我的那杯茶", zh: "這不是我喜歡的東西。", eq: "不是我的菜", ex: ["Les films d’horreur, ce n’est pas ma tasse de thé.", "恐怖片不是我的菜。"], reg: "courant", level: "B1", th: "nourriture", note: "從英文 not my cup of tea 借來的說法。" },
+  { fr: "mettre du beurre dans les épinards", lit: "在菠菜裡加奶油", zh: "（多賺點錢）改善生活。", eq: "貼補家用", ex: ["Elle donne des cours particuliers le week-end pour mettre du beurre dans les épinards.", "她週末當家教貼補家用。"], reg: "courant", level: "B2", th: "nourriture" },
+  { fr: "en faire tout un fromage", lit: "把它做成一整塊起司", zh: "小題大作。", eq: "小題大作", ex: ["J’ai juste oublié de t’appeler, ne va pas en faire tout un fromage !", "我只是忘了打給你，別小題大作！"], reg: "familier", level: "B2", th: "nourriture" },
+  { fr: "avoir du pain sur la planche", lit: "砧板上有麵包", zh: "有很多工作要做。", eq: "有一大堆事要做", ex: ["Le déménagement est samedi : on a du pain sur la planche !", "星期六要搬家：我們有一大堆事要做！"], reg: "courant", level: "B1", th: "nourriture" },
+  { fr: "c’est du gâteau", lit: "這是蛋糕", zh: "很簡單、小事一樁。", eq: "小菜一碟、易如反掌", ex: ["Cet exercice ? C’est du gâteau !", "這個練習？小菜一碟！"], reg: "familier", level: "A2", th: "nourriture", note: "相反說法：ce n’est pas du gâteau（這可不簡單）。" },
+  { fr: "couper la poire en deux", lit: "把梨子切成兩半", zh: "雙方各讓一步。", eq: "各退一步、折衷", ex: ["Tu proposes 100 euros, moi 140 : coupons la poire en deux, 120 ?", "你出一百歐元，我要一百四：各退一步，一百二？"], reg: "courant", level: "B2", th: "nourriture" },
+  { fr: "être haut comme trois pommes", lit: "高得像三顆蘋果", zh: "個子很小（多指小孩）。", eq: "小不點", ex: ["Je te connais depuis que tu es haut comme trois pommes !", "我從你還是個小不點的時候就認識你了！"], reg: "courant", level: "B1", th: "nourriture" },
+  { fr: "les carottes sont cuites", lit: "胡蘿蔔煮熟了", zh: "大勢已去，沒希望了。", eq: "木已成舟、大勢已去", ex: ["Il reste deux minutes et on perd 3 à 0. Les carottes sont cuites.", "只剩兩分鐘，我們零比三落後。大勢已去了。"], reg: "familier", level: "B2", th: "nourriture" },
+  { fr: "c’est la fin des haricots", lit: "這是四季豆的盡頭", zh: "完蛋了、什麼都沒了。", eq: "完蛋了", ex: ["Plus de batterie, plus de carte, plus de réseau… c’est la fin des haricots !", "沒電、沒地圖、沒網路……完蛋了！"], reg: "familier", level: "B2", th: "nourriture" },
+  { fr: "avoir un cœur d’artichaut", lit: "有一顆朝鮮薊的心", zh: "很容易愛上別人、很多情。", eq: "多情種子", ex: ["Il tombe amoureux toutes les semaines, il a un cœur d’artichaut.", "他每個星期都在戀愛，真是多情種子。"], reg: "courant", level: "C1", th: "nourriture", note: "朝鮮薊的葉子一片一片剝下來分給每個人。" },
+
+  // 顏色與數字
+  { fr: "voir la vie en rose", lit: "看見粉紅色的人生", zh: "樂觀地看待一切。", eq: "樂觀", ex: ["Depuis qu’elle est amoureuse, elle voit la vie en rose.", "她戀愛以後，看什麼都很美好。"], reg: "courant", level: "A2", th: "couleurs", note: "也是 Édith Piaf 名曲 La Vie en rose 的歌名。" },
+  { fr: "être dans le rouge", lit: "在紅色裡", zh: "銀行帳戶透支、財務赤字。", eq: "入不敷出、赤字", ex: ["À la fin du mois, je suis souvent dans le rouge.", "月底的時候，我的帳戶常常透支。"], reg: "courant", level: "B1", th: "couleurs" },
+  { fr: "rire jaune", lit: "笑得黃黃的", zh: "勉強地笑、苦笑。", eq: "苦笑、皮笑肉不笑", ex: ["Quand le chef a critiqué son projet devant tout le monde, il a ri jaune.", "主管當眾批評他的計畫時，他只能苦笑。"], reg: "courant", level: "B2", th: "couleurs" },
+  { fr: "passer une nuit blanche", lit: "過一個白色的夜", zh: "整晚沒睡。", eq: "熬了一整夜", ex: ["J’ai passé une nuit blanche à réviser pour l’examen.", "我為了準備考試熬了一整夜。"], reg: "courant", level: "A2", th: "couleurs" },
+  { fr: "broyer du noir", lit: "磨碎黑色", zh: "心情鬱悶、想很多負面的事。", eq: "愁眉不展、悶悶不樂", ex: ["Arrête de broyer du noir et viens te promener avec nous.", "別再悶悶不樂了，跟我們出去走走。"], reg: "courant", level: "B2", th: "couleurs" },
+  { fr: "donner carte blanche à qqn", lit: "給某人一張白卡", zh: "讓某人全權決定。", eq: "全權委託", ex: ["Pour la décoration, je te donne carte blanche.", "裝潢的部分，我全權交給你。"], reg: "courant", level: "B2", th: "couleurs" },
+  { fr: "se mettre sur son trente et un", lit: "穿上自己的三十一", zh: "盛裝打扮。", eq: "穿得光鮮亮麗", ex: ["Pour le mariage de sa sœur, il s’est mis sur son trente et un.", "為了他姊姊的婚禮，他盛裝打扮。"], reg: "courant", level: "B2", th: "couleurs" },
+  { fr: "couper les cheveux en quatre", lit: "把頭髮切成四份", zh: "過分講究細節、鑽牛角尖。", eq: "吹毛求疵", ex: ["On ne va pas couper les cheveux en quatre, le texte est très bien comme ça.", "我們就別吹毛求疵了，文章這樣就很好。"], reg: "courant", level: "C1", th: "couleurs" },
+  { fr: "se mettre en quatre pour qqn", lit: "為某人把自己分成四份", zh: "為了某人盡心盡力。", eq: "全力以赴、竭盡所能", ex: ["Ses parents se sont mis en quatre pour qu’il puisse étudier à l’étranger.", "他父母竭盡所能讓他能出國讀書。"], reg: "courant", level: "B2", th: "couleurs" },
+  { fr: "faire les quatre cents coups", lit: "做了四百個惡作劇", zh: "年輕時胡作非為、到處闖禍。", eq: "調皮搗蛋、不務正業", ex: ["Avant de devenir prof, mon père a fait les quatre cents coups.", "我爸當老師之前，年輕時可是到處闖禍。"], reg: "courant", level: "C1", th: "couleurs", note: "楚浮的電影 Les Quatre Cents Coups（中譯《四百擊》）片名就是這個說法。" },
+
+  // 天氣與時間
+  { fr: "il pleut des cordes", lit: "下繩子", zh: "下大雨。", eq: "傾盆大雨", ex: ["Prends un parapluie, il pleut des cordes !", "帶把傘，外面在下大雨！"], reg: "courant", level: "A2", th: "temps" },
+  { fr: "il fait un temps de chien", lit: "是狗的天氣", zh: "天氣非常糟。", eq: "鬼天氣", ex: ["Vent, pluie, froid… il fait un temps de chien aujourd’hui.", "風、雨、冷……今天真是鬼天氣。"], reg: "courant", level: "B1", th: "temps" },
+  { fr: "ne pas être né de la dernière pluie", lit: "不是在最近一場雨裡出生的", zh: "不是天真好騙的人。", eq: "我又不是三歲小孩", ex: ["Tu crois que je vais croire ça ? Je ne suis pas né de la dernière pluie !", "你以為我會相信？我又不是三歲小孩！"], reg: "courant", level: "C1", th: "temps" },
+  { fr: "être dans la lune", lit: "在月亮上", zh: "心不在焉、發呆。", eq: "神遊、發呆", ex: ["Pardon, tu disais ? J’étais dans la lune.", "抱歉，你剛剛說什麼？我在發呆。"], reg: "courant", level: "B1", th: "temps" },
+  { fr: "tous les trente-six du mois", lit: "每個月的三十六號", zh: "非常少、幾乎從不。", eq: "久久一次", ex: ["Mon cousin nous rend visite tous les trente-six du mois.", "我表哥久久才來看我們一次。"], reg: "familier", level: "C1", th: "temps" },
+  { fr: "faire la pluie et le beau temps", lit: "決定下雨或晴天", zh: "說了算、掌控一切。", eq: "呼風喚雨、一手遮天", ex: ["Dans cette petite ville, le maire fait la pluie et le beau temps.", "在這個小鎮，鎮長說了算。"], reg: "courant", level: "C1", th: "temps" },
+  { fr: "tomber à pic", lit: "垂直落下", zh: "來得正是時候。", eq: "來得正好", ex: ["Tu tombes à pic, j’avais besoin d’aide pour porter ce carton !", "你來得正好，我正需要人幫忙搬這個箱子！"], reg: "courant", level: "B1", th: "temps" },
+
+  // 情緒與人際
+  { fr: "avoir le coup de foudre", lit: "被雷劈到", zh: "一見鍾情；對某物一見就愛上。", eq: "一見鍾情", ex: ["Ils se sont rencontrés dans le train et ça a été le coup de foudre.", "他們在火車上相遇，一見鍾情。"], reg: "courant", level: "B1", th: "sentiments" },
+  { fr: "être aux anges", lit: "在天使身邊", zh: "高興極了。", eq: "樂不可支、欣喜若狂", ex: ["Elle a eu son bac avec mention, elle est aux anges.", "她以優等成績通過高中會考，高興極了。"], reg: "courant", level: "B1", th: "sentiments" },
+  { fr: "avoir le moral à zéro", lit: "士氣是零", zh: "心情跌到谷底。", eq: "心情跌到谷底", ex: ["Avec cette pluie depuis une semaine, j’ai le moral à zéro.", "已經下了一星期的雨，我的心情跌到谷底。"], reg: "familier", level: "B1", th: "sentiments" },
+  { fr: "être sur la même longueur d’onde", lit: "在同一個波長上", zh: "想法一致、很合拍。", eq: "心有靈犀、很合得來", ex: ["Avec ma collègue, on est sur la même longueur d’onde, on se comprend sans parler.", "我跟我同事很合拍，不用說話就懂彼此。"], reg: "courant", level: "B2", th: "sentiments" },
+  { fr: "tourner autour du pot", lit: "繞著鍋子轉", zh: "說話拐彎抹角，不直接講重點。", eq: "拐彎抹角", ex: ["Arrête de tourner autour du pot et dis-moi ce qui se passe.", "別再拐彎抹角了，告訴我發生什麼事。"], reg: "courant", level: "B2", th: "sentiments" },
+  { fr: "mettre son grain de sel", lit: "放進自己那一粒鹽", zh: "插嘴、多管閒事地給意見。", eq: "插嘴、多嘴", ex: ["Personne ne t’a demandé ton avis, pourquoi tu mets ton grain de sel ?", "沒人問你的意見，你幹嘛插嘴？"], reg: "familier", level: "B2", th: "sentiments" },
+  { fr: "passer l’éponge", lit: "用海綿擦過去", zh: "既往不咎、原諒過去的錯。", eq: "既往不咎", ex: ["Bon, tu t’es excusé, on passe l’éponge.", "好吧，你道歉了，我們就既往不咎。"], reg: "courant", level: "B2", th: "sentiments" },
+  { fr: "mettre de l’eau dans son vin", lit: "在自己的酒裡加水", zh: "態度軟化、讓步。", eq: "收斂一點、讓步", ex: ["Après la grève, la direction a dû mettre de l’eau dans son vin.", "罷工之後，資方不得不讓步。"], reg: "courant", level: "C1", th: "sentiments" },
+
+  // 生活與處境
+  { fr: "c’est la goutte d’eau qui fait déborder le vase", lit: "這是讓花瓶滿出來的那一滴水", zh: "忍耐到極限的最後一件小事。", eq: "壓垮駱駝的最後一根稻草", ex: ["Il était encore en retard, c’est la goutte d’eau qui fait déborder le vase.", "他又遲到了，這是壓垮駱駝的最後一根稻草。"], reg: "courant", level: "B2", th: "vie" },
+  { fr: "mettre la charrue avant les bœufs", lit: "把犁放在牛的前面", zh: "做事順序顛倒。", eq: "本末倒置", ex: ["Acheter les meubles avant de trouver l’appartement, c’est mettre la charrue avant les bœufs.", "還沒找到公寓就先買家具，這是本末倒置。"], reg: "courant", level: "C1", th: "vie" },
+  { fr: "chercher une aiguille dans une botte de foin", lit: "在一捆乾草裡找一根針", zh: "幾乎不可能找到。", eq: "大海撈針", ex: ["Retrouver ta bague sur cette plage, c’est chercher une aiguille dans une botte de foin.", "在這片沙灘上找你的戒指，簡直是大海撈針。"], reg: "courant", level: "B2", th: "vie" },
+  { fr: "jeter l’éponge", lit: "丟出海綿", zh: "認輸、放棄。", eq: "舉白旗、放棄", ex: ["Après trois échecs, il a jeté l’éponge.", "失敗三次後，他放棄了。"], reg: "courant", level: "B2", th: "vie", note: "源自拳擊：教練把海綿丟進場內表示認輸。" },
+  { fr: "faire d’une pierre deux coups", lit: "用一顆石頭打兩下", zh: "一舉兩得。", eq: "一石二鳥、一舉兩得", ex: ["Je vais à Lyon pour le travail et je vois mes parents : je fais d’une pierre deux coups.", "我去里昂出差順便看爸媽：一舉兩得。"], reg: "courant", level: "B1", th: "vie" },
+  { fr: "avoir du mal à joindre les deux bouts", lit: "很難把兩端接起來", zh: "收入勉強夠用、入不敷出。", eq: "勉強餬口、捉襟見肘", ex: ["Avec un seul salaire et trois enfants, ils ont du mal à joindre les deux bouts.", "只有一份薪水又有三個孩子，他們過得很拮据。"], reg: "courant", level: "B2", th: "vie" },
+  { fr: "rouler sur l’or", lit: "在黃金上打滾", zh: "非常有錢。", eq: "富得流油", ex: ["Il ne roule pas sur l’or, mais il vit bien.", "他不是什麼大富翁，但過得很好。"], reg: "courant", level: "B2", th: "vie" },
+  { fr: "ce n’est pas la mer à boire", lit: "又不是要把海喝乾", zh: "沒那麼難。", eq: "沒什麼大不了", ex: ["Trois pages à lire, ce n’est pas la mer à boire !", "要讀三頁而已，沒那麼難！"], reg: "courant", level: "B2", th: "vie" },
+  { fr: "avoir la main verte", lit: "有綠色的手", zh: "很會種花草植物。", eq: "很會種植物", ex: ["Ta terrasse est magnifique, tu as vraiment la main verte !", "你的陽台好漂亮，你真的很會種植物！"], reg: "courant", level: "B1", th: "vie" },
+  { fr: "il n’y a pas photo", lit: "不需要照片", zh: "差別很明顯，不用比了。", eq: "高下立判", ex: ["Entre les deux restaurants, il n’y a pas photo : le premier est bien meilleur.", "這兩家餐廳不用比：第一家好太多了。"], reg: "familier", level: "B2", th: "vie", note: "源自賽馬比賽的終點照片：差距明顯時不需要照片判定。" },
+  { fr: "ça ne casse pas trois pattes à un canard", lit: "這不會打斷鴨子的三條腿", zh: "沒什麼了不起、很普通。", eq: "平平無奇", ex: ["Le film est sympa, mais ça ne casse pas trois pattes à un canard.", "那部電影還不錯，但沒什麼了不起。"], reg: "familier", level: "C1", th: "vie", note: "鴨子本來就只有兩條腿，所以這是一種故意誇張的說法。" },
+];
