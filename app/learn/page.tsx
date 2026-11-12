@@ -4,12 +4,14 @@ import { Skyline } from "@/components/Decor";
 import { NOTE_ENTRIES, PATTERNS, VOCAB, wordCount } from "@/lib/learn";
 import { READINGS } from "@/lib/readings";
 import { GUIDES } from "@/lib/writing";
+import { DIALOGUES, SCENES } from "@/lib/dialogues";
 import { CATEGORIES, LEVELS, THEMES } from "@/lib/taxonomy";
 import { T, ZhOnly } from "@/components/T";
 
 export const metadata = { title: "文法與單字整理｜法文練習題" };
 
 const JUMP = [
+  { href: "#dialogues", zh: "情境對話", fr: "Dialogues" },
   { href: "#lectures", zh: "閱讀", fr: "Lectures" },
   { href: "#ecriture", zh: "寫作", fr: "Écriture" },
   { href: "#phrases", zh: "句型總整理", fr: "Fiches de synthèse" },
@@ -48,6 +50,48 @@ export default function LearnPage() {
           </a>
         ))}
       </nav>
+
+      <section id="dialogues" className="mb-12 scroll-mt-20">
+        <div className="flex flex-wrap items-end justify-between gap-2">
+          <div>
+            <ZhOnly>
+              <div className="eyebrow">Dialogues en situation</div>
+            </ZhOnly>
+            <h2 className="display mb-1 text-2xl font-bold">
+              <T zh="情境對話" fr="Dialogues en situation" />
+            </h2>
+            <p className="mb-4 text-sm text-muted">
+              <T
+                zh={`${DIALOGUES.length} 段不同場合的對話，從點餐、問路到面試、談加薪。可以聽、看解釋，也可以選角色開口練習。`}
+                fr={`${DIALOGUES.length} dialogues pour toutes les situations, du café à l’entretien d’embauche. Écoutez, lisez les explications ou jouez un rôle.`}
+              />
+            </p>
+          </div>
+          <Link href="/learn/dialogues/" className="mb-4 text-sm text-accent underline-offset-4 hover:underline">
+            <T zh={`全部 ${DIALOGUES.length} 段`} fr={`Les ${DIALOGUES.length} dialogues`} /> →
+          </Link>
+        </div>
+        <ul className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          {SCENES.map((sc) => {
+            const n = DIALOGUES.filter((d) => d.scene === sc.id).length;
+            return (
+              <li key={sc.id}>
+                <Link
+                  href={`/learn/dialogues/#${sc.id}`}
+                  className="block h-full rounded-xl border border-line bg-surface p-3 transition hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md"
+                >
+                  <div className="text-sm font-bold">
+                    <T zh={sc.zh} fr={sc.fr} />
+                  </div>
+                  <div className="mt-1 text-xs text-muted tabular-nums">
+                    <T zh={`${n} 段對話`} fr={`${n} dialogues`} />
+                  </div>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
 
       <section id="lectures" className="mb-12 scroll-mt-20">
         <div className="flex flex-wrap items-end justify-between gap-2">

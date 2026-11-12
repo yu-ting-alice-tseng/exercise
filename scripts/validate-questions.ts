@@ -17,6 +17,10 @@ import { ORIGINALS } from "../data/readings/originals.ts";
 import { ORIGINALS_2 } from "../data/readings/originals2.ts";
 import { CLASSICS_2 } from "../data/readings/classics2.ts";
 import { CLASSICS_3 } from "../data/readings/classics3.ts";
+import { DIALOGUES_MANGER } from "../data/dialogues/manger.ts";
+import { DIALOGUES_VOYAGE } from "../data/dialogues/voyage.ts";
+import { DIALOGUES_SOCIAL } from "../data/dialogues/social.ts";
+import { DIALOGUES_TRAVAIL } from "../data/dialogues/travail.ts";
 import { BASICS } from "../data/writing/basics.ts";
 import { GUIDES_1 } from "../data/writing/guides-1.ts";
 import { GUIDES_2 } from "../data/writing/guides-2.ts";
@@ -220,6 +224,55 @@ console.log(`模考 ${examCount} 份。`);
     if (JSON.stringify(r).includes("—")) errors.push(`${at}：請不要用破折號`);
   }
   console.log(`閱讀：${readings.length} 篇（原創 ${ORIGINALS.length + ORIGINALS_2.length}、經典 ${CLASSICS.length + CLASSICS_2.length + CLASSICS_3.length}）。`);
+}
+
+// 情境對話：角色要存在且都有說話、標記的字詞都有解釋、解釋都用到、測驗與實用說法完整、法文沒有漏掉省音
+{
+  const list = [...DIALOGUES_MANGER, ...DIALOGUES_VOYAGE, ...DIALOGUES_SOCIAL, ...DIALOGUES_TRAVAIL];
+  const SCENE_IDS = new Set(["manger", "courses", "voyage", "logement", "sante", "demarches", "social", "travail"]);
+  const levelIds = new Set(LEVELS.map((l) => l.id));
+  const ids = new Set<string>();
+  // 省音：je、me、te、se、ne、que、de 後面接母音要省略（h 開頭的字有例外，所以只檢查母音）
+  const ELISION = /(^|[\s«(])(je|me|te|se|ne|que|de) [aeiouéèêâîôûœ]/i;
+  for (const d of list) {
+    const at = `對話 ${d.id}`;
+    if (ids.has(d.id)) errors.push(`${at}：id 重複`);
+    ids.add(d.id);
+    if (!levelIds.has(d.level)) errors.push(`${at}：等級不正確`);
+    if (!SCENE_IDS.has(d.scene)) errors.push(`${at}：場合 ${d.scene} 不存在`);
+    if (!themeIds.has(d.theme)) errors.push(`${at}：主題 ${d.theme} 不存在`);
+    const spoke = new Set<number>();
+    const used = new Set<string>();
+    for (const [who, fr, zh] of d.lines) {
+      if (!d.speakers[who]) errors.push(`${at}：說話者 ${who} 不存在`);
+      spoke.add(who);
+      if (!fr || !zh) errors.push(`${at}：有空白的台詞`);
+      if ((fr.match(/\[\[/g)?.length ?? 0) !== (fr.match(/\]\]/g)?.length ?? 0)) errors.push(`${at}：標記沒有成對「${fr.slice(0, 30)}」`);
+      const plain = fr.replace(/\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/g, "$1");
+      if (ELISION.test(plain)) errors.push(`${at}：可能漏了省音「${plain.slice(0, 50)}」`);
+      for (const m of fr.matchAll(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g)) {
+        const k = m[2] ?? m[1];
+        used.add(k);
+        if (!d.glossary[k]) errors.push(`${at}：「${k}」沒有單字解釋`);
+      }
+    }
+    d.speakers.forEach((sp, k) => {
+      if (!spoke.has(k)) errors.push(`${at}：${sp.name} 沒有台詞`);
+    });
+    for (const k of Object.keys(d.glossary)) if (!used.has(k)) errors.push(`${at}：單字解釋「${k}」沒有在對話中標出`);
+    if (d.lines.length < 10) errors.push(`${at}：對話少於 10 句`);
+    if (d.quiz.length < 4) errors.push(`${at}：理解測驗少於 4 題`);
+    for (const q of d.quiz) {
+      const fr = q.options.map((o) => o[0]);
+      if (fr.length < 3 || new Set(fr).size !== fr.length) errors.push(`${at}：「${q.q}」選項太少或重複`);
+      if (!q.qZh || q.options.some((o) => !o[1])) errors.push(`${at}：「${q.q}」缺少中文翻譯`);
+    }
+    if (d.phrases.length < 2 || d.phrases.some((p) => p.rows.length < 3)) errors.push(`${at}：實用說法太少`);
+    for (const p of d.phrases) for (const [fr] of p.rows) if (ELISION.test(fr)) errors.push(`${at}：實用說法可能漏了省音「${fr}」`);
+    if (JSON.stringify(d).includes("—")) errors.push(`${at}：請不要用破折號`);
+  }
+  const lines = list.reduce((n, d) => n + d.lines.length, 0);
+  console.log(`情境對話：${list.length} 段、${lines} 句台詞。`);
 }
 
 // 寫作指南：範文字數要符合該等級的考試下限（DELF A1 40、A2 60、B1 160、B2 250；DALF C1 綜合摘要 220–240）

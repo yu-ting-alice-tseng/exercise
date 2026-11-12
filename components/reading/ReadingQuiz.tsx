@@ -13,12 +13,14 @@ export default function ReadingQuiz({
   title,
   questions,
   zh,
+  kind = "reading",
 }: {
   id: string;
   level: Level;
   title: string;
   questions: DrawnQuestion[];
   zh: "show" | "tap" | "hide";
+  kind?: "reading" | "dialogue";
 }) {
   const [round, setRound] = useState(0);
   const lang = useLang();
@@ -28,10 +30,10 @@ export default function ReadingQuiz({
       key={round}
       questions={questions}
       level={level}
-      recordTitle={`閱讀：${title}`}
+      recordTitle={`${kind === "dialogue" ? "對話" : "閱讀"}：${title}`}
       zh={zh}
-      eyebrow="Compréhension écrite"
-      heading={t(`閱讀測驗：${questions.length} 題`, `Quiz de lecture : ${questions.length} questions`)}
+      eyebrow={kind === "dialogue" ? "Compréhension" : "Compréhension écrite"}
+      heading={kind === "dialogue" ? t(`對話理解：${questions.length} 題`, `Compréhension : ${questions.length} questions`) : t(`閱讀測驗：${questions.length} 題`, `Quiz de lecture : ${questions.length} questions`)}
       sub={zh === "hide" ? t("讀完文章再作答，題目只顯示法文。", "Répondez après la lecture. Les questions sont en français seulement.") : zh === "tap" ? t("讀完文章再作答，按每題右上角的「看翻譯」顯示中文。", "Répondez après la lecture. Le bouton en haut à droite de chaque question affiche le chinois.") : t("讀完文章再作答，結果會記進學習紀錄。", "Répondez après la lecture. Le résultat est enregistré dans votre suivi.")}
       actions={() => (
         <button

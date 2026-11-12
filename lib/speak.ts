@@ -3,13 +3,15 @@ export function canSpeak(): boolean {
   return typeof window !== "undefined" && "speechSynthesis" in window;
 }
 
-export function speakFr(text: string, onEnd?: () => void, rate = 0.9): void {
+/** pitch：對話裡用不同音高區分說話的人 */
+export function speakFr(text: string, onEnd?: () => void, rate = 0.9, pitch = 1): void {
   if (!canSpeak()) return;
   const synth = window.speechSynthesis;
   synth.cancel();
   const u = new SpeechSynthesisUtterance(text);
   u.lang = "fr-FR";
   u.rate = rate;
+  u.pitch = pitch;
   const fr = synth.getVoices().find((v) => v.lang === "fr-FR") ?? synth.getVoices().find((v) => v.lang.startsWith("fr"));
   if (fr) u.voice = fr;
   if (onEnd) {

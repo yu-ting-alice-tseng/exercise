@@ -7,6 +7,7 @@ import { plainText } from "./readingText";
 import type { Reading } from "./readingTypes";
 import { LEVELS } from "./taxonomy";
 import type { DrawnQuestion } from "./types";
+import { comprehensionQuestions } from "./quiz";
 
 const ORDER = LEVELS.map((l) => l.id);
 
@@ -33,26 +34,7 @@ export function wordCount(r: Reading): number {
     .filter((w) => /\p{L}/u.test(w)).length;
 }
 
-/** 閱讀測驗轉成題庫格式；選項用固定方式打亂，伺服器與瀏覽器結果一致 */
+/** 閱讀測驗轉成題庫格式 */
 export function readingQuestions(r: Reading): DrawnQuestion[] {
-  return r.quiz.map((q, i) => {
-    const order = q.options.map((_, k) => k).sort((a, b) => ((a * 7 + i * 3) % 5) - ((b * 7 + i * 3) % 5));
-    return {
-      id: `read-${r.id}-${i + 1}`,
-      level: r.level,
-      grammar: "lecture",
-      themes: [r.theme],
-      type: "choice",
-      difficulty: 2,
-      instruction: q.q,
-      instructionZh: q.qZh,
-      stem: "",
-      options: q.options.map(([fr]) => fr),
-      answer: 0,
-      explanation: q.why,
-      displayOptions: order.map((k) => q.options[k][0]),
-      displayOptionsZh: order.map((k) => q.options[k][1]),
-      displayAnswer: order.indexOf(0),
-    };
-  });
+  return comprehensionQuestions(`read-${r.id}`, r.level, r.theme, r.quiz, "lecture");
 }
