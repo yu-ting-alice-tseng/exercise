@@ -17,6 +17,9 @@ import { ORIGINALS } from "../data/readings/originals.ts";
 import { ORIGINALS_2 } from "../data/readings/originals2.ts";
 import { CLASSICS_2 } from "../data/readings/classics2.ts";
 import { CLASSICS_3 } from "../data/readings/classics3.ts";
+import { BASICS } from "../data/writing/basics.ts";
+import { GUIDES_1 } from "../data/writing/guides-1.ts";
+import { GUIDES_2 } from "../data/writing/guides-2.ts";
 import { MORE_A1 } from "../data/learn/more-a1.ts";
 import { MORE_A2 } from "../data/learn/more-a2.ts";
 import { MORE_B1 } from "../data/learn/more-b1.ts";
@@ -217,6 +220,27 @@ console.log(`模考 ${examCount} 份。`);
     if (JSON.stringify(r).includes("—")) errors.push(`${at}：請不要用破折號`);
   }
   console.log(`閱讀：${readings.length} 篇（原創 ${ORIGINALS.length + ORIGINALS_2.length}、經典 ${CLASSICS.length + CLASSICS_2.length + CLASSICS_3.length}）。`);
+}
+
+// 寫作指南：範文字數要符合該等級的考試下限（DELF A1 40、A2 60、B1 160、B2 250；DALF C1 綜合摘要 220–240）
+{
+  const guides = [...GUIDES_1, ...GUIDES_2];
+  const count = (t: string) => t.split(/\s+/).filter((w) => /[\p{L}\p{N}]/u.test(w)).length;
+  const MIN: Record<string, number> = { A1: 40, A2: 60, B1: 160, B2: 250 };
+  const ids = new Set<string>();
+  for (const g of guides) {
+    const at = `寫作指南 ${g.id}`;
+    if (ids.has(g.id)) errors.push(`${at}：id 重複`);
+    ids.add(g.id);
+    const body = g.model.parts.filter((p) => !/主旨|標題|稱呼|署名|大綱|摘要/.test(p.label)).reduce((n, p) => n + count(p.fr), 0);
+    const min = MIN[g.model.level];
+    if (g.id === "synthese" && (body < 220 || body > 240)) errors.push(`${at}：綜合摘要範文 ${body} 字，應在 220–240 字`);
+    else if (min && !["resume"].includes(g.id) && body < min) errors.push(`${at}：範文 ${body} 字，少於 ${g.model.level} 的 ${min} 字`);
+    for (const pr of g.prompts) if (pr.max !== undefined && pr.max < pr.min) errors.push(`${at}：練習題字數上下限顛倒`);
+    if (!g.structure.length || !g.checklist.length || !g.prompts.length) errors.push(`${at}：缺少結構、檢查清單或練習題`);
+  }
+  if (JSON.stringify([BASICS, guides]).includes("—")) errors.push("寫作指南：請不要用破折號");
+  console.log(`寫作指南：${guides.length} 種文類。`);
 }
 
 for (const w of warnings) console.warn("⚠️ ", w);

@@ -3,12 +3,14 @@ import { container } from "@/components/ui";
 import { Skyline } from "@/components/Decor";
 import { NOTE_ENTRIES, PATTERNS, VOCAB, wordCount } from "@/lib/learn";
 import { READINGS } from "@/lib/readings";
+import { GUIDES } from "@/lib/writing";
 import { CATEGORIES, LEVELS, THEMES } from "@/lib/taxonomy";
 
 export const metadata = { title: "文法與單字整理｜法文練習題" };
 
 const JUMP = [
   { href: "#lectures", zh: "閱讀", fr: "Lectures" },
+  { href: "#ecriture", zh: "寫作", fr: "Écriture" },
   { href: "#phrases", zh: "句型總整理", fr: "Fiches de synthèse" },
   { href: "#grammaire", zh: "文法筆記", fr: "Grammaire" },
   { href: "#vocabulaire", zh: "主題單字", fr: "Vocabulaire" },
@@ -69,6 +71,35 @@ export default function LearnPage() {
                   {r.title}
                 </div>
                 <div className="text-sm text-muted">{r.zh}</div>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section id="ecriture" className="mb-12 scroll-mt-20">
+        <div className="flex flex-wrap items-end justify-between gap-2">
+          <div>
+            <div className="eyebrow">Guide de l’écrit</div>
+            <h2 className="display mb-1 text-2xl font-bold">寫作指南</h2>
+            <p className="mb-4 text-sm text-muted">{GUIDES.length} 種文類的結構、句型、範文與練習，從朋友間的訊息到論文式寫作。</p>
+          </div>
+          <Link href="/learn/write/" className="mb-4 text-sm text-accent underline-offset-4 hover:underline">
+            全部文類與考試要求 →
+          </Link>
+        </div>
+        <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+          <li>
+            <Link href="/learn/write/techniques/" className="block h-full rounded-xl border-2 border-accent/30 bg-accent-soft/40 p-3 transition hover:border-accent/60">
+              <div className="text-[11px] font-bold text-accent">先讀</div>
+              <div className="text-sm font-bold">寫作通用技巧</div>
+            </Link>
+          </li>
+          {GUIDES.map((g) => (
+            <li key={g.id}>
+              <Link href={`/learn/write/${g.id}/`} className="block h-full rounded-xl border border-line bg-surface p-3 transition hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md">
+                <div className="text-[11px] font-bold text-muted tabular-nums">{g.levels}</div>
+                <div className="text-sm font-bold">{g.zh}</div>
               </Link>
             </li>
           ))}
