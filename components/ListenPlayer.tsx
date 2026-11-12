@@ -1,5 +1,6 @@
 "use client";
 
+import { useT } from "@/lib/i18n";
 import { useEffect, useRef, useState } from "react";
 
 /**
@@ -17,6 +18,7 @@ export default function ListenPlayer({
   maxPlays?: number;
   unlimited?: boolean;
 }) {
+  const t = useT();
   const [plays, setPlays] = useState(0);
   const [speaking, setSpeaking] = useState(false);
   const [slow, setSlow] = useState(false);
@@ -80,7 +82,7 @@ export default function ListenPlayer({
   if (!supported) {
     return (
       <p className="rounded-lg bg-warn-soft px-3 py-2 text-sm text-warn">
-        這個瀏覽器不支援語音朗讀。請換用 Chrome、Edge 或 Safari，或交卷後直接閱讀逐字稿。
+        {t("這個瀏覽器不支援語音朗讀。請換用 Chrome、Edge 或 Safari，或交卷後直接閱讀逐字稿。", "Ce navigateur ne prend pas en charge la synthèse vocale. Utilisez Chrome, Edge ou Safari, ou lisez la transcription après avoir rendu la copie.")}
       </p>
     );
   }
@@ -90,7 +92,7 @@ export default function ListenPlayer({
       <div className="flex flex-wrap items-center gap-2">
         {speaking ? (
           <button type="button" onClick={stop} className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-ink px-4 font-medium text-surface">
-            <span aria-hidden>■</span> 停止
+            <span aria-hidden>■</span> {t("停止", "Arrêter")}
           </button>
         ) : (
           <button
@@ -99,19 +101,19 @@ export default function ListenPlayer({
             disabled={!canPlay}
             className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-accent px-4 font-medium text-accent-ink disabled:opacity-40"
           >
-            <span aria-hidden>▶</span> {plays === 0 ? "播放錄音" : "再聽一次"}
+            <span aria-hidden>▶</span> {plays === 0 ? t("播放錄音", "Écouter") : t("再聽一次", "Réécouter")}
           </button>
         )}
         <label className="flex min-h-11 items-center gap-2 text-sm">
           <input type="checkbox" checked={slow} onChange={(e) => setSlow(e.target.checked)} className="size-4 accent-[var(--accent)]" />
-          放慢語速
+          {t("放慢語速", "Ralentir")}
         </label>
         <span className="ml-auto text-xs text-muted" aria-live="polite">
-          {unlimited ? "交卷後可以不限次數重聽" : `已播放 ${plays}／${maxPlays} 次`}
+          {unlimited ? t("交卷後可以不限次數重聽", "Après correction, écoute illimitée") : t(`已播放 ${plays}／${maxPlays} 次`, `Écoutes : ${plays}/${maxPlays}`)}
         </span>
       </div>
       {voices.length === 0 && (
-        <p className="mt-2 text-xs text-muted">如果沒有聲音，可能是裝置沒有安裝法語語音；交卷後可以閱讀逐字稿。</p>
+        <p className="mt-2 text-xs text-muted">{t("如果沒有聲音，可能是裝置沒有安裝法語語音；交卷後可以閱讀逐字稿。", "Pas de son ? Votre appareil n’a peut-être pas de voix française. La transcription sera disponible après correction.")}</p>
       )}
     </div>
   );

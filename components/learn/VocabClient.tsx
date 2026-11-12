@@ -4,20 +4,21 @@ import { useState } from "react";
 import type { Ex, VocabGroup } from "@/lib/learnTypes";
 import { Rich } from "./Blocks";
 import Speak from "./Speak";
+import { useLang } from "@/lib/i18n";
 
 const LVL_LABEL = { 1: "A1", 2: "A2", 3: "B1+" } as const;
 
 type Mode = "all" | "hideZh" | "hideFr";
 type Lvl = 0 | 1 | 2 | 3;
 
-const MODES: { id: Mode; zh: string }[] = [
-  { id: "all", zh: "全部顯示" },
-  { id: "hideZh", zh: "遮住中文" },
-  { id: "hideFr", zh: "遮住法文" },
+const MODES: { id: Mode; zh: string; fr: string }[] = [
+  { id: "all", zh: "全部顯示", fr: "Tout afficher" },
+  { id: "hideZh", zh: "遮住中文", fr: "Masquer le chinois" },
+  { id: "hideFr", zh: "遮住法文", fr: "Masquer le français" },
 ];
 
-const LVLS: { id: Lvl; zh: string }[] = [
-  { id: 0, zh: "全部" },
+const LVLS: { id: Lvl; zh: string; fr?: string }[] = [
+  { id: 0, zh: "全部", fr: "Tous" },
   { id: 1, zh: "A1" },
   { id: 2, zh: "A2" },
   { id: 3, zh: "B1+" },
@@ -52,6 +53,8 @@ export default function VocabClient({ groups, phrases }: { groups: VocabGroup[];
   const [lvl, setLvl] = useState<Lvl>(0);
   const [shown, setShown] = useState<Set<string>>(new Set());
   const [showEx, setShowEx] = useState(true);
+  const lang = useLang();
+  const t = (zh: string, fr: string) => (lang === "fr" ? fr : zh);
 
   const toggle = (k: string) =>
     setShown((s) => {
@@ -72,7 +75,7 @@ export default function VocabClient({ groups, phrases }: { groups: VocabGroup[];
     <div>
       <div className="sticky top-0 z-10 -mx-4 mb-5 space-y-2 border-b border-line bg-bg/95 px-4 py-3 backdrop-blur sm:mx-0 sm:rounded-xl sm:border sm:px-4">
         <div className="flex flex-wrap items-center gap-2">
-          <span className="w-10 text-xs text-muted">模式</span>
+          <span className="w-14 text-xs text-muted">{t("模式", "Mode")}</span>
           {MODES.map((m) => (
             <Chip
               key={m.id}
@@ -82,28 +85,28 @@ export default function VocabClient({ groups, phrases }: { groups: VocabGroup[];
                 setShown(new Set());
               }}
             >
-              {m.zh}
+              {t(m.zh, m.fr)}
             </Chip>
           ))}
         </div>
         <div className="flex flex-wrap items-center gap-2">
-          <span className="w-10 text-xs text-muted">等級</span>
+          <span className="w-14 text-xs text-muted">{t("等級", "Niveau")}</span>
           {LVLS.map((l) => (
             <Chip key={l.id} on={lvl === l.id} onClick={() => setLvl(l.id)}>
-              {l.zh}
+              {t(l.zh, l.fr ?? l.zh)}
             </Chip>
           ))}
         </div>
         <div className="flex flex-wrap items-center gap-2">
-          <span className="w-10 text-xs text-muted">例句</span>
+          <span className="w-14 text-xs text-muted">{t("例句", "Exemples")}</span>
           <Chip on={showEx} onClick={() => setShowEx(true)}>
-            顯示
+            {t("顯示", "Afficher")}
           </Chip>
           <Chip on={!showEx} onClick={() => setShowEx(false)}>
-            隱藏
+            {t("隱藏", "Masquer")}
           </Chip>
         </div>
-        {mode !== "all" && <p className="text-xs text-muted">先在心裡回想答案，再點一下卡片看答案。</p>}
+        {mode !== "all" && <p className="text-xs text-muted">{t("先在心裡回想答案，再點一下卡片看答案。", "Cherchez la réponse de tête, puis touchez la carte pour la voir.")}</p>}
       </div>
 
       <div className="space-y-8">
@@ -123,7 +126,7 @@ export default function VocabClient({ groups, phrases }: { groups: VocabGroup[];
                       type="button"
                       disabled={!quiz}
                       onClick={() => toggle(w.k)}
-                      aria-label={quiz ? (hideFr || hideZh ? "顯示答案" : "再遮起來") : undefined}
+                      aria-label={quiz ? (hideFr || hideZh ? t("顯示答案", "Afficher la réponse") : t("再遮起來", "Masquer")) : undefined}
                       className="min-w-0 flex-1 text-left disabled:cursor-default"
                     >
                       <span lang="fr" className={`block font-medium ${hideFr ? "rounded bg-sunken text-transparent select-none" : ""}`}>
@@ -137,7 +140,7 @@ export default function VocabClient({ groups, phrases }: { groups: VocabGroup[];
                     </div>
                     {showEx && w.ex && !hideFr && !hideZh && (
                       <div className="mt-2 flex items-start gap-2 border-t border-dashed border-line pt-2">
-                        <Speak text={w.ex[0].replace(/\*\*/g, "")} label={`朗讀例句：${w.ex[0].replace(/\*\*/g, "")}`} className="size-7" />
+                        <Speak text={w.ex[0].replace(/\*\*/g, "")} label={`${t("朗讀例句：", "Écouter : ")}${w.ex[0].replace(/\*\*/g, "")}`} className="size-7" />
                         <div className="min-w-0 text-sm">
                           <p lang="fr" className="italic">
                             <Rich text={w.ex[0]} />
@@ -156,7 +159,7 @@ export default function VocabClient({ groups, phrases }: { groups: VocabGroup[];
         {phrases && phrases.length > 0 && (
           <section>
             <h2 className="display mb-3 text-lg font-bold">
-              常用句子 <span className="text-sm font-normal text-muted italic">Phrases utiles</span>
+              {lang === "fr" ? "Phrases utiles" : <>常用句子 <span className="text-sm font-normal text-muted italic">Phrases utiles</span></>}
             </h2>
             <ul className="space-y-2">
               {phrases.map(([fr, zh], i) => {

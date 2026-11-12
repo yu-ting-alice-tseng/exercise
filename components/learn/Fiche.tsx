@@ -1,4 +1,5 @@
 import type { Pitfall, Rule } from "@/lib/learnTypes";
+import { T } from "@/components/T";
 import { Pitfalls, Rich, RuleBlock } from "./Blocks";
 
 /** 一份筆記的內文：重點卡、規則、常見錯誤、小撇步 */
@@ -29,7 +30,7 @@ export default function Fiche({
       {pitfalls && pitfalls.length > 0 && (
         <section className="space-y-3">
           <h3 className="display text-lg font-bold">
-            常見錯誤 <span className="text-sm font-normal text-muted italic">Attention !</span>
+            <T zh={<>常見錯誤 <span className="text-sm font-normal text-muted italic">Attention !</span></>} fr="Attention !" />
           </h3>
           <Pitfalls items={pitfalls} />
         </section>

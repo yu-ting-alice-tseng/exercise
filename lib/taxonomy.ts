@@ -16,13 +16,13 @@ export const CATEGORIES: { id: TopicCategory; zh: string; fr: string }[] = [
   { id: "phrase", zh: "句型與連接詞", fr: "Phrase et connecteurs" },
 ];
 
-export const LEVELS: { id: Level; zh: string; fr: string; desc: string }[] = [
-  { id: "A1", zh: "入門", fr: "Découverte", desc: "能用簡單句子介紹自己、談日常生活" },
-  { id: "A2", zh: "基礎", fr: "Survie", desc: "能描述過去的經驗、熟悉的人事物" },
-  { id: "B1", zh: "進階", fr: "Seuil", desc: "能談論計畫、假設與自己的看法" },
-  { id: "B2", zh: "流利", fr: "Avancé", desc: "能清楚表達與論證觀點、轉述他人說的話" },
-  { id: "C1", zh: "高階", fr: "Autonome", desc: "能精確、有層次地表達複雜的想法" },
-  { id: "C2", zh: "精通", fr: "Maîtrise", desc: "能掌握文學語體、慣用語與細微的語感差異" },
+export const LEVELS: { id: Level; zh: string; fr: string; desc: string; descFr: string }[] = [
+  { id: "A1", zh: "入門", fr: "Découverte", desc: "能用簡單句子介紹自己、談日常生活", descFr: "Se présenter et parler du quotidien avec des phrases simples" },
+  { id: "A2", zh: "基礎", fr: "Survie", desc: "能描述過去的經驗、熟悉的人事物", descFr: "Raconter une expérience passée, décrire son environnement" },
+  { id: "B1", zh: "進階", fr: "Seuil", desc: "能談論計畫、假設與自己的看法", descFr: "Parler de projets, d’hypothèses et donner son avis" },
+  { id: "B2", zh: "流利", fr: "Avancé", desc: "能清楚表達與論證觀點、轉述他人說的話", descFr: "Argumenter clairement et rapporter les propos d’autrui" },
+  { id: "C1", zh: "高階", fr: "Autonome", desc: "能精確、有層次地表達複雜的想法", descFr: "Exprimer des idées complexes avec précision et nuance" },
+  { id: "C2", zh: "精通", fr: "Maîtrise", desc: "能掌握文學語體、慣用語與細微的語感差異", descFr: "Maîtriser le registre littéraire, les expressions et les nuances" },
 ];
 
 export const GRAMMAR: Record<Level, Topic[]> = {
@@ -139,6 +139,7 @@ export const DIFFICULTY_FR: Record<string, string> = {
   "3": "Difficile",
 };
 
+/** 難度的法文說明（和 DIFFICULTY_FR 相同，供介面使用） */
 export const DIFFICULTY_LABELS: Record<string, string> = {
   all: "全部",
   "1": "基礎",
@@ -146,9 +147,10 @@ export const DIFFICULTY_LABELS: Record<string, string> = {
   "3": "進階",
 };
 
-export function topicName(level: Level, by: "grammar" | "theme", id: string): string {
+export function topicName(level: Level, by: "grammar" | "theme", id: string, lang: "zh" | "fr" = "zh"): string {
   const list = by === "grammar" ? GRAMMAR[level] : THEMES;
-  return list.find((t) => t.id === id)?.zh ?? id;
+  const t = list.find((x) => x.id === id);
+  return (lang === "fr" ? t?.fr : t?.zh) ?? id;
 }
 
 const GRAMMAR_IDS = new Set(Object.values(GRAMMAR).flatMap((l) => l.map((t) => t.id)));
@@ -159,10 +161,10 @@ export function isGrammarId(id: string): boolean {
 }
 
 /** 文法點的中文名稱（不分等級） */
-export function grammarName(id: string): string {
+export function grammarName(id: string, lang: "zh" | "fr" = "zh"): string {
   for (const list of Object.values(GRAMMAR)) {
     const t = list.find((x) => x.id === id);
-    if (t) return t.zh;
+    if (t) return lang === "fr" ? t.fr : t.zh;
   }
   return id;
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import { useT } from "@/lib/i18n";
 import { useMemo, useRef, useState } from "react";
 import { judge, QuestionCard, toRec, type Answer, type Result } from "@/components/PracticeClient";
 import { btnPrimary } from "@/components/ui";
@@ -39,6 +40,7 @@ export default function InlineQuiz({
   const inputs = useRef<Record<string, HTMLInputElement | HTMLTextAreaElement | null>>({});
   const session = useRef<{ id: string; prev: Record<string, QStat | undefined> } | null>(null);
   const takeTime = useActiveTimer();
+  const t = useT();
 
   const results = useMemo(() => {
     const m = new Map<string, Result>();
@@ -112,10 +114,10 @@ export default function InlineQuiz({
         {!checked ? (
           <>
             <button type="button" onClick={check} className={btnPrimary}>
-              檢查答案
+              {t("檢查答案", "Corriger")}
             </button>
             <span className="text-sm text-muted tabular-nums">
-              已作答 {answered}／{questions.length}
+              {t("已作答", "Répondu")} {answered}／{questions.length}
             </span>
           </>
         ) : (

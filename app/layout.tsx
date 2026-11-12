@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import { LangToggle, T } from "@/components/T";
 import CloudBoot from "@/components/CloudBoot";
 import { ProverbeDuJour } from "@/components/Decor";
 import "./globals.css";
@@ -34,17 +35,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="no-print">
           <div className="tricolore" />
           <div className="border-b border-line bg-surface/80 backdrop-blur">
-            <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-2 sm:px-6 sm:py-3 lg:px-8">
-              <Link href="/" className="group flex items-baseline gap-2.5">
-                <span className="display text-lg font-bold whitespace-nowrap text-ink max-[420px]:hidden sm:text-xl">法文練習題</span>
-                <span className="display text-lg font-bold whitespace-nowrap text-ink min-[421px]:hidden">
-                  法文
+            <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-3 gap-y-1 px-4 pt-2 sm:flex-nowrap sm:px-6 sm:py-3 lg:px-8">
+              <Link href="/" className="group flex min-h-10 items-baseline gap-2.5">
+                <span className="display text-lg font-bold whitespace-nowrap text-ink sm:text-xl">
+                  <T zh="法文練習題" fr="Exercices de français" />
                 </span>
                 <span className="display hidden text-base text-muted italic md:inline">
-                  Exercices de français
+                  <T zh="Exercices de français" fr="法文練習題" />
                 </span>
               </Link>
-              <Nav />
+              <div className="order-2 sm:order-3">
+                <LangToggle />
+              </div>
+              <div className="order-3 -mx-4 w-[calc(100%+2rem)] sm:order-2 sm:mx-0 sm:ml-auto sm:w-auto">
+                <Nav />
+              </div>
             </div>
           </div>
         </header>

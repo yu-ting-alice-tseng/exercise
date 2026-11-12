@@ -1,11 +1,13 @@
 "use client";
 
+import { useT } from "@/lib/i18n";
 import { useState } from "react";
 import { speakFr, stopSpeaking } from "@/lib/speak";
 
 /** 小小的朗讀按鈕 */
 export default function Speak({ text, label, className = "" }: { text: string; label?: string; className?: string }) {
   const [on, setOn] = useState(false);
+  const t = useT();
   return (
     <button
       type="button"
@@ -18,8 +20,8 @@ export default function Speak({ text, label, className = "" }: { text: string; l
         setOn(true);
         speakFr(text, () => setOn(false));
       }}
-      aria-label={label ?? `朗讀：${text}`}
-      title="聽發音"
+      aria-label={label ?? t(`朗讀：${text}`, `Écouter : ${text}`)}
+      title={t("聽發音", "Écouter")}
       className={`inline-grid size-8 shrink-0 place-items-center rounded-full border border-line text-[11px] text-accent transition hover:border-accent/60 hover:bg-accent-soft ${on ? "bg-accent-soft" : ""} ${className}`}
     >
       <span aria-hidden>{on ? "■" : "▶"}</span>

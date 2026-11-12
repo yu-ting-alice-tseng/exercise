@@ -7,13 +7,14 @@ import type { DrawnQuestion } from "@/lib/types";
 import ReadingQuiz from "./ReadingQuiz";
 import { glossKey, MARK, plainText } from "@/lib/readingText";
 import { speakFr, stopSpeaking } from "@/lib/speak";
+import { useLang } from "@/lib/i18n";
 
 type Mode = "show" | "tap" | "hide";
 
-const MODES: { id: Mode; zh: string }[] = [
-  { id: "show", zh: "逐句顯示翻譯" },
-  { id: "tap", zh: "點句子看翻譯" },
-  { id: "hide", zh: "只看法文" },
+const MODES: { id: Mode; zh: string; fr: string }[] = [
+  { id: "show", zh: "逐句顯示翻譯", fr: "Traduction phrase par phrase" },
+  { id: "tap", zh: "點句子看翻譯", fr: "Traduction au toucher" },
+  { id: "hide", zh: "只看法文", fr: "Français seul" },
 ];
 
 interface Active {
@@ -71,6 +72,8 @@ export default function ReaderClient({ reading, questions }: { reading: Reading;
   const [open, setOpen] = useState<Set<string>>(new Set());
   const [active, setActive] = useState<Active | null>(null);
   const [playing, setPlaying] = useState<string | null>(null);
+  const lang = useLang();
+  const t = (zh: string, fr: string) => (lang === "fr" ? fr : zh);
   const stop = useRef(false);
 
   const sentences = reading.paragraphs.flatMap((p, pi) => p.map((s, si) => ({ id: `${pi}-${si}`, fr: s[0] })));
@@ -119,7 +122,7 @@ export default function ReaderClient({ reading, questions }: { reading: Reading;
               mode === m.id ? "border-accent bg-accent text-accent-ink" : "border-line bg-surface hover:border-accent/60"
             }`}
           >
-            {m.zh}
+            {t(m.zh, m.fr)}
           </button>
         ))}
         <button
@@ -130,10 +133,10 @@ export default function ReaderClient({ reading, questions }: { reading: Reading;
           <span aria-hidden className="text-accent">
             {playing === null ? "▶" : "■"}
           </span>
-          {playing === null ? "全文朗讀" : "停止"}
+          {playing === null ? t("全文朗讀", "Écouter le texte") : t("停止", "Arrêter")}
         </button>
         <p className="w-full text-xs text-muted">
-          有底線的字可以點開看解釋。{mode === "tap" ? "點一下句子就會顯示翻譯。" : ""}這個設定也會套用到文末的閱讀測驗。
+          {t("有底線的字可以點開看解釋。", "Touchez un mot souligné pour voir son explication. ")}{mode === "tap" ? t("點一下句子就會顯示翻譯。", "Touchez une phrase pour afficher sa traduction. ") : ""}{t("這個設定也會套用到文末的閱讀測驗。", "Ce réglage s’applique aussi au quiz final.")}
         </p>
       </div>
 
@@ -161,7 +164,7 @@ export default function ReaderClient({ reading, questions }: { reading: Reading;
                   }`}
                 >
                   <span onClick={(e) => e.stopPropagation()} className="contents">
-                    <Speak text={plainText(fr)} label="朗讀這一句" className="mt-1 size-7 opacity-70 group-hover:opacity-100" />
+                    <Speak text={plainText(fr)} label={t("朗讀這一句", "Écouter cette phrase")} className="mt-1 size-7 opacity-70 group-hover:opacity-100" />
                   </span>
                   <div className="min-w-0 flex-1">
                     <p lang="fr" className={`fr ${reading.verse ? "whitespace-pre-line" : ""}`}>
@@ -178,10 +181,10 @@ export default function ReaderClient({ reading, questions }: { reading: Reading;
 
       {/* 單字卡：固定在畫面底部，手機和電腦都好按 */}
       {active && (
-        <div className="fixed inset-x-0 bottom-0 z-30 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:bottom-4 sm:mx-auto sm:max-w-md" role="dialog" aria-label={`單字：${active.word}`}>
+        <div className="fixed inset-x-0 bottom-0 z-30 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:bottom-4 sm:mx-auto sm:max-w-md" role="dialog" aria-label={`${t("單字：", "Mot : ")}${active.word}`}>
           <div className="anim-rise rounded-2xl border border-accent/40 bg-surface p-4 shadow-xl">
             <div className="flex items-start gap-3">
-              <Speak text={plainText(active.g.lemma).replace(/\s*\([^)]*\)/g, "")} label={`朗讀 ${active.g.lemma}`} className="mt-0.5" />
+              <Speak text={plainText(active.g.lemma).replace(/\s*\([^)]*\)/g, "")} label={`${t("朗讀", "Écouter")} ${active.g.lemma}`} className="mt-0.5" />
               <div className="min-w-0 flex-1">
                 <div className="flex flex-wrap items-baseline gap-x-2">
                   <span lang="fr" className="display text-xl font-bold">
@@ -192,12 +195,12 @@ export default function ReaderClient({ reading, questions }: { reading: Reading;
                 <div className="font-medium">{active.g.zh}</div>
                 {active.word.toLowerCase() !== active.g.lemma.toLowerCase() && (
                   <div className="mt-0.5 text-xs text-muted">
-                    文中寫作 <span lang="fr" className="font-medium text-ink">{active.word}</span>
+                    {t("文中寫作", "Dans le texte :")} <span lang="fr" className="font-medium text-ink">{active.word}</span>
                   </div>
                 )}
                 {active.g.note && <p className="mt-1.5 text-sm text-muted">{active.g.note}</p>}
               </div>
-              <button type="button" onClick={() => setActive(null)} className="grid size-9 shrink-0 place-items-center rounded-full text-muted hover:bg-sunken" aria-label="關閉單字卡">
+              <button type="button" onClick={() => setActive(null)} className="grid size-9 shrink-0 place-items-center rounded-full text-muted hover:bg-sunken" aria-label={t("關閉單字卡", "Fermer")}>
                 ✕
               </button>
             </div>
@@ -207,7 +210,7 @@ export default function ReaderClient({ reading, questions }: { reading: Reading;
 
       <section className="mt-8">
         <h2 className="display mb-3 text-lg font-bold">
-          單字表 <span className="text-sm font-normal text-muted italic">Vocabulaire</span>
+          {lang === "fr" ? "Vocabulaire" : <>單字表 <span className="text-sm font-normal text-muted italic">Vocabulaire</span></>}
         </h2>
         <dl className="grid gap-2 sm:grid-cols-2">
           {Object.entries(reading.glossary).map(([k, g]) => (

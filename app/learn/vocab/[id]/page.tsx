@@ -6,6 +6,7 @@ import { btnQuiet, container } from "@/components/ui";
 import { getVocab, VOCAB, wordCount } from "@/lib/learn";
 import { THEMES } from "@/lib/taxonomy";
 import type { Level } from "@/lib/types";
+import { T, ZhOnly } from "@/components/T";
 
 export const dynamicParams = false;
 
@@ -32,27 +33,35 @@ export default async function VocabPage({ params }: { params: Promise<{ id: stri
   return (
     <main className={`${container} pt-6 sm:pt-8`}>
       <Link href="/learn/#vocabulaire" className="mb-2 inline-flex min-h-9 items-center text-sm text-muted hover:text-ink">
-        ← 主題單字
+        ← <T zh="主題單字" fr="Vocabulaire" />
       </Link>
       <div className="mb-5">
-        <div className="eyebrow" lang="fr">
-          {theme.fr}
-        </div>
-        <h1 className="display text-2xl font-bold sm:text-3xl">{theme.zh}</h1>
+        <ZhOnly>
+          <div className="eyebrow" lang="fr">
+            {theme.fr}
+          </div>
+        </ZhOnly>
+        <h1 className="display text-2xl font-bold sm:text-3xl">
+          <T zh={theme.zh} fr={theme.fr} />
+        </h1>
         <p className="mt-1 text-sm text-muted">
-          {vocab.intro}（共 {wordCount(id)} 個單字）
+          <T zh={`${vocab.intro}（共 ${wordCount(id)} 個單字）`} fr={`${wordCount(id)} mots. ${vocab.intro}`} />
         </p>
       </div>
 
       <VocabClient groups={vocab.groups} phrases={vocab.phrases} />
 
       <section className="mt-10 rounded-xl border border-line bg-surface p-4 sm:p-5">
-        <div className="font-bold">用這個主題練習</div>
-        <p className="mb-3 text-sm text-muted">從題庫抽出「{theme.zh}」主題的題目，選一個等級開始。</p>
+        <div className="font-bold">
+          <T zh="用這個主題練習" fr="S’entraîner sur ce thème" />
+        </div>
+        <p className="mb-3 text-sm text-muted">
+          <T zh={`從題庫抽出「${theme.zh}」主題的題目，選一個等級開始。`} fr={`Des questions sur le thème « ${theme.fr} » : choisissez un niveau.`} />
+        </p>
         <div className="flex flex-wrap gap-2">
           {PRACTICE_LEVELS.map((l) => (
             <PracticeLink key={l} level={l} by="theme" topic={id} className={btnQuiet}>
-              {l} 練習
+              {l} <T zh="練習" fr="" />
             </PracticeLink>
           ))}
         </div>
@@ -60,7 +69,7 @@ export default async function VocabPage({ params }: { params: Promise<{ id: stri
 
       <div className="mt-6 text-right">
         <Link href={`/learn/vocab/${next.id}/`} className="inline-flex min-h-10 items-center text-sm text-muted hover:text-ink">
-          下一個主題：{next.zh} →
+          <T zh={`下一個主題：${next.zh}`} fr={`Thème suivant : ${next.fr}`} /> →
         </Link>
       </div>
     </main>

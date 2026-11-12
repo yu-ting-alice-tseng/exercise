@@ -1,5 +1,6 @@
 "use client";
 
+import { useLang } from "@/lib/i18n";
 import { useMemo } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
@@ -7,7 +8,7 @@ import { Invalid } from "./PracticeClient";
 import Stem from "./Stem";
 import { configToQuery, queryToConfig } from "@/lib/config";
 import { drawPaper, OPTION_LETTERS, type Version } from "@/lib/draw";
-import { DIFFICULTY_LABELS, TYPE_LABELS, TYPE_ORDER } from "@/lib/taxonomy";
+import { DIFFICULTY_FR, DIFFICULTY_LABELS, TYPE_LABELS, TYPE_ORDER } from "@/lib/taxonomy";
 import { paperTitle } from "@/lib/title";
 import type { DrawnQuestion, QuestionType } from "@/lib/types";
 
@@ -24,9 +25,11 @@ export default function PrintClient() {
   const version: Version = params.get("v") === "B" ? "B" : "A";
   const isAnswer = params.get("kind") === "a";
   const questions = useMemo(() => (config ? drawPaper(config)[version] : []), [config, version]);
+  const lang = useLang();
+  const t = (zh: string, fr: string) => (lang === "fr" ? fr : zh);
 
   if (!config) return <Invalid />;
-  if (questions.length === 0) return <Invalid message="沒有符合條件的題目。" />;
+  if (questions.length === 0) return <Invalid message={t("沒有符合條件的題目。", "Aucune question ne correspond.")} />;
 
   // 依題型分區，題號連續
   const sections: { type: QuestionType; items: { q: DrawnQuestion; n: number }[] }[] = [];
@@ -36,25 +39,25 @@ export default function PrintClient() {
     if (items.length) sections.push({ type, items });
   }
 
-  const title = `${paperTitle(config)}　${version} 卷${isAnswer ? "　解答" : ""}`;
+  const title = lang === "fr" ? `${paperTitle(config, "fr")} · Copie ${version}${isAnswer ? " · Corrigé" : ""}` : `${paperTitle(config)}　${version} 卷${isAnswer ? "　解答" : ""}`;
 
   return (
     <>
       <div className="no-print sticky top-0 z-10 border-b border-line bg-surface">
         <div className="mx-auto flex max-w-[210mm] items-center justify-between gap-2 px-4 py-2">
           <Link href={`/paper/?${configToQuery(config)}`} className="text-sm text-muted hover:underline">
-            ← 返回
+            ← {t("返回", "Retour")}
           </Link>
           <button
             type="button"
             onClick={() => window.print()}
             className="min-h-11 rounded-lg bg-accent px-5 font-medium text-accent-ink hover:brightness-110"
           >
-            列印／存成 PDF
+            {t("列印／存成 PDF", "Imprimer / PDF")}
           </button>
         </div>
         <p className="mx-auto max-w-[210mm] px-4 pb-2 text-xs text-muted">
-          手機：按下按鈕後選「列印」，再用兩指放大預覽，或選擇「儲存為 PDF」。
+          {t("手機：按下按鈕後選「列印」，再用兩指放大預覽，或選擇「儲存為 PDF」。", "Sur mobile : appuyez sur le bouton puis choisissez « Imprimer » ou « Enregistrer en PDF ».")}
         </p>
       </div>
 
@@ -62,13 +65,13 @@ export default function PrintClient() {
         <header className="mb-5 border-b-2 border-black pb-3">
           <div className="flex items-baseline justify-between gap-4">
             <h1 className="display text-xl font-bold">{title}</h1>
-            <span className="text-sm">難度：{DIFFICULTY_LABELS[String(config.difficulty)]}</span>
+            <span className="text-sm">{t("難度：", "Difficulté : ")}{lang === "fr" ? DIFFICULTY_FR[String(config.difficulty)] : DIFFICULTY_LABELS[String(config.difficulty)]}</span>
           </div>
           {!isAnswer && (
             <div className="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 text-sm sm:grid-cols-4">
-              {["姓名", "班級", "日期", "分數"].map((f) => (
+              {(lang === "fr" ? ["Nom", "Classe", "Date", "Note"] : ["姓名", "班級", "日期", "分數"]).map((f) => (
                 <div key={f} className="flex items-end gap-1">
-                  <span className="shrink-0">{f}：</span>
+                  <span className="shrink-0">{f}{lang === "fr" ? " :" : "："}</span>
                   <span className="flex-1 border-b border-black">&nbsp;</span>
                 </div>
               ))}
@@ -79,7 +82,7 @@ export default function PrintClient() {
         {sections.map((s, si) => (
           <section key={s.type} className="mb-6">
             <h2 className="display mb-3 font-bold">
-              {SECTION_NUMS[si]}、{TYPE_LABELS[s.type].zh}（{TYPE_LABELS[s.type].fr}）
+              {lang === "fr" ? `${["I", "II", "III", "IV"][si]}. ${TYPE_LABELS[s.type].fr}` : `${SECTION_NUMS[si]}、${TYPE_LABELS[s.type].zh}（${TYPE_LABELS[s.type].fr}）`}
             </h2>
             <ol className="space-y-4">
               {s.items.map(({ q, n }) =>

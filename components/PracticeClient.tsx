@@ -1,5 +1,6 @@
 "use client";
 
+import { useLang, useT } from "@/lib/i18n";
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -39,9 +40,11 @@ function PracticeSession({ query }: { query: string }) {
   const config = useMemo(() => queryToConfig(params), [params]);
   const version: Version = params.get("v") === "B" ? "B" : "A";
   const questions = useMemo(() => (config ? drawPaper(config)[version] : []), [config, version]);
+  const lang = useLang();
+  const t = (zh: string, fr: string) => (lang === "fr" ? fr : zh);
 
   if (!config) return <Invalid />;
-  if (questions.length === 0) return <Invalid message="沒有符合條件的題目，請回到設定頁調整。" />;
+  if (questions.length === 0) return <Invalid message={t("沒有符合條件的題目，請回到設定頁調整。", "Aucune question ne correspond. Modifiez les réglages.")} />;
 
   return (
     <QuizRunner
@@ -50,7 +53,7 @@ function PracticeSession({ query }: { query: string }) {
       level={config.level}
       title={paperTitle(config)}
       historyConfig={config}
-      header={{ back: { href: "/", label: "回到設定" }, fr: "Exercice en ligne", zh: paperTitle(config), sub: "線上練習" }}
+      header={{ back: { href: "/", label: t("回到設定", "Retour aux réglages") }, fr: "Exercice en ligne", zh: paperTitle(config), frTitle: paperTitle(config, "fr"), sub: t("線上練習", "En ligne") }}
       intro={config.by === "grammar" && <NoteLinks topics={config.topics} />}
       onNewBatch={() => {
         router.replace(`/practice/?${configToQuery({ ...config, seed: newSeed() })}`);
@@ -63,31 +66,32 @@ function PracticeSession({ query }: { query: string }) {
 /** 練習頁上方：這次練習範圍的文法筆記 */
 function NoteLinks({ topics }: { topics: string[] }) {
   const list = topics.filter(isGrammarId);
+  const lang = useLang();
   if (!list.length) return null;
   const shownTopics = list.slice(0, 6);
   return (
     <div className="-mt-2 mb-4 flex flex-wrap items-center gap-1.5 text-sm">
-      <span className="text-muted">先複習規則：</span>
+      <span className="text-muted">{lang === "fr" ? "Revoir la règle :" : "先複習規則："}</span>
       {shownTopics.map((id) => (
         <Link
           key={id}
           href={`/learn/grammar/${id}/`}
           className="inline-flex min-h-8 items-center rounded-full border border-line bg-surface px-3 hover:border-accent/60 hover:text-accent"
         >
-          {grammarName(id)}筆記
+          {lang === "fr" ? `Fiche : ${grammarName(id, "fr")}` : `${grammarName(id)}筆記`}
         </Link>
       ))}
-      {list.length > shownTopics.length && <span className="text-muted">等 {list.length} 份</span>}
+      {list.length > shownTopics.length && <span className="text-muted">{lang === "fr" ? `(${list.length} au total)` : `等 ${list.length} 份`}</span>}
     </div>
   );
 }
 
-export function praise(ratio: number): { fr: string; zh: string } {
-  if (ratio >= 1) return { fr: "Parfait !", zh: "全部答對，太厲害了！" };
-  if (ratio >= 0.9) return { fr: "Excellent !", zh: "太厲害了，幾乎全對！" };
-  if (ratio >= 0.7) return { fr: "Très bien !", zh: "很好，再看看答錯的地方。" };
-  if (ratio >= 0.5) return { fr: "Pas mal !", zh: "不錯，重做答錯的題目會更熟。" };
-  return { fr: "Courage !", zh: "別灰心，看完解析再挑戰一次。" };
+export function praise(ratio: number): { fr: string; zh: string; msgFr: string } {
+  if (ratio >= 1) return { fr: "Parfait !", zh: "全部答對，太厲害了！", msgFr: "Tout est juste, bravo !" };
+  if (ratio >= 0.9) return { fr: "Excellent !", zh: "太厲害了，幾乎全對！", msgFr: "Presque tout est juste !" };
+  if (ratio >= 0.7) return { fr: "Très bien !", zh: "很好，再看看答錯的地方。", msgFr: "Très bien. Revoyez les erreurs." };
+  if (ratio >= 0.5) return { fr: "Pas mal !", zh: "不錯，重做答錯的題目會更熟。", msgFr: "Pas mal ! Refaites les erreurs pour progresser." };
+  return { fr: "Courage !", zh: "別灰心，看完解析再挑戰一次。", msgFr: "Courage ! Lisez les corrigés et réessayez." };
 }
 
 export function judge(q: DrawnQuestion, answer: Answer, mark: boolean | undefined): Result {
@@ -114,14 +118,14 @@ export function QuizRunner({
   header,
   historyConfig,
   onNewBatch,
-  newBatchLabel = "換一批題目",
+  newBatchLabel,
   intro,
 }: {
   questions: DrawnQuestion[];
   kind: "practice" | "review" | "exam";
   level?: Level;
   title: string;
-  header: { back?: { href: string; label: string }; fr: string; zh: string; sub: string };
+  header: { back?: { href: string; label: string }; fr: string; zh: string; frTitle?: string; sub: string };
   historyConfig?: PaperConfig;
   onNewBatch?: () => void;
   newBatchLabel?: string;
@@ -136,6 +140,7 @@ export function QuizRunner({
   const inputs = useRef<Record<string, HTMLInputElement | HTMLTextAreaElement | null>>({});
   const session = useRef<{ id: string; prev: Record<string, QStat | undefined> } | null>(null);
   const takeTime = useActiveTimer();
+  const t = useT();
 
   const shown = onlyIds ? questions.filter((q) => onlyIds.includes(q.id)) : questions;
 
@@ -215,11 +220,14 @@ export function QuizRunner({
         </div>
       </div>
       <p className="mt-2 text-sm text-muted">
-        {pendingCount > 0 ? `還有 ${pendingCount} 題請對照參考答案自己批改。` : p.zh}
+        {pendingCount > 0 ? t(`還有 ${pendingCount} 題請對照參考答案自己批改。`, `Encore ${pendingCount} question(s) à corriger vous-même avec le corrigé.`) : t(p.zh, p.msgFr)}
       </p>
       <p className="mt-1 text-xs text-muted">
-        已記錄到<Link href="/stats/" className="text-accent underline-offset-2 hover:underline">學習紀錄</Link>
-        ，答錯的題目會排進<Link href="/review/" className="text-accent underline-offset-2 hover:underline">複習</Link>。
+        {t("已記錄到", "Résultat enregistré dans ")}
+        <Link href="/stats/" className="text-accent underline-offset-2 hover:underline">{t("學習紀錄", "votre suivi")}</Link>
+        {t("，答錯的題目會排進", " ; les erreurs sont ajoutées à la ")}
+        <Link href="/review/" className="text-accent underline-offset-2 hover:underline">{t("複習", "révision")}</Link>
+        {t("。", ".")}
       </p>
     </div>
   );
@@ -227,11 +235,11 @@ export function QuizRunner({
   const afterActions = (
     <div className={`grid gap-2 lg:grid-cols-1 ${onNewBatch ? "grid-cols-2" : "grid-cols-1"}`}>
       <button type="button" onClick={redoWrong} disabled={allCorrect || pendingCount > 0} className={btnPrimary}>
-        重做答錯的題目
+        {t("重做答錯的題目", "Refaire les erreurs")}
       </button>
       {onNewBatch && (
         <button type="button" onClick={onNewBatch} className={btnSecondary}>
-          {newBatchLabel}
+          {newBatchLabel ?? t("換一批題目", "Nouvelles questions")}
         </button>
       )}
     </div>
@@ -243,7 +251,8 @@ export function QuizRunner({
         back={header.back}
         fr={onlyIds ? "On recommence !" : header.fr}
         zh={header.zh}
-        sub={`${header.sub}${onlyIds ? "・重做答錯的題目" : ""}・共 ${shown.length} 題`}
+        frTitle={onlyIds ? undefined : header.frTitle}
+        sub={`${header.sub}${onlyIds ? t("・重做答錯的題目", " · erreurs à refaire") : ""}${t(`・共 ${shown.length} 題`, ` · ${shown.length} questions`)}`}
       />
       {intro}
 
@@ -284,7 +293,7 @@ export function QuizRunner({
               <>
                 <div className="eyebrow">Progression</div>
                 <div className="mb-2 flex items-baseline justify-between">
-                  <span className="display text-lg font-bold">作答進度</span>
+                  <span className="display text-lg font-bold">{t("作答進度", "Progression")}</span>
                   <span className="text-sm text-muted tabular-nums">
                     {answeredCount}／{shown.length}
                   </span>
@@ -312,7 +321,7 @@ export function QuizRunner({
                     type="button"
                     onClick={() => jump(q.id)}
                     className={`display aspect-square rounded-md border text-sm font-bold transition hover:brightness-95 ${cls}`}
-                    aria-label={`跳到第 ${i + 1} 題`}
+                    aria-label={t(`跳到第 ${i + 1} 題`, `Aller à la question ${i + 1}`)}
                   >
                     {i + 1}
                   </button>
@@ -324,7 +333,7 @@ export function QuizRunner({
                 afterActions
               ) : (
                 <button type="button" onClick={check} className={`${btnPrimary} w-full`}>
-                  檢查答案
+                  {t("檢查答案", "Corriger")}
                 </button>
               )}
             </div>
@@ -340,11 +349,11 @@ export function QuizRunner({
                 <Progress value={answeredCount} max={shown.length} />
               </div>
               <span className="text-xs text-muted tabular-nums">
-                已作答 {answeredCount}／{shown.length}
+                {t("已作答", "Répondu")} {answeredCount}／{shown.length}
               </span>
             </div>
             <button type="button" onClick={check} className={`${btnPrimary} w-full`}>
-              檢查答案
+              {t("檢查答案", "Corriger")}
             </button>
           </>
         ) : (
@@ -355,10 +364,10 @@ export function QuizRunner({
   );
 }
 
-const VERDICT_STYLE: Record<Exclude<Verdict, "pending">, { label: string; badge: string; edge: string }> = {
-  correct: { label: "答對", badge: "bg-ok-soft text-ok", edge: "border-l-ok" },
-  wrong: { label: "答錯", badge: "bg-bad-soft text-bad", edge: "border-l-bad" },
-  accent: { label: "差一點", badge: "bg-warn-soft text-warn", edge: "border-l-warn" },
+const VERDICT_STYLE: Record<Exclude<Verdict, "pending">, { label: string; labelFr: string; badge: string; edge: string }> = {
+  correct: { label: "答對", labelFr: "Juste", badge: "bg-ok-soft text-ok", edge: "border-l-ok" },
+  wrong: { label: "答錯", labelFr: "Faux", badge: "bg-bad-soft text-bad", edge: "border-l-bad" },
+  accent: { label: "差一點", labelFr: "Presque", badge: "bg-warn-soft text-warn", edge: "border-l-warn" },
 };
 
 export function QuestionCard({
@@ -397,6 +406,8 @@ export function QuestionCard({
   zh?: "show" | "tap" | "hide";
 }) {
   const [zhOpen, setZhOpen] = useState(false);
+  const t = useT();
+  const lang = useLang();
   const bilingual = !!q.instructionZh;
   const showZh = zh === "show" || (zh === "tap" && zhOpen);
   const text = typeof answer === "string" ? answer : "";
@@ -417,7 +428,7 @@ export function QuestionCard({
       autoCorrect="off"
       autoComplete="off"
       spellCheck={false}
-      aria-label={`第 ${n} 題答案`}
+      aria-label={t(`第 ${n} 題答案`, `Réponse à la question ${n}`)}
       className={`fr mx-1 inline-block w-[clamp(7rem,32vw,11rem)] rounded-t-md border-b-2 bg-sunken px-2 py-0 align-baseline outline-none focus:border-accent focus:bg-accent-soft disabled:opacity-100 ${
         v === "correct"
           ? "border-ok text-ok"
@@ -441,8 +452,7 @@ export function QuestionCard({
         <div className="flex items-baseline gap-2">
           <span className="display text-xl font-bold text-accent">{n}</span>
           <span className="text-sm text-muted">
-            {TYPE_LABELS[q.type].zh}
-            <span className="display ml-1 italic">· {TYPE_LABELS[q.type].fr}</span>
+            {lang === "fr" ? <span className="display italic">{TYPE_LABELS[q.type].fr}</span> : <>{TYPE_LABELS[q.type].zh}<span className="display ml-1 italic">· {TYPE_LABELS[q.type].fr}</span></>}
           </span>
         </div>
         <div className="flex shrink-0 items-center gap-2">
@@ -453,10 +463,10 @@ export function QuestionCard({
               aria-pressed={zhOpen}
               className="rounded-full border border-line px-2.5 py-0.5 text-xs text-muted hover:border-accent/60 hover:text-ink"
             >
-              {zhOpen ? "收起翻譯" : "看翻譯"}
+              {zhOpen ? t("收起翻譯", "Masquer") : t("看翻譯", "Traduction")}
             </button>
           )}
-          {style && <span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${style.badge}`}>{style.label}</span>}
+          {style && <span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${style.badge}`}>{t(style.label, style.labelFr)}</span>}
         </div>
       </div>
       {bilingual ? (
@@ -550,8 +560,8 @@ export function QuestionCard({
             autoCapitalize="sentences"
             autoCorrect="off"
             spellCheck={false}
-            placeholder="請用法文作答…"
-            aria-label={`第 ${n} 題答案`}
+            placeholder={t("請用法文作答…", "Répondez en français…")}
+            aria-label={t(`第 ${n} 題答案`, `Réponse à la question ${n}`)}
             className="fr seyes w-full resize-y rounded-lg border border-line px-3 pb-1 outline-none focus:border-accent disabled:opacity-100"
           />
           {focused && !checked && <AccentBar target={getInput} onInsert={onAnswer} />}
@@ -562,8 +572,8 @@ export function QuestionCard({
         <div className="mt-3 space-y-3 border-t border-dashed border-line pt-3 text-sm">
           {q.type === "fill" && v !== "correct" && (
             <p>
-              {v === "accent" && <span className="text-warn">重音符號不對。</span>}
-              正確答案：
+              {v === "accent" && <span className="text-warn">{t("重音符號不對。", "Attention aux accents. ")}</span>}
+              {t("正確答案：", "Bonne réponse : ")}
               <span lang="fr" className="fr font-semibold">
                 {q.answers.join("／")}
               </span>
@@ -583,7 +593,7 @@ export function QuestionCard({
             {q.explanation}
             {noteLink && isGrammarId(q.grammar) && (
               <Link href={`/learn/grammar/${q.grammar}/`} className="ml-1.5 whitespace-nowrap text-accent underline-offset-4 hover:underline">
-                看文法筆記 →
+                {t("看文法筆記 →", "Voir la fiche →")}
               </Link>
             )}
           </p>
@@ -630,11 +640,12 @@ function ShortFeedback({
   onOverride: () => void;
 }) {
   const others = q.answers.filter((a) => a !== check.referenceText);
+  const t = useT();
 
   if (check.result === "correct") {
     return others.length > 0 ? (
       <details className="text-muted">
-        <summary className="cursor-pointer">其他正確寫法</summary>
+        <summary className="cursor-pointer">{t("其他正確寫法", "Autres réponses possibles")}</summary>
         <ul lang="fr" className="fr mt-1 list-disc pl-5">
           {others.map((a) => (
             <li key={a}>{a}</li>
@@ -648,13 +659,13 @@ function ShortFeedback({
     <div className="space-y-2">
       {check.result !== "empty" && (
         <div>
-          <div className="mb-0.5 text-xs text-muted">你的答案（波浪線是寫錯的字）</div>
+          <div className="mb-0.5 text-xs text-muted">{t("你的答案（波浪線是寫錯的字）", "Votre réponse (les mots soulignés sont faux)")}</div>
           <Tokens tokens={check.mine} />
         </div>
       )}
       <div>
         <div className="mb-0.5 text-xs text-muted">
-          參考答案{check.result !== "empty" ? "（綠底是你漏掉或寫錯的部分）" : ""}
+          {t("參考答案", "Corrigé")}{check.result !== "empty" ? t("（綠底是你漏掉或寫錯的部分）", " (en vert : ce qui manquait ou était faux)") : ""}
         </div>
         {check.result === "empty" ? (
           <span lang="fr" className="fr font-semibold">
@@ -666,7 +677,7 @@ function ShortFeedback({
       </div>
       {others.length > 0 && (
         <details className="text-muted">
-          <summary className="cursor-pointer">其他正確寫法（{others.length}）</summary>
+          <summary className="cursor-pointer">{t("其他正確寫法", "Autres réponses possibles")}（{others.length}）</summary>
           <ul lang="fr" className="fr mt-1 list-disc pl-5">
             {others.map((a) => (
               <li key={a}>{a}</li>
@@ -676,10 +687,10 @@ function ShortFeedback({
       )}
       {check.result !== "empty" &&
         (overridden ? (
-          <p className="text-ok">已改為答對。</p>
+          <p className="text-ok">{t("已改為答對。", "Comptée comme juste.")}</p>
         ) : (
           <button type="button" onClick={onOverride} className="min-h-10 text-sm text-accent underline underline-offset-4">
-            我的寫法也正確，算我答對
+            {t("我的寫法也正確，算我答對", "Ma réponse est juste aussi")}
           </button>
         ))}
     </div>
@@ -687,10 +698,11 @@ function ShortFeedback({
 }
 
 function OpenFeedback({ answers, mark, onMark }: { answers: string[]; mark?: boolean; onMark: (ok: boolean) => void }) {
+  const t = useT();
   return (
     <div className="space-y-2">
       <div>
-        <div className="mb-0.5 text-xs text-muted">參考答案（開放式作答，請自己對照）</div>
+        <div className="mb-0.5 text-xs text-muted">{t("參考答案（開放式作答，請自己對照）", "Corrigé (réponse libre : comparez vous-même)")}</div>
         <ul lang="fr" className="fr font-semibold">
           {answers.map((a) => (
             <li key={a}>{a}</li>
@@ -708,7 +720,7 @@ function OpenFeedback({ answers, mark, onMark }: { answers: string[]; mark?: boo
               mark === ok ? (ok ? "border-ok bg-ok-soft font-medium text-ok" : "border-bad bg-bad-soft font-medium text-bad") : "border-line"
             }`}
           >
-            {ok ? "我答對了" : "我答錯了"}
+            {ok ? t("我答對了", "J’ai juste") : t("我答錯了", "J’ai faux")}
           </button>
         ))}
       </div>
@@ -716,13 +728,14 @@ function OpenFeedback({ answers, mark, onMark }: { answers: string[]; mark?: boo
   );
 }
 
-export function Invalid({ message = "這個連結的設定不完整，請回到設定頁重新選擇。" }: { message?: string }) {
+export function Invalid({ message }: { message?: string }) {
+  const t = useT();
   return (
     <main className={`${container} py-16 text-center`}>
       <p className="display mb-1 text-2xl text-rouge italic">Oups !</p>
-      <p className="mb-6 text-muted">{message}</p>
+      <p className="mb-6 text-muted">{message ?? t("這個連結的設定不完整，請回到設定頁重新選擇。", "Ce lien est incomplet. Revenez aux réglages.")}</p>
       <Link href="/" className={btnPrimary}>
-        回到設定
+        {t("回到設定", "Retour aux réglages")}
       </Link>
     </main>
   );

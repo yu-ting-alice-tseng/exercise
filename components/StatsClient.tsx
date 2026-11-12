@@ -1,5 +1,6 @@
 "use client";
 
+import { useLang } from "@/lib/i18n";
 import { useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -31,14 +32,24 @@ import { deleteCloudProgress } from "@/lib/sync";
 
 const LEVEL_OF = new Map(BANK.map((q) => [q.id, q.level]));
 const WEEKS = 12;
-const WEEKDAYS = ["一", "二", "三", "四", "五", "六", "日"];
+const WEEKDAYS = { zh: ["一", "二", "三", "四", "五", "六", "日"], fr: ["L", "M", "M", "J", "V", "S", "D"] };
 
-const minutes = (sec: number) => (sec === 0 ? "0" : sec < 60 ? "不到 1" : String(Math.round(sec / 60)));
-const md = (t: number) => new Date(t).toLocaleDateString("zh-TW", { month: "numeric", day: "numeric" });
+/** 依介面語言格式化數字、日期與文字 */
+function useFmt() {
+  const lang = useLang();
+  return {
+    lang,
+    tr: (zh: string, fr: string) => (lang === "fr" ? fr : zh),
+    minutes: (sec: number) => (sec === 0 ? "0" : sec < 60 ? (lang === "fr" ? "< 1" : "不到 1") : String(Math.round(sec / 60))),
+    md: (t: number) =>
+      new Date(t).toLocaleDateString(lang === "fr" ? "fr-FR" : "zh-TW", lang === "fr" ? { day: "numeric", month: "short" } : { month: "numeric", day: "numeric" }),
+  };
+}
 
 export default function StatsClient() {
   const { progress, ready } = useProgress();
   const router = useRouter();
+  const { lang, tr, minutes, md } = useFmt();
 
   const days = useMemo(() => byDay(progress), [progress]);
   const now = useNow();
@@ -119,47 +130,47 @@ export default function StatsClient() {
     );
   }
 
-  if (!ready) return <main className={`${container} py-10 text-muted`}>載入中…</main>;
+  if (!ready) return <main className={`${container} py-10 text-muted`}>{tr("載入中…", "Chargement…")}</main>;
 
   const empty = progress.s.length === 0;
 
   return (
     <main className={`${container} pt-5 sm:pt-8`}>
-      <PageTitle fr="Mon carnet de progrès" zh="學習紀錄" sub="每次線上練習按下「檢查答案」，都會自動記錄在這台裝置的瀏覽器裡。" />
+      <PageTitle fr="Mon carnet de progrès" zh="學習紀錄" sub={tr("每次線上練習按下「檢查答案」，都會自動記錄在這台裝置的瀏覽器裡。", "Chaque correction d’exercice en ligne est enregistrée automatiquement dans ce navigateur.")} />
 
       {empty ? (
         <Card className="mb-5 p-8 text-center">
           <div className="mb-2 text-5xl" aria-hidden>📒</div>
           <p className="display mb-2 text-2xl text-rouge italic">C&apos;est parti !</p>
-          <p className="mb-5 text-muted">還沒有學習紀錄。完成第一次線上練習後，這裡就會出現你的學習日曆和統計。</p>
+          <p className="mb-5 text-muted">{tr("還沒有學習紀錄。完成第一次線上練習後，這裡就會出現你的學習日曆和統計。", "Aucune activité pour l’instant. Après votre premier exercice en ligne, votre calendrier et vos statistiques apparaîtront ici.")}</p>
           <Link href="/" className={btnPrimary}>
-            開始練習
+            {tr("開始練習", "Commencer")}
           </Link>
         </Card>
       ) : (
         <>
           <div className="mb-5 grid grid-cols-2 gap-3 md:grid-cols-4">
-            <Tile fr="Série" label="連續學習" value={String(summary.streak)} unit="天" note={summary.todaySec ? "今天已練習" : "今天還沒練習"} />
-            <Tile fr="Cette semaine" label="最近 7 天" value={minutes(summary.weekSec)} unit="分鐘" note={`今天 ${minutes(summary.todaySec)} 分鐘`} />
-            <Tile fr="Questions" label="累計作答" value={String(summary.answered)} unit="題" note={`共 ${summary.practicedDays} 天`} />
+            <Tile fr="Série" label={tr("連續學習", "Série")} value={String(summary.streak)} unit={tr("天", "j")} note={summary.todaySec ? tr("今天已練習", "Fait aujourd’hui") : tr("今天還沒練習", "Pas encore aujourd’hui")} />
+            <Tile fr="Cette semaine" label={tr("最近 7 天", "7 derniers jours")} value={minutes(summary.weekSec)} unit="min" note={tr(`今天 ${minutes(summary.todaySec)} 分鐘`, `Aujourd’hui : ${minutes(summary.todaySec)} min`)} />
+            <Tile fr="Questions" label={tr("累計作答", "Questions")} value={String(summary.answered)} unit={tr("題", "")} note={tr(`共 ${summary.practicedDays} 天`, `Sur ${summary.practicedDays} jour(s)`)} />
             <Tile
               fr="Réussite"
-              label="正確率"
+              label={tr("正確率", "Réussite")}
               value={summary.accuracy === null ? "–" : String(summary.accuracy)}
               unit="%"
-              note={`已掌握 ${summary.mastered} 題`}
+              note={tr(`已掌握 ${summary.mastered} 題`, `${summary.mastered} maîtrisée(s)`)}
             />
           </div>
 
           <div className="grid gap-4 lg:grid-cols-2">
             <Card className="p-4 sm:p-5">
               <div className="eyebrow">Calendrier</div>
-              <h2 className="display text-lg font-bold">學習日曆（近 {WEEKS} 週）</h2>
+              <h2 className="display text-lg font-bold">{tr(`學習日曆（近 ${WEEKS} 週）`, `Calendrier (${WEEKS} semaines)`)}</h2>
               <Heatmap days={days} today={today} />
             </Card>
             <Card className="p-4 sm:p-5">
               <div className="eyebrow">Temps d&apos;étude</div>
-              <h2 className="display text-lg font-bold">每天練習時間（近 14 天，分鐘）</h2>
+              <h2 className="display text-lg font-bold">{tr("每天練習時間（近 14 天，分鐘）", "Temps d’étude (14 jours, en minutes)")}</h2>
               <DailyBars days={days} today={today} />
             </Card>
           </div>
@@ -167,9 +178,9 @@ export default function StatsClient() {
           <div className="mt-4 grid gap-4 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start">
             <Card className="p-4 sm:p-5">
               <div className="eyebrow">Points faibles</div>
-              <h2 className="display text-lg font-bold">最需要加強的文法點</h2>
+              <h2 className="display text-lg font-bold">{tr("最需要加強的文法點", "Points à retravailler")}</h2>
               {weakest.length === 0 ? (
-                <p className="mt-3 text-sm text-muted">每個文法點作答滿 3 次後，就會出現在這裡。</p>
+                <p className="mt-3 text-sm text-muted">{tr("每個文法點作答滿 3 次後，就會出現在這裡。", "Un point de grammaire apparaît ici après 3 réponses.")}</p>
               ) : (
                 <ul className="mt-3 space-y-3">
                   {weakest.map((g) => (
@@ -178,16 +189,16 @@ export default function StatsClient() {
                         <div className="flex items-baseline justify-between gap-2 text-sm">
                           <span className="truncate">
                             <span className="mr-1.5 rounded bg-accent-soft px-1.5 py-0.5 text-xs font-semibold text-accent">{g.level}</span>
-                            {topicName(g.level, "grammar", g.grammar)}
+                            {topicName(g.level, "grammar", g.grammar, lang)}
                           </span>
                           <span className="shrink-0 tabular-nums text-muted">
-                            {g.pct}%・{g.n} 次
+                            {g.pct}%・{tr(`${g.n} 次`, `${g.n} réponses`)}
                           </span>
                         </div>
                         <div
                           className="mt-1 h-2 overflow-hidden rounded-full bg-sunken"
                           role="img"
-                          aria-label={`正確率 ${g.pct}%`}
+                          aria-label={tr(`正確率 ${g.pct}%`, `Réussite ${g.pct} %`)}
                         >
                           <div className="h-full rounded-full bg-accent" style={{ width: `${Math.max(g.pct, 2)}%` }} />
                         </div>
@@ -197,7 +208,7 @@ export default function StatsClient() {
                         onClick={() => practice(g.level, g.grammar)}
                         className="min-h-10 shrink-0 rounded-lg border border-line px-3 text-sm hover:border-accent/60"
                       >
-                        練習
+                        {tr("練習", "S’entraîner")}
                       </button>
                     </li>
                   ))}
@@ -207,24 +218,24 @@ export default function StatsClient() {
 
             <Card className="p-5">
               <div className="eyebrow">Révision</div>
-              <h2 className="display text-lg font-bold">複習狀態</h2>
+              <h2 className="display text-lg font-bold">{tr("複習狀態", "État des révisions")}</h2>
               <dl className="mt-3 space-y-2 text-sm">
-                <Row label="今日待複習" value={`${summary.due} 題`} />
-                <Row label="錯題本" value={`${summary.reviewing} 題`} />
-                <Row label="已掌握" value={`${summary.mastered} 題`} />
+                <Row label={tr("今日待複習", "À réviser aujourd’hui")} value={tr(`${summary.due} 題`, String(summary.due))} />
+                <Row label={tr("錯題本", "Carnet d’erreurs")} value={tr(`${summary.reviewing} 題`, String(summary.reviewing))} />
+                <Row label={tr("已掌握", "Maîtrisées")} value={tr(`${summary.mastered} 題`, String(summary.mastered))} />
               </dl>
               <Link href="/review/" className={`${btnPrimary} mt-4 w-full`}>
-                {summary.due ? `開始複習（${summary.due} 題）` : "查看錯題本"}
+                {summary.due ? tr(`開始複習（${summary.due} 題）`, `Réviser (${summary.due})`) : tr("查看錯題本", "Voir le carnet d’erreurs")}
               </Link>
               {byLevel.length > 0 && (
                 <>
-                  <h3 className="mt-5 mb-2 text-sm font-bold">各等級正確率</h3>
+                  <h3 className="mt-5 mb-2 text-sm font-bold">{tr("各等級正確率", "Réussite par niveau")}</h3>
                   <table className="w-full text-sm">
                     <tbody>
                       {byLevel.map((l) => (
                         <tr key={l.level} className="border-t border-line">
                           <td className="py-1.5 font-semibold">{l.level}</td>
-                          <td className="py-1.5 text-right tabular-nums text-muted">{l.n} 次</td>
+                          <td className="py-1.5 text-right tabular-nums text-muted">{tr(`${l.n} 次`, `${l.n} rép.`)}</td>
                           <td className="py-1.5 text-right tabular-nums">{l.pct}%</td>
                         </tr>
                       ))}
@@ -238,7 +249,7 @@ export default function StatsClient() {
           <Card className="mt-4 overflow-hidden">
             <div className="px-4 pt-4 pb-2 sm:px-5">
               <div className="eyebrow">Historique</div>
-              <h2 className="display text-lg font-bold">最近的練習</h2>
+              <h2 className="display text-lg font-bold">{tr("最近的練習", "Séances récentes")}</h2>
             </div>
             <ul className="divide-y divide-line">
               {recent.map((s) => {
@@ -249,8 +260,8 @@ export default function StatsClient() {
                     <div className="min-w-0">
                       <div className="truncate font-medium">{s.title}</div>
                       <div className="text-xs text-muted">
-                        {md(s.at)} {new Date(s.at).toLocaleTimeString("zh-TW", { hour: "2-digit", minute: "2-digit" })}・
-                        {s.kind === "review" ? "複習" : s.kind === "exam" ? "模考" : "練習"}・{minutes(s.sec)} 分鐘
+                        {md(s.at)} {new Date(s.at).toLocaleTimeString(lang === "fr" ? "fr-FR" : "zh-TW", { hour: "2-digit", minute: "2-digit" })}・
+                        {s.kind === "review" ? tr("複習", "Révision") : s.kind === "exam" ? tr("模考", "Examen") : tr("練習", "Exercice")}・{minutes(s.sec)} {tr("分鐘", "min")}
                       </div>
                     </div>
                     <span className="display shrink-0 text-lg font-bold tabular-nums">
@@ -274,7 +285,7 @@ function Tile({ fr, label, value, unit, note }: { fr: string; label: string; val
   return (
     <Card className="p-4">
       <div className="eyebrow text-xs">{fr}</div>
-      <div className="text-sm text-muted">{label}</div>
+      {label !== fr && <div className="text-sm text-muted">{label}</div>}
       <div className="mt-1">
         <span className="display text-3xl font-bold tabular-nums sm:text-4xl">{value}</span>
         <span className="ml-1 text-sm text-muted">{unit}</span>
@@ -305,6 +316,7 @@ function heatLevel(sec: number) {
 
 function Heatmap({ days, today }: { days: Map<string, DayStat>; today: number }) {
   const [sel, setSel] = useState<number | null>(null);
+  const { lang, tr, minutes, md } = useFmt();
   // 從 WEEKS 週前的星期一開始，排成「每欄一週、每列一天」
   const dow = (new Date(today).getDay() + 6) % 7; // 星期一＝0
   const start = today - (dow + (WEEKS - 1) * 7) * DAY;
@@ -317,18 +329,18 @@ function Heatmap({ days, today }: { days: Map<string, DayStat>; today: number })
     <div className="mt-3">
       <div className="flex gap-2">
         <div className="grid grid-rows-7 gap-[3px] pt-0 text-[10px] leading-none text-muted">
-          {WEEKDAYS.map((d, i) => (
-            <span key={d} className="flex h-full items-center">
+          {WEEKDAYS[lang].map((d, i) => (
+            <span key={i} className="flex h-full items-center">
               {i % 2 === 0 ? d : ""}
             </span>
           ))}
         </div>
-        <div className="grid flex-1 grid-flow-col grid-rows-7 gap-[3px]" role="grid" aria-label="學習日曆">
+        <div className="grid flex-1 grid-flow-col grid-rows-7 gap-[3px]" role="grid" aria-label={tr("學習日曆", "Calendrier d’étude")}>
           {cols.flat().map((t) => {
             const future = t > today;
             const d = days.get(dayKey(t));
             const lvl = heatLevel(d?.sec ?? 0);
-            const label = `${md(t)}：${d ? `${minutes(d.sec)} 分鐘、${d.answered} 題` : "沒有練習"}`;
+            const label = tr(`${md(t)}：${d ? `${minutes(d.sec)} 分鐘、${d.answered} 題` : "沒有練習"}`, `${md(t)} : ${d ? `${minutes(d.sec)} min, ${d.answered} question(s)` : "aucune activité"}`);
             return (
               <button
                 key={t}
@@ -350,15 +362,15 @@ function Heatmap({ days, today }: { days: Map<string, DayStat>; today: number })
       <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-xs text-muted">
         <span className="min-h-4" aria-live="polite">
           {sel === null
-            ? "點選日期查看當天紀錄"
-            : `${md(sel)}：${selDay ? `練習 ${minutes(selDay.sec)} 分鐘，作答 ${selDay.answered} 題，答對 ${selDay.correct} 題` : "沒有練習"}`}
+            ? tr("點選日期查看當天紀錄", "Cliquez sur un jour pour voir le détail")
+            : tr(`${md(sel)}：${selDay ? `練習 ${minutes(selDay.sec)} 分鐘，作答 ${selDay.answered} 題，答對 ${selDay.correct} 題` : "沒有練習"}`, `${md(sel)} : ${selDay ? `${minutes(selDay.sec)} min, ${selDay.answered} question(s), ${selDay.correct} juste(s)` : "aucune activité"}`)}
         </span>
         <span className="flex items-center gap-1">
-          少
+          {tr("少", "Moins")}
           {[0, 1, 2, 3, 4].map((l) => (
             <span key={l} className="size-3 rounded-[3px]" style={{ background: `var(--heat-${l})` }} />
           ))}
-          多
+          {tr("多", "Plus")}
         </span>
       </div>
     </div>
@@ -367,6 +379,7 @@ function Heatmap({ days, today }: { days: Map<string, DayStat>; today: number })
 
 function DailyBars({ days, today }: { days: Map<string, DayStat>; today: number }) {
   const [sel, setSel] = useState<number | null>(null);
+  const { tr, minutes, md } = useFmt();
   const list = Array.from({ length: 14 }, (_, i) => {
     const t = today - (13 - i) * DAY;
     const d = days.get(dayKey(t));
@@ -396,8 +409,8 @@ function DailyBars({ days, today }: { days: Map<string, DayStat>; today: number 
               type="button"
               onClick={() => setSel(x.t)}
               onMouseEnter={() => setSel(x.t)}
-              aria-label={`${md(x.t)}：${minutes(x.d?.sec ?? 0)} 分鐘`}
-              title={`${md(x.t)}：${minutes(x.d?.sec ?? 0)} 分鐘`}
+              aria-label={`${md(x.t)}：${minutes(x.d?.sec ?? 0)} min`}
+              title={`${md(x.t)}：${minutes(x.d?.sec ?? 0)} min`}
               className="group flex h-full flex-1 items-end"
             >
               <span
@@ -410,21 +423,21 @@ function DailyBars({ days, today }: { days: Map<string, DayStat>; today: number 
       </div>
       <div className="mt-1 flex justify-between pr-6 text-[10px] text-muted">
         <span>{md(list[0].t)}</span>
-        <span>今天</span>
+        <span>{tr("今天", "Auj.")}</span>
       </div>
       <p className="mt-2 text-xs text-muted" aria-live="polite">
         {shown
-          ? `${md(shown.t)}：${minutes(shown.d?.sec ?? 0)} 分鐘${shown.d ? `，${shown.d.sessions} 次練習` : ""}`
-          : `14 天共 ${Math.round(total)} 分鐘，點選長條查看每天的數字`}
+          ? tr(`${md(shown.t)}：${minutes(shown.d?.sec ?? 0)} 分鐘${shown.d ? `，${shown.d.sessions} 次練習` : ""}`, `${md(shown.t)} : ${minutes(shown.d?.sec ?? 0)} min${shown.d ? `, ${shown.d.sessions} séance(s)` : ""}`)
+          : tr(`14 天共 ${Math.round(total)} 分鐘，點選長條查看每天的數字`, `${Math.round(total)} min sur 14 jours. Cliquez sur une barre pour le détail.`)}
       </p>
       <details className="mt-2 text-sm">
-        <summary className="cursor-pointer text-muted">以表格檢視</summary>
+        <summary className="cursor-pointer text-muted">{tr("以表格檢視", "Voir sous forme de tableau")}</summary>
         <table className="mt-2 w-full text-sm">
           <thead>
             <tr className="text-left text-muted">
-              <th className="py-1 font-normal">日期</th>
-              <th className="py-1 text-right font-normal">分鐘</th>
-              <th className="py-1 text-right font-normal">作答題數</th>
+              <th className="py-1 font-normal">{tr("日期", "Date")}</th>
+              <th className="py-1 text-right font-normal">{tr("分鐘", "Minutes")}</th>
+              <th className="py-1 text-right font-normal">{tr("作答題數", "Questions")}</th>
             </tr>
           </thead>
           <tbody>
@@ -447,71 +460,72 @@ function DataTools() {
   const [msg, setMsg] = useState<string | null>(null);
   const auth = useAuth();
   const signedIn = auth.status === "signedIn";
+  const { tr } = useFmt();
 
   function download() {
     const blob = new Blob([exportProgress()], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `法文練習紀錄-${dayKey(Date.now())}.json`;
+    a.download = `${tr("法文練習紀錄", "exercices-francais")}-${dayKey(Date.now())}.json`;
     a.click();
     URL.revokeObjectURL(url);
-    setMsg("已下載備份檔。");
+    setMsg(tr("已下載備份檔。", "Sauvegarde téléchargée."));
   }
 
   async function upload(file: File) {
     try {
       const r = importProgress(await file.text());
-      setMsg(`匯入完成：${r.questions} 題的紀錄、${r.sessions} 次練習（和現有紀錄合併）。`);
+      setMsg(tr(`匯入完成：${r.questions} 題的紀錄、${r.sessions} 次練習（和現有紀錄合併）。`, `Import terminé : ${r.questions} questions et ${r.sessions} séances (fusionnées avec l’existant).`));
     } catch {
-      setMsg("這個檔案無法匯入，請確認是從這裡下載的備份檔。");
+      setMsg(tr("這個檔案無法匯入，請確認是從這裡下載的備份檔。", "Impossible d’importer ce fichier. Utilisez une sauvegarde téléchargée ici."));
     }
   }
 
   return (
     <Card className="mt-4 p-4 sm:p-5">
       <div className="eyebrow">Sauvegarde</div>
-      <h2 className="display text-lg font-bold">備份與搬移紀錄</h2>
+      <h2 className="display text-lg font-bold">{tr("備份與搬移紀錄", "Sauvegarder et transférer")}</h2>
       <p className="mt-1 text-sm text-muted">
         {signedIn ? (
-          <>已登入 {auth.user?.email}，紀錄會自動同步到雲端，換裝置登入同一個帳號就能接著練習。也可以另外下載一份備份。</>
+          <>{tr(`已登入 ${auth.user?.email}，紀錄會自動同步到雲端，換裝置登入同一個帳號就能接著練習。也可以另外下載一份備份。`, `Connecté(e) : ${auth.user?.email}. Vos données sont synchronisées en ligne ; connectez-vous sur un autre appareil pour continuer. Vous pouvez aussi télécharger une sauvegarde.`)}</>
         ) : auth.status === "signedOut" ? (
           <>
-            目前紀錄只存在這台裝置的瀏覽器裡。
+            {tr("目前紀錄只存在這台裝置的瀏覽器裡。", "Vos données sont enregistrées uniquement dans ce navigateur. ")}
             <Link href="/account/" className="text-accent underline underline-offset-2">
-              登入
+              {tr("登入", "Connectez-vous")}
             </Link>
-            後會自動同步到雲端，換手機或電腦也不會不見。
+            {tr("後會自動同步到雲端，換手機或電腦也不會不見。", " pour les synchroniser et les retrouver sur un autre appareil.")}
           </>
         ) : (
-          <>紀錄只存在這台裝置的瀏覽器裡。換手機或電腦時，先在這裡下載備份，再到新裝置匯入；清除瀏覽器資料也會讓紀錄消失。</>
+          <>{tr("紀錄只存在這台裝置的瀏覽器裡。換手機或電腦時，先在這裡下載備份，再到新裝置匯入；清除瀏覽器資料也會讓紀錄消失。", "Vos données sont enregistrées uniquement dans ce navigateur. Pour changer d’appareil, téléchargez une sauvegarde ici puis importez-la. Effacer les données du navigateur supprime aussi l’historique.")}</>
         )}
       </p>
       <div className="mt-3 flex flex-wrap gap-2">
         <button type="button" className={btnQuiet} onClick={download}>
-          下載備份
+          {tr("下載備份", "Télécharger")}
         </button>
         <button type="button" className={btnQuiet} onClick={() => fileRef.current?.click()}>
-          匯入備份
+          {tr("匯入備份", "Importer")}
         </button>
         <button
           type="button"
           className={`${btnQuiet} text-bad`}
           onClick={async () => {
             const text = signedIn
-              ? "確定要清除所有學習紀錄嗎？這台裝置和雲端上的紀錄都會刪除，無法復原。"
-              : "確定要清除這台裝置上所有的學習紀錄嗎？這個動作無法復原。";
+              ? tr("確定要清除所有學習紀錄嗎？這台裝置和雲端上的紀錄都會刪除，無法復原。", "Effacer tout l’historique ? Les données de cet appareil et du compte en ligne seront supprimées définitivement.")
+              : tr("確定要清除這台裝置上所有的學習紀錄嗎？這個動作無法復原。", "Effacer tout l’historique de cet appareil ? Cette action est irréversible.");
             if (!window.confirm(text)) return;
             try {
               if (signedIn) await deleteCloudProgress();
               clearProgress();
-              setMsg("已清除學習紀錄。");
+              setMsg(tr("已清除學習紀錄。", "Historique effacé."));
             } catch {
-              setMsg("清除雲端紀錄失敗，請稍後再試。");
+              setMsg(tr("清除雲端紀錄失敗，請稍後再試。", "Échec de la suppression en ligne. Réessayez plus tard."));
             }
           }}
         >
-          清除紀錄
+          {tr("清除紀錄", "Effacer l’historique")}
         </button>
         <input
           ref={fileRef}

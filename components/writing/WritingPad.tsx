@@ -3,6 +3,7 @@
 import { useState, useSyncExternalStore } from "react";
 import { countWords } from "@/lib/writing";
 import type { WritingPrompt } from "@/lib/writingTypes";
+import { useLang } from "@/lib/i18n";
 
 const KEY = "french-quiz:writing:v1";
 
@@ -33,11 +34,13 @@ export default function WritingPad({ guideId, prompts, checklist }: { guideId: s
   // 草稿只存在瀏覽器裡，等到瀏覽器端才顯示編輯區，伺服器產生的畫面才會一致
   const mounted = useSyncExternalStore(noop, () => true, () => false);
   const [idx, setIdx] = useState(0);
-  if (!mounted) return <p className="text-sm text-muted">載入寫作練習…</p>;
+  const lang = useLang();
+  const t = (zh: string, fr: string) => (lang === "fr" ? fr : zh);
+  if (!mounted) return <p className="text-sm text-muted">{t("載入寫作練習…", "Chargement…")}</p>;
   return (
     <div>
       {prompts.length > 1 && (
-        <div className="mb-3 flex flex-wrap gap-2" role="tablist" aria-label="選擇題目">
+        <div className="mb-3 flex flex-wrap gap-2" role="tablist" aria-label={t("選擇題目", "Choisir un sujet")}>
           {prompts.map((p, i) => (
             <button
               key={i}
@@ -49,7 +52,7 @@ export default function WritingPad({ guideId, prompts, checklist }: { guideId: s
                 idx === i ? "border-accent bg-accent text-accent-ink" : "border-line bg-surface hover:border-accent/60"
               }`}
             >
-              題目 {i + 1}（{p.level}）
+              {t("題目", "Sujet")} {i + 1}（{p.level}）
             </button>
           ))}
         </div>
@@ -62,9 +65,11 @@ export default function WritingPad({ guideId, prompts, checklist }: { guideId: s
 function Editor({ id, prompt, checklist }: { id: string; prompt: WritingPrompt; checklist: string[] }) {
   const [text, setText] = useState(() => load()[id]?.text ?? "");
   const [checks, setChecks] = useState<Set<number>>(() => new Set(load()[id]?.checks ?? []));
+  const lang = useLang();
+  const t = (zh: string, fr: string) => (lang === "fr" ? fr : zh);
   const n = countWords(text);
   const ok = n >= prompt.min && (prompt.max === undefined || n <= prompt.max);
-  const range = prompt.max ? `${prompt.min}–${prompt.max} 字` : `至少 ${prompt.min} 字`;
+  const range = prompt.max ? t(`${prompt.min}–${prompt.max} 字`, `${prompt.min} à ${prompt.max} mots`) : t(`至少 ${prompt.min} 字`, `${prompt.min} mots minimum`);
 
   return (
     <div className="space-y-4">
@@ -86,33 +91,33 @@ function Editor({ id, prompt, checklist }: { id: string; prompt: WritingPrompt; 
           }}
           rows={10}
           spellCheck
-          placeholder="在這裡用法文寫作…"
-          aria-label="寫作區"
+          placeholder={t("在這裡用法文寫作…", "Écrivez ici en français…")}
+          aria-label={t("寫作區", "Zone de rédaction")}
           className="seyes fr block w-full resize-y rounded-xl border border-line px-4 py-2 outline-none focus:border-accent"
         />
         <div className="mt-2 flex flex-wrap items-center gap-3 text-sm">
           <span className={`rounded-full px-2.5 py-0.5 font-semibold tabular-nums ${ok ? "bg-ok-soft text-ok" : n ? "bg-warn-soft text-warn" : "bg-sunken text-muted"}`}>
-            {n} 字／{range}
+            {n} {t("字", "mots")}／{range}
           </span>
-          <span className="text-xs text-muted">草稿只存在這台裝置的瀏覽器裡。字數依空格計算，僅供參考。</span>
+          <span className="text-xs text-muted">{t("草稿只存在這台裝置的瀏覽器裡。字數依空格計算，僅供參考。", "Le brouillon reste dans ce navigateur. Le nombre de mots est indicatif (compté par espaces).")}</span>
           {text && (
             <button
               type="button"
               onClick={() => {
-                if (!window.confirm("確定要清除這份草稿嗎？")) return;
+                if (!window.confirm(t("確定要清除這份草稿嗎？", "Effacer ce brouillon ?"))) return;
                 setText("");
                 setChecks(new Set());
                 save(id, { text: "", checks: [] });
               }}
               className="ml-auto text-xs text-muted underline-offset-4 hover:text-bad hover:underline"
             >
-              清除草稿
+              {t("清除草稿", "Effacer le brouillon")}
             </button>
           )}
         </div>
       </div>
       <fieldset>
-        <legend className="mb-2 text-sm font-bold">寫完後逐項檢查</legend>
+        <legend className="mb-2 text-sm font-bold">{t("寫完後逐項檢查", "Relisez point par point")}</legend>
         <ul className="space-y-1">
           {checklist.map((c, i) => (
             <li key={i}>
@@ -135,7 +140,7 @@ function Editor({ id, prompt, checklist }: { id: string; prompt: WritingPrompt; 
           ))}
         </ul>
         <p className="mt-2 text-xs text-muted tabular-nums">
-          已完成 {checks.size}／{checklist.length} 項
+          {t(`已完成 ${checks.size}／${checklist.length} 項`, `${checks.size}／${checklist.length} vérifiés`)}
         </p>
       </fieldset>
     </div>

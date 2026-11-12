@@ -1,5 +1,8 @@
 "use client";
 
+import { useLang } from "@/lib/i18n";
+import { queryToConfig } from "@/lib/config";
+import { paperTitle } from "@/lib/title";
 import { useMemo, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import { Card } from "./ui";
@@ -9,6 +12,12 @@ export default function RecentList() {
   const raw = useSyncExternalStore(subscribeHistory, historySnapshot, () => null);
   const [cleared, setCleared] = useState(false);
   const items = useMemo(() => (cleared ? [] : parseHistory(raw)), [raw, cleared]);
+  const lang = useLang();
+  const t = (zh: string, fr: string) => (lang === "fr" ? fr : zh);
+  const titleOf = (h: { query: string; title: string }) => {
+    const c = queryToConfig(new URLSearchParams(h.query));
+    return c ? paperTitle(c, lang) : h.title;
+  };
 
   if (items.length === 0) return null;
 
@@ -17,7 +26,7 @@ export default function RecentList() {
       <div className="flex items-end justify-between px-4 pt-4 pb-2 sm:px-5">
         <div>
           <div className="eyebrow">Historique</div>
-          <h2 className="display text-lg font-bold">最近的紀錄</h2>
+          <h2 className="display text-lg font-bold">{t("最近的紀錄", "Activité récente")}</h2>
         </div>
         <button
           type="button"
@@ -27,7 +36,7 @@ export default function RecentList() {
           }}
           className="min-h-9 text-sm text-muted hover:text-ink"
         >
-          清除
+          {t("清除", "Effacer")}
         </button>
       </div>
       <ul className="divide-y divide-line">
@@ -38,10 +47,10 @@ export default function RecentList() {
               className="flex min-h-14 items-center justify-between gap-3 px-4 py-2.5 transition hover:bg-sunken sm:px-5"
             >
               <div className="min-w-0">
-                <div className="truncate font-medium">{h.title}</div>
+                <div className="truncate font-medium">{titleOf(h)}</div>
                 <div className="text-xs text-muted">
-                  {h.kind === "paper" ? "A／B 考卷" : "線上練習"}・
-                  {new Date(h.at).toLocaleDateString("zh-TW", { month: "numeric", day: "numeric" })}
+                  {h.kind === "paper" ? t("A／B 考卷", "Copies A/B") : t("線上練習", "Exercice en ligne")}・
+                  {new Date(h.at).toLocaleDateString(lang === "fr" ? "fr-FR" : "zh-TW", { month: "numeric", day: "numeric" })}
                 </div>
               </div>
               {h.score ? (
@@ -53,7 +62,7 @@ export default function RecentList() {
           </li>
         ))}
       </ul>
-      <p className="border-t border-line px-4 py-2 text-xs text-muted sm:px-5">紀錄只存在這台裝置的瀏覽器裡。</p>
+      <p className="border-t border-line px-4 py-2 text-xs text-muted sm:px-5">{t("紀錄只存在這台裝置的瀏覽器裡。", "Cet historique est enregistré uniquement dans ce navigateur.")}</p>
     </Card>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import { useLang, useT } from "@/lib/i18n";
 import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { BottomBar, btnPrimary, btnSecondary, Card, Heading, twoCol } from "./ui";
@@ -29,6 +30,10 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
   const [topics, setTopics] = useState<string[]>([]);
   const [difficulty, setDifficulty] = useState<DifficultyFilter>("all");
   const [counts, setCounts] = useState<Record<QuestionType, number>>({ choice: 4, fill: 4, short: 2 });
+  const lang = useLang();
+  const tr = (zh: string, fr: string) => (lang === "fr" ? fr : zh);
+  const nm = (o: { zh: string; fr: string }) => (lang === "fr" ? o.fr : o.zh);
+  const sep = lang === "fr" ? ", " : "、";
 
   const options = by === "grammar" ? GRAMMAR[level] : THEMES;
   const groups =
@@ -69,23 +74,23 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
 
   const scope =
     topics.length === 0
-      ? `${level} 全部範圍`
-      : topics.map((t) => topicName(level, by, t)).join("、");
+      ? tr(`${level} 全部範圍`, `Tout le niveau ${level}`)
+      : topics.map((x) => topicName(level, by, x, lang)).join(sep);
 
   const notice =
     usable > 0 && short.length > 0
-      ? `題庫目前不夠，${short.map((t) => TYPE_LABELS[t].zh).join("、")}會以現有題數為準。`
+      ? tr(`題庫目前不夠，${short.map((x) => TYPE_LABELS[x].zh).join("、")}會以現有題數為準。`, `Pas assez de questions disponibles : ${short.map((x) => TYPE_LABELS[x].fr).join(", ")} seront limitées au nombre existant.`)
       : usable > 0 && abShort.length > 0
-        ? `${abShort.map((t) => TYPE_LABELS[t].zh).join("、")}的題目不夠 A、B 卷各用一份，B 卷會有部分題目和 A 卷相同。`
+        ? tr(`${abShort.map((x) => TYPE_LABELS[x].zh).join("、")}的題目不夠 A、B 卷各用一份，B 卷會有部分題目和 A 卷相同。`, `Pas assez de questions (${abShort.map((x) => TYPE_LABELS[x].fr).join(", ")}) pour deux copies différentes : la copie B reprendra quelques questions de la copie A.`)
         : null;
 
   const actions = (
     <div className="grid grid-cols-2 gap-2 lg:grid-cols-1">
       <button type="button" disabled={usable === 0} onClick={() => go("/practice/")} className={btnPrimary}>
-        線上練習
+        {tr("線上練習", "S’entraîner en ligne")}
       </button>
       <button type="button" disabled={usable === 0} onClick={() => go("/paper/")} className={btnSecondary}>
-        產生 A／B 考卷
+        {tr("產生 A／B 考卷", "Créer les copies A/B")}
       </button>
     </div>
   );
@@ -94,7 +99,7 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
     <div className={twoCol}>
       <div className="space-y-4">
         <Card className="p-4 sm:p-5">
-          <Heading fr="Étape 1 · Niveau" zh="選擇等級" />
+          <Heading fr="Étape 1 · Niveau" zh="選擇等級" frTitle="Choisir le niveau" />
           <div className="mt-3 grid grid-cols-3 gap-2 sm:gap-3 md:grid-cols-6">
             {LEVELS.map((l) => {
               const on = level === l.id;
@@ -118,19 +123,19 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
                     }`}
                   >
                     <span className="display block text-2xl font-bold sm:text-3xl">{l.id}</span>
-                    <span className="block text-xs sm:text-sm">{l.zh}</span>
+                    {lang === "zh" && <span className="block text-xs sm:text-sm">{l.zh}</span>}
                     <span className={`display block text-xs italic ${on ? "opacity-80" : "text-muted"}`}>{l.fr}</span>
                   </span>
                 </button>
               );
             })}
           </div>
-          <p className="mt-3 text-sm text-muted">{LEVELS.find((l) => l.id === level)?.desc}</p>
+          <p className="mt-3 text-sm text-muted">{(() => { const lv = LEVELS.find((l) => l.id === level); return lang === "fr" ? lv?.descFr : lv?.desc; })()}</p>
         </Card>
 
         <Card className="p-4 sm:p-5">
           <div className="flex flex-wrap items-end justify-between gap-3">
-            <Heading fr="Étape 2 · Thème ou grammaire" zh="練習範圍" />
+            <Heading fr="Étape 2 · Thème ou grammaire" zh="練習範圍" frTitle="Choisir le contenu" />
             <div className="grid grid-cols-2 rounded-lg bg-sunken p-1 text-sm">
               {(["grammar", "theme"] as const).map((b) => (
                 <button
@@ -145,7 +150,7 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
                     by === b ? "bg-surface text-ink shadow-sm" : "text-muted"
                   }`}
                 >
-                  {b === "grammar" ? "依文法" : "依主題"}
+                  {b === "grammar" ? tr("依文法", "Par grammaire") : tr("依主題", "Par thème")}
                 </button>
               ))}
             </div>
@@ -160,7 +165,7 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
                   {g.zh && (
                     <div className="mb-2 flex items-end justify-between gap-2 border-b border-line pb-1.5">
                       <div>
-                        <span className="font-bold">{g.zh}</span>
+                        <span className="font-bold">{nm(g)}</span>
                         <span className="display ml-2 text-sm text-muted italic">{g.fr}</span>
                       </div>
                       <button
@@ -172,7 +177,7 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
                         }
                         className="min-h-9 shrink-0 text-sm text-accent hover:underline"
                       >
-                        {allOn ? "取消全選" : "全選"}
+                        {allOn ? tr("取消全選", "Tout désélectionner") : tr("全選", "Tout sélectionner")}
                       </button>
                     </div>
                   )}
@@ -200,10 +205,10 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
                             {on ? "✓" : ""}
                           </span>
                           <span className="min-w-0 flex-1">
-                            <span className="block font-medium">{t.zh}</span>
-                            <span className="display block truncate text-sm text-muted italic">{t.fr}</span>
+                            <span className="block font-medium">{lang === "fr" ? t.fr : t.zh}</span>
+                            {lang === "zh" && <span className="display block truncate text-sm text-muted italic">{t.fr}</span>}
                           </span>
-                          <span className="shrink-0 text-xs text-muted">{n === 0 ? "準備中" : `${n} 題`}</span>
+                          <span className="shrink-0 text-xs text-muted">{n === 0 ? tr("準備中", "Bientôt") : tr(`${n} 題`, `${n} q.`)}</span>
                         </button>
                       );
                     })}
@@ -213,28 +218,28 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
             })}
           </div>
           <p className="mt-3 text-sm text-muted">
-            {topics.length === 0 ? "沒有勾選時，會從這個等級的所有題目抽題。" : `已選 ${topics.length} 項`}
+            {topics.length === 0 ? tr("沒有勾選時，會從這個等級的所有題目抽題。", "Sans sélection, les questions sont tirées de tout le niveau.") : tr(`已選 ${topics.length} 項`, `${topics.length} sélectionné(s)`)}
           </p>
         </Card>
 
         <div className="grid gap-4 md:grid-cols-2">
           <Card className="p-4 sm:p-5">
-            <Heading fr="Étape 3 · Exercices" zh="題型與題數" />
+            <Heading fr="Étape 3 · Exercices" zh="題型與題數" frTitle="Types et nombre de questions" />
             <div className="mt-2 divide-y divide-line">
               {TYPE_ORDER.map((t) => (
                 <div key={t} className="flex items-center justify-between gap-3 py-2.5">
                   <div>
                     <div className="font-medium">
-                      {TYPE_LABELS[t].zh}
-                      <span className="display ml-1.5 text-sm font-normal text-muted italic">{TYPE_LABELS[t].fr}</span>
+                      {lang === "fr" ? TYPE_LABELS[t].fr : TYPE_LABELS[t].zh}
+                      {lang === "zh" && <span className="display ml-1.5 text-sm font-normal text-muted italic">{TYPE_LABELS[t].fr}</span>}
                     </div>
                     <div className={`text-xs ${counts[t] > available[t] ? "text-warn" : "text-muted"}`}>
-                      題庫有 {available[t]} 題
+                      {lang === "fr" ? `${available[t]} disponibles` : `題庫有 ${available[t]} 題`}
                     </div>
                   </div>
                   <Stepper
                     value={counts[t]}
-                    label={TYPE_LABELS[t].zh}
+                    label={nm(TYPE_LABELS[t])}
                     onChange={(v) => setCounts((c) => ({ ...c, [t]: v }))}
                   />
                 </div>
@@ -243,7 +248,7 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
           </Card>
 
           <Card className="p-4 sm:p-5">
-            <Heading fr="Étape 4 · Difficulté" zh="難度" />
+            <Heading fr="Étape 4 · Difficulté" zh="難度" frTitle="Choisir la difficulté" />
             <div className="mt-3 grid grid-cols-2 gap-2">
               {(["all", 1, 2, 3] as const).map((d) => (
                 <button
@@ -255,8 +260,8 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
                     difficulty === d ? "border-accent bg-accent-soft" : "border-line bg-surface hover:border-accent/50"
                   }`}
                 >
-                  <span className="block font-medium">{DIFFICULTY_LABELS[String(d)]}</span>
-                  <span className="display block text-xs text-muted italic">{DIFFICULTY_FR[String(d)]}</span>
+                  <span className="block font-medium">{lang === "fr" ? DIFFICULTY_FR[String(d)] : DIFFICULTY_LABELS[String(d)]}</span>
+                  {lang === "zh" && <span className="display block text-xs text-muted italic">{DIFFICULTY_FR[String(d)]}</span>}
                 </button>
               ))}
             </div>
@@ -273,25 +278,25 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
         <Card className="overflow-hidden">
           <div className="border-b border-line bg-sunken/60 px-5 py-4">
             <div className="eyebrow">Récapitulatif</div>
-            <div className="display text-lg font-bold">練習內容</div>
+            <div className="display text-lg font-bold">{tr("練習內容", "Récapitulatif")}</div>
           </div>
           <dl className="space-y-3 px-5 py-4 text-sm">
-            <Row label="等級" value={`${level}　${LEVELS.find((l) => l.id === level)?.zh}`} />
-            <Row label="範圍" value={scope} />
-            <Row label="難度" value={DIFFICULTY_LABELS[String(difficulty)]} />
+            <Row label={tr("等級", "Niveau")} value={`${level}　${nm(LEVELS.find((l) => l.id === level)!)}`} />
+            <Row label={tr("範圍", "Contenu")} value={scope} />
+            <Row label={tr("難度", "Difficulté")} value={lang === "fr" ? DIFFICULTY_FR[String(difficulty)] : DIFFICULTY_LABELS[String(difficulty)]} />
             <Row
-              label="題型"
+              label={tr("題型", "Types")}
               value={TYPE_ORDER.filter((t) => usableCounts[t] > 0)
-                .map((t) => `${TYPE_LABELS[t].zh} ${usableCounts[t]}`)
-                .join("、") || "未選擇"}
+                .map((x) => `${nm(TYPE_LABELS[x])} ${usableCounts[x]}`)
+                .join(sep) || tr("未選擇", "Aucun")}
             />
           </dl>
           <div className="border-t border-line px-5 py-4">
             <div className="mb-3 flex items-baseline justify-between">
-              <span className="text-sm text-muted">共</span>
+              <span className="text-sm text-muted">{tr("共", "Total")}</span>
               <span>
                 <span className="display text-4xl font-bold">{usable}</span>
-                <span className="ml-1 text-sm text-muted">題</span>
+                <span className="ml-1 text-sm text-muted">{tr("題", "questions")}</span>
               </span>
             </div>
             {actions}
@@ -302,7 +307,7 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
       {/* 手機底部操作列 */}
       <BottomBar>
         <p className="mb-2 truncate text-center text-xs text-muted">
-          {usable === 0 ? "目前沒有符合條件的題目" : `${level}・${scope}・共 ${usable} 題`}
+          {usable === 0 ? tr("目前沒有符合條件的題目", "Aucune question ne correspond à ces critères") : tr(`${level}・${scope}・共 ${usable} 題`, `${level} · ${scope} · ${usable} questions`)}
         </p>
         {actions}
       </BottomBar>
@@ -313,7 +318,7 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
 function Row({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex gap-3">
-      <dt className="w-10 shrink-0 text-muted">{label}</dt>
+      <dt className="w-[4.5rem] shrink-0 text-muted">{label}</dt>
       <dd className="min-w-0 flex-1 font-medium">{value}</dd>
     </div>
   );
@@ -321,12 +326,13 @@ function Row({ label, value }: { label: string; value: string }) {
 
 function Stepper({ value, label, onChange }: { value: number; label: string; onChange: (v: number) => void }) {
   const [draft, setDraft] = useState<string | null>(null);
+  const t = useT();
   const clamp = (n: number) => Math.min(Math.max(Number.isFinite(n) ? Math.round(n) : 0, 0), MAX_COUNT);
   const btn =
     "grid size-11 place-items-center rounded-lg border border-line bg-surface text-xl leading-none transition hover:border-accent/60 active:scale-95 disabled:opacity-35";
   return (
     <div className="flex items-center gap-1">
-      <button type="button" className={btn} aria-label={`${label}減少`} disabled={value <= 0} onClick={() => onChange(value - 1)}>
+      <button type="button" className={btn} aria-label={t(`${label}減少`, `${label} : moins`)} disabled={value <= 0} onClick={() => onChange(value - 1)}>
         −
       </button>
       <input
@@ -341,10 +347,10 @@ function Stepper({ value, label, onChange }: { value: number; label: string; onC
           if (e.target.value !== "") onChange(clamp(Number(e.target.value)));
         }}
         onBlur={() => setDraft(null)}
-        aria-label={`${label}題數（0～${MAX_COUNT}）`}
+        aria-label={t(`${label}題數（0～${MAX_COUNT}）`, `${label} : nombre (0 à ${MAX_COUNT})`)}
         className="display h-11 w-14 rounded-lg border border-line bg-sunken text-center text-xl font-bold tabular-nums outline-none [appearance:textfield] focus:border-accent focus:bg-surface [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
       />
-      <button type="button" className={btn} aria-label={`${label}增加`} disabled={value >= MAX_COUNT} onClick={() => onChange(value + 1)}>
+      <button type="button" className={btn} aria-label={t(`${label}增加`, `${label} : plus`)} disabled={value >= MAX_COUNT} onClick={() => onChange(value + 1)}>
         +
       </button>
     </div>

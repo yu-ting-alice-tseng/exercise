@@ -8,6 +8,7 @@ import { mulberry32, shuffle } from "@/lib/random";
 import type { DrawnQuestion, Level, Question, QuestionType } from "@/lib/types";
 import InlineQuiz from "./InlineQuiz";
 import PracticeLink from "./PracticeLink";
+import { useLang } from "@/lib/i18n";
 
 /** 每組小測驗的題型配置 */
 const MIX: [QuestionType, number][] = [
@@ -39,6 +40,8 @@ export function seedOf(id: string): number {
 export default function NoteQuiz({ id, zh, level, pool }: { id: string; zh: string; level: Level; pool: Question[] }) {
   const [seed, setSeed] = useState(() => seedOf(id));
   const [round, setRound] = useState(1);
+  const lang = useLang();
+  const t = (zh: string, fr: string) => (lang === "fr" ? fr : zh);
   const questions = useMemo(() => draw(pool, seed), [pool, seed]);
   const top = useRef<HTMLElement>(null);
 
@@ -52,8 +55,8 @@ export default function NoteQuiz({ id, zh, level, pool }: { id: string; zh: stri
         level={level}
         recordTitle={`${zh}・筆記小測驗`}
         eyebrow={`Exercice express${round > 1 ? ` n° ${round}` : ""}`}
-        heading={`馬上練習：${questions.length} 題小測驗`}
-        sub="讀完規則直接作答，按「檢查答案」立刻批改，答錯的題目會排進複習。"
+        heading={t(`馬上練習：${questions.length} 題小測驗`, `Entraînez-vous : ${questions.length} questions`)}
+        sub={t("讀完規則直接作答，按「檢查答案」立刻批改，答錯的題目會排進複習。", "Répondez juste après la règle. « Vérifier » corrige tout de suite, et les erreurs passent en révision.")}
         actions={(correct) => (
           <>
             <button
@@ -65,14 +68,14 @@ export default function NoteQuiz({ id, zh, level, pool }: { id: string; zh: stri
               }}
               className={btnPrimary}
             >
-              再來 5 題
+              {t("再來 5 題", "5 autres questions")}
             </button>
             <PracticeLink level={level} by="grammar" topic={id} className={btnQuiet}>
-              完整練習 10 題
+              {t("完整練習 10 題", "Exercice complet (10 questions)")}
             </PracticeLink>
             {correct < questions.length && (
               <Link href="/review/" className={btnQuiet}>
-                去複習答錯的題目
+                {t("去複習答錯的題目", "Réviser mes erreurs")}
               </Link>
             )}
           </>

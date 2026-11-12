@@ -1,5 +1,6 @@
 "use client";
 
+import { useLang, useT } from "@/lib/i18n";
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { QuizRunner } from "./PracticeClient";
@@ -9,7 +10,7 @@ import { BANK } from "@/lib/bank";
 import { prepare } from "@/lib/draw";
 import { dueIds, markMastered, reviewIds, type QStat } from "@/lib/progress";
 import { mulberry32, newSeed, shuffle } from "@/lib/random";
-import { GRAMMAR, isGrammarId, LEVELS, TYPE_LABELS, topicName } from "@/lib/taxonomy";
+import { isGrammarId, LEVELS, TYPE_LABELS, topicName } from "@/lib/taxonomy";
 import type { DrawnQuestion, Level, Question } from "@/lib/types";
 import { useProgress } from "@/lib/useProgress";
 import { useNow } from "@/lib/useNow";
@@ -24,6 +25,8 @@ export default function ReviewClient() {
   const [tab, setTab] = useState<Tab>("due");
   const [level, setLevel] = useState<Level | "all">("all");
   const [quiz, setQuiz] = useState<{ questions: DrawnQuestion[]; title: string; key: number } | null>(null);
+  const lang = useLang();
+  const t = (zh: string, fr: string) => (lang === "fr" ? fr : zh);
 
   const due = useMemo(() => dueIds(progress).filter((id) => BY_ID.has(id)), [progress]);
   const book = useMemo(() => reviewIds(progress).filter((id) => BY_ID.has(id)), [progress]);
@@ -44,12 +47,12 @@ export default function ReviewClient() {
         questions={quiz.questions}
         kind="review"
         title={quiz.title}
-        header={{ fr: "Révision", zh: quiz.title, sub: "複習" }}
+        header={{ fr: "Révision", zh: quiz.title, sub: t("複習", "Révision") }}
         onNewBatch={() => {
           setQuiz(null);
           window.scrollTo({ top: 0 });
         }}
-        newBatchLabel="回到複習清單"
+        newBatchLabel={t("回到複習清單", "Retour à la révision")}
       />
     );
   }
@@ -58,22 +61,22 @@ export default function ReviewClient() {
 
   return (
     <main className={`${container} pt-5 sm:pt-8`}>
-      <PageTitle fr="Révision" zh="複習" sub="答錯的題目會依照間隔複習法排程，越熟練，複習間隔越長。" />
+      <PageTitle fr="Révision" zh="複習" sub={t("答錯的題目會依照間隔複習法排程，越熟練，複習間隔越長。", "Les erreurs reviennent selon la répétition espacée : mieux vous les maîtrisez, plus l’intervalle s’allonge.")} />
 
       <div className="mb-5 grid grid-cols-2 rounded-lg bg-sunken p-1 sm:inline-grid sm:w-auto">
         {(
           [
-            ["due", `今日待複習（${ready ? due.length : "…"}）`],
-            ["book", `錯題本（${ready ? book.length : "…"}）`],
+            ["due", t(`今日待複習（${ready ? due.length : "…"}）`, `À réviser aujourd’hui (${ready ? due.length : "…"})`)],
+            ["book", t(`錯題本（${ready ? book.length : "…"}）`, `Carnet d’erreurs (${ready ? book.length : "…"})`)],
           ] as const
-        ).map(([t, label]) => (
+        ).map(([tb, label]) => (
           <button
-            key={t}
+            key={tb}
             type="button"
-            onClick={() => setTab(t)}
-            aria-pressed={tab === t}
+            onClick={() => setTab(tb)}
+            aria-pressed={tab === tb}
             className={`min-h-11 rounded-md px-4 text-sm font-medium transition ${
-              tab === t ? "bg-surface text-ink shadow-sm" : "text-muted"
+              tab === tb ? "bg-surface text-ink shadow-sm" : "text-muted"
             }`}
           >
             {label}
@@ -82,7 +85,7 @@ export default function ReviewClient() {
       </div>
 
       {!ready ? (
-        <p className="text-muted">載入中…</p>
+        <p className="text-muted">{t("載入中…", "Chargement…")}</p>
       ) : tab === "due" ? (
         <DueView due={due} book={book} progress={progress.q} onStart={start} />
       ) : (
@@ -101,7 +104,7 @@ export default function ReviewClient() {
                       level === l ? "border-accent bg-accent text-accent-ink" : "border-line bg-surface"
                     }`}
                   >
-                    {l === "all" ? "全部" : l}
+                    {l === "all" ? t("全部", "Tous") : l}
                     <span className="ml-1 opacity-70">{n}</span>
                   </button>
                 );
@@ -109,16 +112,16 @@ export default function ReviewClient() {
             </div>
           </div>
           {bookFiltered.length === 0 ? (
-            <Empty text="錯題本是空的。答錯的題目會自動收進這裡。" />
+            <Empty text={t("錯題本是空的。答錯的題目會自動收進這裡。", "Le carnet est vide. Les erreurs y sont ajoutées automatiquement.")} />
           ) : (
             <>
               <div className="mb-4 flex flex-wrap gap-2">
                 <button
                   type="button"
                   className={btnPrimary}
-                  onClick={() => start(bookFiltered, `錯題本${level === "all" ? "" : `・${level}`}`)}
+                  onClick={() => start(bookFiltered, t(`錯題本${level === "all" ? "" : `・${level}`}`, `Carnet d’erreurs${level === "all" ? "" : ` · ${level}`}`))}
                 >
-                  練習錯題（{Math.min(BATCH, bookFiltered.length)} 題）
+                  {t(`練習錯題（${Math.min(BATCH, bookFiltered.length)} 題）`, `Refaire les erreurs (${Math.min(BATCH, bookFiltered.length)})`)}
                 </button>
               </div>
               <BookList ids={bookFiltered} stats={progress.q} />
@@ -155,6 +158,8 @@ function DueView({
   }, [due]);
 
   const now = useNow();
+  const lang = useLang();
+  const t = (zh: string, fr: string) => (lang === "fr" ? fr : zh);
   const upcoming = useMemo(() => {
     return book
       .map((id) => progress[id])
@@ -167,8 +172,8 @@ function DueView({
       <Empty
         text={
           book.length === 0
-            ? "目前沒有需要複習的題目。先去做幾回線上練習吧！"
-            : `今天的複習都完成了，Bravo !${upcoming ? `下一次複習在 ${new Date(upcoming.due).toLocaleDateString("zh-TW", { month: "numeric", day: "numeric" })}。` : ""}`
+            ? t("目前沒有需要複習的題目。先去做幾回線上練習吧！", "Rien à réviser pour l’instant. Faites quelques exercices en ligne !")
+            : t(`今天的複習都完成了，Bravo !${upcoming ? `下一次複習在 ${new Date(upcoming.due).toLocaleDateString("zh-TW", { month: "numeric", day: "numeric" })}。` : ""}`, `Révision du jour terminée, bravo !${upcoming ? ` Prochaine révision le ${new Date(upcoming.due).toLocaleDateString("fr-FR", { day: "numeric", month: "long" })}.` : ""}`)
         }
       />
     );
@@ -179,28 +184,28 @@ function DueView({
       <Card className="p-5 lg:sticky lg:top-6 lg:order-2">
         <div className="eyebrow">Révision du jour</div>
         <div className="flex items-baseline justify-between">
-          <span className="display text-lg font-bold">今日待複習</span>
+          <span className="display text-lg font-bold">{t("今日待複習", "À réviser")}</span>
           <span>
             <span className="display text-4xl font-bold">{due.length}</span>
-            <span className="ml-1 text-sm text-muted">題</span>
+            <span className="ml-1 text-sm text-muted">{t("題", "questions")}</span>
           </span>
         </div>
-        <p className="mt-2 text-sm text-muted">每次最多 {BATCH} 題。答對的題目會延後到更久以後再複習，答錯的明天會再出現。</p>
-        <button type="button" className={`${btnPrimary} mt-4 w-full`} onClick={() => onStart(due, "今日複習")}>
-          開始複習
+        <p className="mt-2 text-sm text-muted">{t(`每次最多 ${BATCH} 題。答對的題目會延後到更久以後再複習，答錯的明天會再出現。`, `${BATCH} questions maximum par séance. Les bonnes réponses reviennent plus tard, les erreurs dès demain.`)}</p>
+        <button type="button" className={`${btnPrimary} mt-4 w-full`} onClick={() => onStart(due, t("今日複習", "Révision du jour"))}>
+          {t("開始複習", "Commencer")}
         </button>
       </Card>
       <Card className="p-4 sm:p-5 lg:order-1">
         <div className="eyebrow">Aujourd&apos;hui</div>
-        <h2 className="display text-lg font-bold">今天要複習的文法點</h2>
+        <h2 className="display text-lg font-bold">{t("今天要複習的文法點", "Points de grammaire à revoir")}</h2>
         <ul className="mt-3 divide-y divide-line">
           {groups.map((g) => (
             <li key={`${g.level}-${g.grammar}`} className="flex items-center justify-between gap-3 py-2.5">
               <div className="min-w-0">
                 <span className="mr-2 rounded bg-accent-soft px-1.5 py-0.5 text-xs font-semibold text-accent">{g.level}</span>
-                <span className="font-medium">{topicName(g.level, "grammar", g.grammar)}</span>
+                <span className="font-medium">{topicName(g.level, "grammar", g.grammar, lang)}</span>
               </div>
-              <span className="shrink-0 text-sm text-muted">{g.n} 題</span>
+              <span className="shrink-0 text-sm text-muted">{t(`${g.n} 題`, `${g.n} q.`)}</span>
             </li>
           ))}
         </ul>
@@ -212,6 +217,8 @@ function DueView({
 function BookList({ ids, stats }: { ids: string[]; stats: Record<string, QStat> }) {
   const [shown, setShown] = useState(30);
   const now = useNow();
+  const lang = useLang();
+  const t = (zh: string, fr: string) => (lang === "fr" ? fr : zh);
   return (
     <>
       <ol className="space-y-3">
@@ -223,11 +230,11 @@ function BookList({ ids, stats }: { ids: string[]; stats: Record<string, QStat> 
               <Card className="p-4 sm:p-5">
                 <div className="mb-1.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted">
                   <span className="rounded bg-accent-soft px-1.5 py-0.5 font-semibold text-accent">{q.level}</span>
-                  <span>{GRAMMAR[q.level].find((g) => g.id === q.grammar)?.zh}</span>
-                  <span>・{TYPE_LABELS[q.type].zh}</span>
+                  <span>{topicName(q.level, "grammar", q.grammar, lang)}</span>
+                  <span>・{lang === "fr" ? TYPE_LABELS[q.type].fr : TYPE_LABELS[q.type].zh}</span>
                   <span className="ml-auto">
-                    答錯 {st.miss} 次・
-                    {st.due <= now ? "今天複習" : `${new Date(st.due).toLocaleDateString("zh-TW", { month: "numeric", day: "numeric" })} 複習`}
+                    {t(`答錯 ${st.miss} 次・`, `${st.miss} erreur(s) · `)}
+                    {st.due <= now ? t("今天複習", "à revoir aujourd’hui") : t(`${new Date(st.due).toLocaleDateString("zh-TW", { month: "numeric", day: "numeric" })} 複習`, `à revoir le ${new Date(st.due).toLocaleDateString("fr-FR", { day: "numeric", month: "short" })}`)}
                   </span>
                 </div>
                 <p className="mb-1 text-sm text-muted">{q.instruction}</p>
@@ -244,7 +251,7 @@ function BookList({ ids, stats }: { ids: string[]; stats: Record<string, QStat> 
                   {q.explanation}
                   {isGrammarId(q.grammar) && (
                     <Link href={`/learn/grammar/${q.grammar}/`} className="ml-1.5 whitespace-nowrap text-accent underline-offset-4 hover:underline">
-                      看文法筆記 →
+                      {t("看文法筆記 →", "Voir la fiche →")}
                     </Link>
                   )}
                 </p>
@@ -253,7 +260,7 @@ function BookList({ ids, stats }: { ids: string[]; stats: Record<string, QStat> 
                   onClick={() => markMastered(id)}
                   className="mt-2 min-h-10 text-sm text-muted underline-offset-4 hover:text-ink hover:underline"
                 >
-                  我已經會了，移出錯題本
+                  {t("我已經會了，移出錯題本", "Je maîtrise : retirer du carnet")}
                 </button>
               </Card>
             </li>
@@ -262,7 +269,7 @@ function BookList({ ids, stats }: { ids: string[]; stats: Record<string, QStat> 
       </ol>
       {ids.length > shown && (
         <button type="button" className={`${btnQuiet} mt-4 w-full`} onClick={() => setShown((n) => n + 30)}>
-          顯示更多（還有 {ids.length - shown} 題）
+          {t(`顯示更多（還有 ${ids.length - shown} 題）`, `Afficher plus (${ids.length - shown} restantes)`)}
         </button>
       )}
     </>
@@ -275,13 +282,14 @@ function answerText(q: Question): string {
 }
 
 function Empty({ text }: { text: string }) {
+  const t = useT();
   return (
     <Card className="p-8 text-center">
       <div className="mb-2 text-5xl" aria-hidden>☕️</div>
       <p className="display mb-2 text-2xl text-rouge italic">Rien à réviser</p>
       <p className="mb-5 text-muted">{text}</p>
       <Link href="/" className={btnPrimary}>
-        去練習
+        {t("去練習", "S’entraîner")}
       </Link>
     </Card>
   );

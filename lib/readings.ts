@@ -12,6 +12,7 @@ const ORDER = LEVELS.map((l) => l.id);
 
 /** 參考資料的查閱日期 */
 export const REFS_ACCESSED = "2026 年 11 月 9 日";
+export const REFS_ACCESSED_FR = "le 9 novembre 2026";
 
 /** 依等級排序，同等級原創在前 */
 export const READINGS: Reading[] = [...ORIGINALS, ...ORIGINALS_2, ...CLASSICS, ...CLASSICS_2, ...CLASSICS_3].sort(

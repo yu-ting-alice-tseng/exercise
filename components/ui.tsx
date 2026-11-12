@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { T } from "./T";
 
 export const container = "mx-auto max-w-6xl px-4 sm:px-6 lg:px-8";
 
@@ -18,12 +19,17 @@ export function Card({ className = "", children }: { className?: string; childre
   return <section className={`rounded-xl border border-line bg-surface ${className}`}>{children}</section>;
 }
 
-/** 中法對照標題，例如「Étape 1」加「選擇等級」 */
-export function Heading({ fr, zh, as: Tag = "h2" }: { fr: string; zh: string; as?: "h1" | "h2" | "h3" }) {
+/**
+ * 中法對照標題，例如「Étape 1」加「選擇等級」。
+ * 法文介面時：有 frTitle 就用 eyebrow + frTitle，否則只顯示 fr。
+ */
+export function Heading({ fr, zh, frTitle, as: Tag = "h2" }: { fr: string; zh: string; frTitle?: string; as?: "h1" | "h2" | "h3" }) {
   return (
     <div>
-      <div className="eyebrow">{fr}</div>
-      <Tag className="display text-lg font-bold">{zh}</Tag>
+      <T zh={<div className="eyebrow">{fr}</div>} fr={frTitle ? <div className="eyebrow">{fr}</div> : null} />
+      <Tag className="display text-lg font-bold">
+        <T zh={zh} fr={frTitle ?? fr} />
+      </Tag>
     </div>
   );
 }
@@ -32,11 +38,14 @@ export function PageTitle({
   back,
   fr,
   zh,
+  frTitle,
   sub,
 }: {
   back?: { href: string; label: string };
   fr: string;
   zh: string;
+  /** 法文介面的標題；有的話保留 fr 當作 eyebrow */
+  frTitle?: string;
   sub?: string;
 }) {
   return (
@@ -46,8 +55,10 @@ export function PageTitle({
           ← {back.label}
         </Link>
       )}
-      <div className="eyebrow">{fr}</div>
-      <h1 className="display text-2xl font-bold sm:text-3xl">{zh}</h1>
+      <T zh={<div className="eyebrow">{fr}</div>} fr={frTitle ? <div className="eyebrow">{fr}</div> : null} />
+      <h1 className="display text-2xl font-bold sm:text-3xl">
+        <T zh={zh} fr={frTitle ?? fr} />
+      </h1>
       {sub && <p className="mt-1 text-sm text-muted">{sub}</p>}
     </div>
   );

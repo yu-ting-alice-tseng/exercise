@@ -1,5 +1,6 @@
 "use client";
 
+import { useLang, useT } from "@/lib/i18n";
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
@@ -15,12 +16,12 @@ import { mulberry32 } from "@/lib/random";
 import type { DrawnQuestion } from "@/lib/types";
 import { useActiveTimer } from "@/lib/useActiveTimer";
 
-const SECTION_ICON: Record<ExamSection["kind"], string> = {
-  listening: "聽",
-  reading: "讀",
-  structure: "構",
-  writing: "寫",
-  bank: "文",
+const SECTION_ICON: Record<ExamSection["kind"], { zh: string; fr: string }> = {
+  listening: { zh: "聽", fr: "CO" },
+  reading: { zh: "讀", fr: "CE" },
+  structure: { zh: "構", fr: "LS" },
+  writing: { zh: "寫", fr: "PE" },
+  bank: { zh: "文", fr: "G" },
 };
 
 interface Built {
@@ -33,7 +34,8 @@ export default function ExamRunnerPage() {
   const id = params.get("id") ?? "";
   const seed = Number.parseInt(params.get("seed") ?? "1", 10) || 1;
   const set = getExam(id);
-  if (!set) return <Invalid message="找不到這份考卷。" />;
+  const tr = useT();
+  if (!set) return <Invalid message={tr("找不到這份考卷。", "Épreuve introuvable.")} />;
   return <ExamRunner key={`${id}-${seed}`} set={set} seed={seed} />;
 }
 
@@ -90,9 +92,11 @@ function ExamRunner({ set, seed }: { set: ExamSet; seed: number }) {
   }).length;
   const correct = [...results.values()].filter((r) => r.verdict === "correct").length;
   const kind = EXAM_KINDS.find((k) => k.id === set.exam);
+  const lang = useLang();
+  const tr = (zh: string, fr: string) => (lang === "fr" ? fr : zh);
 
   function submit() {
-    if (answered < all.length && !window.confirm(`還有 ${all.length - answered} 題沒有作答，確定要交卷嗎？`)) return;
+    if (answered < all.length && !window.confirm(tr(`還有 ${all.length - answered} 題沒有作答，確定要交卷嗎？`, `Il reste ${all.length - answered} question(s) sans réponse. Rendre la copie quand même ?`))) return;
     const graded = all.filter((q) => !(q.type === "short" && q.open));
     const { sessionId, prev } = recordSession(
       { kind: "exam", level: set.level, title: set.title, sec: takeTime() },
@@ -133,7 +137,7 @@ function ExamRunner({ set, seed }: { set: ExamSet; seed: number }) {
             const ok = b.questions.filter((q) => results.get(q.id)?.verdict === "correct").length;
             return (
               <li key={i} className="flex justify-between gap-2">
-                <span className="truncate text-muted">{b.section.title}</span>
+                <span className="truncate text-muted">{lang === "fr" ? b.section.fr : b.section.title}</span>
                 <span className="tabular-nums">
                   {ok}／{b.questions.length}
                 </span>
@@ -141,16 +145,16 @@ function ExamRunner({ set, seed }: { set: ExamSet; seed: number }) {
             );
           })}
       </ul>
-      <p className="mt-2 text-xs text-muted">寫作不計分，請依照評分項目自我檢核。作答時間 {mmss(elapsed)}。</p>
+      <p className="mt-2 text-xs text-muted">{tr(`寫作不計分，請依照評分項目自我檢核。作答時間 ${mmss(elapsed)}。`, `L’écrit n’est pas noté : évaluez-vous avec la grille. Durée : ${mmss(elapsed)}.`)}</p>
     </div>
   );
 
   return (
     <main className={`${container} pt-5 sm:pt-8`}>
-      <PageTitle back={{ href: "/exam/", label: "模考" }} fr={set.fr} zh={set.title} sub={`${kind?.zh ?? ""}・建議作答時間 ${set.minutes} 分鐘・選擇與填充共 ${all.length} 題`} />
+      <PageTitle back={{ href: "/exam/", label: tr("模考", "Examens") }} fr={set.fr} zh={set.title} sub={tr(`${kind?.zh ?? ""}・建議作答時間 ${set.minutes} 分鐘・選擇與填充共 ${all.length} 題`, `${kind?.fr ?? ""} · durée conseillée ${set.minutes} min · ${all.length} questions`)} />
 
       <p className="mb-4 rounded-lg bg-sunken px-4 py-2 text-xs text-muted">
-        本站模擬題皆為原創，依照考試題型編寫，並非官方試題，分數僅供參考。
+        {tr("本站模擬題皆為原創，依照考試題型編寫，並非官方試題，分數僅供參考。", "Épreuve originale sur le modèle de l’examen, et non un sujet officiel. Le score est indicatif.")}
       </p>
 
       <div className={twoCol}>
@@ -161,11 +165,11 @@ function ExamRunner({ set, seed }: { set: ExamSet; seed: number }) {
             <Card key={si} className="overflow-hidden">
               <div className="flex items-center gap-3 border-b border-line bg-sunken/60 px-4 py-3 sm:px-5">
                 <span className="timbre display grid size-11 shrink-0 place-items-center bg-accent text-lg font-bold text-accent-ink" aria-hidden>
-                  {SECTION_ICON[b.section.kind]}
+                  {lang === "fr" ? SECTION_ICON[b.section.kind].fr : SECTION_ICON[b.section.kind].zh}
                 </span>
                 <div className="min-w-0">
-                  <div className="eyebrow">{b.section.fr}</div>
-                  <h2 className="display text-lg font-bold">{b.section.title}</h2>
+                  {lang === "zh" && <div className="eyebrow">{b.section.fr}</div>}
+                  <h2 className="display text-lg font-bold">{lang === "fr" ? b.section.fr : b.section.title}</h2>
                 </div>
               </div>
               <div className="space-y-4 p-4 sm:p-5">
@@ -176,7 +180,7 @@ function ExamRunner({ set, seed }: { set: ExamSet; seed: number }) {
                     <ListenPlayer text={b.section.passage.text} dialogue={b.section.passage.dialogue} unlimited={checked} />
                     {checked && (
                       <details className="rounded-lg bg-sunken/60 px-3 py-2 text-sm">
-                        <summary className="cursor-pointer font-medium">逐字稿 Transcription</summary>
+                        <summary className="cursor-pointer font-medium">{tr("逐字稿 Transcription", "Transcription")}</summary>
                         <p lang="fr" className="fr mt-2 whitespace-pre-line">
                           {b.section.passage.text}
                         </p>
@@ -243,23 +247,23 @@ function ExamRunner({ set, seed }: { set: ExamSet; seed: number }) {
               <>
                 <div className="eyebrow">Chronomètre</div>
                 <div className="flex items-baseline justify-between">
-                  <span className="display text-lg font-bold">作答時間</span>
+                  <span className="display text-lg font-bold">{tr("作答時間", "Temps écoulé")}</span>
                   <span className={`display text-3xl font-bold tabular-nums ${over ? "text-rouge" : ""}`}>{mmss(elapsed)}</span>
                 </div>
-                <p className="mt-1 text-xs text-muted">建議 {set.minutes} 分鐘內完成{over ? "，已超過建議時間" : ""}。</p>
+                <p className="mt-1 text-xs text-muted">{tr(`建議 ${set.minutes} 分鐘內完成${over ? "，已超過建議時間" : ""}。`, `Durée conseillée : ${set.minutes} min${over ? " (dépassée)" : ""}.`)}</p>
                 <p className="mt-3 text-sm text-muted tabular-nums">
-                  已作答 {answered}／{all.length} 題
+                  {tr(`已作答 ${answered}／${all.length} 題`, `Répondu : ${answered}/${all.length}`)}
                 </p>
               </>
             )}
             <div className="mt-5">
               {checked ? (
                 <Link href="/exam/" className={`${btnQuiet} w-full`}>
-                  回到模考列表
+                  {tr("回到模考列表", "Retour aux examens")}
                 </Link>
               ) : (
                 <button type="button" onClick={submit} className={`${btnPrimary} w-full`}>
-                  交卷並批改
+                  {tr("交卷並批改", "Rendre et corriger")}
                 </button>
               )}
             </div>
@@ -270,7 +274,7 @@ function ExamRunner({ set, seed }: { set: ExamSet; seed: number }) {
       <BottomBar>
         {checked ? (
           <Link href="/exam/" className={`${btnQuiet} w-full`}>
-            回到模考列表
+            {tr("回到模考列表", "Retour aux examens")}
           </Link>
         ) : (
           <div className="flex items-center gap-3">
@@ -278,7 +282,7 @@ function ExamRunner({ set, seed }: { set: ExamSet; seed: number }) {
               {mmss(elapsed)}・{answered}／{all.length}
             </span>
             <button type="button" onClick={submit} className={`${btnPrimary} flex-1`}>
-              交卷並批改
+              {tr("交卷並批改", "Rendre et corriger")}
             </button>
           </div>
         )}
@@ -300,8 +304,9 @@ function WritingBox({
 }) {
   const [done, setDone] = useState(false);
   const [checks, setChecks] = useState<boolean[]>([]);
+  const tr = useT();
   const words = countWords(value);
-  const range = task.maxWords ? `${task.minWords}～${task.maxWords}` : `至少 ${task.minWords}`;
+  const range = task.maxWords ? `${task.minWords}～${task.maxWords}` : tr(`至少 ${task.minWords}`, `${task.minWords} minimum`);
   const ok = words >= task.minWords && (!task.maxWords || words <= task.maxWords);
   const show = done || revealed;
 
@@ -318,26 +323,26 @@ function WritingBox({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         spellCheck={false}
-        placeholder="請在這裡用法文寫作…"
-        aria-label="寫作作答區"
+        placeholder={tr("請在這裡用法文寫作…", "Rédigez ici en français…")}
+        aria-label={tr("寫作作答區", "Zone de rédaction")}
         className="fr seyes w-full resize-y rounded-lg border border-line px-3 pb-1 outline-none focus:border-accent"
       />
       <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
         <span className={ok ? "text-ok" : "text-muted"}>
-          目前 {words} 字（要求 {range} 字）
+          {tr(`目前 ${words} 字（要求 ${range} 字）`, `${words} mots (demandé : ${range})`)}
         </span>
         {!show && (
           <button type="button" className={btnQuiet} onClick={() => setDone(true)}>
-            寫完了，看評分項目與範文
+            {tr("寫完了，看評分項目與範文", "Terminé : voir la grille et le modèle")}
           </button>
         )}
       </div>
-      <p className="text-xs text-muted">字數以空白和撇號分開計算（c&apos;est 算兩個字），僅供參考。</p>
+      <p className="text-xs text-muted">{tr("字數以空白和撇號分開計算（c’est 算兩個字），僅供參考。", "Décompte indicatif : espaces et apostrophes séparent les mots (c’est = 2 mots).")}</p>
 
       {show && (
         <div className="space-y-3 rounded-lg bg-sunken/60 p-4">
           <div>
-            <div className="mb-2 font-bold">自我檢核</div>
+            <div className="mb-2 font-bold">{tr("自我檢核", "Auto-évaluation")}</div>
             <ul className="space-y-1.5">
               {task.rubric.map((r, i) => (
                 <li key={i}>
@@ -354,15 +359,15 @@ function WritingBox({
               ))}
             </ul>
             <p className="mt-1 text-xs text-muted">
-              已達成 {checks.filter(Boolean).length}／{task.rubric.length} 項
+              {tr(`已達成 ${checks.filter(Boolean).length}／${task.rubric.length} 項`, `Critères remplis : ${checks.filter(Boolean).length}/${task.rubric.length}`)}
             </p>
           </div>
           <details>
-            <summary className="cursor-pointer font-bold">範文 Exemple de production</summary>
+            <summary className="cursor-pointer font-bold">{tr("範文 Exemple de production", "Exemple de production")}</summary>
             <p lang="fr" className="fr mt-2 whitespace-pre-line">
               {task.model}
             </p>
-            <p className="mt-1 text-xs text-muted">範文 {countWords(task.model)} 字，只是寫法之一，內容可以自由發揮。</p>
+            <p className="mt-1 text-xs text-muted">{tr(`範文 ${countWords(task.model)} 字，只是寫法之一，內容可以自由發揮。`, `Modèle de ${countWords(task.model)} mots : une possibilité parmi d’autres.`)}</p>
           </details>
         </div>
       )}

@@ -1,5 +1,6 @@
 "use client";
 
+import { useT } from "@/lib/i18n";
 import { useState } from "react";
 import { btnPrimary } from "./ui";
 import { sendLoginLink } from "@/lib/auth";
@@ -8,6 +9,7 @@ export default function LoginForm({ next = "/account/", note }: { next?: string;
   const [email, setEmail] = useState("");
   const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [error, setError] = useState("");
+  const t = useT();
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
@@ -19,10 +21,10 @@ export default function LoginForm({ next = "/account/", note }: { next?: string;
       const msg = err instanceof Error ? err.message : "";
       setError(
         /rate|limit|security purposes/i.test(msg)
-          ? "寄信太頻繁了，請稍等一下再試。"
+          ? t("寄信太頻繁了，請稍等一下再試。", "Trop de tentatives. Patientez un instant avant de réessayer.")
           : /invalid|email/i.test(msg)
-            ? "Email 格式好像不正確，請再檢查一次。"
-            : "寄送失敗，請稍後再試。",
+            ? t("Email 格式好像不正確，請再檢查一次。", "L’adresse e-mail semble incorrecte. Vérifiez-la.")
+            : t("寄送失敗，請稍後再試。", "L’envoi a échoué. Réessayez plus tard."),
       );
       setState("error");
     }
@@ -31,11 +33,11 @@ export default function LoginForm({ next = "/account/", note }: { next?: string;
   if (state === "sent") {
     return (
       <div className="rounded-lg bg-ok-soft p-4 text-sm text-ok" role="status">
-        <p className="font-bold">登入連結已寄到 {email}</p>
+        <p className="font-bold">{t("登入連結已寄到", "Lien de connexion envoyé à")} {email}</p>
         <p className="mt-1">
-          請打開信件，點「登入」連結就完成了。沒收到的話，看看垃圾郵件匣；也可以
+          {t("請打開信件，點「登入」連結就完成了。沒收到的話，看看垃圾郵件匣；也可以", "Ouvrez l’e-mail et cliquez sur le lien de connexion. Rien reçu ? Vérifiez vos courriers indésirables, ou")}
           <button type="button" className="underline underline-offset-2" onClick={() => setState("idle")}>
-            重新寄送
+            {t("重新寄送", "renvoyez le lien")}
           </button>
           。
         </p>
@@ -59,14 +61,14 @@ export default function LoginForm({ next = "/account/", note }: { next?: string;
         />
       </label>
       <button type="submit" disabled={state === "sending"} className={`${btnPrimary} w-full`}>
-        {state === "sending" ? "寄送中…" : "寄登入連結給我"}
+        {state === "sending" ? t("寄送中…", "Envoi…") : t("寄登入連結給我", "Recevoir un lien de connexion")}
       </button>
       {state === "error" && (
         <p className="text-sm text-bad" role="alert">
           {error}
         </p>
       )}
-      <p className="text-xs text-muted">{note ?? "不用設定密碼。第一次使用會自動建立帳號。"}</p>
+      <p className="text-xs text-muted">{note ?? t("不用設定密碼。第一次使用會自動建立帳號。", "Pas de mot de passe. Un compte est créé automatiquement à la première connexion.")}</p>
     </form>
   );
 }

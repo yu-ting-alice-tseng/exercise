@@ -1,5 +1,6 @@
 "use client";
 
+import { useT } from "@/lib/i18n";
 import { useMemo, useState } from "react";
 import { dayNumber, PROVERBS, WORDS } from "@/lib/daily";
 import { mulberry32 } from "@/lib/random";
@@ -85,6 +86,7 @@ export function Confetti({ seed = 1 }: { seed?: number }) {
 export function MotDuJour() {
   const now = useNow();
   const [speaking, setSpeaking] = useState(false);
+  const t = useT();
   if (!now) return null;
   const w = WORDS[dayNumber(now) % WORDS.length];
 
@@ -107,7 +109,7 @@ export function MotDuJour() {
       <div className="flex items-start justify-between gap-3">
         <div>
           <div className="eyebrow">Le mot du jour</div>
-          <div className="text-xs text-muted">每日一字</div>
+          <div className="text-xs text-muted">{t("每日一字", "Un mot par jour")}</div>
         </div>
         <span className="timbre display grid size-11 shrink-0 place-items-center bg-accent text-sm font-bold text-accent-ink" aria-hidden>
           {new Date(now).getDate()}
@@ -128,9 +130,9 @@ export function MotDuJour() {
         type="button"
         onClick={() => speak(`${w.fr}. ${w.ex}`)}
         className="mt-3 inline-flex min-h-10 items-center gap-1.5 rounded-lg border border-line px-3 text-sm hover:border-accent/60"
-        aria-label={`朗讀 ${w.fr} 和例句`}
+        aria-label={t(`朗讀 ${w.fr} 和例句`, `Écouter « ${w.fr} » et l’exemple`)}
       >
-        <span aria-hidden>{speaking ? "■" : "▶"}</span> 聽發音
+        <span aria-hidden>{speaking ? "■" : "▶"}</span> {t("聽發音", "Écouter")}
       </button>
     </aside>
   );

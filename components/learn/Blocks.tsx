@@ -99,13 +99,13 @@ export function Pitfalls({ items }: { items: Pitfall[] }) {
       {items.map((p, i) => (
         <li key={i} className="rounded-lg border border-line bg-surface p-3">
           <p lang="fr" className="fr">
-            <span className="mr-1.5 inline-grid size-5 place-items-center rounded-full bg-bad-soft text-xs font-bold text-bad" aria-label="錯誤">
+            <span className="mr-1.5 inline-grid size-5 place-items-center rounded-full bg-bad-soft text-xs font-bold text-bad" aria-label="✕">
               ✕
             </span>
             <span className="text-muted line-through decoration-bad/60">{p.wrong}</span>
           </p>
           <p lang="fr" className="fr">
-            <span className="mr-1.5 inline-grid size-5 place-items-center rounded-full bg-ok-soft text-xs font-bold text-ok" aria-label="正確">
+            <span className="mr-1.5 inline-grid size-5 place-items-center rounded-full bg-ok-soft text-xs font-bold text-ok" aria-label="✓">
               ✓
             </span>
             <span className="font-medium">{p.right}</span>
