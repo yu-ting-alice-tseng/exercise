@@ -238,7 +238,7 @@ export default function LearnPage() {
                 href={`/learn/patterns/${p.id}/`}
                 className="group relative block h-full overflow-hidden rounded-xl border border-line bg-surface p-4 pl-5 transition hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md"
               >
-                <span className="absolute inset-y-0 left-0 w-1.5" style={{ background: i % 3 === 0 ? "#1f3a93" : i % 3 === 1 ? "var(--line)" : "#c8283c" }} aria-hidden />
+                <span className="absolute inset-y-0 left-0 w-1.5" style={{ background: i % 3 === 0 ? "var(--accent)" : i % 3 === 1 ? "var(--line)" : "var(--rouge)" }} aria-hidden />
                 <ZhOnly>
                   <div className="display text-xs text-muted italic" lang="fr">
                     {p.fr}

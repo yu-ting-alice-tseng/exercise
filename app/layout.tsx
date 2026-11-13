@@ -15,13 +15,13 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f7f2e8" },
-    { media: "(prefers-color-scheme: dark)", color: "#0f1326" },
+    { media: "(prefers-color-scheme: light)", color: "#eef1f4" },
+    { media: "(prefers-color-scheme: dark)", color: "#141a22" },
   ],
 };
 
 const FONTS =
-  "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap";
+  "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..700;1,9..144,400..600&family=LXGW+WenKai+TC:wght@400;700&display=swap";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -57,9 +57,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="flex-1">{children}</div>
         <footer className="no-print mt-10 pb-28 text-center lg:pb-10">
           <div className="mx-auto mb-3 flex w-16 overflow-hidden rounded-full">
-            <span className="h-1 flex-1 bg-[#1f3a93]" />
+            <span className="h-1 flex-1 bg-accent" />
             <span className="h-1 flex-1 bg-line" />
-            <span className="h-1 flex-1 bg-[#c8283c]" />
+            <span className="h-1 flex-1 bg-rouge" />
           </div>
           <ProverbeDuJour />
         </footer>

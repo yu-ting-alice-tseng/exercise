@@ -1,82 +1,81 @@
 @import "tailwindcss";
 
-/* 靈感：巴黎書店的米白紙張、深藍墨水、三色旗與路牌的法國藍 */
+/* 靈感：霧藍色的手帳紙、靛藍鋼筆墨水、夾在書頁裡的乾燥玫瑰 */
 :root {
-  --bg: #f7f2e8;
-  --surface: #fffcf6;
-  --sunken: #f1ebdf;
-  --ink: #18203d;
-  --muted: #676577;
-  --line: #e4dccb;
-  --accent: #1f3a93;
+  --bg: #eef1f4;
+  --surface: #fbfcfd;
+  --sunken: #e5e9ee;
+  --ink: #202c38;
+  --muted: #5d6a77;
+  --line: #d9dfe6;
+  --accent: #3a4f8f;
   --accent-ink: #ffffff;
-  --accent-soft: #e6eaf6;
-  --rouge: #c8283c;
-  --rouge-soft: #f8e3e5;
-  --ok: #2c6a4c;
-  --ok-soft: #e1efe6;
-  --bad: #b3263a;
-  --bad-soft: #f8e2e4;
-  --warn: #9b630c;
-  --warn-soft: #f7ebd2;
-  /* 學習日曆：藍色單色漸層，越深代表練習越久 */
-  --heat-0: #ece5d6;
-  --heat-1: #b7d3f6;
-  --heat-2: #6da7ec;
-  --heat-3: #2a78d6;
-  --heat-4: #184f95;
+  --accent-soft: #e3e8f5;
+  --rouge: #c0607a;
+  --rouge-soft: #f7e4ea;
+  --ok: #2f7356;
+  --ok-soft: #e0f0e8;
+  --bad: #b8414b;
+  --bad-soft: #f7e2e4;
+  --warn: #9b6a12;
+  --warn-soft: #f5ebd4;
+  --heat-0: #e1e6ec;
+  --heat-1: #c4cfe8;
+  --heat-2: #8d9fd0;
+  --heat-3: #5a71b2;
+  --heat-4: #3a4f8f;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0f1326;
-    --surface: #171c34;
-    --sunken: #12162b;
-    --ink: #f2ece0;
-    --muted: #a5a6b8;
-    --line: #2a3050;
-    --accent: #9fb2ff;
-    --accent-ink: #0f1326;
-    --accent-soft: #222b52;
-    --rouge: #ff7a89;
-    --rouge-soft: #3a1b25;
-    --ok: #6fd3a2;
-    --ok-soft: #163128;
-    --bad: #ff8593;
-    --bad-soft: #3a1b25;
-    --warn: #f0be5e;
-    --warn-soft: #372c14;
-    --heat-0: #222846;
-    --heat-1: #1c5cab;
-    --heat-2: #2a78d6;
-    --heat-3: #5598e7;
-    --heat-4: #9ec5f4;
+    --bg: #141a22;
+    --surface: #1b232d;
+    --sunken: #171e27;
+    --ink: #e9edf2;
+    --muted: #9aa6b3;
+    --line: #2b3542;
+    --accent: #a5b6ec;
+    --accent-ink: #141a22;
+    --accent-soft: #25304d;
+    --rouge: #ee9bb0;
+    --rouge-soft: #3b2129;
+    --ok: #7fd0a8;
+    --ok-soft: #183229;
+    --bad: #f2939a;
+    --bad-soft: #3a2124;
+    --warn: #e8bf6b;
+    --warn-soft: #352b16;
+    --heat-0: #222b37;
+    --heat-1: #2c3c66;
+    --heat-2: #41589a;
+    --heat-3: #7189cf;
+    --heat-4: #b2c1f0;
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #0f1326;
-  --surface: #171c34;
-  --sunken: #12162b;
-  --ink: #f2ece0;
-  --muted: #a5a6b8;
-  --line: #2a3050;
-  --accent: #9fb2ff;
-  --accent-ink: #0f1326;
-  --accent-soft: #222b52;
-  --rouge: #ff7a89;
-  --rouge-soft: #3a1b25;
-  --ok: #6fd3a2;
-  --ok-soft: #163128;
-  --bad: #ff8593;
-  --bad-soft: #3a1b25;
-  --warn: #f0be5e;
-  --warn-soft: #372c14;
-  --heat-0: #222846;
-  --heat-1: #1c5cab;
-  --heat-2: #2a78d6;
-  --heat-3: #5598e7;
-  --heat-4: #9ec5f4;
+  --bg: #141a22;
+  --surface: #1b232d;
+  --sunken: #171e27;
+  --ink: #e9edf2;
+  --muted: #9aa6b3;
+  --line: #2b3542;
+  --accent: #a5b6ec;
+  --accent-ink: #141a22;
+  --accent-soft: #25304d;
+  --rouge: #ee9bb0;
+  --rouge-soft: #3b2129;
+  --ok: #7fd0a8;
+  --ok-soft: #183229;
+  --bad: #f2939a;
+  --bad-soft: #3a2124;
+  --warn: #e8bf6b;
+  --warn-soft: #352b16;
+  --heat-0: #222b37;
+  --heat-1: #2c3c66;
+  --heat-2: #41589a;
+  --heat-3: #7189cf;
+  --heat-4: #b2c1f0;
 }
 
 @theme inline {
@@ -97,8 +96,8 @@
   --color-bad-soft: var(--bad-soft);
   --color-warn: var(--warn);
   --color-warn-soft: var(--warn-soft);
-  --font-sans: "Noto Sans", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
-  --font-display: "Playfair Display", "Noto Serif TC", "Songti TC", Georgia, serif;
+  --font-sans: "LXGW WenKai TC", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --font-display: "Fraunces", "LXGW WenKai TC", "Noto Serif TC", Georgia, serif;
 }
 
 html {
@@ -136,12 +135,12 @@ body {
 
 /* 三色旗細線 */
 .tricolore {
-  height: 4px;
+  height: 3px;
   background: linear-gradient(
     90deg,
-    #1f3a93 0 33.33%,
-    #ffffff 33.33% 66.66%,
-    #c8283c 66.66% 100%
+    var(--accent) 0 33.33%,
+    var(--line) 33.33% 66.66%,
+    var(--rouge) 66.66% 100%
   );
 }
 
@@ -204,24 +203,24 @@ body {
    ========================================================= */
 
 :root {
-  --seyes-major: rgba(76, 102, 196, 0.32);
-  --seyes-minor: rgba(76, 102, 196, 0.12);
-  --seyes-margin: rgba(200, 40, 60, 0.45);
-  --ink-stamp: #c8283c;
+  --seyes-major: rgba(58, 79, 143, 0.28);
+  --seyes-minor: rgba(58, 79, 143, 0.1);
+  --seyes-margin: rgba(192, 96, 122, 0.45);
+  --ink-stamp: #c0607a;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --seyes-major: rgba(159, 178, 255, 0.24);
-    --seyes-minor: rgba(159, 178, 255, 0.08);
-    --seyes-margin: rgba(255, 122, 137, 0.45);
-    --ink-stamp: #ff7a89;
+    --seyes-major: rgba(165, 182, 236, 0.24);
+    --seyes-minor: rgba(165, 182, 236, 0.08);
+    --seyes-margin: rgba(238, 155, 176, 0.45);
+    --ink-stamp: #ee9bb0;
   }
 }
 :root[data-theme="dark"] {
-  --seyes-major: rgba(159, 178, 255, 0.24);
-  --seyes-minor: rgba(159, 178, 255, 0.08);
-  --seyes-margin: rgba(255, 122, 137, 0.45);
-  --ink-stamp: #ff7a89;
+  --seyes-major: rgba(165, 182, 236, 0.24);
+  --seyes-minor: rgba(165, 182, 236, 0.08);
+  --seyes-margin: rgba(238, 155, 176, 0.45);
+  --ink-stamp: #ee9bb0;
 }
 
 /* Seyès 格線：每 8px 一條細線，每 32px 一條粗線，左側一條紅色邊線。
@@ -281,7 +280,7 @@ body {
   mask-image: radial-gradient(circle at 30% 40%, #000 55%, rgba(0, 0, 0, 0.72) 75%, #000 100%);
 }
 
-/* 導覽列：目前頁面底下的三色細線 */
+/* 導覽列：目前頁面底下的一條細線 */
 .nav-current::after {
   content: "";
   position: absolute;
@@ -290,7 +289,7 @@ body {
   bottom: 3px;
   height: 2px;
   border-radius: 2px;
-  background: linear-gradient(90deg, #1f3a93 0 33.33%, #e4dccb 33.33% 66.66%, #c8283c 66.66% 100%);
+  background: var(--accent);
 }
 
 /* 彩帶 */
@@ -376,11 +375,11 @@ body {
   background-repeat: no-repeat, repeat-y;
   line-height: 28px;
 }
-:root { --fiche-line: rgba(31, 58, 147, 0.14); }
+:root { --fiche-line: rgba(58, 79, 143, 0.14); }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --fiche-line: rgba(159, 178, 255, 0.12); }
+  :root:not([data-theme="light"]) { --fiche-line: rgba(165, 182, 236, 0.12); }
 }
-:root[data-theme="dark"] { --fiche-line: rgba(159, 178, 255, 0.12); }
+:root[data-theme="dark"] { --fiche-line: rgba(165, 182, 236, 0.12); }
 @media print {
   .fiche { background: none; }
 }
