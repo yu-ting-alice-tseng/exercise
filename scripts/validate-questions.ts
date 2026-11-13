@@ -29,6 +29,10 @@ import { EXPRESSIONS_3 } from "../data/idioms/expressions3.ts";
 import { PROVERBES_3 } from "../data/idioms/proverbes3.ts";
 import { FAMILIER_3 } from "../data/idioms/familier3.ts";
 import { JEUNES_2 } from "../data/idioms/jeunes2.ts";
+import { EXPRESSIONS_4 } from "../data/idioms/expressions4.ts";
+import { PROVERBES_4 } from "../data/idioms/proverbes4.ts";
+import { FAMILIER_4 } from "../data/idioms/familier4.ts";
+import { JEUNES_3 } from "../data/idioms/jeunes3.ts";
 import { DIALOGUES_VOYAGE } from "../data/dialogues/voyage.ts";
 import { DIALOGUES_SOCIAL } from "../data/dialogues/social.ts";
 import { DIALOGUES_TRAVAIL } from "../data/dialogues/travail.ts";
@@ -289,7 +293,7 @@ console.log(`模考 ${examCount} 份。`);
 // 俗語諺語：欄位完整、不重複、分類存在、例句是法文加中文、沒有漏掉省音
 {
   const THEMES_BY_KIND: Record<string, string[]> = {
-    expression: ["animaux", "corps", "nourriture", "couleurs", "temps", "sentiments", "vie", "parole", "argent"],
+    expression: ["animaux", "corps", "nourriture", "couleurs", "temps", "sentiments", "vie", "parole", "argent", "amour", "objets", "jeux"],
     proverbe: ["patience", "prudence", "relations", "vie"],
     familier: ["mots", "reponses", "verlan", "abreviations"],
     jeunes: ["reactions", "parler", "relations", "origines", "anglais", "sms"],
@@ -298,7 +302,7 @@ console.log(`模考 ${examCount} 份。`);
   const ELISION = /(^|[\s«(])(je|me|te|se|ne|que|de) (?!ouf\b)[aeiouéèêâîôûœ]/i;
   const levelIds = new Set(LEVELS.map((l) => l.id));
   const seen = new Set<string>();
-  const groups: [string, typeof PROVERBES][] = [["proverbe", [...PROVERBES, ...PROVERBES_2, ...PROVERBES_3]], ["expression", [...EXPRESSIONS, ...EXPRESSIONS_2, ...EXPRESSIONS_3]], ["familier", [...FAMILIER, ...FAMILIER_2, ...FAMILIER_3]], ["jeunes", [...JEUNES, ...JEUNES_2]]];
+  const groups: [string, typeof PROVERBES][] = [["proverbe", [...PROVERBES, ...PROVERBES_2, ...PROVERBES_3, ...PROVERBES_4]], ["expression", [...EXPRESSIONS, ...EXPRESSIONS_2, ...EXPRESSIONS_3, ...EXPRESSIONS_4]], ["familier", [...FAMILIER, ...FAMILIER_2, ...FAMILIER_3, ...FAMILIER_4]], ["jeunes", [...JEUNES, ...JEUNES_2, ...JEUNES_3]]];
   for (const [kind, list] of groups) {
     for (const it of list) {
       const at = `俗語 ${it.fr}`;
