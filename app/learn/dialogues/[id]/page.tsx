@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import DialogueClient from "@/components/dialogue/DialogueClient";
-import { TableView } from "@/components/learn/Blocks";
+import DialoguePhrases from "@/components/dialogue/DialoguePhrases";
+import DeckReview from "@/components/study/DeckReview";
+import { dialogueItems, dialogueStudyItems } from "@/lib/studyItems";
 import { T, ZhOnly } from "@/components/T";
 import { container } from "@/components/ui";
 import { DIALOGUES, dialogueQuestions, getDialogue, REGISTER, SCENES } from "@/lib/dialogues";
@@ -28,6 +30,7 @@ export default async function DialoguePage({ params }: { params: Promise<{ id: s
   const lv = LEVELS.find((l) => l.id === d.level)!;
   const scene = SCENES.find((s) => s.id === d.scene)!;
   const reg = REGISTER[d.register];
+  const all = dialogueStudyItems();
 
   return (
     <main className={`${container} max-w-3xl pt-6 sm:pt-8`}>
@@ -63,17 +66,7 @@ export default async function DialoguePage({ params }: { params: Promise<{ id: s
 
       <DialogueClient d={d} questions={dialogueQuestions(d)} />
 
-      <section className="mt-10 space-y-5">
-        <h2 className="display text-lg font-bold">
-          <T zh={<>實用說法 <span className="text-sm font-normal text-muted italic">Pour le dire autrement</span></>} fr="Pour le dire autrement" />
-        </h2>
-        {d.phrases.map((ph) => (
-          <div key={ph.t}>
-            <h3 className="mb-2 font-bold">{ph.t}</h3>
-            <TableView table={{ head: ["Français", "中文"], rows: ph.rows, fr: [0] }} />
-          </div>
-        ))}
-      </section>
+      <DialoguePhrases dialogueId={d.id} phrases={d.phrases} />
 
       {d.culture && (
         <aside className="mt-8 rounded-xl border-l-4 border-rouge bg-rouge-soft/50 p-4">
@@ -83,6 +76,18 @@ export default async function DialoguePage({ params }: { params: Promise<{ id: s
           <p className="text-sm">{d.culture}</p>
         </aside>
       )}
+
+      <DeckReview
+        deck="dialogue"
+        ranges={[
+          { id: "this", zh: "這段對話", fr: "Ce dialogue", items: dialogueItems(d) },
+          { id: "all", zh: "全部對話", fr: "Tous les dialogues", items: all },
+        ]}
+        all={all}
+        title="法文情境對話測驗"
+        fileName="french-dialogue-quiz"
+        noun={{ zh: "說法或單字", fr: "élément" }}
+      />
 
       <p className="mt-6 text-xs text-muted">
         <T zh="本對話為本站原創，人物與店家皆為虛構。" fr="Dialogue original de ce site ; personnages et lieux fictifs." />

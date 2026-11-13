@@ -6,6 +6,10 @@ import ReadingQuiz from "@/components/reading/ReadingQuiz";
 import { type ActiveGloss, GlossCard, GlossList, Sentence } from "@/components/reading/Gloss";
 import type { Dialogue } from "@/lib/dialogueTypes";
 import { useLang } from "@/lib/i18n";
+import { LearnToggle, Memory, useDeck } from "@/components/study/LearnBits";
+import { dialogueDeck } from "@/lib/idiomSrs";
+import { dialogueGlossId } from "@/lib/study";
+import { useNow } from "@/lib/useNow";
 import { plainText } from "@/lib/readingText";
 import { speakFr, stopSpeaking } from "@/lib/speak";
 import type { DrawnQuestion } from "@/lib/types";
@@ -34,6 +38,8 @@ export default function DialogueClient({ d, questions }: { d: Dialogue; question
   const lang = useLang();
   const t = (zh: string, fr: string) => (lang === "fr" ? fr : zh);
   const stop = useRef(false);
+  const store = useDeck(dialogueDeck);
+  const now = useNow();
   const timer = useRef<number | undefined>(undefined);
 
   function playFrom(i: number) {
@@ -185,7 +191,18 @@ export default function DialogueClient({ d, questions }: { d: Dialogue; question
 
       {active && <GlossCard active={active} onClose={() => setActive(null)} />}
 
-      <GlossList glossary={d.glossary} />
+      <GlossList
+        glossary={d.glossary}
+        action={(key) => {
+          const id = dialogueGlossId(d.id, key);
+          return (
+            <div className="mt-1">
+              <LearnToggle deck={dialogueDeck} id={id} card={store[id]} compact />
+              {store[id] && <Memory c={store[id]} now={now} />}
+            </div>
+          );
+        }}
+      />
 
       <section id={`quiz-${d.id}`} className="mt-10 scroll-mt-20 rounded-2xl border-2 border-accent/30 bg-accent-soft/40 p-4 sm:p-6">
         <ReadingQuiz id={d.id} level={d.level} title={d.title} questions={questions} zh={mode} kind="dialogue" />

@@ -89,7 +89,7 @@ export function GlossCard({ active, onClose }: { active: ActiveGloss; onClose: (
 }
 
 /** 文末的單字表 */
-export function GlossList({ glossary }: { glossary: Record<string, Gloss> }) {
+export function GlossList({ glossary, action }: { glossary: Record<string, Gloss>; action?: (key: string) => React.ReactNode }) {
   const lang = useLang();
   return (
     <section className="mt-8">
@@ -100,7 +100,7 @@ export function GlossList({ glossary }: { glossary: Record<string, Gloss> }) {
         {Object.entries(glossary).map(([k, g]) => (
           <div key={k} className="flex items-start gap-2.5 rounded-lg border border-line bg-surface px-3 py-2">
             <Speak text={g.lemma.replace(/\s*\([^)]*\)/g, "")} className="mt-0.5 size-7" />
-            <div className="min-w-0">
+            <div className="min-w-0 flex-1">
               <dt lang="fr" className="font-medium">
                 {g.lemma} <span className="text-xs font-normal text-muted">{g.pos}</span>
               </dt>
@@ -108,6 +108,7 @@ export function GlossList({ glossary }: { glossary: Record<string, Gloss> }) {
                 {g.zh}
                 {g.note && <span className="block text-xs">{g.note}</span>}
               </dd>
+              {action?.(k)}
             </div>
           </div>
         ))}

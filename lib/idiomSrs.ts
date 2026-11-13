@@ -29,25 +29,6 @@ export interface IdiomCard {
 
 export type IdiomStore = Record<string, IdiomCard>;
 
-const listeners = new Set<() => void>();
-
-export function srsSnapshot(): string | null {
-  try {
-    return localStorage.getItem(KEY);
-  } catch {
-    return null;
-  }
-}
-
-export function subscribeSrs(cb: () => void) {
-  listeners.add(cb);
-  window.addEventListener("storage", cb);
-  return () => {
-    listeners.delete(cb);
-    window.removeEventListener("storage", cb);
-  };
-}
-
 export function parseSrs(raw: string | null): IdiomStore {
   try {
     const v = raw ? (JSON.parse(raw) as IdiomStore) : {};
@@ -57,41 +38,111 @@ export function parseSrs(raw: string | null): IdiomStore {
   }
 }
 
-function save(s: IdiomStore) {
-  try {
-    localStorage.setItem(KEY, JSON.stringify(s));
-  } catch {
-    // 無痕模式或儲存空間被封鎖時無法保存
+const fresh = (now: number): IdiomCard => ({ learned: now, last: now, ivl: 1, ease: 2.5, reps: 0, lapses: 0 });
+
+/**
+ * 一組獨立的複習進度（俗語、單字、對話各一組），各自存在 localStorage 的一個鍵。
+ */
+export function makeDeck(key: string) {
+  const listeners = new Set<() => void>();
+
+  function snapshot(): string | null {
+    try {
+      return localStorage.getItem(key);
+    } catch {
+      return null;
+    }
   }
-  listeners.forEach((l) => l());
+
+  function subscribe(cb: () => void) {
+    listeners.add(cb);
+    const onStorage = (e: StorageEvent) => {
+      if (e.key === null || e.key === key) cb();
+    };
+    window.addEventListener("storage", onStorage);
+    return () => {
+      listeners.delete(cb);
+      window.removeEventListener("storage", onStorage);
+    };
+  }
+
+  function save(s: IdiomStore) {
+    try {
+      localStorage.setItem(key, JSON.stringify(s));
+    } catch {
+      // 無痕模式或儲存空間被封鎖時無法保存
+    }
+    listeners.forEach((l) => l());
+  }
+
+  const load = () => parseSrs(snapshot());
+
+  return {
+    key,
+    snapshot,
+    subscribe,
+    getCard: (id: string): IdiomCard | undefined => load()[id],
+    /** 還原某一則的狀態（例如學生按「算我答對」時，先回到作答前） */
+    setCard(id: string, c: IdiomCard | undefined) {
+      const s = load();
+      if (c) s[id] = c;
+      else delete s[id];
+      save(s);
+    },
+    /** 標為已學：第一次複習排在一天後 */
+    markLearned(ids: string[], now = Date.now()) {
+      const s = load();
+      for (const id of ids) if (!s[id]) s[id] = fresh(now);
+      save(s);
+    },
+    unmarkLearned(id: string) {
+      const s = load();
+      delete s[id];
+      save(s);
+    },
+    /**
+     * 記錄一次複習結果。
+     * strength：1＝填空完全正確；0.8＝選擇題答對；0.6＝填空用了提示、重音有誤或自己判定答對。
+     */
+    review(id: string, ok: boolean, strength: number, now = Date.now()): IdiomCard {
+      const s = load();
+      const c = s[id] ?? fresh(now);
+      if (ok) {
+        const base = c.reps === 0 ? 3 : c.ivl * c.ease;
+        // 提早複習時（還沒到期就答對），只按實際經過的時間給分，避免間隔暴增
+        const elapsed = Math.max(0, now - c.last) / DAY;
+        const earned = elapsed < c.ivl ? c.ivl + (base - c.ivl) * (elapsed / c.ivl) : base;
+        c.ivl = Math.min(365, Math.max(1, earned * strength));
+        c.ease = Math.min(3, c.ease + (strength >= 1 ? 0.05 : strength < 0.7 ? -0.1 : 0));
+        c.reps += 1;
+      } else {
+        c.ivl = 1;
+        c.ease = Math.max(1.3, c.ease - 0.2);
+        c.reps = 0;
+        c.lapses += 1;
+      }
+      c.last = now;
+      s[id] = c;
+      save(s);
+      return c;
+    },
+  };
 }
 
-const load = () => parseSrs(srsSnapshot());
+export type Deck = ReturnType<typeof makeDeck>;
 
-export function getCard(id: string): IdiomCard | undefined {
-  return load()[id];
-}
+export const idiomDeck = makeDeck(KEY);
+export const vocabDeck = makeDeck("french-quiz:srs:vocab");
+export const dialogueDeck = makeDeck("french-quiz:srs:dialogue");
 
-/** 還原某一則的狀態（例如學生按「算我答對」時，先回到作答前） */
-export function setCard(id: string, c: IdiomCard | undefined) {
-  const s = load();
-  if (c) s[id] = c;
-  else delete s[id];
-  save(s);
-}
-
-/** 標為已學：第一次複習排在一天後 */
-export function markLearned(ids: string[], now = Date.now()) {
-  const s = load();
-  for (const id of ids) if (!s[id]) s[id] = { learned: now, last: now, ivl: 1, ease: 2.5, reps: 0, lapses: 0 };
-  save(s);
-}
-
-export function unmarkLearned(id: string) {
-  const s = load();
-  delete s[id];
-  save(s);
-}
+// 俗語頁原本使用的函式名稱
+export const srsSnapshot = idiomDeck.snapshot;
+export const subscribeSrs = idiomDeck.subscribe;
+export const getCard = idiomDeck.getCard;
+export const setCard = idiomDeck.setCard;
+export const markLearned = idiomDeck.markLearned;
+export const unmarkLearned = idiomDeck.unmarkLearned;
+export const reviewIdiom = idiomDeck.review;
 
 export function dueAt(c: IdiomCard): number {
   return c.last + c.ivl * DAY;
@@ -105,33 +156,6 @@ export function isDue(c: IdiomCard, now: number): boolean {
 export function retention(c: IdiomCard, now: number): number {
   const days = Math.max(0, now - c.last) / DAY;
   return Math.pow(0.9, days / c.ivl);
-}
-
-/**
- * 記錄一次複習結果。
- * strength：1＝填空完全正確；0.8＝選擇題答對；0.6＝填空用了提示、重音有誤或自己判定答對。
- */
-export function reviewIdiom(id: string, ok: boolean, strength: number, now = Date.now()) {
-  const s = load();
-  const c = s[id] ?? { learned: now, last: now, ivl: 1, ease: 2.5, reps: 0, lapses: 0 };
-  if (ok) {
-    const base = c.reps === 0 ? 3 : c.ivl * c.ease;
-    // 提早複習時（還沒到期就答對），只按實際經過的時間給分，避免間隔暴增
-    const elapsed = Math.max(0, now - c.last) / DAY;
-    const earned = elapsed < c.ivl ? c.ivl + (base - c.ivl) * (elapsed / c.ivl) : base;
-    c.ivl = Math.min(365, Math.max(1, earned * strength));
-    c.ease = Math.min(3, c.ease + (strength >= 1 ? 0.05 : strength < 0.7 ? -0.1 : 0));
-    c.reps += 1;
-  } else {
-    c.ivl = 1;
-    c.ease = Math.max(1.3, c.ease - 0.2);
-    c.reps = 0;
-    c.lapses += 1;
-  }
-  c.last = now;
-  s[id] = c;
-  save(s);
-  return c;
 }
 
 /** 依記憶狀態分級，給畫面顯示用 */

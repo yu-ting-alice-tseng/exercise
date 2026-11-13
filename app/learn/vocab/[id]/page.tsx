@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import PracticeLink from "@/components/learn/PracticeLink";
 import VocabClient from "@/components/learn/VocabClient";
+import DeckReview from "@/components/study/DeckReview";
+import { vocabStudyItems } from "@/lib/studyItems";
 import { btnQuiet, container } from "@/components/ui";
 import { getVocab, VOCAB, wordCount } from "@/lib/learn";
 import { THEMES } from "@/lib/taxonomy";
@@ -29,6 +31,8 @@ export default async function VocabPage({ params }: { params: Promise<{ id: stri
   const { theme, vocab } = v;
   const i = THEMES.findIndex((t) => t.id === id);
   const next = THEMES[(i + 1) % THEMES.length];
+  const all = vocabStudyItems();
+  const here = all.filter((it) => it.id.startsWith(`${id}:`));
 
   return (
     <main className={`${container} pt-6 sm:pt-8`}>
@@ -49,7 +53,19 @@ export default async function VocabPage({ params }: { params: Promise<{ id: stri
         </p>
       </div>
 
-      <VocabClient groups={vocab.groups} phrases={vocab.phrases} />
+      <VocabClient themeId={id} groups={vocab.groups} phrases={vocab.phrases} />
+
+      <DeckReview
+        deck="vocab"
+        ranges={[
+          { id: "theme", zh: `這個主題：${theme.zh}`, fr: `Ce thème : ${theme.fr}`, items: here },
+          { id: "all", zh: "全部主題", fr: "Tous les thèmes", items: all },
+        ]}
+        all={all}
+        title="法文主題單字測驗"
+        fileName="french-vocab-quiz"
+        noun={{ zh: "單字", fr: "mot" }}
+      />
 
       <section className="mt-10 rounded-xl border border-line bg-surface p-4 sm:p-5">
         <div className="font-bold">

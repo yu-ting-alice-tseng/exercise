@@ -1,11 +1,11 @@
-import { IDIOMS, type IdiomEntry } from "./idioms";
 import { mulberry32, shuffle } from "./random";
+import type { StudyItem } from "./study";
 
 export type QMode = "choice" | "fill" | "mix";
 
 export interface ChoiceQ {
   type: "choice";
-  item: IdiomEntry;
+  item: StudyItem;
   /** fr2zh＝看法文選意思；zh2fr＝看意思選法文 */
   dir: "fr2zh" | "zh2fr";
   prompt: string;
@@ -15,26 +15,37 @@ export interface ChoiceQ {
 
 export interface FillQ {
   type: "fill";
-  item: IdiomEntry;
+  item: StudyItem;
 }
 
 export type IdiomQ = ChoiceQ | FillQ;
 
-function choiceQ(it: IdiomEntry, dir: ChoiceQ["dir"], rand: () => number): ChoiceQ {
-  const pool = IDIOMS.filter((o) => o.id !== it.id && o.kind === it.kind && o.zh !== it.zh && o.fr !== it.fr);
-  const wrong = shuffle(pool, rand).slice(0, 3);
+function choiceQ(it: StudyItem, dir: ChoiceQ["dir"], all: StudyItem[], rand: () => number): ChoiceQ {
+  const ok = (o: StudyItem) => o.id !== it.id && o.zh !== it.zh && o.fr !== it.fr;
+  // 干擾選項先從同一組挑，不夠再從其他組補
+  const same = shuffle(all.filter((o) => ok(o) && o.group === it.group), rand);
+  const other = shuffle(all.filter((o) => ok(o) && o.group !== it.group), rand);
+  const seen = new Set<string>([dir === "fr2zh" ? it.zh : it.fr]);
+  const wrong: StudyItem[] = [];
+  for (const o of [...same, ...other]) {
+    const key = dir === "fr2zh" ? o.zh : o.fr;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    wrong.push(o);
+    if (wrong.length === 3) break;
+  }
   const right = dir === "fr2zh" ? it.zh : it.fr;
   const opts = shuffle([right, ...wrong.map((o) => (dir === "fr2zh" ? o.zh : o.fr))], rand);
   return { type: "choice", item: it, dir, prompt: dir === "fr2zh" ? it.fr : it.zh, options: opts, answer: opts.indexOf(right) };
 }
 
 /** 出題：選擇題一半看法文選意思、一半看意思選法文；混合模式選擇和填空各半 */
-export function buildIdiomQuiz(items: IdiomEntry[], mode: QMode, seed: number): IdiomQ[] {
+export function buildStudyQuiz(items: StudyItem[], all: StudyItem[], mode: QMode, seed: number): IdiomQ[] {
   const rand = mulberry32(seed);
   return shuffle(items, rand).map((it, i) => {
     const fill = mode === "fill" || (mode === "mix" && i % 2 === 1);
     if (fill) return { type: "fill", item: it };
-    return choiceQ(it, i % 4 < 2 ? "fr2zh" : "zh2fr", rand);
+    return choiceQ(it, i % 4 < 2 ? "fr2zh" : "zh2fr", all, rand);
   });
 }
 
@@ -66,13 +77,17 @@ export function acceptedAnswers(fr: string): string[] {
   return [...out].filter(Boolean);
 }
 
-/** c＝正確；a＝只有重音或大小寫不同；w＝錯 */
-export function gradeFill(input: string, fr: string): "c" | "a" | "w" {
+const ART = /^(le |la |les |l'|un |une |des |du |de la |de l')/;
+
+/** c＝正確；a＝只有重音不同；r＝只漏了或寫錯冠詞；w＝錯 */
+export function gradeFill(input: string, fr: string): "c" | "a" | "r" | "w" {
   const got = norm(input);
   if (!got) return "w";
   const answers = acceptedAnswers(fr);
   if (answers.includes(got)) return "c";
   if (answers.some((a) => stripAccents(a) === stripAccents(got))) return "a";
+  const bare = (x: string) => stripAccents(x).replace(ART, "");
+  if (answers.some((a) => ART.test(a) && bare(a) === bare(got))) return "r";
   return "w";
 }
 
@@ -111,8 +126,8 @@ export function quizToText(qs: IdiomQ[], title: string): string {
       lines.push(`   ${q.prompt}`);
       q.options.forEach((o, k) => lines.push(`   (${LETTERS[k]}) ${o}`));
     } else {
-      lines.push(`${n} 寫出法文說法：${q.item.zh}${q.item.eq ? `（類似中文：${q.item.eq}）` : ""}`);
-      lines.push(`   例句：${q.item.ex[1]}`);
+      lines.push(`${n} 寫出法文：${q.item.zh}${q.item.eq ? `（類似中文：${q.item.eq}）` : ""}`);
+      if (q.item.ex) lines.push(`   例句：${q.item.ex[1]}`);
       lines.push(`   提示：${fillHint(q.item.fr)}`);
       lines.push("   答：________________________________");
     }
@@ -122,7 +137,7 @@ export function quizToText(qs: IdiomQ[], title: string): string {
   qs.forEach((q, i) => {
     const ans = q.type === "choice" ? `(${LETTERS[q.answer]}) ${q.options[q.answer]}` : q.item.fr;
     lines.push(`${i + 1}. ${ans}`);
-    lines.push(`   例：${q.item.ex[0]}／${q.item.ex[1]}`);
+    if (q.item.ex) lines.push(`   例：${q.item.ex[0]}／${q.item.ex[1]}`);
   });
   return lines.join("\n");
 }
@@ -138,13 +153,13 @@ export function quizToHtml(qs: IdiomQ[], title: string, sub: string): string {
         const opts = q.options.map((o, k) => `<li><b>${LETTERS[k]}</b>　<span lang="${q.dir === "zh2fr" ? "fr" : "zh-Hant"}">${esc(o)}</span></li>`).join("");
         return `<li class="q"><div class="h">${head}</div><div class="p" lang="${q.dir === "fr2zh" ? "fr" : "zh-Hant"}">${esc(q.prompt)}</div><ol class="o">${opts}</ol></li>`;
       }
-      return `<li class="q"><div class="h">寫出法文說法</div><div class="p">${esc(q.item.zh)}${q.item.eq ? `<span class="eq">類似中文：${esc(q.item.eq)}</span>` : ""}</div><div class="ex">例句：${esc(q.item.ex[1])}</div><div class="hint">提示：<span lang="fr">${esc(fillHint(q.item.fr))}</span></div><div class="line"></div></li>`;
+      return `<li class="q"><div class="h">寫出法文</div><div class="p">${esc(q.item.zh)}${q.item.eq ? `<span class="eq">類似中文：${esc(q.item.eq)}</span>` : ""}</div>${q.item.ex ? `<div class="ex">例句：${esc(q.item.ex[1])}</div>` : ""}<div class="hint">提示：<span lang="fr">${esc(fillHint(q.item.fr))}</span></div><div class="line"></div></li>`;
     })
     .join("");
   const keys = qs
     .map((q) => {
       const a = q.type === "choice" ? `${LETTERS[q.answer]}　${esc(q.options[q.answer])}` : `<span lang="fr">${esc(q.item.fr)}</span>`;
-      return `<li>${a}<div class="ex" lang="fr">${esc(q.item.ex[0])}</div></li>`;
+      return `<li>${a}${q.item.ex ? `<div class="ex" lang="fr">${esc(q.item.ex[0])}</div>` : ""}</li>`;
     })
     .join("");
   return `<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)}</title>
