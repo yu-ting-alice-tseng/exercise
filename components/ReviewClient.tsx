@@ -1,7 +1,7 @@
 "use client";
 
 import { useLang, useT } from "@/lib/i18n";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { QuizRunner } from "./PracticeClient";
 import Stem from "./Stem";
@@ -24,6 +24,17 @@ export default function ReviewClient() {
   const { progress, ready } = useProgress();
   const [tab, setTab] = useState<Tab>("due");
   const [level, setLevel] = useState<Level | "all">("all");
+  // 導覽列選單用 #a-reviser／#carnet 直接切到對應分頁
+  useEffect(() => {
+    const fromHash = () => {
+      const h = window.location.hash;
+      if (h === "#carnet") setTab("book");
+      else if (h === "#a-reviser") setTab("due");
+    };
+    fromHash();
+    window.addEventListener("hashchange", fromHash);
+    return () => window.removeEventListener("hashchange", fromHash);
+  }, []);
   const [quiz, setQuiz] = useState<{ questions: DrawnQuestion[]; title: string; key: number } | null>(null);
   const lang = useLang();
   const t = (zh: string, fr: string) => (lang === "fr" ? fr : zh);

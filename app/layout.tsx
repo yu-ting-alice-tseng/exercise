@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import { LangToggle, T } from "@/components/T";
 import CloudBoot from "@/components/CloudBoot";
+import HashScroll from "@/components/HashScroll";
 import { ProverbeDuJour } from "@/components/Decor";
 import "./globals.css";
 
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </header>
         <CloudBoot />
+        <HashScroll />
         <div className="flex-1">{children}</div>
         <footer className="no-print mt-10 pb-28 text-center lg:pb-10">
           <div className="mx-auto mb-3 flex w-16 overflow-hidden rounded-full">

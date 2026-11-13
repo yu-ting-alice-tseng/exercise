@@ -41,7 +41,7 @@ export default function ExamList() {
           const sets = EXAMS.filter((e) => e.exam === k.id);
           if (sets.length === 0) return null;
           return (
-            <section key={k.id}>
+            <section key={k.id} id={k.id} className="scroll-mt-6">
               <div className="mb-3">
                 {lang === "zh" && <div className="eyebrow">{k.fr}</div>}
                 <h2 className="display text-xl font-bold">{lang === "fr" ? k.fr : k.zh}</h2>
@@ -88,7 +88,7 @@ export default function ExamList() {
           );
         })}
 
-        <Card className="p-5">
+        <Card id="officiels" className="p-5">
           <div className="eyebrow">Sujets officiels</div>
           <h2 className="display text-lg font-bold">{t("官方範例試題", "Exemples officiels")}</h2>
           <p className="mt-1 text-sm text-muted">{t("考試的官方網站提供範例試題（含錄音和評分標準），建議考前一定要做過。", "Les sites officiels proposent des exemples de sujets (avec enregistrements et grilles d’évaluation). Faites-les avant l’examen.")}</p>

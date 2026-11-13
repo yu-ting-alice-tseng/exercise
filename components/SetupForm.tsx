@@ -98,7 +98,7 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
   return (
     <div className={twoCol}>
       <div className="space-y-4">
-        <Card className="p-4 sm:p-5">
+        <Card id="niveau" className="p-4 sm:p-5">
           <Heading fr="Étape 1 · Niveau" zh="選擇等級" frTitle="Choisir le niveau" />
           <div className="mt-3 grid grid-cols-3 gap-2 sm:gap-3 md:grid-cols-6">
             {LEVELS.map((l) => {
@@ -133,7 +133,7 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
           <p className="mt-3 text-sm text-muted">{(() => { const lv = LEVELS.find((l) => l.id === level); return lang === "fr" ? lv?.descFr : lv?.desc; })()}</p>
         </Card>
 
-        <Card className="p-4 sm:p-5">
+        <Card id="contenu" className="p-4 sm:p-5">
           <div className="flex flex-wrap items-end justify-between gap-3">
             <Heading fr="Étape 2 · Thème ou grammaire" zh="練習範圍" frTitle="Choisir le contenu" />
             <div className="grid grid-cols-2 rounded-lg bg-sunken p-1 text-sm">
@@ -223,7 +223,7 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
         </Card>
 
         <div className="grid gap-4 md:grid-cols-2">
-          <Card className="p-4 sm:p-5">
+          <Card id="types" className="p-4 sm:p-5">
             <Heading fr="Étape 3 · Exercices" zh="題型與題數" frTitle="Types et nombre de questions" />
             <div className="mt-2 divide-y divide-line">
               {TYPE_ORDER.map((t) => (
@@ -247,7 +247,7 @@ export default function SetupForm({ recent }: { recent?: React.ReactNode }) {
             </div>
           </Card>
 
-          <Card className="p-4 sm:p-5">
+          <Card id="difficulte" className="p-4 sm:p-5">
             <Heading fr="Étape 4 · Difficulté" zh="難度" frTitle="Choisir la difficulté" />
             <div className="mt-3 grid grid-cols-2 gap-2">
               {(["all", 1, 2, 3] as const).map((d) => (

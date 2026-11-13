@@ -8,18 +8,9 @@ import { DIALOGUES, SCENES } from "@/lib/dialogues";
 import { IDIOM_KINDS, IDIOMS } from "@/lib/idioms";
 import { CATEGORIES, LEVELS, THEMES } from "@/lib/taxonomy";
 import { T, ZhOnly } from "@/components/T";
+import { LEARN_SECTIONS } from "@/lib/sections";
 
 export const metadata = { title: "文法與單字整理｜法文練習題" };
-
-const JUMP = [
-  { href: "#dialogues", zh: "情境對話", fr: "Dialogues" },
-  { href: "#expressions", zh: "俗語諺語", fr: "Expressions" },
-  { href: "#lectures", zh: "閱讀", fr: "Lectures" },
-  { href: "#ecriture", zh: "寫作", fr: "Écriture" },
-  { href: "#phrases", zh: "句型總整理", fr: "Fiches de synthèse" },
-  { href: "#grammaire", zh: "文法筆記", fr: "Grammaire" },
-  { href: "#vocabulaire", zh: "主題單字", fr: "Vocabulaire" },
-];
 
 export default function LearnPage() {
   const totalWords = VOCAB.reduce((s, v) => s + wordCount(v.id), 0);
@@ -42,7 +33,7 @@ export default function LearnPage() {
       </div>
 
       <nav aria-label="跳到" className="scroll-x -mx-4 mb-8 flex gap-2 overflow-x-auto px-4 sm:mx-0 sm:px-0">
-        {JUMP.map((j) => (
+        {LEARN_SECTIONS.map((j) => (
           <a
             key={j.href}
             href={j.href}
