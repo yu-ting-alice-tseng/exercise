@@ -22,7 +22,7 @@ export default function RecentList() {
   if (items.length === 0) return null;
 
   return (
-    <Card className="overflow-hidden">
+    <Card id="recent" className="overflow-hidden">
       <div className="flex items-end justify-between px-4 pt-4 pb-2 sm:px-5">
         <div>
           <div className="eyebrow">Historique</div>

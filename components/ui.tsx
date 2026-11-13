@@ -15,8 +15,12 @@ export const btnSecondary =
 export const btnQuiet =
   "inline-flex min-h-11 items-center justify-center rounded-lg border border-line bg-surface px-4 text-sm font-medium text-ink transition hover:border-accent/60 active:scale-[0.99] disabled:pointer-events-none disabled:opacity-40";
 
-export function Card({ className = "", children }: { className?: string; children: React.ReactNode }) {
-  return <section className={`rounded-xl border border-line bg-surface ${className}`}>{children}</section>;
+export function Card({ id, className = "", children }: { id?: string; className?: string; children: React.ReactNode }) {
+  return (
+    <section id={id} className={`rounded-xl border border-line bg-surface ${id ? "scroll-mt-6" : ""} ${className}`}>
+      {children}
+    </section>
+  );
 }
 
 /**

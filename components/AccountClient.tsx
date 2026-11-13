@@ -114,7 +114,7 @@ function SignedIn() {
 
       <div className="grid gap-4 lg:grid-cols-2 lg:items-start">
         <div className="space-y-4">
-          <Card className={`p-5 ${needName ? "ring-2 ring-rouge" : ""}`}>
+          <Card id="nom" className={`p-5 ${needName ? "ring-2 ring-rouge" : ""}`}>
             <div className="eyebrow">Mon nom</div>
             <h2 className="display text-lg font-bold">{t("顯示名稱", "Nom affiché")}</h2>
             <p className="mt-1 text-sm text-muted">
@@ -140,7 +140,7 @@ function SignedIn() {
             {nameMsg && <p className="mt-2 text-sm text-accent">{nameMsg}</p>}
           </Card>
 
-          <Card className="p-5">
+          <Card id="synchro" className="p-5">
             <div className="eyebrow">Synchronisation</div>
             <h2 className="display text-lg font-bold">{t("雲端同步", "Synchronisation")}</h2>
             <p className="mt-1 text-sm text-muted" role="status">
@@ -164,7 +164,7 @@ function SignedIn() {
         </div>
 
         <div className="space-y-4">
-          <Card className="p-5">
+          <Card id="classes" className="p-5">
             <div className="eyebrow">Mes classes</div>
             <h2 className="display text-lg font-bold">{t("我加入的班級", "Mes classes")}</h2>
             <form
@@ -220,7 +220,7 @@ function SignedIn() {
             <p className="mt-3 text-xs text-muted">{t("加入後，老師可以看到你的練習時間、題數和正確率，但不能修改你的紀錄。", "Votre professeur voit votre temps d’étude, le nombre de questions et votre taux de réussite, sans pouvoir les modifier.")}</p>
           </Card>
 
-          <Card className="p-5">
+          <Card id="enseignant" className="p-5">
             <div className="eyebrow">Espace enseignant</div>
             <h2 className="display text-lg font-bold">{t("老師專區", "Espace enseignant")}</h2>
             <p className="mt-1 text-sm text-muted">{t("建立班級、取得加入代碼，追蹤學生的學習進度。", "Créez une classe, obtenez un code d’accès et suivez la progression de vos élèves.")}</p>

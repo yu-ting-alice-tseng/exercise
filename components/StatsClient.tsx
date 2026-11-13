@@ -163,12 +163,12 @@ export default function StatsClient() {
           </div>
 
           <div className="grid gap-4 lg:grid-cols-2">
-            <Card className="p-4 sm:p-5">
+            <Card id="calendrier" className="p-4 sm:p-5">
               <div className="eyebrow">Calendrier</div>
               <h2 className="display text-lg font-bold">{tr(`學習日曆（近 ${WEEKS} 週）`, `Calendrier (${WEEKS} semaines)`)}</h2>
               <Heatmap days={days} today={today} />
             </Card>
-            <Card className="p-4 sm:p-5">
+            <Card id="temps" className="p-4 sm:p-5">
               <div className="eyebrow">Temps d&apos;étude</div>
               <h2 className="display text-lg font-bold">{tr("每天練習時間（近 14 天，分鐘）", "Temps d’étude (14 jours, en minutes)")}</h2>
               <DailyBars days={days} today={today} />
@@ -176,7 +176,7 @@ export default function StatsClient() {
           </div>
 
           <div className="mt-4 grid gap-4 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start">
-            <Card className="p-4 sm:p-5">
+            <Card id="faibles" className="p-4 sm:p-5">
               <div className="eyebrow">Points faibles</div>
               <h2 className="display text-lg font-bold">{tr("最需要加強的文法點", "Points à retravailler")}</h2>
               {weakest.length === 0 ? (
@@ -216,7 +216,7 @@ export default function StatsClient() {
               )}
             </Card>
 
-            <Card className="p-5">
+            <Card id="revisions" className="p-5">
               <div className="eyebrow">Révision</div>
               <h2 className="display text-lg font-bold">{tr("複習狀態", "État des révisions")}</h2>
               <dl className="mt-3 space-y-2 text-sm">
@@ -246,7 +246,7 @@ export default function StatsClient() {
             </Card>
           </div>
 
-          <Card className="mt-4 overflow-hidden">
+          <Card id="seances" className="mt-4 overflow-hidden">
             <div className="px-4 pt-4 pb-2 sm:px-5">
               <div className="eyebrow">Historique</div>
               <h2 className="display text-lg font-bold">{tr("最近的練習", "Séances récentes")}</h2>
@@ -483,7 +483,7 @@ function DataTools() {
   }
 
   return (
-    <Card className="mt-4 p-4 sm:p-5">
+    <Card id="sauvegarde" className="mt-4 p-4 sm:p-5">
       <div className="eyebrow">Sauvegarde</div>
       <h2 className="display text-lg font-bold">{tr("備份與搬移紀錄", "Sauvegarder et transférer")}</h2>
       <p className="mt-1 text-sm text-muted">
