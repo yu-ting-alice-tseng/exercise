@@ -1,5 +1,9 @@
 import { EXPRESSIONS } from "@/data/idioms/expressions";
 import { EXPRESSIONS_2 } from "@/data/idioms/expressions2";
+import { EXPRESSIONS_3 } from "@/data/idioms/expressions3";
+import { FAMILIER_3 } from "@/data/idioms/familier3";
+import { JEUNES_2 } from "@/data/idioms/jeunes2";
+import { PROVERBES_3 } from "@/data/idioms/proverbes3";
 import { FAMILIER_2 } from "@/data/idioms/familier2";
 import { JEUNES } from "@/data/idioms/jeunes";
 import { PROVERBES_2 } from "@/data/idioms/proverbes2";
@@ -24,6 +28,8 @@ export const IDIOM_THEMES: { id: string; kind: IdiomKind; zh: string; fr: string
   { id: "temps", kind: "expression", zh: "天氣與時間", fr: "Le temps" },
   { id: "sentiments", kind: "expression", zh: "情緒與人際", fr: "Sentiments et relations" },
   { id: "vie", kind: "expression", zh: "生活與處境", fr: "Situations de la vie" },
+  { id: "parole", kind: "expression", zh: "說話與溝通", fr: "La parole" },
+  { id: "argent", kind: "expression", zh: "錢與工作", fr: "Argent et travail" },
   { id: "patience", kind: "proverbe", zh: "耐心與努力", fr: "Patience et effort" },
   { id: "prudence", kind: "proverbe", zh: "謹慎與判斷", fr: "Prudence et jugement" },
   { id: "relations", kind: "proverbe", zh: "人與人際", fr: "Les autres" },
@@ -58,10 +64,10 @@ function slug(s: string): string {
 const tag = (kind: IdiomKind) => (i: Idiom): IdiomEntry => ({ ...i, kind, id: `${kind[0]}-${slug(i.fr)}` });
 
 export const IDIOMS: IdiomEntry[] = [
-  ...[...EXPRESSIONS, ...EXPRESSIONS_2].map(tag("expression")),
-  ...[...PROVERBES, ...PROVERBES_2].map(tag("proverbe")),
-  ...[...FAMILIER, ...FAMILIER_2].map(tag("familier")),
-  ...JEUNES.map(tag("jeunes")),
+  ...[...EXPRESSIONS, ...EXPRESSIONS_2, ...EXPRESSIONS_3].map(tag("expression")),
+  ...[...PROVERBES, ...PROVERBES_2, ...PROVERBES_3].map(tag("proverbe")),
+  ...[...FAMILIER, ...FAMILIER_2, ...FAMILIER_3].map(tag("familier")),
+  ...[...JEUNES, ...JEUNES_2].map(tag("jeunes")),
 ];
 
 export const REG_LABEL: Record<Idiom["reg"], { zh: string; fr: string }> = {

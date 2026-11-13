@@ -25,6 +25,10 @@ import { EXPRESSIONS_2 } from "../data/idioms/expressions2.ts";
 import { PROVERBES_2 } from "../data/idioms/proverbes2.ts";
 import { FAMILIER_2 } from "../data/idioms/familier2.ts";
 import { JEUNES } from "../data/idioms/jeunes.ts";
+import { EXPRESSIONS_3 } from "../data/idioms/expressions3.ts";
+import { PROVERBES_3 } from "../data/idioms/proverbes3.ts";
+import { FAMILIER_3 } from "../data/idioms/familier3.ts";
+import { JEUNES_2 } from "../data/idioms/jeunes2.ts";
 import { DIALOGUES_VOYAGE } from "../data/dialogues/voyage.ts";
 import { DIALOGUES_SOCIAL } from "../data/dialogues/social.ts";
 import { DIALOGUES_TRAVAIL } from "../data/dialogues/travail.ts";
@@ -285,7 +289,7 @@ console.log(`模考 ${examCount} 份。`);
 // 俗語諺語：欄位完整、不重複、分類存在、例句是法文加中文、沒有漏掉省音
 {
   const THEMES_BY_KIND: Record<string, string[]> = {
-    expression: ["animaux", "corps", "nourriture", "couleurs", "temps", "sentiments", "vie"],
+    expression: ["animaux", "corps", "nourriture", "couleurs", "temps", "sentiments", "vie", "parole", "argent"],
     proverbe: ["patience", "prudence", "relations", "vie"],
     familier: ["mots", "reponses", "verlan", "abreviations"],
     jeunes: ["reactions", "parler", "relations", "origines", "anglais", "sms"],
@@ -294,7 +298,7 @@ console.log(`模考 ${examCount} 份。`);
   const ELISION = /(^|[\s«(])(je|me|te|se|ne|que|de) (?!ouf\b)[aeiouéèêâîôûœ]/i;
   const levelIds = new Set(LEVELS.map((l) => l.id));
   const seen = new Set<string>();
-  const groups: [string, typeof PROVERBES][] = [["proverbe", [...PROVERBES, ...PROVERBES_2]], ["expression", [...EXPRESSIONS, ...EXPRESSIONS_2]], ["familier", [...FAMILIER, ...FAMILIER_2]], ["jeunes", JEUNES]];
+  const groups: [string, typeof PROVERBES][] = [["proverbe", [...PROVERBES, ...PROVERBES_2, ...PROVERBES_3]], ["expression", [...EXPRESSIONS, ...EXPRESSIONS_2, ...EXPRESSIONS_3]], ["familier", [...FAMILIER, ...FAMILIER_2, ...FAMILIER_3]], ["jeunes", [...JEUNES, ...JEUNES_2]]];
   for (const [kind, list] of groups) {
     for (const it of list) {
       const at = `俗語 ${it.fr}`;
