@@ -44,10 +44,10 @@ export function Tampon({ text }: { text: string }) {
   return <span className="tampon text-xl sm:text-2xl">{text}</span>;
 }
 
-/** 三色彩帶（只在第一次顯示時播放，減少動態效果的設定下不顯示） */
+/** 彩帶（只在第一次顯示時播放，減少動態效果的設定下不顯示） */
 export function Confetti({ seed = 1 }: { seed?: number }) {
   const pieces = useMemo(() => {
-    const colors = ["#1f3a93", "#ffffff", "#c8283c", "#e2b04a"];
+    const colors = ["#3a4f8f", "#ffffff", "#c0607a", "#d9a441"];
     const rnd = mulberry32(seed);
     return Array.from({ length: 36 }, (_, i) => ({
       left: `${rnd() * 100}%`,
