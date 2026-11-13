@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useSyncExternalStore } from "react";
+import IdiomReview from "./IdiomReview";
 import InlineQuiz from "@/components/learn/InlineQuiz";
 import Speak from "@/components/learn/Speak";
 import { btnPrimary, btnQuiet } from "@/components/ui";
@@ -8,8 +9,11 @@ import { useLang } from "@/lib/i18n";
 import type { IdiomKind } from "@/lib/idiomTypes";
 import { IDIOM_KINDS, IDIOM_THEMES, IDIOMS, idiomQuiz, REG_LABEL, type IdiomEntry } from "@/lib/idioms";
 import { newSeed } from "@/lib/random";
+import { DAY, dueAt, isDue, markLearned, parseSrs, retention, srsSnapshot, strengthLabel, subscribeSrs, unmarkLearned, type IdiomCard } from "@/lib/idiomSrs";
+import { useNow } from "@/lib/useNow";
 
 type Mode = "all" | "guess";
+type Status = "all" | "new" | "learned" | "due";
 
 const REG_CLS: Record<IdiomEntry["reg"], string> = {
   soutenu: "bg-accent-soft text-accent",
@@ -23,7 +27,43 @@ function chip(on: boolean) {
   }`;
 }
 
-function Card({ it, guess, open, onToggle }: { it: IdiomEntry; guess: boolean; open: boolean; onToggle: () => void }) {
+/** 卡片上的記憶狀態：保留率條、下次複習時間 */
+function Memory({ c, now }: { c: IdiomCard; now: number }) {
+  const lang = useLang();
+  const t = (zh: string, fr: string) => (lang === "fr" ? fr : zh);
+  const r = Math.round(retention(c, now) * 100);
+  const left = dueAt(c) - now;
+  const days = left <= 0 ? 0 : Math.max(1, Math.round(left / DAY));
+  const lab = strengthLabel(c);
+  return (
+    <div className="mt-2 flex items-center gap-2 text-[11px] text-muted">
+      <div className="h-1.5 w-16 overflow-hidden rounded-full bg-sunken" aria-hidden>
+        <div className={`h-full ${r >= 90 ? "bg-ok" : r >= 75 ? "bg-warn" : "bg-bad"}`} style={{ width: `${r}%` }} />
+      </div>
+      <span className="tabular-nums">{t(`記憶約 ${r}%`, `Mémoire ~${r} %`)}</span>
+      <span>・{t(lab.zh, lab.fr)}</span>
+      <span className={`ml-auto tabular-nums ${days <= 0 ? "font-bold text-accent" : ""}`}>
+        {days <= 0 ? t("該複習了", "À réviser") : t(`${days} 天後複習`, `dans ${days} j`)}
+      </span>
+    </div>
+  );
+}
+
+function Card({
+  it,
+  guess,
+  open,
+  onToggle,
+  card,
+  now,
+}: {
+  it: IdiomEntry;
+  guess: boolean;
+  open: boolean;
+  onToggle: () => void;
+  card?: IdiomCard;
+  now: number;
+}) {
   const lang = useLang();
   const t = (zh: string, fr: string) => (lang === "fr" ? fr : zh);
   const hidden = guess && !open;
@@ -36,6 +76,19 @@ function Card({ it, guess, open, onToggle }: { it: IdiomEntry; guess: boolean; o
           <div className="flex flex-wrap items-center gap-1.5 text-[11px]">
             <span className="rounded bg-accent px-1.5 font-bold text-accent-ink tabular-nums">{it.level}</span>
             <span className={`rounded px-1.5 font-bold ${REG_CLS[it.reg]}`}>{t(reg.zh, reg.fr)}</span>
+            <button
+              type="button"
+              aria-pressed={!!card}
+              onClick={() => {
+                if (!card) return markLearned([it.id]);
+                if (card.reps === 0 || window.confirm(t("取消「已學」會清除這則的複習紀錄，確定嗎？", "Retirer cette expression effacera son historique de révision. Continuer ?"))) unmarkLearned(it.id);
+              }}
+              className={`ml-auto inline-flex min-h-8 items-center rounded-full border px-2.5 text-xs font-bold transition ${
+                card ? "border-ok bg-ok-soft text-ok" : "border-line text-muted hover:border-accent/60 hover:text-accent"
+              }`}
+            >
+              {card ? t("✓ 已學", "✓ Apprise") : t("＋ 標為已學", "＋ Je l’ai appris")}
+            </button>
           </div>
           <p lang="fr" className="display mt-1 text-lg leading-snug font-bold">
             {it.fr}
@@ -43,6 +96,7 @@ function Card({ it, guess, open, onToggle }: { it: IdiomEntry; guess: boolean; o
           {it.lit && <p className="mt-0.5 text-xs text-muted">{it.kind === "familier" || it.kind === "jeunes" ? <span lang="fr">{it.lit}</span> : t(`字面：${it.lit}`, `Mot à mot : ${it.lit}`)}</p>}
         </div>
       </div>
+      {card && now > 0 && <Memory c={card} now={now} />}
 
       {hidden ? (
         <button type="button" onClick={onToggle} className="mt-3 w-full rounded-lg border border-dashed border-accent/50 py-2.5 text-sm font-medium text-accent hover:bg-accent-soft">
@@ -90,6 +144,10 @@ export default function IdiomsClient() {
   const [mode, setMode] = useState<Mode>("all");
   const [open, setOpen] = useState<Set<string>>(new Set());
   const [seed, setSeed] = useState<number | null>(null);
+  const [status, setStatus] = useState<Status>("all");
+  const raw = useSyncExternalStore(subscribeSrs, srsSnapshot, () => null);
+  const store = useMemo(() => parseSrs(raw), [raw]);
+  const now = useNow();
   const lang = useLang();
   const t = (zh: string, fr: string) => (lang === "fr" ? fr : zh);
 
@@ -104,8 +162,17 @@ export default function IdiomsClient() {
         return hay.includes(needle);
       }
       return it.kind === kind && (!theme || it.th === theme);
+    }).filter((it) => {
+      const c = store[it.id];
+      if (status === "new") return !c;
+      if (status === "learned") return !!c;
+      if (status === "due") return !!c && isDue(c, now);
+      return true;
     });
-  }, [kind, theme, q]);
+  }, [kind, theme, q, status, store, now]);
+  const learnedCount = Object.keys(store).length;
+  const dueCount = IDIOMS.filter((it) => store[it.id] && isDue(store[it.id], now)).length;
+  const unlearnedInList = list.filter((it) => !store[it.id]);
 
   const quiz = useMemo(() => (seed === null ? [] : idiomQuiz(list.length >= 4 ? list : IDIOMS.filter((it) => it.kind === kind), seed)), [seed, list, kind]);
 
@@ -152,6 +219,19 @@ export default function IdiomsClient() {
 
       <p className="mb-3 text-sm text-muted">{t(k.desc, k.descFr)}</p>
 
+      {learnedCount > 0 && (
+        <a
+          href="#review"
+          className="mb-4 flex items-center gap-3 rounded-xl border border-accent/40 bg-accent-soft px-4 py-3 text-sm transition hover:border-accent"
+        >
+          <span>
+            {t(`已學 ${learnedCount} 則`, `${learnedCount} apprises`)}
+            {dueCount > 0 ? <b className="text-accent">{t(`・今天該複習 ${dueCount} 則`, ` · ${dueCount} à réviser`)}</b> : t("・今天沒有要複習的", " · rien à réviser")}
+          </span>
+          <span className="ml-auto font-bold text-accent">{t("去複習 ↓", "Réviser ↓")}</span>
+        </a>
+      )}
+
       <div className="mb-4 space-y-2">
         <input
           type="search"
@@ -193,6 +273,32 @@ export default function IdiomsClient() {
           </button>
           <span className="ml-auto text-xs text-muted tabular-nums">{t(`${list.length} 則`, `${list.length} entrées`)}</span>
         </div>
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-xs font-bold text-muted">{t("學習狀態", "Statut")}</span>
+          {(
+            [
+              ["all", "全部", "Tout"],
+              ["new", "還沒學", "Nouvelles"],
+              ["learned", "已學", "Apprises"],
+              ["due", "該複習", "À réviser"],
+            ] as const
+          ).map(([id, zh, fr]) => (
+            <button key={id} type="button" aria-pressed={status === id} onClick={() => setStatus(id)} className={chip(status === id)}>
+              {t(zh, fr)}
+            </button>
+          ))}
+          {unlearnedInList.length > 1 && (
+            <button
+              type="button"
+              onClick={() => {
+                if (window.confirm(t(`把目前列出的 ${unlearnedInList.length} 則都標為已學？`, `Marquer les ${unlearnedInList.length} expressions affichées comme apprises ?`))) markLearned(unlearnedInList.map((it) => it.id));
+              }}
+              className="ml-auto text-xs text-accent underline-offset-2 hover:underline"
+            >
+              {t(`全部標為已學（${unlearnedInList.length}）`, `Tout marquer (${unlearnedInList.length})`)}
+            </button>
+          )}
+        </div>
       </div>
 
       {list.length === 0 ? (
@@ -200,18 +306,30 @@ export default function IdiomsClient() {
       ) : (
         <ul className="grid gap-3 md:grid-cols-2">
           {list.map((it) => (
-            <Card key={it.id} it={it} guess={mode === "guess"} open={open.has(it.id)} onToggle={() => toggle(it.id)} />
+            <Card key={it.id} it={it} guess={mode === "guess"} open={open.has(it.id)} onToggle={() => toggle(it.id)} card={store[it.id]} now={now} />
           ))}
         </ul>
       )}
+
+      <section id="review" className="mt-10 scroll-mt-6 rounded-2xl border-2 border-ok/30 bg-ok-soft/40 p-4 sm:p-6">
+        {lang === "zh" && <div className="eyebrow">Révisions espacées</div>}
+        <h2 className="display text-xl font-bold">{t("間隔複習", "Révisions espacées")}</h2>
+        <p className="mt-1 mb-4 text-sm text-muted">
+          {t(
+            "依據艾賓浩斯的遺忘曲線：記憶會隨時間衰減，在快要忘記的時候複習最有效。標為已學的說法，第一次在隔天複習；每答對一次，下次間隔就拉長（約 3 天、8 天、20 天……），答錯就回到隔天重來。卡片上的「記憶約 %」是依經過時間估算的保留率，到期時約為 90%。",
+            "D’après la courbe de l’oubli d’Ebbinghaus, on retient mieux en révisant juste avant d’oublier. Chaque bonne réponse allonge l’intervalle (environ 3, 8, 20 jours…), chaque erreur le remet à un jour. Le pourcentage affiché estime ce que vous retenez encore.",
+          )}
+        </p>
+        <IdiomReview store={store} now={now} />
+      </section>
 
       <section id="quiz-idioms" className="mt-10 scroll-mt-6 rounded-2xl border-2 border-accent/30 bg-accent-soft/40 p-4 sm:p-6">
         {seed === null ? (
           <div>
             {lang === "zh" && <div className="eyebrow">Testez-vous !</div>}
-            <h2 className="display text-xl font-bold">{t("猜意思小測驗", "Testez-vous !")}</h2>
+            <h2 className="display text-xl font-bold">{t("隨機猜意思小測驗", "Quiz au hasard")}</h2>
             <p className="mt-1 mb-4 text-sm text-muted">
-              {t("從目前列出的說法隨機抽 8 題，看法文選出正確意思。答錯的題目會排進複習。", "8 expressions tirées de la liste affichée : choisissez le bon sens. Les erreurs passent en révision.")}
+              {t("從目前列出的說法隨機抽 8 題，看法文選出正確意思，結果會記進學習紀錄。不影響間隔複習的排程。", "8 expressions tirées de la liste affichée : choisissez le bon sens. Ce quiz ne change pas le planning des révisions.")}
             </p>
             <button type="button" onClick={() => setSeed(newSeed())} className={btnPrimary}>
               {t("開始測驗", "Commencer")}
